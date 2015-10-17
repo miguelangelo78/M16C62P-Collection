@@ -3,6 +3,7 @@
 #define MOTOR_LEFT(delay)  P7_6 = 1; P8_0 = 0; for(int i=0;i<delay;i++);
 #define MOTOR_RIGHT(delay) P7_6 = 0; P8_0 = 1; for(int i=0;i<delay;i++);
 #define MOTOR_VIBRATE(delay) MOTOR_LEFT(delay); MOTOR_RIGHT(delay);
+#define MOTOR_STOP() P7_6 = P8_0 = 0;
 
 #define MAX_MOTOR_DB 500
 #define MIN_MOTOR_DB 0
@@ -29,7 +30,7 @@ void tone(int db, int duration_ms) {
 		TABSR_1 = 1;
 	}
 	
-	P7_6 = P8_0 = 0;	
+	MOTOR_STOP();	
 }
 
 void main(void) {
