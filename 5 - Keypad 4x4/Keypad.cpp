@@ -50,9 +50,7 @@ void keypad_4x4_init(void) {
 }
 
 void keypad_4x4_flush(void) {
-	int i, j;
-	for(i = 0; i < keypad.buffer_size; i++)
-		keypad.buffer[i] = 0;
+	memset(keypad.buffer, 0, keypad.buffer_size);
 	keypad.buffer_size = 0;
 }
 
