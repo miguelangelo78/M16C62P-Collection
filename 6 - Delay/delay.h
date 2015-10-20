@@ -3,6 +3,8 @@
 
 /* Don't forget to #include "sfr62p.h" on the .c files */
 
+/* Note: These delay functions must be used AFTER setting the CPU's frequency to 20MHZ (?) */
+
 #define RESTART_TIMER(preload) \
 ta3ic = 0; \
 ta3mr = 0x42; \
@@ -27,8 +29,8 @@ ta3os = ta3os_reg_bit;
 
 inline void delay_ms(int ms) {
 	PUSH_TIMER();
-	for(;ms;ms--) {
-		RESTART_TIMER(0x400);
+	for(; ms; ms--) {
+		RESTART_TIMER(0x900);
 		while(!ir_ta3ic);
 	}
 	POP_TIMER();
@@ -36,7 +38,7 @@ inline void delay_ms(int ms) {
 
 inline void delay_us(int us) {
 	PUSH_TIMER();
-	for(;us;us--) {
+	for(; us; us--) {
 		RESTART_TIMER(0x2);
 		while(!ir_ta3ic);
 	}
