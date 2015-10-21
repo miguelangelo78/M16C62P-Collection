@@ -1,6 +1,8 @@
 #ifndef CPUFREQ_H_
 #define CPUFREQ_H_
 
+#define CPU_FREQ 24000000 /* 24MHz */
+
 inline void cpu_init(void) {
 	unsigned short count = 10000;
 
