@@ -1,0 +1,7 @@
+-I"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\drivers\init"
+-c
+-finfo
+-dir "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug"
+-fFP
+-silent
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\drivers\rtc\rtc.c"

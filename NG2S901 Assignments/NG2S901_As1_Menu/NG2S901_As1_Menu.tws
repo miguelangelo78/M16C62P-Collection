@@ -1,0 +1,40 @@
+[HIMDBVersion]
+2.0
+[DATABASE_VERSION]
+"1.2" 
+[CURRENT_PROJECT]
+"NG2S901_As1_Menu" 
+[GENERAL_DATA]
+"ECXLABEL_LAST_FINDS_DATA" "" 
+[BREAKPOINTS]
+[OPEN_WORKSPACE_FILES]
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\drivers\7seg\7segment.c" 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\drivers\glcd\GLCD.C" 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\drivers\init\ncrt0_rsk.a30" 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\drivers\init\sfr62p.h" 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\drivers\isr\ISR_DEFs.c" 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\drivers\isr\ISR_DEFs.h" 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\drivers\keypad\keyscan_4x4.c" 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\drivers\keypad\keyscan_4x4.h" 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\drivers\motor\motor.h" 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\drivers\motor\motor_sound.c" 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\globals.h" 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\main.c" 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\programs.c" 
+[WORKSPACE_FILE_STATES]
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\drivers\7seg\7segment.c" 0 0 961 259 0 7 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\drivers\glcd\GLCD.C" 0 0 1145 404 0 3 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\drivers\init\ncrt0_rsk.a30" 0 0 1145 404 0 1 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\drivers\init\sfr62p.h" 0 0 961 259 0 2 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\drivers\isr\ISR_DEFs.c" 0 0 961 259 0 4 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\drivers\isr\ISR_DEFs.h" 88 56 961 259 0 9 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\drivers\keypad\keyscan_4x4.c" 88 56 961 259 0 6 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\drivers\keypad\keyscan_4x4.h" 44 28 961 259 0 8 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\drivers\motor\motor.h" 0 0 961 259 0 11 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\drivers\motor\motor_sound.c" -4 -29 1145 404 1 12 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\globals.h" 132 84 961 259 0 10 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\main.c" 0 0 1145 404 0 0 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\programs.c" 44 28 961 259 0 5 
+[LOADED_PROJECTS]
+"NG2S901_As1_Menu" 
+[END]

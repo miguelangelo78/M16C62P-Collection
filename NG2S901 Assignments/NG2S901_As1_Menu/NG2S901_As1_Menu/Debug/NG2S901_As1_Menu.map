@@ -1,0 +1,921 @@
+##########################################
+# (1) LINK INFORMATION                   #
+##########################################
+c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\bin\ln30.exe @C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\NG2S901_As1_Menu.m16cl
+
+# LINK FILE INFORMATION
+ncrt0_rsk (C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\ncrt0_rsk.r30)
+	Jan 25 01:39:59 2016
+
+FONT (C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\FONT.r30)
+	Jan 25 01:39:57 2016
+
+GLCD (C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\GLCD.r30)
+	Jan 25 01:39:57 2016
+
+hwsetup (C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\hwsetup.r30)
+	Jan 25 01:39:57 2016
+
+ISR_DEFs (C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\ISR_DEFs.r30)
+	Jan 25 01:39:57 2016
+
+keyscan_4x4 (C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\keyscan_4x4.r30)
+	Jan 25 01:39:57 2016
+
+main (C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\main.r30)
+	Jan 25 01:39:58 2016
+
+7segment (C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\7segment.r30)
+	Jan 25 01:39:56 2016
+
+extra_program (C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\extra_program.r30)
+	Jan 25 01:39:58 2016
+
+motor_sound (C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\motor_sound.r30)
+	Jan 25 01:39:59 2016
+
+programs (C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\programs.r30)
+	Jan 25 01:39:59 2016
+
+timer (C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\timer.r30)
+	Jan 25 01:39:58 2016
+
+_i4div (c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib)
+	Feb 15 20:19:36 2007
+
+_i4divu (c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib)
+	Feb 15 20:19:37 2007
+
+_i4modu (c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib)
+	Feb 15 20:19:37 2007
+
+_i4mulu (c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib)
+	Feb 15 20:19:37 2007
+
+_mbase (c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib)
+	Feb 15 20:19:40 2007
+
+bcopy (c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib)
+	Feb 15 20:19:43 2007
+
+bzero (c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib)
+	Feb 15 20:19:43 2007
+
+malloc (c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib)
+	Feb 15 20:19:56 2007
+
+mdata (c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib)
+	Feb 15 20:19:57 2007
+
+memcpy (c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib)
+	Feb 15 20:19:58 2007
+
+memset (c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib)
+	Feb 15 20:19:59 2007
+
+_strcpy (c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib)
+	Feb 15 20:20:17 2007
+
+strlen (c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib)
+	Feb 15 20:20:18 2007
+
+vsprintf (c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib)
+	Feb 15 20:20:22 2007
+
+print (c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib)
+	Feb 15 20:20:12 2007
+
+_f8eq (c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib)
+	Feb 15 20:19:33 2007
+
+_f8ge (c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib)
+	Feb 15 20:19:34 2007
+
+_f8lt (c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib)
+	Feb 15 20:19:34 2007
+
+_f8mul (c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib)
+	Feb 15 20:19:34 2007
+
+_f8ne (c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib)
+	Feb 15 20:19:35 2007
+
+_i8divu (c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib)
+	Feb 15 20:19:38 2007
+
+_i8modu (c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib)
+	Feb 15 20:19:38 2007
+
+cdata (c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib)
+	Feb 15 20:19:44 2007
+
+
+##########################################
+# (2) SECTION INFORMATION                #
+##########################################
+# SECTION                        ATR TYPE    START  LENGTH ALIGN MODULENAME
+data_SE                          ABS DATA    000400 000000       ncrt0_rsk
+bss_SE                           REL DATA    000400 000000 2     ncrt0_rsk
+data_SO                          REL DATA    000400 000000       ncrt0_rsk
+bss_SO                           REL DATA    000400 000000       ncrt0_rsk
+data_NE                          REL DATA    000400 000000 2     ncrt0_rsk
+                                 REL DATA    000400 000012 2     GLCD
+                                 REL DATA    000412 000012 2     keyscan_4x4
+                                 REL DATA    000424 000004 2     main
+                                 REL DATA    000428 000022 2     7segment
+                                 REL DATA    00044A 00000E 2     programs
+                                 REL DATA    000458 000010 2     mdata
+bss_NE                           REL DATA    000468 000000 2     ncrt0_rsk
+                                 REL DATA    000468 00000C 2     ISR_DEFs
+                                 REL DATA    000474 000010 2     keyscan_4x4
+                                 REL DATA    000484 000004 2     main
+                                 REL DATA    000488 000004 2     motor_sound
+                                 REL DATA    00048C 000020 2     timer
+                                 REL DATA    0004AC 000004 2     _mbase
+                                 REL DATA    0004B0 000008 2     mdata
+                                 REL DATA    0004B8 000004 2     vsprintf
+                                 REL DATA    0004BC 000108 2     print
+data_NO                          REL DATA    0005C4 000000       ncrt0_rsk
+                                 REL DATA    0005C4 00054F       FONT
+                                 REL DATA    000B13 000001       ISR_DEFs
+                                 REL DATA    000B14 000004       programs
+bss_NO                           REL DATA    000B18 000000       ncrt0_rsk
+                                 REL DATA    000B18 000002       GLCD
+                                 REL DATA    000B1A 000015       keyscan_4x4
+                                 REL DATA    000B2F 00026A       print
+stack                            REL DATA    000D99 000600       ncrt0_rsk
+heap                             REL DATA    001399 000300       ncrt0_rsk
+rom_NE                           REL ROMDATA 00169A 000000 2     ncrt0_rsk
+rom_NO                           REL ROMDATA 00169A 000000       ncrt0_rsk
+data_FE                          ABS DATA    010000 000000       ncrt0_rsk
+bss_FE                           REL DATA    010000 000000 2     ncrt0_rsk
+data_FO                          REL DATA    010000 000000       ncrt0_rsk
+bss_FO                           REL DATA    010000 000000       ncrt0_rsk
+rom_FE                           ABS ROMDATA 0F0000 000000       ncrt0_rsk
+rom_FO                           REL ROMDATA 0F0000 000000       ncrt0_rsk
+                                 REL ROMDATA 0F0000 00010F       main
+                                 REL ROMDATA 0F010F 000244       programs
+                                 REL ROMDATA 0F0353 00000A       print
+                                 REL ROMDATA 0F035D 000101       cdata
+data_SEI                         REL ROMDATA 0F045E 000000       ncrt0_rsk
+data_SOI                         REL ROMDATA 0F045E 000000       ncrt0_rsk
+data_NEI                         REL ROMDATA 0F045E 000000       ncrt0_rsk
+                                 REL ROMDATA 0F045E 000012       GLCD
+                                 REL ROMDATA 0F0470 000012       keyscan_4x4
+                                 REL ROMDATA 0F0482 000004       main
+                                 REL ROMDATA 0F0486 000022       7segment
+                                 REL ROMDATA 0F04A8 00000E       programs
+                                 REL ROMDATA 0F04B6 000010       mdata
+data_NOI                         REL ROMDATA 0F04C6 000000       ncrt0_rsk
+                                 REL ROMDATA 0F04C6 00054F       FONT
+                                 REL ROMDATA 0F0A15 000001       ISR_DEFs
+                                 REL ROMDATA 0F0A16 000004       programs
+data_FEI                         REL ROMDATA 0F0A1A 000000       ncrt0_rsk
+data_FOI                         REL ROMDATA 0F0A1A 000000       ncrt0_rsk
+switch_table                     REL ROMDATA 0F0A1A 000000       ncrt0_rsk
+program                          REL CODE    0F0A1A 000000       ncrt0_rsk
+                                 REL CODE    0F0A1A 0007D1 2     GLCD
+                                 REL CODE    0F11EC 0000E3 2     hwsetup
+                                 REL CODE    0F12D0 00012F 2     ISR_DEFs
+                                 REL CODE    0F1400 0001E7 2     keyscan_4x4
+                                 REL CODE    0F15E8 000BEF 2     main
+                                 REL CODE    0F21D8 0000A4 2     7segment
+                                 REL CODE    0F227C 000003 2     extra_program
+                                 REL CODE    0F2280 000155 2     motor_sound
+                                 REL CODE    0F23D6 000575 2     programs
+                                 REL CODE    0F294C 0001A3 2     timer
+                                 REL CODE    0F2AF0 000083 2     _i4div
+                                 REL CODE    0F2B74 00004D 2     _i4divu
+                                 REL CODE    0F2BC2 00004B 2     _i4modu
+                                 REL CODE    0F2C0E 00001C 2     _i4mulu
+                                 REL CODE    0F2C2A 000035 2     bcopy
+                                 REL CODE    0F2C60 000028 2     bzero
+                                 REL CODE    0F2C88 0001D9 2     malloc
+                                 REL CODE    0F2E62 00004F 2     memcpy
+                                 REL CODE    0F2EB2 000041 2     memset
+                                 REL CODE    0F2EF4 00003C 2     _strcpy
+                                 REL CODE    0F2F30 00002B 2     strlen
+                                 REL CODE    0F2F5C 0000B7 2     vsprintf
+                                 REL CODE    0F3014 001979 2     print
+                                 REL CODE    0F498E 00007C 2     _f8eq
+                                 REL CODE    0F4A0A 0000A7 2     _f8ge
+                                 REL CODE    0F4AB2 0000A7 2     _f8lt
+                                 REL CODE    0F4B5A 0002C7 2     _f8mul
+                                 REL CODE    0F4E22 00007C 2     _f8ne
+                                 REL CODE    0F4E9E 0000F8 2     _i8divu
+                                 REL CODE    0F4F96 0000CF 2     _i8modu
+interrupt                        REL CODE    0F5065 000000       ncrt0_rsk
+                                 REL CODE    0F5065 000113       ncrt0_rsk
+program_S                        REL CODE    0F5178 000000       ncrt0_rsk
+vector                           ABS ROMDATA 0FFD00 000100       ncrt0_rsk
+svector                          ABS ROMDATA 0FFE00 000000       ncrt0_rsk
+fvector                          ABS ROMDATA 0FFFFC 000004       ncrt0_rsk
+# Total -------------------------------------------------------------------
+                                     DATA           001299(0004761) Byte(s)
+                                     ROMDATA        000B1E(0002846) Byte(s)
+                                     CODE           00475E(0018270) Byte(s)
+
+##########################################
+# (3) GLOBAL LABEL INFORMATION           #
+##########################################
+$GLCD_Circle       0f10a4  $GLCD_GoTo         0f0f70  $GLCD_Rectangle    0f1036
+$GLCD_WriteChar    0f0d7c  $LcdDataWrite      0f0b04  $LcdInstructionW   0f0b32
+$LcdSelectSide     0f0ac4  $LcdSetDot         0f0ca0  $_f8geti           0f4662
+$_inmod            0f4872  $animate_menu_na   0f19f6  $bin_2_bcd         0f21f0
+$exit              0f5175  $getmem            0f2cec  $henkan1           0f44be
+$henkan2           0f4500  $is_isr_regular_   0f12f0  $led_pattern_upd   0f23d6
+$memset            0f2eb2  $motor_tone        0f22f8  $motor_tone_us     0f2280
+$seg_update        0f221e  $set_isr_priorit   0f1304  $uninstall_cback   0f139e
+_ADC_Interrupt     0f13be  _FontSystem3x6     0005c4  _FontSystem5x8     000687
+_FontSystem7x8     00086c  _Font_System3x6    00040c  _Font_System5x8    000400
+_Font_System7x8    000406  _GLCD_ClearScree   0f0bbe  _GLCD_DisplayPic   0f0c12
+_GLCD_DisplayVal   0f0fb2  _GLCD_Initialise   0f0a3c  _GLCD_WriteStrin   0f0f42
+_GLCD_getXY        0f11b6  _INT0              0f13d4  _INT1              0f13ea
+_Initialise        0f11ec  _KYB               0f154a  _LcdDataRead       0f0b60
+_LcdDelay          0f0a1a  _LcdWaitBusy       0f0b92  _Timer_A0          0f1528
+_Timer_A1          0f294c  _Timer_A2          0f2962  _Timer_A3          0f2978
+_Timer_A4          0f298e  _Timer_B0          0f29a4  _Timer_B1          0f29ba
+_Timer_B2          0f29d0  __ctype            0f035d  __f8eq             0f498e
+__f8ge             0f4a0a  __f8lt             0f4ab2  __f8mul            0f4b5a
+__f8ne             0f4e22  __f8prn            0f3f68  __i4div            0f2af0
+__i4divU           0f2b74  __i4modU           0f2bc2  __i4mulU           0f2c0e
+__i8divU           0f4e9e  __i8modU           0f4f96  __mbase            0004ac
+__memt             000460  __mnext            0004b0  __msize            0004b4
+__pool             000458  __pri              0f4554  __print            0f3014
+_adc_cback         0f25ec  _bcd_table         000428  _bcd_table_hex     00043c
+_bcopy             0f2c2a  _bzero             0f2c60  _countup_delay     000454
+_countup_delay_m   000456  _create_options    0f17ee  _current_menu      000484
+_deinit_motor_so   0f23ac  _dim_brightness    000452  _dim_delay         000450
+_exit              0f5175  _extra             0f227c  _getcommand        0f15b2
+_hold_delay        000422  _info              0f2936  _init_7seg         0f21d8
+_init_isr          0f12ec  _init_menu_tree    0f1f9c  _init_motor_soun   0f2372
+_install_cback     0f1380  _int0_cback        0f25e0  _int0_stop_prog3   0f2762
+_int0_stop_prog4   0f2814  _int1_cback        0f25e6  _intro             0f2148
+_isr_callbacks     000468  _keypad            000b1a  _keypad_4x4_flus   0f1442
+_keypad_4x4_iske   0f15bc  _keypad_4x4_read   0f1566  _keypad_4x4_scan   0f1490
+_keypad_4x4_wait   0f15c0  _keypad_4x4_wait   0f15d2  _keypad_buff_cpy   000474
+_keypad_delay      0f1460  _keypad_matrix     000412  _keypad_scan       0f2766
+_keypad_selectio   0f2818  _keyscan_4x4_cle   0f1476  _keyscan_4x4_ini   0f1400
+_led_7seg          0f24da  _led_pattern       0f26ce  _main              0f21bc
+_malloc            0f2c88  _memcpy            0f2e62  _menu_create       0f18b4
+_menu_display_op   0f1abc  _menu_draw_borde   0f1c0e  _menu_navigate     0f1c4c
+_menu_option_cre   0f1780  _menu_root         000424  _oldreg            00048a
+_oldreg_dir        000488  _printf            0f15e8  _printf_at         0f1646
+_printf_at_rl      0f16d8  _priority_counte   000b13  _prog2_patt_type   000b15
+_prog3_running     000b16  _prog4_running     000b17  _read_key          0f15d6
+_shift             00044a  _shift_delay       00044c  _shift_delay_max   00044e
+_shift_dir         000b14  _strcpy            0f2ef4  _strlen            0f2f30
+_timer_cascade_i   0f2934  _timer_cback_lis   00048c  _timer_init        0f29e6
+_timer_set         0f2932  _u8CursorX         000b18  _u8CursorY         000b19
+_uninstall_all_c   0f12d0  _vsprintf          0f2f5c  dummy_int          0f5177
+start              0f5065  
+
+##########################################
+# (4) GLOBAL EQU SYMBOL INFORMATION      #
+##########################################
+__SB__           00000400  
+
+##########################################
+# (5) GLOBAL EQU BIT-SYMBOL INFORMATION  #
+##########################################
+
+##########################################
+# (6) LOCAL LABEL INFORMATION            #
+##########################################
+@ ncrt0_rsk ( C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\ncrt0_rsk.r30 )
+@ FONT ( C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\FONT.r30 )
+@ GLCD ( C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\GLCD.r30 )
+@ hwsetup ( C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\hwsetup.r30 )
+@ ISR_DEFs ( C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\ISR_DEFs.r30 )
+@ keyscan_4x4 ( C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\keyscan_4x4.r30 )
+@ main ( C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\main.r30 )
+@ 7segment ( C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\7segment.r30 )
+@ extra_program ( C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\extra_program.r30 )
+@ motor_sound ( C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\motor_sound.r30 )
+@ programs ( C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\programs.r30 )
+@ timer ( C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\timer.r30 )
+@ _i4div ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib )
+@ _i4divu ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib )
+@ _i4modu ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib )
+@ _i4mulu ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib )
+@ _mbase ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib )
+@ bcopy ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib )
+@ bzero ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib )
+@ malloc ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib )
+@ mdata ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib )
+@ memcpy ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib )
+@ memset ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib )
+@ _strcpy ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib )
+@ strlen ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib )
+@ vsprintf ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib )
+@ print ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib )
+@ _f8eq ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib )
+@ _f8ge ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib )
+@ _f8lt ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib )
+@ _f8mul ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib )
+@ _f8ne ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib )
+@ _i8divu ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib )
+@ _i8modu ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib )
+@ cdata ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib )
+
+##########################################
+# (7) LOCAL EQU SYMBOL INFORMATION       #
+##########################################
+@ ncrt0_rsk ( C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\ncrt0_rsk.r30 )
+@ FONT ( C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\FONT.r30 )
+@ GLCD ( C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\GLCD.r30 )
+@ hwsetup ( C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\hwsetup.r30 )
+@ ISR_DEFs ( C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\ISR_DEFs.r30 )
+@ keyscan_4x4 ( C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\keyscan_4x4.r30 )
+@ main ( C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\main.r30 )
+@ 7segment ( C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\7segment.r30 )
+@ extra_program ( C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\extra_program.r30 )
+@ motor_sound ( C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\motor_sound.r30 )
+@ programs ( C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\programs.r30 )
+@ timer ( C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\timer.r30 )
+@ _i4div ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib )
+@ _i4divu ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib )
+@ _i4modu ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib )
+@ _i4mulu ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib )
+@ _mbase ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib )
+@ bcopy ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib )
+@ bzero ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib )
+@ malloc ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib )
+@ mdata ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib )
+@ memcpy ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib )
+@ memset ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib )
+@ _strcpy ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib )
+@ strlen ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib )
+@ vsprintf ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib )
+@ print ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib )
+@ _f8eq ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib )
+@ _f8ge ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib )
+@ _f8lt ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib )
+@ _f8mul ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib )
+@ _f8ne ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib )
+@ _i8divu ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib )
+@ _i8modu ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib )
+@ cdata ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib )
+
+##########################################
+# (8) LOCAL EQU BIT-SYMBOL INFORMATION   #
+##########################################
+@ ncrt0_rsk ( C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\ncrt0_rsk.r30 )
+@ FONT ( C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\FONT.r30 )
+@ GLCD ( C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\GLCD.r30 )
+@ hwsetup ( C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\hwsetup.r30 )
+@ ISR_DEFs ( C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\ISR_DEFs.r30 )
+@ keyscan_4x4 ( C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\keyscan_4x4.r30 )
+@ main ( C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\main.r30 )
+@ 7segment ( C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\7segment.r30 )
+@ extra_program ( C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\extra_program.r30 )
+@ motor_sound ( C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\motor_sound.r30 )
+@ programs ( C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\programs.r30 )
+@ timer ( C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\timer.r30 )
+@ _i4div ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib )
+@ _i4divu ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib )
+@ _i4modu ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib )
+@ _i4mulu ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib )
+@ _mbase ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib )
+@ bcopy ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib )
+@ bzero ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib )
+@ malloc ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib )
+@ mdata ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib )
+@ memcpy ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib )
+@ memset ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib )
+@ _strcpy ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib )
+@ strlen ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib )
+@ vsprintf ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib )
+@ print ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib )
+@ _f8eq ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib )
+@ _f8ge ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib )
+@ _f8lt ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib )
+@ _f8mul ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib )
+@ _f8ne ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib )
+@ _i8divu ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib )
+@ _i8modu ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib )
+@ cdata ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib )
+
+*** Mapping List ***
+
+SECTION                            START      END         SIZE   ALIGN
+
+data_SE
+                                  00000400  00000400         0   1
+bss_SE
+                                  00000400  00000400         0   2
+data_SO
+                                  00000400  00000400         0   1
+bss_SO
+                                  00000400  00000400         0   1
+data_NE
+                                  00000400  00000467        68   2
+bss_NE
+                                  00000468  000005c3       15c   2
+data_NO
+                                  000005c4  00000b17       554   1
+bss_NO
+                                  00000b18  00000d98       281   1
+stack
+                                  00000d99  00001398       600   1
+heap
+                                  00001399  00001698       300   1
+rom_NE
+                                  0000169a  0000169a         0   2
+rom_NO
+                                  0000169a  0000169a         0   1
+data_FE
+                                  00010000  00010000         0   1
+bss_FE
+                                  00010000  00010000         0   2
+data_FO
+                                  00010000  00010000         0   1
+bss_FO
+                                  00010000  00010000         0   1
+rom_FE
+                                  000f0000  000f0000         0   1
+rom_FO
+                                  000f0000  000f045d       45e   1
+data_SEI
+                                  000f045e  000f045e         0   1
+data_SOI
+                                  000f045e  000f045e         0   1
+data_NEI
+                                  000f045e  000f04c5        68   1
+data_NOI
+                                  000f04c6  000f0a19       554   1
+data_FEI
+                                  000f0a1a  000f0a1a         0   1
+data_FOI
+                                  000f0a1a  000f0a1a         0   1
+switch_table
+                                  000f0a1a  000f0a1a         0   1
+program
+                                  000f0a1a  000f5064      464b   1
+interrupt
+                                  000f5065  000f5177       113   1
+program_S
+                                  000f5178  000f5178         0   1
+vector
+                                  000ffd00  000ffdff       100   1
+svector
+                                  000ffe00  000ffe00         0   1
+fvector
+                                  000ffffc  000fffff         4   1
+
+*** Symbol List ***
+
+SECTION=
+FILE=                               START        END    SIZE
+  SYMBOL                            ADDR        SIZE    INFO      COUNTS  OPT
+
+SECTION=data_SE
+FILE=ncrt0_rsk
+                                  00000400  00000400         0
+  __SB__
+                                  00000400         0   none ,g         0
+
+SECTION=data_NE
+FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As1_Menu/NG2S901_As1_Menu/drivers/glcd/GLCD
+                                  00000400  00000411        12
+  _Font_System3x6
+                                  0000040c         6   data ,g         0
+  _Font_System5x8
+                                  00000400         6   data ,g         0
+  _Font_System7x8
+                                  00000406         6   data ,g         0
+
+FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As1_Menu/NG2S901_As1_Menu/drivers/keypad/keyscan_4x4
+                                  00000412  00000423        12
+  _keypad_matrix
+                                  00000412        10   data ,g         0
+  _hold_delay
+                                  00000422         2   data ,g         0
+
+FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As1_Menu/NG2S901_As1_Menu/main
+                                  00000424  00000427         4
+  _menu_root
+                                  00000424         4   data ,g         0
+
+FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As1_Menu/NG2S901_As1_Menu/drivers/7seg/7segment
+                                  00000428  00000449        22
+  _bcd_table
+                                  00000428        14   data ,g         0
+  _bcd_table_hex
+                                  0000043c         e   data ,g         0
+
+FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As1_Menu/NG2S901_As1_Menu/programs
+                                  0000044a  00000457         e
+  _shift
+                                  0000044a         2   data ,g         0
+  _shift_delay
+                                  0000044c         2   data ,g         0
+  _shift_delay_max
+                                  0000044e         2   data ,g         0
+  _dim_delay
+                                  00000450         2   data ,g         0
+  _dim_brightness
+                                  00000452         2   data ,g         0
+  _countup_delay
+                                  00000454         2   data ,g         0
+  _countup_delay_max
+                                  00000456         2   data ,g         0
+
+FILE=mdata
+                                  00000458  00000467        10
+  __memt
+                                  00000460         0   none ,g         0
+  __pool
+                                  00000458         0   none ,g         0
+
+SECTION=bss_NE
+FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As1_Menu/NG2S901_As1_Menu/drivers/isr/ISR_DEFs
+                                  00000468  00000473         c
+  _isr_callbacks
+                                  00000468         c   data ,g         0
+
+FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As1_Menu/NG2S901_As1_Menu/drivers/keypad/keyscan_4x4
+                                  00000474  00000483        10
+  _keypad_buff_cpy
+                                  00000474        10   data ,g         0
+
+FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As1_Menu/NG2S901_As1_Menu/main
+                                  00000484  00000487         4
+  _current_menu
+                                  00000484         4   data ,g         0
+
+FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As1_Menu/NG2S901_As1_Menu/drivers/motor/motor_sound
+                                  00000488  0000048b         4
+  _oldreg_dir
+                                  00000488         2   data ,g         0
+  _oldreg
+                                  0000048a         2   data ,g         0
+
+FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As1_Menu/NG2S901_As1_Menu/drivers/timer/timer
+                                  0000048c  000004ab        20
+  _timer_cback_list
+                                  0000048c        20   data ,g         0
+
+FILE=_mbase
+                                  000004ac  000004af         4
+  __mbase
+                                  000004ac         0   none ,g         0
+
+FILE=mdata
+                                  000004b0  000004b7         8
+  __mnext
+                                  000004b0         0   none ,g         0
+  __msize
+                                  000004b4         0   none ,g         0
+
+SECTION=data_NO
+FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As1_Menu/NG2S901_As1_Menu/drivers/glcd/FONT
+                                  000005c4  00000b12       54f
+  _FontSystem3x6
+                                  000005c4        c3   data ,g         0
+  _FontSystem5x8
+                                  00000687       1e5   data ,g         0
+  _FontSystem7x8
+                                  0000086c       2a7   data ,g         0
+
+FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As1_Menu/NG2S901_As1_Menu/drivers/isr/ISR_DEFs
+                                  00000b13  00000b13         1
+  _priority_counter
+                                  00000b13         1   data ,g         0
+
+FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As1_Menu/NG2S901_As1_Menu/programs
+                                  00000b14  00000b17         4
+  _shift_dir
+                                  00000b14         1   data ,g         0
+  _prog2_patt_type
+                                  00000b15         1   data ,g         0
+  _prog3_running
+                                  00000b16         1   data ,g         0
+  _prog4_running
+                                  00000b17         1   data ,g         0
+
+SECTION=bss_NO
+FILE=ncrt0_rsk
+                                  00000b18  00000b18         0
+  _u8CursorX
+                                  00000b18         1   data ,g         0
+
+FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As1_Menu/NG2S901_As1_Menu/drivers/glcd/GLCD
+                                  00000b18  00000b19         2
+  _u8CursorY
+                                  00000b19         1   data ,g         0
+
+FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As1_Menu/NG2S901_As1_Menu/drivers/keypad/keyscan_4x4
+                                  00000b1a  00000b2e        15
+  _keypad
+                                  00000b1a        15   data ,g         0
+
+SECTION=rom_FO
+FILE=cdata
+                                  000f035d  000f045d       101
+  __ctype
+                                  000f035d         0   none ,g         0
+
+SECTION=program
+FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As1_Menu/NG2S901_As1_Menu/drivers/glcd/GLCD
+                                  000f0a1a  000f11ea       7d1
+  _LcdDelay
+                                  000f0a1a        21   func ,g         0
+  _GLCD_Initialise
+                                  000f0a3c        88   func ,g         0
+  $LcdSelectSide
+                                  000f0ac4        41   func ,g         0
+  $LcdDataWrite
+                                  000f0b04        2d   func ,g         0
+  $LcdInstructionWrite
+                                  000f0b32        2e   func ,g         0
+  _LcdDataRead
+                                  000f0b60        33   func ,g         0
+  _LcdWaitBusy
+                                  000f0b92        2c   func ,g         0
+  _GLCD_ClearScreen
+                                  000f0bbe        53   func ,g         0
+  _GLCD_DisplayPicture
+                                  000f0c12        8f   func ,g         0
+  $LcdSetDot
+                                  000f0ca0        db   func ,g         0
+  $GLCD_WriteChar
+                                  000f0d7c       1c6   func ,g         0
+  _GLCD_WriteString
+                                  000f0f42        2e   func ,g         0
+  $GLCD_GoTo
+                                  000f0f70        43   func ,g         0
+  _GLCD_DisplayValue
+                                  000f0fb2        84   func ,g         0
+  $GLCD_Rectangle
+                                  000f1036        6e   func ,g         0
+  $GLCD_Circle
+                                  000f10a4       112   func ,g         0
+  _GLCD_getXY
+                                  000f11b6        35   func ,g         0
+
+FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As1_Menu/NG2S901_As1_Menu/drivers/init/hwsetup
+                                  000f11ec  000f12ce        e3
+  _Initialise
+                                  000f11ec        e3   func ,g         0
+
+FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As1_Menu/NG2S901_As1_Menu/drivers/isr/ISR_DEFs
+                                  000f12d0  000f13fe       12f
+  _uninstall_all_cback
+                                  000f12d0        1c   func ,g         0
+  _init_isr
+                                  000f12ec         4   func ,g         0
+  $is_isr_regular_int
+                                  000f12f0        14   func ,g         0
+  $set_isr_priority
+                                  000f1304        7b   func ,g         0
+  _install_cback
+                                  000f1380        1f   func ,g         0
+  $uninstall_cback
+                                  000f139e        1f   func ,g         0
+  _ADC_Interrupt
+                                  000f13be        16   func ,g         0
+  _INT0
+                                  000f13d4        16   func ,g         0
+
+FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As1_Menu/NG2S901_As1_Menu/drivers/keypad/keyscan_4x4
+                                  000f1400  000f15e6       1e7
+  _keyscan_4x4_init
+                                  000f1400        41   func ,g         0
+  _keypad_4x4_flush
+                                  000f1442        1f   func ,g         0
+  _keypad_delay
+                                  000f1460        15   func ,g         0
+  _keyscan_4x4_clear
+                                  000f1476        1b   func ,g         0
+  _keypad_4x4_scan
+                                  000f1490        97   func ,g         0
+  _Timer_A0
+                                  000f1528        22   func ,g         0
+  _KYB
+                                  000f154a        1c   func ,g         0
+  _keypad_4x4_read_buffer
+                                  000f1566        4d   func ,g         0
+  _getcommand
+                                  000f15b2         a   func ,g         0
+  _keypad_4x4_iskeypress
+                                  000f15bc         4   func ,g         0
+  _keypad_4x4_wait
+                                  000f15c0        11   func ,g         0
+  _keypad_4x4_wait_async
+                                  000f15d2         5   func ,g         0
+  _read_key
+                                  000f15d6        11   func ,g         0
+
+FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As1_Menu/NG2S901_As1_Menu/main
+                                  000f15e8  000f21d6       bef
+  _printf
+                                  000f15e8        5e   func ,g         0
+  _printf_at
+                                  000f1646        92   func ,g         0
+  _printf_at_rl
+                                  000f16d8        a8   func ,g         0
+  _menu_option_create
+                                  000f1780        6e   func ,g         0
+  _create_options
+                                  000f17ee        c6   func ,g         0
+  _menu_create
+                                  000f18b4       141   func ,g         0
+  $animate_menu_name
+                                  000f19f6        c6   func ,g         0
+  _menu_display_options
+                                  000f1abc       152   func ,g         0
+  _menu_draw_borders
+                                  000f1c0e        3f   func ,g         0
+  _menu_navigate
+                                  000f1c4c       34f   func ,g         0
+  _init_menu_tree
+                                  000f1f9c       1ac   func ,g         0
+  _intro
+                                  000f2148        74   func ,g         0
+
+FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As1_Menu/NG2S901_As1_Menu/drivers/7seg/7segment
+                                  000f21d8  000f227b        a4
+  _init_7seg
+                                  000f21d8        18   func ,g         0
+  $bin_2_bcd
+                                  000f21f0        2d   func ,g         0
+
+FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As1_Menu/NG2S901_As1_Menu/extra_program
+                                  000f227c  000f227e         3
+  _extra
+                                  000f227c         3   func ,g         0
+
+FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As1_Menu/NG2S901_As1_Menu/drivers/motor/motor_sound
+                                  000f2280  000f23d4       155
+  $motor_tone_us
+                                  000f2280        77   func ,g         0
+  $motor_tone
+                                  000f22f8        7a   func ,g         0
+  _init_motor_sound
+                                  000f2372        3a   func ,g         0
+
+FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As1_Menu/NG2S901_As1_Menu/programs
+                                  000f23d6  000f294a       575
+  $led_pattern_update
+                                  000f23d6       103   func ,g         0
+  _led_7seg
+                                  000f24da       107   func ,g         0
+  _int0_cback
+                                  000f25e0         5   func ,g         0
+  _int1_cback
+                                  000f25e6         6   func ,g         0
+  _adc_cback
+                                  000f25ec        e2   func ,g         0
+  _led_pattern
+                                  000f26ce        95   func ,g         0
+  _int0_stop_prog3
+                                  000f2762         4   func ,g         0
+  _keypad_scan
+                                  000f2766        ae   func ,g         0
+  _int0_stop_prog4
+                                  000f2814         4   func ,g         0
+  _keypad_selection
+                                  000f2818       11a   func ,g         0
+  _timer_set
+                                  000f2932         1   func ,g         0
+  _timer_cascade_int
+                                  000f2934         2   func ,g         0
+
+FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As1_Menu/NG2S901_As1_Menu/drivers/timer/timer
+                                  000f294c  000f2aee       1a3
+  _Timer_A1
+                                  000f294c        15   func ,g         0
+  _Timer_A2
+                                  000f2962        16   func ,g         0
+  _Timer_A3
+                                  000f2978        16   func ,g         0
+  _Timer_A4
+                                  000f298e        16   func ,g         0
+  _Timer_B0
+                                  000f29a4        16   func ,g         0
+  _Timer_B1
+                                  000f29ba        16   func ,g         0
+  _Timer_B2
+                                  000f29d0        16   func ,g         0
+
+FILE=_i4div
+                                  000f2af0  000f2b72        83
+  __i4div
+                                  000f2af0        83   func ,g         0
+
+FILE=_i4divu
+                                  000f2b74  000f2bc0        4d
+  __i4divU
+                                  000f2b74        4d   func ,g         0
+
+FILE=_i4modu
+                                  000f2bc2  000f2c0c        4b
+  __i4modU
+                                  000f2bc2        4b   func ,g         0
+
+FILE=_i4mulu
+                                  000f2c0e  000f2c29        1c
+  __i4mulU
+                                  000f2c0e        1c   func ,g         0
+
+FILE=bcopy
+                                  000f2c2a  000f2c5e        35
+  _bcopy
+                                  000f2c2a        35   func ,g         0
+
+FILE=bzero
+                                  000f2c60  000f2c87        28
+  _bzero
+                                  000f2c60        28   func ,g         0
+
+FILE=malloc
+                                  000f2c88  000f2e60       1d9
+  _malloc
+                                  000f2c88        63   func ,g         0
+
+FILE=memcpy
+                                  000f2e62  000f2eb0        4f
+  _memcpy
+                                  000f2e62        4f   func ,g         0
+
+FILE=memset
+                                  000f2eb2  000f2ef2        41
+  $memset
+                                  000f2eb2        41   func ,g         0
+
+FILE=_strcpy
+                                  000f2ef4  000f2f2f        3c
+  _strcpy
+                                  000f2ef4         0   func ,g         0
+
+FILE=strlen
+                                  000f2f30  000f2f5a        2b
+  _strlen
+                                  000f2f30        2b   func ,g         0
+
+FILE=vsprintf
+                                  000f2f5c  000f3012        b7
+  _vsprintf
+                                  000f2f5c        9f   func ,g         0
+
+FILE=print
+                                  000f3014  000f498c      1979
+  __print
+                                  000f3014       f53   func ,g         0
+  __f8prn
+                                  000f3f68       556   func ,g         0
+  $henkan1
+                                  000f44be        42   func ,g         0
+  $henkan2
+                                  000f4500        55   func ,g         0
+  __pri
+                                  000f4554       10e   func ,g         0
+  $_f8geti
+                                  000f4662       20f   func ,g         0
+
+FILE=_f8eq
+                                  000f498e  000f4a09        7c
+  __f8eq
+                                  000f498e        7c   func ,g         0
+
+FILE=_f8ge
+                                  000f4a0a  000f4ab0        a7
+  __f8ge
+                                  000f4a0a        a7   func ,g         0
+
+FILE=_f8lt
+                                  000f4ab2  000f4b58        a7
+  __f8lt
+                                  000f4ab2        a7   func ,g         0
+
+FILE=_f8mul
+                                  000f4b5a  000f4e20       2c7
+  __f8mul
+                                  000f4b5a       2c7   func ,g         0
+
+FILE=_f8ne
+                                  000f4e22  000f4e9d        7c
+  __f8ne
+                                  000f4e22        7c   func ,g         0
+
+FILE=_i8divu
+                                  000f4e9e  000f4f95        f8
+  __i8divU
+                                  000f4e9e        f8   func ,g         0
+
+FILE=_i8modu
+                                  000f4f96  000f5064        cf
+  __i8modU
+                                  000f4f96        cf   func ,g         0
+
+SECTION=interrupt
+FILE=ncrt0_rsk
+                                  000f5065  000f5177       113
+  $exit
+                                  000f5175         0   none ,g         0
+  _exit
+                                  000f5175         0   none ,g         0
+  dummy_int
+                                  000f5177         0   none ,g         0
+
