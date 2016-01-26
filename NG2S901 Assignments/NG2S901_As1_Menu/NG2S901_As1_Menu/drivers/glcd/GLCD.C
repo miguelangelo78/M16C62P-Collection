@@ -1,4 +1,4 @@
-#include "sfr62p.h"
+#include "../init/sfr62p.h" 
 #include "glcd.h"
 
 FONT_DEF Font_System3x6  = {3, 6,FontSystem3x6};

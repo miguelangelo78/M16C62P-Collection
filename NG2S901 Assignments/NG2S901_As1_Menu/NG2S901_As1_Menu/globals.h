@@ -3,7 +3,7 @@
 
 #include <stdlib.h>
 #include <stdarg.h>
-#include <sfr62p.h>
+#include "drivers/init/sfr62p.h" 
 #include "drivers/glcd/glcd.h" // include GLCD 
 #include "drivers/glcd/font.h" // include fonts
 #include "drivers/7seg/7segment.h"
@@ -20,7 +20,7 @@ int printf(const char _far fmt[], ...);
 
 enum MENU_BUTTONS {
 	OPEN = 'B',
-	BACK = '5',
+	BACK = '0',
 	UP = '3',
 	DOWN = '9'	
 };

@@ -128,6 +128,7 @@
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\extra_program.c" "User" "C source file" 2 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\globals.h" "User" "C header file" 2 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\main.c" "User" "C source file" 2 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\print.c" "User" "C source file" 2 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\programs.c" "User" "C source file" 2 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\programs.h" "User" "C header file" 2 
 [FOLDER]
@@ -190,34 +191,35 @@
 "Assembly source file" "09a6be4038051d10" 2 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\drivers\init\ncrt0_rsk.a30" "0c234ac999051d10" 2 
 [OPTIONS_Debug_Renesas M16C C Compiler]
-"C source file" "0d3e7d16f7151d10" 1 
-"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\drivers\7seg\7segment.c" "0d3e7d16f7151d10" 1 
-"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\drivers\glcd\FONT.C" "0d3e7d16f7151d10" 1 
-"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\drivers\glcd\GLCD.C" "0d3e7d16f7151d10" 1 
-"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\drivers\init\hwsetup.c" "0d3e7d16f7151d10" 1 
-"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\drivers\isr\ISR_DEFs.c" "0d3e7d16f7151d10" 1 
-"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\drivers\keypad\keyscan_4x4.c" "0d3e7d16f7151d10" 1 
-"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\drivers\motor\motor_sound.c" "0484766a30751d10" 1 
-"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\drivers\timer\timer.c" "0d3e7d16f7151d10" 1 
-"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\extra_program.c" "06b68b1ec1551d10" 1 
-"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\main.c" "0d3e7d16f7151d10" 1 
-"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\programs.c" "0b0eff70c1551d10" 1 
+"C source file" "008df82ef2851d10" 1 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\drivers\7seg\7segment.c" "008df82ef2851d10" 1 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\drivers\glcd\FONT.C" "008df82ef2851d10" 1 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\drivers\glcd\GLCD.C" "008df82ef2851d10" 1 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\drivers\init\hwsetup.c" "008df82ef2851d10" 1 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\drivers\isr\ISR_DEFs.c" "008df82ef2851d10" 1 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\drivers\keypad\keyscan_4x4.c" "008df82ef2851d10" 1 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\drivers\motor\motor_sound.c" "008df82ef2851d10" 1 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\drivers\timer\timer.c" "008df82ef2851d10" 1 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\extra_program.c" "008df82ef2851d10" 1 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\main.c" "008df82ef2851d10" 1 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\print.c" "008df82ef2851d10" 1 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\programs.c" "008df82ef2851d10" 1 
 [OPTIONS_Debug_Renesas M16C Configurator]
-"Single Shot" "0484766a30751d10" 6 
+"Single Shot" "02d942f0f2851d10" 6 
 [OPTIONS_Debug_Renesas M16C Librarian]
-"Single Shot" "0484766a30751d10" 5 
+"Single Shot" "02d942f0f2851d10" 5 
 [OPTIONS_Debug_Renesas M16C Linker]
-"Single Shot" "0eec866a30751d10" 3 
+"Single Shot" "001392f0f2851d10" 3 
 [OPTIONS_Debug_Renesas M16C Stype Converter]
-"Single Shot" "0eec866a30751d10" 4 
+"Single Shot" "001392f0f2851d10" 4 
 [OPTIONS_Debug]
 "" 0 
 "[V|VERSION|1] [B|COMMAND|1] [S|SPEC|UITRON4] " 6 
 "[V|VERSION|1] [B|DATALENGTH|1] [S|OUTPUT|^"$(CONFIGDIR)\$(PROJECTNAME).mot^"] " 4 
-"[V|VERSION|1] [S|INCLUDE|^"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\drivers\init^"] [S|OUTPUT|OBJECTCODE] [B|INSPECTOR|1] [S|OUTPUTPATH|^"$(CONFIGDIR)\$(FILELEAF).r30^"] [B|FFAR_POINTER|1] [B|SILENT|1]
-" 1 
 "[V|VERSION|1] [S|LIST|LM] [B|INSPECTOR|1] [S|OUTPUTPATH|^"$(CONFIGDIR)\$(FILELEAF).r30^"] " 2 
 "[V|VERSION|1] [S|MODE|CREATE|] [S|OUTPUT|^"$(CONFIGDIR)\$(PROJECTNAME).lib^"] " 5 
+"[V|VERSION|1] [S|OUTPUT|OBJECTCODE] [B|INSPECTOR|1] [S|OUTPUTPATH|^"$(CONFIGDIR)\$(FILELEAF).r30^"] [B|FFAR_POINTER|1] [B|SILENT|1]
+" 1 
 "[V|VERSION|2] [B|STARTUPLINK|1] [B|DEBUG|1] [B|MAP-S|1] [S|OUTPUT|^"$(CONFIGDIR)\$(PROJECTNAME).x30^"] [S|INPUTLIBRARY|^"L=nc30lib^"] " 3 
 [EXCLUDED_FILES_Debug]
 [LINKAGE_ORDER_Debug]
@@ -244,15 +246,16 @@
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\drivers\timer\timer.c" "060de837a9051d10" 1 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\extra_program.c" "06b68b1ec1551d10" 1 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\main.c" "0f0282aa99051d10" 1 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\print.c" "02d942f0f2851d10" 1 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\programs.c" "0b0eff70c1551d10" 1 
 [OPTIONS_Debug_M16C_E8a_SYSTEM_Renesas M16C Configurator]
-"Single Shot" "0484766a30751d10" 6 
+"Single Shot" "02d942f0f2851d10" 6 
 [OPTIONS_Debug_M16C_E8a_SYSTEM_Renesas M16C Librarian]
-"Single Shot" "0484766a30751d10" 5 
+"Single Shot" "02d942f0f2851d10" 5 
 [OPTIONS_Debug_M16C_E8a_SYSTEM_Renesas M16C Linker]
-"Single Shot" "0eec866a30751d10" 3 
+"Single Shot" "001392f0f2851d10" 3 
 [OPTIONS_Debug_M16C_E8a_SYSTEM_Renesas M16C Stype Converter]
-"Single Shot" "0eec866a30751d10" 4 
+"Single Shot" "001392f0f2851d10" 4 
 [OPTIONS_Debug_M16C_E8a_SYSTEM]
 "" 0 
 "[V|VERSION|1] [B|COMMAND|1] [S|SPEC|UITRON4] " 6 
@@ -279,15 +282,16 @@
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\drivers\timer\timer.c" "060de837a9051d10" 1 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\extra_program.c" "06b68b1ec1551d10" 1 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\main.c" "0f0282aa99051d10" 1 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\print.c" "02d942f0f2851d10" 1 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\programs.c" "0b0eff70c1551d10" 1 
 [OPTIONS_Release_Renesas M16C Configurator]
-"Single Shot" "0484766a30751d10" 6 
+"Single Shot" "02d942f0f2851d10" 6 
 [OPTIONS_Release_Renesas M16C Librarian]
-"Single Shot" "0484766a30751d10" 5 
+"Single Shot" "02d942f0f2851d10" 5 
 [OPTIONS_Release_Renesas M16C Linker]
-"Single Shot" "0eec866a30751d10" 3 
+"Single Shot" "001392f0f2851d10" 3 
 [OPTIONS_Release_Renesas M16C Stype Converter]
-"Single Shot" "0eec866a30751d10" 4 
+"Single Shot" "001392f0f2851d10" 4 
 [OPTIONS_Release]
 "" 0 
 "[V|VERSION|1] [B|COMMAND|1] [S|SPEC|UITRON4] " 6 

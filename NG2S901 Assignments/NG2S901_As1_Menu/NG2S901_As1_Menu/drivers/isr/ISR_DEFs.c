@@ -1,4 +1,4 @@
-#include "sfr62p.h"
+#include "../init/sfr62p.h" 
 
 /*******
  The timers are all defined in timer.c

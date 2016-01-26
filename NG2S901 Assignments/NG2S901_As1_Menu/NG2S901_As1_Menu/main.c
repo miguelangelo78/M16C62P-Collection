@@ -1,51 +1,6 @@
 #include "globals.h"
 
-int printf(const char _far fmt[], ...) {
-	char printf_buff[128];
-	int ret;
-	va_list args;
-	va_start(args, fmt);
-	ret = vsprintf(printf_buff, fmt, args);
-	va_end(args);
-	puts(printf_buff);
-	return ret;
-}
-
-/* Prints from left to right on a certain location */
-int printf_at(char * fmt, unsigned char x, unsigned char y, ...) {
-	Point p;
-	char printf_at_buff[128];
-	int ret;
-	va_list args;
-	va_start(args, fmt);
-	va_arg(args, unsigned char); va_arg(args, unsigned char); /* Iterate to skip the 2nd and 3rd arguments */
-	ret = vsprintf(printf_at_buff, fmt, args);
-	va_end(args);
-	p = GLCD_GoTo(x, y);
-	puts(printf_at_buff);
-	GLCD_GoTo(p.x, p.y);
-	return ret;
-}
-
-/* Prints from right to left on a certain location. 
-   Useful for printing on the right corner of the screen */
-int printf_at_rl(char * fmt, unsigned char x, unsigned char y, ...) {
-	Point p;
-	char printf_at_buff[128];
-	int ret;
-	va_list args;
-	va_start(args, fmt);
-	va_arg(args, unsigned char); va_arg(args, unsigned char); /* Iterate to skip the 2nd and 3rd arguments */
-	ret = vsprintf(printf_at_buff, fmt, args);
-	va_end(args);
-	p = GLCD_GoTo(x - strlen(printf_at_buff) * GLCD_CHAR_WIDTH + GLCD_CHAR_WIDTH, y);
-	puts(printf_at_buff);
-	GLCD_GoTo(p.x, p.y);
-	return ret;
-}
-
-#define NULLPROG (program_t)0
-#define SUBMENU NULLPROG
+#define SUBMENU (program_t)0
 
 typedef int (*program_t)(void); /* Program callback typedef */
 
@@ -63,8 +18,7 @@ typedef struct menu {
 	int options_count;
 } menu_t;
 
-menu_t * menu_root = 0;
-menu_t * current_menu;
+menu_t * menu_root = 0, *current_menu;
 
 menu_option_t * menu_option_create(char * option_name, program_t cback) {
 	menu_option_t * new_option = malloc(sizeof(menu_option_t));
@@ -128,13 +82,13 @@ void animate_menu_name(menu_t * current_menu, int offset) {
 	GLCD_GoTo(0, 2);
 }
 
-void menu_display_options(menu_t * current_menu, char cursor) {
+void menu_display_options(menu_t * current_menu) {
 	int i;
 	Point p;
 	for(i = 0; i < current_menu->options_count; i++) {
 		menu_option_t * option = current_menu->options[i];
 		if(!option->submenu && !option->prog_callback) continue; /* Invalid option (no submenu AND no program) */
-		printf(" %c %s\n", i==cursor?'>':'-', option->option_name);
+		printf(" %d- %s\n", i+1, option->option_name);
 		p = GLCD_getXY();
 		if(option->submenu) {
 			/* It's a menu */
@@ -149,23 +103,12 @@ void menu_display_options(menu_t * current_menu, char cursor) {
 	}
 }
 
-void menu_draw_borders(void) {
-	int i=0;
-	/* Draw bottom border: */
-	printf_at("_____________________", 0, GLCD_HEIGHT-1);
-	/* Draw left border: */
-	GLCD_Rectangle(0,8,1,70);
-	/* Draw right border: */
-	GLCD_Rectangle(126,8,127,70);
-}
-
-void menu_navigate(void) /* Aka menu/program navigator */
-{
+void menu_navigate(void) { /* Aka menu/program navigator */
 	Point p;
 	int i, ret = 0;
-	char cursor = 0;
 	char update_menu = 0;
 	char menu_name_offset_dir = 0; /* Update menu left or right */
+	char key;
 	int menu_name_offset = 0, delay = 0; /* Offset of menu from the center, and delay for updating the menu name */
 	int menu_name_bounds = 0; /* How far the name goes to the sides */
 	for(;;) {
@@ -176,7 +119,7 @@ void menu_navigate(void) /* Aka menu/program navigator */
 		animate_menu_name(current_menu, menu_name_offset);
 		menu_name_bounds = 10-strlen(current_menu->menu_name); /* Necessary for the animation of the menu */
 		/* Display options: */
-		menu_display_options(current_menu, cursor);
+		menu_display_options(current_menu);
 		/* Draw back button: */
 		if(current_menu->parent_menu)
 			printf_at_rl("%c-Back", GLCD_WIDTH - 7, GLCD_HEIGHT - 2, BACK);
@@ -186,20 +129,23 @@ void menu_navigate(void) /* Aka menu/program navigator */
 			ret = 0;
 		}
 		/* Draw borders: */
-		menu_draw_borders();
+		printf_at("_____________________", 0, GLCD_HEIGHT-1);
+		/* Draw left border: */
+		GLCD_Rectangle(0,8,1,70);
+		/* Draw right border: */
+		GLCD_Rectangle(126,8,127,70);
 		
 		/************** Keypad input section: *************************** */
 		keypad_4x4_wait(); /* Wait for keypad to cool down its buffer value. When it outputs a 0 then it's ready */
 		update_menu = 0;
 		while(!update_menu) {
 			/* Update menu name position: */
-			if(delay++>20000) {
+			if(delay++ > 20000) {
 				delay = 0;
 				if(menu_name_offset_dir) {
 					menu_name_offset--;
 					if(menu_name_offset < -menu_name_bounds) menu_name_offset_dir = 0;
-				}
-				else {
+				} else {
 					menu_name_offset++;
 					if(menu_name_offset > menu_name_bounds + 1) menu_name_offset_dir = 1;
 				}
@@ -207,47 +153,37 @@ void menu_navigate(void) /* Aka menu/program navigator */
 			}
 				
 			/* Read keypad: */
-			switch(getcommand()){
-				case OPEN:
-					if(current_menu->options[cursor]->submenu || current_menu->options[cursor]->prog_callback) {
-						/* Jump to either submenu or program: */
-						if(current_menu->options[cursor]->prog_callback) { /* Execute program */
-							GLCD_ClearScreen();
-							p = GLCD_GoTo(0, 0);
-							ret = current_menu->options[cursor]->prog_callback();
-							/* Cleanup everything from the program we just returned from: */
-							GLCD_GoTo(p.x, p.y);
-							uninstall_all_cback();
-						}
-						else { /* Open submenu */
-							current_menu = current_menu->options[cursor]->submenu;
-						}
-						menu_name_offset = 0;
-						cursor = 0;
-						update_menu = 1;
-					}
-					break;
+			switch((key = getcommand())){
 				case BACK:
 					if(current_menu->parent_menu) {
 						current_menu = current_menu->parent_menu;
-						cursor = 0;
 						update_menu = 1;
 						menu_name_offset = 0;
 					}
 					break;
-				case UP: 
-					if(cursor > 0) {
-						cursor--; 
-						update_menu = 1; 
+				default: 
+					if(key >= '1' && key <= '9') {
+						key-='1';
+						
+						if(key >= 0 && key < current_menu->options_count && 
+							(current_menu->options[key]->submenu || current_menu->options[key]->prog_callback)) {
+							/* Jump to either submenu or program: */
+							if(current_menu->options[key]->prog_callback) { /* Execute program */
+								GLCD_ClearScreen();
+								p = GLCD_GoTo(0, 0);
+								ret = current_menu->options[key]->prog_callback();
+								/* Cleanup everything from the program we just returned from: */
+								GLCD_GoTo(p.x, p.y);
+								uninstall_all_cback();
+							} else { /* Open submenu */
+								current_menu = current_menu->options[key]->submenu;
+							}
+							menu_name_offset = 0;
+							update_menu = 1;
+						}	
 					}
 					break;
-				case DOWN:
-					if(cursor < current_menu->options_count-1) {
-						cursor++; 
-						update_menu = 1; 
-					}
-					break;
-				case 0: continue; /* No key pressed  */
+				case 0: break; /* No key pressed  */
 			}
 		}
 	}
@@ -265,16 +201,6 @@ void init_menu_tree(void) {
 	current_menu = menu_root; /* Set initial current menu */
 }
 
-/* Show program intro explaining navigation controls: */
-void intro(void) {
-	GLCD_Rectangle(0, 0, GLCD_WIDTH+5, 5);
-	GLCD_WriteString("\n\n    NG2S901\n  Assignment 1\n", Font_System7x8);
-	printf("Use keys %c,%c,%c and %c\nto navigate.", UP, DOWN, BACK, OPEN);
-	printf_at("Press any key!", GLCD_WIDTH/2-40, GLCD_HEIGHT-1);
-	GLCD_Rectangle(0, 48, GLCD_WIDTH+5, 48);
-	read_key();
-}
-
 void main(void)
 {
 	Initialise();
@@ -284,5 +210,4 @@ void main(void)
 	init_menu_tree();
 	intro();
 	menu_navigate();
-	for(;;);
 }

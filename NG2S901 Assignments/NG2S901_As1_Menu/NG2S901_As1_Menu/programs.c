@@ -122,7 +122,7 @@ int led_7seg(void) {
 			mode = !mode; /* Toggle mode */
 			keypad_4x4_wait(); /* Wait for user to release button */
 			break;
-		case '5': 
+		case BACK: 
 			running = 0; /* Stop program */
 			break;
 		}
@@ -171,7 +171,7 @@ int led_pattern(void) {
 		/* Update LED's animation: */
 		led_pattern_update(prog2_patt_type);
 		switch(getcommand()) {
-			case '5': running = 0; break;	
+			case BACK: running = 0; break;	
 		}
 	}
 	
@@ -285,9 +285,17 @@ int timer_cascade_int(void) {
 	
 }
 
+/* Show program intro explaining navigation controls: */
+void intro(void) {
+	GLCD_Rectangle(0, 0, GLCD_WIDTH+5, 5);
+	GLCD_WriteString("\n\n    NG2S901\n\n  Assignment 1\n", Font_System7x8);
+	printf_at("Press any key!", GLCD_WIDTH/2-40, GLCD_HEIGHT-1);
+	GLCD_Rectangle(0, 48, GLCD_WIDTH+5, 48);
+	read_key();
+}
+
 int info(void) {
 	printf("----------\nMenu controls:\n3 - Up\n9 - Down\nB - Open menu/program\n5 - Back/return\n----------\nMade by M.S. 14031329");
 	read_key();
-	
 	return 0;
 }

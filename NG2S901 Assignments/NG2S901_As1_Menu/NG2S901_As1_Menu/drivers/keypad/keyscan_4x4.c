@@ -1,4 +1,4 @@
-#include <sfr62p.h>
+#include "../init/sfr62p.h" 
 #include <string.h>
 
 #define KEYPAD_WIDTH 4

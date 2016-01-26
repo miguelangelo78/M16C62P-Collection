@@ -8,6 +8,7 @@ int keypad_selection(void);
 int keypad_scan(void);
 int led_pattern(void);
 int led_7seg(void);
+void intro(void);
 int extra(void);
 
 #endif

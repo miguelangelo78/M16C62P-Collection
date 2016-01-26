@@ -1,4 +1,4 @@
-#include "sfr62p.h" 
+#include "../init/sfr62p.h" 
 
 /* 7 Segment display pins: */
 #define SEGDISP_RIGHT_PWRDIR P4D_2
