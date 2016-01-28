@@ -22,11 +22,11 @@
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\drivers\init\sect30.inc" 88 56 961 259 0 7 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\drivers\init\sfr62p.h" 0 0 961 259 0 1 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\drivers\keypad\keyscan_4x4.c" 176 112 961 259 0 8 
-"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\drivers\uart\uart.c" 0 0 961 259 0 5 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\drivers\uart\uart.c" -4 -29 1145 404 1 5 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\drivers\uart\uart.h" 176 112 961 259 0 4 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\extra_program.c" 44 28 961 259 0 6 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\globals.h" 132 84 961 259 0 2 
-"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\main.c" -4 -29 1145 404 1 0 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\main.c" 0 0 1145 404 0 0 
 [LOADED_PROJECTS]
 "NG2S901_As1_Menu" 
 [END]

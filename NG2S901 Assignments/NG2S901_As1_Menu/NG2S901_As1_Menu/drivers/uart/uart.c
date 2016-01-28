@@ -2,7 +2,7 @@
 
 uart_rx_cback_t uart_cback_list[1];
 
-#define BAUD_RATE 115200
+#define BAUD_RATE 9600
 
 void delay(unsigned long delay) {
 	for(; delay; --delay);
@@ -66,13 +66,13 @@ void uart_init(void) {
 	/* disable irqs before setting irq registers */
     disable_interrupt();			
 	/* Enable UART0 receive interrupt, priority level 4 */		
-	S0RIC = 0x04;
+	//S0RIC = 0x04;
 	/* Enable all interrupts */			
 	enable_interrupt();			
 
 	/* UART0 transmit/receive control register 1 */
 	/* enable transmit and receive */
-  	U0C1 = 0x05; 		
+	U0C1 = 0x05; 		
 		/*  00000101	enable transmit and receive  
 		b0		TE			Transmit enable bit
 		b1		TI			Transmit buffer empty flag
@@ -107,6 +107,24 @@ void uart_writestr(char * str) {
 		uart_write(str[i]);
 }
 
+char uart_read(void) {
+	int j;
+	volatile char data;
+	while(!(U0C1 & 0x08));
+	data = U0RBL;
+	for(j=0;j<2000;j++);
+	return data;
+}
+
+char uart_read_async(void) {
+	int j;
+	volatile char data;
+	if(!(U0C1 & 0x08)) return 0;
+	data = U0RBL;
+	for(j=0;j<2000;j++);
+	return data;
+}
+
 void uart_install_cback(uart_rx_cback_t cback) {
 	uart_cback_list[0] = cback;
 }
@@ -118,7 +136,7 @@ void uart_uninstall_cback(void) {
 void U0rec_ISR(void) {
 	/* make sure receive is complete */
 	while(RI_U0C1 == 0);
-
+	
 	/* read in received data */
 	if(uart_cback_list[0]) uart_cback_list[0](U0RB);
 }

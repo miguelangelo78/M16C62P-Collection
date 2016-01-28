@@ -489,7 +489,7 @@ void intro(void) {
 }
 
 int info(void) {
-	printf("--------------------\nMade by Miguel Santos\n\n14031329 MEng Comp.\n\nSystems Engineering\n--------------------\n> Any key to return");
+	printf("--------------------\nMade by Miguel Santos\n\n14031329 MEng C.S.E.\n\nHanded in 01/02/16\n--------------------\n> Any key to return");
 	read_key();
 	return 0;
 }
