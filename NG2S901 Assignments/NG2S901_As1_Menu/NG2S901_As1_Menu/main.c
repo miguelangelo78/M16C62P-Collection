@@ -105,7 +105,7 @@ void menu_display_options(menu_t * current_menu) {
 
 void menu_navigate(void) { /* Aka menu/program navigator */
 	Point p;
-	int i, ret = 0;
+	int ret = 0;
 	char update_menu = 0;
 	char menu_name_offset_dir = 0; /* Update menu left or right */
 	char key;
@@ -113,26 +113,20 @@ void menu_navigate(void) { /* Aka menu/program navigator */
 	int menu_name_bounds = 0; /* How far the name goes to the sides */
 	for(;;) {
 		/************* Display current menu section: *********************/
-		GLCD_ClearScreen();
-		GLCD_GoTo(0, 0);
+		GLCD_ClearScreen(); GLCD_GoTo(0, 0);
 		/* Print menu name aligned on center */
 		animate_menu_name(current_menu, menu_name_offset);
 		menu_name_bounds = 10-strlen(current_menu->menu_name); /* Necessary for the animation of the menu */
 		/* Display options: */
 		menu_display_options(current_menu);
 		/* Draw back button: */
-		if(current_menu->parent_menu)
-			printf_at_rl("%c-Back", GLCD_WIDTH - 7, GLCD_HEIGHT - 2, BACK);
+		if(current_menu->parent_menu) printf_at_rl("%c-Back", GLCD_WIDTH - 7, GLCD_HEIGHT - 2, BACK);
 		/* Show return code from recently ran program: */
-		if(ret) {
-			printf_at("ret=%d", 3, GLCD_HEIGHT-2, ret);
-			ret = 0;
-		}
+		if(ret) { printf_at("ret=%d", 3, GLCD_HEIGHT-2, ret); ret = 0; }
 		/* Draw borders: */
 		printf_at("_____________________", 0, GLCD_HEIGHT-1);
-		/* Draw left border: */
-		GLCD_Rectangle(0,8,1,70);
-		/* Draw right border: */
+		/* Draw left and border: */
+		GLCD_Rectangle(0,8,1,70); 
 		GLCD_Rectangle(126,8,127,70);
 		
 		/************** Keypad input section: *************************** */
@@ -156,6 +150,7 @@ void menu_navigate(void) { /* Aka menu/program navigator */
 			switch((key = getcommand())){
 				case BACK:
 					if(current_menu->parent_menu) {
+						motor_tone(200,10);
 						current_menu = current_menu->parent_menu;
 						update_menu = 1;
 						menu_name_offset = 0;
@@ -167,6 +162,7 @@ void menu_navigate(void) { /* Aka menu/program navigator */
 						
 						if(key >= 0 && key < current_menu->options_count && 
 							(current_menu->options[key]->submenu || current_menu->options[key]->prog_callback)) {
+							motor_tone(100,10);
 							/* Jump to either submenu or program: */
 							if(current_menu->options[key]->prog_callback) { /* Execute program */
 								GLCD_ClearScreen();
@@ -175,6 +171,9 @@ void menu_navigate(void) { /* Aka menu/program navigator */
 								/* Cleanup everything from the program we just returned from: */
 								GLCD_GoTo(p.x, p.y);
 								uninstall_all_cback();
+								uart_deinit();
+								stop_motor();
+								timer_deinit_all();
 							} else { /* Open submenu */
 								current_menu = current_menu->options[key]->submenu;
 							}
@@ -206,6 +205,7 @@ void main(void)
 	Initialise();
 	GLCD_Initialise();
 	keyscan_4x4_init();
+	init_motor_sound();
 	init_isr();
 	init_menu_tree();
 	intro();

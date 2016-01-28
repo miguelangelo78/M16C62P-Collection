@@ -168,7 +168,7 @@ switch_table_top:
 	.lword	dummy_int		; AD Convert (for user) (vector 14)
 	.lword	dummy_int		; vector 15
 	.lword	dummy_int		; vector 16
-	.lword	dummy_int		; uart0 trance (for user) (vector 17)
+	.lword  dummy_int		; vector 17
 	.lword	dummy_int		; uart0 receive (for user) (vector 18)
 	.lword	dummy_int		; uart1 trance (for user) (vector 19)
 	.lword	dummy_int		; uart1 receive (for user) (vector 20)
@@ -203,7 +203,8 @@ switch_table_top:
 	.lword	dummy_int		; uart2 transmit(for user)(vector 15)=
 	.lword	dummy_int		; uart2 receive(for user)(vector 16)
 	.lword	dummy_int		; uart0 transmit(for user)(vector 17)
-	.lword	dummy_int		; uart0 receive(for user)(vector 18)
+.glb	_U0rec_ISR
+	.lword	_U0rec_ISR		; uart0 trance (for user) (vector 17)
 	.lword	dummy_int		; uart1 transmit(for user)(vector 19)
 	.lword	dummy_int		; uart1 receive(for user)(vector 20)
 .glb	_Timer_A0

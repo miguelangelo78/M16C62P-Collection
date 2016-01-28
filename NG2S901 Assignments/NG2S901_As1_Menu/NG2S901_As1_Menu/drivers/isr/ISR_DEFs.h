@@ -22,6 +22,9 @@
 #pragma interrupt INT1
 	void INT1(void);
 
+#pragma interrupt U0rec_ISR
+void U0rec_ISR(void);
+
 void init_isr(void);
 void install_cback(isr_cback_t callback, char cback_index);
 void uninstall_cback(char cback_index);

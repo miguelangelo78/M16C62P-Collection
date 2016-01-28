@@ -9,6 +9,8 @@
 #include "drivers/7seg/7segment.h"
 #include "drivers/keypad/keyscan_4x4.h"
 #include "drivers/motor/motor.h"
+#include "drivers/timer/timer.h"
+#include "drivers/uart/uart.h"
 #include "programs.h"
 
 /* We're using a default font from now on: */
@@ -29,5 +31,7 @@ inline long map(long x, long in_min, long in_max, long out_min, long out_max)
 {
   return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
 }
+
+#define	f1_CLK_SPEED 24000000
 
 #endif
