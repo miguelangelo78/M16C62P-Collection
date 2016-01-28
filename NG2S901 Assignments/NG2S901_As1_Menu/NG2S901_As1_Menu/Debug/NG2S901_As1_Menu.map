@@ -5,49 +5,49 @@ c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\bin\ln30.exe @C:
 
 # LINK FILE INFORMATION
 ncrt0_rsk (C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\ncrt0_rsk.r30)
-	Jan 28 14:54:39 2016
+	Jan 28 15:25:19 2016
 
 FONT (C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\FONT.r30)
-	Jan 28 14:54:36 2016
+	Jan 28 15:25:16 2016
 
 GLCD (C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\GLCD.r30)
-	Jan 28 14:54:36 2016
+	Jan 28 15:25:16 2016
 
 hwsetup (C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\hwsetup.r30)
-	Jan 28 14:54:37 2016
+	Jan 28 15:25:17 2016
 
 ISR_DEFs (C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\ISR_DEFs.r30)
-	Jan 28 14:54:37 2016
+	Jan 28 15:25:17 2016
 
 keyscan_4x4 (C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\keyscan_4x4.r30)
-	Jan 28 14:54:37 2016
+	Jan 28 15:25:17 2016
 
 main (C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\main.r30)
-	Jan 28 14:54:38 2016
+	Jan 28 15:25:18 2016
 
 7segment (C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\7segment.r30)
-	Jan 28 14:54:36 2016
+	Jan 28 15:25:16 2016
 
 extra_program (C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\extra_program.r30)
-	Jan 28 14:54:38 2016
+	Jan 28 15:25:18 2016
 
 motor (C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\motor.r30)
-	Jan 28 14:54:37 2016
+	Jan 28 15:25:17 2016
 
 motor_sound (C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\motor_sound.r30)
-	Jan 28 14:54:37 2016
+	Jan 28 15:25:17 2016
 
 print (C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\print.r30)
-	Jan 28 14:54:39 2016
+	Jan 28 15:25:19 2016
 
 programs (C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\programs.r30)
-	Jan 28 14:54:39 2016
+	Jan 28 15:25:19 2016
 
 timer (C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\timer.r30)
-	Jan 28 14:54:38 2016
+	Jan 28 15:25:18 2016
 
 uart (C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\uart.r30)
-	Jan 28 14:54:38 2016
+	Jan 28 15:25:18 2016
 
 _f4tof8 (c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib)
 	Feb 15 20:19:32 2007
@@ -244,67 +244,67 @@ program                          REL CODE    0F0B6F 000000       ncrt0_rsk
                                  REL CODE    0F23A4 000198 2     print
                                  REL CODE    0F253C 000C2D 2     programs
                                  REL CODE    0F316A 00038A 2     timer
-                                 REL CODE    0F34F4 000121 2     uart
-                                 REL CODE    0F3616 000086 2     _f4tof8
-                                 REL CODE    0F369C 000025 2     _f4toi4u
-                                 REL CODE    0F36C2 00091B 2     _f8add
-                                 REL CODE    0F3FDE 000054 2     _f8ltor
-                                 REL CODE    0F4032 0002C7 2     _f8mul
-                                 REL CODE    0F42FA 000025 2     _f8toi4u
-                                 REL CODE    0F4320 000111 2     _ftol
-                                 REL CODE    0F4432 000083 2     _i4div
-                                 REL CODE    0F44B6 00004D 2     _i4divu
-                                 REL CODE    0F4504 00004B 2     _i4modu
-                                 REL CODE    0F4550 00001C 2     _i4mulu
-                                 REL CODE    0F456C 000022 2     _i4tof8
-                                 REL CODE    0F458E 000022 2     _i4utof4
-                                 REL CODE    0F45B0 0000D4 2     _ltof
-                                 REL CODE    0F4684 000035 2     bcopy
-                                 REL CODE    0F46BA 000028 2     bzero
-                                 REL CODE    0F46E2 0001D9 2     malloc
-                                 REL CODE    0F48BC 00004F 2     memcpy
-                                 REL CODE    0F490C 000041 2     memset
-                                 REL CODE    0F494E 000035 2     strcmp
-                                 REL CODE    0F4984 00003C 2     _strcpy
-                                 REL CODE    0F49C0 00002B 2     strlen
-                                 REL CODE    0F49EC 0000B7 2     vsprintf
-                                 REL CODE    0F4AA4 0000B0 2     _f4muls
-                                 REL CODE    0F4B54 000032 2     _f4rets
-                                 REL CODE    0F4B86 000046 2     _f4ltor
-                                 REL CODE    0F4BCC 00003E 2     _f4rtol
-                                 REL CODE    0F4C0A 000041 2     _f8rtol
-                                 REL CODE    0F4C4C 001979 2     print
-                                 REL CODE    0F65C6 00007C 2     _f8eq
-                                 REL CODE    0F6642 0000A7 2     _f8ge
-                                 REL CODE    0F66EA 0000A7 2     _f8lt
-                                 REL CODE    0F6792 00007C 2     _f8ne
-                                 REL CODE    0F680E 0000F8 2     _i8divu
-                                 REL CODE    0F6906 0000CF 2     _i8modu
-interrupt                        REL CODE    0F69D5 000000       ncrt0_rsk
-                                 REL CODE    0F69D5 000113       ncrt0_rsk
-program_S                        REL CODE    0F6AE8 000000       ncrt0_rsk
+                                 REL CODE    0F34F4 000165 2     uart
+                                 REL CODE    0F365A 000086 2     _f4tof8
+                                 REL CODE    0F36E0 000025 2     _f4toi4u
+                                 REL CODE    0F3706 00091B 2     _f8add
+                                 REL CODE    0F4022 000054 2     _f8ltor
+                                 REL CODE    0F4076 0002C7 2     _f8mul
+                                 REL CODE    0F433E 000025 2     _f8toi4u
+                                 REL CODE    0F4364 000111 2     _ftol
+                                 REL CODE    0F4476 000083 2     _i4div
+                                 REL CODE    0F44FA 00004D 2     _i4divu
+                                 REL CODE    0F4548 00004B 2     _i4modu
+                                 REL CODE    0F4594 00001C 2     _i4mulu
+                                 REL CODE    0F45B0 000022 2     _i4tof8
+                                 REL CODE    0F45D2 000022 2     _i4utof4
+                                 REL CODE    0F45F4 0000D4 2     _ltof
+                                 REL CODE    0F46C8 000035 2     bcopy
+                                 REL CODE    0F46FE 000028 2     bzero
+                                 REL CODE    0F4726 0001D9 2     malloc
+                                 REL CODE    0F4900 00004F 2     memcpy
+                                 REL CODE    0F4950 000041 2     memset
+                                 REL CODE    0F4992 000035 2     strcmp
+                                 REL CODE    0F49C8 00003C 2     _strcpy
+                                 REL CODE    0F4A04 00002B 2     strlen
+                                 REL CODE    0F4A30 0000B7 2     vsprintf
+                                 REL CODE    0F4AE8 0000B0 2     _f4muls
+                                 REL CODE    0F4B98 000032 2     _f4rets
+                                 REL CODE    0F4BCA 000046 2     _f4ltor
+                                 REL CODE    0F4C10 00003E 2     _f4rtol
+                                 REL CODE    0F4C4E 000041 2     _f8rtol
+                                 REL CODE    0F4C90 001979 2     print
+                                 REL CODE    0F660A 00007C 2     _f8eq
+                                 REL CODE    0F6686 0000A7 2     _f8ge
+                                 REL CODE    0F672E 0000A7 2     _f8lt
+                                 REL CODE    0F67D6 00007C 2     _f8ne
+                                 REL CODE    0F6852 0000F8 2     _i8divu
+                                 REL CODE    0F694A 0000CF 2     _i8modu
+interrupt                        REL CODE    0F6A19 000000       ncrt0_rsk
+                                 REL CODE    0F6A19 000113       ncrt0_rsk
+program_S                        REL CODE    0F6B2C 000000       ncrt0_rsk
 vector                           ABS ROMDATA 0FFD00 000100       ncrt0_rsk
 svector                          ABS ROMDATA 0FFE00 000000       ncrt0_rsk
 fvector                          ABS ROMDATA 0FFFFC 000004       ncrt0_rsk
 # Total -------------------------------------------------------------------
                                      DATA           0012AB(0004779) Byte(s)
                                      ROMDATA        000C73(0003187) Byte(s)
-                                     CODE           005F79(0024441) Byte(s)
+                                     CODE           005FBD(0024509) Byte(s)
 
 ##########################################
 # (3) GLOBAL LABEL INFORMATION           #
 ##########################################
 $GLCD_Circle       0f11fa  $GLCD_GoTo         0f10c6  $GLCD_Rectangle    0f118c
 $GLCD_WriteChar    0f0ed2  $LcdDataWrite      0f0c5a  $LcdInstructionW   0f0c88
-$LcdSelectSide     0f0c1a  $LcdSetDot         0f0df6  $_f4ltor           0f4b86
-$_f4rtol           0f4bcc  $_f8geti           0f629a  $_f8ltor           0f3fde
-$_f8rtol           0f4c0a  $_ftol             0f4320  $_inmod            0f64aa
-$_ltof             0f45b0  $animate_menu_na   0f19b4  $bin_2_bcd         0f2136
-$exit              0f6ae5  $getmem            0f4746  $henkan1           0f60f6
-$henkan2           0f6138  $is_isr_regular_   0f1446  $led_pattern_upd   0f253c
-$memset            0f490c  $motor_tone        0f22c6  $motor_tone_us     0f224e
+$LcdSelectSide     0f0c1a  $LcdSetDot         0f0df6  $_f4ltor           0f4bca
+$_f4rtol           0f4c10  $_f8geti           0f62de  $_f8ltor           0f4022
+$_f8rtol           0f4c4e  $_ftol             0f4364  $_inmod            0f64ee
+$_ltof             0f45f4  $animate_menu_na   0f19b4  $bin_2_bcd         0f2136
+$exit              0f6b29  $getmem            0f478a  $henkan1           0f613a
+$henkan2           0f617c  $is_isr_regular_   0f1446  $led_pattern_upd   0f253c
+$memset            0f4950  $motor_tone        0f22c6  $motor_tone_us     0f224e
 $seg_update        0f2164  $set_isr_priorit   0f145a  $timer_deinit      0f340a
-$timer_uninstall   0f34e0  $uart_cback        0f21c2  $uart_write        0f3552
+$timer_uninstall   0f34e0  $uart_cback        0f21c2  $uart_write        0f3594
 $uninstall_cback   0f14f4  _ADC_Interrupt     0f1514  _FontSystem3x6     0005d4
 _FontSystem5x8     000697  _FontSystem7x8     00087c  _Font_System3x6    00040c
 _Font_System5x8    000400  _Font_System7x8    000406  _GLCD_ClearScree   0f0d14
@@ -314,23 +314,23 @@ _INT1              0f1540  _Initialise        0f1342  _KYB               0f16a0
 _LcdDataRead       0f0cb6  _LcdDelay          0f0b70  _LcdWaitBusy       0f0ce8
 _Timer_A0          0f167e  _Timer_A1          0f316a  _Timer_A2          0f3180
 _Timer_A3          0f3196  _Timer_A4          0f31ac  _Timer_B0          0f31c2
-_Timer_B1          0f31d8  _Timer_B2          0f31ee  _U0rec_ISR         0f35f8
-__ctype            0f04ad  __f4mul            0f4ac8  __f4retInf         0f4b5e
-__f4retNaN         0f4b54  __f4retNum         0f4b6e  __f4retZero        0f4b5a
-__f4tof8           0f3616  __f4toi4U          0f369c  __f8add            0f36c2
-__f8eq             0f65c6  __f8ge             0f6642  __f8lt             0f66ea
-__f8mul            0f4032  __f8ne             0f6792  __f8prn            0f5ba0
-__f8toi4U          0f42fa  __i4Utof4          0f458e  __i4div            0f4432
-__i4divU           0f44b6  __i4modU           0f4504  __i4mulU           0f4550
-__i4tof8           0f456c  __i8divU           0f680e  __i8modU           0f6906
+_Timer_B1          0f31d8  _Timer_B2          0f31ee  _U0rec_ISR         0f363c
+__ctype            0f04ad  __f4mul            0f4b0c  __f4retInf         0f4ba2
+__f4retNaN         0f4b98  __f4retNum         0f4bb2  __f4retZero        0f4b9e
+__f4tof8           0f365a  __f4toi4U          0f36e0  __f8add            0f3706
+__f8eq             0f660a  __f8ge             0f6686  __f8lt             0f672e
+__f8mul            0f4076  __f8ne             0f67d6  __f8prn            0f5be4
+__f8toi4U          0f433e  __i4Utof4          0f45d2  __i4div            0f4476
+__i4divU           0f44fa  __i4modU           0f4548  __i4mulU           0f4594
+__i4tof8           0f45b0  __i8divU           0f6852  __i8modU           0f694a
 __mbase            0004bc  __memt             000464  __mnext            0004c0
-__msize            0004c4  __pool             00045c  __pri              0f618c
-__print            0f4c4c  _adc_cback         0f2752  _bcd_table         000428
-_bcd_table_hex     00043c  _bcopy             0f4684  _bzero             0f46ba
+__msize            0004c4  __pool             00045c  __pri              0f61d0
+__print            0f4c90  _adc_cback         0f2752  _bcd_table         000428
+_bcd_table_hex     00043c  _bcopy             0f46c8  _bzero             0f46fe
 _counting          000b28  _countup_delay     000454  _countup_delay_m   000456
 _create_options    0f17ac  _ctr1              000458  _ctr2              00045a
 _current_menu      000488  _deinit_motor_so   0f237a  _delay             0f34f4
-_dim_brightness    000452  _dim_delay         000450  _exit              0f6ae5
+_dim_brightness    000452  _dim_delay         000450  _exit              0f6b29
 _extra             0f21e2  _extra_close_cba   0f21de  _getcommand        0f1708
 _hold_delay        000422  _info              0f3154  _init_7seg         0f211e
 _init_isr          0f1442  _init_menu_tree    0f1f52  _init_motor_soun   0f2340
@@ -342,7 +342,7 @@ _keypad_4x4_wait   0f1716  _keypad_4x4_wait   0f1728  _keypad_buff_cpy   000478
 _keypad_delay      0f15b6  _keypad_matrix     000412  _keypad_scan       0f28cc
 _keypad_selectio   0f298a  _keyscan_4x4_cle   0f15cc  _keyscan_4x4_ini   0f1556
 _led_7seg          0f2640  _led_pattern       0f2834  _main              0f20fe
-_malloc            0f46e2  _memcpy            0f48bc  _menu_create       0f1872
+_malloc            0f4726  _memcpy            0f4900  _menu_create       0f1872
 _menu_display_op   0f1a7a  _menu_navigate     0f1bc6  _menu_option_cre   0f173e
 _menu_root         000424  _oldreg            00048e  _oldreg_dir        00048c
 _printf            0f23a4  _printf_at         0f2402  _printf_at_rl      0f2494
@@ -350,15 +350,15 @@ _priority_counte   000b23  _prog2_patt_type   000b25  _prog3_running     000b26
 _prog4_running     000b27  _prog5_timer_cal   0f2c84  _read_key          0f172c
 _running           000b40  _shift             00044a  _shift_delay       00044c
 _shift_delay_max   00044e  _shift_dir         000b24  _stop_motor        0f2244
-_stopwatch         000490  _strcmp            0f494e  _strcpy            0f4984
-_strlen            0f49c0  _timer_cascade_i   0f3066  _timer_cascaded_   0f302a
+_stopwatch         000490  _strcmp            0f4992  _strcpy            0f49c8
+_strlen            0f4a04  _timer_cascade_i   0f3066  _timer_cascaded_   0f302a
 _timer_cascaded_   0f3048  _timer_cback_lis   000498  _timer_deinit_al   0f34b6
 _timer_init        0f3204  _timer_install_c   0f34cc  _timer_set         0f2cdc
 _u8CursorX         000b29  _u8CursorY         000b2a  _uart_cback_list   0004b8
-_uart_deinit       0f3534  _uart_init         0f350e  _uart_install_cb   0f35de
-_uart_read         0f3590  _uart_read_async   0f35b6  _uart_uninstall_   0f35ee
-_uart_writestr     0f3568  _uninstall_all_c   0f1426  _vsprintf          0f49ec
-dummy_int          0f6ae7  start              0f69d5  
+_uart_deinit       0f3576  _uart_init         0f350e  _uart_install_cb   0f3622
+_uart_read         0f35d2  _uart_read_async   0f35f8  _uart_uninstall_   0f3632
+_uart_writestr     0f35aa  _uninstall_all_c   0f1426  _vsprintf          0f4a30
+dummy_int          0f6b2b  start              0f6a19  
 
 ##########################################
 # (4) GLOBAL EQU SYMBOL INFORMATION      #
@@ -595,11 +595,11 @@ data_FOI
 switch_table
                                   000f0b6f  000f0b6f         0   1
 program
-                                  000f0b6f  000f69d4      5e66   1
+                                  000f0b6f  000f6a18      5eaa   1
 interrupt
-                                  000f69d5  000f6ae7       113   1
+                                  000f6a19  000f6b2b       113   1
 program_S
-                                  000f6ae8  000f6ae8         0   1
+                                  000f6b2c  000f6b2c         0   1
 vector
                                   000ffd00  000ffdff       100   1
 svector
@@ -991,224 +991,224 @@ FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As1_Menu/NG2S901_As1_Me
                                   000f34cc        13   func ,g         0
 
 FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As1_Menu/NG2S901_As1_Menu/drivers/uart/uart
-                                  000f34f4  000f3614       121
+                                  000f34f4  000f3658       165
   _delay
                                   000f34f4        19   func ,g         0
   _uart_init
-                                  000f350e        26   func ,g         0
+                                  000f350e        68   func ,g         0
   _uart_deinit
-                                  000f3534        1f   func ,g         0
+                                  000f3576        1f   func ,g         0
   $uart_write
-                                  000f3552        15   func ,g         0
+                                  000f3594        15   func ,g         0
   _uart_writestr
-                                  000f3568        29   func ,g         0
+                                  000f35aa        29   func ,g         0
   _uart_read
-                                  000f3590        25   func ,g         0
+                                  000f35d2        25   func ,g         0
   _uart_read_async
-                                  000f35b6        29   func ,g         0
+                                  000f35f8        2b   func ,g         0
   _uart_install_cback
-                                  000f35de         f   func ,g         0
+                                  000f3622         f   func ,g         0
   _uart_uninstall_cback
-                                  000f35ee         a   func ,g         0
+                                  000f3632         a   func ,g         0
 
 FILE=_f4tof8
-                                  000f3616  000f369b        86
+                                  000f365a  000f36df        86
   __f4tof8
-                                  000f3616        86   func ,g         0
+                                  000f365a        86   func ,g         0
 
 FILE=_f4toi4u
-                                  000f369c  000f36c0        25
+                                  000f36e0  000f3704        25
   __f4toi4U
-                                  000f369c        25   func ,g         0
+                                  000f36e0        25   func ,g         0
 
 FILE=_f8add
-                                  000f36c2  000f3fdc       91b
+                                  000f3706  000f4020       91b
   __f8add
-                                  000f36c2       6dd   func ,g         0
+                                  000f3706       6dd   func ,g         0
 
 FILE=_f8ltor
-                                  000f3fde  000f4031        54
+                                  000f4022  000f4075        54
   $_f8ltor
-                                  000f3fde        54   func ,g         0
+                                  000f4022        54   func ,g         0
 
 FILE=_f8mul
-                                  000f4032  000f42f8       2c7
+                                  000f4076  000f433c       2c7
   __f8mul
-                                  000f4032       2c7   func ,g         0
+                                  000f4076       2c7   func ,g         0
 
 FILE=_f8toi4u
-                                  000f42fa  000f431e        25
+                                  000f433e  000f4362        25
   __f8toi4U
-                                  000f42fa        25   func ,g         0
+                                  000f433e        25   func ,g         0
 
 FILE=_ftol
-                                  000f4320  000f4430       111
+                                  000f4364  000f4474       111
   $_ftol
-                                  000f4320       111   func ,g         0
+                                  000f4364       111   func ,g         0
 
 FILE=_i4div
-                                  000f4432  000f44b4        83
+                                  000f4476  000f44f8        83
   __i4div
-                                  000f4432        83   func ,g         0
+                                  000f4476        83   func ,g         0
 
 FILE=_i4divu
-                                  000f44b6  000f4502        4d
+                                  000f44fa  000f4546        4d
   __i4divU
-                                  000f44b6        4d   func ,g         0
+                                  000f44fa        4d   func ,g         0
 
 FILE=_i4modu
-                                  000f4504  000f454e        4b
+                                  000f4548  000f4592        4b
   __i4modU
-                                  000f4504        4b   func ,g         0
+                                  000f4548        4b   func ,g         0
 
 FILE=_i4mulu
-                                  000f4550  000f456b        1c
+                                  000f4594  000f45af        1c
   __i4mulU
-                                  000f4550        1c   func ,g         0
+                                  000f4594        1c   func ,g         0
 
 FILE=_i4tof8
-                                  000f456c  000f458d        22
+                                  000f45b0  000f45d1        22
   __i4tof8
-                                  000f456c        22   func ,g         0
+                                  000f45b0        22   func ,g         0
 
 FILE=_i4utof4
-                                  000f458e  000f45af        22
+                                  000f45d2  000f45f3        22
   __i4Utof4
-                                  000f458e        22   func ,g         0
+                                  000f45d2        22   func ,g         0
 
 FILE=_ltof
-                                  000f45b0  000f4683        d4
+                                  000f45f4  000f46c7        d4
   $_ltof
-                                  000f45b0        d4   func ,g         0
+                                  000f45f4        d4   func ,g         0
 
 FILE=bcopy
-                                  000f4684  000f46b8        35
+                                  000f46c8  000f46fc        35
   _bcopy
-                                  000f4684        35   func ,g         0
+                                  000f46c8        35   func ,g         0
 
 FILE=bzero
-                                  000f46ba  000f46e1        28
+                                  000f46fe  000f4725        28
   _bzero
-                                  000f46ba        28   func ,g         0
+                                  000f46fe        28   func ,g         0
 
 FILE=malloc
-                                  000f46e2  000f48ba       1d9
+                                  000f4726  000f48fe       1d9
   _malloc
-                                  000f46e2        63   func ,g         0
+                                  000f4726        63   func ,g         0
 
 FILE=memcpy
-                                  000f48bc  000f490a        4f
+                                  000f4900  000f494e        4f
   _memcpy
-                                  000f48bc        4f   func ,g         0
+                                  000f4900        4f   func ,g         0
 
 FILE=memset
-                                  000f490c  000f494c        41
+                                  000f4950  000f4990        41
   $memset
-                                  000f490c        41   func ,g         0
+                                  000f4950        41   func ,g         0
 
 FILE=strcmp
-                                  000f494e  000f4982        35
+                                  000f4992  000f49c6        35
   _strcmp
-                                  000f494e        35   func ,g         0
+                                  000f4992        35   func ,g         0
 
 FILE=_strcpy
-                                  000f4984  000f49bf        3c
+                                  000f49c8  000f4a03        3c
   _strcpy
-                                  000f4984         0   func ,g         0
+                                  000f49c8         0   func ,g         0
 
 FILE=strlen
-                                  000f49c0  000f49ea        2b
+                                  000f4a04  000f4a2e        2b
   _strlen
-                                  000f49c0        2b   func ,g         0
+                                  000f4a04        2b   func ,g         0
 
 FILE=vsprintf
-                                  000f49ec  000f4aa2        b7
+                                  000f4a30  000f4ae6        b7
   _vsprintf
-                                  000f49ec        9f   func ,g         0
+                                  000f4a30        9f   func ,g         0
 
 FILE=_f4muls
-                                  000f4aa4  000f4b53        b0
+                                  000f4ae8  000f4b97        b0
   __f4mul
-                                  000f4ac8         0   func ,g         0
+                                  000f4b0c         0   func ,g         0
 
 FILE=_f4rets
-                                  000f4b54  000f4b85        32
+                                  000f4b98  000f4bc9        32
   __f4retInf
-                                  000f4b5e         0   none ,g         0
+                                  000f4ba2         0   none ,g         0
   __f4retNaN
-                                  000f4b54         0   none ,g         0
+                                  000f4b98         0   none ,g         0
   __f4retNum
-                                  000f4b6e         0   none ,g         0
+                                  000f4bb2         0   none ,g         0
   __f4retZero
-                                  000f4b5a         0   none ,g         0
+                                  000f4b9e         0   none ,g         0
 
 FILE=_f4ltor
-                                  000f4b86  000f4bcb        46
+                                  000f4bca  000f4c0f        46
   $_f4ltor
-                                  000f4b86        46   func ,g         0
+                                  000f4bca        46   func ,g         0
 
 FILE=_f4rtol
-                                  000f4bcc  000f4c09        3e
+                                  000f4c10  000f4c4d        3e
   $_f4rtol
-                                  000f4bcc        3e   func ,g         0
+                                  000f4c10        3e   func ,g         0
 
 FILE=_f8rtol
-                                  000f4c0a  000f4c4a        41
+                                  000f4c4e  000f4c8e        41
   $_f8rtol
-                                  000f4c0a        41   func ,g         0
+                                  000f4c4e        41   func ,g         0
 
 FILE=print
-                                  000f4c4c  000f65c4      1979
+                                  000f4c90  000f6608      1979
   __print
-                                  000f4c4c       f53   func ,g         0
+                                  000f4c90       f53   func ,g         0
   __f8prn
-                                  000f5ba0       556   func ,g         0
+                                  000f5be4       556   func ,g         0
   $henkan1
-                                  000f60f6        42   func ,g         0
+                                  000f613a        42   func ,g         0
   $henkan2
-                                  000f6138        55   func ,g         0
+                                  000f617c        55   func ,g         0
   __pri
-                                  000f618c       10e   func ,g         0
+                                  000f61d0       10e   func ,g         0
   $_f8geti
-                                  000f629a       20f   func ,g         0
+                                  000f62de       20f   func ,g         0
 
 FILE=_f8eq
-                                  000f65c6  000f6641        7c
+                                  000f660a  000f6685        7c
   __f8eq
-                                  000f65c6        7c   func ,g         0
+                                  000f660a        7c   func ,g         0
 
 FILE=_f8ge
-                                  000f6642  000f66e8        a7
+                                  000f6686  000f672c        a7
   __f8ge
-                                  000f6642        a7   func ,g         0
+                                  000f6686        a7   func ,g         0
 
 FILE=_f8lt
-                                  000f66ea  000f6790        a7
+                                  000f672e  000f67d4        a7
   __f8lt
-                                  000f66ea        a7   func ,g         0
+                                  000f672e        a7   func ,g         0
 
 FILE=_f8ne
-                                  000f6792  000f680d        7c
+                                  000f67d6  000f6851        7c
   __f8ne
-                                  000f6792        7c   func ,g         0
+                                  000f67d6        7c   func ,g         0
 
 FILE=_i8divu
-                                  000f680e  000f6905        f8
+                                  000f6852  000f6949        f8
   __i8divU
-                                  000f680e        f8   func ,g         0
+                                  000f6852        f8   func ,g         0
 
 FILE=_i8modu
-                                  000f6906  000f69d4        cf
+                                  000f694a  000f6a18        cf
   __i8modU
-                                  000f6906        cf   func ,g         0
+                                  000f694a        cf   func ,g         0
 
 SECTION=interrupt
 FILE=ncrt0_rsk
-                                  000f69d5  000f6ae7       113
+                                  000f6a19  000f6b2b       113
   $exit
-                                  000f6ae5         0   none ,g         0
+                                  000f6b29         0   none ,g         0
   _exit
-                                  000f6ae5         0   none ,g         0
+                                  000f6b29         0   none ,g         0
   dummy_int
-                                  000f6ae7         0   none ,g         0
+                                  000f6b2b         0   none ,g         0
 

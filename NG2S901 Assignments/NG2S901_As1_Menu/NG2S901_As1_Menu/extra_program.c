@@ -22,5 +22,6 @@ int extra(void) {
 		if((key=getcommand())) uart_write(key);
 		if((data = uart_read_async())) putc(data);
 	}
+	
 	return 0;
 }

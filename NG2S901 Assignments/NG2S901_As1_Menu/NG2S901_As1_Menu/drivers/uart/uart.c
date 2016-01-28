@@ -9,6 +9,48 @@ void delay(unsigned long delay) {
 }
 
 void uart_init(void) {
+	PRCR  = 0x01;     /*Protect off   */
+   	CM0 = 0x03;	  /*Select F1 as peripheral clk*/
+   	PRCR  = 0x00;     /*Protect off   */
+
+   	PRCR  = 0x03;     /*Protect off                                             */
+
+   	PM0   = 0x00;     /*Processor mode register set to default                  */
+   	PM1   = 0x08;     /*PM13 for memory expansion                               */
+   	CM0   = 0x08;     /*Drive capacity high                                     */
+   	CM1   = 0x20;     /*Main clock no division                                  */
+   	CM2   = 0x00;     /*Oscillation stop detection register set to default      */
+   	PLC0  = 0x12;     /*Set multiplying factor select bits to give 24MHz clock  */
+   	PM2  &= 0xFE;     /*Set PM20 bit to "0" (2-wait states)                     */
+   	PLC0 |= 0x80;     /*Set Operation enable bit of the PLL                     */
+   	asm("nop"); 		/*Wait until the PLL clock becomes stable (tsu(PLL))      */
+   	CM1 = 0x22;     /*Set the PLL clock as the CPU clock source               */
+   	PRCR  = 0x00;     /*Protect on                  */                         
+	
+	/* UART0 transmit/receive mode register */
+	/* 8-bit data,asynch mode, internal clock, 1 stop bit, no parity */
+  	U0MR = 0x05;		
+		 /*  00000101
+		  b2:b0	SMD12:SMD1	Serial I/O Mode select bits
+	   	  b3	CKDIR		Internal/External clock select bit, CKDIR
+	   	  b4	STPS		Stop bit length select bit, STPS
+	   	  b5	PRY			Odd/even parity select bit, PRY
+	   	  b6	PRYE		Parity enable bit, PRYE
+	  	  b7	IOPOL		TxD, RxD I/O polarity reverse bit */
+	
+	/* UART0 transmit/receive control register 0 */
+	/* f1 count source, CTS/RTS disabled, CMOS output */
+	U0C0 = 0x10; 		
+		 /* 00010000
+		  b1:b0	CLK01:CLK0	BRG count source select bits
+	   	  b2 	CRS 		CTS/RTS function select bit
+	  	  b3	TXEPT		Transmit register empty flag
+	   	  b4	CRD			CTS/RTS disable bit
+	   	  b5	NCH			Data output select bit
+	   	  b6	CKPOL		CLK polarity select bit,set to 0 in UART mode
+	  	  b7	UFORM		Transfer format select bit,set to 0 in UART mode */
+
+	
 	U0BRG = (unsigned char)(((f1_CLK_SPEED/16)/BAUD_RATE)-1);	
 
 	/* UART Transmit/Receive Control Register 2 */  	  
@@ -22,19 +64,7 @@ void uart_init(void) {
 	   	  b5	CLKMD1		CLK/CLKS select bit 1, set to 0 in UART mode
 	   	  b6	RCSP		Separate CTS/RTS bit, 
 	  	  b7	Reserved, set to 0 */
-
-	/* UART0 transmit/receive control register 0 */
-	/* f1 count source, CTS/RTS disabled, CMOS output */
-	U0C0 = 0x10; 		
-		 /* 00010000
-		  b1:b0	CLK01:CLK0	BRG count source select bits
-	   	  b2 	CRS 		CTS/RTS function select bit
-	  	  b3	TXEPT		Transmit register empty flag
-	   	  b4	CRD			CTS/RTS disable bit
-	   	  b5	NCH			Data output select bit
-	   	  b6	CKPOL		CLK polarity select bit,set to 0 in UART mode
-	  	  b7	UFORM		Transfer format select bit,set to 0 in UART mode */
-
+		  
 	/* UART0 transmit/receive control register 1 */
 	/* 	disable transmit and receive, no error output pin, data not inverted */
   	U0C1 = 0x00; 		
@@ -47,17 +77,6 @@ void uart_init(void) {
 	   	  b6	UOLCH		Data logic select bit
 	  	  b7	UOERE		Error signal output enable bit */
 
-	/* UART0 transmit/receive mode register */
-	/* 8-bit data,asynch mode, internal clock, 1 stop bit, no parity */
-  	U0MR = 0x05;		
-		 /*  00000101
-		  b2:b0	SMD12:SMD1	Serial I/O Mode select bits
-	   	  b3	CKDIR		Internal/External clock select bit, CKDIR
-	   	  b4	STPS		Stop bit length select bit, STPS
-	   	  b5	PRY			Odd/even parity select bit, PRY
-	   	  b6	PRYE		Parity enable bit, PRYE
-	  	  b7	IOPOL		TxD, RxD I/O polarity reverse bit */
-
 	/* clear UART0 receive buffer by reading */
   	U0TB = U0RB;
 	/* clear UART0 transmit buffer */
@@ -65,8 +84,9 @@ void uart_init(void) {
 
 	/* disable irqs before setting irq registers */
     disable_interrupt();			
-	/* Enable UART0 receive interrupt, priority level 4 */		
+	/* Enable UART0 receive/transmit interrupt, priority level 4 */		
 	//S0RIC = 0x04;
+	//S0TIC = 0x05;
 	/* Enable all interrupts */			
 	enable_interrupt();			
 
@@ -120,7 +140,7 @@ char uart_read_async(void) {
 	int j;
 	volatile char data;
 	if(!(U0C1 & 0x08)) return 0;
-	data = U0RBL;
+	data = U0RB;
 	for(j=0;j<2000;j++);
 	return data;
 }
