@@ -1,6 +1,6 @@
 #include "../../globals.h"
 
-uart_rx_cback_t uart_cback_list[1];
+uart_rx_cback_t uart_cback_list[1]; /* Only 1 callback for receiving for now */
 
 #define BAUD_RATE 9600
 
@@ -9,8 +9,9 @@ void delay(unsigned long delay) {
 }
 
 void uart_init(void) {
+	/* Speed up CPU for UART: */
 	PRCR  = 0x01;     /*Protect off   */
-   	CM0 = 0x03;	  /*Select F1 as peripheral clk*/
+   	CM0   = 0x03;	  /*Select F1 as peripheral clk*/
    	PRCR  = 0x00;     /*Protect off   */
 
    	PRCR  = 0x03;     /*Protect off                                             */
@@ -85,8 +86,8 @@ void uart_init(void) {
 	/* disable irqs before setting irq registers */
     disable_interrupt();			
 	/* Enable UART0 receive/transmit interrupt, priority level 4 */		
-	//S0RIC = 0x04;
-	//S0TIC = 0x05;
+	//S0RIC = 0x04; /* Disabling ISR calls for now */
+	//S0TIC = 0x05; /* Disabling ISR calls for now */
 	/* Enable all interrupts */			
 	enable_interrupt();			
 
@@ -104,6 +105,25 @@ void uart_init(void) {
 }
 
 void uart_deinit(void) {
+	/* Restore CPU speed: */
+	PRCR  = 0x01;     /*Protect off   */
+	CM0   = 0x03;	  
+	PRCR  = 0x00;     /*Protect off   */
+
+	PRCR  = 0x03;     /*Protect off                                             */
+
+	PM0   = 0x00;     /*Processor mode register set to default                  */
+	PM1   = 0x08;     /*PM13 for memory expansion                               */
+	CM0   = 0x08;     /*Drive capacity high                                     */
+	CM1   = 0x20;     /*Main clock no division                                  */
+	CM2   = 0x00;     /*Oscillation stop detection register set to default      */
+	PLC0  = 0x02; 
+	PM2  &= 0xFE;     /*Set PM20 bit to "0" (2-wait states)                     */
+	PLC0 |= 0x80;     /*Set Operation enable bit of the PLL                     */
+	asm("nop"); 		/*Wait until the PLL clock becomes stable (tsu(PLL))      */
+	CM1 = 0x22;     /*Set the PLL clock as the CPU clock source               */
+	PRCR  = 0x00;     /*Protect on                  */                         
+	
 	uart_uninstall_cback();
 	U0BRG = 0;
 	UCON = 0;

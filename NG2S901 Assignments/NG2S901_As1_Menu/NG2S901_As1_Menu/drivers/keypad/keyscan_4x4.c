@@ -4,8 +4,8 @@
 #define KEYPAD_WIDTH 4
 #define KEYPAD_HEIGHT 4
 #define KEYPAD_BUFFER_SIZE KEYPAD_WIDTH * KEYPAD_HEIGHT
-#define KEYPAD_DEBOUNCE_DELAY 4000000
-#define KEYPAD_HOLD_KEY_TIMEOUT 2 /* How long the keys stay in the buffer */
+#define KEYPAD_DEBOUNCE_DELAY 40000000
+#define KEYPAD_HOLD_KEY_TIMEOUT 4 /* How long the keys stay in the buffer */
 
 char keypad_matrix[KEYPAD_HEIGHT][KEYPAD_WIDTH]
  	= { {'1', '2', '3', 'A'}, 
@@ -111,6 +111,8 @@ void Timer_A0(void)
 #pragma interrupt KYB
 void KYB(void)
 {
+	if(keypad.debouncing) return; /* Ignore keypress as it is still debouncing the previous key */
+	
 	hold_delay = 0;
 	keypad.keydown = 1;
 	keypad.debouncing = 1; /* a key was pressed. we're debouncing it */

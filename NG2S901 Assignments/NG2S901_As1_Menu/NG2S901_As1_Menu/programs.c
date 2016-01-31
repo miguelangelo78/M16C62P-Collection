@@ -3,67 +3,6 @@
 
 #define PROGRAM_NAME(name) printf("Prog: %s\n_____________________\n", name);
 
-/******************* LED PATTERNS: ********************/
-int shift = 0;
-char shift_dir = 1;
-unsigned int shift_delay = 0;
-unsigned int shift_delay_max = 700;
-
-#define DIM_DELAY_MAX 100
-#define DIM_BRIGHTNESS_MAX (DIM_DELAY_MAX / 2)
-unsigned int dim_delay = 0;
-unsigned int dim_brightness = DIM_BRIGHTNESS_MAX/2;
-
-unsigned int countup_delay = 0;
-unsigned int countup_delay_max = 700;
-
-enum LED_PATT_TYPE {
-	LED_PATT_SHIFTSIDES,
-	LED_PATT_DIM_ALL,
-	LED_PATT_COUNTUP
-};
-
-void led_pattern_update(char patt_type) {
-	switch(patt_type) {
-	case LED_PATT_SHIFTSIDES: /* Shift leds sideways */
-		if(shift_delay++ < shift_delay_max) return;
-		shift_delay = 0;
-		if(shift_dir) {
-			P5 = (1 << shift++);
-			if(shift >= 8)
-				shift_dir = !shift_dir;
-		} else {
-			P5 = (1 << shift--);
-			if(shift < 0)
-				shift_dir = !shift_dir;
-		}
-		break;
-	case LED_PATT_DIM_ALL: /* Dims all leds at the same time */
-		if(dim_delay > DIM_DELAY_MAX/2 - dim_brightness && dim_delay < DIM_DELAY_MAX/2 + dim_brightness) 
-			P5 = 0xFF;
-		else 
-			P5 = 0x00;	
-		if(dim_delay++ > DIM_DELAY_MAX)
-			dim_delay = 0;
-		break;
-	case LED_PATT_COUNTUP: /* Counts up the LEDs in binary */
-		if(countup_delay++ > countup_delay_max) {
-			countup_delay = 0;
-			P5++;
-		}
-		break;
-	}
-	
-	switch(getcommand()) {
-	case '1': 
-		if((shift_delay_max += 100) > 20000) shift_delay_max = 20000;
-		break;
-	case '2':
-		if((shift_delay_max -= 100) < 500) shift_delay_max = 500;
-		break;	
-	}
-}
-
 /****************** PROGRAM 1: *******************/
 int led_7seg(void) {
 	char mode = 0;
@@ -102,8 +41,8 @@ int led_7seg(void) {
 				while(keypad_4x4_wait_async()) /* Wait for keypad to release and update the 7seg while waiting */
 					seg_update(sev_seg_ctr); /* Update Seven segment display with the counter */
 				sev_seg_delay = 0; 
-				sev_seg_max_delay+=10;
-				if(sev_seg_max_delay>200) sev_seg_max_delay = 200;	
+				sev_seg_max_delay += 10;
+				if(sev_seg_max_delay > 200) sev_seg_max_delay = 200;	
 			}
 			break;
 		case '2': /* Speed up seven segment display */ 
@@ -162,6 +101,7 @@ int led_pattern(void) {
 	char old_reg_dir = P5D;
 	char old_reg = P5;
 	PROGRAM_NAME("LEDs & Ints");
+	/* Install callbacks for Int0, Int1 and ADC: */
 	install_cback(int0_cback, 0);
 	install_cback(int1_cback, 1);
 	install_cback(adc_cback, 2);
@@ -342,7 +282,7 @@ void prog5_timer_callback(void) {
 	if(stopwatch.mil >= 60) { stopwatch.mil = 0; stopwatch.sec++; }
 	if(stopwatch.sec >= 60) { stopwatch.sec = 0; stopwatch.min++; }
 	if(stopwatch.min >= 60) { stopwatch.min = 0; stopwatch.hour++; }
-	if(stopwatch.hour >= 60) { stopwatch.hour = 0; stopwatch.min = 0; stopwatch.sec = 0; stopwatch.mil = 0; }
+	if(stopwatch.hour >= 24) { stopwatch.hour = 0; stopwatch.min = 0; stopwatch.sec = 0; stopwatch.mil = 0; }
 } 
 
 int timer_set(void) {
@@ -489,7 +429,7 @@ void intro(void) {
 }
 
 int info(void) {
-	printf("--------------------\nMade by Miguel Santos\n\n14031329 MEng C.S.E.\n\nHanded in 01/02/16\n--------------------\n> Any key to return");
+	printf("--------------------\nMade by Miguel Santos\n\n14031329 MEng C.S.E.\n\nHanded on 01/02/16\n--------------------\n> Any key to return");
 	read_key();
 	return 0;
 }
