@@ -1,0 +1,3597 @@
+	._LANG	'C','5.31.30.001','REV.F'
+
+;##    C Compiler		 OUTPUT
+;## ccom30 Version 5.31.30.001
+;## Copyright(C) 2001(2003,2004). Renesas Technology Corp.
+;## and Renesas Solutions Corp., All rights reserved.
+;## Compile Start Time Sun Jan 31 23:37:53 2016
+
+;## COMMAND_LINE: ccom30  C:\Users\Miguel\Desktop\Nova pasta\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\keyscan_4x4.i -o C:\Users\Miguel\Desktop\Nova pasta\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\keyscan_4x4.a30 -finfo -fFP
+
+
+;## Normal Optimize		OFF
+;## ROM size Optimize		OFF
+;## Speed Optimize		OFF
+;## Default ROM is		far
+;## Default RAM is		near
+
+	.GLB	__SB__
+	.SB	__SB__
+	.FB	0
+	._aopt	OFF
+_PM0_ADDR	.equ	0004H			 
+_PM1_ADDR	.equ	0005H			 
+_CM0_ADDR	.equ	0006H			 
+_CM1_ADDR	.equ	0007H			 
+_CSR_ADDR	.equ	0008H			 
+_AIER_ADDR	.equ	0009H			 
+_PRCR_ADDR	.equ	000AH			 
+_DBR_ADDR	.equ	000BH			 
+_CM2_ADDR	.equ	000CH			 
+_CM3_ADDR	.equ	000DH			 
+_WDTS_ADDR	.equ	000EH			 
+_WDC_ADDR	.equ	000FH			 
+_RMAD0_ADDR	.equ	0010H			 
+_RMAD1_ADDR	.equ	0014H			 
+_CSE_ADDR	.equ	001BH			 
+_PLC0_ADDR	.equ	001CH			 
+_PM2_ADDR	.equ	001EH			 
+_SAR0_ADDR	.equ	0020H			 
+_DAR0_ADDR	.equ	0024H			 
+_TCR0_ADDR	.equ	0028H			 
+_DM0CON_ADDR	.equ	002CH			 
+_SAR1_ADDR	.equ	0030H			 
+_DAR1_ADDR	.equ	0034H			 
+_TCR1_ADDR	.equ	0038H			 
+_DM1CON_ADDR	.equ	003CH			 
+_INT3IC_ADDR	.equ	0044H			 
+_TB5IC_ADDR	.equ	0045H			 
+_TB4IC_ADDR	.equ	0046H			 
+_TB3IC_ADDR	.equ	0047H			 
+_S4IC_ADDR	.equ	0048H			 
+_S3IC_ADDR	.equ	0049H			 
+_INT5IC_ADDR	.equ	0048H			 
+_INT4IC_ADDR	.equ	0049H			 
+_BCNIC_ADDR	.equ	004AH			 
+_DM0IC_ADDR	.equ	004BH			 
+_DM1IC_ADDR	.equ	004CH			 
+_KUPIC_ADDR	.equ	004DH			 
+_ADIC_ADDR	.equ	004EH			 
+_S2TIC_ADDR	.equ	004FH			 
+_S2RIC_ADDR	.equ	0050H			 
+_S0TIC_ADDR	.equ	0051H			 
+_S0RIC_ADDR	.equ	0052H			 
+_S1TIC_ADDR	.equ	0053H			 
+_S1RIC_ADDR	.equ	0054H			 
+_TA0IC_ADDR	.equ	0055H			 
+_TA1IC_ADDR	.equ	0056H			 
+_TA2IC_ADDR	.equ	0057H			 
+_TA3IC_ADDR	.equ	0058H			 
+_TA4IC_ADDR	.equ	0059H			 
+_TB0IC_ADDR	.equ	005AH			 
+_TB1IC_ADDR	.equ	005BH			 
+_TB2IC_ADDR	.equ	005CH			 
+_INT0IC_ADDR	.equ	005DH			 
+_INT1IC_ADDR	.equ	005EH			 
+_INT2IC_ADDR	.equ	005FH			 
+_FMR1_ADDR	.equ	01B5H			 
+_FMR0_ADDR	.equ	01B7H			 
+_RMAD2_ADDR	.equ	01B8H			 
+_AIER2_ADDR	.equ	01BBH			 
+_RMAD3_ADDR	.equ	01BCH			 
+_PCLKR_ADDR	.equ	025EH			 
+_TBSR_ADDR	.equ	0340H			 
+_TA11_ADDR	.equ	0342H			 
+_TA21_ADDR	.equ	0344H			 
+_TA41_ADDR	.equ	0346H			 
+_INVC0_ADDR	.equ	0348H			 
+_INVC1_ADDR	.equ	0349H			 
+_IDB0_ADDR	.equ	034AH			 
+_IDB1_ADDR	.equ	034BH			 
+_DTT_ADDR	.equ	034CH			 
+_ICTB2_ADDR	.equ	034DH			 
+_TB3_ADDR	.equ	0350H			 
+_TB4_ADDR	.equ	0352H			 
+_TB5_ADDR	.equ	0354H			 
+_TB3MR_ADDR	.equ	035BH			 
+_TB4MR_ADDR	.equ	035CH			 
+_TB5MR_ADDR	.equ	035DH			 
+_IFSR2A_ADDR	.equ	035EH			 
+_IFSR_ADDR	.equ	035FH			 
+_S3TRR_ADDR	.equ	0360H			 
+_S3C_ADDR	.equ	0362H			 
+_S3BRG_ADDR	.equ	0363H			 
+_S4TRR_ADDR	.equ	0364H			 
+_S4C_ADDR	.equ	0366H			 
+_S4BRG_ADDR	.equ	0367H			 
+_U0SMR4_ADDR	.equ	036CH			 
+_U0SMR3_ADDR	.equ	036DH			 
+_U0SMR2_ADDR	.equ	036EH			 
+_U0SMR_ADDR	.equ	036FH			 
+_U1SMR4_ADDR	.equ	0370H			 
+_U1SMR3_ADDR	.equ	0371H			 
+_U1SMR2_ADDR	.equ	0372H			 
+_U1SMR_ADDR	.equ	0373H			 
+_U2SMR4_ADDR	.equ	0374H			 
+_U2SMR3_ADDR	.equ	0375H			 
+_U2SMR2_ADDR	.equ	0376H			 
+_U2SMR_ADDR	.equ	0377H			 
+_U2MR_ADDR	.equ	0378H			 
+_U2BRG_ADDR	.equ	0379H			 
+_U2TB_ADDR	.equ	037AH			 
+_U2C0_ADDR	.equ	037CH			 
+_U2C1_ADDR	.equ	037DH			 
+_U2RB_ADDR	.equ	037EH			 
+_TABSR_ADDR	.equ	0380H			 
+_CPSRF_ADDR	.equ	0381H			 
+_ONSF_ADDR	.equ	0382H			 
+_TRGSR_ADDR	.equ	0383H			 
+_UDF_ADDR	.equ	0384H			 
+_TA0_ADDR	.equ	0386H			 
+_TA1_ADDR	.equ	0388H			 
+_TA2_ADDR	.equ	038AH			 
+_TA3_ADDR	.equ	038CH			 
+_TA4_ADDR	.equ	038EH			 
+_TB0_ADDR	.equ	0390H			 
+_TB1_ADDR	.equ	0392H			 
+_TB2_ADDR	.equ	0394H			 
+_TA0MR_ADDR	.equ	0396H			 
+_TA1MR_ADDR	.equ	0397H			 
+_TA2MR_ADDR	.equ	0398H			 
+_TA3MR_ADDR	.equ	0399H			 
+_TA4MR_ADDR	.equ	039AH			 
+_TB0MR_ADDR	.equ	039BH			 
+_TB1MR_ADDR	.equ	039CH			 
+_TB2MR_ADDR	.equ	039DH			 
+_TB2SC_ADDR	.equ	039EH			 
+_U0MR_ADDR	.equ	03A0H			 
+_U0BRG_ADDR	.equ	03A1H			 
+_U0TB_ADDR	.equ	03A2H			 
+_U0C0_ADDR	.equ	03A4H			 
+_U0C1_ADDR	.equ	03A5H			 
+_U0RB_ADDR	.equ	03A6H			 
+_U1MR_ADDR	.equ	03A8H			 
+_U1BRG_ADDR	.equ	03A9H			 
+_U1TB_ADDR	.equ	03AAH			 
+_U1C0_ADDR	.equ	03ACH			 
+_U1C1_ADDR	.equ	03ADH			 
+_U1RB_ADDR	.equ	03AEH			 
+_UCON_ADDR	.equ	03B0H			 
+_FIDR_ADDR	.equ	03B4H			 
+_DM0SL_ADDR	.equ	03B8H			 
+_DM1SL_ADDR	.equ	03BAH			 
+_CRCD_ADDR	.equ	03BCH			 
+_CRCIN_ADDR	.equ	03BEH			 
+_AD0_ADDR	.equ	03C0H			 
+_AD1_ADDR	.equ	03C2H			 
+_AD2_ADDR	.equ	03C4H			 
+_AD3_ADDR	.equ	03C6H			 
+_AD4_ADDR	.equ	03C8H			 
+_AD5_ADDR	.equ	03CAH			 
+_AD6_ADDR	.equ	03CCH			 
+_AD7_ADDR	.equ	03CEH			 
+_ADCON2_ADDR	.equ	03D4H			 
+_ADCON0_ADDR	.equ	03D6H			 
+_ADCON1_ADDR	.equ	03D7H			 
+_DA0_ADDR	.equ	03D8H			 
+_DA1_ADDR	.equ	03DAH			 
+_DACON_ADDR	.equ	03DCH			 
+_PC14_ADDR	.equ	03DEH			 
+_PUR3_ADDR	.equ	03DFH			 
+_P0_ADDR	.equ	03E0H			 
+_P1_ADDR	.equ	03E1H			 
+_P0D_ADDR	.equ	03E2H			 
+_P1D_ADDR	.equ	03E3H			 
+_P2_ADDR	.equ	03E4H			 
+_P3_ADDR	.equ	03E5H			 
+_P2D_ADDR	.equ	03E6H			 
+_P3D_ADDR	.equ	03E7H			 
+_P4_ADDR	.equ	03E8H			 
+_P5_ADDR	.equ	03E9H			 
+_P4D_ADDR	.equ	03EAH			 
+_P5D_ADDR	.equ	03EBH			 
+_P6_ADDR	.equ	03ECH			 
+_P7_ADDR	.equ	03EDH			 
+_P6D_ADDR	.equ	03EEH			 
+_P7D_ADDR	.equ	03EFH			 
+_P8_ADDR	.equ	03F0H			 
+_P9_ADDR	.equ	03F1H			 
+_P8D_ADDR	.equ	03F2H			 
+_P9D_ADDR	.equ	03F3H			 
+_P10_ADDR	.equ	03F4H			 
+_P11_ADDR	.equ	03F5H			 
+_P10D_ADDR	.equ	03F6H			 
+_P1D1_ADDR	.equ	03F7H			 
+_P12_ADDR	.equ	03F8H			 
+_P13_ADDR	.equ	03F9H			 
+_P1D2_ADDR	.equ	03FAH			 
+_P1D3_ADDR	.equ	03FBH			 
+_PUR0_ADDR	.equ	03FCH			 
+_PUR1_ADDR	.equ	03FDH			 
+_PUR2_ADDR	.equ	03FEH			 
+_PCR_ADDR	.equ	03FFH			 
+
+	._inspect	'M', "C:/Users/Miguel/Desktop/Nova pasta/NG2S901_As1_Menu/NG2S901_As1_Menu/drivers/keypad/keyscan_4x4.c", "C:/Users/Miguel/Desktop/Nova pasta/NG2S901_As1_Menu/NG2S901_As1_Menu/drivers/keypad/keyscan_4x4"
+
+	._inspect	'M', "C:/Users/Miguel/Desktop/Nova pasta/NG2S901_As1_Menu/NG2S901_As1_Menu/drivers/keypad/../init/sfr62p.h", "C:/Users/Miguel/Desktop/Nova pasta/NG2S901_As1_Menu/NG2S901_As1_Menu/drivers/keypad/keyscan_4x4"
+	._inspect	'V', 'd', "DA0_ADDR", "_DA0_ADDR", 'G', 416, 1, 1, 0, 00h
+	._inspect	'V', 'd', "DA1_ADDR", "_DA1_ADDR", 'G', 419, 1, 1, 0, 00h
+	._inspect	'V', 'd', "UDF_ADDR", "_UDF_ADDR", 'G', 425, 1, 1, 0, 00h
+	._inspect	'V', 'd', "TA11_ADDR", "_TA11_ADDR", 'G', 434, 2, 1, 0, 00h
+	._inspect	'V', 'd', "TA21_ADDR", "_TA21_ADDR", 'G', 437, 2, 1, 0, 00h
+	._inspect	'V', 'd', "TA41_ADDR", "_TA41_ADDR", 'G', 440, 2, 1, 0, 00h
+	._inspect	'V', 'd', "TB3_ADDR", "_TB3_ADDR", 'G', 443, 2, 1, 0, 00h
+	._inspect	'V', 'd', "TB4_ADDR", "_TB4_ADDR", 'G', 446, 2, 1, 0, 00h
+	._inspect	'V', 'd', "TB5_ADDR", "_TB5_ADDR", 'G', 449, 2, 1, 0, 00h
+	._inspect	'V', 'd', "TA0_ADDR", "_TA0_ADDR", 'G', 452, 2, 1, 0, 00h
+	._inspect	'V', 'd', "TA1_ADDR", "_TA1_ADDR", 'G', 455, 2, 1, 0, 00h
+	._inspect	'V', 'd', "TA2_ADDR", "_TA2_ADDR", 'G', 458, 2, 1, 0, 00h
+	._inspect	'V', 'd', "TA3_ADDR", "_TA3_ADDR", 'G', 461, 2, 1, 0, 00h
+	._inspect	'V', 'd', "TA4_ADDR", "_TA4_ADDR", 'G', 464, 2, 1, 0, 00h
+	._inspect	'V', 'd', "TB0_ADDR", "_TB0_ADDR", 'G', 467, 2, 1, 0, 00h
+	._inspect	'V', 'd', "TB1_ADDR", "_TB1_ADDR", 'G', 470, 2, 1, 0, 00h
+	._inspect	'V', 'd', "TB2_ADDR", "_TB2_ADDR", 'G', 473, 2, 1, 0, 00h
+	._inspect	'V', 'd', "PM0_ADDR", "_PM0_ADDR", 'G', 497, 1, 1, 0, 00h
+	._inspect	'V', 'd', "PM1_ADDR", "_PM1_ADDR", 'G', 512, 1, 1, 0, 00h
+	._inspect	'V', 'd', "CM0_ADDR", "_CM0_ADDR", 'G', 526, 1, 1, 0, 00h
+	._inspect	'V', 'd', "CM1_ADDR", "_CM1_ADDR", 'G', 541, 1, 1, 0, 00h
+	._inspect	'V', 'd', "CSR_ADDR", "_CSR_ADDR", 'G', 553, 1, 1, 0, 00h
+	._inspect	'V', 'd', "AIER_ADDR", "_AIER_ADDR", 'G', 568, 1, 1, 0, 00h
+	._inspect	'V', 'd', "PRCR_ADDR", "_PRCR_ADDR", 'G', 577, 1, 1, 0, 00h
+	._inspect	'V', 'd', "DBR_ADDR", "_DBR_ADDR", 'G', 587, 1, 1, 0, 00h
+	._inspect	'V', 'd', "CM2_ADDR", "_CM2_ADDR", 'G', 598, 1, 1, 0, 00h
+	._inspect	'V', 'd', "WDTS_ADDR", "_WDTS_ADDR", 'G', 610, 1, 1, 0, 00h
+	._inspect	'V', 'd', "WDC_ADDR", "_WDC_ADDR", 'G', 616, 1, 1, 0, 00h
+	._inspect	'V', 'd', "CSE_ADDR", "_CSE_ADDR", 'G', 624, 1, 1, 0, 00h
+	._inspect	'V', 'd', "PLC0_ADDR", "_PLC0_ADDR", 'G', 639, 1, 1, 0, 00h
+	._inspect	'V', 'd', "PM2_ADDR", "_PM2_ADDR", 'G', 651, 1, 1, 0, 00h
+	._inspect	'V', 'd', "DM0CON_ADDR", "_DM0CON_ADDR", 'G', 659, 1, 1, 0, 00h
+	._inspect	'V', 'd', "DM1CON_ADDR", "_DM1CON_ADDR", 'G', 672, 1, 1, 0, 00h
+	._inspect	'V', 'd', "INT3IC_ADDR", "_INT3IC_ADDR", 'G', 685, 1, 1, 0, 00h
+	._inspect	'V', 'd', "TB5IC_ADDR", "_TB5IC_ADDR", 'G', 697, 1, 1, 0, 00h
+	._inspect	'V', 'd', "TB4IC_ADDR", "_TB4IC_ADDR", 'G', 708, 1, 1, 0, 00h
+	._inspect	'V', 'd', "TB3IC_ADDR", "_TB3IC_ADDR", 'G', 719, 1, 1, 0, 00h
+	._inspect	'V', 'd', "S4IC_ADDR", "_S4IC_ADDR", 'G', 730, 1, 1, 0, 00h
+	._inspect	'V', 'd', "S3IC_ADDR", "_S3IC_ADDR", 'G', 742, 1, 1, 0, 00h
+	._inspect	'V', 'd', "INT5IC_ADDR", "_INT5IC_ADDR", 'G', 754, 1, 1, 0, 00h
+	._inspect	'V', 'd', "INT4IC_ADDR", "_INT4IC_ADDR", 'G', 766, 1, 1, 0, 00h
+	._inspect	'V', 'd', "BCNIC_ADDR", "_BCNIC_ADDR", 'G', 778, 1, 1, 0, 00h
+	._inspect	'V', 'd', "DM0IC_ADDR", "_DM0IC_ADDR", 'G', 789, 1, 1, 0, 00h
+	._inspect	'V', 'd', "DM1IC_ADDR", "_DM1IC_ADDR", 'G', 800, 1, 1, 0, 00h
+	._inspect	'V', 'd', "KUPIC_ADDR", "_KUPIC_ADDR", 'G', 811, 1, 1, 0, 00h
+	._inspect	'V', 'd', "ADIC_ADDR", "_ADIC_ADDR", 'G', 822, 1, 1, 0, 00h
+	._inspect	'V', 'd', "S2TIC_ADDR", "_S2TIC_ADDR", 'G', 833, 1, 1, 0, 00h
+	._inspect	'V', 'd', "S2RIC_ADDR", "_S2RIC_ADDR", 'G', 844, 1, 1, 0, 00h
+	._inspect	'V', 'd', "S0TIC_ADDR", "_S0TIC_ADDR", 'G', 855, 1, 1, 0, 00h
+	._inspect	'V', 'd', "S0RIC_ADDR", "_S0RIC_ADDR", 'G', 866, 1, 1, 0, 00h
+	._inspect	'V', 'd', "S1TIC_ADDR", "_S1TIC_ADDR", 'G', 877, 1, 1, 0, 00h
+	._inspect	'V', 'd', "S1RIC_ADDR", "_S1RIC_ADDR", 'G', 888, 1, 1, 0, 00h
+	._inspect	'V', 'd', "TA0IC_ADDR", "_TA0IC_ADDR", 'G', 899, 1, 1, 0, 00h
+	._inspect	'V', 'd', "TA1IC_ADDR", "_TA1IC_ADDR", 'G', 910, 1, 1, 0, 00h
+	._inspect	'V', 'd', "TA2IC_ADDR", "_TA2IC_ADDR", 'G', 921, 1, 1, 0, 00h
+	._inspect	'V', 'd', "TA3IC_ADDR", "_TA3IC_ADDR", 'G', 932, 1, 1, 0, 00h
+	._inspect	'V', 'd', "TA4IC_ADDR", "_TA4IC_ADDR", 'G', 943, 1, 1, 0, 00h
+	._inspect	'V', 'd', "TB0IC_ADDR", "_TB0IC_ADDR", 'G', 954, 1, 1, 0, 00h
+	._inspect	'V', 'd', "TB1IC_ADDR", "_TB1IC_ADDR", 'G', 965, 1, 1, 0, 00h
+	._inspect	'V', 'd', "TB2IC_ADDR", "_TB2IC_ADDR", 'G', 976, 1, 1, 0, 00h
+	._inspect	'V', 'd', "INT0IC_ADDR", "_INT0IC_ADDR", 'G', 987, 1, 1, 0, 00h
+	._inspect	'V', 'd', "INT1IC_ADDR", "_INT1IC_ADDR", 'G', 999, 1, 1, 0, 00h
+	._inspect	'V', 'd', "INT2IC_ADDR", "_INT2IC_ADDR", 'G', 1011, 1, 1, 0, 00h
+	._inspect	'V', 'd', "FMR1_ADDR", "_FMR1_ADDR", 'G', 1023, 1, 1, 0, 00h
+	._inspect	'V', 'd', "FMR0_ADDR", "_FMR0_ADDR", 'G', 1032, 1, 1, 0, 00h
+	._inspect	'V', 'd', "AIER2_ADDR", "_AIER2_ADDR", 'G', 1046, 1, 1, 0, 00h
+	._inspect	'V', 'd', "PCLKR_ADDR", "_PCLKR_ADDR", 'G', 1055, 1, 1, 0, 00h
+	._inspect	'V', 'd', "TBSR_ADDR", "_TBSR_ADDR", 'G', 1064, 1, 1, 0, 00h
+	._inspect	'V', 'd', "INVC0_ADDR", "_INVC0_ADDR", 'G', 1074, 1, 1, 0, 00h
+	._inspect	'V', 'd', "INVC1_ADDR", "_INVC1_ADDR", 'G', 1089, 1, 1, 0, 00h
+	._inspect	'V', 'd', "IDB0_ADDR", "_IDB0_ADDR", 'G', 1104, 1, 1, 0, 00h
+	._inspect	'V', 'd', "IDB1_ADDR", "_IDB1_ADDR", 'G', 1117, 1, 1, 0, 00h
+	._inspect	'V', 'd', "DTT_ADDR", "_DTT_ADDR", 'G', 1130, 1, 1, 0, 00h
+	._inspect	'V', 'd', "ICTB2_ADDR", "_ICTB2_ADDR", 'G', 1136, 1, 1, 0, 00h
+	._inspect	'V', 'd', "TB3MR_ADDR", "_TB3MR_ADDR", 'G', 1142, 1, 1, 0, 00h
+	._inspect	'V', 'd', "TB4MR_ADDR", "_TB4MR_ADDR", 'G', 1157, 1, 1, 0, 00h
+	._inspect	'V', 'd', "TB5MR_ADDR", "_TB5MR_ADDR", 'G', 1171, 1, 1, 0, 00h
+	._inspect	'V', 'd', "IFSR2A_ADDR", "_IFSR2A_ADDR", 'G', 1185, 1, 1, 0, 00h
+	._inspect	'V', 'd', "IFSR_ADDR", "_IFSR_ADDR", 'G', 1194, 1, 1, 0, 00h
+	._inspect	'V', 'd', "S3TRR_ADDR", "_S3TRR_ADDR", 'G', 1209, 1, 1, 0, 00h
+	._inspect	'V', 'd', "S3C_ADDR", "_S3C_ADDR", 'G', 1215, 1, 1, 0, 00h
+	._inspect	'V', 'd', "S3BRG_ADDR", "_S3BRG_ADDR", 'G', 1230, 1, 1, 0, 00h
+	._inspect	'V', 'd', "S4TRR_ADDR", "_S4TRR_ADDR", 'G', 1236, 1, 1, 0, 00h
+	._inspect	'V', 'd', "S4C_ADDR", "_S4C_ADDR", 'G', 1242, 1, 1, 0, 00h
+	._inspect	'V', 'd', "S4BRG_ADDR", "_S4BRG_ADDR", 'G', 1257, 1, 1, 0, 00h
+	._inspect	'V', 'd', "U0SMR4_ADDR", "_U0SMR4_ADDR", 'G', 1263, 1, 1, 0, 00h
+	._inspect	'V', 'd', "U0SMR3_ADDR", "_U0SMR3_ADDR", 'G', 1278, 1, 1, 0, 00h
+	._inspect	'V', 'd', "U0SMR2_ADDR", "_U0SMR2_ADDR", 'G', 1290, 1, 1, 0, 00h
+	._inspect	'V', 'd', "U0SMR_ADDR", "_U0SMR_ADDR", 'G', 1304, 1, 1, 0, 00h
+	._inspect	'V', 'd', "U1SMR4_ADDR", "_U1SMR4_ADDR", 'G', 1318, 1, 1, 0, 00h
+	._inspect	'V', 'd', "U1SMR3_ADDR", "_U1SMR3_ADDR", 'G', 1333, 1, 1, 0, 00h
+	._inspect	'V', 'd', "U1SMR2_ADDR", "_U1SMR2_ADDR", 'G', 1345, 1, 1, 0, 00h
+	._inspect	'V', 'd', "U1SMR_ADDR", "_U1SMR_ADDR", 'G', 1359, 1, 1, 0, 00h
+	._inspect	'V', 'd', "U2SMR4_ADDR", "_U2SMR4_ADDR", 'G', 1373, 1, 1, 0, 00h
+	._inspect	'V', 'd', "U2SMR3_ADDR", "_U2SMR3_ADDR", 'G', 1388, 1, 1, 0, 00h
+	._inspect	'V', 'd', "U2SMR2_ADDR", "_U2SMR2_ADDR", 'G', 1400, 1, 1, 0, 00h
+	._inspect	'V', 'd', "U2SMR_ADDR", "_U2SMR_ADDR", 'G', 1414, 1, 1, 0, 00h
+	._inspect	'V', 'd', "U2MR_ADDR", "_U2MR_ADDR", 'G', 1428, 1, 1, 0, 00h
+	._inspect	'V', 'd', "U2BRG_ADDR", "_U2BRG_ADDR", 'G', 1443, 1, 1, 0, 00h
+	._inspect	'V', 'd', "U2C0_ADDR", "_U2C0_ADDR", 'G', 1449, 1, 1, 0, 00h
+	._inspect	'V', 'd', "U2C1_ADDR", "_U2C1_ADDR", 'G', 1464, 1, 1, 0, 00h
+	._inspect	'V', 'd', "TABSR_ADDR", "_TABSR_ADDR", 'G', 1479, 1, 1, 0, 00h
+	._inspect	'V', 'd', "CPSRF_ADDR", "_CPSRF_ADDR", 'G', 1494, 1, 1, 0, 00h
+	._inspect	'V', 'd', "ONSF_ADDR", "_ONSF_ADDR", 'G', 1502, 1, 1, 0, 00h
+	._inspect	'V', 'd', "TRGSR_ADDR", "_TRGSR_ADDR", 'G', 1517, 1, 1, 0, 00h
+	._inspect	'V', 'd', "TA0MR_ADDR", "_TA0MR_ADDR", 'G', 1532, 1, 1, 0, 00h
+	._inspect	'V', 'd', "TA1MR_ADDR", "_TA1MR_ADDR", 'G', 1547, 1, 1, 0, 00h
+	._inspect	'V', 'd', "TA2MR_ADDR", "_TA2MR_ADDR", 'G', 1562, 1, 1, 0, 00h
+	._inspect	'V', 'd', "TA3MR_ADDR", "_TA3MR_ADDR", 'G', 1577, 1, 1, 0, 00h
+	._inspect	'V', 'd', "TA4MR_ADDR", "_TA4MR_ADDR", 'G', 1592, 1, 1, 0, 00h
+	._inspect	'V', 'd', "TB0MR_ADDR", "_TB0MR_ADDR", 'G', 1607, 1, 1, 0, 00h
+	._inspect	'V', 'd', "TB1MR_ADDR", "_TB1MR_ADDR", 'G', 1622, 1, 1, 0, 00h
+	._inspect	'V', 'd', "TB2MR_ADDR", "_TB2MR_ADDR", 'G', 1636, 1, 1, 0, 00h
+	._inspect	'V', 'd', "TB2SC_ADDR", "_TB2SC_ADDR", 'G', 1650, 1, 1, 0, 00h
+	._inspect	'V', 'd', "U0MR_ADDR", "_U0MR_ADDR", 'G', 1659, 1, 1, 0, 00h
+	._inspect	'V', 'd', "U0BRG_ADDR", "_U0BRG_ADDR", 'G', 1674, 1, 1, 0, 00h
+	._inspect	'V', 'd', "U0C0_ADDR", "_U0C0_ADDR", 'G', 1680, 1, 1, 0, 00h
+	._inspect	'V', 'd', "U0C1_ADDR", "_U0C1_ADDR", 'G', 1695, 1, 1, 0, 00h
+	._inspect	'V', 'd', "U1MR_ADDR", "_U1MR_ADDR", 'G', 1708, 1, 1, 0, 00h
+	._inspect	'V', 'd', "U1BRG_ADDR", "_U1BRG_ADDR", 'G', 1723, 1, 1, 0, 00h
+	._inspect	'V', 'd', "U1C0_ADDR", "_U1C0_ADDR", 'G', 1729, 1, 1, 0, 00h
+	._inspect	'V', 'd', "U1C1_ADDR", "_U1C1_ADDR", 'G', 1744, 1, 1, 0, 00h
+	._inspect	'V', 'd', "UCON_ADDR", "_UCON_ADDR", 'G', 1757, 1, 1, 0, 00h
+	._inspect	'V', 'd', "FIDR_ADDR", "_FIDR_ADDR", 'G', 1771, 1, 1, 0, 00h
+	._inspect	'V', 'd', "DM0SL_ADDR", "_DM0SL_ADDR", 'G', 1780, 1, 1, 0, 00h
+	._inspect	'V', 'd', "DM1SL_ADDR", "_DM1SL_ADDR", 'G', 1793, 1, 1, 0, 00h
+	._inspect	'V', 'd', "CRCIN_ADDR", "_CRCIN_ADDR", 'G', 1806, 1, 1, 0, 00h
+	._inspect	'V', 'd', "ADCON2_ADDR", "_ADCON2_ADDR", 'G', 1812, 1, 1, 0, 00h
+	._inspect	'V', 'd', "ADCON0_ADDR", "_ADCON0_ADDR", 'G', 1823, 1, 1, 0, 00h
+	._inspect	'V', 'd', "ADCON1_ADDR", "_ADCON1_ADDR", 'G', 1838, 1, 1, 0, 00h
+	._inspect	'V', 'd', "DACON_ADDR", "_DACON_ADDR", 'G', 1853, 1, 1, 0, 00h
+	._inspect	'V', 'd', "PC14_ADDR", "_PC14_ADDR", 'G', 1862, 1, 1, 0, 00h
+	._inspect	'V', 'd', "PUR3_ADDR", "_PUR3_ADDR", 'G', 1873, 1, 1, 0, 00h
+	._inspect	'V', 'd', "P0_ADDR", "_P0_ADDR", 'G', 1888, 1, 1, 0, 00h
+	._inspect	'V', 'd', "P1_ADDR", "_P1_ADDR", 'G', 1903, 1, 1, 0, 00h
+	._inspect	'V', 'd', "P0D_ADDR", "_P0D_ADDR", 'G', 1918, 1, 1, 0, 00h
+	._inspect	'V', 'd', "P1D_ADDR", "_P1D_ADDR", 'G', 1933, 1, 1, 0, 00h
+	._inspect	'V', 'd', "P2_ADDR", "_P2_ADDR", 'G', 1948, 1, 1, 0, 00h
+	._inspect	'V', 'd', "P3_ADDR", "_P3_ADDR", 'G', 1963, 1, 1, 0, 00h
+	._inspect	'V', 'd', "P2D_ADDR", "_P2D_ADDR", 'G', 1978, 1, 1, 0, 00h
+	._inspect	'V', 'd', "P3D_ADDR", "_P3D_ADDR", 'G', 1993, 1, 1, 0, 00h
+	._inspect	'V', 'd', "P4_ADDR", "_P4_ADDR", 'G', 2008, 1, 1, 0, 00h
+	._inspect	'V', 'd', "P5_ADDR", "_P5_ADDR", 'G', 2023, 1, 1, 0, 00h
+	._inspect	'V', 'd', "P4D_ADDR", "_P4D_ADDR", 'G', 2038, 1, 1, 0, 00h
+	._inspect	'V', 'd', "P5D_ADDR", "_P5D_ADDR", 'G', 2053, 1, 1, 0, 00h
+	._inspect	'V', 'd', "P6_ADDR", "_P6_ADDR", 'G', 2068, 1, 1, 0, 00h
+	._inspect	'V', 'd', "P7_ADDR", "_P7_ADDR", 'G', 2083, 1, 1, 0, 00h
+	._inspect	'V', 'd', "P6D_ADDR", "_P6D_ADDR", 'G', 2098, 1, 1, 0, 00h
+	._inspect	'V', 'd', "P7D_ADDR", "_P7D_ADDR", 'G', 2113, 1, 1, 0, 00h
+	._inspect	'V', 'd', "P8_ADDR", "_P8_ADDR", 'G', 2128, 1, 1, 0, 00h
+	._inspect	'V', 'd', "P9_ADDR", "_P9_ADDR", 'G', 2143, 1, 1, 0, 00h
+	._inspect	'V', 'd', "P8D_ADDR", "_P8D_ADDR", 'G', 2158, 1, 1, 0, 00h
+	._inspect	'V', 'd', "P9D_ADDR", "_P9D_ADDR", 'G', 2172, 1, 1, 0, 00h
+	._inspect	'V', 'd', "P10_ADDR", "_P10_ADDR", 'G', 2187, 1, 1, 0, 00h
+	._inspect	'V', 'd', "P11_ADDR", "_P11_ADDR", 'G', 2202, 1, 1, 0, 00h
+	._inspect	'V', 'd', "P10D_ADDR", "_P10D_ADDR", 'G', 2217, 1, 1, 0, 00h
+	._inspect	'V', 'd', "P1D1_ADDR", "_P1D1_ADDR", 'G', 2232, 1, 1, 0, 00h
+	._inspect	'V', 'd', "P12_ADDR", "_P12_ADDR", 'G', 2247, 1, 1, 0, 00h
+	._inspect	'V', 'd', "P13_ADDR", "_P13_ADDR", 'G', 2262, 1, 1, 0, 00h
+	._inspect	'V', 'd', "P1D2_ADDR", "_P1D2_ADDR", 'G', 2277, 1, 1, 0, 00h
+	._inspect	'V', 'd', "P1D3_ADDR", "_P1D3_ADDR", 'G', 2292, 1, 1, 0, 00h
+	._inspect	'V', 'd', "PUR0_ADDR", "_PUR0_ADDR", 'G', 2307, 1, 1, 0, 00h
+	._inspect	'V', 'd', "PUR1_ADDR", "_PUR1_ADDR", 'G', 2322, 1, 1, 0, 00h
+	._inspect	'V', 'd', "PUR2_ADDR", "_PUR2_ADDR", 'G', 2337, 1, 1, 0, 00h
+	._inspect	'V', 'd', "PCR_ADDR", "_PCR_ADDR", 'G', 2350, 1, 1, 0, 00h
+	._inspect	'V', 'd', "TCR0_ADDR", "_TCR0_ADDR", 'G', 2385, 2, 1, 0, 00h
+	._inspect	'V', 'd', "TCR1_ADDR", "_TCR1_ADDR", 'G', 2385, 2, 1, 0, 00h
+	._inspect	'V', 'd', "U0TB_ADDR", "_U0TB_ADDR", 'G', 2385, 2, 1, 0, 00h
+	._inspect	'V', 'd', "U1TB_ADDR", "_U1TB_ADDR", 'G', 2385, 2, 1, 0, 00h
+	._inspect	'V', 'd', "U2TB_ADDR", "_U2TB_ADDR", 'G', 2385, 2, 1, 0, 00h
+	._inspect	'V', 'd', "U0RB_ADDR", "_U0RB_ADDR", 'G', 2385, 2, 1, 0, 00h
+	._inspect	'V', 'd', "U1RB_ADDR", "_U1RB_ADDR", 'G', 2385, 2, 1, 0, 00h
+	._inspect	'V', 'd', "U2RB_ADDR", "_U2RB_ADDR", 'G', 2385, 2, 1, 0, 00h
+	._inspect	'V', 'd', "CRCD_ADDR", "_CRCD_ADDR", 'G', 2385, 2, 1, 0, 00h
+	._inspect	'V', 'd', "AD0_ADDR", "_AD0_ADDR", 'G', 2385, 2, 1, 0, 00h
+	._inspect	'V', 'd', "AD1_ADDR", "_AD1_ADDR", 'G', 2385, 2, 1, 0, 00h
+	._inspect	'V', 'd', "AD2_ADDR", "_AD2_ADDR", 'G', 2385, 2, 1, 0, 00h
+	._inspect	'V', 'd', "AD3_ADDR", "_AD3_ADDR", 'G', 2385, 2, 1, 0, 00h
+	._inspect	'V', 'd', "AD4_ADDR", "_AD4_ADDR", 'G', 2385, 2, 1, 0, 00h
+	._inspect	'V', 'd', "AD5_ADDR", "_AD5_ADDR", 'G', 2385, 2, 1, 0, 00h
+	._inspect	'V', 'd', "AD6_ADDR", "_AD6_ADDR", 'G', 2385, 2, 1, 0, 00h
+	._inspect	'V', 'd', "AD7_ADDR", "_AD7_ADDR", 'G', 2385, 2, 1, 0, 00h
+	._inspect	'V', 'd', "RMAD0_ADDR", "_RMAD0_ADDR", 'G', 2560, 4, 1, 0, 00h
+	._inspect	'V', 'd', "RMAD1_ADDR", "_RMAD1_ADDR", 'G', 2560, 4, 1, 0, 00h
+	._inspect	'V', 'd', "RMAD2_ADDR", "_RMAD2_ADDR", 'G', 2560, 4, 1, 0, 00h
+	._inspect	'V', 'd', "RMAD3_ADDR", "_RMAD3_ADDR", 'G', 2560, 4, 1, 0, 00h
+	._inspect	'V', 'd', "SAR0_ADDR", "_SAR0_ADDR", 'G', 2560, 4, 1, 0, 00h
+	._inspect	'V', 'd', "SAR1_ADDR", "_SAR1_ADDR", 'G', 2560, 4, 1, 0, 00h
+	._inspect	'V', 'd', "DAR0_ADDR", "_DAR0_ADDR", 'G', 2560, 4, 1, 0, 00h
+	._inspect	'V', 'd', "DAR1_ADDR", "_DAR1_ADDR", 'G', 2560, 4, 1, 0, 00h
+	._inspect	'F', 'p', "Initialise", "_Initialise", 'G', 2626, 0, 00h, 0
+
+	._inspect	'M', "c:/program files (x86)/renesas/hew/tools/renesas/nc30wa/v543r00/inc30/string.h", "C:/Users/Miguel/Desktop/Nova pasta/NG2S901_As1_Menu/NG2S901_As1_Menu/drivers/keypad/keyscan_4x4"
+	._inspect	'F', 'p', "bcopy", "_bcopy", 'G', 43, 0, 00h, 0
+	._inspect	'F', 'p', "bzero", "_bzero", 'G', 44, 0, 00h, 0
+	._inspect	'F', 'p', "memchr", "$memchr", 'G', 45, 0, 00h, 0
+	._inspect	'F', 'p', "memcmp", "_memcmp", 'G', 46, 0, 00h, 0
+	._inspect	'F', 'p', "memcpy", "_memcpy", 'G', 47, 0, 00h, 0
+	._inspect	'F', 'p', "memset", "$memset", 'G', 48, 0, 00h, 0
+	._inspect	'F', 'p', "strcat", "_strcat", 'G', 50, 0, 00h, 0
+	._inspect	'F', 'p', "strchr", "$strchr", 'G', 51, 0, 00h, 0
+	._inspect	'F', 'p', "strcmp", "_strcmp", 'G', 52, 0, 00h, 0
+	._inspect	'F', 'p', "strcpy", "_strcpy", 'G', 53, 0, 00h, 0
+	._inspect	'F', 'p', "strcspn", "_strcspn", 'G', 54, 0, 00h, 0
+	._inspect	'F', 'p', "strlen", "_strlen", 'G', 55, 0, 00h, 0
+	._inspect	'F', 'p', "strncat", "_strncat", 'G', 56, 0, 00h, 0
+	._inspect	'F', 'p', "strncmp", "_strncmp", 'G', 57, 0, 00h, 0
+	._inspect	'F', 'p', "strncpy", "_strncpy", 'G', 58, 0, 00h, 0
+	._inspect	'F', 'p', "strpbrk", "_strpbrk", 'G', 59, 0, 00h, 0
+	._inspect	'F', 'p', "strrchr", "$strrchr", 'G', 60, 0, 00h, 0
+	._inspect	'F', 'p', "strspn", "_strspn", 'G', 61, 0, 00h, 0
+	._inspect	'F', 'p', "strstr", "_strstr", 'G', 62, 0, 00h, 0
+	._inspect	'F', 'p', "strtok", "_strtok", 'G', 63, 0, 00h, 0
+	._inspect	'F', 'p', "strerror", "$strerror", 'G', 64, 0, 00h, 0
+	._inspect	'F', 'p', "strcoll", "_strcoll", 'G', 65, 0, 00h, 0
+	._inspect	'F', 'p', "strxfrm", "_strxfrm", 'G', 66, 0, 00h, 0
+	._inspect	'F', 'p', "memmove", "_memmove", 'G', 67, 0, 00h, 0
+	._inspect	'F', 'p', "stricmp", "_stricmp", 'G', 70, 0, 00h, 0
+	._inspect	'F', 'p', "strnicmp", "_strnicmp", 'G', 71, 0, 00h, 0
+	._inspect	'F', 'p', "memicmp", "_memicmp", 'G', 72, 0, 00h, 0
+	._inspect	'F', 'p', "_n_n_strcat", "$_n_n_strcat", 'G', 77, 0, 00h, 0
+	._inspect	'F', 'p', "_n_f_strcat", "$_n_f_strcat", 'G', 78, 0, 00h, 0
+	._inspect	'F', 'p', "_f_n_strcat", "$_f_n_strcat", 'G', 79, 0, 00h, 0
+	._inspect	'F', 'p', "_n_strchr", "$_n_strchr", 'G', 80, 0, 00h, 0
+	._inspect	'F', 'p', "_n_n_strcmp", "$_n_n_strcmp", 'G', 81, 0, 00h, 0
+	._inspect	'F', 'p', "_n_f_strcmp", "$_n_f_strcmp", 'G', 82, 0, 00h, 0
+	._inspect	'F', 'p', "_f_n_strcmp", "$_f_n_strcmp", 'G', 83, 0, 00h, 0
+	._inspect	'F', 'p', "_n_n_strcpy", "$_n_n_strcpy", 'G', 84, 0, 00h, 0
+	._inspect	'F', 'p', "_n_f_strcpy", "$_n_f_strcpy", 'G', 85, 0, 00h, 0
+	._inspect	'F', 'p', "_f_n_strcpy", "$_f_n_strcpy", 'G', 86, 0, 00h, 0
+	._inspect	'F', 'p', "_n_n_strcspn", "$_n_n_strcspn", 'G', 87, 0, 00h, 0
+	._inspect	'F', 'p', "_n_f_strcspn", "$_n_f_strcspn", 'G', 88, 0, 00h, 0
+	._inspect	'F', 'p', "_f_n_strcspn", "$_f_n_strcspn", 'G', 89, 0, 00h, 0
+	._inspect	'F', 'p', "_n_strlen", "$_n_strlen", 'G', 90, 0, 00h, 0
+	._inspect	'F', 'p', "_n_n_strncat", "$_n_n_strncat", 'G', 91, 0, 00h, 0
+	._inspect	'F', 'p', "_n_f_strncat", "$_n_f_strncat", 'G', 92, 0, 00h, 0
+	._inspect	'F', 'p', "_f_n_strncat", "$_f_n_strncat", 'G', 93, 0, 00h, 0
+	._inspect	'F', 'p', "_n_n_strncmp", "$_n_n_strncmp", 'G', 94, 0, 00h, 0
+	._inspect	'F', 'p', "_n_f_strncmp", "$_n_f_strncmp", 'G', 95, 0, 00h, 0
+	._inspect	'F', 'p', "_f_n_strncmp", "$_f_n_strncmp", 'G', 96, 0, 00h, 0
+	._inspect	'F', 'p', "_n_n_strncpy", "$_n_n_strncpy", 'G', 97, 0, 00h, 0
+	._inspect	'F', 'p', "_n_f_strncpy", "$_n_f_strncpy", 'G', 98, 0, 00h, 0
+	._inspect	'F', 'p', "_f_n_strncpy", "$_f_n_strncpy", 'G', 99, 0, 00h, 0
+	._inspect	'F', 'p', "_n_n_strpbrk", "$_n_n_strpbrk", 'G', 100, 0, 00h, 0
+	._inspect	'F', 'p', "_n_f_strpbrk", "$_n_f_strpbrk", 'G', 101, 0, 00h, 0
+	._inspect	'F', 'p', "_f_n_strpbrk", "$_f_n_strpbrk", 'G', 102, 0, 00h, 0
+	._inspect	'F', 'p', "_n_strrchr", "$_n_strrchr", 'G', 103, 0, 00h, 0
+	._inspect	'F', 'p', "_n_n_strspn", "$_n_n_strspn", 'G', 104, 0, 00h, 0
+	._inspect	'F', 'p', "_n_f_strspn", "$_n_f_strspn", 'G', 105, 0, 00h, 0
+	._inspect	'F', 'p', "_f_n_strspn", "$_f_n_strspn", 'G', 106, 0, 00h, 0
+	._inspect	'F', 'p', "_n_n_strstr", "$_n_n_strstr", 'G', 107, 0, 00h, 0
+	._inspect	'F', 'p', "_n_f_strstr", "$_n_f_strstr", 'G', 108, 0, 00h, 0
+	._inspect	'F', 'p', "_f_n_strstr", "$_f_n_strstr", 'G', 109, 0, 00h, 0
+	._inspect	'F', 'p', "_n_n_strtok", "$_n_n_strtok", 'G', 110, 0, 00h, 0
+	._inspect	'F', 'p', "_n_f_strtok", "$_n_f_strtok", 'G', 111, 0, 00h, 0
+	._inspect	'F', 'p', "_f_n_strtok", "$_f_n_strtok", 'G', 112, 0, 00h, 0
+	._inspect	'F', 'p', "_n_strerror", "$_n_strerror", 'G', 113, 0, 00h, 0
+	._inspect	'F', 'p', "_n_n_strcoll", "$_n_n_strcoll", 'G', 114, 0, 00h, 0
+	._inspect	'F', 'p', "_n_f_strcoll", "$_n_f_strcoll", 'G', 115, 0, 00h, 0
+	._inspect	'F', 'p', "_f_n_strcoll", "$_f_n_strcoll", 'G', 116, 0, 00h, 0
+	._inspect	'F', 'p', "_n_n_strxfrm", "$_n_n_strxfrm", 'G', 117, 0, 00h, 0
+	._inspect	'F', 'p', "_n_f_strxfrm", "$_n_f_strxfrm", 'G', 118, 0, 00h, 0
+	._inspect	'F', 'p', "_f_n_strxfrm", "$_f_n_strxfrm", 'G', 119, 0, 00h, 0
+	._inspect	'F', 'p', "_n_n_stricmp", "$_n_n_stricmp", 'G', 120, 0, 00h, 0
+	._inspect	'F', 'p', "_n_f_stricmp", "$_n_f_stricmp", 'G', 121, 0, 00h, 0
+	._inspect	'F', 'p', "_f_n_stricmp", "$_f_n_stricmp", 'G', 122, 0, 00h, 0
+	._inspect	'F', 'p', "_n_n_strnicmp", "$_n_n_strnicmp", 'G', 123, 0, 00h, 0
+	._inspect	'F', 'p', "_n_f_strnicmp", "$_n_f_strnicmp", 'G', 124, 0, 00h, 0
+	._inspect	'F', 'p', "_f_n_strnicmp", "$_f_n_strnicmp", 'G', 125, 0, 00h, 0
+	._inspect	'F', 'p', "_n_n_memicmp", "$_n_n_memicmp", 'G', 126, 0, 00h, 0
+	._inspect	'F', 'p', "_n_f_memicmp", "$_n_f_memicmp", 'G', 127, 0, 00h, 0
+	._inspect	'F', 'p', "_f_n_memicmp", "$_f_n_memicmp", 'G', 128, 0, 00h, 0
+	._inspect	'F', 'p', "_n_n_memmove", "$_n_n_memmove", 'G', 129, 0, 00h, 0
+	._inspect	'F', 'p', "_n_f_memmove", "$_n_f_memmove", 'G', 130, 0, 00h, 0
+	._inspect	'F', 'p', "_f_n_memmove", "$_f_n_memmove", 'G', 131, 0, 00h, 0
+	._inspect	'F', 'p', "__n_bcopy", "$__n_bcopy", 'G', 137, 0, 00h, 0
+	._inspect	'F', 'p', "__n_bzero", "$__n_bzero", 'G', 138, 0, 00h, 0
+	._inspect	'F', 'p', "_n_memchr", "$_n_memchr", 'G', 139, 0, 00h, 0
+	._inspect	'F', 'p', "_n_n_memcmp", "$_n_n_memcmp", 'G', 140, 0, 00h, 0
+	._inspect	'F', 'p', "_n_f_memcmp", "$_n_f_memcmp", 'G', 141, 0, 00h, 0
+	._inspect	'F', 'p', "_f_n_memcmp", "$_f_n_memcmp", 'G', 142, 0, 00h, 0
+	._inspect	'F', 'p', "_n_n_memcpy", "$_n_n_memcpy", 'G', 143, 0, 00h, 0
+	._inspect	'F', 'p', "_n_f_memcpy", "$_n_f_memcpy", 'G', 144, 0, 00h, 0
+	._inspect	'F', 'p', "_f_n_memcpy", "$_f_n_memcpy", 'G', 145, 0, 00h, 0
+	._inspect	'F', 'p', "_n_memset", "$_n_memset", 'G', 146, 0, 00h, 0
+
+	._inspect	'M', "C:/Users/Miguel/Desktop/Nova pasta/NG2S901_As1_Menu/NG2S901_As1_Menu/drivers/keypad/keyscan_4x4.c", "C:/Users/Miguel/Desktop/Nova pasta/NG2S901_As1_Menu/NG2S901_As1_Menu/drivers/keypad/keyscan_4x4"
+	._inspect	'V', 'd', "keypad_matrix", "_keypad_matrix", 'G', 14, 16, 0, 0, 00h
+	._inspect	'V', 'd', "keypad", "_keypad", 'G', 24, 21, 0, 0, 00h
+	._inspect	'V', 'd', "keypad_buff_cpy", "_keypad_buff_cpy", 'G', 26, 16, 0, 0, 00h
+
+;## #	FUNCTION keyscan_4x4_init
+;## #	ARG Size(0)	Auto Size(0)	Context Size(3)
+
+
+	.SECTION	program,CODE,align
+	._inspect	'U', 2, "program", "program", 0
+	._file	'C:/Users/Miguel/Desktop/Nova pasta/NG2S901_As1_Menu/NG2S901_As1_Menu/drivers/keypad/keyscan_4x4.c'
+	._type	256,'v'
+	._type	257,'v'
+	._type	258,'x',256,1
+	._type	258,'m','',3,257
+	._func	'keyscan_4x4_init','G',0,258,_keyscan_4x4_init,0
+	._inspect	'F', 's', "keyscan_4x4_init", "_keyscan_4x4_init", 'G', 3
+	.align
+	._block
+	._line	29
+	.glb	_keyscan_4x4_init
+_keyscan_4x4_init:
+	._block
+	._line	30
+	mov.b	#0fH,_P10D_ADDR
+	._line	33
+	mov.b	#05H,_KUPIC_ADDR
+	._line	36
+	mov.b	#42H,_TA0MR_ADDR
+	._line	37
+	mov.w	#0001H,_TA0_ADDR
+	._line	38
+	mov.b	#04H,_TA0IC_ADDR
+	._line	39
+;#### ASM START
+FSET I
+;#### ASM END
+	._line	40
+	bset	0,_TABSR_ADDR
+	._line	43
+	mov.b	#00H,_keypad
+	._line	44
+	mov.b	#00H,_keypad+1
+	._line	45
+	mov.w	#0000H,_keypad+19
+	._line	46
+	mov.b	#00H,_keypad+2
+	._line	48
+	push.w	#0000H
+	push.w	#0010H
+	._inspect	'S', 'p', 4
+	mov.w	#0000H,R2
+	push.w	#_keypad_buff_cpy>>16
+	push.w	#(_keypad_buff_cpy&0FFFFH)
+	._inspect	'S', 'p', 4
+	._inspect	'S', 'c', "memset", "$memset", 'G', 0, 48
+	jsr	$memset
+	._inspect	'S', 'p', -8
+	add.b	#08H,SP
+	._eblock
+	._line	49
+	rts	
+E1:
+	._eblock
+M1:
+	._efunc	M1
+	._inspect	'F', 'd', "keyscan_4x4_init", "_keyscan_4x4_init", 'G', 29, 0, 00h, 0
+	._inspect	'F', 't', "keyscan_4x4_init", 'G', 258
+	._inspect	'V', 'r', "P10D_ADDR", 'G', 30, 1, 1, 0, 00h
+	._inspect	'V', 'r', "KUPIC_ADDR", 'G', 33, 1, 1, 0, 00h
+	._inspect	'V', 'r', "TA0MR_ADDR", 'G', 36, 1, 1, 0, 00h
+	._inspect	'V', 'r', "TA0_ADDR", 'G', 37, 2, 1, 0, 00h
+	._inspect	'V', 'r', "TA0IC_ADDR", 'G', 38, 1, 1, 0, 00h
+	._inspect	'V', 'r', "TABSR_ADDR", 'G', 40, 1, 1, 0, 01h
+	._inspect	'V', 'r', "keypad", 'G', 43, 21, 0, 0, 00h
+	._inspect	'V', 'r', "keypad", 'G', 44, 21, 0, 0, 00h
+	._inspect	'V', 'r', "keypad", 'G', 45, 21, 0, 0, 00h
+	._inspect	'V', 'r', "keypad", 'G', 46, 21, 0, 0, 00h
+	._inspect	'V', 'r', "keypad_buff_cpy", 'G', 48, 16, 0, 0, 00h
+	._inspect	'F', 'r', "memset", "$memset", 'G', 48, 0, 00h, 0
+	._inspect	'F', 'e', "keyscan_4x4_init", "_keyscan_4x4_init", 'G', 8, 0
+
+
+;## #	FUNCTION keypad_4x4_flush
+;## #	ARG Size(0)	Auto Size(0)	Context Size(3)
+
+	._type	259,'v'
+	._type	260,'v'
+	._type	261,'x',259,1
+	._type	261,'m','',3,260
+	._func	'keypad_4x4_flush','G',0,261,_keypad_4x4_flush,0
+	._inspect	'F', 's', "keypad_4x4_flush", "_keypad_4x4_flush", 'G', 3
+	.align
+	._line	52
+	.glb	_keypad_4x4_flush
+_keypad_4x4_flush:
+	._block
+	._line	53
+	mov.w	_keypad+19,R0
+	exts.w	R0
+	pushm	R2,R0
+	._inspect	'S', 'p', 4
+	mov.w	#0000H,R2
+	push.w	#_keypad+3>>16
+	push.w	#(_keypad+3&0FFFFH)
+	._inspect	'S', 'p', 4
+	._inspect	'S', 'c', "memset", "$memset", 'G', 0, 53
+	jsr	$memset
+	._inspect	'S', 'p', -8
+	add.b	#08H,SP
+	._line	54
+	mov.w	#0000H,_keypad+19
+	._eblock
+	._line	55
+	rts	
+E2:
+M2:
+	._efunc	M2
+	._inspect	'F', 'd', "keypad_4x4_flush", "_keypad_4x4_flush", 'G', 52, 0, 00h, 0
+	._inspect	'F', 't', "keypad_4x4_flush", 'G', 261
+	._inspect	'V', 'r', "keypad", 'G', 53, 21, 0, 0, 00h
+	._inspect	'V', 'r', "keypad", 'G', 53, 21, 0, 0, 00h
+	._inspect	'F', 'r', "memset", "$memset", 'G', 53, 0, 00h, 0
+	._inspect	'V', 'r', "keypad", 'G', 54, 21, 0, 0, 00h
+	._inspect	'F', 'e', "keypad_4x4_flush", "_keypad_4x4_flush", 'G', 8, 0
+
+
+;## #	FUNCTION keypad_delay
+;## #	FRAME	AUTO	(       i)	size  2,	offset -2
+;## #	ARG Size(0)	Auto Size(2)	Context Size(5)
+
+	._type	262,'v'
+	._type	263,'x',262,0
+	._func	'keypad_delay','G',2,263,_keypad_delay,0
+	._inspect	'F', 's', "keypad_delay", "_keypad_delay", 'G', 7
+	.align
+	._line	57
+	.glb	_keypad_delay
+_keypad_delay:
+	enter	#02H
+	._block
+	._var	'i','A',16,-2
+	._line	59
+	mov.w	#0000H,-2[FB]	;  i 
+L1:
+	._line	59
+	cmp.w	#0014H,-2[FB]	;  i 
+	jge	L5
+	add.w	#0001H,-2[FB]	;  i 
+	jmp	L1
+L5:
+	._eblock
+	._line	60
+	exitd	
+E3:
+M3:
+	._efunc	M3
+	._inspect	'F', 'd', "keypad_delay", "_keypad_delay", 'G', 57, 0, 00h, 0
+	._inspect	'F', 't', "keypad_delay", 'G', 263
+	._inspect	'F', 'e', "keypad_delay", "_keypad_delay", 'G', 0, 0
+
+	._inspect	'V', 'd', "hold_delay", "_hold_delay", 'G', 62, 2, 0, 0, 00h
+
+;## #	FUNCTION keyscan_4x4_clear
+;## #	ARG Size(0)	Auto Size(0)	Context Size(3)
+
+	._type	264,'v'
+	._type	265,'v'
+	._type	266,'x',264,1
+	._type	266,'m','',3,265
+	._func	'keyscan_4x4_clear','G',0,266,_keyscan_4x4_clear,0
+	._inspect	'F', 's', "keyscan_4x4_clear", "_keyscan_4x4_clear", 'G', 3
+	.align
+	._line	64
+	.glb	_keyscan_4x4_clear
+_keyscan_4x4_clear:
+	._block
+	._line	65
+	push.w	#0000H
+	push.w	#0010H
+	._inspect	'S', 'p', 4
+	mov.w	#0000H,R2
+	push.w	#_keypad_buff_cpy>>16
+	push.w	#(_keypad_buff_cpy&0FFFFH)
+	._inspect	'S', 'p', 4
+	._inspect	'S', 'c', "memset", "$memset", 'G', 0, 65
+	jsr	$memset
+	._inspect	'S', 'p', -8
+	add.b	#08H,SP
+	._eblock
+	._line	66
+	rts	
+E4:
+M4:
+	._efunc	M4
+	._inspect	'F', 'd', "keyscan_4x4_clear", "_keyscan_4x4_clear", 'G', 64, 0, 00h, 0
+	._inspect	'F', 't', "keyscan_4x4_clear", 'G', 266
+	._inspect	'V', 'r', "keypad_buff_cpy", 'G', 65, 16, 0, 0, 00h
+	._inspect	'F', 'r', "memset", "$memset", 'G', 65, 0, 00h, 0
+	._inspect	'F', 'e', "keyscan_4x4_clear", "_keyscan_4x4_clear", 'G', 8, 0
+
+
+;## #	FUNCTION keypad_4x4_scan
+;## #	FRAME	AUTO	(     col)	size  1,	offset -2
+;## #	FRAME	AUTO	(     row)	size  1,	offset -1
+;## #	ARG Size(0)	Auto Size(2)	Context Size(5)
+
+	._type	267,'v'
+	._type	268,'v'
+	._type	269,'x',267,1
+	._type	269,'m','',5,268
+	._func	'keypad_4x4_scan','G',2,269,_keypad_4x4_scan,0
+	._inspect	'F', 's', "keypad_4x4_scan", "_keypad_4x4_scan", 'G', 7
+	.align
+	._line	69
+	.glb	_keypad_4x4_scan
+_keypad_4x4_scan:
+	enter	#02H
+	._block
+	._var	'row','A',3,-1
+	._var	'col','A',3,-2
+	._line	72
+	cmp.w	#0010H,_keypad+19
+	jle	L15
+	exitd	
+L15:
+	._line	73
+	mov.w	_hold_delay,R0
+	add.w	#0001H,_hold_delay
+	cmp.w	#0004H,R0
+	jle	L25
+	._block
+	._line	74
+	._inspect	'S', 'c', "keyscan_4x4_clear", "_keyscan_4x4_clear", 'G', 0, 74
+	jsr	_keyscan_4x4_clear
+	._line	75
+	mov.w	#0000H,_hold_delay
+	._eblock
+L25:
+	._line	79
+	mov.b	#00H,-1[FB]	;  row 
+L35:
+	._line	79
+	cmp.b	#04H,-1[FB]	;  row 
+	jgeu	L39
+	._block
+	._line	80
+	mov.b	-1[FB],R1H	;  row 
+	mov.w	#0001H,A0
+	shl.w	R1H,A0
+	not.w	A0
+	mov.b	A0,_P10_ADDR
+	._line	81
+	._inspect	'S', 'c', "keypad_delay", "_keypad_delay", 'G', 0, 81
+	jsr	_keypad_delay
+	._line	82
+	mov.b	#00H,-2[FB]	;  col 
+L47:
+	._line	82
+	cmp.b	#04H,-2[FB]	;  col 
+	jgeu	L51
+	._line	83
+	mov.b	-2[FB],R1H	;  col 
+	mov.w	#0001H,R0
+	shl.w	R1H,R0
+	shl.w	#04H,R0
+	mov.b	_P10_ADDR,R1L
+	mov.b	#00H,R1H
+	and.w	R0,R1
+	jne	L59
+	cmp.w	#0010H,_keypad+19
+	jge	L107
+	._block
+	._line	84
+	mov.b	-2[FB],A0	;  col 
+	shl.w	#02H,A0
+	mov.b	-1[FB],R0L	;  row 
+	mov.b	#00H,R0H
+	add.w	R0,A0
+	mov.w	_keypad+19,A1
+	mov.b	_keypad_matrix[A0],_keypad+3[A1]
+	add.w	#0001H,_keypad+19
+	._line	85
+	mov.b	#01H,_keypad+2
+	._eblock
+L107:
+L59:
+	inc.b	-2[FB]	;  col 
+	jmp	L47
+L51:
+	inc.b	-1[FB]	;  row 
+	jmp	L35
+L39:
+	._eblock
+	._line	89
+	mov.b	_keypad+2,R0L
+	jeq	L85
+	._block
+	._line	90
+	mov.b	#01H,_keypad+1
+	._line	91
+	mov.b	#00H,_keypad+2
+	._eblock
+L85:
+	._line	94
+	mov.w	#9c40H,_TA0_ADDR
+	._line	95
+	bset	0,_ONSF_ADDR
+	._eblock
+	._line	96
+	exitd	
+E5:
+M5:
+	._efunc	M5
+	._inspect	'F', 'd', "keypad_4x4_scan", "_keypad_4x4_scan", 'G', 69, 0, 00h, 0
+	._inspect	'F', 't', "keypad_4x4_scan", 'G', 269
+	._inspect	'V', 'r', "keypad", 'G', 72, 21, 0, 0, 00h
+	._inspect	'V', 'r', "hold_delay", 'G', 73, 2, 0, 0, 00h
+	._inspect	'V', 'r', "hold_delay", 'G', 73, 2, 0, 0, 00h
+	._inspect	'F', 'r', "keyscan_4x4_clear", "_keyscan_4x4_clear", 'G', 74, 0, 00h, 0
+	._inspect	'V', 'r', "hold_delay", 'G', 75, 2, 0, 0, 00h
+	._inspect	'V', 'r', "P10_ADDR", 'G', 80, 1, 1, 0, 00h
+	._inspect	'F', 'r', "keypad_delay", "_keypad_delay", 'G', 81, 0, 00h, 0
+	._inspect	'V', 'r', "P10_ADDR", 'G', 83, 1, 1, 0, 00h
+	._inspect	'V', 'r', "keypad", 'G', 83, 21, 0, 0, 00h
+	._inspect	'V', 'r', "keypad", 'G', 84, 21, 0, 0, 00h
+	._inspect	'V', 'r', "keypad", 'G', 84, 21, 0, 0, 00h
+	._inspect	'V', 'r', "keypad_matrix", 'G', 84, 16, 0, 0, 00h
+	._inspect	'V', 'r', "keypad", 'G', 84, 21, 0, 0, 00h
+	._inspect	'V', 'r', "keypad", 'G', 85, 21, 0, 0, 00h
+	._inspect	'V', 'r', "keypad", 'G', 89, 21, 0, 0, 00h
+	._inspect	'V', 'r', "keypad", 'G', 90, 21, 0, 0, 00h
+	._inspect	'V', 'r', "keypad", 'G', 91, 21, 0, 0, 00h
+	._inspect	'V', 'r', "TA0_ADDR", 'G', 94, 2, 1, 0, 00h
+	._inspect	'V', 'r', "ONSF_ADDR", 'G', 95, 1, 1, 0, 01h
+	._inspect	'F', 'e', "keypad_4x4_scan", "_keypad_4x4_scan", 'G', 0, 0
+
+
+;## #	FUNCTION Timer_A0
+;## #	ARG Size(0)	Auto Size(0)	Context Size(18)
+
+	._type	270,'v'
+	._type	271,'v'
+	._type	272,'x',270,1
+	._type	272,'m','',18,271
+	._func	'Timer_A0','G',0,272,_Timer_A0,0
+	._inspect	'F', 's', "Timer_A0", "_Timer_A0", 'G', 18
+	.align
+	._line	100
+	.glb	_Timer_A0
+_Timer_A0:
+	pushm	R0,R1,R2,R3,A0,A1,FB
+	._block
+	._line	101
+	bclr	3,_KUPIC_ADDR
+	._line	102
+	mov.b	_keypad,R0L
+	jeq	L109
+	._block
+	._line	103
+	mov.b	#00H,_keypad
+	._line	104
+	mov.w	#5a00H,_TA0_ADDR
+	._line	105
+	bset	0,_ONSF_ADDR
+	._line	106
+	popm	R0,R1,R2,R3,A0,A1,FB
+	reit
+	._eblock
+L109:
+	._line	108
+	._inspect	'S', 'c', "keypad_4x4_scan", "_keypad_4x4_scan", 'G', 0, 108
+	jsr	_keypad_4x4_scan
+	._eblock
+	._line	109
+	popm	R0,R1,R2,R3,A0,A1,FB
+	reit
+E6:
+M6:
+	._efunc	M6
+	._inspect	'F', 'd', "Timer_A0", "_Timer_A0", 'G', 100, 0, 020000h, 0
+	._inspect	'F', 't', "Timer_A0", 'G', 272
+	._inspect	'V', 'r', "KUPIC_ADDR", 'G', 101, 1, 1, 0, 08h
+	._inspect	'V', 'r', "keypad", 'G', 102, 21, 0, 0, 00h
+	._inspect	'V', 'r', "keypad", 'G', 103, 21, 0, 0, 00h
+	._inspect	'V', 'r', "TA0_ADDR", 'G', 104, 2, 1, 0, 00h
+	._inspect	'V', 'r', "ONSF_ADDR", 'G', 105, 1, 1, 0, 01h
+	._inspect	'F', 'r', "keypad_4x4_scan", "_keypad_4x4_scan", 'G', 108, 0, 00h, 0
+	._inspect	'F', 'e', "Timer_A0", "_Timer_A0", 'G', 0, 0
+
+
+;## #	FUNCTION KYB
+;## #	ARG Size(0)	Auto Size(0)	Context Size(18)
+
+	._type	273,'v'
+	._type	274,'v'
+	._type	275,'x',273,1
+	._type	275,'m','',18,274
+	._func	'KYB','G',0,275,_KYB,0
+	._inspect	'F', 's', "KYB", "_KYB", 'G', 18
+	.align
+	._line	113
+	.glb	_KYB
+_KYB:
+	pushm	R0,R1,R2,R3,A0,A1,FB
+	._block
+	._line	114
+	mov.b	_keypad,R0L
+	jeq	L113
+	popm	R0,R1,R2,R3,A0,A1,FB
+	reit
+L113:
+	._line	116
+	mov.w	#0000H,_hold_delay
+	._line	117
+	mov.b	#01H,_keypad+2
+	._line	118
+	mov.b	#01H,_keypad
+	._line	119
+	mov.w	#5a00H,_TA0_ADDR
+	._line	120
+	bset	0,_ONSF_ADDR
+	._eblock
+	._line	121
+	popm	R0,R1,R2,R3,A0,A1,FB
+	reit
+E7:
+M7:
+	._efunc	M7
+	._inspect	'F', 'd', "KYB", "_KYB", 'G', 113, 0, 020000h, 0
+	._inspect	'F', 't', "KYB", 'G', 275
+	._inspect	'V', 'r', "keypad", 'G', 114, 21, 0, 0, 00h
+	._inspect	'V', 'r', "hold_delay", 'G', 116, 2, 0, 0, 00h
+	._inspect	'V', 'r', "keypad", 'G', 117, 21, 0, 0, 00h
+	._inspect	'V', 'r', "keypad", 'G', 118, 21, 0, 0, 00h
+	._inspect	'V', 'r', "TA0_ADDR", 'G', 119, 2, 1, 0, 00h
+	._inspect	'V', 'r', "ONSF_ADDR", 'G', 120, 1, 1, 0, 01h
+	._inspect	'F', 'e', "KYB", "_KYB", 'G', 0, 0
+
+
+;## #	FUNCTION keypad_4x4_read_buffer
+;## #	ARG Size(0)	Auto Size(0)	Context Size(3)
+
+	._type	276,'P',3
+	._type	277,'v'
+	._type	278,'x',276,1
+	._type	278,'m','',3,277
+	._func	'keypad_4x4_read_buffer','G',0,278,_keypad_4x4_read_buffer,0
+	._inspect	'F', 's', "keypad_4x4_read_buffer", "_keypad_4x4_read_buffer", 'G', 3
+	.align
+	._line	124
+	.glb	_keypad_4x4_read_buffer
+_keypad_4x4_read_buffer:
+	._block
+	._line	125
+	mov.b	_keypad+1,R0L
+	jeq	L117
+	._block
+	._line	126
+	push.w	#0000H
+	push.w	#0010H
+	._inspect	'S', 'p', 4
+	mov.w	#0000H,R2
+	push.w	#_keypad_buff_cpy>>16
+	push.w	#(_keypad_buff_cpy&0FFFFH)
+	._inspect	'S', 'p', 4
+	._inspect	'S', 'c', "memset", "$memset", 'G', 0, 126
+	jsr	$memset
+	._inspect	'S', 'p', -8
+	add.b	#08H,SP
+	._line	127
+	mov.w	_keypad+19,R0
+	exts.w	R0
+	pushm	R2,R0
+	._inspect	'S', 'p', 4
+	push.w	#_keypad+3>>16
+	push.w	#(_keypad+3&0FFFFH)
+	._inspect	'S', 'p', 4
+	push.w	#_keypad_buff_cpy>>16
+	push.w	#(_keypad_buff_cpy&0FFFFH)
+	._inspect	'S', 'p', 4
+	._inspect	'S', 'c', "memcpy", "_memcpy", 'G', 0, 127
+	jsr	_memcpy
+	._inspect	'S', 'p', -12
+	add.b	#0cH,SP
+	._line	128
+	._inspect	'S', 'c', "keypad_4x4_flush", "_keypad_4x4_flush", 'G', 0, 128
+	jsr	_keypad_4x4_flush
+	._line	130
+	mov.b	#00H,_keypad+1
+	._eblock
+L117:
+	._line	132
+	mov.w	#(_keypad_buff_cpy&0FFFFH),R0
+	mov.w	#_keypad_buff_cpy>>16,R2
+	rts	
+E8:
+	._eblock
+M8:
+	._efunc	M8
+	._inspect	'F', 'd', "keypad_4x4_read_buffer", "_keypad_4x4_read_buffer", 'G', 124, 0, 00h, 0
+	._inspect	'F', 't', "keypad_4x4_read_buffer", 'G', 278
+	._inspect	'V', 'r', "keypad", 'G', 125, 21, 0, 0, 00h
+	._inspect	'V', 'r', "keypad_buff_cpy", 'G', 126, 16, 0, 0, 00h
+	._inspect	'F', 'r', "memset", "$memset", 'G', 126, 0, 00h, 0
+	._inspect	'V', 'r', "keypad", 'G', 127, 21, 0, 0, 00h
+	._inspect	'V', 'r', "keypad", 'G', 127, 21, 0, 0, 00h
+	._inspect	'V', 'r', "keypad_buff_cpy", 'G', 127, 16, 0, 0, 00h
+	._inspect	'F', 'r', "memcpy", "_memcpy", 'G', 127, 0, 00h, 0
+	._inspect	'F', 'r', "keypad_4x4_flush", "_keypad_4x4_flush", 'G', 128, 0, 00h, 0
+	._inspect	'V', 'r', "keypad", 'G', 130, 21, 0, 0, 00h
+	._inspect	'V', 'r', "keypad_buff_cpy", 'G', 132, 16, 0, 0, 00h
+	._inspect	'F', 'e', "keypad_4x4_read_buffer", "_keypad_4x4_read_buffer", 'G', 12, 0
+
+
+;## #	FUNCTION getcommand
+;## #	ARG Size(0)	Auto Size(0)	Context Size(3)
+
+	._type	279,'v'
+	._type	280,'x',3,1
+	._type	280,'m','',3,279
+	._func	'getcommand','G',0,280,_getcommand,0
+	._inspect	'F', 's', "getcommand", "_getcommand", 'G', 3
+	.align
+	._line	136
+	.glb	_getcommand
+_getcommand:
+	._block
+	._line	137
+	._inspect	'S', 'c', "keypad_4x4_read_buffer", "_keypad_4x4_read_buffer", 'G', 0, 137
+	jsr	_keypad_4x4_read_buffer
+	mov.w	R0,A0
+	mov.w	R2,A1
+	lde.b	[A1A0],R0L
+	rts	
+E9:
+	._eblock
+M9:
+	._efunc	M9
+	._inspect	'F', 'd', "getcommand", "_getcommand", 'G', 136, 0, 00h, 0
+	._inspect	'F', 't', "getcommand", 'G', 280
+	._inspect	'F', 'r', "keypad_4x4_read_buffer", "_keypad_4x4_read_buffer", 'G', 137, 0, 00h, 0
+	._inspect	'F', 'e', "getcommand", "_getcommand", 'G', 0, 0
+
+
+;## #	FUNCTION keypad_4x4_iskeypress
+;## #	ARG Size(0)	Auto Size(0)	Context Size(3)
+
+	._type	281,'v'
+	._type	282,'x',3,1
+	._type	282,'m','',3,281
+	._func	'keypad_4x4_iskeypress','G',0,282,_keypad_4x4_iskeypress,0
+	._inspect	'F', 's', "keypad_4x4_iskeypress", "_keypad_4x4_iskeypress", 'G', 3
+	.align
+	._line	140
+	.glb	_keypad_4x4_iskeypress
+_keypad_4x4_iskeypress:
+	._block
+	._line	141
+	mov.b	_keypad+2,R0L
+	rts	
+E10:
+	._eblock
+M10:
+	._efunc	M10
+	._inspect	'F', 'd', "keypad_4x4_iskeypress", "_keypad_4x4_iskeypress", 'G', 140, 0, 00h, 0
+	._inspect	'F', 't', "keypad_4x4_iskeypress", 'G', 282
+	._inspect	'V', 'r', "keypad", 'G', 141, 21, 0, 0, 00h
+	._inspect	'F', 'e', "keypad_4x4_iskeypress", "_keypad_4x4_iskeypress", 'G', 0, 0
+
+
+;## #	FUNCTION keypad_4x4_wait
+;## #	ARG Size(0)	Auto Size(0)	Context Size(3)
+
+	._type	283,'v'
+	._type	284,'v'
+	._type	285,'x',283,1
+	._type	285,'m','',3,284
+	._func	'keypad_4x4_wait','G',0,285,_keypad_4x4_wait,0
+	._inspect	'F', 's', "keypad_4x4_wait", "_keypad_4x4_wait", 'G', 3
+	.align
+	._line	145
+	.glb	_keypad_4x4_wait
+_keypad_4x4_wait:
+	._block
+	._line	146
+L121:
+	mov.w	#0001H,R0
+	jeq	L123
+	._block
+	._line	147
+L125:
+	._inspect	'S', 'c', "getcommand", "_getcommand", 'G', 0, 147
+	jsr	_getcommand
+	mov.b	R0L,R0H
+	jne	L125
+	._line	148
+	._inspect	'S', 'c', "keypad_4x4_iskeypress", "_keypad_4x4_iskeypress", 'G', 0, 148
+	jsr	_keypad_4x4_iskeypress
+	mov.b	R0L,R0H
+	jne	L121
+	._eblock
+	._line	150
+L123:
+	._eblock
+	._line	151
+	rts	
+E11:
+M11:
+	._efunc	M11
+	._inspect	'F', 'd', "keypad_4x4_wait", "_keypad_4x4_wait", 'G', 145, 0, 00h, 0
+	._inspect	'F', 't', "keypad_4x4_wait", 'G', 285
+	._inspect	'F', 'r', "getcommand", "_getcommand", 'G', 147, 0, 00h, 0
+	._inspect	'F', 'r', "keypad_4x4_iskeypress", "_keypad_4x4_iskeypress", 'G', 148, 0, 00h, 0
+	._inspect	'F', 'e', "keypad_4x4_wait", "_keypad_4x4_wait", 'G', 0, 0
+
+
+;## #	FUNCTION keypad_4x4_wait_async
+;## #	ARG Size(0)	Auto Size(0)	Context Size(3)
+
+	._type	286,'v'
+	._type	287,'x',3,1
+	._type	287,'m','',3,286
+	._func	'keypad_4x4_wait_async','G',0,287,_keypad_4x4_wait_async,0
+	._inspect	'F', 's', "keypad_4x4_wait_async", "_keypad_4x4_wait_async", 'G', 3
+	.align
+	._line	155
+	.glb	_keypad_4x4_wait_async
+_keypad_4x4_wait_async:
+	._block
+	._line	156
+	._inspect	'S', 'c', "getcommand", "_getcommand", 'G', 0, 156
+	jsr	_getcommand
+	rts	
+E12:
+	._eblock
+M12:
+	._efunc	M12
+	._inspect	'F', 'd', "keypad_4x4_wait_async", "_keypad_4x4_wait_async", 'G', 155, 0, 00h, 0
+	._inspect	'F', 't', "keypad_4x4_wait_async", 'G', 287
+	._inspect	'F', 'r', "getcommand", "_getcommand", 'G', 156, 0, 00h, 0
+	._inspect	'F', 'e', "keypad_4x4_wait_async", "_keypad_4x4_wait_async", 'G', 0, 0
+
+
+;## #	FUNCTION read_key
+;## #	FRAME	AUTO	(     key)	size  1,	offset -1
+;## #	ARG Size(0)	Auto Size(1)	Context Size(5)
+
+	._type	288,'v'
+	._type	289,'x',3,1
+	._type	289,'m','',5,288
+	._func	'read_key','G',1,289,_read_key,0
+	._inspect	'F', 's', "read_key", "_read_key", 'G', 6
+	.align
+	._line	161
+	.glb	_read_key
+_read_key:
+	enter	#01H
+	._block
+	._var	'key','A',3,-1
+	._line	163
+	._inspect	'S', 'c', "keypad_4x4_wait", "_keypad_4x4_wait", 'G', 0, 163
+	jsr	_keypad_4x4_wait
+	._line	164
+L139:
+	._inspect	'S', 'c', "getcommand", "_getcommand", 'G', 0, 164
+	jsr	_getcommand
+	mov.b	R0L,-1[FB]	;  key 
+	jeq	L139
+	._line	165
+	mov.b	-1[FB],R0L	;  key 
+	exitd	
+E13:
+	._eblock
+M13:
+	._efunc	M13
+	._inspect	'F', 'd', "read_key", "_read_key", 'G', 161, 0, 00h, 0
+	._inspect	'F', 't', "read_key", 'G', 289
+	._inspect	'F', 'r', "keypad_4x4_wait", "_keypad_4x4_wait", 'G', 163, 0, 00h, 0
+	._inspect	'F', 'r', "getcommand", "_getcommand", 'G', 164, 0, 00h, 0
+	._inspect	'F', 'e', "read_key", "_read_key", 'G', 0, 0
+
+	.glb	_Initialise
+	.glb	_bcopy
+	.glb	_bzero
+	.glb	$memchr
+	.glb	_memcmp
+	.glb	_memcpy
+	.glb	$memset
+	.glb	_strcat
+	.glb	$strchr
+	.glb	_strcmp
+	.glb	_strcpy
+	.glb	_strcspn
+	.glb	_strlen
+	.glb	_strncat
+	.glb	_strncmp
+	.glb	_strncpy
+	.glb	_strpbrk
+	.glb	$strrchr
+	.glb	_strspn
+	.glb	_strstr
+	.glb	_strtok
+	.glb	$strerror
+	.glb	_strcoll
+	.glb	_strxfrm
+	.glb	_memmove
+	.glb	_stricmp
+	.glb	_strnicmp
+	.glb	_memicmp
+	.glb	$_n_n_strcat
+	.glb	$_n_f_strcat
+	.glb	$_f_n_strcat
+	.glb	$_n_strchr
+	.glb	$_n_n_strcmp
+	.glb	$_n_f_strcmp
+	.glb	$_f_n_strcmp
+	.glb	$_n_n_strcpy
+	.glb	$_n_f_strcpy
+	.glb	$_f_n_strcpy
+	.glb	$_n_n_strcspn
+	.glb	$_n_f_strcspn
+	.glb	$_f_n_strcspn
+	.glb	$_n_strlen
+	.glb	$_n_n_strncat
+	.glb	$_n_f_strncat
+	.glb	$_f_n_strncat
+	.glb	$_n_n_strncmp
+	.glb	$_n_f_strncmp
+	.glb	$_f_n_strncmp
+	.glb	$_n_n_strncpy
+	.glb	$_n_f_strncpy
+	.glb	$_f_n_strncpy
+	.glb	$_n_n_strpbrk
+	.glb	$_n_f_strpbrk
+	.glb	$_f_n_strpbrk
+	.glb	$_n_strrchr
+	.glb	$_n_n_strspn
+	.glb	$_n_f_strspn
+	.glb	$_f_n_strspn
+	.glb	$_n_n_strstr
+	.glb	$_n_f_strstr
+	.glb	$_f_n_strstr
+	.glb	$_n_n_strtok
+	.glb	$_n_f_strtok
+	.glb	$_f_n_strtok
+	.glb	$_n_strerror
+	.glb	$_n_n_strcoll
+	.glb	$_n_f_strcoll
+	.glb	$_f_n_strcoll
+	.glb	$_n_n_strxfrm
+	.glb	$_n_f_strxfrm
+	.glb	$_f_n_strxfrm
+	.glb	$_n_n_stricmp
+	.glb	$_n_f_stricmp
+	.glb	$_f_n_stricmp
+	.glb	$_n_n_strnicmp
+	.glb	$_n_f_strnicmp
+	.glb	$_f_n_strnicmp
+	.glb	$_n_n_memicmp
+	.glb	$_n_f_memicmp
+	.glb	$_f_n_memicmp
+	.glb	$_n_n_memmove
+	.glb	$_n_f_memmove
+	.glb	$_f_n_memmove
+	.glb	$__n_bcopy
+	.glb	$__n_bzero
+	.glb	$_n_memchr
+	.glb	$_n_n_memcmp
+	.glb	$_n_f_memcmp
+	.glb	$_f_n_memcmp
+	.glb	$_n_n_memcpy
+	.glb	$_n_f_memcpy
+	.glb	$_f_n_memcpy
+	.glb	$_n_memset
+
+	.SECTION	data_NE,DATA,align
+	._inspect	'U', 1, "data_NE", "data_NE", 0
+	.glb	_keypad_matrix
+_keypad_matrix:
+	.blkb	16
+	.glb	_hold_delay
+_hold_delay:
+	.blkb	2
+
+	.SECTION	data_NEI,ROMDATA
+	._inspect	'U', 1, "data_NEI", "data_NEI", 0
+;## # init data of keypad_matrix.
+	.byte	31H	;  '1'
+	.byte	32H	;  '2'
+	.byte	33H	;  '3'
+	.byte	41H	;  'A'
+	.byte	34H	;  '4'
+	.byte	35H	;  '5'
+	.byte	36H	;  '6'
+	.byte	42H	;  'B'
+	.byte	37H	;  '7'
+	.byte	38H	;  '8'
+	.byte	39H	;  '9'
+	.byte	43H	;  'C'
+	.byte	2aH	;  '*'
+	.byte	30H	;  '0'
+	.byte	23H	;  '#'
+	.byte	44H	;  'D'
+;## # init data of hold_delay.
+	.word	0000H
+
+	.SECTION	bss_NE,DATA,align
+	._inspect	'U', 3, "bss_NE", "bss_NE", 0
+	.glb	_keypad_buff_cpy
+_keypad_buff_cpy:
+	.blkb	16
+
+	.SECTION	bss_NO,DATA
+	._inspect	'U', 3, "bss_NO", "bss_NO", 0
+	.glb	_keypad
+_keypad:
+	.blkb	21
+;#################################
+;###  STATIC DATA INFORMATION  ###
+;#################################
+	._var	'DA0_ADDR','S',3,_DA0_ADDR
+	._var	'DA1_ADDR','S',3,_DA1_ADDR
+	._var	'UDF_ADDR','S',3,_UDF_ADDR
+	._var	'TA11_ADDR','S',5,_TA11_ADDR
+	._var	'TA21_ADDR','S',5,_TA21_ADDR
+	._var	'TA41_ADDR','S',5,_TA41_ADDR
+	._var	'TB3_ADDR','S',5,_TB3_ADDR
+	._var	'TB4_ADDR','S',5,_TB4_ADDR
+	._var	'TB5_ADDR','S',5,_TB5_ADDR
+	._var	'TA0_ADDR','S',5,_TA0_ADDR
+	._var	'TA1_ADDR','S',5,_TA1_ADDR
+	._var	'TA2_ADDR','S',5,_TA2_ADDR
+	._var	'TA3_ADDR','S',5,_TA3_ADDR
+	._var	'TA4_ADDR','S',5,_TA4_ADDR
+	._var	'TB0_ADDR','S',5,_TB0_ADDR
+	._var	'TB1_ADDR','S',5,_TB1_ADDR
+	._var	'TB2_ADDR','S',5,_TB2_ADDR
+	._type	292,'g','B0',0,1,3
+	._type	293,'g','B1',0,1,3
+	._type	294,'g','B2',0,1,3
+	._type	295,'g','B3',0,1,3
+	._type	296,'g','B4',0,1,3
+	._type	297,'g','B5',0,1,3
+	._type	298,'g','B6',0,1,3
+	._type	299,'g','B7',0,1,3
+	._type	291,'S','BIT_DEF',1
+	._type	291,'m','B0',292,0
+	._type	291,'m','B1',293,1
+	._type	291,'m','B2',294,2
+	._type	291,'m','B3',295,3
+	._type	291,'m','B4',296,4
+	._type	291,'m','B5',297,5
+	._type	291,'m','B6',298,6
+	._type	291,'m','B7',299,7
+	._type	290,'U','BYTE_DEF',1
+	._type	290,'m','BIT',291,0
+	._type	290,'m','BYTE',3,0
+	._var	'PM0_ADDR','S',290,_PM0_ADDR
+	._var	'PM1_ADDR','S',290,_PM1_ADDR
+	._var	'CM0_ADDR','S',290,_CM0_ADDR
+	._var	'CM1_ADDR','S',290,_CM1_ADDR
+	._var	'CSR_ADDR','S',290,_CSR_ADDR
+	._var	'AIER_ADDR','S',290,_AIER_ADDR
+	._var	'PRCR_ADDR','S',290,_PRCR_ADDR
+	._var	'DBR_ADDR','S',290,_DBR_ADDR
+	._var	'CM2_ADDR','S',290,_CM2_ADDR
+	._var	'WDTS_ADDR','S',290,_WDTS_ADDR
+	._var	'WDC_ADDR','S',290,_WDC_ADDR
+	._var	'CSE_ADDR','S',290,_CSE_ADDR
+	._var	'PLC0_ADDR','S',290,_PLC0_ADDR
+	._var	'PM2_ADDR','S',290,_PM2_ADDR
+	._var	'DM0CON_ADDR','S',290,_DM0CON_ADDR
+	._var	'DM1CON_ADDR','S',290,_DM1CON_ADDR
+	._var	'INT3IC_ADDR','S',290,_INT3IC_ADDR
+	._var	'TB5IC_ADDR','S',290,_TB5IC_ADDR
+	._var	'TB4IC_ADDR','S',290,_TB4IC_ADDR
+	._var	'TB3IC_ADDR','S',290,_TB3IC_ADDR
+	._var	'S4IC_ADDR','S',290,_S4IC_ADDR
+	._var	'S3IC_ADDR','S',290,_S3IC_ADDR
+	._var	'INT5IC_ADDR','S',290,_INT5IC_ADDR
+	._var	'INT4IC_ADDR','S',290,_INT4IC_ADDR
+	._var	'BCNIC_ADDR','S',290,_BCNIC_ADDR
+	._var	'DM0IC_ADDR','S',290,_DM0IC_ADDR
+	._var	'DM1IC_ADDR','S',290,_DM1IC_ADDR
+	._var	'KUPIC_ADDR','S',290,_KUPIC_ADDR
+	._var	'ADIC_ADDR','S',290,_ADIC_ADDR
+	._var	'S2TIC_ADDR','S',290,_S2TIC_ADDR
+	._var	'S2RIC_ADDR','S',290,_S2RIC_ADDR
+	._var	'S0TIC_ADDR','S',290,_S0TIC_ADDR
+	._var	'S0RIC_ADDR','S',290,_S0RIC_ADDR
+	._var	'S1TIC_ADDR','S',290,_S1TIC_ADDR
+	._var	'S1RIC_ADDR','S',290,_S1RIC_ADDR
+	._var	'TA0IC_ADDR','S',290,_TA0IC_ADDR
+	._var	'TA1IC_ADDR','S',290,_TA1IC_ADDR
+	._var	'TA2IC_ADDR','S',290,_TA2IC_ADDR
+	._var	'TA3IC_ADDR','S',290,_TA3IC_ADDR
+	._var	'TA4IC_ADDR','S',290,_TA4IC_ADDR
+	._var	'TB0IC_ADDR','S',290,_TB0IC_ADDR
+	._var	'TB1IC_ADDR','S',290,_TB1IC_ADDR
+	._var	'TB2IC_ADDR','S',290,_TB2IC_ADDR
+	._var	'INT0IC_ADDR','S',290,_INT0IC_ADDR
+	._var	'INT1IC_ADDR','S',290,_INT1IC_ADDR
+	._var	'INT2IC_ADDR','S',290,_INT2IC_ADDR
+	._var	'FMR1_ADDR','S',290,_FMR1_ADDR
+	._var	'FMR0_ADDR','S',290,_FMR0_ADDR
+	._var	'AIER2_ADDR','S',290,_AIER2_ADDR
+	._var	'PCLKR_ADDR','S',290,_PCLKR_ADDR
+	._var	'TBSR_ADDR','S',290,_TBSR_ADDR
+	._var	'INVC0_ADDR','S',290,_INVC0_ADDR
+	._var	'INVC1_ADDR','S',290,_INVC1_ADDR
+	._var	'IDB0_ADDR','S',290,_IDB0_ADDR
+	._var	'IDB1_ADDR','S',290,_IDB1_ADDR
+	._var	'DTT_ADDR','S',290,_DTT_ADDR
+	._var	'ICTB2_ADDR','S',290,_ICTB2_ADDR
+	._var	'TB3MR_ADDR','S',290,_TB3MR_ADDR
+	._var	'TB4MR_ADDR','S',290,_TB4MR_ADDR
+	._var	'TB5MR_ADDR','S',290,_TB5MR_ADDR
+	._var	'IFSR2A_ADDR','S',290,_IFSR2A_ADDR
+	._var	'IFSR_ADDR','S',290,_IFSR_ADDR
+	._var	'S3TRR_ADDR','S',290,_S3TRR_ADDR
+	._var	'S3C_ADDR','S',290,_S3C_ADDR
+	._var	'S3BRG_ADDR','S',290,_S3BRG_ADDR
+	._var	'S4TRR_ADDR','S',290,_S4TRR_ADDR
+	._var	'S4C_ADDR','S',290,_S4C_ADDR
+	._var	'S4BRG_ADDR','S',290,_S4BRG_ADDR
+	._var	'U0SMR4_ADDR','S',290,_U0SMR4_ADDR
+	._var	'U0SMR3_ADDR','S',290,_U0SMR3_ADDR
+	._var	'U0SMR2_ADDR','S',290,_U0SMR2_ADDR
+	._var	'U0SMR_ADDR','S',290,_U0SMR_ADDR
+	._var	'U1SMR4_ADDR','S',290,_U1SMR4_ADDR
+	._var	'U1SMR3_ADDR','S',290,_U1SMR3_ADDR
+	._var	'U1SMR2_ADDR','S',290,_U1SMR2_ADDR
+	._var	'U1SMR_ADDR','S',290,_U1SMR_ADDR
+	._var	'U2SMR4_ADDR','S',290,_U2SMR4_ADDR
+	._var	'U2SMR3_ADDR','S',290,_U2SMR3_ADDR
+	._var	'U2SMR2_ADDR','S',290,_U2SMR2_ADDR
+	._var	'U2SMR_ADDR','S',290,_U2SMR_ADDR
+	._var	'U2MR_ADDR','S',290,_U2MR_ADDR
+	._var	'U2BRG_ADDR','S',290,_U2BRG_ADDR
+	._var	'U2C0_ADDR','S',290,_U2C0_ADDR
+	._var	'U2C1_ADDR','S',290,_U2C1_ADDR
+	._var	'TABSR_ADDR','S',290,_TABSR_ADDR
+	._var	'CPSRF_ADDR','S',290,_CPSRF_ADDR
+	._var	'ONSF_ADDR','S',290,_ONSF_ADDR
+	._var	'TRGSR_ADDR','S',290,_TRGSR_ADDR
+	._var	'TA0MR_ADDR','S',290,_TA0MR_ADDR
+	._var	'TA1MR_ADDR','S',290,_TA1MR_ADDR
+	._var	'TA2MR_ADDR','S',290,_TA2MR_ADDR
+	._var	'TA3MR_ADDR','S',290,_TA3MR_ADDR
+	._var	'TA4MR_ADDR','S',290,_TA4MR_ADDR
+	._var	'TB0MR_ADDR','S',290,_TB0MR_ADDR
+	._var	'TB1MR_ADDR','S',290,_TB1MR_ADDR
+	._var	'TB2MR_ADDR','S',290,_TB2MR_ADDR
+	._var	'TB2SC_ADDR','S',290,_TB2SC_ADDR
+	._var	'U0MR_ADDR','S',290,_U0MR_ADDR
+	._var	'U0BRG_ADDR','S',290,_U0BRG_ADDR
+	._var	'U0C0_ADDR','S',290,_U0C0_ADDR
+	._var	'U0C1_ADDR','S',290,_U0C1_ADDR
+	._var	'U1MR_ADDR','S',290,_U1MR_ADDR
+	._var	'U1BRG_ADDR','S',290,_U1BRG_ADDR
+	._var	'U1C0_ADDR','S',290,_U1C0_ADDR
+	._var	'U1C1_ADDR','S',290,_U1C1_ADDR
+	._var	'UCON_ADDR','S',290,_UCON_ADDR
+	._var	'FIDR_ADDR','S',290,_FIDR_ADDR
+	._var	'DM0SL_ADDR','S',290,_DM0SL_ADDR
+	._var	'DM1SL_ADDR','S',290,_DM1SL_ADDR
+	._var	'CRCIN_ADDR','S',290,_CRCIN_ADDR
+	._var	'ADCON2_ADDR','S',290,_ADCON2_ADDR
+	._var	'ADCON0_ADDR','S',290,_ADCON0_ADDR
+	._var	'ADCON1_ADDR','S',290,_ADCON1_ADDR
+	._var	'DACON_ADDR','S',290,_DACON_ADDR
+	._var	'PC14_ADDR','S',290,_PC14_ADDR
+	._var	'PUR3_ADDR','S',290,_PUR3_ADDR
+	._var	'P0_ADDR','S',290,_P0_ADDR
+	._var	'P1_ADDR','S',290,_P1_ADDR
+	._var	'P0D_ADDR','S',290,_P0D_ADDR
+	._var	'P1D_ADDR','S',290,_P1D_ADDR
+	._var	'P2_ADDR','S',290,_P2_ADDR
+	._var	'P3_ADDR','S',290,_P3_ADDR
+	._var	'P2D_ADDR','S',290,_P2D_ADDR
+	._var	'P3D_ADDR','S',290,_P3D_ADDR
+	._var	'P4_ADDR','S',290,_P4_ADDR
+	._var	'P5_ADDR','S',290,_P5_ADDR
+	._var	'P4D_ADDR','S',290,_P4D_ADDR
+	._var	'P5D_ADDR','S',290,_P5D_ADDR
+	._var	'P6_ADDR','S',290,_P6_ADDR
+	._var	'P7_ADDR','S',290,_P7_ADDR
+	._var	'P6D_ADDR','S',290,_P6D_ADDR
+	._var	'P7D_ADDR','S',290,_P7D_ADDR
+	._var	'P8_ADDR','S',290,_P8_ADDR
+	._var	'P9_ADDR','S',290,_P9_ADDR
+	._var	'P8D_ADDR','S',290,_P8D_ADDR
+	._var	'P9D_ADDR','S',290,_P9D_ADDR
+	._var	'P10_ADDR','S',290,_P10_ADDR
+	._var	'P11_ADDR','S',290,_P11_ADDR
+	._var	'P10D_ADDR','S',290,_P10D_ADDR
+	._var	'P1D1_ADDR','S',290,_P1D1_ADDR
+	._var	'P12_ADDR','S',290,_P12_ADDR
+	._var	'P13_ADDR','S',290,_P13_ADDR
+	._var	'P1D2_ADDR','S',290,_P1D2_ADDR
+	._var	'P1D3_ADDR','S',290,_P1D3_ADDR
+	._var	'PUR0_ADDR','S',290,_PUR0_ADDR
+	._var	'PUR1_ADDR','S',290,_PUR1_ADDR
+	._var	'PUR2_ADDR','S',290,_PUR2_ADDR
+	._var	'PCR_ADDR','S',290,_PCR_ADDR
+	._type	302,'g','B0',0,1,3
+	._type	303,'g','B1',0,1,3
+	._type	304,'g','B2',0,1,3
+	._type	305,'g','B3',0,1,3
+	._type	306,'g','B4',0,1,3
+	._type	307,'g','B5',0,1,3
+	._type	308,'g','B6',0,1,3
+	._type	309,'g','B7',0,1,3
+	._type	310,'g','B8',0,1,3
+	._type	311,'g','B9',0,1,3
+	._type	312,'g','B10',0,1,3
+	._type	313,'g','B11',0,1,3
+	._type	314,'g','B12',0,1,3
+	._type	315,'g','B13',0,1,3
+	._type	316,'g','B14',0,1,3
+	._type	317,'g','B15',0,1,3
+	._type	301,'S','',2
+	._type	301,'m','B0',302,0
+	._type	301,'m','B1',303,1
+	._type	301,'m','B2',304,2
+	._type	301,'m','B3',305,3
+	._type	301,'m','B4',306,4
+	._type	301,'m','B5',307,5
+	._type	301,'m','B6',308,6
+	._type	301,'m','B7',309,7
+	._type	301,'m','B8',310,8
+	._type	301,'m','B9',311,9
+	._type	301,'m','B10',312,10
+	._type	301,'m','B11',313,11
+	._type	301,'m','B12',314,12
+	._type	301,'m','B13',315,13
+	._type	301,'m','B14',316,14
+	._type	301,'m','B15',317,15
+	._type	318,'S','',2
+	._type	318,'m','LOW',3,0
+	._type	318,'m','HIGH',3,1
+	._type	300,'U','',2
+	._type	300,'m','BIT',301,0
+	._type	300,'m','BYTE',318,0
+	._type	300,'m','WORD',5,0
+	._var	'TCR0_ADDR','S',300,_TCR0_ADDR
+	._type	321,'g','B0',0,1,3
+	._type	322,'g','B1',0,1,3
+	._type	323,'g','B2',0,1,3
+	._type	324,'g','B3',0,1,3
+	._type	325,'g','B4',0,1,3
+	._type	326,'g','B5',0,1,3
+	._type	327,'g','B6',0,1,3
+	._type	328,'g','B7',0,1,3
+	._type	329,'g','B8',0,1,3
+	._type	330,'g','B9',0,1,3
+	._type	331,'g','B10',0,1,3
+	._type	332,'g','B11',0,1,3
+	._type	333,'g','B12',0,1,3
+	._type	334,'g','B13',0,1,3
+	._type	335,'g','B14',0,1,3
+	._type	336,'g','B15',0,1,3
+	._type	320,'S','',2
+	._type	320,'m','B0',321,0
+	._type	320,'m','B1',322,1
+	._type	320,'m','B2',323,2
+	._type	320,'m','B3',324,3
+	._type	320,'m','B4',325,4
+	._type	320,'m','B5',326,5
+	._type	320,'m','B6',327,6
+	._type	320,'m','B7',328,7
+	._type	320,'m','B8',329,8
+	._type	320,'m','B9',330,9
+	._type	320,'m','B10',331,10
+	._type	320,'m','B11',332,11
+	._type	320,'m','B12',333,12
+	._type	320,'m','B13',334,13
+	._type	320,'m','B14',335,14
+	._type	320,'m','B15',336,15
+	._type	337,'S','',2
+	._type	337,'m','LOW',3,0
+	._type	337,'m','HIGH',3,1
+	._type	319,'U','',2
+	._type	319,'m','BIT',320,0
+	._type	319,'m','BYTE',337,0
+	._type	319,'m','WORD',5,0
+	._var	'TCR1_ADDR','S',319,_TCR1_ADDR
+	._type	340,'g','B0',0,1,3
+	._type	341,'g','B1',0,1,3
+	._type	342,'g','B2',0,1,3
+	._type	343,'g','B3',0,1,3
+	._type	344,'g','B4',0,1,3
+	._type	345,'g','B5',0,1,3
+	._type	346,'g','B6',0,1,3
+	._type	347,'g','B7',0,1,3
+	._type	348,'g','B8',0,1,3
+	._type	349,'g','B9',0,1,3
+	._type	350,'g','B10',0,1,3
+	._type	351,'g','B11',0,1,3
+	._type	352,'g','B12',0,1,3
+	._type	353,'g','B13',0,1,3
+	._type	354,'g','B14',0,1,3
+	._type	355,'g','B15',0,1,3
+	._type	339,'S','',2
+	._type	339,'m','B0',340,0
+	._type	339,'m','B1',341,1
+	._type	339,'m','B2',342,2
+	._type	339,'m','B3',343,3
+	._type	339,'m','B4',344,4
+	._type	339,'m','B5',345,5
+	._type	339,'m','B6',346,6
+	._type	339,'m','B7',347,7
+	._type	339,'m','B8',348,8
+	._type	339,'m','B9',349,9
+	._type	339,'m','B10',350,10
+	._type	339,'m','B11',351,11
+	._type	339,'m','B12',352,12
+	._type	339,'m','B13',353,13
+	._type	339,'m','B14',354,14
+	._type	339,'m','B15',355,15
+	._type	356,'S','',2
+	._type	356,'m','LOW',3,0
+	._type	356,'m','HIGH',3,1
+	._type	338,'U','',2
+	._type	338,'m','BIT',339,0
+	._type	338,'m','BYTE',356,0
+	._type	338,'m','WORD',5,0
+	._var	'U0TB_ADDR','S',338,_U0TB_ADDR
+	._type	359,'g','B0',0,1,3
+	._type	360,'g','B1',0,1,3
+	._type	361,'g','B2',0,1,3
+	._type	362,'g','B3',0,1,3
+	._type	363,'g','B4',0,1,3
+	._type	364,'g','B5',0,1,3
+	._type	365,'g','B6',0,1,3
+	._type	366,'g','B7',0,1,3
+	._type	367,'g','B8',0,1,3
+	._type	368,'g','B9',0,1,3
+	._type	369,'g','B10',0,1,3
+	._type	370,'g','B11',0,1,3
+	._type	371,'g','B12',0,1,3
+	._type	372,'g','B13',0,1,3
+	._type	373,'g','B14',0,1,3
+	._type	374,'g','B15',0,1,3
+	._type	358,'S','',2
+	._type	358,'m','B0',359,0
+	._type	358,'m','B1',360,1
+	._type	358,'m','B2',361,2
+	._type	358,'m','B3',362,3
+	._type	358,'m','B4',363,4
+	._type	358,'m','B5',364,5
+	._type	358,'m','B6',365,6
+	._type	358,'m','B7',366,7
+	._type	358,'m','B8',367,8
+	._type	358,'m','B9',368,9
+	._type	358,'m','B10',369,10
+	._type	358,'m','B11',370,11
+	._type	358,'m','B12',371,12
+	._type	358,'m','B13',372,13
+	._type	358,'m','B14',373,14
+	._type	358,'m','B15',374,15
+	._type	375,'S','',2
+	._type	375,'m','LOW',3,0
+	._type	375,'m','HIGH',3,1
+	._type	357,'U','',2
+	._type	357,'m','BIT',358,0
+	._type	357,'m','BYTE',375,0
+	._type	357,'m','WORD',5,0
+	._var	'U1TB_ADDR','S',357,_U1TB_ADDR
+	._type	378,'g','B0',0,1,3
+	._type	379,'g','B1',0,1,3
+	._type	380,'g','B2',0,1,3
+	._type	381,'g','B3',0,1,3
+	._type	382,'g','B4',0,1,3
+	._type	383,'g','B5',0,1,3
+	._type	384,'g','B6',0,1,3
+	._type	385,'g','B7',0,1,3
+	._type	386,'g','B8',0,1,3
+	._type	387,'g','B9',0,1,3
+	._type	388,'g','B10',0,1,3
+	._type	389,'g','B11',0,1,3
+	._type	390,'g','B12',0,1,3
+	._type	391,'g','B13',0,1,3
+	._type	392,'g','B14',0,1,3
+	._type	393,'g','B15',0,1,3
+	._type	377,'S','',2
+	._type	377,'m','B0',378,0
+	._type	377,'m','B1',379,1
+	._type	377,'m','B2',380,2
+	._type	377,'m','B3',381,3
+	._type	377,'m','B4',382,4
+	._type	377,'m','B5',383,5
+	._type	377,'m','B6',384,6
+	._type	377,'m','B7',385,7
+	._type	377,'m','B8',386,8
+	._type	377,'m','B9',387,9
+	._type	377,'m','B10',388,10
+	._type	377,'m','B11',389,11
+	._type	377,'m','B12',390,12
+	._type	377,'m','B13',391,13
+	._type	377,'m','B14',392,14
+	._type	377,'m','B15',393,15
+	._type	394,'S','',2
+	._type	394,'m','LOW',3,0
+	._type	394,'m','HIGH',3,1
+	._type	376,'U','',2
+	._type	376,'m','BIT',377,0
+	._type	376,'m','BYTE',394,0
+	._type	376,'m','WORD',5,0
+	._var	'U2TB_ADDR','S',376,_U2TB_ADDR
+	._type	397,'g','B0',0,1,3
+	._type	398,'g','B1',0,1,3
+	._type	399,'g','B2',0,1,3
+	._type	400,'g','B3',0,1,3
+	._type	401,'g','B4',0,1,3
+	._type	402,'g','B5',0,1,3
+	._type	403,'g','B6',0,1,3
+	._type	404,'g','B7',0,1,3
+	._type	405,'g','B8',0,1,3
+	._type	406,'g','B9',0,1,3
+	._type	407,'g','B10',0,1,3
+	._type	408,'g','B11',0,1,3
+	._type	409,'g','B12',0,1,3
+	._type	410,'g','B13',0,1,3
+	._type	411,'g','B14',0,1,3
+	._type	412,'g','B15',0,1,3
+	._type	396,'S','',2
+	._type	396,'m','B0',397,0
+	._type	396,'m','B1',398,1
+	._type	396,'m','B2',399,2
+	._type	396,'m','B3',400,3
+	._type	396,'m','B4',401,4
+	._type	396,'m','B5',402,5
+	._type	396,'m','B6',403,6
+	._type	396,'m','B7',404,7
+	._type	396,'m','B8',405,8
+	._type	396,'m','B9',406,9
+	._type	396,'m','B10',407,10
+	._type	396,'m','B11',408,11
+	._type	396,'m','B12',409,12
+	._type	396,'m','B13',410,13
+	._type	396,'m','B14',411,14
+	._type	396,'m','B15',412,15
+	._type	413,'S','',2
+	._type	413,'m','LOW',3,0
+	._type	413,'m','HIGH',3,1
+	._type	395,'U','',2
+	._type	395,'m','BIT',396,0
+	._type	395,'m','BYTE',413,0
+	._type	395,'m','WORD',5,0
+	._var	'U0RB_ADDR','S',395,_U0RB_ADDR
+	._type	416,'g','B0',0,1,3
+	._type	417,'g','B1',0,1,3
+	._type	418,'g','B2',0,1,3
+	._type	419,'g','B3',0,1,3
+	._type	420,'g','B4',0,1,3
+	._type	421,'g','B5',0,1,3
+	._type	422,'g','B6',0,1,3
+	._type	423,'g','B7',0,1,3
+	._type	424,'g','B8',0,1,3
+	._type	425,'g','B9',0,1,3
+	._type	426,'g','B10',0,1,3
+	._type	427,'g','B11',0,1,3
+	._type	428,'g','B12',0,1,3
+	._type	429,'g','B13',0,1,3
+	._type	430,'g','B14',0,1,3
+	._type	431,'g','B15',0,1,3
+	._type	415,'S','',2
+	._type	415,'m','B0',416,0
+	._type	415,'m','B1',417,1
+	._type	415,'m','B2',418,2
+	._type	415,'m','B3',419,3
+	._type	415,'m','B4',420,4
+	._type	415,'m','B5',421,5
+	._type	415,'m','B6',422,6
+	._type	415,'m','B7',423,7
+	._type	415,'m','B8',424,8
+	._type	415,'m','B9',425,9
+	._type	415,'m','B10',426,10
+	._type	415,'m','B11',427,11
+	._type	415,'m','B12',428,12
+	._type	415,'m','B13',429,13
+	._type	415,'m','B14',430,14
+	._type	415,'m','B15',431,15
+	._type	432,'S','',2
+	._type	432,'m','LOW',3,0
+	._type	432,'m','HIGH',3,1
+	._type	414,'U','',2
+	._type	414,'m','BIT',415,0
+	._type	414,'m','BYTE',432,0
+	._type	414,'m','WORD',5,0
+	._var	'U1RB_ADDR','S',414,_U1RB_ADDR
+	._type	435,'g','B0',0,1,3
+	._type	436,'g','B1',0,1,3
+	._type	437,'g','B2',0,1,3
+	._type	438,'g','B3',0,1,3
+	._type	439,'g','B4',0,1,3
+	._type	440,'g','B5',0,1,3
+	._type	441,'g','B6',0,1,3
+	._type	442,'g','B7',0,1,3
+	._type	443,'g','B8',0,1,3
+	._type	444,'g','B9',0,1,3
+	._type	445,'g','B10',0,1,3
+	._type	446,'g','B11',0,1,3
+	._type	447,'g','B12',0,1,3
+	._type	448,'g','B13',0,1,3
+	._type	449,'g','B14',0,1,3
+	._type	450,'g','B15',0,1,3
+	._type	434,'S','',2
+	._type	434,'m','B0',435,0
+	._type	434,'m','B1',436,1
+	._type	434,'m','B2',437,2
+	._type	434,'m','B3',438,3
+	._type	434,'m','B4',439,4
+	._type	434,'m','B5',440,5
+	._type	434,'m','B6',441,6
+	._type	434,'m','B7',442,7
+	._type	434,'m','B8',443,8
+	._type	434,'m','B9',444,9
+	._type	434,'m','B10',445,10
+	._type	434,'m','B11',446,11
+	._type	434,'m','B12',447,12
+	._type	434,'m','B13',448,13
+	._type	434,'m','B14',449,14
+	._type	434,'m','B15',450,15
+	._type	451,'S','',2
+	._type	451,'m','LOW',3,0
+	._type	451,'m','HIGH',3,1
+	._type	433,'U','',2
+	._type	433,'m','BIT',434,0
+	._type	433,'m','BYTE',451,0
+	._type	433,'m','WORD',5,0
+	._var	'U2RB_ADDR','S',433,_U2RB_ADDR
+	._type	454,'g','B0',0,1,3
+	._type	455,'g','B1',0,1,3
+	._type	456,'g','B2',0,1,3
+	._type	457,'g','B3',0,1,3
+	._type	458,'g','B4',0,1,3
+	._type	459,'g','B5',0,1,3
+	._type	460,'g','B6',0,1,3
+	._type	461,'g','B7',0,1,3
+	._type	462,'g','B8',0,1,3
+	._type	463,'g','B9',0,1,3
+	._type	464,'g','B10',0,1,3
+	._type	465,'g','B11',0,1,3
+	._type	466,'g','B12',0,1,3
+	._type	467,'g','B13',0,1,3
+	._type	468,'g','B14',0,1,3
+	._type	469,'g','B15',0,1,3
+	._type	453,'S','',2
+	._type	453,'m','B0',454,0
+	._type	453,'m','B1',455,1
+	._type	453,'m','B2',456,2
+	._type	453,'m','B3',457,3
+	._type	453,'m','B4',458,4
+	._type	453,'m','B5',459,5
+	._type	453,'m','B6',460,6
+	._type	453,'m','B7',461,7
+	._type	453,'m','B8',462,8
+	._type	453,'m','B9',463,9
+	._type	453,'m','B10',464,10
+	._type	453,'m','B11',465,11
+	._type	453,'m','B12',466,12
+	._type	453,'m','B13',467,13
+	._type	453,'m','B14',468,14
+	._type	453,'m','B15',469,15
+	._type	470,'S','',2
+	._type	470,'m','LOW',3,0
+	._type	470,'m','HIGH',3,1
+	._type	452,'U','',2
+	._type	452,'m','BIT',453,0
+	._type	452,'m','BYTE',470,0
+	._type	452,'m','WORD',5,0
+	._var	'CRCD_ADDR','S',452,_CRCD_ADDR
+	._type	473,'g','B0',0,1,3
+	._type	474,'g','B1',0,1,3
+	._type	475,'g','B2',0,1,3
+	._type	476,'g','B3',0,1,3
+	._type	477,'g','B4',0,1,3
+	._type	478,'g','B5',0,1,3
+	._type	479,'g','B6',0,1,3
+	._type	480,'g','B7',0,1,3
+	._type	481,'g','B8',0,1,3
+	._type	482,'g','B9',0,1,3
+	._type	483,'g','B10',0,1,3
+	._type	484,'g','B11',0,1,3
+	._type	485,'g','B12',0,1,3
+	._type	486,'g','B13',0,1,3
+	._type	487,'g','B14',0,1,3
+	._type	488,'g','B15',0,1,3
+	._type	472,'S','',2
+	._type	472,'m','B0',473,0
+	._type	472,'m','B1',474,1
+	._type	472,'m','B2',475,2
+	._type	472,'m','B3',476,3
+	._type	472,'m','B4',477,4
+	._type	472,'m','B5',478,5
+	._type	472,'m','B6',479,6
+	._type	472,'m','B7',480,7
+	._type	472,'m','B8',481,8
+	._type	472,'m','B9',482,9
+	._type	472,'m','B10',483,10
+	._type	472,'m','B11',484,11
+	._type	472,'m','B12',485,12
+	._type	472,'m','B13',486,13
+	._type	472,'m','B14',487,14
+	._type	472,'m','B15',488,15
+	._type	489,'S','',2
+	._type	489,'m','LOW',3,0
+	._type	489,'m','HIGH',3,1
+	._type	471,'U','',2
+	._type	471,'m','BIT',472,0
+	._type	471,'m','BYTE',489,0
+	._type	471,'m','WORD',5,0
+	._var	'AD0_ADDR','S',471,_AD0_ADDR
+	._type	492,'g','B0',0,1,3
+	._type	493,'g','B1',0,1,3
+	._type	494,'g','B2',0,1,3
+	._type	495,'g','B3',0,1,3
+	._type	496,'g','B4',0,1,3
+	._type	497,'g','B5',0,1,3
+	._type	498,'g','B6',0,1,3
+	._type	499,'g','B7',0,1,3
+	._type	500,'g','B8',0,1,3
+	._type	501,'g','B9',0,1,3
+	._type	502,'g','B10',0,1,3
+	._type	503,'g','B11',0,1,3
+	._type	504,'g','B12',0,1,3
+	._type	505,'g','B13',0,1,3
+	._type	506,'g','B14',0,1,3
+	._type	507,'g','B15',0,1,3
+	._type	491,'S','',2
+	._type	491,'m','B0',492,0
+	._type	491,'m','B1',493,1
+	._type	491,'m','B2',494,2
+	._type	491,'m','B3',495,3
+	._type	491,'m','B4',496,4
+	._type	491,'m','B5',497,5
+	._type	491,'m','B6',498,6
+	._type	491,'m','B7',499,7
+	._type	491,'m','B8',500,8
+	._type	491,'m','B9',501,9
+	._type	491,'m','B10',502,10
+	._type	491,'m','B11',503,11
+	._type	491,'m','B12',504,12
+	._type	491,'m','B13',505,13
+	._type	491,'m','B14',506,14
+	._type	491,'m','B15',507,15
+	._type	508,'S','',2
+	._type	508,'m','LOW',3,0
+	._type	508,'m','HIGH',3,1
+	._type	490,'U','',2
+	._type	490,'m','BIT',491,0
+	._type	490,'m','BYTE',508,0
+	._type	490,'m','WORD',5,0
+	._var	'AD1_ADDR','S',490,_AD1_ADDR
+	._type	511,'g','B0',0,1,3
+	._type	512,'g','B1',0,1,3
+	._type	513,'g','B2',0,1,3
+	._type	514,'g','B3',0,1,3
+	._type	515,'g','B4',0,1,3
+	._type	516,'g','B5',0,1,3
+	._type	517,'g','B6',0,1,3
+	._type	518,'g','B7',0,1,3
+	._type	519,'g','B8',0,1,3
+	._type	520,'g','B9',0,1,3
+	._type	521,'g','B10',0,1,3
+	._type	522,'g','B11',0,1,3
+	._type	523,'g','B12',0,1,3
+	._type	524,'g','B13',0,1,3
+	._type	525,'g','B14',0,1,3
+	._type	526,'g','B15',0,1,3
+	._type	510,'S','',2
+	._type	510,'m','B0',511,0
+	._type	510,'m','B1',512,1
+	._type	510,'m','B2',513,2
+	._type	510,'m','B3',514,3
+	._type	510,'m','B4',515,4
+	._type	510,'m','B5',516,5
+	._type	510,'m','B6',517,6
+	._type	510,'m','B7',518,7
+	._type	510,'m','B8',519,8
+	._type	510,'m','B9',520,9
+	._type	510,'m','B10',521,10
+	._type	510,'m','B11',522,11
+	._type	510,'m','B12',523,12
+	._type	510,'m','B13',524,13
+	._type	510,'m','B14',525,14
+	._type	510,'m','B15',526,15
+	._type	527,'S','',2
+	._type	527,'m','LOW',3,0
+	._type	527,'m','HIGH',3,1
+	._type	509,'U','',2
+	._type	509,'m','BIT',510,0
+	._type	509,'m','BYTE',527,0
+	._type	509,'m','WORD',5,0
+	._var	'AD2_ADDR','S',509,_AD2_ADDR
+	._type	530,'g','B0',0,1,3
+	._type	531,'g','B1',0,1,3
+	._type	532,'g','B2',0,1,3
+	._type	533,'g','B3',0,1,3
+	._type	534,'g','B4',0,1,3
+	._type	535,'g','B5',0,1,3
+	._type	536,'g','B6',0,1,3
+	._type	537,'g','B7',0,1,3
+	._type	538,'g','B8',0,1,3
+	._type	539,'g','B9',0,1,3
+	._type	540,'g','B10',0,1,3
+	._type	541,'g','B11',0,1,3
+	._type	542,'g','B12',0,1,3
+	._type	543,'g','B13',0,1,3
+	._type	544,'g','B14',0,1,3
+	._type	545,'g','B15',0,1,3
+	._type	529,'S','',2
+	._type	529,'m','B0',530,0
+	._type	529,'m','B1',531,1
+	._type	529,'m','B2',532,2
+	._type	529,'m','B3',533,3
+	._type	529,'m','B4',534,4
+	._type	529,'m','B5',535,5
+	._type	529,'m','B6',536,6
+	._type	529,'m','B7',537,7
+	._type	529,'m','B8',538,8
+	._type	529,'m','B9',539,9
+	._type	529,'m','B10',540,10
+	._type	529,'m','B11',541,11
+	._type	529,'m','B12',542,12
+	._type	529,'m','B13',543,13
+	._type	529,'m','B14',544,14
+	._type	529,'m','B15',545,15
+	._type	546,'S','',2
+	._type	546,'m','LOW',3,0
+	._type	546,'m','HIGH',3,1
+	._type	528,'U','',2
+	._type	528,'m','BIT',529,0
+	._type	528,'m','BYTE',546,0
+	._type	528,'m','WORD',5,0
+	._var	'AD3_ADDR','S',528,_AD3_ADDR
+	._type	549,'g','B0',0,1,3
+	._type	550,'g','B1',0,1,3
+	._type	551,'g','B2',0,1,3
+	._type	552,'g','B3',0,1,3
+	._type	553,'g','B4',0,1,3
+	._type	554,'g','B5',0,1,3
+	._type	555,'g','B6',0,1,3
+	._type	556,'g','B7',0,1,3
+	._type	557,'g','B8',0,1,3
+	._type	558,'g','B9',0,1,3
+	._type	559,'g','B10',0,1,3
+	._type	560,'g','B11',0,1,3
+	._type	561,'g','B12',0,1,3
+	._type	562,'g','B13',0,1,3
+	._type	563,'g','B14',0,1,3
+	._type	564,'g','B15',0,1,3
+	._type	548,'S','',2
+	._type	548,'m','B0',549,0
+	._type	548,'m','B1',550,1
+	._type	548,'m','B2',551,2
+	._type	548,'m','B3',552,3
+	._type	548,'m','B4',553,4
+	._type	548,'m','B5',554,5
+	._type	548,'m','B6',555,6
+	._type	548,'m','B7',556,7
+	._type	548,'m','B8',557,8
+	._type	548,'m','B9',558,9
+	._type	548,'m','B10',559,10
+	._type	548,'m','B11',560,11
+	._type	548,'m','B12',561,12
+	._type	548,'m','B13',562,13
+	._type	548,'m','B14',563,14
+	._type	548,'m','B15',564,15
+	._type	565,'S','',2
+	._type	565,'m','LOW',3,0
+	._type	565,'m','HIGH',3,1
+	._type	547,'U','',2
+	._type	547,'m','BIT',548,0
+	._type	547,'m','BYTE',565,0
+	._type	547,'m','WORD',5,0
+	._var	'AD4_ADDR','S',547,_AD4_ADDR
+	._type	568,'g','B0',0,1,3
+	._type	569,'g','B1',0,1,3
+	._type	570,'g','B2',0,1,3
+	._type	571,'g','B3',0,1,3
+	._type	572,'g','B4',0,1,3
+	._type	573,'g','B5',0,1,3
+	._type	574,'g','B6',0,1,3
+	._type	575,'g','B7',0,1,3
+	._type	576,'g','B8',0,1,3
+	._type	577,'g','B9',0,1,3
+	._type	578,'g','B10',0,1,3
+	._type	579,'g','B11',0,1,3
+	._type	580,'g','B12',0,1,3
+	._type	581,'g','B13',0,1,3
+	._type	582,'g','B14',0,1,3
+	._type	583,'g','B15',0,1,3
+	._type	567,'S','',2
+	._type	567,'m','B0',568,0
+	._type	567,'m','B1',569,1
+	._type	567,'m','B2',570,2
+	._type	567,'m','B3',571,3
+	._type	567,'m','B4',572,4
+	._type	567,'m','B5',573,5
+	._type	567,'m','B6',574,6
+	._type	567,'m','B7',575,7
+	._type	567,'m','B8',576,8
+	._type	567,'m','B9',577,9
+	._type	567,'m','B10',578,10
+	._type	567,'m','B11',579,11
+	._type	567,'m','B12',580,12
+	._type	567,'m','B13',581,13
+	._type	567,'m','B14',582,14
+	._type	567,'m','B15',583,15
+	._type	584,'S','',2
+	._type	584,'m','LOW',3,0
+	._type	584,'m','HIGH',3,1
+	._type	566,'U','',2
+	._type	566,'m','BIT',567,0
+	._type	566,'m','BYTE',584,0
+	._type	566,'m','WORD',5,0
+	._var	'AD5_ADDR','S',566,_AD5_ADDR
+	._type	587,'g','B0',0,1,3
+	._type	588,'g','B1',0,1,3
+	._type	589,'g','B2',0,1,3
+	._type	590,'g','B3',0,1,3
+	._type	591,'g','B4',0,1,3
+	._type	592,'g','B5',0,1,3
+	._type	593,'g','B6',0,1,3
+	._type	594,'g','B7',0,1,3
+	._type	595,'g','B8',0,1,3
+	._type	596,'g','B9',0,1,3
+	._type	597,'g','B10',0,1,3
+	._type	598,'g','B11',0,1,3
+	._type	599,'g','B12',0,1,3
+	._type	600,'g','B13',0,1,3
+	._type	601,'g','B14',0,1,3
+	._type	602,'g','B15',0,1,3
+	._type	586,'S','',2
+	._type	586,'m','B0',587,0
+	._type	586,'m','B1',588,1
+	._type	586,'m','B2',589,2
+	._type	586,'m','B3',590,3
+	._type	586,'m','B4',591,4
+	._type	586,'m','B5',592,5
+	._type	586,'m','B6',593,6
+	._type	586,'m','B7',594,7
+	._type	586,'m','B8',595,8
+	._type	586,'m','B9',596,9
+	._type	586,'m','B10',597,10
+	._type	586,'m','B11',598,11
+	._type	586,'m','B12',599,12
+	._type	586,'m','B13',600,13
+	._type	586,'m','B14',601,14
+	._type	586,'m','B15',602,15
+	._type	603,'S','',2
+	._type	603,'m','LOW',3,0
+	._type	603,'m','HIGH',3,1
+	._type	585,'U','',2
+	._type	585,'m','BIT',586,0
+	._type	585,'m','BYTE',603,0
+	._type	585,'m','WORD',5,0
+	._var	'AD6_ADDR','S',585,_AD6_ADDR
+	._type	606,'g','B0',0,1,3
+	._type	607,'g','B1',0,1,3
+	._type	608,'g','B2',0,1,3
+	._type	609,'g','B3',0,1,3
+	._type	610,'g','B4',0,1,3
+	._type	611,'g','B5',0,1,3
+	._type	612,'g','B6',0,1,3
+	._type	613,'g','B7',0,1,3
+	._type	614,'g','B8',0,1,3
+	._type	615,'g','B9',0,1,3
+	._type	616,'g','B10',0,1,3
+	._type	617,'g','B11',0,1,3
+	._type	618,'g','B12',0,1,3
+	._type	619,'g','B13',0,1,3
+	._type	620,'g','B14',0,1,3
+	._type	621,'g','B15',0,1,3
+	._type	605,'S','',2
+	._type	605,'m','B0',606,0
+	._type	605,'m','B1',607,1
+	._type	605,'m','B2',608,2
+	._type	605,'m','B3',609,3
+	._type	605,'m','B4',610,4
+	._type	605,'m','B5',611,5
+	._type	605,'m','B6',612,6
+	._type	605,'m','B7',613,7
+	._type	605,'m','B8',614,8
+	._type	605,'m','B9',615,9
+	._type	605,'m','B10',616,10
+	._type	605,'m','B11',617,11
+	._type	605,'m','B12',618,12
+	._type	605,'m','B13',619,13
+	._type	605,'m','B14',620,14
+	._type	605,'m','B15',621,15
+	._type	622,'S','',2
+	._type	622,'m','LOW',3,0
+	._type	622,'m','HIGH',3,1
+	._type	604,'U','',2
+	._type	604,'m','BIT',605,0
+	._type	604,'m','BYTE',622,0
+	._type	604,'m','WORD',5,0
+	._var	'AD7_ADDR','S',604,_AD7_ADDR
+	._type	625,'g','B0',0,1,3
+	._type	626,'g','B1',0,1,3
+	._type	627,'g','B2',0,1,3
+	._type	628,'g','B3',0,1,3
+	._type	629,'g','B4',0,1,3
+	._type	630,'g','B5',0,1,3
+	._type	631,'g','B6',0,1,3
+	._type	632,'g','B7',0,1,3
+	._type	633,'g','B8',0,1,3
+	._type	634,'g','B9',0,1,3
+	._type	635,'g','B10',0,1,3
+	._type	636,'g','B11',0,1,3
+	._type	637,'g','B12',0,1,3
+	._type	638,'g','B13',0,1,3
+	._type	639,'g','B14',0,1,3
+	._type	640,'g','B15',0,1,3
+	._type	641,'g','B16',0,1,3
+	._type	642,'g','B17',0,1,3
+	._type	643,'g','B18',0,1,3
+	._type	644,'g','B19',0,1,3
+	._type	624,'S','',3
+	._type	624,'m','B0',625,0
+	._type	624,'m','B1',626,1
+	._type	624,'m','B2',627,2
+	._type	624,'m','B3',628,3
+	._type	624,'m','B4',629,4
+	._type	624,'m','B5',630,5
+	._type	624,'m','B6',631,6
+	._type	624,'m','B7',632,7
+	._type	624,'m','B8',633,8
+	._type	624,'m','B9',634,9
+	._type	624,'m','B10',635,10
+	._type	624,'m','B11',636,11
+	._type	624,'m','B12',637,12
+	._type	624,'m','B13',638,13
+	._type	624,'m','B14',639,14
+	._type	624,'m','B15',640,15
+	._type	624,'m','B16',641,16
+	._type	624,'m','B17',642,17
+	._type	624,'m','B18',643,18
+	._type	624,'m','B19',644,19
+	._type	645,'S','',4
+	._type	645,'m','LOW',3,0
+	._type	645,'m','MID',3,1
+	._type	645,'m','HIGH',3,2
+	._type	645,'m','NC',3,3
+	._type	623,'U','',4
+	._type	623,'m','BIT',624,0
+	._type	623,'m','BYTE',645,0
+	._type	623,'m','DWORD',7,0
+	._var	'RMAD0_ADDR','S',623,_RMAD0_ADDR
+	._type	648,'g','B0',0,1,3
+	._type	649,'g','B1',0,1,3
+	._type	650,'g','B2',0,1,3
+	._type	651,'g','B3',0,1,3
+	._type	652,'g','B4',0,1,3
+	._type	653,'g','B5',0,1,3
+	._type	654,'g','B6',0,1,3
+	._type	655,'g','B7',0,1,3
+	._type	656,'g','B8',0,1,3
+	._type	657,'g','B9',0,1,3
+	._type	658,'g','B10',0,1,3
+	._type	659,'g','B11',0,1,3
+	._type	660,'g','B12',0,1,3
+	._type	661,'g','B13',0,1,3
+	._type	662,'g','B14',0,1,3
+	._type	663,'g','B15',0,1,3
+	._type	664,'g','B16',0,1,3
+	._type	665,'g','B17',0,1,3
+	._type	666,'g','B18',0,1,3
+	._type	667,'g','B19',0,1,3
+	._type	647,'S','',3
+	._type	647,'m','B0',648,0
+	._type	647,'m','B1',649,1
+	._type	647,'m','B2',650,2
+	._type	647,'m','B3',651,3
+	._type	647,'m','B4',652,4
+	._type	647,'m','B5',653,5
+	._type	647,'m','B6',654,6
+	._type	647,'m','B7',655,7
+	._type	647,'m','B8',656,8
+	._type	647,'m','B9',657,9
+	._type	647,'m','B10',658,10
+	._type	647,'m','B11',659,11
+	._type	647,'m','B12',660,12
+	._type	647,'m','B13',661,13
+	._type	647,'m','B14',662,14
+	._type	647,'m','B15',663,15
+	._type	647,'m','B16',664,16
+	._type	647,'m','B17',665,17
+	._type	647,'m','B18',666,18
+	._type	647,'m','B19',667,19
+	._type	668,'S','',4
+	._type	668,'m','LOW',3,0
+	._type	668,'m','MID',3,1
+	._type	668,'m','HIGH',3,2
+	._type	668,'m','NC',3,3
+	._type	646,'U','',4
+	._type	646,'m','BIT',647,0
+	._type	646,'m','BYTE',668,0
+	._type	646,'m','DWORD',7,0
+	._var	'RMAD1_ADDR','S',646,_RMAD1_ADDR
+	._type	671,'g','B0',0,1,3
+	._type	672,'g','B1',0,1,3
+	._type	673,'g','B2',0,1,3
+	._type	674,'g','B3',0,1,3
+	._type	675,'g','B4',0,1,3
+	._type	676,'g','B5',0,1,3
+	._type	677,'g','B6',0,1,3
+	._type	678,'g','B7',0,1,3
+	._type	679,'g','B8',0,1,3
+	._type	680,'g','B9',0,1,3
+	._type	681,'g','B10',0,1,3
+	._type	682,'g','B11',0,1,3
+	._type	683,'g','B12',0,1,3
+	._type	684,'g','B13',0,1,3
+	._type	685,'g','B14',0,1,3
+	._type	686,'g','B15',0,1,3
+	._type	687,'g','B16',0,1,3
+	._type	688,'g','B17',0,1,3
+	._type	689,'g','B18',0,1,3
+	._type	690,'g','B19',0,1,3
+	._type	670,'S','',3
+	._type	670,'m','B0',671,0
+	._type	670,'m','B1',672,1
+	._type	670,'m','B2',673,2
+	._type	670,'m','B3',674,3
+	._type	670,'m','B4',675,4
+	._type	670,'m','B5',676,5
+	._type	670,'m','B6',677,6
+	._type	670,'m','B7',678,7
+	._type	670,'m','B8',679,8
+	._type	670,'m','B9',680,9
+	._type	670,'m','B10',681,10
+	._type	670,'m','B11',682,11
+	._type	670,'m','B12',683,12
+	._type	670,'m','B13',684,13
+	._type	670,'m','B14',685,14
+	._type	670,'m','B15',686,15
+	._type	670,'m','B16',687,16
+	._type	670,'m','B17',688,17
+	._type	670,'m','B18',689,18
+	._type	670,'m','B19',690,19
+	._type	691,'S','',4
+	._type	691,'m','LOW',3,0
+	._type	691,'m','MID',3,1
+	._type	691,'m','HIGH',3,2
+	._type	691,'m','NC',3,3
+	._type	669,'U','',4
+	._type	669,'m','BIT',670,0
+	._type	669,'m','BYTE',691,0
+	._type	669,'m','DWORD',7,0
+	._var	'RMAD2_ADDR','S',669,_RMAD2_ADDR
+	._type	694,'g','B0',0,1,3
+	._type	695,'g','B1',0,1,3
+	._type	696,'g','B2',0,1,3
+	._type	697,'g','B3',0,1,3
+	._type	698,'g','B4',0,1,3
+	._type	699,'g','B5',0,1,3
+	._type	700,'g','B6',0,1,3
+	._type	701,'g','B7',0,1,3
+	._type	702,'g','B8',0,1,3
+	._type	703,'g','B9',0,1,3
+	._type	704,'g','B10',0,1,3
+	._type	705,'g','B11',0,1,3
+	._type	706,'g','B12',0,1,3
+	._type	707,'g','B13',0,1,3
+	._type	708,'g','B14',0,1,3
+	._type	709,'g','B15',0,1,3
+	._type	710,'g','B16',0,1,3
+	._type	711,'g','B17',0,1,3
+	._type	712,'g','B18',0,1,3
+	._type	713,'g','B19',0,1,3
+	._type	693,'S','',3
+	._type	693,'m','B0',694,0
+	._type	693,'m','B1',695,1
+	._type	693,'m','B2',696,2
+	._type	693,'m','B3',697,3
+	._type	693,'m','B4',698,4
+	._type	693,'m','B5',699,5
+	._type	693,'m','B6',700,6
+	._type	693,'m','B7',701,7
+	._type	693,'m','B8',702,8
+	._type	693,'m','B9',703,9
+	._type	693,'m','B10',704,10
+	._type	693,'m','B11',705,11
+	._type	693,'m','B12',706,12
+	._type	693,'m','B13',707,13
+	._type	693,'m','B14',708,14
+	._type	693,'m','B15',709,15
+	._type	693,'m','B16',710,16
+	._type	693,'m','B17',711,17
+	._type	693,'m','B18',712,18
+	._type	693,'m','B19',713,19
+	._type	714,'S','',4
+	._type	714,'m','LOW',3,0
+	._type	714,'m','MID',3,1
+	._type	714,'m','HIGH',3,2
+	._type	714,'m','NC',3,3
+	._type	692,'U','',4
+	._type	692,'m','BIT',693,0
+	._type	692,'m','BYTE',714,0
+	._type	692,'m','DWORD',7,0
+	._var	'RMAD3_ADDR','S',692,_RMAD3_ADDR
+	._type	717,'g','B0',0,1,3
+	._type	718,'g','B1',0,1,3
+	._type	719,'g','B2',0,1,3
+	._type	720,'g','B3',0,1,3
+	._type	721,'g','B4',0,1,3
+	._type	722,'g','B5',0,1,3
+	._type	723,'g','B6',0,1,3
+	._type	724,'g','B7',0,1,3
+	._type	725,'g','B8',0,1,3
+	._type	726,'g','B9',0,1,3
+	._type	727,'g','B10',0,1,3
+	._type	728,'g','B11',0,1,3
+	._type	729,'g','B12',0,1,3
+	._type	730,'g','B13',0,1,3
+	._type	731,'g','B14',0,1,3
+	._type	732,'g','B15',0,1,3
+	._type	733,'g','B16',0,1,3
+	._type	734,'g','B17',0,1,3
+	._type	735,'g','B18',0,1,3
+	._type	736,'g','B19',0,1,3
+	._type	716,'S','',3
+	._type	716,'m','B0',717,0
+	._type	716,'m','B1',718,1
+	._type	716,'m','B2',719,2
+	._type	716,'m','B3',720,3
+	._type	716,'m','B4',721,4
+	._type	716,'m','B5',722,5
+	._type	716,'m','B6',723,6
+	._type	716,'m','B7',724,7
+	._type	716,'m','B8',725,8
+	._type	716,'m','B9',726,9
+	._type	716,'m','B10',727,10
+	._type	716,'m','B11',728,11
+	._type	716,'m','B12',729,12
+	._type	716,'m','B13',730,13
+	._type	716,'m','B14',731,14
+	._type	716,'m','B15',732,15
+	._type	716,'m','B16',733,16
+	._type	716,'m','B17',734,17
+	._type	716,'m','B18',735,18
+	._type	716,'m','B19',736,19
+	._type	737,'S','',4
+	._type	737,'m','LOW',3,0
+	._type	737,'m','MID',3,1
+	._type	737,'m','HIGH',3,2
+	._type	737,'m','NC',3,3
+	._type	715,'U','',4
+	._type	715,'m','BIT',716,0
+	._type	715,'m','BYTE',737,0
+	._type	715,'m','DWORD',7,0
+	._var	'SAR0_ADDR','S',715,_SAR0_ADDR
+	._type	740,'g','B0',0,1,3
+	._type	741,'g','B1',0,1,3
+	._type	742,'g','B2',0,1,3
+	._type	743,'g','B3',0,1,3
+	._type	744,'g','B4',0,1,3
+	._type	745,'g','B5',0,1,3
+	._type	746,'g','B6',0,1,3
+	._type	747,'g','B7',0,1,3
+	._type	748,'g','B8',0,1,3
+	._type	749,'g','B9',0,1,3
+	._type	750,'g','B10',0,1,3
+	._type	751,'g','B11',0,1,3
+	._type	752,'g','B12',0,1,3
+	._type	753,'g','B13',0,1,3
+	._type	754,'g','B14',0,1,3
+	._type	755,'g','B15',0,1,3
+	._type	756,'g','B16',0,1,3
+	._type	757,'g','B17',0,1,3
+	._type	758,'g','B18',0,1,3
+	._type	759,'g','B19',0,1,3
+	._type	739,'S','',3
+	._type	739,'m','B0',740,0
+	._type	739,'m','B1',741,1
+	._type	739,'m','B2',742,2
+	._type	739,'m','B3',743,3
+	._type	739,'m','B4',744,4
+	._type	739,'m','B5',745,5
+	._type	739,'m','B6',746,6
+	._type	739,'m','B7',747,7
+	._type	739,'m','B8',748,8
+	._type	739,'m','B9',749,9
+	._type	739,'m','B10',750,10
+	._type	739,'m','B11',751,11
+	._type	739,'m','B12',752,12
+	._type	739,'m','B13',753,13
+	._type	739,'m','B14',754,14
+	._type	739,'m','B15',755,15
+	._type	739,'m','B16',756,16
+	._type	739,'m','B17',757,17
+	._type	739,'m','B18',758,18
+	._type	739,'m','B19',759,19
+	._type	760,'S','',4
+	._type	760,'m','LOW',3,0
+	._type	760,'m','MID',3,1
+	._type	760,'m','HIGH',3,2
+	._type	760,'m','NC',3,3
+	._type	738,'U','',4
+	._type	738,'m','BIT',739,0
+	._type	738,'m','BYTE',760,0
+	._type	738,'m','DWORD',7,0
+	._var	'SAR1_ADDR','S',738,_SAR1_ADDR
+	._type	763,'g','B0',0,1,3
+	._type	764,'g','B1',0,1,3
+	._type	765,'g','B2',0,1,3
+	._type	766,'g','B3',0,1,3
+	._type	767,'g','B4',0,1,3
+	._type	768,'g','B5',0,1,3
+	._type	769,'g','B6',0,1,3
+	._type	770,'g','B7',0,1,3
+	._type	771,'g','B8',0,1,3
+	._type	772,'g','B9',0,1,3
+	._type	773,'g','B10',0,1,3
+	._type	774,'g','B11',0,1,3
+	._type	775,'g','B12',0,1,3
+	._type	776,'g','B13',0,1,3
+	._type	777,'g','B14',0,1,3
+	._type	778,'g','B15',0,1,3
+	._type	779,'g','B16',0,1,3
+	._type	780,'g','B17',0,1,3
+	._type	781,'g','B18',0,1,3
+	._type	782,'g','B19',0,1,3
+	._type	762,'S','',3
+	._type	762,'m','B0',763,0
+	._type	762,'m','B1',764,1
+	._type	762,'m','B2',765,2
+	._type	762,'m','B3',766,3
+	._type	762,'m','B4',767,4
+	._type	762,'m','B5',768,5
+	._type	762,'m','B6',769,6
+	._type	762,'m','B7',770,7
+	._type	762,'m','B8',771,8
+	._type	762,'m','B9',772,9
+	._type	762,'m','B10',773,10
+	._type	762,'m','B11',774,11
+	._type	762,'m','B12',775,12
+	._type	762,'m','B13',776,13
+	._type	762,'m','B14',777,14
+	._type	762,'m','B15',778,15
+	._type	762,'m','B16',779,16
+	._type	762,'m','B17',780,17
+	._type	762,'m','B18',781,18
+	._type	762,'m','B19',782,19
+	._type	783,'S','',4
+	._type	783,'m','LOW',3,0
+	._type	783,'m','MID',3,1
+	._type	783,'m','HIGH',3,2
+	._type	783,'m','NC',3,3
+	._type	761,'U','',4
+	._type	761,'m','BIT',762,0
+	._type	761,'m','BYTE',783,0
+	._type	761,'m','DWORD',7,0
+	._var	'DAR0_ADDR','S',761,_DAR0_ADDR
+	._type	786,'g','B0',0,1,3
+	._type	787,'g','B1',0,1,3
+	._type	788,'g','B2',0,1,3
+	._type	789,'g','B3',0,1,3
+	._type	790,'g','B4',0,1,3
+	._type	791,'g','B5',0,1,3
+	._type	792,'g','B6',0,1,3
+	._type	793,'g','B7',0,1,3
+	._type	794,'g','B8',0,1,3
+	._type	795,'g','B9',0,1,3
+	._type	796,'g','B10',0,1,3
+	._type	797,'g','B11',0,1,3
+	._type	798,'g','B12',0,1,3
+	._type	799,'g','B13',0,1,3
+	._type	800,'g','B14',0,1,3
+	._type	801,'g','B15',0,1,3
+	._type	802,'g','B16',0,1,3
+	._type	803,'g','B17',0,1,3
+	._type	804,'g','B18',0,1,3
+	._type	805,'g','B19',0,1,3
+	._type	785,'S','',3
+	._type	785,'m','B0',786,0
+	._type	785,'m','B1',787,1
+	._type	785,'m','B2',788,2
+	._type	785,'m','B3',789,3
+	._type	785,'m','B4',790,4
+	._type	785,'m','B5',791,5
+	._type	785,'m','B6',792,6
+	._type	785,'m','B7',793,7
+	._type	785,'m','B8',794,8
+	._type	785,'m','B9',795,9
+	._type	785,'m','B10',796,10
+	._type	785,'m','B11',797,11
+	._type	785,'m','B12',798,12
+	._type	785,'m','B13',799,13
+	._type	785,'m','B14',800,14
+	._type	785,'m','B15',801,15
+	._type	785,'m','B16',802,16
+	._type	785,'m','B17',803,17
+	._type	785,'m','B18',804,18
+	._type	785,'m','B19',805,19
+	._type	806,'S','',4
+	._type	806,'m','LOW',3,0
+	._type	806,'m','MID',3,1
+	._type	806,'m','HIGH',3,2
+	._type	806,'m','NC',3,3
+	._type	784,'U','',4
+	._type	784,'m','BIT',785,0
+	._type	784,'m','BYTE',806,0
+	._type	784,'m','DWORD',7,0
+	._var	'DAR1_ADDR','S',784,_DAR1_ADDR
+	._type	807,'v'
+	._type	808,'v'
+	._type	809,'x',807,1
+	._type	809,'m','',0,808
+	._var	'Initialise','F',809
+	._type	810,'T','size_t',7
+	._type	811,'v'
+	._type	812,'P',3
+	._type	813,'P',3
+	._type	814,'x',811,3
+	._type	814,'m','',0,812
+	._type	814,'m','',0,813
+	._type	814,'m','',0,7
+	._var	'bcopy','F',814
+	._type	815,'v'
+	._type	816,'P',3
+	._type	817,'x',815,2
+	._type	817,'m','',0,816
+	._type	817,'m','',0,7
+	._var	'bzero','F',817
+	._type	818,'v'
+	._type	819,'P',818
+	._type	820,'v'
+	._type	821,'P',820
+	._type	822,'x',819,3
+	._type	822,'m','s',0,821
+	._type	822,'m','c',0,16
+	._type	822,'m','n',0,810
+	._var	'memchr','F',822
+	._type	823,'v'
+	._type	824,'P',823
+	._type	825,'v'
+	._type	826,'P',825
+	._type	827,'x',16,3
+	._type	827,'m','s1',0,824
+	._type	827,'m','s2',0,826
+	._type	827,'m','n',0,810
+	._var	'memcmp','F',827
+	._type	828,'v'
+	._type	829,'P',828
+	._type	830,'v'
+	._type	831,'P',830
+	._type	832,'v'
+	._type	833,'P',832
+	._type	834,'x',829,3
+	._type	834,'m','s1',0,831
+	._type	834,'m','s2',0,833
+	._type	834,'m','n',0,810
+	._var	'memcpy','F',834
+	._type	835,'v'
+	._type	836,'P',835
+	._type	837,'v'
+	._type	838,'P',837
+	._type	839,'x',836,3
+	._type	839,'m','s',0,838
+	._type	839,'m','c',0,16
+	._type	839,'m','n',0,810
+	._var	'memset','F',839
+	._type	840,'P',3
+	._type	841,'P',3
+	._type	842,'P',3
+	._type	843,'x',840,2
+	._type	843,'m','s1',0,841
+	._type	843,'m','s2',0,842
+	._var	'strcat','F',843
+	._type	844,'P',3
+	._type	845,'P',3
+	._type	846,'x',844,2
+	._type	846,'m','s',0,845
+	._type	846,'m','c',0,16
+	._var	'strchr','F',846
+	._type	847,'P',3
+	._type	848,'P',3
+	._type	849,'x',16,2
+	._type	849,'m','s1',0,847
+	._type	849,'m','s2',0,848
+	._var	'strcmp','F',849
+	._type	850,'P',3
+	._type	851,'P',3
+	._type	852,'P',3
+	._type	853,'x',850,2
+	._type	853,'m','s1',0,851
+	._type	853,'m','s2',0,852
+	._var	'strcpy','F',853
+	._type	854,'P',3
+	._type	855,'P',3
+	._type	856,'x',810,2
+	._type	856,'m','s1',0,854
+	._type	856,'m','s2',0,855
+	._var	'strcspn','F',856
+	._type	857,'P',3
+	._type	858,'x',810,1
+	._type	858,'m','s',0,857
+	._var	'strlen','F',858
+	._type	859,'P',3
+	._type	860,'P',3
+	._type	861,'P',3
+	._type	862,'x',859,3
+	._type	862,'m','s1',0,860
+	._type	862,'m','s2',0,861
+	._type	862,'m','n',0,810
+	._var	'strncat','F',862
+	._type	863,'P',3
+	._type	864,'P',3
+	._type	865,'x',16,3
+	._type	865,'m','s1',0,863
+	._type	865,'m','s2',0,864
+	._type	865,'m','n',0,810
+	._var	'strncmp','F',865
+	._type	866,'P',3
+	._type	867,'P',3
+	._type	868,'P',3
+	._type	869,'x',866,3
+	._type	869,'m','s1',0,867
+	._type	869,'m','s2',0,868
+	._type	869,'m','n',0,810
+	._var	'strncpy','F',869
+	._type	870,'P',3
+	._type	871,'P',3
+	._type	872,'P',3
+	._type	873,'x',870,2
+	._type	873,'m','s1',0,871
+	._type	873,'m','s2',0,872
+	._var	'strpbrk','F',873
+	._type	874,'P',3
+	._type	875,'P',3
+	._type	876,'x',874,2
+	._type	876,'m','s',0,875
+	._type	876,'m','c',0,16
+	._var	'strrchr','F',876
+	._type	877,'P',3
+	._type	878,'P',3
+	._type	879,'x',810,2
+	._type	879,'m','s1',0,877
+	._type	879,'m','s2',0,878
+	._var	'strspn','F',879
+	._type	880,'P',3
+	._type	881,'P',3
+	._type	882,'P',3
+	._type	883,'x',880,2
+	._type	883,'m','s1',0,881
+	._type	883,'m','s2',0,882
+	._var	'strstr','F',883
+	._type	884,'P',3
+	._type	885,'P',3
+	._type	886,'P',3
+	._type	887,'x',884,2
+	._type	887,'m','s1',0,885
+	._type	887,'m','s2',0,886
+	._var	'strtok','F',887
+	._type	888,'P',3
+	._type	889,'x',888,1
+	._type	889,'m','errcode',0,16
+	._var	'strerror','F',889
+	._type	890,'P',3
+	._type	891,'P',3
+	._type	892,'x',16,2
+	._type	892,'m','s1',0,890
+	._type	892,'m','s2',0,891
+	._var	'strcoll','F',892
+	._type	893,'P',3
+	._type	894,'P',3
+	._type	895,'x',810,3
+	._type	895,'m','s1',0,893
+	._type	895,'m','s2',0,894
+	._type	895,'m','n',0,810
+	._var	'strxfrm','F',895
+	._type	896,'v'
+	._type	897,'P',896
+	._type	898,'v'
+	._type	899,'P',898
+	._type	900,'v'
+	._type	901,'P',900
+	._type	902,'x',897,3
+	._type	902,'m','s1',0,899
+	._type	902,'m','s2',0,901
+	._type	902,'m','n',0,810
+	._var	'memmove','F',902
+	._type	903,'P',3
+	._type	904,'P',3
+	._type	905,'x',16,2
+	._type	905,'m','s1',0,903
+	._type	905,'m','s',0,904
+	._var	'stricmp','F',905
+	._type	906,'P',3
+	._type	907,'P',3
+	._type	908,'x',16,3
+	._type	908,'m','s1',0,906
+	._type	908,'m','s2',0,907
+	._type	908,'m','n',0,810
+	._var	'strnicmp','F',908
+	._type	909,'P',3
+	._type	910,'P',3
+	._type	911,'x',16,3
+	._type	911,'m','s1',0,909
+	._type	911,'m','s2',0,910
+	._type	911,'m','n',0,810
+	._var	'memicmp','F',911
+	._type	912,'O',3
+	._type	913,'O',3
+	._type	914,'O',3
+	._type	915,'x',912,2
+	._type	915,'m','',0,913
+	._type	915,'m','',0,914
+	._var	'_n_n_strcat','F',915
+	._type	916,'O',3
+	._type	917,'O',3
+	._type	918,'P',3
+	._type	919,'x',916,2
+	._type	919,'m','',0,917
+	._type	919,'m','',0,918
+	._var	'_n_f_strcat','F',919
+	._type	920,'P',3
+	._type	921,'P',3
+	._type	922,'O',3
+	._type	923,'x',920,2
+	._type	923,'m','',0,921
+	._type	923,'m','',0,922
+	._var	'_f_n_strcat','F',923
+	._type	924,'O',3
+	._type	925,'O',3
+	._type	926,'x',924,2
+	._type	926,'m','s',0,925
+	._type	926,'m','c',0,16
+	._var	'_n_strchr','F',926
+	._type	927,'O',3
+	._type	928,'O',3
+	._type	929,'x',16,2
+	._type	929,'m','s1',0,927
+	._type	929,'m','s2',0,928
+	._var	'_n_n_strcmp','F',929
+	._type	930,'O',3
+	._type	931,'P',3
+	._type	932,'x',16,2
+	._type	932,'m','s1',0,930
+	._type	932,'m','s2',0,931
+	._var	'_n_f_strcmp','F',932
+	._type	933,'P',3
+	._type	934,'O',3
+	._type	935,'x',16,2
+	._type	935,'m','s1',0,933
+	._type	935,'m','s2',0,934
+	._var	'_f_n_strcmp','F',935
+	._type	936,'O',3
+	._type	937,'O',3
+	._type	938,'O',3
+	._type	939,'x',936,2
+	._type	939,'m','s1',0,937
+	._type	939,'m','s2',0,938
+	._var	'_n_n_strcpy','F',939
+	._type	940,'O',3
+	._type	941,'O',3
+	._type	942,'P',3
+	._type	943,'x',940,2
+	._type	943,'m','s1',0,941
+	._type	943,'m','s2',0,942
+	._var	'_n_f_strcpy','F',943
+	._type	944,'P',3
+	._type	945,'P',3
+	._type	946,'O',3
+	._type	947,'x',944,2
+	._type	947,'m','s1',0,945
+	._type	947,'m','s2',0,946
+	._var	'_f_n_strcpy','F',947
+	._type	948,'O',3
+	._type	949,'O',3
+	._type	950,'x',810,2
+	._type	950,'m','s1',0,948
+	._type	950,'m','s2',0,949
+	._var	'_n_n_strcspn','F',950
+	._type	951,'O',3
+	._type	952,'P',3
+	._type	953,'x',810,2
+	._type	953,'m','s1',0,951
+	._type	953,'m','s2',0,952
+	._var	'_n_f_strcspn','F',953
+	._type	954,'P',3
+	._type	955,'O',3
+	._type	956,'x',810,2
+	._type	956,'m','s1',0,954
+	._type	956,'m','s2',0,955
+	._var	'_f_n_strcspn','F',956
+	._type	957,'O',3
+	._type	958,'x',810,1
+	._type	958,'m','s',0,957
+	._var	'_n_strlen','F',958
+	._type	959,'O',3
+	._type	960,'O',3
+	._type	961,'O',3
+	._type	962,'x',959,3
+	._type	962,'m','s1',0,960
+	._type	962,'m','s2',0,961
+	._type	962,'m','n',0,810
+	._var	'_n_n_strncat','F',962
+	._type	963,'O',3
+	._type	964,'O',3
+	._type	965,'P',3
+	._type	966,'x',963,3
+	._type	966,'m','s1',0,964
+	._type	966,'m','s2',0,965
+	._type	966,'m','n',0,810
+	._var	'_n_f_strncat','F',966
+	._type	967,'P',3
+	._type	968,'P',3
+	._type	969,'O',3
+	._type	970,'x',967,3
+	._type	970,'m','s1',0,968
+	._type	970,'m','s2',0,969
+	._type	970,'m','n',0,810
+	._var	'_f_n_strncat','F',970
+	._type	971,'O',3
+	._type	972,'O',3
+	._type	973,'x',16,3
+	._type	973,'m','s1',0,971
+	._type	973,'m','s2',0,972
+	._type	973,'m','n',0,810
+	._var	'_n_n_strncmp','F',973
+	._type	974,'O',3
+	._type	975,'P',3
+	._type	976,'x',16,3
+	._type	976,'m','s1',0,974
+	._type	976,'m','s2',0,975
+	._type	976,'m','n',0,810
+	._var	'_n_f_strncmp','F',976
+	._type	977,'P',3
+	._type	978,'O',3
+	._type	979,'x',16,3
+	._type	979,'m','s1',0,977
+	._type	979,'m','s2',0,978
+	._type	979,'m','n',0,810
+	._var	'_f_n_strncmp','F',979
+	._type	980,'O',3
+	._type	981,'O',3
+	._type	982,'O',3
+	._type	983,'x',980,3
+	._type	983,'m','s1',0,981
+	._type	983,'m','s2',0,982
+	._type	983,'m','n',0,810
+	._var	'_n_n_strncpy','F',983
+	._type	984,'O',3
+	._type	985,'O',3
+	._type	986,'P',3
+	._type	987,'x',984,3
+	._type	987,'m','s1',0,985
+	._type	987,'m','s2',0,986
+	._type	987,'m','n',0,810
+	._var	'_n_f_strncpy','F',987
+	._type	988,'P',3
+	._type	989,'P',3
+	._type	990,'O',3
+	._type	991,'x',988,3
+	._type	991,'m','s1',0,989
+	._type	991,'m','s2',0,990
+	._type	991,'m','n',0,810
+	._var	'_f_n_strncpy','F',991
+	._type	992,'O',3
+	._type	993,'O',3
+	._type	994,'O',3
+	._type	995,'x',992,2
+	._type	995,'m','s1',0,993
+	._type	995,'m','s2',0,994
+	._var	'_n_n_strpbrk','F',995
+	._type	996,'O',3
+	._type	997,'O',3
+	._type	998,'P',3
+	._type	999,'x',996,2
+	._type	999,'m','s1',0,997
+	._type	999,'m','s2',0,998
+	._var	'_n_f_strpbrk','F',999
+	._type	1000,'P',3
+	._type	1001,'P',3
+	._type	1002,'O',3
+	._type	1003,'x',1000,2
+	._type	1003,'m','s1',0,1001
+	._type	1003,'m','s2',0,1002
+	._var	'_f_n_strpbrk','F',1003
+	._type	1004,'O',3
+	._type	1005,'O',3
+	._type	1006,'x',1004,2
+	._type	1006,'m','s',0,1005
+	._type	1006,'m','c',0,16
+	._var	'_n_strrchr','F',1006
+	._type	1007,'O',3
+	._type	1008,'O',3
+	._type	1009,'x',810,2
+	._type	1009,'m','s1',0,1007
+	._type	1009,'m','s2',0,1008
+	._var	'_n_n_strspn','F',1009
+	._type	1010,'O',3
+	._type	1011,'P',3
+	._type	1012,'x',810,2
+	._type	1012,'m','s1',0,1010
+	._type	1012,'m','s2',0,1011
+	._var	'_n_f_strspn','F',1012
+	._type	1013,'P',3
+	._type	1014,'O',3
+	._type	1015,'x',810,2
+	._type	1015,'m','s1',0,1013
+	._type	1015,'m','s2',0,1014
+	._var	'_f_n_strspn','F',1015
+	._type	1016,'O',3
+	._type	1017,'O',3
+	._type	1018,'O',3
+	._type	1019,'x',1016,2
+	._type	1019,'m','s1',0,1017
+	._type	1019,'m','s2',0,1018
+	._var	'_n_n_strstr','F',1019
+	._type	1020,'O',3
+	._type	1021,'O',3
+	._type	1022,'P',3
+	._type	1023,'x',1020,2
+	._type	1023,'m','s1',0,1021
+	._type	1023,'m','s2',0,1022
+	._var	'_n_f_strstr','F',1023
+	._type	1024,'P',3
+	._type	1025,'P',3
+	._type	1026,'O',3
+	._type	1027,'x',1024,2
+	._type	1027,'m','s1',0,1025
+	._type	1027,'m','s2',0,1026
+	._var	'_f_n_strstr','F',1027
+	._type	1028,'O',3
+	._type	1029,'O',3
+	._type	1030,'O',3
+	._type	1031,'x',1028,2
+	._type	1031,'m','s1',0,1029
+	._type	1031,'m','s2',0,1030
+	._var	'_n_n_strtok','F',1031
+	._type	1032,'O',3
+	._type	1033,'O',3
+	._type	1034,'P',3
+	._type	1035,'x',1032,2
+	._type	1035,'m','s1',0,1033
+	._type	1035,'m','s2',0,1034
+	._var	'_n_f_strtok','F',1035
+	._type	1036,'P',3
+	._type	1037,'P',3
+	._type	1038,'O',3
+	._type	1039,'x',1036,2
+	._type	1039,'m','s1',0,1037
+	._type	1039,'m','s2',0,1038
+	._var	'_f_n_strtok','F',1039
+	._type	1040,'O',3
+	._type	1041,'x',1040,1
+	._type	1041,'m','errcode',0,16
+	._var	'_n_strerror','F',1041
+	._type	1042,'O',3
+	._type	1043,'O',3
+	._type	1044,'x',16,2
+	._type	1044,'m','s1',0,1042
+	._type	1044,'m','s2',0,1043
+	._var	'_n_n_strcoll','F',1044
+	._type	1045,'O',3
+	._type	1046,'P',3
+	._type	1047,'x',16,2
+	._type	1047,'m','s1',0,1045
+	._type	1047,'m','s2',0,1046
+	._var	'_n_f_strcoll','F',1047
+	._type	1048,'P',3
+	._type	1049,'O',3
+	._type	1050,'x',16,2
+	._type	1050,'m','s1',0,1048
+	._type	1050,'m','s2',0,1049
+	._var	'_f_n_strcoll','F',1050
+	._type	1051,'O',3
+	._type	1052,'O',3
+	._type	1053,'x',810,3
+	._type	1053,'m','s1',0,1051
+	._type	1053,'m','s2',0,1052
+	._type	1053,'m','n',0,810
+	._var	'_n_n_strxfrm','F',1053
+	._type	1054,'O',3
+	._type	1055,'P',3
+	._type	1056,'x',810,3
+	._type	1056,'m','s1',0,1054
+	._type	1056,'m','s2',0,1055
+	._type	1056,'m','n',0,810
+	._var	'_n_f_strxfrm','F',1056
+	._type	1057,'P',3
+	._type	1058,'O',3
+	._type	1059,'x',810,3
+	._type	1059,'m','s1',0,1057
+	._type	1059,'m','s2',0,1058
+	._type	1059,'m','n',0,810
+	._var	'_f_n_strxfrm','F',1059
+	._type	1060,'O',3
+	._type	1061,'O',3
+	._type	1062,'x',16,2
+	._type	1062,'m','s1',0,1060
+	._type	1062,'m','s',0,1061
+	._var	'_n_n_stricmp','F',1062
+	._type	1063,'O',3
+	._type	1064,'P',3
+	._type	1065,'x',16,2
+	._type	1065,'m','s1',0,1063
+	._type	1065,'m','s',0,1064
+	._var	'_n_f_stricmp','F',1065
+	._type	1066,'P',3
+	._type	1067,'O',3
+	._type	1068,'x',16,2
+	._type	1068,'m','s1',0,1066
+	._type	1068,'m','s',0,1067
+	._var	'_f_n_stricmp','F',1068
+	._type	1069,'O',3
+	._type	1070,'O',3
+	._type	1071,'x',16,3
+	._type	1071,'m','s1',0,1069
+	._type	1071,'m','s2',0,1070
+	._type	1071,'m','n',0,810
+	._var	'_n_n_strnicmp','F',1071
+	._type	1072,'O',3
+	._type	1073,'P',3
+	._type	1074,'x',16,3
+	._type	1074,'m','s1',0,1072
+	._type	1074,'m','s2',0,1073
+	._type	1074,'m','n',0,810
+	._var	'_n_f_strnicmp','F',1074
+	._type	1075,'P',3
+	._type	1076,'O',3
+	._type	1077,'x',16,3
+	._type	1077,'m','s1',0,1075
+	._type	1077,'m','s2',0,1076
+	._type	1077,'m','n',0,810
+	._var	'_f_n_strnicmp','F',1077
+	._type	1078,'O',3
+	._type	1079,'O',3
+	._type	1080,'x',16,3
+	._type	1080,'m','s1',0,1078
+	._type	1080,'m','s2',0,1079
+	._type	1080,'m','n',0,810
+	._var	'_n_n_memicmp','F',1080
+	._type	1081,'O',3
+	._type	1082,'P',3
+	._type	1083,'x',16,3
+	._type	1083,'m','s1',0,1081
+	._type	1083,'m','s2',0,1082
+	._type	1083,'m','n',0,810
+	._var	'_n_f_memicmp','F',1083
+	._type	1084,'P',3
+	._type	1085,'O',3
+	._type	1086,'x',16,3
+	._type	1086,'m','s1',0,1084
+	._type	1086,'m','s2',0,1085
+	._type	1086,'m','n',0,810
+	._var	'_f_n_memicmp','F',1086
+	._type	1087,'v'
+	._type	1088,'O',1087
+	._type	1089,'v'
+	._type	1090,'O',1089
+	._type	1091,'v'
+	._type	1092,'O',1091
+	._type	1093,'x',1088,3
+	._type	1093,'m','s1',0,1090
+	._type	1093,'m','s2',0,1092
+	._type	1093,'m','n',0,810
+	._var	'_n_n_memmove','F',1093
+	._type	1094,'v'
+	._type	1095,'O',1094
+	._type	1096,'v'
+	._type	1097,'O',1096
+	._type	1098,'v'
+	._type	1099,'P',1098
+	._type	1100,'x',1095,3
+	._type	1100,'m','s1',0,1097
+	._type	1100,'m','s2',0,1099
+	._type	1100,'m','n',0,810
+	._var	'_n_f_memmove','F',1100
+	._type	1101,'v'
+	._type	1102,'P',1101
+	._type	1103,'v'
+	._type	1104,'P',1103
+	._type	1105,'v'
+	._type	1106,'O',1105
+	._type	1107,'x',1102,3
+	._type	1107,'m','s1',0,1104
+	._type	1107,'m','s2',0,1106
+	._type	1107,'m','n',0,810
+	._var	'_f_n_memmove','F',1107
+	._type	1108,'v'
+	._type	1109,'O',3
+	._type	1110,'O',3
+	._type	1111,'x',1108,3
+	._type	1111,'m','',0,1109
+	._type	1111,'m','',0,1110
+	._type	1111,'m','',0,7
+	._var	'__n_bcopy','F',1111
+	._type	1112,'v'
+	._type	1113,'O',3
+	._type	1114,'x',1112,2
+	._type	1114,'m','',0,1113
+	._type	1114,'m','',0,7
+	._var	'__n_bzero','F',1114
+	._type	1115,'v'
+	._type	1116,'O',1115
+	._type	1117,'v'
+	._type	1118,'O',1117
+	._type	1119,'x',1116,3
+	._type	1119,'m','s',0,1118
+	._type	1119,'m','c',0,16
+	._type	1119,'m','n',0,810
+	._var	'_n_memchr','F',1119
+	._type	1120,'v'
+	._type	1121,'O',1120
+	._type	1122,'v'
+	._type	1123,'O',1122
+	._type	1124,'x',16,3
+	._type	1124,'m','s1',0,1121
+	._type	1124,'m','s2',0,1123
+	._type	1124,'m','n',0,810
+	._var	'_n_n_memcmp','F',1124
+	._type	1125,'v'
+	._type	1126,'O',1125
+	._type	1127,'v'
+	._type	1128,'P',1127
+	._type	1129,'x',16,3
+	._type	1129,'m','s1',0,1126
+	._type	1129,'m','s2',0,1128
+	._type	1129,'m','n',0,810
+	._var	'_n_f_memcmp','F',1129
+	._type	1130,'v'
+	._type	1131,'P',1130
+	._type	1132,'v'
+	._type	1133,'O',1132
+	._type	1134,'x',16,3
+	._type	1134,'m','s1',0,1131
+	._type	1134,'m','s2',0,1133
+	._type	1134,'m','n',0,810
+	._var	'_f_n_memcmp','F',1134
+	._type	1135,'v'
+	._type	1136,'O',1135
+	._type	1137,'v'
+	._type	1138,'O',1137
+	._type	1139,'v'
+	._type	1140,'O',1139
+	._type	1141,'x',1136,3
+	._type	1141,'m','s1',0,1138
+	._type	1141,'m','s2',0,1140
+	._type	1141,'m','n',0,810
+	._var	'_n_n_memcpy','F',1141
+	._type	1142,'v'
+	._type	1143,'O',1142
+	._type	1144,'v'
+	._type	1145,'O',1144
+	._type	1146,'v'
+	._type	1147,'P',1146
+	._type	1148,'x',1143,3
+	._type	1148,'m','s1',0,1145
+	._type	1148,'m','s2',0,1147
+	._type	1148,'m','n',0,810
+	._var	'_n_f_memcpy','F',1148
+	._type	1149,'v'
+	._type	1150,'P',1149
+	._type	1151,'v'
+	._type	1152,'P',1151
+	._type	1153,'v'
+	._type	1154,'O',1153
+	._type	1155,'x',1150,3
+	._type	1155,'m','s1',0,1152
+	._type	1155,'m','s2',0,1154
+	._type	1155,'m','n',0,810
+	._var	'_f_n_memcpy','F',1155
+	._type	1156,'v'
+	._type	1157,'O',1156
+	._type	1158,'v'
+	._type	1159,'O',1158
+	._type	1160,'x',1157,3
+	._type	1160,'m','s',0,1159
+	._type	1160,'m','c',0,16
+	._type	1160,'m','n',0,810
+	._var	'_n_memset','F',1160
+	._type	1161,'Z',4,3
+	._type	1162,'Z',4,1161
+	._var	'keypad_matrix','G',1162,_keypad_matrix
+	._type	1164,'Z',16,3
+	._type	1163,'S','',21
+	._type	1163,'m','debouncing',3,0
+	._type	1163,'m','ready',3,1
+	._type	1163,'m','keydown',3,2
+	._type	1163,'m','buffer',1164,3
+	._type	1163,'m','buffer_size',16,19
+	._type	1165,'T','keypad_4x4_t',1163
+	._var	'keypad','G',1165,_keypad
+	._type	1166,'Z',16,3
+	._var	'keypad_buff_cpy','G',1166,_keypad_buff_cpy
+	._var	'hold_delay','G',16,_hold_delay
+;#################################
+;#################################
+;#################################
+	._inspect	'V', 't', "DA0_ADDR", 'G', 3
+	._inspect	'V', 't', "DA1_ADDR", 'G', 3
+	._inspect	'V', 't', "UDF_ADDR", 'G', 3
+	._inspect	'V', 't', "TA11_ADDR", 'G', 5
+	._inspect	'V', 't', "TA21_ADDR", 'G', 5
+	._inspect	'V', 't', "TA41_ADDR", 'G', 5
+	._inspect	'V', 't', "TB3_ADDR", 'G', 5
+	._inspect	'V', 't', "TB4_ADDR", 'G', 5
+	._inspect	'V', 't', "TB5_ADDR", 'G', 5
+	._inspect	'V', 't', "TA0_ADDR", 'G', 5
+	._inspect	'V', 't', "TA1_ADDR", 'G', 5
+	._inspect	'V', 't', "TA2_ADDR", 'G', 5
+	._inspect	'V', 't', "TA3_ADDR", 'G', 5
+	._inspect	'V', 't', "TA4_ADDR", 'G', 5
+	._inspect	'V', 't', "TB0_ADDR", 'G', 5
+	._inspect	'V', 't', "TB1_ADDR", 'G', 5
+	._inspect	'V', 't', "TB2_ADDR", 'G', 5
+	._inspect	'V', 't', "PM0_ADDR", 'G', 290
+	._inspect	'V', 't', "PM1_ADDR", 'G', 290
+	._inspect	'V', 't', "CM0_ADDR", 'G', 290
+	._inspect	'V', 't', "CM1_ADDR", 'G', 290
+	._inspect	'V', 't', "CSR_ADDR", 'G', 290
+	._inspect	'V', 't', "AIER_ADDR", 'G', 290
+	._inspect	'V', 't', "PRCR_ADDR", 'G', 290
+	._inspect	'V', 't', "DBR_ADDR", 'G', 290
+	._inspect	'V', 't', "CM2_ADDR", 'G', 290
+	._inspect	'V', 't', "WDTS_ADDR", 'G', 290
+	._inspect	'V', 't', "WDC_ADDR", 'G', 290
+	._inspect	'V', 't', "CSE_ADDR", 'G', 290
+	._inspect	'V', 't', "PLC0_ADDR", 'G', 290
+	._inspect	'V', 't', "PM2_ADDR", 'G', 290
+	._inspect	'V', 't', "DM0CON_ADDR", 'G', 290
+	._inspect	'V', 't', "DM1CON_ADDR", 'G', 290
+	._inspect	'V', 't', "INT3IC_ADDR", 'G', 290
+	._inspect	'V', 't', "TB5IC_ADDR", 'G', 290
+	._inspect	'V', 't', "TB4IC_ADDR", 'G', 290
+	._inspect	'V', 't', "TB3IC_ADDR", 'G', 290
+	._inspect	'V', 't', "S4IC_ADDR", 'G', 290
+	._inspect	'V', 't', "S3IC_ADDR", 'G', 290
+	._inspect	'V', 't', "INT5IC_ADDR", 'G', 290
+	._inspect	'V', 't', "INT4IC_ADDR", 'G', 290
+	._inspect	'V', 't', "BCNIC_ADDR", 'G', 290
+	._inspect	'V', 't', "DM0IC_ADDR", 'G', 290
+	._inspect	'V', 't', "DM1IC_ADDR", 'G', 290
+	._inspect	'V', 't', "KUPIC_ADDR", 'G', 290
+	._inspect	'V', 't', "ADIC_ADDR", 'G', 290
+	._inspect	'V', 't', "S2TIC_ADDR", 'G', 290
+	._inspect	'V', 't', "S2RIC_ADDR", 'G', 290
+	._inspect	'V', 't', "S0TIC_ADDR", 'G', 290
+	._inspect	'V', 't', "S0RIC_ADDR", 'G', 290
+	._inspect	'V', 't', "S1TIC_ADDR", 'G', 290
+	._inspect	'V', 't', "S1RIC_ADDR", 'G', 290
+	._inspect	'V', 't', "TA0IC_ADDR", 'G', 290
+	._inspect	'V', 't', "TA1IC_ADDR", 'G', 290
+	._inspect	'V', 't', "TA2IC_ADDR", 'G', 290
+	._inspect	'V', 't', "TA3IC_ADDR", 'G', 290
+	._inspect	'V', 't', "TA4IC_ADDR", 'G', 290
+	._inspect	'V', 't', "TB0IC_ADDR", 'G', 290
+	._inspect	'V', 't', "TB1IC_ADDR", 'G', 290
+	._inspect	'V', 't', "TB2IC_ADDR", 'G', 290
+	._inspect	'V', 't', "INT0IC_ADDR", 'G', 290
+	._inspect	'V', 't', "INT1IC_ADDR", 'G', 290
+	._inspect	'V', 't', "INT2IC_ADDR", 'G', 290
+	._inspect	'V', 't', "FMR1_ADDR", 'G', 290
+	._inspect	'V', 't', "FMR0_ADDR", 'G', 290
+	._inspect	'V', 't', "AIER2_ADDR", 'G', 290
+	._inspect	'V', 't', "PCLKR_ADDR", 'G', 290
+	._inspect	'V', 't', "TBSR_ADDR", 'G', 290
+	._inspect	'V', 't', "INVC0_ADDR", 'G', 290
+	._inspect	'V', 't', "INVC1_ADDR", 'G', 290
+	._inspect	'V', 't', "IDB0_ADDR", 'G', 290
+	._inspect	'V', 't', "IDB1_ADDR", 'G', 290
+	._inspect	'V', 't', "DTT_ADDR", 'G', 290
+	._inspect	'V', 't', "ICTB2_ADDR", 'G', 290
+	._inspect	'V', 't', "TB3MR_ADDR", 'G', 290
+	._inspect	'V', 't', "TB4MR_ADDR", 'G', 290
+	._inspect	'V', 't', "TB5MR_ADDR", 'G', 290
+	._inspect	'V', 't', "IFSR2A_ADDR", 'G', 290
+	._inspect	'V', 't', "IFSR_ADDR", 'G', 290
+	._inspect	'V', 't', "S3TRR_ADDR", 'G', 290
+	._inspect	'V', 't', "S3C_ADDR", 'G', 290
+	._inspect	'V', 't', "S3BRG_ADDR", 'G', 290
+	._inspect	'V', 't', "S4TRR_ADDR", 'G', 290
+	._inspect	'V', 't', "S4C_ADDR", 'G', 290
+	._inspect	'V', 't', "S4BRG_ADDR", 'G', 290
+	._inspect	'V', 't', "U0SMR4_ADDR", 'G', 290
+	._inspect	'V', 't', "U0SMR3_ADDR", 'G', 290
+	._inspect	'V', 't', "U0SMR2_ADDR", 'G', 290
+	._inspect	'V', 't', "U0SMR_ADDR", 'G', 290
+	._inspect	'V', 't', "U1SMR4_ADDR", 'G', 290
+	._inspect	'V', 't', "U1SMR3_ADDR", 'G', 290
+	._inspect	'V', 't', "U1SMR2_ADDR", 'G', 290
+	._inspect	'V', 't', "U1SMR_ADDR", 'G', 290
+	._inspect	'V', 't', "U2SMR4_ADDR", 'G', 290
+	._inspect	'V', 't', "U2SMR3_ADDR", 'G', 290
+	._inspect	'V', 't', "U2SMR2_ADDR", 'G', 290
+	._inspect	'V', 't', "U2SMR_ADDR", 'G', 290
+	._inspect	'V', 't', "U2MR_ADDR", 'G', 290
+	._inspect	'V', 't', "U2BRG_ADDR", 'G', 290
+	._inspect	'V', 't', "U2C0_ADDR", 'G', 290
+	._inspect	'V', 't', "U2C1_ADDR", 'G', 290
+	._inspect	'V', 't', "TABSR_ADDR", 'G', 290
+	._inspect	'V', 't', "CPSRF_ADDR", 'G', 290
+	._inspect	'V', 't', "ONSF_ADDR", 'G', 290
+	._inspect	'V', 't', "TRGSR_ADDR", 'G', 290
+	._inspect	'V', 't', "TA0MR_ADDR", 'G', 290
+	._inspect	'V', 't', "TA1MR_ADDR", 'G', 290
+	._inspect	'V', 't', "TA2MR_ADDR", 'G', 290
+	._inspect	'V', 't', "TA3MR_ADDR", 'G', 290
+	._inspect	'V', 't', "TA4MR_ADDR", 'G', 290
+	._inspect	'V', 't', "TB0MR_ADDR", 'G', 290
+	._inspect	'V', 't', "TB1MR_ADDR", 'G', 290
+	._inspect	'V', 't', "TB2MR_ADDR", 'G', 290
+	._inspect	'V', 't', "TB2SC_ADDR", 'G', 290
+	._inspect	'V', 't', "U0MR_ADDR", 'G', 290
+	._inspect	'V', 't', "U0BRG_ADDR", 'G', 290
+	._inspect	'V', 't', "U0C0_ADDR", 'G', 290
+	._inspect	'V', 't', "U0C1_ADDR", 'G', 290
+	._inspect	'V', 't', "U1MR_ADDR", 'G', 290
+	._inspect	'V', 't', "U1BRG_ADDR", 'G', 290
+	._inspect	'V', 't', "U1C0_ADDR", 'G', 290
+	._inspect	'V', 't', "U1C1_ADDR", 'G', 290
+	._inspect	'V', 't', "UCON_ADDR", 'G', 290
+	._inspect	'V', 't', "FIDR_ADDR", 'G', 290
+	._inspect	'V', 't', "DM0SL_ADDR", 'G', 290
+	._inspect	'V', 't', "DM1SL_ADDR", 'G', 290
+	._inspect	'V', 't', "CRCIN_ADDR", 'G', 290
+	._inspect	'V', 't', "ADCON2_ADDR", 'G', 290
+	._inspect	'V', 't', "ADCON0_ADDR", 'G', 290
+	._inspect	'V', 't', "ADCON1_ADDR", 'G', 290
+	._inspect	'V', 't', "DACON_ADDR", 'G', 290
+	._inspect	'V', 't', "PC14_ADDR", 'G', 290
+	._inspect	'V', 't', "PUR3_ADDR", 'G', 290
+	._inspect	'V', 't', "P0_ADDR", 'G', 290
+	._inspect	'V', 't', "P1_ADDR", 'G', 290
+	._inspect	'V', 't', "P0D_ADDR", 'G', 290
+	._inspect	'V', 't', "P1D_ADDR", 'G', 290
+	._inspect	'V', 't', "P2_ADDR", 'G', 290
+	._inspect	'V', 't', "P3_ADDR", 'G', 290
+	._inspect	'V', 't', "P2D_ADDR", 'G', 290
+	._inspect	'V', 't', "P3D_ADDR", 'G', 290
+	._inspect	'V', 't', "P4_ADDR", 'G', 290
+	._inspect	'V', 't', "P5_ADDR", 'G', 290
+	._inspect	'V', 't', "P4D_ADDR", 'G', 290
+	._inspect	'V', 't', "P5D_ADDR", 'G', 290
+	._inspect	'V', 't', "P6_ADDR", 'G', 290
+	._inspect	'V', 't', "P7_ADDR", 'G', 290
+	._inspect	'V', 't', "P6D_ADDR", 'G', 290
+	._inspect	'V', 't', "P7D_ADDR", 'G', 290
+	._inspect	'V', 't', "P8_ADDR", 'G', 290
+	._inspect	'V', 't', "P9_ADDR", 'G', 290
+	._inspect	'V', 't', "P8D_ADDR", 'G', 290
+	._inspect	'V', 't', "P9D_ADDR", 'G', 290
+	._inspect	'V', 't', "P10_ADDR", 'G', 290
+	._inspect	'V', 't', "P11_ADDR", 'G', 290
+	._inspect	'V', 't', "P10D_ADDR", 'G', 290
+	._inspect	'V', 't', "P1D1_ADDR", 'G', 290
+	._inspect	'V', 't', "P12_ADDR", 'G', 290
+	._inspect	'V', 't', "P13_ADDR", 'G', 290
+	._inspect	'V', 't', "P1D2_ADDR", 'G', 290
+	._inspect	'V', 't', "P1D3_ADDR", 'G', 290
+	._inspect	'V', 't', "PUR0_ADDR", 'G', 290
+	._inspect	'V', 't', "PUR1_ADDR", 'G', 290
+	._inspect	'V', 't', "PUR2_ADDR", 'G', 290
+	._inspect	'V', 't', "PCR_ADDR", 'G', 290
+	._inspect	'V', 't', "TCR0_ADDR", 'G', 300
+	._inspect	'V', 't', "TCR1_ADDR", 'G', 319
+	._inspect	'V', 't', "U0TB_ADDR", 'G', 338
+	._inspect	'V', 't', "U1TB_ADDR", 'G', 357
+	._inspect	'V', 't', "U2TB_ADDR", 'G', 376
+	._inspect	'V', 't', "U0RB_ADDR", 'G', 395
+	._inspect	'V', 't', "U1RB_ADDR", 'G', 414
+	._inspect	'V', 't', "U2RB_ADDR", 'G', 433
+	._inspect	'V', 't', "CRCD_ADDR", 'G', 452
+	._inspect	'V', 't', "AD0_ADDR", 'G', 471
+	._inspect	'V', 't', "AD1_ADDR", 'G', 490
+	._inspect	'V', 't', "AD2_ADDR", 'G', 509
+	._inspect	'V', 't', "AD3_ADDR", 'G', 528
+	._inspect	'V', 't', "AD4_ADDR", 'G', 547
+	._inspect	'V', 't', "AD5_ADDR", 'G', 566
+	._inspect	'V', 't', "AD6_ADDR", 'G', 585
+	._inspect	'V', 't', "AD7_ADDR", 'G', 604
+	._inspect	'V', 't', "RMAD0_ADDR", 'G', 623
+	._inspect	'V', 't', "RMAD1_ADDR", 'G', 646
+	._inspect	'V', 't', "RMAD2_ADDR", 'G', 669
+	._inspect	'V', 't', "RMAD3_ADDR", 'G', 692
+	._inspect	'V', 't', "SAR0_ADDR", 'G', 715
+	._inspect	'V', 't', "SAR1_ADDR", 'G', 738
+	._inspect	'V', 't', "DAR0_ADDR", 'G', 761
+	._inspect	'V', 't', "DAR1_ADDR", 'G', 784
+	._inspect	'F', 't', "Initialise", 'G', 809
+	._inspect	'V', 't', "size_t", 'O', 7
+	._inspect	'F', 't', "bcopy", 'G', 814
+	._inspect	'F', 't', "bzero", 'G', 817
+	._inspect	'F', 't', "memchr", 'G', 822
+	._inspect	'F', 't', "memcmp", 'G', 827
+	._inspect	'F', 't', "memcpy", 'G', 834
+	._inspect	'F', 't', "memset", 'G', 839
+	._inspect	'F', 't', "strcat", 'G', 843
+	._inspect	'F', 't', "strchr", 'G', 846
+	._inspect	'F', 't', "strcmp", 'G', 849
+	._inspect	'F', 't', "strcpy", 'G', 853
+	._inspect	'F', 't', "strcspn", 'G', 856
+	._inspect	'F', 't', "strlen", 'G', 858
+	._inspect	'F', 't', "strncat", 'G', 862
+	._inspect	'F', 't', "strncmp", 'G', 865
+	._inspect	'F', 't', "strncpy", 'G', 869
+	._inspect	'F', 't', "strpbrk", 'G', 873
+	._inspect	'F', 't', "strrchr", 'G', 876
+	._inspect	'F', 't', "strspn", 'G', 879
+	._inspect	'F', 't', "strstr", 'G', 883
+	._inspect	'F', 't', "strtok", 'G', 887
+	._inspect	'F', 't', "strerror", 'G', 889
+	._inspect	'F', 't', "strcoll", 'G', 892
+	._inspect	'F', 't', "strxfrm", 'G', 895
+	._inspect	'F', 't', "memmove", 'G', 902
+	._inspect	'F', 't', "stricmp", 'G', 905
+	._inspect	'F', 't', "strnicmp", 'G', 908
+	._inspect	'F', 't', "memicmp", 'G', 911
+	._inspect	'F', 't', "_n_n_strcat", 'G', 915
+	._inspect	'F', 't', "_n_f_strcat", 'G', 919
+	._inspect	'F', 't', "_f_n_strcat", 'G', 923
+	._inspect	'F', 't', "_n_strchr", 'G', 926
+	._inspect	'F', 't', "_n_n_strcmp", 'G', 929
+	._inspect	'F', 't', "_n_f_strcmp", 'G', 932
+	._inspect	'F', 't', "_f_n_strcmp", 'G', 935
+	._inspect	'F', 't', "_n_n_strcpy", 'G', 939
+	._inspect	'F', 't', "_n_f_strcpy", 'G', 943
+	._inspect	'F', 't', "_f_n_strcpy", 'G', 947
+	._inspect	'F', 't', "_n_n_strcspn", 'G', 950
+	._inspect	'F', 't', "_n_f_strcspn", 'G', 953
+	._inspect	'F', 't', "_f_n_strcspn", 'G', 956
+	._inspect	'F', 't', "_n_strlen", 'G', 958
+	._inspect	'F', 't', "_n_n_strncat", 'G', 962
+	._inspect	'F', 't', "_n_f_strncat", 'G', 966
+	._inspect	'F', 't', "_f_n_strncat", 'G', 970
+	._inspect	'F', 't', "_n_n_strncmp", 'G', 973
+	._inspect	'F', 't', "_n_f_strncmp", 'G', 976
+	._inspect	'F', 't', "_f_n_strncmp", 'G', 979
+	._inspect	'F', 't', "_n_n_strncpy", 'G', 983
+	._inspect	'F', 't', "_n_f_strncpy", 'G', 987
+	._inspect	'F', 't', "_f_n_strncpy", 'G', 991
+	._inspect	'F', 't', "_n_n_strpbrk", 'G', 995
+	._inspect	'F', 't', "_n_f_strpbrk", 'G', 999
+	._inspect	'F', 't', "_f_n_strpbrk", 'G', 1003
+	._inspect	'F', 't', "_n_strrchr", 'G', 1006
+	._inspect	'F', 't', "_n_n_strspn", 'G', 1009
+	._inspect	'F', 't', "_n_f_strspn", 'G', 1012
+	._inspect	'F', 't', "_f_n_strspn", 'G', 1015
+	._inspect	'F', 't', "_n_n_strstr", 'G', 1019
+	._inspect	'F', 't', "_n_f_strstr", 'G', 1023
+	._inspect	'F', 't', "_f_n_strstr", 'G', 1027
+	._inspect	'F', 't', "_n_n_strtok", 'G', 1031
+	._inspect	'F', 't', "_n_f_strtok", 'G', 1035
+	._inspect	'F', 't', "_f_n_strtok", 'G', 1039
+	._inspect	'F', 't', "_n_strerror", 'G', 1041
+	._inspect	'F', 't', "_n_n_strcoll", 'G', 1044
+	._inspect	'F', 't', "_n_f_strcoll", 'G', 1047
+	._inspect	'F', 't', "_f_n_strcoll", 'G', 1050
+	._inspect	'F', 't', "_n_n_strxfrm", 'G', 1053
+	._inspect	'F', 't', "_n_f_strxfrm", 'G', 1056
+	._inspect	'F', 't', "_f_n_strxfrm", 'G', 1059
+	._inspect	'F', 't', "_n_n_stricmp", 'G', 1062
+	._inspect	'F', 't', "_n_f_stricmp", 'G', 1065
+	._inspect	'F', 't', "_f_n_stricmp", 'G', 1068
+	._inspect	'F', 't', "_n_n_strnicmp", 'G', 1071
+	._inspect	'F', 't', "_n_f_strnicmp", 'G', 1074
+	._inspect	'F', 't', "_f_n_strnicmp", 'G', 1077
+	._inspect	'F', 't', "_n_n_memicmp", 'G', 1080
+	._inspect	'F', 't', "_n_f_memicmp", 'G', 1083
+	._inspect	'F', 't', "_f_n_memicmp", 'G', 1086
+	._inspect	'F', 't', "_n_n_memmove", 'G', 1093
+	._inspect	'F', 't', "_n_f_memmove", 'G', 1100
+	._inspect	'F', 't', "_f_n_memmove", 'G', 1107
+	._inspect	'F', 't', "__n_bcopy", 'G', 1111
+	._inspect	'F', 't', "__n_bzero", 'G', 1114
+	._inspect	'F', 't', "_n_memchr", 'G', 1119
+	._inspect	'F', 't', "_n_n_memcmp", 'G', 1124
+	._inspect	'F', 't', "_n_f_memcmp", 'G', 1129
+	._inspect	'F', 't', "_f_n_memcmp", 'G', 1134
+	._inspect	'F', 't', "_n_n_memcpy", 'G', 1141
+	._inspect	'F', 't', "_n_f_memcpy", 'G', 1148
+	._inspect	'F', 't', "_f_n_memcpy", 'G', 1155
+	._inspect	'F', 't', "_n_memset", 'G', 1160
+	._inspect	'V', 't', "keypad_matrix", 'G', 1162
+	._inspect	'V', 't', "keypad_4x4_t", 'O', 1163
+	._inspect	'V', 't', "keypad", 'G', 1165
+	._inspect	'V', 't', "keypad_buff_cpy", 'G', 1166
+	._inspect	'V', 't', "hold_delay", 'G', 16
+
+	.END
+
+;## Compile End Time Sun Jan 31 23:37:53 2016
+
+

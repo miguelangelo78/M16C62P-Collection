@@ -1,0 +1,3941 @@
+	._LANG	'C','5.31.30.001','REV.F'
+
+;##    C Compiler		 OUTPUT
+;## ccom30 Version 5.31.30.001
+;## Copyright(C) 2001(2003,2004). Renesas Technology Corp.
+;## and Renesas Solutions Corp., All rights reserved.
+;## Compile Start Time Sun Jan 31 23:37:52 2016
+
+;## COMMAND_LINE: ccom30  C:\Users\Miguel\Desktop\Nova pasta\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\GLCD.i -o C:\Users\Miguel\Desktop\Nova pasta\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\GLCD.a30 -finfo -fFP
+
+
+;## Normal Optimize		OFF
+;## ROM size Optimize		OFF
+;## Speed Optimize		OFF
+;## Default ROM is		far
+;## Default RAM is		near
+
+	.GLB	__SB__
+	.SB	__SB__
+	.FB	0
+	._aopt	OFF
+_PM0_ADDR	.equ	0004H			 
+_PM1_ADDR	.equ	0005H			 
+_CM0_ADDR	.equ	0006H			 
+_CM1_ADDR	.equ	0007H			 
+_CSR_ADDR	.equ	0008H			 
+_AIER_ADDR	.equ	0009H			 
+_PRCR_ADDR	.equ	000AH			 
+_DBR_ADDR	.equ	000BH			 
+_CM2_ADDR	.equ	000CH			 
+_CM3_ADDR	.equ	000DH			 
+_WDTS_ADDR	.equ	000EH			 
+_WDC_ADDR	.equ	000FH			 
+_RMAD0_ADDR	.equ	0010H			 
+_RMAD1_ADDR	.equ	0014H			 
+_CSE_ADDR	.equ	001BH			 
+_PLC0_ADDR	.equ	001CH			 
+_PM2_ADDR	.equ	001EH			 
+_SAR0_ADDR	.equ	0020H			 
+_DAR0_ADDR	.equ	0024H			 
+_TCR0_ADDR	.equ	0028H			 
+_DM0CON_ADDR	.equ	002CH			 
+_SAR1_ADDR	.equ	0030H			 
+_DAR1_ADDR	.equ	0034H			 
+_TCR1_ADDR	.equ	0038H			 
+_DM1CON_ADDR	.equ	003CH			 
+_INT3IC_ADDR	.equ	0044H			 
+_TB5IC_ADDR	.equ	0045H			 
+_TB4IC_ADDR	.equ	0046H			 
+_TB3IC_ADDR	.equ	0047H			 
+_S4IC_ADDR	.equ	0048H			 
+_S3IC_ADDR	.equ	0049H			 
+_INT5IC_ADDR	.equ	0048H			 
+_INT4IC_ADDR	.equ	0049H			 
+_BCNIC_ADDR	.equ	004AH			 
+_DM0IC_ADDR	.equ	004BH			 
+_DM1IC_ADDR	.equ	004CH			 
+_KUPIC_ADDR	.equ	004DH			 
+_ADIC_ADDR	.equ	004EH			 
+_S2TIC_ADDR	.equ	004FH			 
+_S2RIC_ADDR	.equ	0050H			 
+_S0TIC_ADDR	.equ	0051H			 
+_S0RIC_ADDR	.equ	0052H			 
+_S1TIC_ADDR	.equ	0053H			 
+_S1RIC_ADDR	.equ	0054H			 
+_TA0IC_ADDR	.equ	0055H			 
+_TA1IC_ADDR	.equ	0056H			 
+_TA2IC_ADDR	.equ	0057H			 
+_TA3IC_ADDR	.equ	0058H			 
+_TA4IC_ADDR	.equ	0059H			 
+_TB0IC_ADDR	.equ	005AH			 
+_TB1IC_ADDR	.equ	005BH			 
+_TB2IC_ADDR	.equ	005CH			 
+_INT0IC_ADDR	.equ	005DH			 
+_INT1IC_ADDR	.equ	005EH			 
+_INT2IC_ADDR	.equ	005FH			 
+_FMR1_ADDR	.equ	01B5H			 
+_FMR0_ADDR	.equ	01B7H			 
+_RMAD2_ADDR	.equ	01B8H			 
+_AIER2_ADDR	.equ	01BBH			 
+_RMAD3_ADDR	.equ	01BCH			 
+_PCLKR_ADDR	.equ	025EH			 
+_TBSR_ADDR	.equ	0340H			 
+_TA11_ADDR	.equ	0342H			 
+_TA21_ADDR	.equ	0344H			 
+_TA41_ADDR	.equ	0346H			 
+_INVC0_ADDR	.equ	0348H			 
+_INVC1_ADDR	.equ	0349H			 
+_IDB0_ADDR	.equ	034AH			 
+_IDB1_ADDR	.equ	034BH			 
+_DTT_ADDR	.equ	034CH			 
+_ICTB2_ADDR	.equ	034DH			 
+_TB3_ADDR	.equ	0350H			 
+_TB4_ADDR	.equ	0352H			 
+_TB5_ADDR	.equ	0354H			 
+_TB3MR_ADDR	.equ	035BH			 
+_TB4MR_ADDR	.equ	035CH			 
+_TB5MR_ADDR	.equ	035DH			 
+_IFSR2A_ADDR	.equ	035EH			 
+_IFSR_ADDR	.equ	035FH			 
+_S3TRR_ADDR	.equ	0360H			 
+_S3C_ADDR	.equ	0362H			 
+_S3BRG_ADDR	.equ	0363H			 
+_S4TRR_ADDR	.equ	0364H			 
+_S4C_ADDR	.equ	0366H			 
+_S4BRG_ADDR	.equ	0367H			 
+_U0SMR4_ADDR	.equ	036CH			 
+_U0SMR3_ADDR	.equ	036DH			 
+_U0SMR2_ADDR	.equ	036EH			 
+_U0SMR_ADDR	.equ	036FH			 
+_U1SMR4_ADDR	.equ	0370H			 
+_U1SMR3_ADDR	.equ	0371H			 
+_U1SMR2_ADDR	.equ	0372H			 
+_U1SMR_ADDR	.equ	0373H			 
+_U2SMR4_ADDR	.equ	0374H			 
+_U2SMR3_ADDR	.equ	0375H			 
+_U2SMR2_ADDR	.equ	0376H			 
+_U2SMR_ADDR	.equ	0377H			 
+_U2MR_ADDR	.equ	0378H			 
+_U2BRG_ADDR	.equ	0379H			 
+_U2TB_ADDR	.equ	037AH			 
+_U2C0_ADDR	.equ	037CH			 
+_U2C1_ADDR	.equ	037DH			 
+_U2RB_ADDR	.equ	037EH			 
+_TABSR_ADDR	.equ	0380H			 
+_CPSRF_ADDR	.equ	0381H			 
+_ONSF_ADDR	.equ	0382H			 
+_TRGSR_ADDR	.equ	0383H			 
+_UDF_ADDR	.equ	0384H			 
+_TA0_ADDR	.equ	0386H			 
+_TA1_ADDR	.equ	0388H			 
+_TA2_ADDR	.equ	038AH			 
+_TA3_ADDR	.equ	038CH			 
+_TA4_ADDR	.equ	038EH			 
+_TB0_ADDR	.equ	0390H			 
+_TB1_ADDR	.equ	0392H			 
+_TB2_ADDR	.equ	0394H			 
+_TA0MR_ADDR	.equ	0396H			 
+_TA1MR_ADDR	.equ	0397H			 
+_TA2MR_ADDR	.equ	0398H			 
+_TA3MR_ADDR	.equ	0399H			 
+_TA4MR_ADDR	.equ	039AH			 
+_TB0MR_ADDR	.equ	039BH			 
+_TB1MR_ADDR	.equ	039CH			 
+_TB2MR_ADDR	.equ	039DH			 
+_TB2SC_ADDR	.equ	039EH			 
+_U0MR_ADDR	.equ	03A0H			 
+_U0BRG_ADDR	.equ	03A1H			 
+_U0TB_ADDR	.equ	03A2H			 
+_U0C0_ADDR	.equ	03A4H			 
+_U0C1_ADDR	.equ	03A5H			 
+_U0RB_ADDR	.equ	03A6H			 
+_U1MR_ADDR	.equ	03A8H			 
+_U1BRG_ADDR	.equ	03A9H			 
+_U1TB_ADDR	.equ	03AAH			 
+_U1C0_ADDR	.equ	03ACH			 
+_U1C1_ADDR	.equ	03ADH			 
+_U1RB_ADDR	.equ	03AEH			 
+_UCON_ADDR	.equ	03B0H			 
+_FIDR_ADDR	.equ	03B4H			 
+_DM0SL_ADDR	.equ	03B8H			 
+_DM1SL_ADDR	.equ	03BAH			 
+_CRCD_ADDR	.equ	03BCH			 
+_CRCIN_ADDR	.equ	03BEH			 
+_AD0_ADDR	.equ	03C0H			 
+_AD1_ADDR	.equ	03C2H			 
+_AD2_ADDR	.equ	03C4H			 
+_AD3_ADDR	.equ	03C6H			 
+_AD4_ADDR	.equ	03C8H			 
+_AD5_ADDR	.equ	03CAH			 
+_AD6_ADDR	.equ	03CCH			 
+_AD7_ADDR	.equ	03CEH			 
+_ADCON2_ADDR	.equ	03D4H			 
+_ADCON0_ADDR	.equ	03D6H			 
+_ADCON1_ADDR	.equ	03D7H			 
+_DA0_ADDR	.equ	03D8H			 
+_DA1_ADDR	.equ	03DAH			 
+_DACON_ADDR	.equ	03DCH			 
+_PC14_ADDR	.equ	03DEH			 
+_PUR3_ADDR	.equ	03DFH			 
+_P0_ADDR	.equ	03E0H			 
+_P1_ADDR	.equ	03E1H			 
+_P0D_ADDR	.equ	03E2H			 
+_P1D_ADDR	.equ	03E3H			 
+_P2_ADDR	.equ	03E4H			 
+_P3_ADDR	.equ	03E5H			 
+_P2D_ADDR	.equ	03E6H			 
+_P3D_ADDR	.equ	03E7H			 
+_P4_ADDR	.equ	03E8H			 
+_P5_ADDR	.equ	03E9H			 
+_P4D_ADDR	.equ	03EAH			 
+_P5D_ADDR	.equ	03EBH			 
+_P6_ADDR	.equ	03ECH			 
+_P7_ADDR	.equ	03EDH			 
+_P6D_ADDR	.equ	03EEH			 
+_P7D_ADDR	.equ	03EFH			 
+_P8_ADDR	.equ	03F0H			 
+_P9_ADDR	.equ	03F1H			 
+_P8D_ADDR	.equ	03F2H			 
+_P9D_ADDR	.equ	03F3H			 
+_P10_ADDR	.equ	03F4H			 
+_P11_ADDR	.equ	03F5H			 
+_P10D_ADDR	.equ	03F6H			 
+_P1D1_ADDR	.equ	03F7H			 
+_P12_ADDR	.equ	03F8H			 
+_P13_ADDR	.equ	03F9H			 
+_P1D2_ADDR	.equ	03FAH			 
+_P1D3_ADDR	.equ	03FBH			 
+_PUR0_ADDR	.equ	03FCH			 
+_PUR1_ADDR	.equ	03FDH			 
+_PUR2_ADDR	.equ	03FEH			 
+_PCR_ADDR	.equ	03FFH			 
+
+	._inspect	'M', "C:/Users/Miguel/Desktop/Nova pasta/NG2S901_As1_Menu/NG2S901_As1_Menu/drivers/glcd/GLCD.C", "C:/Users/Miguel/Desktop/Nova pasta/NG2S901_As1_Menu/NG2S901_As1_Menu/drivers/glcd/GLCD"
+
+	._inspect	'M', "C:/Users/Miguel/Desktop/Nova pasta/NG2S901_As1_Menu/NG2S901_As1_Menu/drivers/glcd/../init/sfr62p.h", "C:/Users/Miguel/Desktop/Nova pasta/NG2S901_As1_Menu/NG2S901_As1_Menu/drivers/glcd/GLCD"
+	._inspect	'V', 'd', "DA0_ADDR", "_DA0_ADDR", 'G', 416, 1, 1, 0, 00h
+	._inspect	'V', 'd', "DA1_ADDR", "_DA1_ADDR", 'G', 419, 1, 1, 0, 00h
+	._inspect	'V', 'd', "UDF_ADDR", "_UDF_ADDR", 'G', 425, 1, 1, 0, 00h
+	._inspect	'V', 'd', "TA11_ADDR", "_TA11_ADDR", 'G', 434, 2, 1, 0, 00h
+	._inspect	'V', 'd', "TA21_ADDR", "_TA21_ADDR", 'G', 437, 2, 1, 0, 00h
+	._inspect	'V', 'd', "TA41_ADDR", "_TA41_ADDR", 'G', 440, 2, 1, 0, 00h
+	._inspect	'V', 'd', "TB3_ADDR", "_TB3_ADDR", 'G', 443, 2, 1, 0, 00h
+	._inspect	'V', 'd', "TB4_ADDR", "_TB4_ADDR", 'G', 446, 2, 1, 0, 00h
+	._inspect	'V', 'd', "TB5_ADDR", "_TB5_ADDR", 'G', 449, 2, 1, 0, 00h
+	._inspect	'V', 'd', "TA0_ADDR", "_TA0_ADDR", 'G', 452, 2, 1, 0, 00h
+	._inspect	'V', 'd', "TA1_ADDR", "_TA1_ADDR", 'G', 455, 2, 1, 0, 00h
+	._inspect	'V', 'd', "TA2_ADDR", "_TA2_ADDR", 'G', 458, 2, 1, 0, 00h
+	._inspect	'V', 'd', "TA3_ADDR", "_TA3_ADDR", 'G', 461, 2, 1, 0, 00h
+	._inspect	'V', 'd', "TA4_ADDR", "_TA4_ADDR", 'G', 464, 2, 1, 0, 00h
+	._inspect	'V', 'd', "TB0_ADDR", "_TB0_ADDR", 'G', 467, 2, 1, 0, 00h
+	._inspect	'V', 'd', "TB1_ADDR", "_TB1_ADDR", 'G', 470, 2, 1, 0, 00h
+	._inspect	'V', 'd', "TB2_ADDR", "_TB2_ADDR", 'G', 473, 2, 1, 0, 00h
+	._inspect	'V', 'd', "PM0_ADDR", "_PM0_ADDR", 'G', 497, 1, 1, 0, 00h
+	._inspect	'V', 'd', "PM1_ADDR", "_PM1_ADDR", 'G', 512, 1, 1, 0, 00h
+	._inspect	'V', 'd', "CM0_ADDR", "_CM0_ADDR", 'G', 526, 1, 1, 0, 00h
+	._inspect	'V', 'd', "CM1_ADDR", "_CM1_ADDR", 'G', 541, 1, 1, 0, 00h
+	._inspect	'V', 'd', "CSR_ADDR", "_CSR_ADDR", 'G', 553, 1, 1, 0, 00h
+	._inspect	'V', 'd', "AIER_ADDR", "_AIER_ADDR", 'G', 568, 1, 1, 0, 00h
+	._inspect	'V', 'd', "PRCR_ADDR", "_PRCR_ADDR", 'G', 577, 1, 1, 0, 00h
+	._inspect	'V', 'd', "DBR_ADDR", "_DBR_ADDR", 'G', 587, 1, 1, 0, 00h
+	._inspect	'V', 'd', "CM2_ADDR", "_CM2_ADDR", 'G', 598, 1, 1, 0, 00h
+	._inspect	'V', 'd', "WDTS_ADDR", "_WDTS_ADDR", 'G', 610, 1, 1, 0, 00h
+	._inspect	'V', 'd', "WDC_ADDR", "_WDC_ADDR", 'G', 616, 1, 1, 0, 00h
+	._inspect	'V', 'd', "CSE_ADDR", "_CSE_ADDR", 'G', 624, 1, 1, 0, 00h
+	._inspect	'V', 'd', "PLC0_ADDR", "_PLC0_ADDR", 'G', 639, 1, 1, 0, 00h
+	._inspect	'V', 'd', "PM2_ADDR", "_PM2_ADDR", 'G', 651, 1, 1, 0, 00h
+	._inspect	'V', 'd', "DM0CON_ADDR", "_DM0CON_ADDR", 'G', 659, 1, 1, 0, 00h
+	._inspect	'V', 'd', "DM1CON_ADDR", "_DM1CON_ADDR", 'G', 672, 1, 1, 0, 00h
+	._inspect	'V', 'd', "INT3IC_ADDR", "_INT3IC_ADDR", 'G', 685, 1, 1, 0, 00h
+	._inspect	'V', 'd', "TB5IC_ADDR", "_TB5IC_ADDR", 'G', 697, 1, 1, 0, 00h
+	._inspect	'V', 'd', "TB4IC_ADDR", "_TB4IC_ADDR", 'G', 708, 1, 1, 0, 00h
+	._inspect	'V', 'd', "TB3IC_ADDR", "_TB3IC_ADDR", 'G', 719, 1, 1, 0, 00h
+	._inspect	'V', 'd', "S4IC_ADDR", "_S4IC_ADDR", 'G', 730, 1, 1, 0, 00h
+	._inspect	'V', 'd', "S3IC_ADDR", "_S3IC_ADDR", 'G', 742, 1, 1, 0, 00h
+	._inspect	'V', 'd', "INT5IC_ADDR", "_INT5IC_ADDR", 'G', 754, 1, 1, 0, 00h
+	._inspect	'V', 'd', "INT4IC_ADDR", "_INT4IC_ADDR", 'G', 766, 1, 1, 0, 00h
+	._inspect	'V', 'd', "BCNIC_ADDR", "_BCNIC_ADDR", 'G', 778, 1, 1, 0, 00h
+	._inspect	'V', 'd', "DM0IC_ADDR", "_DM0IC_ADDR", 'G', 789, 1, 1, 0, 00h
+	._inspect	'V', 'd', "DM1IC_ADDR", "_DM1IC_ADDR", 'G', 800, 1, 1, 0, 00h
+	._inspect	'V', 'd', "KUPIC_ADDR", "_KUPIC_ADDR", 'G', 811, 1, 1, 0, 00h
+	._inspect	'V', 'd', "ADIC_ADDR", "_ADIC_ADDR", 'G', 822, 1, 1, 0, 00h
+	._inspect	'V', 'd', "S2TIC_ADDR", "_S2TIC_ADDR", 'G', 833, 1, 1, 0, 00h
+	._inspect	'V', 'd', "S2RIC_ADDR", "_S2RIC_ADDR", 'G', 844, 1, 1, 0, 00h
+	._inspect	'V', 'd', "S0TIC_ADDR", "_S0TIC_ADDR", 'G', 855, 1, 1, 0, 00h
+	._inspect	'V', 'd', "S0RIC_ADDR", "_S0RIC_ADDR", 'G', 866, 1, 1, 0, 00h
+	._inspect	'V', 'd', "S1TIC_ADDR", "_S1TIC_ADDR", 'G', 877, 1, 1, 0, 00h
+	._inspect	'V', 'd', "S1RIC_ADDR", "_S1RIC_ADDR", 'G', 888, 1, 1, 0, 00h
+	._inspect	'V', 'd', "TA0IC_ADDR", "_TA0IC_ADDR", 'G', 899, 1, 1, 0, 00h
+	._inspect	'V', 'd', "TA1IC_ADDR", "_TA1IC_ADDR", 'G', 910, 1, 1, 0, 00h
+	._inspect	'V', 'd', "TA2IC_ADDR", "_TA2IC_ADDR", 'G', 921, 1, 1, 0, 00h
+	._inspect	'V', 'd', "TA3IC_ADDR", "_TA3IC_ADDR", 'G', 932, 1, 1, 0, 00h
+	._inspect	'V', 'd', "TA4IC_ADDR", "_TA4IC_ADDR", 'G', 943, 1, 1, 0, 00h
+	._inspect	'V', 'd', "TB0IC_ADDR", "_TB0IC_ADDR", 'G', 954, 1, 1, 0, 00h
+	._inspect	'V', 'd', "TB1IC_ADDR", "_TB1IC_ADDR", 'G', 965, 1, 1, 0, 00h
+	._inspect	'V', 'd', "TB2IC_ADDR", "_TB2IC_ADDR", 'G', 976, 1, 1, 0, 00h
+	._inspect	'V', 'd', "INT0IC_ADDR", "_INT0IC_ADDR", 'G', 987, 1, 1, 0, 00h
+	._inspect	'V', 'd', "INT1IC_ADDR", "_INT1IC_ADDR", 'G', 999, 1, 1, 0, 00h
+	._inspect	'V', 'd', "INT2IC_ADDR", "_INT2IC_ADDR", 'G', 1011, 1, 1, 0, 00h
+	._inspect	'V', 'd', "FMR1_ADDR", "_FMR1_ADDR", 'G', 1023, 1, 1, 0, 00h
+	._inspect	'V', 'd', "FMR0_ADDR", "_FMR0_ADDR", 'G', 1032, 1, 1, 0, 00h
+	._inspect	'V', 'd', "AIER2_ADDR", "_AIER2_ADDR", 'G', 1046, 1, 1, 0, 00h
+	._inspect	'V', 'd', "PCLKR_ADDR", "_PCLKR_ADDR", 'G', 1055, 1, 1, 0, 00h
+	._inspect	'V', 'd', "TBSR_ADDR", "_TBSR_ADDR", 'G', 1064, 1, 1, 0, 00h
+	._inspect	'V', 'd', "INVC0_ADDR", "_INVC0_ADDR", 'G', 1074, 1, 1, 0, 00h
+	._inspect	'V', 'd', "INVC1_ADDR", "_INVC1_ADDR", 'G', 1089, 1, 1, 0, 00h
+	._inspect	'V', 'd', "IDB0_ADDR", "_IDB0_ADDR", 'G', 1104, 1, 1, 0, 00h
+	._inspect	'V', 'd', "IDB1_ADDR", "_IDB1_ADDR", 'G', 1117, 1, 1, 0, 00h
+	._inspect	'V', 'd', "DTT_ADDR", "_DTT_ADDR", 'G', 1130, 1, 1, 0, 00h
+	._inspect	'V', 'd', "ICTB2_ADDR", "_ICTB2_ADDR", 'G', 1136, 1, 1, 0, 00h
+	._inspect	'V', 'd', "TB3MR_ADDR", "_TB3MR_ADDR", 'G', 1142, 1, 1, 0, 00h
+	._inspect	'V', 'd', "TB4MR_ADDR", "_TB4MR_ADDR", 'G', 1157, 1, 1, 0, 00h
+	._inspect	'V', 'd', "TB5MR_ADDR", "_TB5MR_ADDR", 'G', 1171, 1, 1, 0, 00h
+	._inspect	'V', 'd', "IFSR2A_ADDR", "_IFSR2A_ADDR", 'G', 1185, 1, 1, 0, 00h
+	._inspect	'V', 'd', "IFSR_ADDR", "_IFSR_ADDR", 'G', 1194, 1, 1, 0, 00h
+	._inspect	'V', 'd', "S3TRR_ADDR", "_S3TRR_ADDR", 'G', 1209, 1, 1, 0, 00h
+	._inspect	'V', 'd', "S3C_ADDR", "_S3C_ADDR", 'G', 1215, 1, 1, 0, 00h
+	._inspect	'V', 'd', "S3BRG_ADDR", "_S3BRG_ADDR", 'G', 1230, 1, 1, 0, 00h
+	._inspect	'V', 'd', "S4TRR_ADDR", "_S4TRR_ADDR", 'G', 1236, 1, 1, 0, 00h
+	._inspect	'V', 'd', "S4C_ADDR", "_S4C_ADDR", 'G', 1242, 1, 1, 0, 00h
+	._inspect	'V', 'd', "S4BRG_ADDR", "_S4BRG_ADDR", 'G', 1257, 1, 1, 0, 00h
+	._inspect	'V', 'd', "U0SMR4_ADDR", "_U0SMR4_ADDR", 'G', 1263, 1, 1, 0, 00h
+	._inspect	'V', 'd', "U0SMR3_ADDR", "_U0SMR3_ADDR", 'G', 1278, 1, 1, 0, 00h
+	._inspect	'V', 'd', "U0SMR2_ADDR", "_U0SMR2_ADDR", 'G', 1290, 1, 1, 0, 00h
+	._inspect	'V', 'd', "U0SMR_ADDR", "_U0SMR_ADDR", 'G', 1304, 1, 1, 0, 00h
+	._inspect	'V', 'd', "U1SMR4_ADDR", "_U1SMR4_ADDR", 'G', 1318, 1, 1, 0, 00h
+	._inspect	'V', 'd', "U1SMR3_ADDR", "_U1SMR3_ADDR", 'G', 1333, 1, 1, 0, 00h
+	._inspect	'V', 'd', "U1SMR2_ADDR", "_U1SMR2_ADDR", 'G', 1345, 1, 1, 0, 00h
+	._inspect	'V', 'd', "U1SMR_ADDR", "_U1SMR_ADDR", 'G', 1359, 1, 1, 0, 00h
+	._inspect	'V', 'd', "U2SMR4_ADDR", "_U2SMR4_ADDR", 'G', 1373, 1, 1, 0, 00h
+	._inspect	'V', 'd', "U2SMR3_ADDR", "_U2SMR3_ADDR", 'G', 1388, 1, 1, 0, 00h
+	._inspect	'V', 'd', "U2SMR2_ADDR", "_U2SMR2_ADDR", 'G', 1400, 1, 1, 0, 00h
+	._inspect	'V', 'd', "U2SMR_ADDR", "_U2SMR_ADDR", 'G', 1414, 1, 1, 0, 00h
+	._inspect	'V', 'd', "U2MR_ADDR", "_U2MR_ADDR", 'G', 1428, 1, 1, 0, 00h
+	._inspect	'V', 'd', "U2BRG_ADDR", "_U2BRG_ADDR", 'G', 1443, 1, 1, 0, 00h
+	._inspect	'V', 'd', "U2C0_ADDR", "_U2C0_ADDR", 'G', 1449, 1, 1, 0, 00h
+	._inspect	'V', 'd', "U2C1_ADDR", "_U2C1_ADDR", 'G', 1464, 1, 1, 0, 00h
+	._inspect	'V', 'd', "TABSR_ADDR", "_TABSR_ADDR", 'G', 1479, 1, 1, 0, 00h
+	._inspect	'V', 'd', "CPSRF_ADDR", "_CPSRF_ADDR", 'G', 1494, 1, 1, 0, 00h
+	._inspect	'V', 'd', "ONSF_ADDR", "_ONSF_ADDR", 'G', 1502, 1, 1, 0, 00h
+	._inspect	'V', 'd', "TRGSR_ADDR", "_TRGSR_ADDR", 'G', 1517, 1, 1, 0, 00h
+	._inspect	'V', 'd', "TA0MR_ADDR", "_TA0MR_ADDR", 'G', 1532, 1, 1, 0, 00h
+	._inspect	'V', 'd', "TA1MR_ADDR", "_TA1MR_ADDR", 'G', 1547, 1, 1, 0, 00h
+	._inspect	'V', 'd', "TA2MR_ADDR", "_TA2MR_ADDR", 'G', 1562, 1, 1, 0, 00h
+	._inspect	'V', 'd', "TA3MR_ADDR", "_TA3MR_ADDR", 'G', 1577, 1, 1, 0, 00h
+	._inspect	'V', 'd', "TA4MR_ADDR", "_TA4MR_ADDR", 'G', 1592, 1, 1, 0, 00h
+	._inspect	'V', 'd', "TB0MR_ADDR", "_TB0MR_ADDR", 'G', 1607, 1, 1, 0, 00h
+	._inspect	'V', 'd', "TB1MR_ADDR", "_TB1MR_ADDR", 'G', 1622, 1, 1, 0, 00h
+	._inspect	'V', 'd', "TB2MR_ADDR", "_TB2MR_ADDR", 'G', 1636, 1, 1, 0, 00h
+	._inspect	'V', 'd', "TB2SC_ADDR", "_TB2SC_ADDR", 'G', 1650, 1, 1, 0, 00h
+	._inspect	'V', 'd', "U0MR_ADDR", "_U0MR_ADDR", 'G', 1659, 1, 1, 0, 00h
+	._inspect	'V', 'd', "U0BRG_ADDR", "_U0BRG_ADDR", 'G', 1674, 1, 1, 0, 00h
+	._inspect	'V', 'd', "U0C0_ADDR", "_U0C0_ADDR", 'G', 1680, 1, 1, 0, 00h
+	._inspect	'V', 'd', "U0C1_ADDR", "_U0C1_ADDR", 'G', 1695, 1, 1, 0, 00h
+	._inspect	'V', 'd', "U1MR_ADDR", "_U1MR_ADDR", 'G', 1708, 1, 1, 0, 00h
+	._inspect	'V', 'd', "U1BRG_ADDR", "_U1BRG_ADDR", 'G', 1723, 1, 1, 0, 00h
+	._inspect	'V', 'd', "U1C0_ADDR", "_U1C0_ADDR", 'G', 1729, 1, 1, 0, 00h
+	._inspect	'V', 'd', "U1C1_ADDR", "_U1C1_ADDR", 'G', 1744, 1, 1, 0, 00h
+	._inspect	'V', 'd', "UCON_ADDR", "_UCON_ADDR", 'G', 1757, 1, 1, 0, 00h
+	._inspect	'V', 'd', "FIDR_ADDR", "_FIDR_ADDR", 'G', 1771, 1, 1, 0, 00h
+	._inspect	'V', 'd', "DM0SL_ADDR", "_DM0SL_ADDR", 'G', 1780, 1, 1, 0, 00h
+	._inspect	'V', 'd', "DM1SL_ADDR", "_DM1SL_ADDR", 'G', 1793, 1, 1, 0, 00h
+	._inspect	'V', 'd', "CRCIN_ADDR", "_CRCIN_ADDR", 'G', 1806, 1, 1, 0, 00h
+	._inspect	'V', 'd', "ADCON2_ADDR", "_ADCON2_ADDR", 'G', 1812, 1, 1, 0, 00h
+	._inspect	'V', 'd', "ADCON0_ADDR", "_ADCON0_ADDR", 'G', 1823, 1, 1, 0, 00h
+	._inspect	'V', 'd', "ADCON1_ADDR", "_ADCON1_ADDR", 'G', 1838, 1, 1, 0, 00h
+	._inspect	'V', 'd', "DACON_ADDR", "_DACON_ADDR", 'G', 1853, 1, 1, 0, 00h
+	._inspect	'V', 'd', "PC14_ADDR", "_PC14_ADDR", 'G', 1862, 1, 1, 0, 00h
+	._inspect	'V', 'd', "PUR3_ADDR", "_PUR3_ADDR", 'G', 1873, 1, 1, 0, 00h
+	._inspect	'V', 'd', "P0_ADDR", "_P0_ADDR", 'G', 1888, 1, 1, 0, 00h
+	._inspect	'V', 'd', "P1_ADDR", "_P1_ADDR", 'G', 1903, 1, 1, 0, 00h
+	._inspect	'V', 'd', "P0D_ADDR", "_P0D_ADDR", 'G', 1918, 1, 1, 0, 00h
+	._inspect	'V', 'd', "P1D_ADDR", "_P1D_ADDR", 'G', 1933, 1, 1, 0, 00h
+	._inspect	'V', 'd', "P2_ADDR", "_P2_ADDR", 'G', 1948, 1, 1, 0, 00h
+	._inspect	'V', 'd', "P3_ADDR", "_P3_ADDR", 'G', 1963, 1, 1, 0, 00h
+	._inspect	'V', 'd', "P2D_ADDR", "_P2D_ADDR", 'G', 1978, 1, 1, 0, 00h
+	._inspect	'V', 'd', "P3D_ADDR", "_P3D_ADDR", 'G', 1993, 1, 1, 0, 00h
+	._inspect	'V', 'd', "P4_ADDR", "_P4_ADDR", 'G', 2008, 1, 1, 0, 00h
+	._inspect	'V', 'd', "P5_ADDR", "_P5_ADDR", 'G', 2023, 1, 1, 0, 00h
+	._inspect	'V', 'd', "P4D_ADDR", "_P4D_ADDR", 'G', 2038, 1, 1, 0, 00h
+	._inspect	'V', 'd', "P5D_ADDR", "_P5D_ADDR", 'G', 2053, 1, 1, 0, 00h
+	._inspect	'V', 'd', "P6_ADDR", "_P6_ADDR", 'G', 2068, 1, 1, 0, 00h
+	._inspect	'V', 'd', "P7_ADDR", "_P7_ADDR", 'G', 2083, 1, 1, 0, 00h
+	._inspect	'V', 'd', "P6D_ADDR", "_P6D_ADDR", 'G', 2098, 1, 1, 0, 00h
+	._inspect	'V', 'd', "P7D_ADDR", "_P7D_ADDR", 'G', 2113, 1, 1, 0, 00h
+	._inspect	'V', 'd', "P8_ADDR", "_P8_ADDR", 'G', 2128, 1, 1, 0, 00h
+	._inspect	'V', 'd', "P9_ADDR", "_P9_ADDR", 'G', 2143, 1, 1, 0, 00h
+	._inspect	'V', 'd', "P8D_ADDR", "_P8D_ADDR", 'G', 2158, 1, 1, 0, 00h
+	._inspect	'V', 'd', "P9D_ADDR", "_P9D_ADDR", 'G', 2172, 1, 1, 0, 00h
+	._inspect	'V', 'd', "P10_ADDR", "_P10_ADDR", 'G', 2187, 1, 1, 0, 00h
+	._inspect	'V', 'd', "P11_ADDR", "_P11_ADDR", 'G', 2202, 1, 1, 0, 00h
+	._inspect	'V', 'd', "P10D_ADDR", "_P10D_ADDR", 'G', 2217, 1, 1, 0, 00h
+	._inspect	'V', 'd', "P1D1_ADDR", "_P1D1_ADDR", 'G', 2232, 1, 1, 0, 00h
+	._inspect	'V', 'd', "P12_ADDR", "_P12_ADDR", 'G', 2247, 1, 1, 0, 00h
+	._inspect	'V', 'd', "P13_ADDR", "_P13_ADDR", 'G', 2262, 1, 1, 0, 00h
+	._inspect	'V', 'd', "P1D2_ADDR", "_P1D2_ADDR", 'G', 2277, 1, 1, 0, 00h
+	._inspect	'V', 'd', "P1D3_ADDR", "_P1D3_ADDR", 'G', 2292, 1, 1, 0, 00h
+	._inspect	'V', 'd', "PUR0_ADDR", "_PUR0_ADDR", 'G', 2307, 1, 1, 0, 00h
+	._inspect	'V', 'd', "PUR1_ADDR", "_PUR1_ADDR", 'G', 2322, 1, 1, 0, 00h
+	._inspect	'V', 'd', "PUR2_ADDR", "_PUR2_ADDR", 'G', 2337, 1, 1, 0, 00h
+	._inspect	'V', 'd', "PCR_ADDR", "_PCR_ADDR", 'G', 2350, 1, 1, 0, 00h
+	._inspect	'V', 'd', "TCR0_ADDR", "_TCR0_ADDR", 'G', 2385, 2, 1, 0, 00h
+	._inspect	'V', 'd', "TCR1_ADDR", "_TCR1_ADDR", 'G', 2385, 2, 1, 0, 00h
+	._inspect	'V', 'd', "U0TB_ADDR", "_U0TB_ADDR", 'G', 2385, 2, 1, 0, 00h
+	._inspect	'V', 'd', "U1TB_ADDR", "_U1TB_ADDR", 'G', 2385, 2, 1, 0, 00h
+	._inspect	'V', 'd', "U2TB_ADDR", "_U2TB_ADDR", 'G', 2385, 2, 1, 0, 00h
+	._inspect	'V', 'd', "U0RB_ADDR", "_U0RB_ADDR", 'G', 2385, 2, 1, 0, 00h
+	._inspect	'V', 'd', "U1RB_ADDR", "_U1RB_ADDR", 'G', 2385, 2, 1, 0, 00h
+	._inspect	'V', 'd', "U2RB_ADDR", "_U2RB_ADDR", 'G', 2385, 2, 1, 0, 00h
+	._inspect	'V', 'd', "CRCD_ADDR", "_CRCD_ADDR", 'G', 2385, 2, 1, 0, 00h
+	._inspect	'V', 'd', "AD0_ADDR", "_AD0_ADDR", 'G', 2385, 2, 1, 0, 00h
+	._inspect	'V', 'd', "AD1_ADDR", "_AD1_ADDR", 'G', 2385, 2, 1, 0, 00h
+	._inspect	'V', 'd', "AD2_ADDR", "_AD2_ADDR", 'G', 2385, 2, 1, 0, 00h
+	._inspect	'V', 'd', "AD3_ADDR", "_AD3_ADDR", 'G', 2385, 2, 1, 0, 00h
+	._inspect	'V', 'd', "AD4_ADDR", "_AD4_ADDR", 'G', 2385, 2, 1, 0, 00h
+	._inspect	'V', 'd', "AD5_ADDR", "_AD5_ADDR", 'G', 2385, 2, 1, 0, 00h
+	._inspect	'V', 'd', "AD6_ADDR", "_AD6_ADDR", 'G', 2385, 2, 1, 0, 00h
+	._inspect	'V', 'd', "AD7_ADDR", "_AD7_ADDR", 'G', 2385, 2, 1, 0, 00h
+	._inspect	'V', 'd', "RMAD0_ADDR", "_RMAD0_ADDR", 'G', 2560, 4, 1, 0, 00h
+	._inspect	'V', 'd', "RMAD1_ADDR", "_RMAD1_ADDR", 'G', 2560, 4, 1, 0, 00h
+	._inspect	'V', 'd', "RMAD2_ADDR", "_RMAD2_ADDR", 'G', 2560, 4, 1, 0, 00h
+	._inspect	'V', 'd', "RMAD3_ADDR", "_RMAD3_ADDR", 'G', 2560, 4, 1, 0, 00h
+	._inspect	'V', 'd', "SAR0_ADDR", "_SAR0_ADDR", 'G', 2560, 4, 1, 0, 00h
+	._inspect	'V', 'd', "SAR1_ADDR", "_SAR1_ADDR", 'G', 2560, 4, 1, 0, 00h
+	._inspect	'V', 'd', "DAR0_ADDR", "_DAR0_ADDR", 'G', 2560, 4, 1, 0, 00h
+	._inspect	'V', 'd', "DAR1_ADDR", "_DAR1_ADDR", 'G', 2560, 4, 1, 0, 00h
+	._inspect	'F', 'p', "Initialise", "_Initialise", 'G', 2626, 0, 00h, 0
+
+	._inspect	'M', "C:/Users/Miguel/Desktop/Nova pasta/NG2S901_As1_Menu/NG2S901_As1_Menu/drivers/glcd/font.h", "C:/Users/Miguel/Desktop/Nova pasta/NG2S901_As1_Menu/NG2S901_As1_Menu/drivers/glcd/GLCD"
+	._inspect	'V', 'e', "Font_System5x8", 'G', 10, 6, 0, 0, 00h
+	._inspect	'V', 'e', "Font_System7x8", 'G', 11, 6, 0, 0, 00h
+	._inspect	'V', 'e', "FontSystem3x6", 'G', 13, 195, 0, 0, 00h
+	._inspect	'V', 'e', "FontSystem5x8", 'G', 14, 485, 0, 0, 00h
+	._inspect	'V', 'e', "FontSystem7x8", 'G', 15, 679, 0, 0, 00h
+
+	._inspect	'M', "C:/Users/Miguel/Desktop/Nova pasta/NG2S901_As1_Menu/NG2S901_As1_Menu/drivers/glcd/glcd.h", "C:/Users/Miguel/Desktop/Nova pasta/NG2S901_As1_Menu/NG2S901_As1_Menu/drivers/glcd/GLCD"
+	._inspect	'F', 'p', "GLCD_Initialise", "_GLCD_Initialise", 'G', 9, 0, 00h, 0
+	._inspect	'F', 'p', "GLCD_ClearScreen", "_GLCD_ClearScreen", 'G', 10, 0, 00h, 0
+	._inspect	'F', 'p', "GLCD_DisplayPicture", "_GLCD_DisplayPicture", 'G', 11, 0, 00h, 0
+	._inspect	'F', 'p', "GLCD_GoTo", "$GLCD_GoTo", 'G', 12, 0, 00h, 0
+	._inspect	'F', 'p', "GLCD_Rectangle", "$GLCD_Rectangle", 'G', 13, 0, 00h, 0
+	._inspect	'F', 'p', "GLCD_WriteString", "_GLCD_WriteString", 'G', 14, 0, 00h, 0
+	._inspect	'F', 'p', "GLCD_DisplayValue", "_GLCD_DisplayValue", 'G', 15, 0, 00h, 0
+	._inspect	'F', 'p', "GLCD_Circle", "$GLCD_Circle", 'G', 16, 0, 00h, 0
+	._inspect	'F', 'p', "GLCD_WriteChar", "$GLCD_WriteChar", 'G', 17, 0, 00h, 0
+	._inspect	'F', 'p', "GLCD_getXY", "_GLCD_getXY", 'G', 18, 0, 00h, 0
+
+	._inspect	'M', "C:/Users/Miguel/Desktop/Nova pasta/NG2S901_As1_Menu/NG2S901_As1_Menu/drivers/glcd/GLCD.C", "C:/Users/Miguel/Desktop/Nova pasta/NG2S901_As1_Menu/NG2S901_As1_Menu/drivers/glcd/GLCD"
+	._inspect	'V', 'd', "Font_System3x6", "_Font_System3x6", 'G', 4, 6, 0, 0, 00h
+	._inspect	'V', 'd', "Font_System5x8", "_Font_System5x8", 'G', 5, 6, 0, 0, 00h
+	._inspect	'V', 'd', "Font_System7x8", "_Font_System7x8", 'G', 6, 6, 0, 0, 00h
+	._inspect	'F', 'p', "LcdSelectSide", "$LcdSelectSide", 'G', 9, 0, 00h, 0
+	._inspect	'F', 'p', "LcdDataWrite", "$LcdDataWrite", 'G', 10, 0, 00h, 0
+	._inspect	'F', 'p', "LcdInstructionWrite", "$LcdInstructionWrite", 'G', 11, 0, 00h, 0
+	._inspect	'F', 'p', "LcdDataRead", "_LcdDataRead", 'G', 12, 0, 00h, 0
+	._inspect	'F', 'p', "LcdSetDot", "$LcdSetDot", 'G', 13, 0, 00h, 0
+	._inspect	'F', 'p', "LcdWaitBusy", "_LcdWaitBusy", 'G', 14, 0, 00h, 0
+	._inspect	'F', 'p', "LcdDelay", "_LcdDelay", 'G', 15, 0, 00h, 0
+	._inspect	'V', 'd', "u8CursorX", "_u8CursorX", 'G', 19, 1, 0, 0, 00h
+	._inspect	'V', 'd', "u8CursorY", "_u8CursorY", 'G', 19, 1, 0, 0, 00h
+
+;## #	FUNCTION LcdDelay
+;## #	FRAME	AUTO	(u32Delay)	size  4,	offset -4
+;## #  FRAME   ARG (u32Duration)  size   4,    offset 5
+;## #	ARG Size(4)	Auto Size(4)	Context Size(5)
+
+
+	.SECTION	program,CODE,align
+	._inspect	'U', 2, "program", "program", 0
+	._file	'C:/Users/Miguel/Desktop/Nova pasta/NG2S901_As1_Menu/NG2S901_As1_Menu/drivers/glcd/GLCD.C'
+	._type	256,'v'
+	._type	257,'x',256,1
+	._type	257,'m','u32Duration',0,7
+	._func	'LcdDelay','G',4,257,_LcdDelay,0
+	._inspect	'F', 's', "LcdDelay", "_LcdDelay", 'G', 9
+	.align
+	._block
+	._line	30
+	.glb	_LcdDelay
+_LcdDelay:
+	enter	#04H
+	._block
+	._var	'u32Duration','A',7,5
+	._var	'u32Delay','A',7,-4
+	._line	32
+	mov.w	#0000H,-4[FB]	;  u32Delay 
+	mov.w	#0000H,-4+2[FB]	;  u32Delay 
+L1:
+	._line	32
+	cmp.w	5+2[FB],-4+2[FB]	;  u32Duration  u32Delay 
+	jgtu	L5
+	jltu	M1
+	cmp.w	5[FB],-4[FB]	;  u32Duration  u32Delay 
+	jgeu	L5
+M1:
+	add.w	#0001H,-4[FB]	;  u32Delay 
+	adcf.w	-4+2[FB]	;  u32Delay 
+	jmp	L1
+L5:
+	._eblock
+	._line	33
+	exitd	
+E1:
+	._eblock
+M2:
+	._efunc	M2
+	._inspect	'F', 'd', "LcdDelay", "_LcdDelay", 'G', 30, 0, 00h, 0
+	._inspect	'F', 't', "LcdDelay", 'G', 257
+	._inspect	'F', 'e', "LcdDelay", "_LcdDelay", 'G', 0, 0
+
+
+;## #	FUNCTION GLCD_Initialise
+;## #	ARG Size(0)	Auto Size(0)	Context Size(3)
+
+	._type	258,'v'
+	._type	259,'v'
+	._type	260,'x',258,1
+	._type	260,'m','',0,259
+	._func	'GLCD_Initialise','G',0,260,_GLCD_Initialise,0
+	._inspect	'F', 's', "GLCD_Initialise", "_GLCD_Initialise", 'G', 3
+	.align
+	._line	40
+	.glb	_GLCD_Initialise
+_GLCD_Initialise:
+	._block
+	._line	41
+	mov.b	#00H,_P2_ADDR
+	._line	42
+	bclr	1,_P3_ADDR
+	._line	43
+	bclr	3,_P3_ADDR
+	._line	44
+	bclr	0,_P3_ADDR
+	._line	45
+	bclr	4,_P3_ADDR
+	._line	46
+	bclr	5,_P3_ADDR
+	._line	48
+	bset	2,_P3_ADDR
+	._line	49
+	push.w	#0000H
+	push.w	#000aH
+	._inspect	'S', 'p', 4
+	._inspect	'S', 'c', "LcdDelay", "_LcdDelay", 'G', 0, 49
+	jsr	_LcdDelay
+	._inspect	'S', 'p', -4
+	add.b	#04H,SP
+	._line	50
+	bclr	2,_P3_ADDR
+	._line	51
+	push.w	#0000H
+	push.w	#000aH
+	._inspect	'S', 'p', 4
+	._inspect	'S', 'c', "LcdDelay", "_LcdDelay", 'G', 0, 51
+	jsr	_LcdDelay
+	._inspect	'S', 'p', -4
+	add.b	#04H,SP
+	._line	52
+	bset	2,_P3_ADDR
+	._line	54
+	mov.b	#01H,R1L
+	._inspect	'S', 'c', "LcdSelectSide", "$LcdSelectSide", 'G', 0, 54
+	jsr	$LcdSelectSide
+	._line	55
+	mov.b	#3eH,R1L
+	._inspect	'S', 'c', "LcdInstructionWrite", "$LcdInstructionWrite", 'G', 0, 55
+	jsr	$LcdInstructionWrite
+	._line	56
+	mov.b	#0c0H,R1L
+	._inspect	'S', 'c', "LcdInstructionWrite", "$LcdInstructionWrite", 'G', 0, 56
+	jsr	$LcdInstructionWrite
+	._line	57
+	mov.b	#0b8H,R1L
+	._inspect	'S', 'c', "LcdInstructionWrite", "$LcdInstructionWrite", 'G', 0, 57
+	jsr	$LcdInstructionWrite
+	._line	58
+	mov.b	#40H,R1L
+	._inspect	'S', 'c', "LcdInstructionWrite", "$LcdInstructionWrite", 'G', 0, 58
+	jsr	$LcdInstructionWrite
+	._line	59
+	mov.b	#3fH,R1L
+	._inspect	'S', 'c', "LcdInstructionWrite", "$LcdInstructionWrite", 'G', 0, 59
+	jsr	$LcdInstructionWrite
+	._line	61
+	mov.b	#00H,R1L
+	._inspect	'S', 'c', "LcdSelectSide", "$LcdSelectSide", 'G', 0, 61
+	jsr	$LcdSelectSide
+	._line	62
+	mov.b	#3eH,R1L
+	._inspect	'S', 'c', "LcdInstructionWrite", "$LcdInstructionWrite", 'G', 0, 62
+	jsr	$LcdInstructionWrite
+	._line	63
+	mov.b	#0c0H,R1L
+	._inspect	'S', 'c', "LcdInstructionWrite", "$LcdInstructionWrite", 'G', 0, 63
+	jsr	$LcdInstructionWrite
+	._line	64
+	mov.b	#0b8H,R1L
+	._inspect	'S', 'c', "LcdInstructionWrite", "$LcdInstructionWrite", 'G', 0, 64
+	jsr	$LcdInstructionWrite
+	._line	65
+	mov.b	#40H,R1L
+	._inspect	'S', 'c', "LcdInstructionWrite", "$LcdInstructionWrite", 'G', 0, 65
+	jsr	$LcdInstructionWrite
+	._line	66
+	mov.b	#3fH,R1L
+	._inspect	'S', 'c', "LcdInstructionWrite", "$LcdInstructionWrite", 'G', 0, 66
+	jsr	$LcdInstructionWrite
+	._line	68
+	._inspect	'S', 'c', "GLCD_ClearScreen", "_GLCD_ClearScreen", 'G', 0, 68
+	jsr	_GLCD_ClearScreen
+	._eblock
+	._line	69
+	rts	
+E2:
+M3:
+	._efunc	M3
+	._inspect	'F', 'd', "GLCD_Initialise", "_GLCD_Initialise", 'G', 40, 0, 00h, 0
+	._inspect	'F', 't', "GLCD_Initialise", 'G', 260
+	._inspect	'V', 'r', "P2_ADDR", 'G', 41, 1, 1, 0, 00h
+	._inspect	'V', 'r', "P3_ADDR", 'G', 42, 1, 1, 0, 02h
+	._inspect	'V', 'r', "P3_ADDR", 'G', 43, 1, 1, 0, 08h
+	._inspect	'V', 'r', "P3_ADDR", 'G', 44, 1, 1, 0, 01h
+	._inspect	'V', 'r', "P3_ADDR", 'G', 45, 1, 1, 0, 010h
+	._inspect	'V', 'r', "P3_ADDR", 'G', 46, 1, 1, 0, 020h
+	._inspect	'V', 'r', "P3_ADDR", 'G', 48, 1, 1, 0, 04h
+	._inspect	'F', 'r', "LcdDelay", "_LcdDelay", 'G', 49, 0, 00h, 0
+	._inspect	'V', 'r', "P3_ADDR", 'G', 50, 1, 1, 0, 04h
+	._inspect	'F', 'r', "LcdDelay", "_LcdDelay", 'G', 51, 0, 00h, 0
+	._inspect	'V', 'r', "P3_ADDR", 'G', 52, 1, 1, 0, 04h
+	._inspect	'F', 'r', "LcdSelectSide", "$LcdSelectSide", 'G', 54, 0, 00h, 0
+	._inspect	'F', 'r', "LcdInstructionWrite", "$LcdInstructionWrite", 'G', 55, 0, 00h, 0
+	._inspect	'F', 'r', "LcdInstructionWrite", "$LcdInstructionWrite", 'G', 56, 0, 00h, 0
+	._inspect	'F', 'r', "LcdInstructionWrite", "$LcdInstructionWrite", 'G', 57, 0, 00h, 0
+	._inspect	'F', 'r', "LcdInstructionWrite", "$LcdInstructionWrite", 'G', 58, 0, 00h, 0
+	._inspect	'F', 'r', "LcdInstructionWrite", "$LcdInstructionWrite", 'G', 59, 0, 00h, 0
+	._inspect	'F', 'r', "LcdSelectSide", "$LcdSelectSide", 'G', 61, 0, 00h, 0
+	._inspect	'F', 'r', "LcdInstructionWrite", "$LcdInstructionWrite", 'G', 62, 0, 00h, 0
+	._inspect	'F', 'r', "LcdInstructionWrite", "$LcdInstructionWrite", 'G', 63, 0, 00h, 0
+	._inspect	'F', 'r', "LcdInstructionWrite", "$LcdInstructionWrite", 'G', 64, 0, 00h, 0
+	._inspect	'F', 'r', "LcdInstructionWrite", "$LcdInstructionWrite", 'G', 65, 0, 00h, 0
+	._inspect	'F', 'r', "LcdInstructionWrite", "$LcdInstructionWrite", 'G', 66, 0, 00h, 0
+	._inspect	'F', 'r', "GLCD_ClearScreen", "_GLCD_ClearScreen", 'G', 68, 0, 00h, 0
+	._inspect	'F', 'e', "GLCD_Initialise", "_GLCD_Initialise", 'G', 4, 0
+
+
+;## #	FUNCTION LcdSelectSide
+;## #	FRAME	AUTO	(u8LcdSide)	size  1,	offset -1
+;## #  REGISTER ARG    (u8LcdSide)   size   1,   REGISTER R1L
+;## #	ARG Size(0)	Auto Size(1)	Context Size(5)
+
+	._type	261,'v'
+	._type	262,'x',261,1
+	._type	262,'m','u8LcdSide',0,3
+	._func	'LcdSelectSide','G',1,262,$LcdSelectSide,0
+	._inspect	'F', 's', "LcdSelectSide", "$LcdSelectSide", 'G', 6
+	.align
+	._line	77
+	.glb	$LcdSelectSide
+$LcdSelectSide:
+	enter	#01H
+	mov.b	R1L,-1[FB]	;  u8LcdSide  u8LcdSide 
+	._block
+	._var	'u8LcdSide','A',3,-1
+	._line	78
+	jne	L15
+	._line	79
+	._block
+	._line	81
+	bclr	0,_P3_ADDR
+	._line	82
+	bclr	1,_P3_ADDR
+	._line	83
+	bset	3,_P3_ADDR
+	._line	84
+	bclr	4,_P3_ADDR
+	._line	85
+	bset	5,_P3_ADDR
+	._line	87
+	mov.b	#40H,R1L
+	._inspect	'S', 'c', "LcdInstructionWrite", "$LcdInstructionWrite", 'G', 0, 87
+	jsr	$LcdInstructionWrite
+	._eblock
+	._line	88
+	jmp	L17
+	._line	89
+L15:
+	._line	90
+	._block
+	._line	92
+	bclr	0,_P3_ADDR
+	._line	93
+	bclr	1,_P3_ADDR
+	._line	94
+	bset	3,_P3_ADDR
+	._line	95
+	bset	4,_P3_ADDR
+	._line	96
+	bclr	5,_P3_ADDR
+	._line	98
+	mov.b	#40H,R1L
+	._inspect	'S', 'c', "LcdInstructionWrite", "$LcdInstructionWrite", 'G', 0, 98
+	jsr	$LcdInstructionWrite
+	._eblock
+	._line	99
+L17:
+	._eblock
+	._line	100
+	exitd	
+E3:
+M4:
+	._efunc	M4
+	._inspect	'F', 'd', "LcdSelectSide", "$LcdSelectSide", 'G', 77, 0, 00h, 0
+	._inspect	'F', 't', "LcdSelectSide", 'G', 262
+	._inspect	'V', 'r', "P3_ADDR", 'G', 81, 1, 1, 0, 01h
+	._inspect	'V', 'r', "P3_ADDR", 'G', 82, 1, 1, 0, 02h
+	._inspect	'V', 'r', "P3_ADDR", 'G', 83, 1, 1, 0, 08h
+	._inspect	'V', 'r', "P3_ADDR", 'G', 84, 1, 1, 0, 010h
+	._inspect	'V', 'r', "P3_ADDR", 'G', 85, 1, 1, 0, 020h
+	._inspect	'F', 'r', "LcdInstructionWrite", "$LcdInstructionWrite", 'G', 87, 0, 00h, 0
+	._inspect	'V', 'r', "P3_ADDR", 'G', 92, 1, 1, 0, 01h
+	._inspect	'V', 'r', "P3_ADDR", 'G', 93, 1, 1, 0, 02h
+	._inspect	'V', 'r', "P3_ADDR", 'G', 94, 1, 1, 0, 08h
+	._inspect	'V', 'r', "P3_ADDR", 'G', 95, 1, 1, 0, 010h
+	._inspect	'V', 'r', "P3_ADDR", 'G', 96, 1, 1, 0, 020h
+	._inspect	'F', 'r', "LcdInstructionWrite", "$LcdInstructionWrite", 'G', 98, 0, 00h, 0
+	._inspect	'F', 'e', "LcdSelectSide", "$LcdSelectSide", 'G', 0, 0
+
+
+;## #	FUNCTION LcdDataWrite
+;## #	FRAME	AUTO	(  u8Data)	size  1,	offset -1
+;## #  REGISTER ARG    (  u8Data)   size   1,   REGISTER R1L
+;## #	ARG Size(0)	Auto Size(1)	Context Size(5)
+
+	._type	263,'v'
+	._type	264,'x',263,1
+	._type	264,'m','u8Data',0,3
+	._func	'LcdDataWrite','G',1,264,$LcdDataWrite,0
+	._inspect	'F', 's', "LcdDataWrite", "$LcdDataWrite", 'G', 6
+	.align
+	._line	108
+	.glb	$LcdDataWrite
+$LcdDataWrite:
+	enter	#01H
+	mov.b	R1L,-1[FB]	;  u8Data  u8Data 
+	._block
+	._var	'u8Data','A',3,-1
+	._line	109
+	._inspect	'S', 'c', "LcdWaitBusy", "_LcdWaitBusy", 'G', 0, 109
+	jsr	_LcdWaitBusy
+	._line	110
+	bset	1,_P3_ADDR
+	._line	111
+	bclr	3,_P3_ADDR
+	._line	113
+	mov.b	-1[FB],_P2_ADDR	;  u8Data 
+	._line	115
+	bset	0,_P3_ADDR
+	._line	116
+	push.w	#0000H
+	push.w	#0001H
+	._inspect	'S', 'p', 4
+	._inspect	'S', 'c', "LcdDelay", "_LcdDelay", 'G', 0, 116
+	jsr	_LcdDelay
+	._inspect	'S', 'p', -4
+	add.b	#04H,SP
+	._line	117
+	bclr	0,_P3_ADDR
+	._eblock
+	._line	118
+	exitd	
+E4:
+M5:
+	._efunc	M5
+	._inspect	'F', 'd', "LcdDataWrite", "$LcdDataWrite", 'G', 108, 0, 00h, 0
+	._inspect	'F', 't', "LcdDataWrite", 'G', 264
+	._inspect	'F', 'r', "LcdWaitBusy", "_LcdWaitBusy", 'G', 109, 0, 00h, 0
+	._inspect	'V', 'r', "P3_ADDR", 'G', 110, 1, 1, 0, 02h
+	._inspect	'V', 'r', "P3_ADDR", 'G', 111, 1, 1, 0, 08h
+	._inspect	'V', 'r', "P2_ADDR", 'G', 113, 1, 1, 0, 00h
+	._inspect	'V', 'r', "P3_ADDR", 'G', 115, 1, 1, 0, 01h
+	._inspect	'F', 'r', "LcdDelay", "_LcdDelay", 'G', 116, 0, 00h, 0
+	._inspect	'V', 'r', "P3_ADDR", 'G', 117, 1, 1, 0, 01h
+	._inspect	'F', 'e', "LcdDataWrite", "$LcdDataWrite", 'G', 4, 0
+
+
+;## #	FUNCTION LcdInstructionWrite
+;## #	FRAME	AUTO	(u8Instruction)	size  1,	offset -1
+;## #  REGISTER ARG    (u8Instruction)   size   1,   REGISTER R1L
+;## #	ARG Size(0)	Auto Size(1)	Context Size(5)
+
+	._type	265,'v'
+	._type	266,'x',265,1
+	._type	266,'m','u8Instruction',0,3
+	._func	'LcdInstructionWrite','G',1,266,$LcdInstructionWrite,0
+	._inspect	'F', 's', "LcdInstructionWrite", "$LcdInstructionWrite", 'G', 6
+	.align
+	._line	126
+	.glb	$LcdInstructionWrite
+$LcdInstructionWrite:
+	enter	#01H
+	mov.b	R1L,-1[FB]	;  u8Instruction  u8Instruction 
+	._block
+	._var	'u8Instruction','A',3,-1
+	._line	127
+	._inspect	'S', 'c', "LcdWaitBusy", "_LcdWaitBusy", 'G', 0, 127
+	jsr	_LcdWaitBusy
+	._line	128
+	bclr	1,_P3_ADDR
+	._line	129
+	bclr	3,_P3_ADDR
+	._line	131
+	mov.b	-1[FB],_P2_ADDR	;  u8Instruction 
+	._line	133
+	bset	0,_P3_ADDR
+	._line	134
+	push.w	#0000H
+	push.w	#0001H
+	._inspect	'S', 'p', 4
+	._inspect	'S', 'c', "LcdDelay", "_LcdDelay", 'G', 0, 134
+	jsr	_LcdDelay
+	._inspect	'S', 'p', -4
+	add.b	#04H,SP
+	._line	135
+	bclr	0,_P3_ADDR
+	._eblock
+	._line	136
+	exitd	
+E5:
+M6:
+	._efunc	M6
+	._inspect	'F', 'd', "LcdInstructionWrite", "$LcdInstructionWrite", 'G', 126, 0, 00h, 0
+	._inspect	'F', 't', "LcdInstructionWrite", 'G', 266
+	._inspect	'F', 'r', "LcdWaitBusy", "_LcdWaitBusy", 'G', 127, 0, 00h, 0
+	._inspect	'V', 'r', "P3_ADDR", 'G', 128, 1, 1, 0, 02h
+	._inspect	'V', 'r', "P3_ADDR", 'G', 129, 1, 1, 0, 08h
+	._inspect	'V', 'r', "P2_ADDR", 'G', 131, 1, 1, 0, 00h
+	._inspect	'V', 'r', "P3_ADDR", 'G', 133, 1, 1, 0, 01h
+	._inspect	'F', 'r', "LcdDelay", "_LcdDelay", 'G', 134, 0, 00h, 0
+	._inspect	'V', 'r', "P3_ADDR", 'G', 135, 1, 1, 0, 01h
+	._inspect	'F', 'e', "LcdInstructionWrite", "$LcdInstructionWrite", 'G', 4, 0
+
+
+;## #	FUNCTION LcdDataRead
+;## #	ARG Size(0)	Auto Size(0)	Context Size(3)
+
+	._type	267,'v'
+	._type	268,'x',3,1
+	._type	268,'m','',0,267
+	._func	'LcdDataRead','G',0,268,_LcdDataRead,0
+	._inspect	'F', 's', "LcdDataRead", "_LcdDataRead", 'G', 3
+	.align
+	._line	143
+	.glb	_LcdDataRead
+_LcdDataRead:
+	._block
+	._line	144
+	mov.b	#0ffH,_P2_ADDR
+	._line	146
+	bset	3,_P3_ADDR
+	._line	147
+	bset	1,_P3_ADDR
+	._line	149
+	bclr	0,_P3_ADDR
+	._line	150
+	push.w	#0000H
+	push.w	#0001H
+	._inspect	'S', 'p', 4
+	._inspect	'S', 'c', "LcdDelay", "_LcdDelay", 'G', 0, 150
+	jsr	_LcdDelay
+	._inspect	'S', 'p', -4
+	add.b	#04H,SP
+	._line	151
+	bset	0,_P3_ADDR
+	._line	152
+	push.w	#0000H
+	push.w	#0001H
+	._inspect	'S', 'p', 4
+	._inspect	'S', 'c', "LcdDelay", "_LcdDelay", 'G', 0, 152
+	jsr	_LcdDelay
+	._inspect	'S', 'p', -4
+	add.b	#04H,SP
+	._line	154
+	mov.b	_P2_ADDR,R0L
+	rts	
+E6:
+	._eblock
+M7:
+	._efunc	M7
+	._inspect	'F', 'd', "LcdDataRead", "_LcdDataRead", 'G', 143, 0, 00h, 0
+	._inspect	'F', 't', "LcdDataRead", 'G', 268
+	._inspect	'V', 'r', "P2_ADDR", 'G', 144, 1, 1, 0, 00h
+	._inspect	'V', 'r', "P3_ADDR", 'G', 146, 1, 1, 0, 08h
+	._inspect	'V', 'r', "P3_ADDR", 'G', 147, 1, 1, 0, 02h
+	._inspect	'V', 'r', "P3_ADDR", 'G', 149, 1, 1, 0, 01h
+	._inspect	'F', 'r', "LcdDelay", "_LcdDelay", 'G', 150, 0, 00h, 0
+	._inspect	'V', 'r', "P3_ADDR", 'G', 151, 1, 1, 0, 01h
+	._inspect	'F', 'r', "LcdDelay", "_LcdDelay", 'G', 152, 0, 00h, 0
+	._inspect	'V', 'r', "P2_ADDR", 'G', 154, 1, 1, 0, 00h
+	._inspect	'F', 'e', "LcdDataRead", "_LcdDataRead", 'G', 4, 0
+
+
+;## #	FUNCTION LcdWaitBusy
+;## #	ARG Size(0)	Auto Size(0)	Context Size(3)
+
+	._type	269,'v'
+	._type	270,'v'
+	._type	271,'x',269,1
+	._type	271,'m','',0,270
+	._func	'LcdWaitBusy','G',0,271,_LcdWaitBusy,0
+	._inspect	'F', 's', "LcdWaitBusy", "_LcdWaitBusy", 'G', 3
+	.align
+	._line	162
+	.glb	_LcdWaitBusy
+_LcdWaitBusy:
+	._block
+	._line	163
+	mov.b	#0ffH,_P2_ADDR
+	._line	165
+	bclr	1,_P3_ADDR
+	._line	166
+	bset	3,_P3_ADDR
+	._line	168
+	bclr	0,_P3_ADDR
+	._line	169
+	push.w	#0000H
+	push.w	#0001H
+	._inspect	'S', 'p', 4
+	._inspect	'S', 'c', "LcdDelay", "_LcdDelay", 'G', 0, 169
+	jsr	_LcdDelay
+	._inspect	'S', 'p', -4
+	add.b	#04H,SP
+	._line	170
+	bset	0,_P3_ADDR
+	._line	172
+L27:
+	mov.b	_P2_ADDR,R0L
+	mov.b	#00H,R0H
+	tst.w	#0000H,R0
+	jne	L27
+	._eblock
+	._line	174
+	rts	
+E7:
+M8:
+	._efunc	M8
+	._inspect	'F', 'd', "LcdWaitBusy", "_LcdWaitBusy", 'G', 162, 0, 00h, 0
+	._inspect	'F', 't', "LcdWaitBusy", 'G', 271
+	._inspect	'V', 'r', "P2_ADDR", 'G', 163, 1, 1, 0, 00h
+	._inspect	'V', 'r', "P3_ADDR", 'G', 165, 1, 1, 0, 02h
+	._inspect	'V', 'r', "P3_ADDR", 'G', 166, 1, 1, 0, 08h
+	._inspect	'V', 'r', "P3_ADDR", 'G', 168, 1, 1, 0, 01h
+	._inspect	'F', 'r', "LcdDelay", "_LcdDelay", 'G', 169, 0, 00h, 0
+	._inspect	'V', 'r', "P3_ADDR", 'G', 170, 1, 1, 0, 01h
+	._inspect	'V', 'r', "P2_ADDR", 'G', 172, 1, 1, 0, 00h
+	._inspect	'F', 'e', "LcdWaitBusy", "_LcdWaitBusy", 'G', 4, 0
+
+
+;## #	FUNCTION GLCD_ClearScreen
+;## #	FRAME	AUTO	(u8Column)	size  1,	offset -2
+;## #	FRAME	AUTO	(  u8Page)	size  1,	offset -1
+;## #	ARG Size(0)	Auto Size(2)	Context Size(5)
+
+	._type	272,'v'
+	._type	273,'v'
+	._type	274,'x',272,1
+	._type	274,'m','',0,273
+	._func	'GLCD_ClearScreen','G',2,274,_GLCD_ClearScreen,0
+	._inspect	'F', 's', "GLCD_ClearScreen", "_GLCD_ClearScreen", 'G', 7
+	.align
+	._line	181
+	.glb	_GLCD_ClearScreen
+_GLCD_ClearScreen:
+	enter	#02H
+	._block
+	._var	'u8Page','A',3,-1
+	._var	'u8Column','A',3,-2
+	._line	182
+	mov.b	#00H,-1[FB]	;  u8Page 
+	._line	183
+	mov.b	#00H,-2[FB]	;  u8Column 
+	._line	186
+	mov.b	#00H,-1[FB]	;  u8Page 
+L31:
+	._line	186
+	cmp.b	#08H,-1[FB]	;  u8Page 
+	jgeu	L35
+	._line	187
+	._block
+	._line	188
+	mov.b	#01H,R1L
+	._inspect	'S', 'c', "LcdSelectSide", "$LcdSelectSide", 'G', 0, 188
+	jsr	$LcdSelectSide
+	._line	189
+	mov.b	-1[FB],A0	;  u8Page 
+	or.b	#0b8H,A0
+	mov.b	A0,R1L
+	._inspect	'S', 'c', "LcdInstructionWrite", "$LcdInstructionWrite", 'G', 0, 189
+	jsr	$LcdInstructionWrite
+	._line	190
+	mov.b	#40H,R1L
+	._inspect	'S', 'c', "LcdInstructionWrite", "$LcdInstructionWrite", 'G', 0, 190
+	jsr	$LcdInstructionWrite
+	._line	193
+	mov.b	#00H,-2[FB]	;  u8Column 
+L43:
+	._line	193
+	cmp.b	#80H,-2[FB]	;  u8Column 
+	jgeu	L47
+	._line	194
+	._block
+	._line	195
+	cmp.b	#40H,-2[FB]	;  u8Column 
+	jne	L55
+	._line	196
+	._block
+	._line	197
+	mov.b	#00H,R1L
+	._inspect	'S', 'c', "LcdSelectSide", "$LcdSelectSide", 'G', 0, 197
+	jsr	$LcdSelectSide
+	._line	198
+	mov.b	-1[FB],A0	;  u8Page 
+	or.b	#0b8H,A0
+	mov.b	A0,R1L
+	._inspect	'S', 'c', "LcdInstructionWrite", "$LcdInstructionWrite", 'G', 0, 198
+	jsr	$LcdInstructionWrite
+	._line	199
+	mov.b	#40H,R1L
+	._inspect	'S', 'c', "LcdInstructionWrite", "$LcdInstructionWrite", 'G', 0, 199
+	jsr	$LcdInstructionWrite
+	._eblock
+L55:
+	._line	201
+	mov.b	#00H,R1L
+	._inspect	'S', 'c', "LcdDataWrite", "$LcdDataWrite", 'G', 0, 201
+	jsr	$LcdDataWrite
+	._eblock
+	inc.b	-2[FB]	;  u8Column 
+	jmp	L43
+L47:
+	inc.b	-1[FB]	;  u8Page 
+	jmp	L31
+L35:
+	._eblock
+	._eblock
+	._line	204
+	exitd	
+E8:
+M9:
+	._efunc	M9
+	._inspect	'F', 'd', "GLCD_ClearScreen", "_GLCD_ClearScreen", 'G', 181, 0, 00h, 0
+	._inspect	'F', 't', "GLCD_ClearScreen", 'G', 274
+	._inspect	'F', 'r', "LcdSelectSide", "$LcdSelectSide", 'G', 188, 0, 00h, 0
+	._inspect	'F', 'r', "LcdInstructionWrite", "$LcdInstructionWrite", 'G', 189, 0, 00h, 0
+	._inspect	'F', 'r', "LcdInstructionWrite", "$LcdInstructionWrite", 'G', 190, 0, 00h, 0
+	._inspect	'F', 'r', "LcdSelectSide", "$LcdSelectSide", 'G', 197, 0, 00h, 0
+	._inspect	'F', 'r', "LcdInstructionWrite", "$LcdInstructionWrite", 'G', 198, 0, 00h, 0
+	._inspect	'F', 'r', "LcdInstructionWrite", "$LcdInstructionWrite", 'G', 199, 0, 00h, 0
+	._inspect	'F', 'r', "LcdDataWrite", "$LcdDataWrite", 'G', 201, 0, 00h, 0
+	._inspect	'F', 'e', "GLCD_ClearScreen", "_GLCD_ClearScreen", 'G', 0, 0
+
+
+;## #	FUNCTION GLCD_DisplayPicture
+;## #	FRAME	AUTO	(u8Column)	size  1,	offset -2
+;## #	FRAME	AUTO	(  u8Page)	size  1,	offset -1
+;## #  FRAME   ARG (au8PictureData)  size   4,    offset 5
+;## #	ARG Size(4)	Auto Size(2)	Context Size(5)
+
+	._type	275,'v'
+	._type	276,'P',3
+	._type	277,'x',275,1
+	._type	277,'m','au8PictureData',0,276
+	._func	'GLCD_DisplayPicture','G',2,277,_GLCD_DisplayPicture,0
+	._inspect	'F', 's', "GLCD_DisplayPicture", "_GLCD_DisplayPicture", 'G', 7
+	.align
+	._line	212
+	.glb	_GLCD_DisplayPicture
+_GLCD_DisplayPicture:
+	enter	#02H
+	._block
+	._type	278,'P',3
+	._var	'au8PictureData','A',278,5
+	._var	'u8Page','A',3,-1
+	._var	'u8Column','A',3,-2
+	._line	213
+	mov.b	#00H,-1[FB]	;  u8Page 
+	._line	214
+	mov.b	#00H,-2[FB]	;  u8Column 
+	._line	217
+	mov.b	#01H,R1L
+	._inspect	'S', 'c', "LcdSelectSide", "$LcdSelectSide", 'G', 0, 217
+	jsr	$LcdSelectSide
+	._line	218
+	mov.b	#00H,-1[FB]	;  u8Page 
+L71:
+	._line	218
+	cmp.b	#08H,-1[FB]	;  u8Page 
+	jgeu	L75
+	._line	219
+	._block
+	._line	220
+	mov.b	-1[FB],A0	;  u8Page 
+	or.b	#0b8H,A0
+	mov.b	A0,R1L
+	._inspect	'S', 'c', "LcdInstructionWrite", "$LcdInstructionWrite", 'G', 0, 220
+	jsr	$LcdInstructionWrite
+	._line	221
+	mov.b	#00H,-2[FB]	;  u8Column 
+L83:
+	._line	221
+	cmp.b	#40H,-2[FB]	;  u8Column 
+	jgeu	L87
+	._line	222
+	mov.b	-1[FB],R0L	;  u8Page 
+	mov.b	#00H,R0H
+	shl.w	#07H,R0
+	mov.b	-2[FB],R1L	;  u8Column 
+	mov.b	#00H,R1H
+	add.w	R1,R0
+	exts.w	R0
+	mov.w	R0,A0
+	mov.w	R2,A1
+	add.w	5[FB],A0	;  au8PictureData 
+	adc.w	5+2[FB],A1	;  au8PictureData 
+	lde.b	[A1A0],R1L
+	._inspect	'S', 'c', "LcdDataWrite", "$LcdDataWrite", 'G', 0, 222
+	jsr	$LcdDataWrite
+	inc.b	-2[FB]	;  u8Column 
+	jmp	L83
+L87:
+	inc.b	-1[FB]	;  u8Page 
+	jmp	L71
+L75:
+	._eblock
+	._line	226
+	mov.b	#00H,R1L
+	._inspect	'S', 'c', "LcdSelectSide", "$LcdSelectSide", 'G', 0, 226
+	jsr	$LcdSelectSide
+	._line	227
+	mov.b	#00H,-1[FB]	;  u8Page 
+L95:
+	._line	227
+	cmp.b	#08H,-1[FB]	;  u8Page 
+	jgeu	L99
+	._line	228
+	._block
+	._line	229
+	mov.b	-1[FB],A0	;  u8Page 
+	or.b	#0b8H,A0
+	mov.b	A0,R1L
+	._inspect	'S', 'c', "LcdInstructionWrite", "$LcdInstructionWrite", 'G', 0, 229
+	jsr	$LcdInstructionWrite
+	._line	230
+	mov.b	#40H,-2[FB]	;  u8Column 
+L107:
+	._line	230
+	cmp.b	#80H,-2[FB]	;  u8Column 
+	jgeu	L111
+	._line	231
+	mov.b	-1[FB],R0L	;  u8Page 
+	mov.b	#00H,R0H
+	shl.w	#07H,R0
+	mov.b	-2[FB],R1L	;  u8Column 
+	mov.b	#00H,R1H
+	add.w	R1,R0
+	exts.w	R0
+	mov.w	R0,A0
+	mov.w	R2,A1
+	add.w	5[FB],A0	;  au8PictureData 
+	adc.w	5+2[FB],A1	;  au8PictureData 
+	lde.b	[A1A0],R1L
+	._inspect	'S', 'c', "LcdDataWrite", "$LcdDataWrite", 'G', 0, 231
+	jsr	$LcdDataWrite
+	inc.b	-2[FB]	;  u8Column 
+	jmp	L107
+L111:
+	inc.b	-1[FB]	;  u8Page 
+	jmp	L95
+L99:
+	._eblock
+	._eblock
+	._line	233
+	exitd	
+E9:
+M10:
+	._efunc	M10
+	._inspect	'F', 'd', "GLCD_DisplayPicture", "_GLCD_DisplayPicture", 'G', 212, 0, 00h, 0
+	._inspect	'F', 't', "GLCD_DisplayPicture", 'G', 277
+	._inspect	'F', 'r', "LcdSelectSide", "$LcdSelectSide", 'G', 217, 0, 00h, 0
+	._inspect	'F', 'r', "LcdInstructionWrite", "$LcdInstructionWrite", 'G', 220, 0, 00h, 0
+	._inspect	'F', 'r', "LcdDataWrite", "$LcdDataWrite", 'G', 222, 0, 00h, 0
+	._inspect	'F', 'r', "LcdSelectSide", "$LcdSelectSide", 'G', 226, 0, 00h, 0
+	._inspect	'F', 'r', "LcdInstructionWrite", "$LcdInstructionWrite", 'G', 229, 0, 00h, 0
+	._inspect	'F', 'r', "LcdDataWrite", "$LcdDataWrite", 'G', 231, 0, 00h, 0
+	._inspect	'F', 'e', "GLCD_DisplayPicture", "_GLCD_DisplayPicture", 'G', 0, 0
+
+
+;## #	FUNCTION LcdSetDot
+;## #	FRAME	AUTO	(u8DataRead)	size  1,	offset -2
+;## #	FRAME	AUTO	( u8Xaxis)	size  1,	offset -1
+;## #  FRAME   ARG ( u8Yaxis)  size   1,    offset 5
+;## #  REGISTER ARG    ( u8Xaxis)   size   1,   REGISTER R1L
+;## #	ARG Size(1)	Auto Size(2)	Context Size(5)
+
+	._type	279,'v'
+	._type	280,'x',279,2
+	._type	280,'m','u8Xaxis',0,3
+	._type	280,'m','u8Yaxis',0,3
+	._func	'LcdSetDot','G',2,280,$LcdSetDot,0
+	._inspect	'F', 's', "LcdSetDot", "$LcdSetDot", 'G', 7
+	.align
+	._line	242
+	.glb	$LcdSetDot
+$LcdSetDot:
+	enter	#02H
+	mov.b	R1L,-1[FB]	;  u8Xaxis  u8Xaxis 
+	._block
+	._var	'u8Xaxis','A',3,-1
+	._var	'u8Yaxis','A',3,5
+	._var	'u8DataRead','A',3,-2
+	._line	243
+	mov.b	#00H,-2[FB]	;  u8DataRead 
+	._line	245
+	mov.b	#0c0H,R1L
+	._inspect	'S', 'c', "LcdInstructionWrite", "$LcdInstructionWrite", 'G', 0, 245
+	jsr	$LcdInstructionWrite
+	._line	248
+	cmp.b	#40H,-1[FB]	;  u8Xaxis 
+	jgeu	L127
+	._line	249
+	._block
+	._line	250
+	mov.b	#01H,R1L
+	._inspect	'S', 'c', "LcdSelectSide", "$LcdSelectSide", 'G', 0, 250
+	jsr	$LcdSelectSide
+	._line	251
+	mov.b	5[FB],R0L	;  u8Yaxis 
+	mov.b	#00H,R0H
+	exts.w	R0
+	div.w	#0008H
+	add.w	#00b8H,R0
+	mov.b	R0L,R1L
+	._inspect	'S', 'c', "LcdInstructionWrite", "$LcdInstructionWrite", 'G', 0, 251
+	jsr	$LcdInstructionWrite
+	._line	252
+	mov.b	-1[FB],A0	;  u8Xaxis 
+	add.w	#0040H,A0
+	mov.b	A0,R1L
+	._inspect	'S', 'c', "LcdInstructionWrite", "$LcdInstructionWrite", 'G', 0, 252
+	jsr	$LcdInstructionWrite
+	._line	254
+	._inspect	'S', 'c', "LcdDataRead", "_LcdDataRead", 'G', 0, 254
+	jsr	_LcdDataRead
+	mov.b	R0L,-2[FB]	;  u8DataRead 
+	._line	255
+	._inspect	'S', 'c', "LcdDataRead", "_LcdDataRead", 'G', 0, 255
+	jsr	_LcdDataRead
+	mov.b	R0L,-2[FB]	;  u8DataRead 
+	._line	257
+	mov.b	5[FB],R0L	;  u8Yaxis 
+	mov.b	#00H,R0H
+	exts.w	R0
+	div.w	#0008H
+	add.w	#00b8H,R0
+	mov.b	R0L,R1L
+	._inspect	'S', 'c', "LcdInstructionWrite", "$LcdInstructionWrite", 'G', 0, 257
+	jsr	$LcdInstructionWrite
+	._line	258
+	mov.b	-1[FB],A0	;  u8Xaxis 
+	add.w	#0040H,A0
+	mov.b	A0,R1L
+	._inspect	'S', 'c', "LcdInstructionWrite", "$LcdInstructionWrite", 'G', 0, 258
+	jsr	$LcdInstructionWrite
+	._line	259
+	mov.b	5[FB],R0L	;  u8Yaxis 
+	mov.b	#00H,R0H
+	exts.w	R0
+	div.w	#0008H
+	mov.w	R2,A0
+	mov.b	A0,R1H
+	mov.w	#0001H,R0
+	shl.w	R1H,R0
+	mov.b	-2[FB],A0	;  u8DataRead 
+	or.w	R0,A0
+	mov.b	A0,R1L
+	._inspect	'S', 'c', "LcdDataWrite", "$LcdDataWrite", 'G', 0, 259
+	jsr	$LcdDataWrite
+	._eblock
+	._line	260
+	jmp	L129
+	._line	261
+L127:
+	._line	263
+	._block
+	._line	264
+	mov.b	#00H,R1L
+	._inspect	'S', 'c', "LcdSelectSide", "$LcdSelectSide", 'G', 0, 264
+	jsr	$LcdSelectSide
+	._line	265
+	mov.b	5[FB],R0L	;  u8Yaxis 
+	mov.b	#00H,R0H
+	exts.w	R0
+	div.w	#0008H
+	add.w	#00b8H,R0
+	mov.b	R0L,R1L
+	._inspect	'S', 'c', "LcdInstructionWrite", "$LcdInstructionWrite", 'G', 0, 265
+	jsr	$LcdInstructionWrite
+	._line	266
+	mov.b	-1[FB],A0	;  u8Xaxis 
+	mov.b	A0,R1L
+	._inspect	'S', 'c', "LcdInstructionWrite", "$LcdInstructionWrite", 'G', 0, 266
+	jsr	$LcdInstructionWrite
+	._line	268
+	._inspect	'S', 'c', "LcdDataRead", "_LcdDataRead", 'G', 0, 268
+	jsr	_LcdDataRead
+	mov.b	R0L,-2[FB]	;  u8DataRead 
+	._line	269
+	._inspect	'S', 'c', "LcdDataRead", "_LcdDataRead", 'G', 0, 269
+	jsr	_LcdDataRead
+	mov.b	R0L,-2[FB]	;  u8DataRead 
+	._line	271
+	mov.b	5[FB],R0L	;  u8Yaxis 
+	mov.b	#00H,R0H
+	exts.w	R0
+	div.w	#0008H
+	add.w	#00b8H,R0
+	mov.b	R0L,R1L
+	._inspect	'S', 'c', "LcdInstructionWrite", "$LcdInstructionWrite", 'G', 0, 271
+	jsr	$LcdInstructionWrite
+	._line	272
+	mov.b	-1[FB],A0	;  u8Xaxis 
+	mov.b	A0,R1L
+	._inspect	'S', 'c', "LcdInstructionWrite", "$LcdInstructionWrite", 'G', 0, 272
+	jsr	$LcdInstructionWrite
+	._line	273
+	mov.b	5[FB],R0L	;  u8Yaxis 
+	mov.b	#00H,R0H
+	exts.w	R0
+	div.w	#0008H
+	mov.w	R2,A0
+	mov.b	A0,R1H
+	mov.w	#0001H,R0
+	shl.w	R1H,R0
+	mov.b	-2[FB],A0	;  u8DataRead 
+	or.w	R0,A0
+	mov.b	A0,R1L
+	._inspect	'S', 'c', "LcdDataWrite", "$LcdDataWrite", 'G', 0, 273
+	jsr	$LcdDataWrite
+	._eblock
+	._line	275
+L129:
+	._line	276
+	mov.b	#0c0H,R1L
+	._inspect	'S', 'c', "LcdInstructionWrite", "$LcdInstructionWrite", 'G', 0, 276
+	jsr	$LcdInstructionWrite
+	._eblock
+	._line	277
+	exitd	
+E10:
+M11:
+	._efunc	M11
+	._inspect	'F', 'd', "LcdSetDot", "$LcdSetDot", 'G', 242, 0, 00h, 0
+	._inspect	'F', 't', "LcdSetDot", 'G', 280
+	._inspect	'F', 'r', "LcdInstructionWrite", "$LcdInstructionWrite", 'G', 245, 0, 00h, 0
+	._inspect	'F', 'r', "LcdSelectSide", "$LcdSelectSide", 'G', 250, 0, 00h, 0
+	._inspect	'F', 'r', "LcdInstructionWrite", "$LcdInstructionWrite", 'G', 251, 0, 00h, 0
+	._inspect	'F', 'r', "LcdInstructionWrite", "$LcdInstructionWrite", 'G', 252, 0, 00h, 0
+	._inspect	'F', 'r', "LcdDataRead", "_LcdDataRead", 'G', 254, 0, 00h, 0
+	._inspect	'F', 'r', "LcdDataRead", "_LcdDataRead", 'G', 255, 0, 00h, 0
+	._inspect	'F', 'r', "LcdInstructionWrite", "$LcdInstructionWrite", 'G', 257, 0, 00h, 0
+	._inspect	'F', 'r', "LcdInstructionWrite", "$LcdInstructionWrite", 'G', 258, 0, 00h, 0
+	._inspect	'F', 'r', "LcdDataWrite", "$LcdDataWrite", 'G', 259, 0, 00h, 0
+	._inspect	'F', 'r', "LcdSelectSide", "$LcdSelectSide", 'G', 264, 0, 00h, 0
+	._inspect	'F', 'r', "LcdInstructionWrite", "$LcdInstructionWrite", 'G', 265, 0, 00h, 0
+	._inspect	'F', 'r', "LcdInstructionWrite", "$LcdInstructionWrite", 'G', 266, 0, 00h, 0
+	._inspect	'F', 'r', "LcdDataRead", "_LcdDataRead", 'G', 268, 0, 00h, 0
+	._inspect	'F', 'r', "LcdDataRead", "_LcdDataRead", 'G', 269, 0, 00h, 0
+	._inspect	'F', 'r', "LcdInstructionWrite", "$LcdInstructionWrite", 'G', 271, 0, 00h, 0
+	._inspect	'F', 'r', "LcdInstructionWrite", "$LcdInstructionWrite", 'G', 272, 0, 00h, 0
+	._inspect	'F', 'r', "LcdDataWrite", "$LcdDataWrite", 'G', 273, 0, 00h, 0
+	._inspect	'F', 'r', "LcdInstructionWrite", "$LcdInstructionWrite", 'G', 276, 0, 00h, 0
+	._inspect	'F', 'e', "LcdSetDot", "$LcdSetDot", 'G', 0, 0
+
+
+;## #	FUNCTION GLCD_WriteChar
+;## #	FRAME	AUTO	(  u8Page)	size  1,	offset -5
+;## #	FRAME	AUTO	(u8UpperCharPointer)	size  1,	offset -4
+;## #	FRAME	AUTO	(u8RightSide)	size  1,	offset -3
+;## #	FRAME	AUTO	(u8CharColumn)	size  1,	offset -2
+;## #	FRAME	AUTO	(  u8Char)	size  1,	offset -1
+;## #  FRAME   ARG (    toto)  size   6,    offset 5
+;## #  REGISTER ARG    (  u8Char)   size   1,   REGISTER R1L
+;## #	ARG Size(6)	Auto Size(5)	Context Size(5)
+
+	._type	281,'v'
+	._type	283,'P',3
+	._type	282,'S','FONT_DEF',6
+	._type	282,'m','u8Width',3,0
+	._type	282,'m','u8Height',3,1
+	._type	282,'m','au8FontTable',283,2
+	._type	284,'T','FONT_DEF',282
+	._type	285,'x',281,2
+	._type	285,'m','u8Char',0,3
+	._type	285,'m','toto',0,284
+	._func	'GLCD_WriteChar','G',5,285,$GLCD_WriteChar,0
+	._inspect	'F', 's', "GLCD_WriteChar", "$GLCD_WriteChar", 'G', 10
+	.align
+	._line	285
+	.glb	$GLCD_WriteChar
+$GLCD_WriteChar:
+	enter	#05H
+	mov.b	R1L,-1[FB]	;  u8Char  u8Char 
+	._block
+	._var	'u8Char','A',3,-1
+	._var	'toto','A',284,5
+	._var	'u8CharColumn','A',3,-2
+	._var	'u8RightSide','A',3,-3
+	._var	'u8UpperCharPointer','A',3,-4
+	._var	'u8Page','A',3,-5
+	._line	286
+	mov.b	#00H,-2[FB]	;  u8CharColumn 
+	mov.b	#00H,-3[FB]	;  u8RightSide 
+	._line	287
+	mov.b	#01H,-4[FB]	;  u8UpperCharPointer 
+	mov.b	#00H,-5[FB]	;  u8Page 
+	._line	292
+	cmp.b	#0aH,-1[FB]	;  u8Char 
+	jne	L149
+	._block
+	._line	293
+	mov.b	#00H,_u8CursorX
+	._line	294
+	inc.b	_u8CursorY
+	._line	295
+	cmp.b	#08H,_u8CursorY
+	stz	#00H,_u8CursorY
+	._line	296
+	exitd	
+	._eblock
+L149:
+	._line	298
+	cmp.b	#0dH,-1[FB]	;  u8Char 
+	jne	L169
+	._block
+	._line	299
+	mov.b	#00H,_u8CursorX
+	._line	300
+	cmp.b	#08H,_u8CursorY
+	stz	#00H,_u8CursorY
+	._line	301
+	exitd	
+	._eblock
+L169:
+	._line	305
+	mov.b	5[FB],R0L	;  toto 
+	mov.b	#00H,R0H
+	mov.w	#0080H,R1
+	sub.w	R0,R1
+	mov.b	_u8CursorX,R0L
+	mov.b	#00H,R0H
+	cmp.w	R1,R0
+	jle	L189
+	._line	306
+	._block
+	._line	307
+	mov.b	#00H,_u8CursorX
+	._line	308
+	inc.b	_u8CursorY
+	._line	309
+	cmp.b	#08H,_u8CursorY
+	stz	#00H,_u8CursorY
+	._eblock
+L189:
+	._line	313
+	cmp.b	#40H,_u8CursorX
+	jgeu	L199
+	._line	314
+	._block
+	._line	316
+	mov.b	#01H,R1L
+	._inspect	'S', 'c', "LcdSelectSide", "$LcdSelectSide", 'G', 0, 316
+	jsr	$LcdSelectSide
+	._line	317
+	mov.b	_u8CursorX,A0
+	add.w	#0040H,A0
+	mov.b	A0,R1L
+	._inspect	'S', 'c', "LcdInstructionWrite", "$LcdInstructionWrite", 'G', 0, 317
+	jsr	$LcdInstructionWrite
+	._eblock
+	._line	318
+	jmp	L201
+	._line	319
+L199:
+	._line	320
+	._block
+	._line	322
+	mov.b	#00H,R1L
+	._inspect	'S', 'c', "LcdSelectSide", "$LcdSelectSide", 'G', 0, 322
+	jsr	$LcdSelectSide
+	._line	323
+	mov.b	_u8CursorX,A0
+	mov.b	A0,R1L
+	._inspect	'S', 'c', "LcdInstructionWrite", "$LcdInstructionWrite", 'G', 0, 323
+	jsr	$LcdInstructionWrite
+	._eblock
+	._line	324
+L201:
+	._line	327
+L295:
+L209:
+	cmp.b	5[FB],-2[FB]	;  toto  u8CharColumn 
+	jgeu	L211
+	._line	328
+	._block
+	._line	329
+	cmp.b	#08H,6[FB]	;  toto 
+	jleu	L229
+	._line	330
+	._block
+	._line	331
+	mov.b	#02H,-4[FB]	;  u8UpperCharPointer 
+	._line	332
+	cmp.b	#40H,_u8CursorX
+	jleu	L219
+	._line	333
+	mov.b	#40H,-3[FB]	;  u8RightSide 
+L219:
+	._line	334
+	mov.b	_u8CursorY,A0
+	add.w	#00b7H,A0
+	mov.b	A0,R1L
+	._inspect	'S', 'c', "LcdInstructionWrite", "$LcdInstructionWrite", 'G', 0, 334
+	jsr	$LcdInstructionWrite
+	._line	335
+	mov.b	_u8CursorX,A0
+	add.w	#0040H,A0
+	mov.b	-3[FB],R0L	;  u8RightSide 
+	mov.b	#00H,R0H
+	sub.w	R0,A0
+	mov.b	A0,R1L
+	._inspect	'S', 'c', "LcdInstructionWrite", "$LcdInstructionWrite", 'G', 0, 335
+	jsr	$LcdInstructionWrite
+	._line	336
+	mov.b	-1[FB],R0L	;  u8Char 
+	mov.b	#00H,R0H
+	sub.w	#0020H,R0
+	mov.b	-4[FB],R1L	;  u8UpperCharPointer 
+	mov.b	#00H,R1H
+	mul.w	R1,R0
+	mov.b	5[FB],R1L	;  toto 
+	mov.b	#00H,R1H
+	mul.w	R1,R0
+	mov.b	-2[FB],R1L	;  u8CharColumn 
+	mul.b	-4[FB],R1L	;  u8UpperCharPointer 
+	mov.b	#00H,R1H
+	add.w	#0001H,R1
+	add.w	R1,R0
+	exts.w	R0
+	mov.w	R0,A0
+	mov.w	R2,A1
+	add.w	7[FB],A0	;  toto 
+	adc.w	7+2[FB],A1	;  toto 
+	lde.b	[A1A0],R1L
+	._inspect	'S', 'c', "LcdDataWrite", "$LcdDataWrite", 'G', 0, 336
+	jsr	$LcdDataWrite
+	._line	337
+	mov.b	_u8CursorX,A0
+	add.w	#0040H,A0
+	mov.b	-3[FB],R0L	;  u8RightSide 
+	mov.b	#00H,R0H
+	sub.w	R0,A0
+	mov.b	A0,R1L
+	._inspect	'S', 'c', "LcdInstructionWrite", "$LcdInstructionWrite", 'G', 0, 337
+	jsr	$LcdInstructionWrite
+	._eblock
+L229:
+	._line	340
+	mov.b	_u8CursorY,A0
+	add.w	#00b8H,A0
+	mov.b	A0,R1L
+	._inspect	'S', 'c', "LcdInstructionWrite", "$LcdInstructionWrite", 'G', 0, 340
+	jsr	$LcdInstructionWrite
+	._line	341
+	mov.b	-1[FB],R0L	;  u8Char 
+	mov.b	#00H,R0H
+	sub.w	#0020H,R0
+	mov.b	-4[FB],R1L	;  u8UpperCharPointer 
+	mov.b	#00H,R1H
+	mul.w	R1,R0
+	mov.b	5[FB],R1L	;  toto 
+	mov.b	#00H,R1H
+	mul.w	R1,R0
+	mov.b	-2[FB],R1L	;  u8CharColumn 
+	mul.b	-4[FB],R1L	;  u8UpperCharPointer 
+	mov.b	#00H,R1H
+	add.w	R1,R0
+	exts.w	R0
+	mov.w	R0,A0
+	mov.w	R2,A1
+	add.w	7[FB],A0	;  toto 
+	adc.w	7+2[FB],A1	;  toto 
+	lde.b	[A1A0],R1L
+	._inspect	'S', 'c', "LcdDataWrite", "$LcdDataWrite", 'G', 0, 341
+	jsr	$LcdDataWrite
+	._line	342
+	inc.b	-2[FB]	;  u8CharColumn 
+	._line	343
+	inc.b	_u8CursorX
+	._line	346
+	cmp.b	#40H,_u8CursorX
+	jne	L209
+	._line	347
+	._block
+	._line	348
+	mov.b	#40H,-3[FB]	;  u8RightSide 
+	._line	349
+	mov.b	#00H,R1L
+	._inspect	'S', 'c', "LcdSelectSide", "$LcdSelectSide", 'G', 0, 349
+	jsr	$LcdSelectSide
+	._line	350
+	mov.b	_u8CursorY,A0
+	add.w	#00b8H,A0
+	mov.b	A0,R1L
+	._inspect	'S', 'c', "LcdInstructionWrite", "$LcdInstructionWrite", 'G', 0, 350
+	jsr	$LcdInstructionWrite
+	._line	351
+	mov.b	_u8CursorX,A0
+	add.w	#0040H,A0
+	mov.b	-3[FB],R0L	;  u8RightSide 
+	mov.b	#00H,R0H
+	sub.w	R0,A0
+	mov.b	A0,R1L
+	._inspect	'S', 'c', "LcdInstructionWrite", "$LcdInstructionWrite", 'G', 0, 351
+	jsr	$LcdInstructionWrite
+	._eblock
+	._line	352
+	jmp	L295
+	._eblock
+	._line	353
+L211:
+	._line	356
+	cmp.b	#80H,_u8CursorX
+	jgeu	L259
+	._line	357
+	._block
+	._line	358
+	cmp.b	#08H,6[FB]	;  toto 
+	jleu	L249
+	._line	359
+	._block
+	._line	360
+	mov.b	_u8CursorY,A0
+	add.w	#00b7H,A0
+	mov.b	A0,R1L
+	._inspect	'S', 'c', "LcdInstructionWrite", "$LcdInstructionWrite", 'G', 0, 360
+	jsr	$LcdInstructionWrite
+	._line	361
+	mov.b	_u8CursorX,A0
+	add.w	#0040H,A0
+	mov.b	A0,R1L
+	._inspect	'S', 'c', "LcdInstructionWrite", "$LcdInstructionWrite", 'G', 0, 361
+	jsr	$LcdInstructionWrite
+	._line	362
+	mov.b	#00H,R1L
+	._inspect	'S', 'c', "LcdDataWrite", "$LcdDataWrite", 'G', 0, 362
+	jsr	$LcdDataWrite
+	._line	363
+	mov.b	_u8CursorX,A0
+	add.w	#0040H,A0
+	mov.b	-3[FB],R0L	;  u8RightSide 
+	mov.b	#00H,R0H
+	sub.w	R0,A0
+	mov.b	A0,R1L
+	._inspect	'S', 'c', "LcdInstructionWrite", "$LcdInstructionWrite", 'G', 0, 363
+	jsr	$LcdInstructionWrite
+	._eblock
+L249:
+	._line	365
+	mov.b	_u8CursorY,A0
+	add.w	#00b8H,A0
+	mov.b	A0,R1L
+	._inspect	'S', 'c', "LcdInstructionWrite", "$LcdInstructionWrite", 'G', 0, 365
+	jsr	$LcdInstructionWrite
+	._line	366
+	mov.b	_u8CursorX,A0
+	add.w	#0040H,A0
+	mov.b	A0,R1L
+	._inspect	'S', 'c', "LcdInstructionWrite", "$LcdInstructionWrite", 'G', 0, 366
+	jsr	$LcdInstructionWrite
+	._line	367
+	mov.b	#00H,R1L
+	._inspect	'S', 'c', "LcdDataWrite", "$LcdDataWrite", 'G', 0, 367
+	jsr	$LcdDataWrite
+	._eblock
+L259:
+	._line	370
+	inc.b	-2[FB]	;  u8CharColumn 
+	._line	371
+	inc.b	_u8CursorX
+	._eblock
+	._line	372
+	exitd	
+E11:
+M15:
+	._efunc	M15
+	._inspect	'F', 'd', "GLCD_WriteChar", "$GLCD_WriteChar", 'G', 285, 0, 00h, 0
+	._inspect	'F', 't', "GLCD_WriteChar", 'G', 285
+	._inspect	'V', 'r', "u8CursorX", 'G', 293, 1, 0, 0, 00h
+	._inspect	'V', 'r', "u8CursorY", 'G', 294, 1, 0, 0, 00h
+	._inspect	'V', 'r', "u8CursorY", 'G', 295, 1, 0, 0, 00h
+	._inspect	'V', 'r', "u8CursorY", 'G', 295, 1, 0, 0, 00h
+	._inspect	'V', 'r', "u8CursorX", 'G', 299, 1, 0, 0, 00h
+	._inspect	'V', 'r', "u8CursorY", 'G', 300, 1, 0, 0, 00h
+	._inspect	'V', 'r', "u8CursorY", 'G', 300, 1, 0, 0, 00h
+	._inspect	'V', 'r', "u8CursorX", 'G', 305, 1, 0, 0, 00h
+	._inspect	'V', 'r', "u8CursorX", 'G', 307, 1, 0, 0, 00h
+	._inspect	'V', 'r', "u8CursorY", 'G', 308, 1, 0, 0, 00h
+	._inspect	'V', 'r', "u8CursorY", 'G', 309, 1, 0, 0, 00h
+	._inspect	'V', 'r', "u8CursorY", 'G', 309, 1, 0, 0, 00h
+	._inspect	'V', 'r', "u8CursorX", 'G', 313, 1, 0, 0, 00h
+	._inspect	'F', 'r', "LcdSelectSide", "$LcdSelectSide", 'G', 316, 0, 00h, 0
+	._inspect	'V', 'r', "u8CursorX", 'G', 317, 1, 0, 0, 00h
+	._inspect	'F', 'r', "LcdInstructionWrite", "$LcdInstructionWrite", 'G', 317, 0, 00h, 0
+	._inspect	'F', 'r', "LcdSelectSide", "$LcdSelectSide", 'G', 322, 0, 00h, 0
+	._inspect	'V', 'r', "u8CursorX", 'G', 323, 1, 0, 0, 00h
+	._inspect	'F', 'r', "LcdInstructionWrite", "$LcdInstructionWrite", 'G', 323, 0, 00h, 0
+	._inspect	'V', 'r', "u8CursorX", 'G', 332, 1, 0, 0, 00h
+	._inspect	'V', 'r', "u8CursorY", 'G', 334, 1, 0, 0, 00h
+	._inspect	'F', 'r', "LcdInstructionWrite", "$LcdInstructionWrite", 'G', 334, 0, 00h, 0
+	._inspect	'V', 'r', "u8CursorX", 'G', 335, 1, 0, 0, 00h
+	._inspect	'F', 'r', "LcdInstructionWrite", "$LcdInstructionWrite", 'G', 335, 0, 00h, 0
+	._inspect	'F', 'r', "LcdDataWrite", "$LcdDataWrite", 'G', 336, 0, 00h, 0
+	._inspect	'V', 'r', "u8CursorX", 'G', 337, 1, 0, 0, 00h
+	._inspect	'F', 'r', "LcdInstructionWrite", "$LcdInstructionWrite", 'G', 337, 0, 00h, 0
+	._inspect	'V', 'r', "u8CursorY", 'G', 340, 1, 0, 0, 00h
+	._inspect	'F', 'r', "LcdInstructionWrite", "$LcdInstructionWrite", 'G', 340, 0, 00h, 0
+	._inspect	'F', 'r', "LcdDataWrite", "$LcdDataWrite", 'G', 341, 0, 00h, 0
+	._inspect	'V', 'r', "u8CursorX", 'G', 343, 1, 0, 0, 00h
+	._inspect	'V', 'r', "u8CursorX", 'G', 346, 1, 0, 0, 00h
+	._inspect	'F', 'r', "LcdSelectSide", "$LcdSelectSide", 'G', 349, 0, 00h, 0
+	._inspect	'V', 'r', "u8CursorY", 'G', 350, 1, 0, 0, 00h
+	._inspect	'F', 'r', "LcdInstructionWrite", "$LcdInstructionWrite", 'G', 350, 0, 00h, 0
+	._inspect	'V', 'r', "u8CursorX", 'G', 351, 1, 0, 0, 00h
+	._inspect	'F', 'r', "LcdInstructionWrite", "$LcdInstructionWrite", 'G', 351, 0, 00h, 0
+	._inspect	'V', 'r', "u8CursorX", 'G', 356, 1, 0, 0, 00h
+	._inspect	'V', 'r', "u8CursorY", 'G', 360, 1, 0, 0, 00h
+	._inspect	'F', 'r', "LcdInstructionWrite", "$LcdInstructionWrite", 'G', 360, 0, 00h, 0
+	._inspect	'V', 'r', "u8CursorX", 'G', 361, 1, 0, 0, 00h
+	._inspect	'F', 'r', "LcdInstructionWrite", "$LcdInstructionWrite", 'G', 361, 0, 00h, 0
+	._inspect	'F', 'r', "LcdDataWrite", "$LcdDataWrite", 'G', 362, 0, 00h, 0
+	._inspect	'V', 'r', "u8CursorX", 'G', 363, 1, 0, 0, 00h
+	._inspect	'F', 'r', "LcdInstructionWrite", "$LcdInstructionWrite", 'G', 363, 0, 00h, 0
+	._inspect	'V', 'r', "u8CursorY", 'G', 365, 1, 0, 0, 00h
+	._inspect	'F', 'r', "LcdInstructionWrite", "$LcdInstructionWrite", 'G', 365, 0, 00h, 0
+	._inspect	'V', 'r', "u8CursorX", 'G', 366, 1, 0, 0, 00h
+	._inspect	'F', 'r', "LcdInstructionWrite", "$LcdInstructionWrite", 'G', 366, 0, 00h, 0
+	._inspect	'F', 'r', "LcdDataWrite", "$LcdDataWrite", 'G', 367, 0, 00h, 0
+	._inspect	'V', 'r', "u8CursorX", 'G', 371, 1, 0, 0, 00h
+	._inspect	'F', 'e', "GLCD_WriteChar", "$GLCD_WriteChar", 'G', 0, 0
+
+
+;## #	FUNCTION GLCD_WriteString
+;## #  FRAME   ARG ( au8Text)  size   4,    offset 5
+;## #  FRAME   ARG (    toto)  size   6,    offset 9
+;## #	ARG Size(10)	Auto Size(0)	Context Size(5)
+
+	._type	286,'v'
+	._type	287,'P',3
+	._type	288,'x',286,2
+	._type	288,'m','au8Text',0,287
+	._type	288,'m','toto',0,284
+	._func	'GLCD_WriteString','G',0,288,_GLCD_WriteString,0
+	._inspect	'F', 's', "GLCD_WriteString", "_GLCD_WriteString", 'G', 5
+	.align
+	._line	380
+	.glb	_GLCD_WriteString
+_GLCD_WriteString:
+	enter	#00H
+	._block
+	._type	289,'P',3
+	._var	'au8Text','A',289,5
+	._var	'toto','A',284,9
+	._line	381
+L297:
+	mov.w	5[FB],A0	;  au8Text 
+	mov.w	5+2[FB],A1	;  au8Text 
+	lde.b	[A1A0],R0L
+	jeq	L299
+	._line	382
+	._block
+	._line	383
+	push.w	13[FB]	;  toto 
+	._inspect	'S', 'p', 2
+	push.w	11[FB]	;  toto 
+	._inspect	'S', 'p', 2
+	push.w	9[FB]	;  toto 
+	._inspect	'S', 'p', 2
+	mov.w	5[FB],A0	;  au8Text 
+	mov.w	5+2[FB],A1	;  au8Text 
+	lde.b	[A1A0],R1L
+	._inspect	'S', 'c', "GLCD_WriteChar", "$GLCD_WriteChar", 'G', 0, 383
+	jsr	$GLCD_WriteChar
+	._inspect	'S', 'p', -6
+	add.b	#06H,SP
+	._line	384
+	add.w	#0001H,5[FB]	;  au8Text 
+	adcf.w	5+2[FB]	;  au8Text 
+	._eblock
+	._line	385
+	jmp	L297
+L299:
+	._eblock
+	._line	386
+	exitd	
+E12:
+M16:
+	._efunc	M16
+	._inspect	'F', 'd', "GLCD_WriteString", "_GLCD_WriteString", 'G', 380, 0, 00h, 0
+	._inspect	'F', 't', "GLCD_WriteString", 'G', 288
+	._inspect	'F', 'r', "GLCD_WriteChar", "$GLCD_WriteChar", 'G', 383, 0, 00h, 0
+	._inspect	'F', 'e', "GLCD_WriteString", "_GLCD_WriteString", 'G', 6, 0
+
+
+;## #	FUNCTION GLCD_GoTo
+;## #	FRAME	AUTO	(oldPoint)	size  2,	offset -3
+;## #	FRAME	AUTO	(u8Column)	size  1,	offset -1
+;## #  FRAME   ARG (__RETADR)  size   4,    offset 5
+;## #  FRAME   ARG (  u8Line)  size   1,    offset 9
+;## #  REGISTER ARG    (u8Column)   size   1,   REGISTER R1L
+;## #	ARG Size(5)	Auto Size(3)	Context Size(5)
+
+	._type	290,'S','',2
+	._type	290,'m','x',3,0
+	._type	290,'m','y',3,1
+	._type	291,'T','Point',290
+	._type	292,'x',291,2
+	._type	292,'m','u8Column',0,3
+	._type	292,'m','u8Line',0,3
+	._func	'GLCD_GoTo','G',3,292,$GLCD_GoTo,0
+	._inspect	'F', 's', "GLCD_GoTo", "$GLCD_GoTo", 'G', 8
+	.align
+	._line	395
+	.glb	$GLCD_GoTo
+$GLCD_GoTo:
+	enter	#03H
+	mov.b	R1L,-1[FB]	;  u8Column  u8Column 
+	._block
+	._var	'u8Column','A',3,-1
+	._var	'u8Line','A',3,9
+	._var	'oldPoint','A',291,-3
+	._line	397
+	mov.b	_u8CursorX,-3[FB]	;  oldPoint 
+	._line	398
+	mov.b	_u8CursorY,-2[FB]	;  oldPoint 
+	._line	399
+	mov.b	-1[FB],_u8CursorX	;  u8Column 
+	._line	400
+	mov.b	9[FB],_u8CursorY	;  u8Line 
+	._line	401
+	mov.w	5[FB],R0	;  __RETADR 
+	mov.w	5+2[FB],R2	;  __RETADR 
+	mova	-3[FB],R1	;  oldPoint 
+	mov.w	#0000H,R3
+	._inspect	'S', 'p', 12
+	push.w	#0000H
+	push.w	#0002H
+	and.w	#00ffH,R2
+	and.w	#00ffH,R3
+	pushm	R0,R2
+	pushm	R1,R3
+	._inspect	'S', 'c', "", "_bcopy", 'G', 0, 401
+	.glb	_bcopy
+	jsr.a	_bcopy
+	._inspect	'S', 'p', -12
+	add.b	#0cH,SP
+	exitd	
+E13:
+	._eblock
+M17:
+	._efunc	M17
+	._inspect	'F', 'd', "GLCD_GoTo", "$GLCD_GoTo", 'G', 395, 0, 00h, 0
+	._inspect	'F', 't', "GLCD_GoTo", 'G', 292
+	._inspect	'V', 'r', "u8CursorX", 'G', 397, 1, 0, 0, 00h
+	._inspect	'V', 'r', "u8CursorY", 'G', 398, 1, 0, 0, 00h
+	._inspect	'V', 'r', "u8CursorX", 'G', 399, 1, 0, 0, 00h
+	._inspect	'V', 'r', "u8CursorY", 'G', 400, 1, 0, 0, 00h
+	._inspect	'F', 'e', "GLCD_GoTo", "$GLCD_GoTo", 'G', 12, 0
+
+
+;## #	FUNCTION GLCD_DisplayValue
+;## #	FRAME	AUTO	(Number_String)	size 10,	offset -13
+;## #	FRAME	AUTO	(      tt)	size  1,	offset -3
+;## #	FRAME	AUTO	(Position)	size  1,	offset -2
+;## #	FRAME	AUTO	(Size_of_String)	size  1,	offset -1
+;## #  FRAME   ARG (  Number)  size   4,    offset 5
+;## #  FRAME   ARG (  Digits)  size   1,    offset 9
+;## #  FRAME   ARG (    toto)  size   6,    offset 10
+;## #	ARG Size(11)	Auto Size(13)	Context Size(5)
+
+	._type	293,'v'
+	._type	294,'x',293,3
+	._type	294,'m','Number',0,7
+	._type	294,'m','Digits',0,3
+	._type	294,'m','toto',0,284
+	._func	'GLCD_DisplayValue','G',13,294,_GLCD_DisplayValue,0
+	._inspect	'F', 's', "GLCD_DisplayValue", "_GLCD_DisplayValue", 'G', 18
+	.align
+	._line	414
+	.glb	_GLCD_DisplayValue
+_GLCD_DisplayValue:
+	enter	#0dH
+	._block
+	._var	'Number','A',7,5
+	._var	'Digits','A',3,9
+	._var	'toto','A',284,10
+	._var	'Size_of_String','A',3,-1
+	._type	295,'Z',10,3
+	._var	'Number_String','A',295,-13
+	._var	'Position','A',3,-2
+	._var	'tt','A',3,-3
+	._line	415
+	mov.b	#00H,-1[FB]	;  Size_of_String 
+	._line	417
+	mov.b	#00H,-2[FB]	;  Position 
+	._line	418
+	mov.b	#00H,-3[FB]	;  tt 
+	._line	419
+	mov.b	9[FB],-1[FB]	;  Digits  Size_of_String 
+	._line	420
+	mov.b	-1[FB],R0L	;  Size_of_String 
+	mov.b	#00H,R0H
+	mova	-13[FB],A0	;  Number_String 
+	add.w	R0,A0
+	mov.b	#00H,[A0]
+	._line	421
+	mov.b	-1[FB],A0	;  Size_of_String 
+	dec.w	A0
+	mov.b	A0,-1[FB]	;  Size_of_String 
+	._line	422
+	mov.b	#00H,-2[FB]	;  Position 
+L309:
+	._line	422
+	cmp.b	-1[FB],-2[FB]	;  Size_of_String  Position 
+	jgtu	L313
+	._line	423
+	._block
+	._line	425
+	._inspect	'S', 'p', 4
+	push.w	#0000H
+	push.w	#000aH
+	mov.w	5[FB],R0	;  Number 
+	mov.w	5+2[FB],R2	;  Number 
+	._inspect	'S', 'c', "", "__i4modU", 'G', 0, 425
+	.glb	__i4modU
+	jsr.a	__i4modU
+	add.b	#4H,SP
+	._inspect	'S', 'p', -4
+	add.w	#0030H,R0
+	adcf.w	R2
+	mov.b	-1[FB],R1L	;  Size_of_String 
+	sub.b	-2[FB],R1L	;  Position 
+	mov.b	#00H,R1H
+	mova	-13[FB],A0	;  Number_String 
+	add.w	R1,A0
+	mov.b	R0L,[A0]
+	._line	426
+	._inspect	'S', 'p', 4
+	push.w	#0000H
+	push.w	#000aH
+	mov.w	5[FB],R0	;  Number 
+	mov.w	5+2[FB],R2	;  Number 
+	._inspect	'S', 'c', "", "__i4divU", 'G', 0, 426
+	.glb	__i4divU
+	jsr.a	__i4divU
+	add.b	#4H,SP
+	._inspect	'S', 'p', -4
+	mov.w	R0,5[FB]	;  Number 
+	mov.w	R2,5+2[FB]	;  Number 
+	._eblock
+	inc.b	-2[FB]	;  Position 
+	jmp	L309
+L313:
+	._line	429
+	push.w	14[FB]	;  toto 
+	._inspect	'S', 'p', 2
+	push.w	12[FB]	;  toto 
+	._inspect	'S', 'p', 2
+	push.w	10[FB]	;  toto 
+	._inspect	'S', 'p', 2
+	._inspect	'S', 'p', 4
+	push.w	#0000H
+	pusha	-13[FB]	;  Number_String 
+	._inspect	'S', 'c', "GLCD_WriteString", "_GLCD_WriteString", 'G', 0, 429
+	jsr	_GLCD_WriteString
+	._inspect	'S', 'p', -10
+	add.b	#0aH,SP
+	._eblock
+	._line	430
+	exitd	
+E14:
+M18:
+	._efunc	M18
+	._inspect	'F', 'd', "GLCD_DisplayValue", "_GLCD_DisplayValue", 'G', 414, 0, 00h, 0
+	._inspect	'F', 't', "GLCD_DisplayValue", 'G', 294
+	._inspect	'F', 'r', "GLCD_WriteString", "_GLCD_WriteString", 'G', 429, 0, 00h, 0
+	._inspect	'F', 'e', "GLCD_DisplayValue", "_GLCD_DisplayValue", 'G', 10, 0
+
+
+;## #	FUNCTION GLCD_Rectangle
+;## #	FRAME	AUTO	(u8CurrentValue)	size  1,	offset -2
+;## #	FRAME	AUTO	(u8Xaxis1)	size  1,	offset -1
+;## #  FRAME   ARG (u8Yaxis1)  size   1,    offset 5
+;## #  FRAME   ARG (u8Xaxis2)  size   1,    offset 6
+;## #  FRAME   ARG (u8Yaxis2)  size   1,    offset 7
+;## #  REGISTER ARG    (u8Xaxis1)   size   1,   REGISTER R1L
+;## #	ARG Size(3)	Auto Size(2)	Context Size(5)
+
+	._type	296,'v'
+	._type	297,'x',296,4
+	._type	297,'m','u8Xaxis1',0,3
+	._type	297,'m','u8Yaxis1',0,3
+	._type	297,'m','u8Xaxis2',0,3
+	._type	297,'m','u8Yaxis2',0,3
+	._func	'GLCD_Rectangle','G',2,297,$GLCD_Rectangle,0
+	._inspect	'F', 's', "GLCD_Rectangle", "$GLCD_Rectangle", 'G', 7
+	.align
+	._line	441
+	.glb	$GLCD_Rectangle
+$GLCD_Rectangle:
+	enter	#02H
+	mov.b	R1L,-1[FB]	;  u8Xaxis1  u8Xaxis1 
+	._block
+	._var	'u8Xaxis1','A',3,-1
+	._var	'u8Yaxis1','A',3,5
+	._var	'u8Xaxis2','A',3,6
+	._var	'u8Yaxis2','A',3,7
+	._var	'u8CurrentValue','A',3,-2
+	._line	442
+	mov.b	#00H,-2[FB]	;  u8CurrentValue 
+	._line	445
+	mov.b	#00H,-2[FB]	;  u8CurrentValue 
+L323:
+	._line	445
+	mov.b	6[FB],R0L	;  u8Xaxis2 
+	sub.b	-1[FB],R0L	;  u8Xaxis1 
+	mov.b	#00H,R0H
+	add.w	#0001H,R0
+	mov.b	-2[FB],R1L	;  u8CurrentValue 
+	mov.b	#00H,R1H
+	cmp.w	R0,R1
+	jge	L327
+	._line	446
+	._block
+	._line	447
+	push.b	5[FB]	;  u8Yaxis1 
+	._inspect	'S', 'p', 1
+	mov.b	-1[FB],R1L	;  u8Xaxis1 
+	add.b	-2[FB],R1L	;  u8CurrentValue 
+	._inspect	'S', 'c', "LcdSetDot", "$LcdSetDot", 'G', 0, 447
+	jsr	$LcdSetDot
+	._inspect	'S', 'p', -1
+	add.b	#01H,SP
+	._line	448
+	push.b	7[FB]	;  u8Yaxis2 
+	._inspect	'S', 'p', 1
+	mov.b	-1[FB],R1L	;  u8Xaxis1 
+	add.b	-2[FB],R1L	;  u8CurrentValue 
+	._inspect	'S', 'c', "LcdSetDot", "$LcdSetDot", 'G', 0, 448
+	jsr	$LcdSetDot
+	._inspect	'S', 'p', -1
+	add.b	#01H,SP
+	._eblock
+	inc.b	-2[FB]	;  u8CurrentValue 
+	jmp	L323
+L327:
+	._line	452
+	mov.b	#00H,-2[FB]	;  u8CurrentValue 
+L335:
+	._line	452
+	mov.b	7[FB],R0L	;  u8Yaxis2 
+	sub.b	5[FB],R0L	;  u8Yaxis1 
+	mov.b	#00H,R0H
+	add.w	#0001H,R0
+	mov.b	-2[FB],R1L	;  u8CurrentValue 
+	mov.b	#00H,R1H
+	cmp.w	R0,R1
+	jge	L339
+	._line	453
+	._block
+	._line	454
+	mov.b	5[FB],R0L	;  u8Yaxis1 
+	add.b	-2[FB],R0L	;  u8CurrentValue 
+	push.b	R0L
+	._inspect	'S', 'p', 1
+	mov.b	-1[FB],R1L	;  u8Xaxis1 
+	._inspect	'S', 'c', "LcdSetDot", "$LcdSetDot", 'G', 0, 454
+	jsr	$LcdSetDot
+	._inspect	'S', 'p', -1
+	add.b	#01H,SP
+	._line	455
+	mov.b	5[FB],R0L	;  u8Yaxis1 
+	add.b	-2[FB],R0L	;  u8CurrentValue 
+	push.b	R0L
+	._inspect	'S', 'p', 1
+	mov.b	6[FB],R1L	;  u8Xaxis2 
+	._inspect	'S', 'c', "LcdSetDot", "$LcdSetDot", 'G', 0, 455
+	jsr	$LcdSetDot
+	._inspect	'S', 'p', -1
+	add.b	#01H,SP
+	._eblock
+	inc.b	-2[FB]	;  u8CurrentValue 
+	jmp	L335
+L339:
+	._eblock
+	._line	457
+	exitd	
+E15:
+M19:
+	._efunc	M19
+	._inspect	'F', 'd', "GLCD_Rectangle", "$GLCD_Rectangle", 'G', 441, 0, 00h, 0
+	._inspect	'F', 't', "GLCD_Rectangle", 'G', 297
+	._inspect	'F', 'r', "LcdSetDot", "$LcdSetDot", 'G', 447, 0, 00h, 0
+	._inspect	'F', 'r', "LcdSetDot", "$LcdSetDot", 'G', 448, 0, 00h, 0
+	._inspect	'F', 'r', "LcdSetDot", "$LcdSetDot", 'G', 454, 0, 00h, 0
+	._inspect	'F', 'r', "LcdSetDot", "$LcdSetDot", 'G', 455, 0, 00h, 0
+	._inspect	'F', 'e', "GLCD_Rectangle", "$GLCD_Rectangle", 'G', 1, 0
+
+
+;## #	FUNCTION GLCD_Circle
+;## #	FRAME	AUTO	(    s16x)	size  2,	offset -8
+;## #	FRAME	AUTO	(    s16y)	size  2,	offset -6
+;## #	FRAME	AUTO	(s16tswitch)	size  2,	offset -4
+;## #	FRAME	AUTO	(     u8d)	size  1,	offset -2
+;## #	FRAME	AUTO	(u8CenterX)	size  1,	offset -1
+;## #  FRAME   ARG (u8CenterY)  size   1,    offset 5
+;## #  FRAME   ARG (u8Radius)  size   1,    offset 6
+;## #  REGISTER ARG    (u8CenterX)   size   1,   REGISTER R1L
+;## #	ARG Size(2)	Auto Size(8)	Context Size(5)
+
+	._type	298,'v'
+	._type	299,'x',298,3
+	._type	299,'m','u8CenterX',0,3
+	._type	299,'m','u8CenterY',0,3
+	._type	299,'m','u8Radius',0,3
+	._func	'GLCD_Circle','G',8,299,$GLCD_Circle,0
+	._inspect	'F', 's', "GLCD_Circle", "$GLCD_Circle", 'G', 13
+	.align
+	._line	467
+	.glb	$GLCD_Circle
+$GLCD_Circle:
+	enter	#08H
+	mov.b	R1L,-1[FB]	;  u8CenterX  u8CenterX 
+	._block
+	._var	'u8CenterX','A',3,-1
+	._var	'u8CenterY','A',3,5
+	._var	'u8Radius','A',3,6
+	._var	's16tswitch','A',16,-4
+	._var	's16y','A',16,-6
+	._var	's16x','A',16,-8
+	._var	'u8d','A',3,-2
+	._line	468
+	mov.w	#0000H,-4[FB]	;  s16tswitch 
+	mov.w	#0000H,-6[FB]	;  s16y 
+	mov.w	#0000H,-8[FB]	;  s16x 
+	._line	471
+	mov.b	5[FB],-2[FB]	;  u8CenterY  u8d 
+	sub.b	-1[FB],-2[FB]	;  u8CenterX  u8d 
+	._line	472
+	mov.b	6[FB],R0L	;  u8Radius 
+	mov.b	R0L,-6[FB]	;  s16y 
+	mov.b	#00H,-6+1[FB]	;  s16y 
+	._line	473
+	mov.b	6[FB],R0L	;  u8Radius 
+	mov.b	#00H,R0H
+	shl.w	#01H,R0
+	mov.w	#0003H,R1
+	sub.w	R0,R1
+	mov.w	R1,-4[FB]	;  s16tswitch 
+	._line	474
+L351:
+	cmp.w	-6[FB],-8[FB]	;  s16y  s16x 
+	jgt	L353
+	._line	475
+	._block
+	._line	476
+	mov.b	5[FB],A0	;  u8CenterY 
+	add.w	-6[FB],A0	;  s16y 
+	mov.b	A0,R0L
+	push.b	R0L
+	._inspect	'S', 'p', 1
+	mov.b	-1[FB],A0	;  u8CenterX 
+	add.w	-8[FB],A0	;  s16x 
+	mov.b	A0,R1L
+	._inspect	'S', 'c', "LcdSetDot", "$LcdSetDot", 'G', 0, 476
+	jsr	$LcdSetDot
+	._inspect	'S', 'p', -1
+	add.b	#01H,SP
+	._line	477
+	mov.b	5[FB],A0	;  u8CenterY 
+	sub.w	-6[FB],A0	;  s16y 
+	mov.b	A0,R0L
+	push.b	R0L
+	._inspect	'S', 'p', 1
+	mov.b	-1[FB],A0	;  u8CenterX 
+	add.w	-8[FB],A0	;  s16x 
+	mov.b	A0,R1L
+	._inspect	'S', 'c', "LcdSetDot", "$LcdSetDot", 'G', 0, 477
+	jsr	$LcdSetDot
+	._inspect	'S', 'p', -1
+	add.b	#01H,SP
+	._line	479
+	mov.b	5[FB],A0	;  u8CenterY 
+	add.w	-6[FB],A0	;  s16y 
+	mov.b	A0,R0L
+	push.b	R0L
+	._inspect	'S', 'p', 1
+	mov.b	-1[FB],A0	;  u8CenterX 
+	sub.w	-8[FB],A0	;  s16x 
+	mov.b	A0,R1L
+	._inspect	'S', 'c', "LcdSetDot", "$LcdSetDot", 'G', 0, 479
+	jsr	$LcdSetDot
+	._inspect	'S', 'p', -1
+	add.b	#01H,SP
+	._line	480
+	mov.b	5[FB],A0	;  u8CenterY 
+	sub.w	-6[FB],A0	;  s16y 
+	mov.b	A0,R0L
+	push.b	R0L
+	._inspect	'S', 'p', 1
+	mov.b	-1[FB],A0	;  u8CenterX 
+	sub.w	-8[FB],A0	;  s16x 
+	mov.b	A0,R1L
+	._inspect	'S', 'c', "LcdSetDot", "$LcdSetDot", 'G', 0, 480
+	jsr	$LcdSetDot
+	._inspect	'S', 'p', -1
+	add.b	#01H,SP
+	._line	482
+	mov.b	5[FB],A0	;  u8CenterY 
+	add.w	-8[FB],A0	;  s16x 
+	mov.b	A0,R0L
+	push.b	R0L
+	._inspect	'S', 'p', 1
+	mov.b	5[FB],A0	;  u8CenterY 
+	add.w	-6[FB],A0	;  s16y 
+	mov.b	-2[FB],R0L	;  u8d 
+	mov.b	#00H,R0H
+	sub.w	R0,A0
+	mov.b	A0,R1L
+	._inspect	'S', 'c', "LcdSetDot", "$LcdSetDot", 'G', 0, 482
+	jsr	$LcdSetDot
+	._inspect	'S', 'p', -1
+	add.b	#01H,SP
+	._line	483
+	mov.b	5[FB],A0	;  u8CenterY 
+	sub.w	-8[FB],A0	;  s16x 
+	mov.b	A0,R0L
+	push.b	R0L
+	._inspect	'S', 'p', 1
+	mov.b	5[FB],A0	;  u8CenterY 
+	add.w	-6[FB],A0	;  s16y 
+	mov.b	-2[FB],R0L	;  u8d 
+	mov.b	#00H,R0H
+	sub.w	R0,A0
+	mov.b	A0,R1L
+	._inspect	'S', 'c', "LcdSetDot", "$LcdSetDot", 'G', 0, 483
+	jsr	$LcdSetDot
+	._inspect	'S', 'p', -1
+	add.b	#01H,SP
+	._line	484
+	mov.b	5[FB],A0	;  u8CenterY 
+	add.w	-8[FB],A0	;  s16x 
+	mov.b	A0,R0L
+	push.b	R0L
+	._inspect	'S', 'p', 1
+	mov.b	5[FB],A0	;  u8CenterY 
+	sub.w	-6[FB],A0	;  s16y 
+	mov.b	-2[FB],R0L	;  u8d 
+	mov.b	#00H,R0H
+	sub.w	R0,A0
+	mov.b	A0,R1L
+	._inspect	'S', 'c', "LcdSetDot", "$LcdSetDot", 'G', 0, 484
+	jsr	$LcdSetDot
+	._inspect	'S', 'p', -1
+	add.b	#01H,SP
+	._line	485
+	mov.b	5[FB],A0	;  u8CenterY 
+	sub.w	-8[FB],A0	;  s16x 
+	mov.b	A0,R0L
+	push.b	R0L
+	._inspect	'S', 'p', 1
+	mov.b	5[FB],A0	;  u8CenterY 
+	sub.w	-6[FB],A0	;  s16y 
+	mov.b	-2[FB],R0L	;  u8d 
+	mov.b	#00H,R0H
+	sub.w	R0,A0
+	mov.b	A0,R1L
+	._inspect	'S', 'c', "LcdSetDot", "$LcdSetDot", 'G', 0, 485
+	jsr	$LcdSetDot
+	._inspect	'S', 'p', -1
+	add.b	#01H,SP
+	._line	487
+	cmp.w	#0000H,-4[FB]	;  s16tswitch 
+	jpz	L361
+	._line	488
+	mov.w	-8[FB],R0	;  s16x 
+	shl.w	#02H,R0
+	add.w	#0006H,R0
+	add.w	R0,-4[FB]	;  s16tswitch 
+	jmp	L363
+	._line	489
+L361:
+	._line	490
+	._block
+	._line	491
+	mov.w	-8[FB],R0	;  s16x 
+	sub.w	-6[FB],R0	;  s16y 
+	shl.w	#02H,R0
+	add.w	#000aH,R0
+	add.w	R0,-4[FB]	;  s16tswitch 
+	._line	492
+	add.w	#-1,-6[FB]	;  s16y 
+	._eblock
+	._line	493
+L363:
+	._line	495
+	add.w	#0001H,-8[FB]	;  s16x 
+	._eblock
+	._line	496
+	jmp	L351
+L353:
+	._eblock
+	._line	497
+	exitd	
+E16:
+M20:
+	._efunc	M20
+	._inspect	'F', 'd', "GLCD_Circle", "$GLCD_Circle", 'G', 467, 0, 00h, 0
+	._inspect	'F', 't', "GLCD_Circle", 'G', 299
+	._inspect	'F', 'r', "LcdSetDot", "$LcdSetDot", 'G', 476, 0, 00h, 0
+	._inspect	'F', 'r', "LcdSetDot", "$LcdSetDot", 'G', 477, 0, 00h, 0
+	._inspect	'F', 'r', "LcdSetDot", "$LcdSetDot", 'G', 479, 0, 00h, 0
+	._inspect	'F', 'r', "LcdSetDot", "$LcdSetDot", 'G', 480, 0, 00h, 0
+	._inspect	'F', 'r', "LcdSetDot", "$LcdSetDot", 'G', 482, 0, 00h, 0
+	._inspect	'F', 'r', "LcdSetDot", "$LcdSetDot", 'G', 483, 0, 00h, 0
+	._inspect	'F', 'r', "LcdSetDot", "$LcdSetDot", 'G', 484, 0, 00h, 0
+	._inspect	'F', 'r', "LcdSetDot", "$LcdSetDot", 'G', 485, 0, 00h, 0
+	._inspect	'F', 'e', "GLCD_Circle", "$GLCD_Circle", 'G', 1, 0
+
+
+;## #	FUNCTION GLCD_getXY
+;## #	FRAME	AUTO	(       p)	size  2,	offset -2
+;## #  FRAME   ARG (__RETADR)  size   4,    offset 5
+;## #	ARG Size(4)	Auto Size(2)	Context Size(5)
+
+	._type	300,'v'
+	._type	301,'x',291,1
+	._type	301,'m','',0,300
+	._func	'GLCD_getXY','G',2,301,_GLCD_getXY,0
+	._inspect	'F', 's', "GLCD_getXY", "_GLCD_getXY", 'G', 7
+	.align
+	._line	499
+	.glb	_GLCD_getXY
+_GLCD_getXY:
+	enter	#02H
+	._block
+	._var	'p','A',291,-2
+	._line	501
+	mov.b	_u8CursorX,-2[FB]	;  p 
+	._line	502
+	mov.b	_u8CursorY,-1[FB]	;  p 
+	._line	503
+	mov.w	5[FB],R0	;  __RETADR 
+	mov.w	5+2[FB],R2	;  __RETADR 
+	mova	-2[FB],R1	;  p 
+	mov.w	#0000H,R3
+	._inspect	'S', 'p', 12
+	push.w	#0000H
+	push.w	#0002H
+	and.w	#00ffH,R2
+	and.w	#00ffH,R3
+	pushm	R0,R2
+	pushm	R1,R3
+	._inspect	'S', 'c', "", "_bcopy", 'G', 0, 503
+	.glb	_bcopy
+	jsr.a	_bcopy
+	._inspect	'S', 'p', -12
+	add.b	#0cH,SP
+	exitd	
+E17:
+	._eblock
+M21:
+	._efunc	M21
+	._inspect	'F', 'd', "GLCD_getXY", "_GLCD_getXY", 'G', 499, 0, 00h, 0
+	._inspect	'F', 't', "GLCD_getXY", 'G', 301
+	._inspect	'V', 'r', "u8CursorX", 'G', 501, 1, 0, 0, 00h
+	._inspect	'V', 'r', "u8CursorY", 'G', 502, 1, 0, 0, 00h
+	._inspect	'F', 'e', "GLCD_getXY", "_GLCD_getXY", 'G', 12, 0
+
+	.glb	_Initialise
+	.glb	_FontSystem3x6
+	.glb	_FontSystem5x8
+	.glb	_FontSystem7x8
+
+	.SECTION	data_NE,DATA,align
+	._inspect	'U', 1, "data_NE", "data_NE", 0
+	.glb	_Font_System5x8
+_Font_System5x8:
+	.blkb	6
+	.glb	_Font_System7x8
+_Font_System7x8:
+	.blkb	6
+	.glb	_Font_System3x6
+_Font_System3x6:
+	.blkb	6
+
+	.SECTION	data_NEI,ROMDATA
+	._inspect	'U', 1, "data_NEI", "data_NEI", 0
+;## # init data of Font_System5x8.
+	.byte	05H
+	.byte	08H
+	.word	(_FontSystem5x8 ) & 0FFFFH
+	.word	(_FontSystem5x8 & 0FF0000H ) >> 16
+;## # init data of Font_System7x8.
+	.byte	07H
+	.byte	08H
+	.word	(_FontSystem7x8 ) & 0FFFFH
+	.word	(_FontSystem7x8 & 0FF0000H ) >> 16
+;## # init data of Font_System3x6.
+	.byte	03H
+	.byte	06H
+	.word	(_FontSystem3x6 ) & 0FFFFH
+	.word	(_FontSystem3x6 & 0FF0000H ) >> 16
+
+	.SECTION	bss_NO,DATA
+	._inspect	'U', 3, "bss_NO", "bss_NO", 0
+	.glb	_u8CursorX
+_u8CursorX:
+	.blkb	1
+	.glb	_u8CursorY
+_u8CursorY:
+	.blkb	1
+;#################################
+;###  STATIC DATA INFORMATION  ###
+;#################################
+	._var	'DA0_ADDR','S',3,_DA0_ADDR
+	._var	'DA1_ADDR','S',3,_DA1_ADDR
+	._var	'UDF_ADDR','S',3,_UDF_ADDR
+	._var	'TA11_ADDR','S',5,_TA11_ADDR
+	._var	'TA21_ADDR','S',5,_TA21_ADDR
+	._var	'TA41_ADDR','S',5,_TA41_ADDR
+	._var	'TB3_ADDR','S',5,_TB3_ADDR
+	._var	'TB4_ADDR','S',5,_TB4_ADDR
+	._var	'TB5_ADDR','S',5,_TB5_ADDR
+	._var	'TA0_ADDR','S',5,_TA0_ADDR
+	._var	'TA1_ADDR','S',5,_TA1_ADDR
+	._var	'TA2_ADDR','S',5,_TA2_ADDR
+	._var	'TA3_ADDR','S',5,_TA3_ADDR
+	._var	'TA4_ADDR','S',5,_TA4_ADDR
+	._var	'TB0_ADDR','S',5,_TB0_ADDR
+	._var	'TB1_ADDR','S',5,_TB1_ADDR
+	._var	'TB2_ADDR','S',5,_TB2_ADDR
+	._type	304,'g','B0',0,1,3
+	._type	305,'g','B1',0,1,3
+	._type	306,'g','B2',0,1,3
+	._type	307,'g','B3',0,1,3
+	._type	308,'g','B4',0,1,3
+	._type	309,'g','B5',0,1,3
+	._type	310,'g','B6',0,1,3
+	._type	311,'g','B7',0,1,3
+	._type	303,'S','BIT_DEF',1
+	._type	303,'m','B0',304,0
+	._type	303,'m','B1',305,1
+	._type	303,'m','B2',306,2
+	._type	303,'m','B3',307,3
+	._type	303,'m','B4',308,4
+	._type	303,'m','B5',309,5
+	._type	303,'m','B6',310,6
+	._type	303,'m','B7',311,7
+	._type	302,'U','BYTE_DEF',1
+	._type	302,'m','BIT',303,0
+	._type	302,'m','BYTE',3,0
+	._var	'PM0_ADDR','S',302,_PM0_ADDR
+	._var	'PM1_ADDR','S',302,_PM1_ADDR
+	._var	'CM0_ADDR','S',302,_CM0_ADDR
+	._var	'CM1_ADDR','S',302,_CM1_ADDR
+	._var	'CSR_ADDR','S',302,_CSR_ADDR
+	._var	'AIER_ADDR','S',302,_AIER_ADDR
+	._var	'PRCR_ADDR','S',302,_PRCR_ADDR
+	._var	'DBR_ADDR','S',302,_DBR_ADDR
+	._var	'CM2_ADDR','S',302,_CM2_ADDR
+	._var	'WDTS_ADDR','S',302,_WDTS_ADDR
+	._var	'WDC_ADDR','S',302,_WDC_ADDR
+	._var	'CSE_ADDR','S',302,_CSE_ADDR
+	._var	'PLC0_ADDR','S',302,_PLC0_ADDR
+	._var	'PM2_ADDR','S',302,_PM2_ADDR
+	._var	'DM0CON_ADDR','S',302,_DM0CON_ADDR
+	._var	'DM1CON_ADDR','S',302,_DM1CON_ADDR
+	._var	'INT3IC_ADDR','S',302,_INT3IC_ADDR
+	._var	'TB5IC_ADDR','S',302,_TB5IC_ADDR
+	._var	'TB4IC_ADDR','S',302,_TB4IC_ADDR
+	._var	'TB3IC_ADDR','S',302,_TB3IC_ADDR
+	._var	'S4IC_ADDR','S',302,_S4IC_ADDR
+	._var	'S3IC_ADDR','S',302,_S3IC_ADDR
+	._var	'INT5IC_ADDR','S',302,_INT5IC_ADDR
+	._var	'INT4IC_ADDR','S',302,_INT4IC_ADDR
+	._var	'BCNIC_ADDR','S',302,_BCNIC_ADDR
+	._var	'DM0IC_ADDR','S',302,_DM0IC_ADDR
+	._var	'DM1IC_ADDR','S',302,_DM1IC_ADDR
+	._var	'KUPIC_ADDR','S',302,_KUPIC_ADDR
+	._var	'ADIC_ADDR','S',302,_ADIC_ADDR
+	._var	'S2TIC_ADDR','S',302,_S2TIC_ADDR
+	._var	'S2RIC_ADDR','S',302,_S2RIC_ADDR
+	._var	'S0TIC_ADDR','S',302,_S0TIC_ADDR
+	._var	'S0RIC_ADDR','S',302,_S0RIC_ADDR
+	._var	'S1TIC_ADDR','S',302,_S1TIC_ADDR
+	._var	'S1RIC_ADDR','S',302,_S1RIC_ADDR
+	._var	'TA0IC_ADDR','S',302,_TA0IC_ADDR
+	._var	'TA1IC_ADDR','S',302,_TA1IC_ADDR
+	._var	'TA2IC_ADDR','S',302,_TA2IC_ADDR
+	._var	'TA3IC_ADDR','S',302,_TA3IC_ADDR
+	._var	'TA4IC_ADDR','S',302,_TA4IC_ADDR
+	._var	'TB0IC_ADDR','S',302,_TB0IC_ADDR
+	._var	'TB1IC_ADDR','S',302,_TB1IC_ADDR
+	._var	'TB2IC_ADDR','S',302,_TB2IC_ADDR
+	._var	'INT0IC_ADDR','S',302,_INT0IC_ADDR
+	._var	'INT1IC_ADDR','S',302,_INT1IC_ADDR
+	._var	'INT2IC_ADDR','S',302,_INT2IC_ADDR
+	._var	'FMR1_ADDR','S',302,_FMR1_ADDR
+	._var	'FMR0_ADDR','S',302,_FMR0_ADDR
+	._var	'AIER2_ADDR','S',302,_AIER2_ADDR
+	._var	'PCLKR_ADDR','S',302,_PCLKR_ADDR
+	._var	'TBSR_ADDR','S',302,_TBSR_ADDR
+	._var	'INVC0_ADDR','S',302,_INVC0_ADDR
+	._var	'INVC1_ADDR','S',302,_INVC1_ADDR
+	._var	'IDB0_ADDR','S',302,_IDB0_ADDR
+	._var	'IDB1_ADDR','S',302,_IDB1_ADDR
+	._var	'DTT_ADDR','S',302,_DTT_ADDR
+	._var	'ICTB2_ADDR','S',302,_ICTB2_ADDR
+	._var	'TB3MR_ADDR','S',302,_TB3MR_ADDR
+	._var	'TB4MR_ADDR','S',302,_TB4MR_ADDR
+	._var	'TB5MR_ADDR','S',302,_TB5MR_ADDR
+	._var	'IFSR2A_ADDR','S',302,_IFSR2A_ADDR
+	._var	'IFSR_ADDR','S',302,_IFSR_ADDR
+	._var	'S3TRR_ADDR','S',302,_S3TRR_ADDR
+	._var	'S3C_ADDR','S',302,_S3C_ADDR
+	._var	'S3BRG_ADDR','S',302,_S3BRG_ADDR
+	._var	'S4TRR_ADDR','S',302,_S4TRR_ADDR
+	._var	'S4C_ADDR','S',302,_S4C_ADDR
+	._var	'S4BRG_ADDR','S',302,_S4BRG_ADDR
+	._var	'U0SMR4_ADDR','S',302,_U0SMR4_ADDR
+	._var	'U0SMR3_ADDR','S',302,_U0SMR3_ADDR
+	._var	'U0SMR2_ADDR','S',302,_U0SMR2_ADDR
+	._var	'U0SMR_ADDR','S',302,_U0SMR_ADDR
+	._var	'U1SMR4_ADDR','S',302,_U1SMR4_ADDR
+	._var	'U1SMR3_ADDR','S',302,_U1SMR3_ADDR
+	._var	'U1SMR2_ADDR','S',302,_U1SMR2_ADDR
+	._var	'U1SMR_ADDR','S',302,_U1SMR_ADDR
+	._var	'U2SMR4_ADDR','S',302,_U2SMR4_ADDR
+	._var	'U2SMR3_ADDR','S',302,_U2SMR3_ADDR
+	._var	'U2SMR2_ADDR','S',302,_U2SMR2_ADDR
+	._var	'U2SMR_ADDR','S',302,_U2SMR_ADDR
+	._var	'U2MR_ADDR','S',302,_U2MR_ADDR
+	._var	'U2BRG_ADDR','S',302,_U2BRG_ADDR
+	._var	'U2C0_ADDR','S',302,_U2C0_ADDR
+	._var	'U2C1_ADDR','S',302,_U2C1_ADDR
+	._var	'TABSR_ADDR','S',302,_TABSR_ADDR
+	._var	'CPSRF_ADDR','S',302,_CPSRF_ADDR
+	._var	'ONSF_ADDR','S',302,_ONSF_ADDR
+	._var	'TRGSR_ADDR','S',302,_TRGSR_ADDR
+	._var	'TA0MR_ADDR','S',302,_TA0MR_ADDR
+	._var	'TA1MR_ADDR','S',302,_TA1MR_ADDR
+	._var	'TA2MR_ADDR','S',302,_TA2MR_ADDR
+	._var	'TA3MR_ADDR','S',302,_TA3MR_ADDR
+	._var	'TA4MR_ADDR','S',302,_TA4MR_ADDR
+	._var	'TB0MR_ADDR','S',302,_TB0MR_ADDR
+	._var	'TB1MR_ADDR','S',302,_TB1MR_ADDR
+	._var	'TB2MR_ADDR','S',302,_TB2MR_ADDR
+	._var	'TB2SC_ADDR','S',302,_TB2SC_ADDR
+	._var	'U0MR_ADDR','S',302,_U0MR_ADDR
+	._var	'U0BRG_ADDR','S',302,_U0BRG_ADDR
+	._var	'U0C0_ADDR','S',302,_U0C0_ADDR
+	._var	'U0C1_ADDR','S',302,_U0C1_ADDR
+	._var	'U1MR_ADDR','S',302,_U1MR_ADDR
+	._var	'U1BRG_ADDR','S',302,_U1BRG_ADDR
+	._var	'U1C0_ADDR','S',302,_U1C0_ADDR
+	._var	'U1C1_ADDR','S',302,_U1C1_ADDR
+	._var	'UCON_ADDR','S',302,_UCON_ADDR
+	._var	'FIDR_ADDR','S',302,_FIDR_ADDR
+	._var	'DM0SL_ADDR','S',302,_DM0SL_ADDR
+	._var	'DM1SL_ADDR','S',302,_DM1SL_ADDR
+	._var	'CRCIN_ADDR','S',302,_CRCIN_ADDR
+	._var	'ADCON2_ADDR','S',302,_ADCON2_ADDR
+	._var	'ADCON0_ADDR','S',302,_ADCON0_ADDR
+	._var	'ADCON1_ADDR','S',302,_ADCON1_ADDR
+	._var	'DACON_ADDR','S',302,_DACON_ADDR
+	._var	'PC14_ADDR','S',302,_PC14_ADDR
+	._var	'PUR3_ADDR','S',302,_PUR3_ADDR
+	._var	'P0_ADDR','S',302,_P0_ADDR
+	._var	'P1_ADDR','S',302,_P1_ADDR
+	._var	'P0D_ADDR','S',302,_P0D_ADDR
+	._var	'P1D_ADDR','S',302,_P1D_ADDR
+	._var	'P2_ADDR','S',302,_P2_ADDR
+	._var	'P3_ADDR','S',302,_P3_ADDR
+	._var	'P2D_ADDR','S',302,_P2D_ADDR
+	._var	'P3D_ADDR','S',302,_P3D_ADDR
+	._var	'P4_ADDR','S',302,_P4_ADDR
+	._var	'P5_ADDR','S',302,_P5_ADDR
+	._var	'P4D_ADDR','S',302,_P4D_ADDR
+	._var	'P5D_ADDR','S',302,_P5D_ADDR
+	._var	'P6_ADDR','S',302,_P6_ADDR
+	._var	'P7_ADDR','S',302,_P7_ADDR
+	._var	'P6D_ADDR','S',302,_P6D_ADDR
+	._var	'P7D_ADDR','S',302,_P7D_ADDR
+	._var	'P8_ADDR','S',302,_P8_ADDR
+	._var	'P9_ADDR','S',302,_P9_ADDR
+	._var	'P8D_ADDR','S',302,_P8D_ADDR
+	._var	'P9D_ADDR','S',302,_P9D_ADDR
+	._var	'P10_ADDR','S',302,_P10_ADDR
+	._var	'P11_ADDR','S',302,_P11_ADDR
+	._var	'P10D_ADDR','S',302,_P10D_ADDR
+	._var	'P1D1_ADDR','S',302,_P1D1_ADDR
+	._var	'P12_ADDR','S',302,_P12_ADDR
+	._var	'P13_ADDR','S',302,_P13_ADDR
+	._var	'P1D2_ADDR','S',302,_P1D2_ADDR
+	._var	'P1D3_ADDR','S',302,_P1D3_ADDR
+	._var	'PUR0_ADDR','S',302,_PUR0_ADDR
+	._var	'PUR1_ADDR','S',302,_PUR1_ADDR
+	._var	'PUR2_ADDR','S',302,_PUR2_ADDR
+	._var	'PCR_ADDR','S',302,_PCR_ADDR
+	._type	314,'g','B0',0,1,3
+	._type	315,'g','B1',0,1,3
+	._type	316,'g','B2',0,1,3
+	._type	317,'g','B3',0,1,3
+	._type	318,'g','B4',0,1,3
+	._type	319,'g','B5',0,1,3
+	._type	320,'g','B6',0,1,3
+	._type	321,'g','B7',0,1,3
+	._type	322,'g','B8',0,1,3
+	._type	323,'g','B9',0,1,3
+	._type	324,'g','B10',0,1,3
+	._type	325,'g','B11',0,1,3
+	._type	326,'g','B12',0,1,3
+	._type	327,'g','B13',0,1,3
+	._type	328,'g','B14',0,1,3
+	._type	329,'g','B15',0,1,3
+	._type	313,'S','',2
+	._type	313,'m','B0',314,0
+	._type	313,'m','B1',315,1
+	._type	313,'m','B2',316,2
+	._type	313,'m','B3',317,3
+	._type	313,'m','B4',318,4
+	._type	313,'m','B5',319,5
+	._type	313,'m','B6',320,6
+	._type	313,'m','B7',321,7
+	._type	313,'m','B8',322,8
+	._type	313,'m','B9',323,9
+	._type	313,'m','B10',324,10
+	._type	313,'m','B11',325,11
+	._type	313,'m','B12',326,12
+	._type	313,'m','B13',327,13
+	._type	313,'m','B14',328,14
+	._type	313,'m','B15',329,15
+	._type	330,'S','',2
+	._type	330,'m','LOW',3,0
+	._type	330,'m','HIGH',3,1
+	._type	312,'U','',2
+	._type	312,'m','BIT',313,0
+	._type	312,'m','BYTE',330,0
+	._type	312,'m','WORD',5,0
+	._var	'TCR0_ADDR','S',312,_TCR0_ADDR
+	._type	333,'g','B0',0,1,3
+	._type	334,'g','B1',0,1,3
+	._type	335,'g','B2',0,1,3
+	._type	336,'g','B3',0,1,3
+	._type	337,'g','B4',0,1,3
+	._type	338,'g','B5',0,1,3
+	._type	339,'g','B6',0,1,3
+	._type	340,'g','B7',0,1,3
+	._type	341,'g','B8',0,1,3
+	._type	342,'g','B9',0,1,3
+	._type	343,'g','B10',0,1,3
+	._type	344,'g','B11',0,1,3
+	._type	345,'g','B12',0,1,3
+	._type	346,'g','B13',0,1,3
+	._type	347,'g','B14',0,1,3
+	._type	348,'g','B15',0,1,3
+	._type	332,'S','',2
+	._type	332,'m','B0',333,0
+	._type	332,'m','B1',334,1
+	._type	332,'m','B2',335,2
+	._type	332,'m','B3',336,3
+	._type	332,'m','B4',337,4
+	._type	332,'m','B5',338,5
+	._type	332,'m','B6',339,6
+	._type	332,'m','B7',340,7
+	._type	332,'m','B8',341,8
+	._type	332,'m','B9',342,9
+	._type	332,'m','B10',343,10
+	._type	332,'m','B11',344,11
+	._type	332,'m','B12',345,12
+	._type	332,'m','B13',346,13
+	._type	332,'m','B14',347,14
+	._type	332,'m','B15',348,15
+	._type	349,'S','',2
+	._type	349,'m','LOW',3,0
+	._type	349,'m','HIGH',3,1
+	._type	331,'U','',2
+	._type	331,'m','BIT',332,0
+	._type	331,'m','BYTE',349,0
+	._type	331,'m','WORD',5,0
+	._var	'TCR1_ADDR','S',331,_TCR1_ADDR
+	._type	352,'g','B0',0,1,3
+	._type	353,'g','B1',0,1,3
+	._type	354,'g','B2',0,1,3
+	._type	355,'g','B3',0,1,3
+	._type	356,'g','B4',0,1,3
+	._type	357,'g','B5',0,1,3
+	._type	358,'g','B6',0,1,3
+	._type	359,'g','B7',0,1,3
+	._type	360,'g','B8',0,1,3
+	._type	361,'g','B9',0,1,3
+	._type	362,'g','B10',0,1,3
+	._type	363,'g','B11',0,1,3
+	._type	364,'g','B12',0,1,3
+	._type	365,'g','B13',0,1,3
+	._type	366,'g','B14',0,1,3
+	._type	367,'g','B15',0,1,3
+	._type	351,'S','',2
+	._type	351,'m','B0',352,0
+	._type	351,'m','B1',353,1
+	._type	351,'m','B2',354,2
+	._type	351,'m','B3',355,3
+	._type	351,'m','B4',356,4
+	._type	351,'m','B5',357,5
+	._type	351,'m','B6',358,6
+	._type	351,'m','B7',359,7
+	._type	351,'m','B8',360,8
+	._type	351,'m','B9',361,9
+	._type	351,'m','B10',362,10
+	._type	351,'m','B11',363,11
+	._type	351,'m','B12',364,12
+	._type	351,'m','B13',365,13
+	._type	351,'m','B14',366,14
+	._type	351,'m','B15',367,15
+	._type	368,'S','',2
+	._type	368,'m','LOW',3,0
+	._type	368,'m','HIGH',3,1
+	._type	350,'U','',2
+	._type	350,'m','BIT',351,0
+	._type	350,'m','BYTE',368,0
+	._type	350,'m','WORD',5,0
+	._var	'U0TB_ADDR','S',350,_U0TB_ADDR
+	._type	371,'g','B0',0,1,3
+	._type	372,'g','B1',0,1,3
+	._type	373,'g','B2',0,1,3
+	._type	374,'g','B3',0,1,3
+	._type	375,'g','B4',0,1,3
+	._type	376,'g','B5',0,1,3
+	._type	377,'g','B6',0,1,3
+	._type	378,'g','B7',0,1,3
+	._type	379,'g','B8',0,1,3
+	._type	380,'g','B9',0,1,3
+	._type	381,'g','B10',0,1,3
+	._type	382,'g','B11',0,1,3
+	._type	383,'g','B12',0,1,3
+	._type	384,'g','B13',0,1,3
+	._type	385,'g','B14',0,1,3
+	._type	386,'g','B15',0,1,3
+	._type	370,'S','',2
+	._type	370,'m','B0',371,0
+	._type	370,'m','B1',372,1
+	._type	370,'m','B2',373,2
+	._type	370,'m','B3',374,3
+	._type	370,'m','B4',375,4
+	._type	370,'m','B5',376,5
+	._type	370,'m','B6',377,6
+	._type	370,'m','B7',378,7
+	._type	370,'m','B8',379,8
+	._type	370,'m','B9',380,9
+	._type	370,'m','B10',381,10
+	._type	370,'m','B11',382,11
+	._type	370,'m','B12',383,12
+	._type	370,'m','B13',384,13
+	._type	370,'m','B14',385,14
+	._type	370,'m','B15',386,15
+	._type	387,'S','',2
+	._type	387,'m','LOW',3,0
+	._type	387,'m','HIGH',3,1
+	._type	369,'U','',2
+	._type	369,'m','BIT',370,0
+	._type	369,'m','BYTE',387,0
+	._type	369,'m','WORD',5,0
+	._var	'U1TB_ADDR','S',369,_U1TB_ADDR
+	._type	390,'g','B0',0,1,3
+	._type	391,'g','B1',0,1,3
+	._type	392,'g','B2',0,1,3
+	._type	393,'g','B3',0,1,3
+	._type	394,'g','B4',0,1,3
+	._type	395,'g','B5',0,1,3
+	._type	396,'g','B6',0,1,3
+	._type	397,'g','B7',0,1,3
+	._type	398,'g','B8',0,1,3
+	._type	399,'g','B9',0,1,3
+	._type	400,'g','B10',0,1,3
+	._type	401,'g','B11',0,1,3
+	._type	402,'g','B12',0,1,3
+	._type	403,'g','B13',0,1,3
+	._type	404,'g','B14',0,1,3
+	._type	405,'g','B15',0,1,3
+	._type	389,'S','',2
+	._type	389,'m','B0',390,0
+	._type	389,'m','B1',391,1
+	._type	389,'m','B2',392,2
+	._type	389,'m','B3',393,3
+	._type	389,'m','B4',394,4
+	._type	389,'m','B5',395,5
+	._type	389,'m','B6',396,6
+	._type	389,'m','B7',397,7
+	._type	389,'m','B8',398,8
+	._type	389,'m','B9',399,9
+	._type	389,'m','B10',400,10
+	._type	389,'m','B11',401,11
+	._type	389,'m','B12',402,12
+	._type	389,'m','B13',403,13
+	._type	389,'m','B14',404,14
+	._type	389,'m','B15',405,15
+	._type	406,'S','',2
+	._type	406,'m','LOW',3,0
+	._type	406,'m','HIGH',3,1
+	._type	388,'U','',2
+	._type	388,'m','BIT',389,0
+	._type	388,'m','BYTE',406,0
+	._type	388,'m','WORD',5,0
+	._var	'U2TB_ADDR','S',388,_U2TB_ADDR
+	._type	409,'g','B0',0,1,3
+	._type	410,'g','B1',0,1,3
+	._type	411,'g','B2',0,1,3
+	._type	412,'g','B3',0,1,3
+	._type	413,'g','B4',0,1,3
+	._type	414,'g','B5',0,1,3
+	._type	415,'g','B6',0,1,3
+	._type	416,'g','B7',0,1,3
+	._type	417,'g','B8',0,1,3
+	._type	418,'g','B9',0,1,3
+	._type	419,'g','B10',0,1,3
+	._type	420,'g','B11',0,1,3
+	._type	421,'g','B12',0,1,3
+	._type	422,'g','B13',0,1,3
+	._type	423,'g','B14',0,1,3
+	._type	424,'g','B15',0,1,3
+	._type	408,'S','',2
+	._type	408,'m','B0',409,0
+	._type	408,'m','B1',410,1
+	._type	408,'m','B2',411,2
+	._type	408,'m','B3',412,3
+	._type	408,'m','B4',413,4
+	._type	408,'m','B5',414,5
+	._type	408,'m','B6',415,6
+	._type	408,'m','B7',416,7
+	._type	408,'m','B8',417,8
+	._type	408,'m','B9',418,9
+	._type	408,'m','B10',419,10
+	._type	408,'m','B11',420,11
+	._type	408,'m','B12',421,12
+	._type	408,'m','B13',422,13
+	._type	408,'m','B14',423,14
+	._type	408,'m','B15',424,15
+	._type	425,'S','',2
+	._type	425,'m','LOW',3,0
+	._type	425,'m','HIGH',3,1
+	._type	407,'U','',2
+	._type	407,'m','BIT',408,0
+	._type	407,'m','BYTE',425,0
+	._type	407,'m','WORD',5,0
+	._var	'U0RB_ADDR','S',407,_U0RB_ADDR
+	._type	428,'g','B0',0,1,3
+	._type	429,'g','B1',0,1,3
+	._type	430,'g','B2',0,1,3
+	._type	431,'g','B3',0,1,3
+	._type	432,'g','B4',0,1,3
+	._type	433,'g','B5',0,1,3
+	._type	434,'g','B6',0,1,3
+	._type	435,'g','B7',0,1,3
+	._type	436,'g','B8',0,1,3
+	._type	437,'g','B9',0,1,3
+	._type	438,'g','B10',0,1,3
+	._type	439,'g','B11',0,1,3
+	._type	440,'g','B12',0,1,3
+	._type	441,'g','B13',0,1,3
+	._type	442,'g','B14',0,1,3
+	._type	443,'g','B15',0,1,3
+	._type	427,'S','',2
+	._type	427,'m','B0',428,0
+	._type	427,'m','B1',429,1
+	._type	427,'m','B2',430,2
+	._type	427,'m','B3',431,3
+	._type	427,'m','B4',432,4
+	._type	427,'m','B5',433,5
+	._type	427,'m','B6',434,6
+	._type	427,'m','B7',435,7
+	._type	427,'m','B8',436,8
+	._type	427,'m','B9',437,9
+	._type	427,'m','B10',438,10
+	._type	427,'m','B11',439,11
+	._type	427,'m','B12',440,12
+	._type	427,'m','B13',441,13
+	._type	427,'m','B14',442,14
+	._type	427,'m','B15',443,15
+	._type	444,'S','',2
+	._type	444,'m','LOW',3,0
+	._type	444,'m','HIGH',3,1
+	._type	426,'U','',2
+	._type	426,'m','BIT',427,0
+	._type	426,'m','BYTE',444,0
+	._type	426,'m','WORD',5,0
+	._var	'U1RB_ADDR','S',426,_U1RB_ADDR
+	._type	447,'g','B0',0,1,3
+	._type	448,'g','B1',0,1,3
+	._type	449,'g','B2',0,1,3
+	._type	450,'g','B3',0,1,3
+	._type	451,'g','B4',0,1,3
+	._type	452,'g','B5',0,1,3
+	._type	453,'g','B6',0,1,3
+	._type	454,'g','B7',0,1,3
+	._type	455,'g','B8',0,1,3
+	._type	456,'g','B9',0,1,3
+	._type	457,'g','B10',0,1,3
+	._type	458,'g','B11',0,1,3
+	._type	459,'g','B12',0,1,3
+	._type	460,'g','B13',0,1,3
+	._type	461,'g','B14',0,1,3
+	._type	462,'g','B15',0,1,3
+	._type	446,'S','',2
+	._type	446,'m','B0',447,0
+	._type	446,'m','B1',448,1
+	._type	446,'m','B2',449,2
+	._type	446,'m','B3',450,3
+	._type	446,'m','B4',451,4
+	._type	446,'m','B5',452,5
+	._type	446,'m','B6',453,6
+	._type	446,'m','B7',454,7
+	._type	446,'m','B8',455,8
+	._type	446,'m','B9',456,9
+	._type	446,'m','B10',457,10
+	._type	446,'m','B11',458,11
+	._type	446,'m','B12',459,12
+	._type	446,'m','B13',460,13
+	._type	446,'m','B14',461,14
+	._type	446,'m','B15',462,15
+	._type	463,'S','',2
+	._type	463,'m','LOW',3,0
+	._type	463,'m','HIGH',3,1
+	._type	445,'U','',2
+	._type	445,'m','BIT',446,0
+	._type	445,'m','BYTE',463,0
+	._type	445,'m','WORD',5,0
+	._var	'U2RB_ADDR','S',445,_U2RB_ADDR
+	._type	466,'g','B0',0,1,3
+	._type	467,'g','B1',0,1,3
+	._type	468,'g','B2',0,1,3
+	._type	469,'g','B3',0,1,3
+	._type	470,'g','B4',0,1,3
+	._type	471,'g','B5',0,1,3
+	._type	472,'g','B6',0,1,3
+	._type	473,'g','B7',0,1,3
+	._type	474,'g','B8',0,1,3
+	._type	475,'g','B9',0,1,3
+	._type	476,'g','B10',0,1,3
+	._type	477,'g','B11',0,1,3
+	._type	478,'g','B12',0,1,3
+	._type	479,'g','B13',0,1,3
+	._type	480,'g','B14',0,1,3
+	._type	481,'g','B15',0,1,3
+	._type	465,'S','',2
+	._type	465,'m','B0',466,0
+	._type	465,'m','B1',467,1
+	._type	465,'m','B2',468,2
+	._type	465,'m','B3',469,3
+	._type	465,'m','B4',470,4
+	._type	465,'m','B5',471,5
+	._type	465,'m','B6',472,6
+	._type	465,'m','B7',473,7
+	._type	465,'m','B8',474,8
+	._type	465,'m','B9',475,9
+	._type	465,'m','B10',476,10
+	._type	465,'m','B11',477,11
+	._type	465,'m','B12',478,12
+	._type	465,'m','B13',479,13
+	._type	465,'m','B14',480,14
+	._type	465,'m','B15',481,15
+	._type	482,'S','',2
+	._type	482,'m','LOW',3,0
+	._type	482,'m','HIGH',3,1
+	._type	464,'U','',2
+	._type	464,'m','BIT',465,0
+	._type	464,'m','BYTE',482,0
+	._type	464,'m','WORD',5,0
+	._var	'CRCD_ADDR','S',464,_CRCD_ADDR
+	._type	485,'g','B0',0,1,3
+	._type	486,'g','B1',0,1,3
+	._type	487,'g','B2',0,1,3
+	._type	488,'g','B3',0,1,3
+	._type	489,'g','B4',0,1,3
+	._type	490,'g','B5',0,1,3
+	._type	491,'g','B6',0,1,3
+	._type	492,'g','B7',0,1,3
+	._type	493,'g','B8',0,1,3
+	._type	494,'g','B9',0,1,3
+	._type	495,'g','B10',0,1,3
+	._type	496,'g','B11',0,1,3
+	._type	497,'g','B12',0,1,3
+	._type	498,'g','B13',0,1,3
+	._type	499,'g','B14',0,1,3
+	._type	500,'g','B15',0,1,3
+	._type	484,'S','',2
+	._type	484,'m','B0',485,0
+	._type	484,'m','B1',486,1
+	._type	484,'m','B2',487,2
+	._type	484,'m','B3',488,3
+	._type	484,'m','B4',489,4
+	._type	484,'m','B5',490,5
+	._type	484,'m','B6',491,6
+	._type	484,'m','B7',492,7
+	._type	484,'m','B8',493,8
+	._type	484,'m','B9',494,9
+	._type	484,'m','B10',495,10
+	._type	484,'m','B11',496,11
+	._type	484,'m','B12',497,12
+	._type	484,'m','B13',498,13
+	._type	484,'m','B14',499,14
+	._type	484,'m','B15',500,15
+	._type	501,'S','',2
+	._type	501,'m','LOW',3,0
+	._type	501,'m','HIGH',3,1
+	._type	483,'U','',2
+	._type	483,'m','BIT',484,0
+	._type	483,'m','BYTE',501,0
+	._type	483,'m','WORD',5,0
+	._var	'AD0_ADDR','S',483,_AD0_ADDR
+	._type	504,'g','B0',0,1,3
+	._type	505,'g','B1',0,1,3
+	._type	506,'g','B2',0,1,3
+	._type	507,'g','B3',0,1,3
+	._type	508,'g','B4',0,1,3
+	._type	509,'g','B5',0,1,3
+	._type	510,'g','B6',0,1,3
+	._type	511,'g','B7',0,1,3
+	._type	512,'g','B8',0,1,3
+	._type	513,'g','B9',0,1,3
+	._type	514,'g','B10',0,1,3
+	._type	515,'g','B11',0,1,3
+	._type	516,'g','B12',0,1,3
+	._type	517,'g','B13',0,1,3
+	._type	518,'g','B14',0,1,3
+	._type	519,'g','B15',0,1,3
+	._type	503,'S','',2
+	._type	503,'m','B0',504,0
+	._type	503,'m','B1',505,1
+	._type	503,'m','B2',506,2
+	._type	503,'m','B3',507,3
+	._type	503,'m','B4',508,4
+	._type	503,'m','B5',509,5
+	._type	503,'m','B6',510,6
+	._type	503,'m','B7',511,7
+	._type	503,'m','B8',512,8
+	._type	503,'m','B9',513,9
+	._type	503,'m','B10',514,10
+	._type	503,'m','B11',515,11
+	._type	503,'m','B12',516,12
+	._type	503,'m','B13',517,13
+	._type	503,'m','B14',518,14
+	._type	503,'m','B15',519,15
+	._type	520,'S','',2
+	._type	520,'m','LOW',3,0
+	._type	520,'m','HIGH',3,1
+	._type	502,'U','',2
+	._type	502,'m','BIT',503,0
+	._type	502,'m','BYTE',520,0
+	._type	502,'m','WORD',5,0
+	._var	'AD1_ADDR','S',502,_AD1_ADDR
+	._type	523,'g','B0',0,1,3
+	._type	524,'g','B1',0,1,3
+	._type	525,'g','B2',0,1,3
+	._type	526,'g','B3',0,1,3
+	._type	527,'g','B4',0,1,3
+	._type	528,'g','B5',0,1,3
+	._type	529,'g','B6',0,1,3
+	._type	530,'g','B7',0,1,3
+	._type	531,'g','B8',0,1,3
+	._type	532,'g','B9',0,1,3
+	._type	533,'g','B10',0,1,3
+	._type	534,'g','B11',0,1,3
+	._type	535,'g','B12',0,1,3
+	._type	536,'g','B13',0,1,3
+	._type	537,'g','B14',0,1,3
+	._type	538,'g','B15',0,1,3
+	._type	522,'S','',2
+	._type	522,'m','B0',523,0
+	._type	522,'m','B1',524,1
+	._type	522,'m','B2',525,2
+	._type	522,'m','B3',526,3
+	._type	522,'m','B4',527,4
+	._type	522,'m','B5',528,5
+	._type	522,'m','B6',529,6
+	._type	522,'m','B7',530,7
+	._type	522,'m','B8',531,8
+	._type	522,'m','B9',532,9
+	._type	522,'m','B10',533,10
+	._type	522,'m','B11',534,11
+	._type	522,'m','B12',535,12
+	._type	522,'m','B13',536,13
+	._type	522,'m','B14',537,14
+	._type	522,'m','B15',538,15
+	._type	539,'S','',2
+	._type	539,'m','LOW',3,0
+	._type	539,'m','HIGH',3,1
+	._type	521,'U','',2
+	._type	521,'m','BIT',522,0
+	._type	521,'m','BYTE',539,0
+	._type	521,'m','WORD',5,0
+	._var	'AD2_ADDR','S',521,_AD2_ADDR
+	._type	542,'g','B0',0,1,3
+	._type	543,'g','B1',0,1,3
+	._type	544,'g','B2',0,1,3
+	._type	545,'g','B3',0,1,3
+	._type	546,'g','B4',0,1,3
+	._type	547,'g','B5',0,1,3
+	._type	548,'g','B6',0,1,3
+	._type	549,'g','B7',0,1,3
+	._type	550,'g','B8',0,1,3
+	._type	551,'g','B9',0,1,3
+	._type	552,'g','B10',0,1,3
+	._type	553,'g','B11',0,1,3
+	._type	554,'g','B12',0,1,3
+	._type	555,'g','B13',0,1,3
+	._type	556,'g','B14',0,1,3
+	._type	557,'g','B15',0,1,3
+	._type	541,'S','',2
+	._type	541,'m','B0',542,0
+	._type	541,'m','B1',543,1
+	._type	541,'m','B2',544,2
+	._type	541,'m','B3',545,3
+	._type	541,'m','B4',546,4
+	._type	541,'m','B5',547,5
+	._type	541,'m','B6',548,6
+	._type	541,'m','B7',549,7
+	._type	541,'m','B8',550,8
+	._type	541,'m','B9',551,9
+	._type	541,'m','B10',552,10
+	._type	541,'m','B11',553,11
+	._type	541,'m','B12',554,12
+	._type	541,'m','B13',555,13
+	._type	541,'m','B14',556,14
+	._type	541,'m','B15',557,15
+	._type	558,'S','',2
+	._type	558,'m','LOW',3,0
+	._type	558,'m','HIGH',3,1
+	._type	540,'U','',2
+	._type	540,'m','BIT',541,0
+	._type	540,'m','BYTE',558,0
+	._type	540,'m','WORD',5,0
+	._var	'AD3_ADDR','S',540,_AD3_ADDR
+	._type	561,'g','B0',0,1,3
+	._type	562,'g','B1',0,1,3
+	._type	563,'g','B2',0,1,3
+	._type	564,'g','B3',0,1,3
+	._type	565,'g','B4',0,1,3
+	._type	566,'g','B5',0,1,3
+	._type	567,'g','B6',0,1,3
+	._type	568,'g','B7',0,1,3
+	._type	569,'g','B8',0,1,3
+	._type	570,'g','B9',0,1,3
+	._type	571,'g','B10',0,1,3
+	._type	572,'g','B11',0,1,3
+	._type	573,'g','B12',0,1,3
+	._type	574,'g','B13',0,1,3
+	._type	575,'g','B14',0,1,3
+	._type	576,'g','B15',0,1,3
+	._type	560,'S','',2
+	._type	560,'m','B0',561,0
+	._type	560,'m','B1',562,1
+	._type	560,'m','B2',563,2
+	._type	560,'m','B3',564,3
+	._type	560,'m','B4',565,4
+	._type	560,'m','B5',566,5
+	._type	560,'m','B6',567,6
+	._type	560,'m','B7',568,7
+	._type	560,'m','B8',569,8
+	._type	560,'m','B9',570,9
+	._type	560,'m','B10',571,10
+	._type	560,'m','B11',572,11
+	._type	560,'m','B12',573,12
+	._type	560,'m','B13',574,13
+	._type	560,'m','B14',575,14
+	._type	560,'m','B15',576,15
+	._type	577,'S','',2
+	._type	577,'m','LOW',3,0
+	._type	577,'m','HIGH',3,1
+	._type	559,'U','',2
+	._type	559,'m','BIT',560,0
+	._type	559,'m','BYTE',577,0
+	._type	559,'m','WORD',5,0
+	._var	'AD4_ADDR','S',559,_AD4_ADDR
+	._type	580,'g','B0',0,1,3
+	._type	581,'g','B1',0,1,3
+	._type	582,'g','B2',0,1,3
+	._type	583,'g','B3',0,1,3
+	._type	584,'g','B4',0,1,3
+	._type	585,'g','B5',0,1,3
+	._type	586,'g','B6',0,1,3
+	._type	587,'g','B7',0,1,3
+	._type	588,'g','B8',0,1,3
+	._type	589,'g','B9',0,1,3
+	._type	590,'g','B10',0,1,3
+	._type	591,'g','B11',0,1,3
+	._type	592,'g','B12',0,1,3
+	._type	593,'g','B13',0,1,3
+	._type	594,'g','B14',0,1,3
+	._type	595,'g','B15',0,1,3
+	._type	579,'S','',2
+	._type	579,'m','B0',580,0
+	._type	579,'m','B1',581,1
+	._type	579,'m','B2',582,2
+	._type	579,'m','B3',583,3
+	._type	579,'m','B4',584,4
+	._type	579,'m','B5',585,5
+	._type	579,'m','B6',586,6
+	._type	579,'m','B7',587,7
+	._type	579,'m','B8',588,8
+	._type	579,'m','B9',589,9
+	._type	579,'m','B10',590,10
+	._type	579,'m','B11',591,11
+	._type	579,'m','B12',592,12
+	._type	579,'m','B13',593,13
+	._type	579,'m','B14',594,14
+	._type	579,'m','B15',595,15
+	._type	596,'S','',2
+	._type	596,'m','LOW',3,0
+	._type	596,'m','HIGH',3,1
+	._type	578,'U','',2
+	._type	578,'m','BIT',579,0
+	._type	578,'m','BYTE',596,0
+	._type	578,'m','WORD',5,0
+	._var	'AD5_ADDR','S',578,_AD5_ADDR
+	._type	599,'g','B0',0,1,3
+	._type	600,'g','B1',0,1,3
+	._type	601,'g','B2',0,1,3
+	._type	602,'g','B3',0,1,3
+	._type	603,'g','B4',0,1,3
+	._type	604,'g','B5',0,1,3
+	._type	605,'g','B6',0,1,3
+	._type	606,'g','B7',0,1,3
+	._type	607,'g','B8',0,1,3
+	._type	608,'g','B9',0,1,3
+	._type	609,'g','B10',0,1,3
+	._type	610,'g','B11',0,1,3
+	._type	611,'g','B12',0,1,3
+	._type	612,'g','B13',0,1,3
+	._type	613,'g','B14',0,1,3
+	._type	614,'g','B15',0,1,3
+	._type	598,'S','',2
+	._type	598,'m','B0',599,0
+	._type	598,'m','B1',600,1
+	._type	598,'m','B2',601,2
+	._type	598,'m','B3',602,3
+	._type	598,'m','B4',603,4
+	._type	598,'m','B5',604,5
+	._type	598,'m','B6',605,6
+	._type	598,'m','B7',606,7
+	._type	598,'m','B8',607,8
+	._type	598,'m','B9',608,9
+	._type	598,'m','B10',609,10
+	._type	598,'m','B11',610,11
+	._type	598,'m','B12',611,12
+	._type	598,'m','B13',612,13
+	._type	598,'m','B14',613,14
+	._type	598,'m','B15',614,15
+	._type	615,'S','',2
+	._type	615,'m','LOW',3,0
+	._type	615,'m','HIGH',3,1
+	._type	597,'U','',2
+	._type	597,'m','BIT',598,0
+	._type	597,'m','BYTE',615,0
+	._type	597,'m','WORD',5,0
+	._var	'AD6_ADDR','S',597,_AD6_ADDR
+	._type	618,'g','B0',0,1,3
+	._type	619,'g','B1',0,1,3
+	._type	620,'g','B2',0,1,3
+	._type	621,'g','B3',0,1,3
+	._type	622,'g','B4',0,1,3
+	._type	623,'g','B5',0,1,3
+	._type	624,'g','B6',0,1,3
+	._type	625,'g','B7',0,1,3
+	._type	626,'g','B8',0,1,3
+	._type	627,'g','B9',0,1,3
+	._type	628,'g','B10',0,1,3
+	._type	629,'g','B11',0,1,3
+	._type	630,'g','B12',0,1,3
+	._type	631,'g','B13',0,1,3
+	._type	632,'g','B14',0,1,3
+	._type	633,'g','B15',0,1,3
+	._type	617,'S','',2
+	._type	617,'m','B0',618,0
+	._type	617,'m','B1',619,1
+	._type	617,'m','B2',620,2
+	._type	617,'m','B3',621,3
+	._type	617,'m','B4',622,4
+	._type	617,'m','B5',623,5
+	._type	617,'m','B6',624,6
+	._type	617,'m','B7',625,7
+	._type	617,'m','B8',626,8
+	._type	617,'m','B9',627,9
+	._type	617,'m','B10',628,10
+	._type	617,'m','B11',629,11
+	._type	617,'m','B12',630,12
+	._type	617,'m','B13',631,13
+	._type	617,'m','B14',632,14
+	._type	617,'m','B15',633,15
+	._type	634,'S','',2
+	._type	634,'m','LOW',3,0
+	._type	634,'m','HIGH',3,1
+	._type	616,'U','',2
+	._type	616,'m','BIT',617,0
+	._type	616,'m','BYTE',634,0
+	._type	616,'m','WORD',5,0
+	._var	'AD7_ADDR','S',616,_AD7_ADDR
+	._type	637,'g','B0',0,1,3
+	._type	638,'g','B1',0,1,3
+	._type	639,'g','B2',0,1,3
+	._type	640,'g','B3',0,1,3
+	._type	641,'g','B4',0,1,3
+	._type	642,'g','B5',0,1,3
+	._type	643,'g','B6',0,1,3
+	._type	644,'g','B7',0,1,3
+	._type	645,'g','B8',0,1,3
+	._type	646,'g','B9',0,1,3
+	._type	647,'g','B10',0,1,3
+	._type	648,'g','B11',0,1,3
+	._type	649,'g','B12',0,1,3
+	._type	650,'g','B13',0,1,3
+	._type	651,'g','B14',0,1,3
+	._type	652,'g','B15',0,1,3
+	._type	653,'g','B16',0,1,3
+	._type	654,'g','B17',0,1,3
+	._type	655,'g','B18',0,1,3
+	._type	656,'g','B19',0,1,3
+	._type	636,'S','',3
+	._type	636,'m','B0',637,0
+	._type	636,'m','B1',638,1
+	._type	636,'m','B2',639,2
+	._type	636,'m','B3',640,3
+	._type	636,'m','B4',641,4
+	._type	636,'m','B5',642,5
+	._type	636,'m','B6',643,6
+	._type	636,'m','B7',644,7
+	._type	636,'m','B8',645,8
+	._type	636,'m','B9',646,9
+	._type	636,'m','B10',647,10
+	._type	636,'m','B11',648,11
+	._type	636,'m','B12',649,12
+	._type	636,'m','B13',650,13
+	._type	636,'m','B14',651,14
+	._type	636,'m','B15',652,15
+	._type	636,'m','B16',653,16
+	._type	636,'m','B17',654,17
+	._type	636,'m','B18',655,18
+	._type	636,'m','B19',656,19
+	._type	657,'S','',4
+	._type	657,'m','LOW',3,0
+	._type	657,'m','MID',3,1
+	._type	657,'m','HIGH',3,2
+	._type	657,'m','NC',3,3
+	._type	635,'U','',4
+	._type	635,'m','BIT',636,0
+	._type	635,'m','BYTE',657,0
+	._type	635,'m','DWORD',7,0
+	._var	'RMAD0_ADDR','S',635,_RMAD0_ADDR
+	._type	660,'g','B0',0,1,3
+	._type	661,'g','B1',0,1,3
+	._type	662,'g','B2',0,1,3
+	._type	663,'g','B3',0,1,3
+	._type	664,'g','B4',0,1,3
+	._type	665,'g','B5',0,1,3
+	._type	666,'g','B6',0,1,3
+	._type	667,'g','B7',0,1,3
+	._type	668,'g','B8',0,1,3
+	._type	669,'g','B9',0,1,3
+	._type	670,'g','B10',0,1,3
+	._type	671,'g','B11',0,1,3
+	._type	672,'g','B12',0,1,3
+	._type	673,'g','B13',0,1,3
+	._type	674,'g','B14',0,1,3
+	._type	675,'g','B15',0,1,3
+	._type	676,'g','B16',0,1,3
+	._type	677,'g','B17',0,1,3
+	._type	678,'g','B18',0,1,3
+	._type	679,'g','B19',0,1,3
+	._type	659,'S','',3
+	._type	659,'m','B0',660,0
+	._type	659,'m','B1',661,1
+	._type	659,'m','B2',662,2
+	._type	659,'m','B3',663,3
+	._type	659,'m','B4',664,4
+	._type	659,'m','B5',665,5
+	._type	659,'m','B6',666,6
+	._type	659,'m','B7',667,7
+	._type	659,'m','B8',668,8
+	._type	659,'m','B9',669,9
+	._type	659,'m','B10',670,10
+	._type	659,'m','B11',671,11
+	._type	659,'m','B12',672,12
+	._type	659,'m','B13',673,13
+	._type	659,'m','B14',674,14
+	._type	659,'m','B15',675,15
+	._type	659,'m','B16',676,16
+	._type	659,'m','B17',677,17
+	._type	659,'m','B18',678,18
+	._type	659,'m','B19',679,19
+	._type	680,'S','',4
+	._type	680,'m','LOW',3,0
+	._type	680,'m','MID',3,1
+	._type	680,'m','HIGH',3,2
+	._type	680,'m','NC',3,3
+	._type	658,'U','',4
+	._type	658,'m','BIT',659,0
+	._type	658,'m','BYTE',680,0
+	._type	658,'m','DWORD',7,0
+	._var	'RMAD1_ADDR','S',658,_RMAD1_ADDR
+	._type	683,'g','B0',0,1,3
+	._type	684,'g','B1',0,1,3
+	._type	685,'g','B2',0,1,3
+	._type	686,'g','B3',0,1,3
+	._type	687,'g','B4',0,1,3
+	._type	688,'g','B5',0,1,3
+	._type	689,'g','B6',0,1,3
+	._type	690,'g','B7',0,1,3
+	._type	691,'g','B8',0,1,3
+	._type	692,'g','B9',0,1,3
+	._type	693,'g','B10',0,1,3
+	._type	694,'g','B11',0,1,3
+	._type	695,'g','B12',0,1,3
+	._type	696,'g','B13',0,1,3
+	._type	697,'g','B14',0,1,3
+	._type	698,'g','B15',0,1,3
+	._type	699,'g','B16',0,1,3
+	._type	700,'g','B17',0,1,3
+	._type	701,'g','B18',0,1,3
+	._type	702,'g','B19',0,1,3
+	._type	682,'S','',3
+	._type	682,'m','B0',683,0
+	._type	682,'m','B1',684,1
+	._type	682,'m','B2',685,2
+	._type	682,'m','B3',686,3
+	._type	682,'m','B4',687,4
+	._type	682,'m','B5',688,5
+	._type	682,'m','B6',689,6
+	._type	682,'m','B7',690,7
+	._type	682,'m','B8',691,8
+	._type	682,'m','B9',692,9
+	._type	682,'m','B10',693,10
+	._type	682,'m','B11',694,11
+	._type	682,'m','B12',695,12
+	._type	682,'m','B13',696,13
+	._type	682,'m','B14',697,14
+	._type	682,'m','B15',698,15
+	._type	682,'m','B16',699,16
+	._type	682,'m','B17',700,17
+	._type	682,'m','B18',701,18
+	._type	682,'m','B19',702,19
+	._type	703,'S','',4
+	._type	703,'m','LOW',3,0
+	._type	703,'m','MID',3,1
+	._type	703,'m','HIGH',3,2
+	._type	703,'m','NC',3,3
+	._type	681,'U','',4
+	._type	681,'m','BIT',682,0
+	._type	681,'m','BYTE',703,0
+	._type	681,'m','DWORD',7,0
+	._var	'RMAD2_ADDR','S',681,_RMAD2_ADDR
+	._type	706,'g','B0',0,1,3
+	._type	707,'g','B1',0,1,3
+	._type	708,'g','B2',0,1,3
+	._type	709,'g','B3',0,1,3
+	._type	710,'g','B4',0,1,3
+	._type	711,'g','B5',0,1,3
+	._type	712,'g','B6',0,1,3
+	._type	713,'g','B7',0,1,3
+	._type	714,'g','B8',0,1,3
+	._type	715,'g','B9',0,1,3
+	._type	716,'g','B10',0,1,3
+	._type	717,'g','B11',0,1,3
+	._type	718,'g','B12',0,1,3
+	._type	719,'g','B13',0,1,3
+	._type	720,'g','B14',0,1,3
+	._type	721,'g','B15',0,1,3
+	._type	722,'g','B16',0,1,3
+	._type	723,'g','B17',0,1,3
+	._type	724,'g','B18',0,1,3
+	._type	725,'g','B19',0,1,3
+	._type	705,'S','',3
+	._type	705,'m','B0',706,0
+	._type	705,'m','B1',707,1
+	._type	705,'m','B2',708,2
+	._type	705,'m','B3',709,3
+	._type	705,'m','B4',710,4
+	._type	705,'m','B5',711,5
+	._type	705,'m','B6',712,6
+	._type	705,'m','B7',713,7
+	._type	705,'m','B8',714,8
+	._type	705,'m','B9',715,9
+	._type	705,'m','B10',716,10
+	._type	705,'m','B11',717,11
+	._type	705,'m','B12',718,12
+	._type	705,'m','B13',719,13
+	._type	705,'m','B14',720,14
+	._type	705,'m','B15',721,15
+	._type	705,'m','B16',722,16
+	._type	705,'m','B17',723,17
+	._type	705,'m','B18',724,18
+	._type	705,'m','B19',725,19
+	._type	726,'S','',4
+	._type	726,'m','LOW',3,0
+	._type	726,'m','MID',3,1
+	._type	726,'m','HIGH',3,2
+	._type	726,'m','NC',3,3
+	._type	704,'U','',4
+	._type	704,'m','BIT',705,0
+	._type	704,'m','BYTE',726,0
+	._type	704,'m','DWORD',7,0
+	._var	'RMAD3_ADDR','S',704,_RMAD3_ADDR
+	._type	729,'g','B0',0,1,3
+	._type	730,'g','B1',0,1,3
+	._type	731,'g','B2',0,1,3
+	._type	732,'g','B3',0,1,3
+	._type	733,'g','B4',0,1,3
+	._type	734,'g','B5',0,1,3
+	._type	735,'g','B6',0,1,3
+	._type	736,'g','B7',0,1,3
+	._type	737,'g','B8',0,1,3
+	._type	738,'g','B9',0,1,3
+	._type	739,'g','B10',0,1,3
+	._type	740,'g','B11',0,1,3
+	._type	741,'g','B12',0,1,3
+	._type	742,'g','B13',0,1,3
+	._type	743,'g','B14',0,1,3
+	._type	744,'g','B15',0,1,3
+	._type	745,'g','B16',0,1,3
+	._type	746,'g','B17',0,1,3
+	._type	747,'g','B18',0,1,3
+	._type	748,'g','B19',0,1,3
+	._type	728,'S','',3
+	._type	728,'m','B0',729,0
+	._type	728,'m','B1',730,1
+	._type	728,'m','B2',731,2
+	._type	728,'m','B3',732,3
+	._type	728,'m','B4',733,4
+	._type	728,'m','B5',734,5
+	._type	728,'m','B6',735,6
+	._type	728,'m','B7',736,7
+	._type	728,'m','B8',737,8
+	._type	728,'m','B9',738,9
+	._type	728,'m','B10',739,10
+	._type	728,'m','B11',740,11
+	._type	728,'m','B12',741,12
+	._type	728,'m','B13',742,13
+	._type	728,'m','B14',743,14
+	._type	728,'m','B15',744,15
+	._type	728,'m','B16',745,16
+	._type	728,'m','B17',746,17
+	._type	728,'m','B18',747,18
+	._type	728,'m','B19',748,19
+	._type	749,'S','',4
+	._type	749,'m','LOW',3,0
+	._type	749,'m','MID',3,1
+	._type	749,'m','HIGH',3,2
+	._type	749,'m','NC',3,3
+	._type	727,'U','',4
+	._type	727,'m','BIT',728,0
+	._type	727,'m','BYTE',749,0
+	._type	727,'m','DWORD',7,0
+	._var	'SAR0_ADDR','S',727,_SAR0_ADDR
+	._type	752,'g','B0',0,1,3
+	._type	753,'g','B1',0,1,3
+	._type	754,'g','B2',0,1,3
+	._type	755,'g','B3',0,1,3
+	._type	756,'g','B4',0,1,3
+	._type	757,'g','B5',0,1,3
+	._type	758,'g','B6',0,1,3
+	._type	759,'g','B7',0,1,3
+	._type	760,'g','B8',0,1,3
+	._type	761,'g','B9',0,1,3
+	._type	762,'g','B10',0,1,3
+	._type	763,'g','B11',0,1,3
+	._type	764,'g','B12',0,1,3
+	._type	765,'g','B13',0,1,3
+	._type	766,'g','B14',0,1,3
+	._type	767,'g','B15',0,1,3
+	._type	768,'g','B16',0,1,3
+	._type	769,'g','B17',0,1,3
+	._type	770,'g','B18',0,1,3
+	._type	771,'g','B19',0,1,3
+	._type	751,'S','',3
+	._type	751,'m','B0',752,0
+	._type	751,'m','B1',753,1
+	._type	751,'m','B2',754,2
+	._type	751,'m','B3',755,3
+	._type	751,'m','B4',756,4
+	._type	751,'m','B5',757,5
+	._type	751,'m','B6',758,6
+	._type	751,'m','B7',759,7
+	._type	751,'m','B8',760,8
+	._type	751,'m','B9',761,9
+	._type	751,'m','B10',762,10
+	._type	751,'m','B11',763,11
+	._type	751,'m','B12',764,12
+	._type	751,'m','B13',765,13
+	._type	751,'m','B14',766,14
+	._type	751,'m','B15',767,15
+	._type	751,'m','B16',768,16
+	._type	751,'m','B17',769,17
+	._type	751,'m','B18',770,18
+	._type	751,'m','B19',771,19
+	._type	772,'S','',4
+	._type	772,'m','LOW',3,0
+	._type	772,'m','MID',3,1
+	._type	772,'m','HIGH',3,2
+	._type	772,'m','NC',3,3
+	._type	750,'U','',4
+	._type	750,'m','BIT',751,0
+	._type	750,'m','BYTE',772,0
+	._type	750,'m','DWORD',7,0
+	._var	'SAR1_ADDR','S',750,_SAR1_ADDR
+	._type	775,'g','B0',0,1,3
+	._type	776,'g','B1',0,1,3
+	._type	777,'g','B2',0,1,3
+	._type	778,'g','B3',0,1,3
+	._type	779,'g','B4',0,1,3
+	._type	780,'g','B5',0,1,3
+	._type	781,'g','B6',0,1,3
+	._type	782,'g','B7',0,1,3
+	._type	783,'g','B8',0,1,3
+	._type	784,'g','B9',0,1,3
+	._type	785,'g','B10',0,1,3
+	._type	786,'g','B11',0,1,3
+	._type	787,'g','B12',0,1,3
+	._type	788,'g','B13',0,1,3
+	._type	789,'g','B14',0,1,3
+	._type	790,'g','B15',0,1,3
+	._type	791,'g','B16',0,1,3
+	._type	792,'g','B17',0,1,3
+	._type	793,'g','B18',0,1,3
+	._type	794,'g','B19',0,1,3
+	._type	774,'S','',3
+	._type	774,'m','B0',775,0
+	._type	774,'m','B1',776,1
+	._type	774,'m','B2',777,2
+	._type	774,'m','B3',778,3
+	._type	774,'m','B4',779,4
+	._type	774,'m','B5',780,5
+	._type	774,'m','B6',781,6
+	._type	774,'m','B7',782,7
+	._type	774,'m','B8',783,8
+	._type	774,'m','B9',784,9
+	._type	774,'m','B10',785,10
+	._type	774,'m','B11',786,11
+	._type	774,'m','B12',787,12
+	._type	774,'m','B13',788,13
+	._type	774,'m','B14',789,14
+	._type	774,'m','B15',790,15
+	._type	774,'m','B16',791,16
+	._type	774,'m','B17',792,17
+	._type	774,'m','B18',793,18
+	._type	774,'m','B19',794,19
+	._type	795,'S','',4
+	._type	795,'m','LOW',3,0
+	._type	795,'m','MID',3,1
+	._type	795,'m','HIGH',3,2
+	._type	795,'m','NC',3,3
+	._type	773,'U','',4
+	._type	773,'m','BIT',774,0
+	._type	773,'m','BYTE',795,0
+	._type	773,'m','DWORD',7,0
+	._var	'DAR0_ADDR','S',773,_DAR0_ADDR
+	._type	798,'g','B0',0,1,3
+	._type	799,'g','B1',0,1,3
+	._type	800,'g','B2',0,1,3
+	._type	801,'g','B3',0,1,3
+	._type	802,'g','B4',0,1,3
+	._type	803,'g','B5',0,1,3
+	._type	804,'g','B6',0,1,3
+	._type	805,'g','B7',0,1,3
+	._type	806,'g','B8',0,1,3
+	._type	807,'g','B9',0,1,3
+	._type	808,'g','B10',0,1,3
+	._type	809,'g','B11',0,1,3
+	._type	810,'g','B12',0,1,3
+	._type	811,'g','B13',0,1,3
+	._type	812,'g','B14',0,1,3
+	._type	813,'g','B15',0,1,3
+	._type	814,'g','B16',0,1,3
+	._type	815,'g','B17',0,1,3
+	._type	816,'g','B18',0,1,3
+	._type	817,'g','B19',0,1,3
+	._type	797,'S','',3
+	._type	797,'m','B0',798,0
+	._type	797,'m','B1',799,1
+	._type	797,'m','B2',800,2
+	._type	797,'m','B3',801,3
+	._type	797,'m','B4',802,4
+	._type	797,'m','B5',803,5
+	._type	797,'m','B6',804,6
+	._type	797,'m','B7',805,7
+	._type	797,'m','B8',806,8
+	._type	797,'m','B9',807,9
+	._type	797,'m','B10',808,10
+	._type	797,'m','B11',809,11
+	._type	797,'m','B12',810,12
+	._type	797,'m','B13',811,13
+	._type	797,'m','B14',812,14
+	._type	797,'m','B15',813,15
+	._type	797,'m','B16',814,16
+	._type	797,'m','B17',815,17
+	._type	797,'m','B18',816,18
+	._type	797,'m','B19',817,19
+	._type	818,'S','',4
+	._type	818,'m','LOW',3,0
+	._type	818,'m','MID',3,1
+	._type	818,'m','HIGH',3,2
+	._type	818,'m','NC',3,3
+	._type	796,'U','',4
+	._type	796,'m','BIT',797,0
+	._type	796,'m','BYTE',818,0
+	._type	796,'m','DWORD',7,0
+	._var	'DAR1_ADDR','S',796,_DAR1_ADDR
+	._type	819,'v'
+	._type	820,'v'
+	._type	821,'x',819,1
+	._type	821,'m','',0,820
+	._var	'Initialise','F',821
+	._var	'Font_System5x8','G',284,_Font_System5x8
+	._var	'Font_System7x8','G',284,_Font_System7x8
+	._type	822,'Z',195,3
+	._var	'FontSystem3x6','E',822
+	._type	823,'Z',485,3
+	._var	'FontSystem5x8','E',823
+	._type	824,'Z',679,3
+	._var	'FontSystem7x8','E',824
+	._var	'Font_System3x6','G',284,_Font_System3x6
+	._var	'u8CursorX','G',3,_u8CursorX
+	._var	'u8CursorY','G',3,_u8CursorY
+;#################################
+;#################################
+;#################################
+	._inspect	'V', 't', "DA0_ADDR", 'G', 3
+	._inspect	'V', 't', "DA1_ADDR", 'G', 3
+	._inspect	'V', 't', "UDF_ADDR", 'G', 3
+	._inspect	'V', 't', "TA11_ADDR", 'G', 5
+	._inspect	'V', 't', "TA21_ADDR", 'G', 5
+	._inspect	'V', 't', "TA41_ADDR", 'G', 5
+	._inspect	'V', 't', "TB3_ADDR", 'G', 5
+	._inspect	'V', 't', "TB4_ADDR", 'G', 5
+	._inspect	'V', 't', "TB5_ADDR", 'G', 5
+	._inspect	'V', 't', "TA0_ADDR", 'G', 5
+	._inspect	'V', 't', "TA1_ADDR", 'G', 5
+	._inspect	'V', 't', "TA2_ADDR", 'G', 5
+	._inspect	'V', 't', "TA3_ADDR", 'G', 5
+	._inspect	'V', 't', "TA4_ADDR", 'G', 5
+	._inspect	'V', 't', "TB0_ADDR", 'G', 5
+	._inspect	'V', 't', "TB1_ADDR", 'G', 5
+	._inspect	'V', 't', "TB2_ADDR", 'G', 5
+	._inspect	'V', 't', "PM0_ADDR", 'G', 302
+	._inspect	'V', 't', "PM1_ADDR", 'G', 302
+	._inspect	'V', 't', "CM0_ADDR", 'G', 302
+	._inspect	'V', 't', "CM1_ADDR", 'G', 302
+	._inspect	'V', 't', "CSR_ADDR", 'G', 302
+	._inspect	'V', 't', "AIER_ADDR", 'G', 302
+	._inspect	'V', 't', "PRCR_ADDR", 'G', 302
+	._inspect	'V', 't', "DBR_ADDR", 'G', 302
+	._inspect	'V', 't', "CM2_ADDR", 'G', 302
+	._inspect	'V', 't', "WDTS_ADDR", 'G', 302
+	._inspect	'V', 't', "WDC_ADDR", 'G', 302
+	._inspect	'V', 't', "CSE_ADDR", 'G', 302
+	._inspect	'V', 't', "PLC0_ADDR", 'G', 302
+	._inspect	'V', 't', "PM2_ADDR", 'G', 302
+	._inspect	'V', 't', "DM0CON_ADDR", 'G', 302
+	._inspect	'V', 't', "DM1CON_ADDR", 'G', 302
+	._inspect	'V', 't', "INT3IC_ADDR", 'G', 302
+	._inspect	'V', 't', "TB5IC_ADDR", 'G', 302
+	._inspect	'V', 't', "TB4IC_ADDR", 'G', 302
+	._inspect	'V', 't', "TB3IC_ADDR", 'G', 302
+	._inspect	'V', 't', "S4IC_ADDR", 'G', 302
+	._inspect	'V', 't', "S3IC_ADDR", 'G', 302
+	._inspect	'V', 't', "INT5IC_ADDR", 'G', 302
+	._inspect	'V', 't', "INT4IC_ADDR", 'G', 302
+	._inspect	'V', 't', "BCNIC_ADDR", 'G', 302
+	._inspect	'V', 't', "DM0IC_ADDR", 'G', 302
+	._inspect	'V', 't', "DM1IC_ADDR", 'G', 302
+	._inspect	'V', 't', "KUPIC_ADDR", 'G', 302
+	._inspect	'V', 't', "ADIC_ADDR", 'G', 302
+	._inspect	'V', 't', "S2TIC_ADDR", 'G', 302
+	._inspect	'V', 't', "S2RIC_ADDR", 'G', 302
+	._inspect	'V', 't', "S0TIC_ADDR", 'G', 302
+	._inspect	'V', 't', "S0RIC_ADDR", 'G', 302
+	._inspect	'V', 't', "S1TIC_ADDR", 'G', 302
+	._inspect	'V', 't', "S1RIC_ADDR", 'G', 302
+	._inspect	'V', 't', "TA0IC_ADDR", 'G', 302
+	._inspect	'V', 't', "TA1IC_ADDR", 'G', 302
+	._inspect	'V', 't', "TA2IC_ADDR", 'G', 302
+	._inspect	'V', 't', "TA3IC_ADDR", 'G', 302
+	._inspect	'V', 't', "TA4IC_ADDR", 'G', 302
+	._inspect	'V', 't', "TB0IC_ADDR", 'G', 302
+	._inspect	'V', 't', "TB1IC_ADDR", 'G', 302
+	._inspect	'V', 't', "TB2IC_ADDR", 'G', 302
+	._inspect	'V', 't', "INT0IC_ADDR", 'G', 302
+	._inspect	'V', 't', "INT1IC_ADDR", 'G', 302
+	._inspect	'V', 't', "INT2IC_ADDR", 'G', 302
+	._inspect	'V', 't', "FMR1_ADDR", 'G', 302
+	._inspect	'V', 't', "FMR0_ADDR", 'G', 302
+	._inspect	'V', 't', "AIER2_ADDR", 'G', 302
+	._inspect	'V', 't', "PCLKR_ADDR", 'G', 302
+	._inspect	'V', 't', "TBSR_ADDR", 'G', 302
+	._inspect	'V', 't', "INVC0_ADDR", 'G', 302
+	._inspect	'V', 't', "INVC1_ADDR", 'G', 302
+	._inspect	'V', 't', "IDB0_ADDR", 'G', 302
+	._inspect	'V', 't', "IDB1_ADDR", 'G', 302
+	._inspect	'V', 't', "DTT_ADDR", 'G', 302
+	._inspect	'V', 't', "ICTB2_ADDR", 'G', 302
+	._inspect	'V', 't', "TB3MR_ADDR", 'G', 302
+	._inspect	'V', 't', "TB4MR_ADDR", 'G', 302
+	._inspect	'V', 't', "TB5MR_ADDR", 'G', 302
+	._inspect	'V', 't', "IFSR2A_ADDR", 'G', 302
+	._inspect	'V', 't', "IFSR_ADDR", 'G', 302
+	._inspect	'V', 't', "S3TRR_ADDR", 'G', 302
+	._inspect	'V', 't', "S3C_ADDR", 'G', 302
+	._inspect	'V', 't', "S3BRG_ADDR", 'G', 302
+	._inspect	'V', 't', "S4TRR_ADDR", 'G', 302
+	._inspect	'V', 't', "S4C_ADDR", 'G', 302
+	._inspect	'V', 't', "S4BRG_ADDR", 'G', 302
+	._inspect	'V', 't', "U0SMR4_ADDR", 'G', 302
+	._inspect	'V', 't', "U0SMR3_ADDR", 'G', 302
+	._inspect	'V', 't', "U0SMR2_ADDR", 'G', 302
+	._inspect	'V', 't', "U0SMR_ADDR", 'G', 302
+	._inspect	'V', 't', "U1SMR4_ADDR", 'G', 302
+	._inspect	'V', 't', "U1SMR3_ADDR", 'G', 302
+	._inspect	'V', 't', "U1SMR2_ADDR", 'G', 302
+	._inspect	'V', 't', "U1SMR_ADDR", 'G', 302
+	._inspect	'V', 't', "U2SMR4_ADDR", 'G', 302
+	._inspect	'V', 't', "U2SMR3_ADDR", 'G', 302
+	._inspect	'V', 't', "U2SMR2_ADDR", 'G', 302
+	._inspect	'V', 't', "U2SMR_ADDR", 'G', 302
+	._inspect	'V', 't', "U2MR_ADDR", 'G', 302
+	._inspect	'V', 't', "U2BRG_ADDR", 'G', 302
+	._inspect	'V', 't', "U2C0_ADDR", 'G', 302
+	._inspect	'V', 't', "U2C1_ADDR", 'G', 302
+	._inspect	'V', 't', "TABSR_ADDR", 'G', 302
+	._inspect	'V', 't', "CPSRF_ADDR", 'G', 302
+	._inspect	'V', 't', "ONSF_ADDR", 'G', 302
+	._inspect	'V', 't', "TRGSR_ADDR", 'G', 302
+	._inspect	'V', 't', "TA0MR_ADDR", 'G', 302
+	._inspect	'V', 't', "TA1MR_ADDR", 'G', 302
+	._inspect	'V', 't', "TA2MR_ADDR", 'G', 302
+	._inspect	'V', 't', "TA3MR_ADDR", 'G', 302
+	._inspect	'V', 't', "TA4MR_ADDR", 'G', 302
+	._inspect	'V', 't', "TB0MR_ADDR", 'G', 302
+	._inspect	'V', 't', "TB1MR_ADDR", 'G', 302
+	._inspect	'V', 't', "TB2MR_ADDR", 'G', 302
+	._inspect	'V', 't', "TB2SC_ADDR", 'G', 302
+	._inspect	'V', 't', "U0MR_ADDR", 'G', 302
+	._inspect	'V', 't', "U0BRG_ADDR", 'G', 302
+	._inspect	'V', 't', "U0C0_ADDR", 'G', 302
+	._inspect	'V', 't', "U0C1_ADDR", 'G', 302
+	._inspect	'V', 't', "U1MR_ADDR", 'G', 302
+	._inspect	'V', 't', "U1BRG_ADDR", 'G', 302
+	._inspect	'V', 't', "U1C0_ADDR", 'G', 302
+	._inspect	'V', 't', "U1C1_ADDR", 'G', 302
+	._inspect	'V', 't', "UCON_ADDR", 'G', 302
+	._inspect	'V', 't', "FIDR_ADDR", 'G', 302
+	._inspect	'V', 't', "DM0SL_ADDR", 'G', 302
+	._inspect	'V', 't', "DM1SL_ADDR", 'G', 302
+	._inspect	'V', 't', "CRCIN_ADDR", 'G', 302
+	._inspect	'V', 't', "ADCON2_ADDR", 'G', 302
+	._inspect	'V', 't', "ADCON0_ADDR", 'G', 302
+	._inspect	'V', 't', "ADCON1_ADDR", 'G', 302
+	._inspect	'V', 't', "DACON_ADDR", 'G', 302
+	._inspect	'V', 't', "PC14_ADDR", 'G', 302
+	._inspect	'V', 't', "PUR3_ADDR", 'G', 302
+	._inspect	'V', 't', "P0_ADDR", 'G', 302
+	._inspect	'V', 't', "P1_ADDR", 'G', 302
+	._inspect	'V', 't', "P0D_ADDR", 'G', 302
+	._inspect	'V', 't', "P1D_ADDR", 'G', 302
+	._inspect	'V', 't', "P2_ADDR", 'G', 302
+	._inspect	'V', 't', "P3_ADDR", 'G', 302
+	._inspect	'V', 't', "P2D_ADDR", 'G', 302
+	._inspect	'V', 't', "P3D_ADDR", 'G', 302
+	._inspect	'V', 't', "P4_ADDR", 'G', 302
+	._inspect	'V', 't', "P5_ADDR", 'G', 302
+	._inspect	'V', 't', "P4D_ADDR", 'G', 302
+	._inspect	'V', 't', "P5D_ADDR", 'G', 302
+	._inspect	'V', 't', "P6_ADDR", 'G', 302
+	._inspect	'V', 't', "P7_ADDR", 'G', 302
+	._inspect	'V', 't', "P6D_ADDR", 'G', 302
+	._inspect	'V', 't', "P7D_ADDR", 'G', 302
+	._inspect	'V', 't', "P8_ADDR", 'G', 302
+	._inspect	'V', 't', "P9_ADDR", 'G', 302
+	._inspect	'V', 't', "P8D_ADDR", 'G', 302
+	._inspect	'V', 't', "P9D_ADDR", 'G', 302
+	._inspect	'V', 't', "P10_ADDR", 'G', 302
+	._inspect	'V', 't', "P11_ADDR", 'G', 302
+	._inspect	'V', 't', "P10D_ADDR", 'G', 302
+	._inspect	'V', 't', "P1D1_ADDR", 'G', 302
+	._inspect	'V', 't', "P12_ADDR", 'G', 302
+	._inspect	'V', 't', "P13_ADDR", 'G', 302
+	._inspect	'V', 't', "P1D2_ADDR", 'G', 302
+	._inspect	'V', 't', "P1D3_ADDR", 'G', 302
+	._inspect	'V', 't', "PUR0_ADDR", 'G', 302
+	._inspect	'V', 't', "PUR1_ADDR", 'G', 302
+	._inspect	'V', 't', "PUR2_ADDR", 'G', 302
+	._inspect	'V', 't', "PCR_ADDR", 'G', 302
+	._inspect	'V', 't', "TCR0_ADDR", 'G', 312
+	._inspect	'V', 't', "TCR1_ADDR", 'G', 331
+	._inspect	'V', 't', "U0TB_ADDR", 'G', 350
+	._inspect	'V', 't', "U1TB_ADDR", 'G', 369
+	._inspect	'V', 't', "U2TB_ADDR", 'G', 388
+	._inspect	'V', 't', "U0RB_ADDR", 'G', 407
+	._inspect	'V', 't', "U1RB_ADDR", 'G', 426
+	._inspect	'V', 't', "U2RB_ADDR", 'G', 445
+	._inspect	'V', 't', "CRCD_ADDR", 'G', 464
+	._inspect	'V', 't', "AD0_ADDR", 'G', 483
+	._inspect	'V', 't', "AD1_ADDR", 'G', 502
+	._inspect	'V', 't', "AD2_ADDR", 'G', 521
+	._inspect	'V', 't', "AD3_ADDR", 'G', 540
+	._inspect	'V', 't', "AD4_ADDR", 'G', 559
+	._inspect	'V', 't', "AD5_ADDR", 'G', 578
+	._inspect	'V', 't', "AD6_ADDR", 'G', 597
+	._inspect	'V', 't', "AD7_ADDR", 'G', 616
+	._inspect	'V', 't', "RMAD0_ADDR", 'G', 635
+	._inspect	'V', 't', "RMAD1_ADDR", 'G', 658
+	._inspect	'V', 't', "RMAD2_ADDR", 'G', 681
+	._inspect	'V', 't', "RMAD3_ADDR", 'G', 704
+	._inspect	'V', 't', "SAR0_ADDR", 'G', 727
+	._inspect	'V', 't', "SAR1_ADDR", 'G', 750
+	._inspect	'V', 't', "DAR0_ADDR", 'G', 773
+	._inspect	'V', 't', "DAR1_ADDR", 'G', 796
+	._inspect	'F', 't', "Initialise", 'G', 821
+	._inspect	'V', 't', "FONT_DEF", 'O', 282
+	._inspect	'V', 't', "Font_System5x8", 'G', 284
+	._inspect	'V', 't', "Font_System7x8", 'G', 284
+	._inspect	'V', 't', "FontSystem3x6", 'G', 822
+	._inspect	'V', 't', "FontSystem5x8", 'G', 823
+	._inspect	'V', 't', "FontSystem7x8", 'G', 824
+	._inspect	'V', 't', "Point", 'O', 290
+	._inspect	'V', 't', "Font_System3x6", 'G', 284
+	._inspect	'V', 't', "u8CursorX", 'G', 3
+	._inspect	'V', 't', "u8CursorY", 'G', 3
+
+	.glb	__i4divU
+	.glb	__i4modU
+	.END
+
+;## Compile End Time Sun Jan 31 23:37:52 2016
+
+

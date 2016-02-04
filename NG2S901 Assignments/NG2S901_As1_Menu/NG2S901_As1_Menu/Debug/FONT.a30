@@ -1,0 +1,1446 @@
+	._LANG	'C','5.31.30.001','REV.F'
+
+;##    C Compiler		 OUTPUT
+;## ccom30 Version 5.31.30.001
+;## Copyright(C) 2001(2003,2004). Renesas Technology Corp.
+;## and Renesas Solutions Corp., All rights reserved.
+;## Compile Start Time Sun Jan 31 23:37:52 2016
+
+;## COMMAND_LINE: ccom30  C:\Users\Miguel\Desktop\Nova pasta\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\FONT.i -o C:\Users\Miguel\Desktop\Nova pasta\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\FONT.a30 -finfo -fFP
+
+
+;## Normal Optimize		OFF
+;## ROM size Optimize		OFF
+;## Speed Optimize		OFF
+;## Default ROM is		far
+;## Default RAM is		near
+
+	.GLB	__SB__
+	.SB	__SB__
+	.FB	0
+	._aopt	OFF
+
+	._inspect	'M', "C:/Users/Miguel/Desktop/Nova pasta/NG2S901_As1_Menu/NG2S901_As1_Menu/drivers/glcd/FONT.C", "C:/Users/Miguel/Desktop/Nova pasta/NG2S901_As1_Menu/NG2S901_As1_Menu/drivers/glcd/FONT"
+
+	._inspect	'M', "C:/Users/Miguel/Desktop/Nova pasta/NG2S901_As1_Menu/NG2S901_As1_Menu/drivers/glcd/font.h", "C:/Users/Miguel/Desktop/Nova pasta/NG2S901_As1_Menu/NG2S901_As1_Menu/drivers/glcd/FONT"
+	._inspect	'V', 'e', "Font_System5x8", 'G', 10, 6, 0, 0, 00h
+	._inspect	'V', 'e', "Font_System7x8", 'G', 11, 6, 0, 0, 00h
+	._inspect	'V', 'e', "FontSystem3x6", 'G', 13, 195, 0, 0, 00h
+	._inspect	'V', 'e', "FontSystem5x8", 'G', 14, 485, 0, 0, 00h
+	._inspect	'V', 'e', "FontSystem7x8", 'G', 15, 679, 0, 0, 00h
+
+	._inspect	'M', "C:/Users/Miguel/Desktop/Nova pasta/NG2S901_As1_Menu/NG2S901_As1_Menu/drivers/glcd/FONT.C", "C:/Users/Miguel/Desktop/Nova pasta/NG2S901_As1_Menu/NG2S901_As1_Menu/drivers/glcd/FONT"
+	._inspect	'V', 'd', "FontSystem3x6", "_FontSystem3x6", 'G', 71, 195, 0, 0, 00h
+	._inspect	'V', 'd', "FontSystem5x8", "_FontSystem5x8", 'G', 172, 485, 0, 0, 00h
+	._inspect	'V', 'd', "FontSystem7x8", "_FontSystem7x8", 'G', 276, 679, 0, 0, 00h
+	.glb	_Font_System5x8
+	.glb	_Font_System7x8
+
+	.SECTION	data_NO,DATA
+	._inspect	'U', 1, "data_NO", "data_NO", 0
+	.glb	_FontSystem3x6
+_FontSystem3x6:
+	.blkb	195
+	.glb	_FontSystem5x8
+_FontSystem5x8:
+	.blkb	485
+	.glb	_FontSystem7x8
+_FontSystem7x8:
+	.blkb	679
+
+	.SECTION	data_NOI,ROMDATA
+	._inspect	'U', 1, "data_NOI", "data_NOI", 0
+;## # init data of FontSystem3x6.
+	.byte	00H
+	.byte	00H
+	.byte	00H
+	.byte	00H
+	.byte	5cH	;  '\'
+	.byte	00H
+	.byte	0cH
+	.byte	00H
+	.byte	0cH
+	.byte	7cH	;  '|'
+	.byte	28H	;  '('
+	.byte	7cH	;  '|'
+	.byte	7cH	;  '|'
+	.byte	44H	;  'D'
+	.byte	7cH	;  '|'
+	.byte	24H	;  '$'
+	.byte	10H
+	.byte	48H	;  'H'
+	.byte	28H	;  '('
+	.byte	54H	;  'T'
+	.byte	08H
+	.byte	00H
+	.byte	0cH
+	.byte	00H
+	.byte	38H	;  '8'
+	.byte	44H	;  'D'
+	.byte	00H
+	.byte	44H	;  'D'
+	.byte	38H	;  '8'
+	.byte	00H
+	.byte	20H	;  ' '
+	.byte	10H
+	.byte	08H
+	.byte	10H
+	.byte	38H	;  '8'
+	.byte	10H
+	.byte	80H
+	.byte	40H	;  '@'
+	.byte	00H
+	.byte	10H
+	.byte	10H
+	.byte	10H
+	.byte	00H
+	.byte	40H	;  '@'
+	.byte	00H
+	.byte	20H	;  ' '
+	.byte	10H
+	.byte	08H
+	.byte	38H	;  '8'
+	.byte	44H	;  'D'
+	.byte	38H	;  '8'
+	.byte	00H
+	.byte	7cH	;  '|'
+	.byte	00H
+	.byte	64H	;  'd'
+	.byte	54H	;  'T'
+	.byte	48H	;  'H'
+	.byte	44H	;  'D'
+	.byte	54H	;  'T'
+	.byte	28H	;  '('
+	.byte	1cH
+	.byte	10H
+	.byte	7cH	;  '|'
+	.byte	4cH	;  'L'
+	.byte	54H	;  'T'
+	.byte	24H	;  '$'
+	.byte	38H	;  '8'
+	.byte	54H	;  'T'
+	.byte	20H	;  ' '
+	.byte	04H
+	.byte	74H	;  't'
+	.byte	0cH
+	.byte	28H	;  '('
+	.byte	54H	;  'T'
+	.byte	28H	;  '('
+	.byte	08H
+	.byte	54H	;  'T'
+	.byte	38H	;  '8'
+	.byte	00H
+	.byte	50H	;  'P'
+	.byte	00H
+	.byte	80H
+	.byte	50H	;  'P'
+	.byte	00H
+	.byte	10H
+	.byte	28H	;  '('
+	.byte	44H	;  'D'
+	.byte	28H	;  '('
+	.byte	28H	;  '('
+	.byte	28H	;  '('
+	.byte	44H	;  'D'
+	.byte	28H	;  '('
+	.byte	10H
+	.byte	04H
+	.byte	54H	;  'T'
+	.byte	08H
+	.byte	38H	;  '8'
+	.byte	4cH	;  'L'
+	.byte	5cH	;  '\'
+	.byte	78H	;  'x'
+	.byte	14H
+	.byte	78H	;  'x'
+	.byte	7cH	;  '|'
+	.byte	54H	;  'T'
+	.byte	28H	;  '('
+	.byte	38H	;  '8'
+	.byte	44H	;  'D'
+	.byte	44H	;  'D'
+	.byte	7cH	;  '|'
+	.byte	44H	;  'D'
+	.byte	38H	;  '8'
+	.byte	7cH	;  '|'
+	.byte	54H	;  'T'
+	.byte	44H	;  'D'
+	.byte	7cH	;  '|'
+	.byte	14H
+	.byte	04H
+	.byte	38H	;  '8'
+	.byte	44H	;  'D'
+	.byte	34H	;  '4'
+	.byte	7cH	;  '|'
+	.byte	10H
+	.byte	7cH	;  '|'
+	.byte	00H
+	.byte	7cH	;  '|'
+	.byte	00H
+	.byte	20H	;  ' '
+	.byte	40H	;  '@'
+	.byte	3cH	;  '<'
+	.byte	7cH	;  '|'
+	.byte	10H
+	.byte	6cH	;  'l'
+	.byte	7cH	;  '|'
+	.byte	40H	;  '@'
+	.byte	40H	;  '@'
+	.byte	7cH	;  '|'
+	.byte	08H
+	.byte	7cH	;  '|'
+	.byte	7cH	;  '|'
+	.byte	04H
+	.byte	7cH	;  '|'
+	.byte	7cH	;  '|'
+	.byte	44H	;  'D'
+	.byte	7cH	;  '|'
+	.byte	7cH	;  '|'
+	.byte	14H
+	.byte	08H
+	.byte	38H	;  '8'
+	.byte	44H	;  'D'
+	.byte	78H	;  'x'
+	.byte	7cH	;  '|'
+	.byte	14H
+	.byte	68H	;  'h'
+	.byte	48H	;  'H'
+	.byte	54H	;  'T'
+	.byte	24H	;  '$'
+	.byte	04H
+	.byte	7cH	;  '|'
+	.byte	04H
+	.byte	7cH	;  '|'
+	.byte	40H	;  '@'
+	.byte	7cH	;  '|'
+	.byte	3cH	;  '<'
+	.byte	40H	;  '@'
+	.byte	3cH	;  '<'
+	.byte	7cH	;  '|'
+	.byte	20H	;  ' '
+	.byte	7cH	;  '|'
+	.byte	6cH	;  'l'
+	.byte	10H
+	.byte	6cH	;  'l'
+	.byte	1cH
+	.byte	60H	;  '`'
+	.byte	1cH
+	.byte	64H	;  'd'
+	.byte	54H	;  'T'
+	.byte	4cH	;  'L'
+	.byte	7cH	;  '|'
+	.byte	44H	;  'D'
+	.byte	00H
+	.byte	08H
+	.byte	10H
+	.byte	20H	;  ' '
+	.byte	44H	;  'D'
+	.byte	7cH	;  '|'
+	.byte	00H
+	.byte	08H
+	.byte	04H
+	.byte	08H
+	.byte	80H
+	.byte	80H
+	.byte	80H
+	.byte	04H
+	.byte	08H
+	.byte	00H
+;## # init data of FontSystem5x8.
+	.byte	00H
+	.byte	00H
+	.byte	00H
+	.byte	00H
+	.byte	00H
+	.byte	00H
+	.byte	00H
+	.byte	4fH	;  'O'
+	.byte	00H
+	.byte	00H
+	.byte	00H
+	.byte	07H
+	.byte	00H
+	.byte	07H
+	.byte	00H
+	.byte	14H
+	.byte	7fH
+	.byte	14H
+	.byte	7fH
+	.byte	14H
+	.byte	24H	;  '$'
+	.byte	2aH	;  '*'
+	.byte	7fH
+	.byte	2aH	;  '*'
+	.byte	12H
+	.byte	23H	;  '#'
+	.byte	13H
+	.byte	08H
+	.byte	64H	;  'd'
+	.byte	62H	;  'b'
+	.byte	36H	;  '6'
+	.byte	49H	;  'I'
+	.byte	55H	;  'U'
+	.byte	22H	;  '"'
+	.byte	20H	;  ' '
+	.byte	00H
+	.byte	05H
+	.byte	03H
+	.byte	00H
+	.byte	00H
+	.byte	00H
+	.byte	1cH
+	.byte	22H	;  '"'
+	.byte	41H	;  'A'
+	.byte	00H
+	.byte	00H
+	.byte	41H	;  'A'
+	.byte	22H	;  '"'
+	.byte	1cH
+	.byte	00H
+	.byte	14H
+	.byte	08H
+	.byte	3eH	;  '>'
+	.byte	08H
+	.byte	14H
+	.byte	08H
+	.byte	08H
+	.byte	3eH	;  '>'
+	.byte	08H
+	.byte	08H
+	.byte	50H	;  'P'
+	.byte	30H	;  '0'
+	.byte	00H
+	.byte	00H
+	.byte	00H
+	.byte	08H
+	.byte	08H
+	.byte	08H
+	.byte	08H
+	.byte	08H
+	.byte	00H
+	.byte	60H	;  '`'
+	.byte	60H	;  '`'
+	.byte	00H
+	.byte	00H
+	.byte	20H	;  ' '
+	.byte	10H
+	.byte	08H
+	.byte	04H
+	.byte	02H
+	.byte	3eH	;  '>'
+	.byte	51H	;  'Q'
+	.byte	49H	;  'I'
+	.byte	45H	;  'E'
+	.byte	3eH	;  '>'
+	.byte	00H
+	.byte	42H	;  'B'
+	.byte	7fH
+	.byte	40H	;  '@'
+	.byte	00H
+	.byte	42H	;  'B'
+	.byte	61H	;  'a'
+	.byte	51H	;  'Q'
+	.byte	49H	;  'I'
+	.byte	46H	;  'F'
+	.byte	21H	;  '!'
+	.byte	41H	;  'A'
+	.byte	45H	;  'E'
+	.byte	4bH	;  'K'
+	.byte	31H	;  '1'
+	.byte	18H
+	.byte	14H
+	.byte	12H
+	.byte	7fH
+	.byte	10H
+	.byte	27H	;  '''
+	.byte	45H	;  'E'
+	.byte	45H	;  'E'
+	.byte	45H	;  'E'
+	.byte	39H	;  '9'
+	.byte	3cH	;  '<'
+	.byte	4aH	;  'J'
+	.byte	49H	;  'I'
+	.byte	49H	;  'I'
+	.byte	30H	;  '0'
+	.byte	01H
+	.byte	71H	;  'q'
+	.byte	09H
+	.byte	05H
+	.byte	03H
+	.byte	36H	;  '6'
+	.byte	49H	;  'I'
+	.byte	49H	;  'I'
+	.byte	49H	;  'I'
+	.byte	36H	;  '6'
+	.byte	06H
+	.byte	49H	;  'I'
+	.byte	49H	;  'I'
+	.byte	29H	;  ')'
+	.byte	1eH
+	.byte	00H
+	.byte	36H	;  '6'
+	.byte	36H	;  '6'
+	.byte	00H
+	.byte	00H
+	.byte	00H
+	.byte	56H	;  'V'
+	.byte	36H	;  '6'
+	.byte	00H
+	.byte	00H
+	.byte	08H
+	.byte	14H
+	.byte	22H	;  '"'
+	.byte	41H	;  'A'
+	.byte	00H
+	.byte	14H
+	.byte	14H
+	.byte	14H
+	.byte	14H
+	.byte	14H
+	.byte	00H
+	.byte	41H	;  'A'
+	.byte	22H	;  '"'
+	.byte	14H
+	.byte	08H
+	.byte	02H
+	.byte	01H
+	.byte	51H	;  'Q'
+	.byte	09H
+	.byte	06H
+	.byte	3eH	;  '>'
+	.byte	41H	;  'A'
+	.byte	5dH	;  ']'
+	.byte	55H	;  'U'
+	.byte	1eH
+	.byte	7eH	;  '~'
+	.byte	11H
+	.byte	11H
+	.byte	11H
+	.byte	7eH	;  '~'
+	.byte	7fH
+	.byte	49H	;  'I'
+	.byte	49H	;  'I'
+	.byte	49H	;  'I'
+	.byte	36H	;  '6'
+	.byte	3eH	;  '>'
+	.byte	41H	;  'A'
+	.byte	41H	;  'A'
+	.byte	41H	;  'A'
+	.byte	22H	;  '"'
+	.byte	7fH
+	.byte	41H	;  'A'
+	.byte	41H	;  'A'
+	.byte	22H	;  '"'
+	.byte	1cH
+	.byte	7fH
+	.byte	49H	;  'I'
+	.byte	49H	;  'I'
+	.byte	49H	;  'I'
+	.byte	41H	;  'A'
+	.byte	7fH
+	.byte	09H
+	.byte	09H
+	.byte	09H
+	.byte	01H
+	.byte	3eH	;  '>'
+	.byte	41H	;  'A'
+	.byte	49H	;  'I'
+	.byte	49H	;  'I'
+	.byte	7aH	;  'z'
+	.byte	7fH
+	.byte	08H
+	.byte	08H
+	.byte	08H
+	.byte	7fH
+	.byte	00H
+	.byte	41H	;  'A'
+	.byte	7fH
+	.byte	41H	;  'A'
+	.byte	00H
+	.byte	20H	;  ' '
+	.byte	40H	;  '@'
+	.byte	41H	;  'A'
+	.byte	3fH	;  '?'
+	.byte	01H
+	.byte	7fH
+	.byte	08H
+	.byte	14H
+	.byte	22H	;  '"'
+	.byte	41H	;  'A'
+	.byte	7fH
+	.byte	40H	;  '@'
+	.byte	40H	;  '@'
+	.byte	40H	;  '@'
+	.byte	40H	;  '@'
+	.byte	7fH
+	.byte	02H
+	.byte	0cH
+	.byte	02H
+	.byte	7fH
+	.byte	7fH
+	.byte	04H
+	.byte	08H
+	.byte	10H
+	.byte	7fH
+	.byte	3eH	;  '>'
+	.byte	41H	;  'A'
+	.byte	41H	;  'A'
+	.byte	41H	;  'A'
+	.byte	3eH	;  '>'
+	.byte	7fH
+	.byte	09H
+	.byte	09H
+	.byte	09H
+	.byte	06H
+	.byte	3eH	;  '>'
+	.byte	41H	;  'A'
+	.byte	51H	;  'Q'
+	.byte	21H	;  '!'
+	.byte	5eH	;  '^'
+	.byte	7fH
+	.byte	09H
+	.byte	19H
+	.byte	29H	;  ')'
+	.byte	46H	;  'F'
+	.byte	26H	;  '&'
+	.byte	49H	;  'I'
+	.byte	49H	;  'I'
+	.byte	49H	;  'I'
+	.byte	32H	;  '2'
+	.byte	01H
+	.byte	01H
+	.byte	7fH
+	.byte	01H
+	.byte	01H
+	.byte	3fH	;  '?'
+	.byte	40H	;  '@'
+	.byte	40H	;  '@'
+	.byte	40H	;  '@'
+	.byte	3fH	;  '?'
+	.byte	1fH
+	.byte	20H	;  ' '
+	.byte	40H	;  '@'
+	.byte	20H	;  ' '
+	.byte	1fH
+	.byte	3fH	;  '?'
+	.byte	40H	;  '@'
+	.byte	38H	;  '8'
+	.byte	40H	;  '@'
+	.byte	3fH	;  '?'
+	.byte	63H	;  'c'
+	.byte	14H
+	.byte	08H
+	.byte	14H
+	.byte	63H	;  'c'
+	.byte	07H
+	.byte	08H
+	.byte	70H	;  'p'
+	.byte	08H
+	.byte	07H
+	.byte	61H	;  'a'
+	.byte	51H	;  'Q'
+	.byte	49H	;  'I'
+	.byte	45H	;  'E'
+	.byte	43H	;  'C'
+	.byte	00H
+	.byte	7fH
+	.byte	41H	;  'A'
+	.byte	41H	;  'A'
+	.byte	00H
+	.byte	02H
+	.byte	04H
+	.byte	08H
+	.byte	10H
+	.byte	20H	;  ' '
+	.byte	00H
+	.byte	41H	;  'A'
+	.byte	41H	;  'A'
+	.byte	7fH
+	.byte	00H
+	.byte	04H
+	.byte	02H
+	.byte	01H
+	.byte	02H
+	.byte	04H
+	.byte	40H	;  '@'
+	.byte	40H	;  '@'
+	.byte	40H	;  '@'
+	.byte	40H	;  '@'
+	.byte	40H	;  '@'
+	.byte	00H
+	.byte	00H
+	.byte	03H
+	.byte	05H
+	.byte	00H
+	.byte	20H	;  ' '
+	.byte	54H	;  'T'
+	.byte	54H	;  'T'
+	.byte	54H	;  'T'
+	.byte	78H	;  'x'
+	.byte	7fH
+	.byte	44H	;  'D'
+	.byte	44H	;  'D'
+	.byte	44H	;  'D'
+	.byte	38H	;  '8'
+	.byte	38H	;  '8'
+	.byte	44H	;  'D'
+	.byte	44H	;  'D'
+	.byte	44H	;  'D'
+	.byte	44H	;  'D'
+	.byte	38H	;  '8'
+	.byte	44H	;  'D'
+	.byte	44H	;  'D'
+	.byte	44H	;  'D'
+	.byte	7fH
+	.byte	38H	;  '8'
+	.byte	54H	;  'T'
+	.byte	54H	;  'T'
+	.byte	54H	;  'T'
+	.byte	18H
+	.byte	04H
+	.byte	04H
+	.byte	7eH	;  '~'
+	.byte	05H
+	.byte	05H
+	.byte	08H
+	.byte	54H	;  'T'
+	.byte	54H	;  'T'
+	.byte	54H	;  'T'
+	.byte	3cH	;  '<'
+	.byte	7fH
+	.byte	08H
+	.byte	04H
+	.byte	04H
+	.byte	78H	;  'x'
+	.byte	00H
+	.byte	44H	;  'D'
+	.byte	7dH	;  '}'
+	.byte	40H	;  '@'
+	.byte	00H
+	.byte	20H	;  ' '
+	.byte	40H	;  '@'
+	.byte	44H	;  'D'
+	.byte	3dH	;  '='
+	.byte	00H
+	.byte	7fH
+	.byte	10H
+	.byte	28H	;  '('
+	.byte	44H	;  'D'
+	.byte	00H
+	.byte	00H
+	.byte	41H	;  'A'
+	.byte	7fH
+	.byte	40H	;  '@'
+	.byte	00H
+	.byte	7cH	;  '|'
+	.byte	04H
+	.byte	7cH	;  '|'
+	.byte	04H
+	.byte	78H	;  'x'
+	.byte	7cH	;  '|'
+	.byte	08H
+	.byte	04H
+	.byte	04H
+	.byte	78H	;  'x'
+	.byte	38H	;  '8'
+	.byte	44H	;  'D'
+	.byte	44H	;  'D'
+	.byte	44H	;  'D'
+	.byte	38H	;  '8'
+	.byte	7cH	;  '|'
+	.byte	14H
+	.byte	14H
+	.byte	14H
+	.byte	08H
+	.byte	08H
+	.byte	14H
+	.byte	14H
+	.byte	14H
+	.byte	7cH	;  '|'
+	.byte	7cH	;  '|'
+	.byte	08H
+	.byte	04H
+	.byte	04H
+	.byte	00H
+	.byte	48H	;  'H'
+	.byte	54H	;  'T'
+	.byte	54H	;  'T'
+	.byte	54H	;  'T'
+	.byte	24H	;  '$'
+	.byte	04H
+	.byte	04H
+	.byte	3fH	;  '?'
+	.byte	44H	;  'D'
+	.byte	44H	;  'D'
+	.byte	3cH	;  '<'
+	.byte	40H	;  '@'
+	.byte	40H	;  '@'
+	.byte	20H	;  ' '
+	.byte	7cH	;  '|'
+	.byte	1cH
+	.byte	20H	;  ' '
+	.byte	40H	;  '@'
+	.byte	20H	;  ' '
+	.byte	1cH
+	.byte	3cH	;  '<'
+	.byte	40H	;  '@'
+	.byte	30H	;  '0'
+	.byte	40H	;  '@'
+	.byte	3cH	;  '<'
+	.byte	44H	;  'D'
+	.byte	28H	;  '('
+	.byte	10H
+	.byte	28H	;  '('
+	.byte	44H	;  'D'
+	.byte	0cH
+	.byte	50H	;  'P'
+	.byte	50H	;  'P'
+	.byte	50H	;  'P'
+	.byte	3cH	;  '<'
+	.byte	44H	;  'D'
+	.byte	64H	;  'd'
+	.byte	54H	;  'T'
+	.byte	4cH	;  'L'
+	.byte	44H	;  'D'
+	.byte	08H
+	.byte	36H	;  '6'
+	.byte	41H	;  'A'
+	.byte	41H	;  'A'
+	.byte	00H
+	.byte	00H
+	.byte	00H
+	.byte	77H	;  'w'
+	.byte	00H
+	.byte	00H
+	.byte	00H
+	.byte	41H	;  'A'
+	.byte	41H	;  'A'
+	.byte	36H	;  '6'
+	.byte	08H
+	.byte	08H
+	.byte	08H
+	.byte	2aH	;  '*'
+	.byte	1cH
+	.byte	08H
+	.byte	08H
+	.byte	1cH
+	.byte	2aH	;  '*'
+	.byte	08H
+	.byte	08H
+	.byte	0ffH
+	.byte	0ffH
+	.byte	0ffH
+	.byte	0ffH
+	.byte	0ffH
+;## # init data of FontSystem7x8.
+	.byte	00H
+	.byte	00H
+	.byte	00H
+	.byte	00H
+	.byte	00H
+	.byte	00H
+	.byte	00H
+	.byte	00H
+	.byte	06H
+	.byte	5fH	;  '_'
+	.byte	5fH	;  '_'
+	.byte	06H
+	.byte	00H
+	.byte	00H
+	.byte	00H
+	.byte	07H
+	.byte	07H
+	.byte	00H
+	.byte	07H
+	.byte	07H
+	.byte	00H
+	.byte	14H
+	.byte	7fH
+	.byte	7fH
+	.byte	14H
+	.byte	7fH
+	.byte	7fH
+	.byte	14H
+	.byte	24H	;  '$'
+	.byte	2eH	;  '.'
+	.byte	6bH	;  'k'
+	.byte	6bH	;  'k'
+	.byte	3aH	;  ':'
+	.byte	12H
+	.byte	00H
+	.byte	46H	;  'F'
+	.byte	66H	;  'f'
+	.byte	30H	;  '0'
+	.byte	18H
+	.byte	0cH
+	.byte	66H	;  'f'
+	.byte	62H	;  'b'
+	.byte	30H	;  '0'
+	.byte	7aH	;  'z'
+	.byte	4fH	;  'O'
+	.byte	5dH	;  ']'
+	.byte	37H	;  '7'
+	.byte	7aH	;  'z'
+	.byte	48H	;  'H'
+	.byte	04H
+	.byte	07H
+	.byte	03H
+	.byte	00H
+	.byte	00H
+	.byte	00H
+	.byte	00H
+	.byte	00H
+	.byte	1cH
+	.byte	3eH	;  '>'
+	.byte	63H	;  'c'
+	.byte	41H	;  'A'
+	.byte	00H
+	.byte	00H
+	.byte	00H
+	.byte	41H	;  'A'
+	.byte	63H	;  'c'
+	.byte	3eH	;  '>'
+	.byte	1cH
+	.byte	00H
+	.byte	00H
+	.byte	08H
+	.byte	2aH	;  '*'
+	.byte	3eH	;  '>'
+	.byte	1cH
+	.byte	1cH
+	.byte	3eH	;  '>'
+	.byte	2aH	;  '*'
+	.byte	08H
+	.byte	08H
+	.byte	3eH	;  '>'
+	.byte	3eH	;  '>'
+	.byte	08H
+	.byte	08H
+	.byte	00H
+	.byte	00H
+	.byte	80H
+	.byte	0e0H
+	.byte	60H	;  '`'
+	.byte	00H
+	.byte	00H
+	.byte	00H
+	.byte	08H
+	.byte	08H
+	.byte	08H
+	.byte	08H
+	.byte	08H
+	.byte	08H
+	.byte	00H
+	.byte	00H
+	.byte	00H
+	.byte	60H	;  '`'
+	.byte	60H	;  '`'
+	.byte	00H
+	.byte	00H
+	.byte	00H
+	.byte	60H	;  '`'
+	.byte	30H	;  '0'
+	.byte	18H
+	.byte	0cH
+	.byte	06H
+	.byte	03H
+	.byte	01H
+	.byte	3eH	;  '>'
+	.byte	7fH
+	.byte	71H	;  'q'
+	.byte	59H	;  'Y'
+	.byte	4dH	;  'M'
+	.byte	7fH
+	.byte	3eH	;  '>'
+	.byte	40H	;  '@'
+	.byte	42H	;  'B'
+	.byte	7fH
+	.byte	7fH
+	.byte	40H	;  '@'
+	.byte	40H	;  '@'
+	.byte	00H
+	.byte	62H	;  'b'
+	.byte	73H	;  's'
+	.byte	59H	;  'Y'
+	.byte	49H	;  'I'
+	.byte	6fH	;  'o'
+	.byte	66H	;  'f'
+	.byte	00H
+	.byte	22H	;  '"'
+	.byte	63H	;  'c'
+	.byte	49H	;  'I'
+	.byte	49H	;  'I'
+	.byte	7fH
+	.byte	36H	;  '6'
+	.byte	00H
+	.byte	18H
+	.byte	1cH
+	.byte	16H
+	.byte	53H	;  'S'
+	.byte	7fH
+	.byte	7fH
+	.byte	50H	;  'P'
+	.byte	27H	;  '''
+	.byte	67H	;  'g'
+	.byte	45H	;  'E'
+	.byte	45H	;  'E'
+	.byte	7dH	;  '}'
+	.byte	39H	;  '9'
+	.byte	00H
+	.byte	3cH	;  '<'
+	.byte	7eH	;  '~'
+	.byte	4bH	;  'K'
+	.byte	49H	;  'I'
+	.byte	79H	;  'y'
+	.byte	30H	;  '0'
+	.byte	00H
+	.byte	03H
+	.byte	03H
+	.byte	71H	;  'q'
+	.byte	79H	;  'y'
+	.byte	0fH
+	.byte	07H
+	.byte	00H
+	.byte	36H	;  '6'
+	.byte	7fH
+	.byte	49H	;  'I'
+	.byte	49H	;  'I'
+	.byte	7fH
+	.byte	36H	;  '6'
+	.byte	00H
+	.byte	06H
+	.byte	4fH	;  'O'
+	.byte	49H	;  'I'
+	.byte	69H	;  'i'
+	.byte	3fH	;  '?'
+	.byte	1eH
+	.byte	00H
+	.byte	00H
+	.byte	00H
+	.byte	66H	;  'f'
+	.byte	66H	;  'f'
+	.byte	00H
+	.byte	00H
+	.byte	00H
+	.byte	00H
+	.byte	80H
+	.byte	0e6H
+	.byte	66H	;  'f'
+	.byte	00H
+	.byte	00H
+	.byte	00H
+	.byte	08H
+	.byte	1cH
+	.byte	36H	;  '6'
+	.byte	63H	;  'c'
+	.byte	41H	;  'A'
+	.byte	00H
+	.byte	00H
+	.byte	24H	;  '$'
+	.byte	24H	;  '$'
+	.byte	24H	;  '$'
+	.byte	24H	;  '$'
+	.byte	24H	;  '$'
+	.byte	24H	;  '$'
+	.byte	00H
+	.byte	00H
+	.byte	41H	;  'A'
+	.byte	63H	;  'c'
+	.byte	36H	;  '6'
+	.byte	1cH
+	.byte	08H
+	.byte	00H
+	.byte	02H
+	.byte	03H
+	.byte	51H	;  'Q'
+	.byte	59H	;  'Y'
+	.byte	0fH
+	.byte	06H
+	.byte	00H
+	.byte	3eH	;  '>'
+	.byte	7fH
+	.byte	41H	;  'A'
+	.byte	5dH	;  ']'
+	.byte	5dH	;  ']'
+	.byte	1fH
+	.byte	1eH
+	.byte	7cH	;  '|'
+	.byte	7eH	;  '~'
+	.byte	13H
+	.byte	13H
+	.byte	7eH	;  '~'
+	.byte	7cH	;  '|'
+	.byte	00H
+	.byte	41H	;  'A'
+	.byte	7fH
+	.byte	7fH
+	.byte	49H	;  'I'
+	.byte	49H	;  'I'
+	.byte	7fH
+	.byte	36H	;  '6'
+	.byte	1cH
+	.byte	3eH	;  '>'
+	.byte	63H	;  'c'
+	.byte	41H	;  'A'
+	.byte	41H	;  'A'
+	.byte	63H	;  'c'
+	.byte	22H	;  '"'
+	.byte	41H	;  'A'
+	.byte	7fH
+	.byte	7fH
+	.byte	41H	;  'A'
+	.byte	63H	;  'c'
+	.byte	3eH	;  '>'
+	.byte	1cH
+	.byte	41H	;  'A'
+	.byte	7fH
+	.byte	7fH
+	.byte	49H	;  'I'
+	.byte	5dH	;  ']'
+	.byte	41H	;  'A'
+	.byte	63H	;  'c'
+	.byte	41H	;  'A'
+	.byte	7fH
+	.byte	7fH
+	.byte	49H	;  'I'
+	.byte	1dH
+	.byte	01H
+	.byte	03H
+	.byte	1cH
+	.byte	3eH	;  '>'
+	.byte	63H	;  'c'
+	.byte	41H	;  'A'
+	.byte	51H	;  'Q'
+	.byte	73H	;  's'
+	.byte	72H	;  'r'
+	.byte	7fH
+	.byte	7fH
+	.byte	08H
+	.byte	08H
+	.byte	7fH
+	.byte	7fH
+	.byte	00H
+	.byte	00H
+	.byte	41H	;  'A'
+	.byte	7fH
+	.byte	7fH
+	.byte	41H	;  'A'
+	.byte	00H
+	.byte	00H
+	.byte	30H	;  '0'
+	.byte	70H	;  'p'
+	.byte	40H	;  '@'
+	.byte	41H	;  'A'
+	.byte	7fH
+	.byte	3fH	;  '?'
+	.byte	01H
+	.byte	41H	;  'A'
+	.byte	7fH
+	.byte	7fH
+	.byte	08H
+	.byte	1cH
+	.byte	77H	;  'w'
+	.byte	63H	;  'c'
+	.byte	41H	;  'A'
+	.byte	7fH
+	.byte	7fH
+	.byte	41H	;  'A'
+	.byte	40H	;  '@'
+	.byte	60H	;  '`'
+	.byte	70H	;  'p'
+	.byte	7fH
+	.byte	7fH
+	.byte	0eH
+	.byte	1cH
+	.byte	0eH
+	.byte	7fH
+	.byte	7fH
+	.byte	7fH
+	.byte	7fH
+	.byte	06H
+	.byte	0cH
+	.byte	18H
+	.byte	7fH
+	.byte	7fH
+	.byte	1cH
+	.byte	3eH	;  '>'
+	.byte	63H	;  'c'
+	.byte	41H	;  'A'
+	.byte	63H	;  'c'
+	.byte	3eH	;  '>'
+	.byte	1cH
+	.byte	41H	;  'A'
+	.byte	7fH
+	.byte	7fH
+	.byte	49H	;  'I'
+	.byte	09H
+	.byte	0fH
+	.byte	06H
+	.byte	1eH
+	.byte	3fH	;  '?'
+	.byte	21H	;  '!'
+	.byte	71H	;  'q'
+	.byte	7fH
+	.byte	5eH	;  '^'
+	.byte	00H
+	.byte	41H	;  'A'
+	.byte	7fH
+	.byte	7fH
+	.byte	09H
+	.byte	19H
+	.byte	7fH
+	.byte	66H	;  'f'
+	.byte	26H	;  '&'
+	.byte	6fH	;  'o'
+	.byte	4dH	;  'M'
+	.byte	59H	;  'Y'
+	.byte	73H	;  's'
+	.byte	32H	;  '2'
+	.byte	00H
+	.byte	03H
+	.byte	41H	;  'A'
+	.byte	7fH
+	.byte	7fH
+	.byte	41H	;  'A'
+	.byte	03H
+	.byte	00H
+	.byte	7fH
+	.byte	7fH
+	.byte	40H	;  '@'
+	.byte	40H	;  '@'
+	.byte	7fH
+	.byte	7fH
+	.byte	00H
+	.byte	1fH
+	.byte	3fH	;  '?'
+	.byte	60H	;  '`'
+	.byte	60H	;  '`'
+	.byte	3fH	;  '?'
+	.byte	1fH
+	.byte	00H
+	.byte	7fH
+	.byte	7fH
+	.byte	30H	;  '0'
+	.byte	18H
+	.byte	30H	;  '0'
+	.byte	7fH
+	.byte	7fH
+	.byte	43H	;  'C'
+	.byte	67H	;  'g'
+	.byte	3cH	;  '<'
+	.byte	18H
+	.byte	3cH	;  '<'
+	.byte	67H	;  'g'
+	.byte	43H	;  'C'
+	.byte	07H
+	.byte	4fH	;  'O'
+	.byte	78H	;  'x'
+	.byte	78H	;  'x'
+	.byte	4fH	;  'O'
+	.byte	07H
+	.byte	00H
+	.byte	47H	;  'G'
+	.byte	63H	;  'c'
+	.byte	71H	;  'q'
+	.byte	59H	;  'Y'
+	.byte	4dH	;  'M'
+	.byte	67H	;  'g'
+	.byte	73H	;  's'
+	.byte	00H
+	.byte	7fH
+	.byte	7fH
+	.byte	41H	;  'A'
+	.byte	41H	;  'A'
+	.byte	00H
+	.byte	00H
+	.byte	01H
+	.byte	03H
+	.byte	06H
+	.byte	0cH
+	.byte	18H
+	.byte	30H	;  '0'
+	.byte	60H	;  '`'
+	.byte	00H
+	.byte	41H	;  'A'
+	.byte	41H	;  'A'
+	.byte	7fH
+	.byte	7fH
+	.byte	00H
+	.byte	00H
+	.byte	08H
+	.byte	0cH
+	.byte	06H
+	.byte	03H
+	.byte	06H
+	.byte	0cH
+	.byte	08H
+	.byte	80H
+	.byte	80H
+	.byte	80H
+	.byte	80H
+	.byte	80H
+	.byte	80H
+	.byte	80H
+	.byte	00H
+	.byte	00H
+	.byte	03H
+	.byte	07H
+	.byte	04H
+	.byte	00H
+	.byte	00H
+	.byte	20H	;  ' '
+	.byte	74H	;  't'
+	.byte	54H	;  'T'
+	.byte	54H	;  'T'
+	.byte	3cH	;  '<'
+	.byte	78H	;  'x'
+	.byte	40H	;  '@'
+	.byte	41H	;  'A'
+	.byte	7fH
+	.byte	3fH	;  '?'
+	.byte	48H	;  'H'
+	.byte	48H	;  'H'
+	.byte	78H	;  'x'
+	.byte	30H	;  '0'
+	.byte	38H	;  '8'
+	.byte	7cH	;  '|'
+	.byte	44H	;  'D'
+	.byte	44H	;  'D'
+	.byte	6cH	;  'l'
+	.byte	28H	;  '('
+	.byte	00H
+	.byte	30H	;  '0'
+	.byte	78H	;  'x'
+	.byte	48H	;  'H'
+	.byte	49H	;  'I'
+	.byte	3fH	;  '?'
+	.byte	7fH
+	.byte	40H	;  '@'
+	.byte	38H	;  '8'
+	.byte	7cH	;  '|'
+	.byte	54H	;  'T'
+	.byte	54H	;  'T'
+	.byte	5cH	;  '\'
+	.byte	18H
+	.byte	00H
+	.byte	48H	;  'H'
+	.byte	7eH	;  '~'
+	.byte	7fH
+	.byte	49H	;  'I'
+	.byte	03H
+	.byte	02H
+	.byte	00H
+	.byte	38H	;  '8'
+	.byte	0bcH
+	.byte	0a4H
+	.byte	0a4H
+	.byte	0fcH
+	.byte	78H	;  'x'
+	.byte	00H
+	.byte	41H	;  'A'
+	.byte	7fH
+	.byte	7fH
+	.byte	08H
+	.byte	04H
+	.byte	7cH	;  '|'
+	.byte	78H	;  'x'
+	.byte	00H
+	.byte	44H	;  'D'
+	.byte	7dH	;  '}'
+	.byte	7dH	;  '}'
+	.byte	40H	;  '@'
+	.byte	00H
+	.byte	00H
+	.byte	60H	;  '`'
+	.byte	0e0H
+	.byte	80H
+	.byte	80H
+	.byte	0fdH
+	.byte	7dH	;  '}'
+	.byte	00H
+	.byte	41H	;  'A'
+	.byte	7fH
+	.byte	7fH
+	.byte	10H
+	.byte	38H	;  '8'
+	.byte	6cH	;  'l'
+	.byte	44H	;  'D'
+	.byte	00H
+	.byte	41H	;  'A'
+	.byte	7fH
+	.byte	7fH
+	.byte	40H	;  '@'
+	.byte	00H
+	.byte	00H
+	.byte	78H	;  'x'
+	.byte	7cH	;  '|'
+	.byte	1cH
+	.byte	38H	;  '8'
+	.byte	1cH
+	.byte	7cH	;  '|'
+	.byte	78H	;  'x'
+	.byte	7cH	;  '|'
+	.byte	7cH	;  '|'
+	.byte	04H
+	.byte	04H
+	.byte	7cH	;  '|'
+	.byte	78H	;  'x'
+	.byte	00H
+	.byte	38H	;  '8'
+	.byte	7cH	;  '|'
+	.byte	44H	;  'D'
+	.byte	44H	;  'D'
+	.byte	7cH	;  '|'
+	.byte	38H	;  '8'
+	.byte	00H
+	.byte	00H
+	.byte	0fcH
+	.byte	0fcH
+	.byte	0a4H
+	.byte	24H	;  '$'
+	.byte	3cH	;  '<'
+	.byte	18H
+	.byte	18H
+	.byte	3cH	;  '<'
+	.byte	24H	;  '$'
+	.byte	0a4H
+	.byte	0f8H
+	.byte	0fcH
+	.byte	84H
+	.byte	44H	;  'D'
+	.byte	7cH	;  '|'
+	.byte	78H	;  'x'
+	.byte	4cH	;  'L'
+	.byte	04H
+	.byte	1cH
+	.byte	18H
+	.byte	48H	;  'H'
+	.byte	5cH	;  '\'
+	.byte	54H	;  'T'
+	.byte	54H	;  'T'
+	.byte	74H	;  't'
+	.byte	24H	;  '$'
+	.byte	00H
+	.byte	00H
+	.byte	04H
+	.byte	3eH	;  '>'
+	.byte	7fH
+	.byte	44H	;  'D'
+	.byte	24H	;  '$'
+	.byte	00H
+	.byte	3cH	;  '<'
+	.byte	7cH	;  '|'
+	.byte	40H	;  '@'
+	.byte	40H	;  '@'
+	.byte	3cH	;  '<'
+	.byte	7cH	;  '|'
+	.byte	40H	;  '@'
+	.byte	1cH
+	.byte	3cH	;  '<'
+	.byte	60H	;  '`'
+	.byte	60H	;  '`'
+	.byte	3cH	;  '<'
+	.byte	1cH
+	.byte	00H
+	.byte	3cH	;  '<'
+	.byte	7cH	;  '|'
+	.byte	70H	;  'p'
+	.byte	38H	;  '8'
+	.byte	70H	;  'p'
+	.byte	7cH	;  '|'
+	.byte	3cH	;  '<'
+	.byte	44H	;  'D'
+	.byte	6cH	;  'l'
+	.byte	38H	;  '8'
+	.byte	10H
+	.byte	38H	;  '8'
+	.byte	6cH	;  'l'
+	.byte	44H	;  'D'
+	.byte	3cH	;  '<'
+	.byte	0bcH
+	.byte	0a0H
+	.byte	0a0H
+	.byte	0fcH
+	.byte	7cH	;  '|'
+	.byte	00H
+	.byte	4cH	;  'L'
+	.byte	64H	;  'd'
+	.byte	74H	;  't'
+	.byte	5cH	;  '\'
+	.byte	4cH	;  'L'
+	.byte	64H	;  'd'
+	.byte	00H
+	.byte	08H
+	.byte	08H
+	.byte	3eH	;  '>'
+	.byte	77H	;  'w'
+	.byte	41H	;  'A'
+	.byte	41H	;  'A'
+	.byte	00H
+	.byte	00H
+	.byte	00H
+	.byte	00H
+	.byte	77H	;  'w'
+	.byte	77H	;  'w'
+	.byte	00H
+	.byte	00H
+	.byte	41H	;  'A'
+	.byte	41H	;  'A'
+	.byte	77H	;  'w'
+	.byte	3eH	;  '>'
+	.byte	08H
+	.byte	08H
+	.byte	00H
+	.byte	02H
+	.byte	03H
+	.byte	01H
+	.byte	03H
+	.byte	02H
+	.byte	03H
+	.byte	01H
+	.byte	0ffH
+	.byte	81H
+	.byte	81H
+	.byte	81H
+	.byte	81H
+	.byte	81H
+	.byte	0ffH
+	.byte	0eH
+	.byte	9fH
+	.byte	91H
+	.byte	0b1H
+	.byte	0fbH
+	.byte	4aH	;  'J'
+	.byte	00H
+;#################################
+;###  STATIC DATA INFORMATION  ###
+;#################################
+	._type	257,'P',3
+	._type	256,'S','FONT_DEF',6
+	._type	256,'m','u8Width',3,0
+	._type	256,'m','u8Height',3,1
+	._type	256,'m','au8FontTable',257,2
+	._type	258,'T','FONT_DEF',256
+	._var	'Font_System5x8','E',258
+	._var	'Font_System7x8','E',258
+	._type	259,'Z',195,3
+	._var	'FontSystem3x6','G',259,_FontSystem3x6
+	._type	260,'Z',485,3
+	._var	'FontSystem5x8','G',260,_FontSystem5x8
+	._type	261,'Z',679,3
+	._var	'FontSystem7x8','G',261,_FontSystem7x8
+;#################################
+;#################################
+;#################################
+	._inspect	'V', 't', "FONT_DEF", 'O', 256
+	._inspect	'V', 't', "Font_System5x8", 'G', 258
+	._inspect	'V', 't', "Font_System7x8", 'G', 258
+	._inspect	'V', 't', "FontSystem3x6", 'G', 259
+	._inspect	'V', 't', "FontSystem5x8", 'G', 260
+	._inspect	'V', 't', "FontSystem7x8", 'G', 261
+
+	.END
+
+;## Compile End Time Sun Jan 31 23:37:52 2016
+
+

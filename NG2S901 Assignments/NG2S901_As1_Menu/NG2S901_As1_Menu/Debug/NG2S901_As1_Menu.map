@@ -1,56 +1,56 @@
 ##########################################
 # (1) LINK INFORMATION                   #
 ##########################################
-c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\bin\ln30.exe @C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\NG2S901_As1_Menu.m16cl
+c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\bin\ln30.exe @C:\Users\Miguel\Desktop\Nova pasta\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\NG2S901_As1_Menu.m16cl
 
 # LINK FILE INFORMATION
-ncrt0_rsk (C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\ncrt0_rsk.r30)
-	Jan 31 22:39:29 2016
+ncrt0_rsk (C:\Users\Miguel\Desktop\Nova pasta\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\ncrt0_rsk.r30)
+	Jan 31 23:37:56 2016
 
-FONT (C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\FONT.r30)
-	Jan 31 22:39:25 2016
+FONT (C:\Users\Miguel\Desktop\Nova pasta\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\FONT.r30)
+	Jan 31 23:37:52 2016
 
-GLCD (C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\GLCD.r30)
-	Jan 31 22:39:26 2016
+GLCD (C:\Users\Miguel\Desktop\Nova pasta\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\GLCD.r30)
+	Jan 31 23:37:53 2016
 
-hwsetup (C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\hwsetup.r30)
-	Jan 31 22:39:26 2016
+hwsetup (C:\Users\Miguel\Desktop\Nova pasta\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\hwsetup.r30)
+	Jan 31 23:37:53 2016
 
-ISR_DEFs (C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\ISR_DEFs.r30)
-	Jan 31 22:39:26 2016
+ISR_DEFs (C:\Users\Miguel\Desktop\Nova pasta\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\ISR_DEFs.r30)
+	Jan 31 23:37:53 2016
 
-keyscan_4x4 (C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\keyscan_4x4.r30)
-	Jan 31 22:39:26 2016
+keyscan_4x4 (C:\Users\Miguel\Desktop\Nova pasta\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\keyscan_4x4.r30)
+	Jan 31 23:37:54 2016
 
-main (C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\main.r30)
-	Jan 31 22:39:28 2016
+main (C:\Users\Miguel\Desktop\Nova pasta\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\main.r30)
+	Jan 31 23:37:55 2016
 
-7segment (C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\7segment.r30)
-	Jan 31 22:39:25 2016
+7segment (C:\Users\Miguel\Desktop\Nova pasta\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\7segment.r30)
+	Jan 31 23:37:52 2016
 
-extra_program (C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\extra_program.r30)
-	Jan 31 22:39:28 2016
+extra_program (C:\Users\Miguel\Desktop\Nova pasta\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\extra_program.r30)
+	Jan 31 23:37:55 2016
 
-led (C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\led.r30)
-	Jan 31 22:39:27 2016
+led (C:\Users\Miguel\Desktop\Nova pasta\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\led.r30)
+	Jan 31 23:37:54 2016
 
-motor (C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\motor.r30)
-	Jan 31 22:39:27 2016
+motor (C:\Users\Miguel\Desktop\Nova pasta\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\motor.r30)
+	Jan 31 23:37:54 2016
 
-motor_sound (C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\motor_sound.r30)
-	Jan 31 22:39:27 2016
+motor_sound (C:\Users\Miguel\Desktop\Nova pasta\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\motor_sound.r30)
+	Jan 31 23:37:54 2016
 
-print (C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\print.r30)
-	Jan 31 22:39:28 2016
+print (C:\Users\Miguel\Desktop\Nova pasta\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\print.r30)
+	Jan 31 23:37:56 2016
 
-programs (C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\programs.r30)
-	Jan 31 22:39:29 2016
+programs (C:\Users\Miguel\Desktop\Nova pasta\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\programs.r30)
+	Jan 31 23:37:56 2016
 
-timer (C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\timer.r30)
-	Jan 31 22:39:27 2016
+timer (C:\Users\Miguel\Desktop\Nova pasta\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\timer.r30)
+	Jan 31 23:37:55 2016
 
-uart (C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\uart.r30)
-	Jan 31 22:39:28 2016
+uart (C:\Users\Miguel\Desktop\Nova pasta\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\uart.r30)
+	Jan 31 23:37:55 2016
 
 _f4tof8 (c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib)
 	Feb 15 20:19:32 2007
@@ -379,22 +379,22 @@ __SB__           00000400
 ##########################################
 # (6) LOCAL LABEL INFORMATION            #
 ##########################################
-@ ncrt0_rsk ( C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\ncrt0_rsk.r30 )
-@ FONT ( C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\FONT.r30 )
-@ GLCD ( C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\GLCD.r30 )
-@ hwsetup ( C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\hwsetup.r30 )
-@ ISR_DEFs ( C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\ISR_DEFs.r30 )
-@ keyscan_4x4 ( C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\keyscan_4x4.r30 )
-@ main ( C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\main.r30 )
-@ 7segment ( C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\7segment.r30 )
-@ extra_program ( C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\extra_program.r30 )
-@ led ( C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\led.r30 )
-@ motor ( C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\motor.r30 )
-@ motor_sound ( C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\motor_sound.r30 )
-@ print ( C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\print.r30 )
-@ programs ( C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\programs.r30 )
-@ timer ( C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\timer.r30 )
-@ uart ( C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\uart.r30 )
+@ ncrt0_rsk ( C:\Users\Miguel\Desktop\Nova pasta\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\ncrt0_rsk.r30 )
+@ FONT ( C:\Users\Miguel\Desktop\Nova pasta\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\FONT.r30 )
+@ GLCD ( C:\Users\Miguel\Desktop\Nova pasta\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\GLCD.r30 )
+@ hwsetup ( C:\Users\Miguel\Desktop\Nova pasta\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\hwsetup.r30 )
+@ ISR_DEFs ( C:\Users\Miguel\Desktop\Nova pasta\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\ISR_DEFs.r30 )
+@ keyscan_4x4 ( C:\Users\Miguel\Desktop\Nova pasta\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\keyscan_4x4.r30 )
+@ main ( C:\Users\Miguel\Desktop\Nova pasta\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\main.r30 )
+@ 7segment ( C:\Users\Miguel\Desktop\Nova pasta\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\7segment.r30 )
+@ extra_program ( C:\Users\Miguel\Desktop\Nova pasta\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\extra_program.r30 )
+@ led ( C:\Users\Miguel\Desktop\Nova pasta\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\led.r30 )
+@ motor ( C:\Users\Miguel\Desktop\Nova pasta\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\motor.r30 )
+@ motor_sound ( C:\Users\Miguel\Desktop\Nova pasta\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\motor_sound.r30 )
+@ print ( C:\Users\Miguel\Desktop\Nova pasta\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\print.r30 )
+@ programs ( C:\Users\Miguel\Desktop\Nova pasta\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\programs.r30 )
+@ timer ( C:\Users\Miguel\Desktop\Nova pasta\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\timer.r30 )
+@ uart ( C:\Users\Miguel\Desktop\Nova pasta\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\uart.r30 )
 @ _f4tof8 ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib )
 @ _f4toi4u ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib )
 @ _f8add ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib )
@@ -437,22 +437,22 @@ __SB__           00000400
 ##########################################
 # (7) LOCAL EQU SYMBOL INFORMATION       #
 ##########################################
-@ ncrt0_rsk ( C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\ncrt0_rsk.r30 )
-@ FONT ( C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\FONT.r30 )
-@ GLCD ( C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\GLCD.r30 )
-@ hwsetup ( C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\hwsetup.r30 )
-@ ISR_DEFs ( C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\ISR_DEFs.r30 )
-@ keyscan_4x4 ( C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\keyscan_4x4.r30 )
-@ main ( C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\main.r30 )
-@ 7segment ( C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\7segment.r30 )
-@ extra_program ( C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\extra_program.r30 )
-@ led ( C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\led.r30 )
-@ motor ( C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\motor.r30 )
-@ motor_sound ( C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\motor_sound.r30 )
-@ print ( C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\print.r30 )
-@ programs ( C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\programs.r30 )
-@ timer ( C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\timer.r30 )
-@ uart ( C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\uart.r30 )
+@ ncrt0_rsk ( C:\Users\Miguel\Desktop\Nova pasta\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\ncrt0_rsk.r30 )
+@ FONT ( C:\Users\Miguel\Desktop\Nova pasta\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\FONT.r30 )
+@ GLCD ( C:\Users\Miguel\Desktop\Nova pasta\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\GLCD.r30 )
+@ hwsetup ( C:\Users\Miguel\Desktop\Nova pasta\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\hwsetup.r30 )
+@ ISR_DEFs ( C:\Users\Miguel\Desktop\Nova pasta\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\ISR_DEFs.r30 )
+@ keyscan_4x4 ( C:\Users\Miguel\Desktop\Nova pasta\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\keyscan_4x4.r30 )
+@ main ( C:\Users\Miguel\Desktop\Nova pasta\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\main.r30 )
+@ 7segment ( C:\Users\Miguel\Desktop\Nova pasta\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\7segment.r30 )
+@ extra_program ( C:\Users\Miguel\Desktop\Nova pasta\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\extra_program.r30 )
+@ led ( C:\Users\Miguel\Desktop\Nova pasta\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\led.r30 )
+@ motor ( C:\Users\Miguel\Desktop\Nova pasta\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\motor.r30 )
+@ motor_sound ( C:\Users\Miguel\Desktop\Nova pasta\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\motor_sound.r30 )
+@ print ( C:\Users\Miguel\Desktop\Nova pasta\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\print.r30 )
+@ programs ( C:\Users\Miguel\Desktop\Nova pasta\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\programs.r30 )
+@ timer ( C:\Users\Miguel\Desktop\Nova pasta\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\timer.r30 )
+@ uart ( C:\Users\Miguel\Desktop\Nova pasta\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\uart.r30 )
 @ _f4tof8 ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib )
 @ _f4toi4u ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib )
 @ _f8add ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib )
@@ -495,22 +495,22 @@ __SB__           00000400
 ##########################################
 # (8) LOCAL EQU BIT-SYMBOL INFORMATION   #
 ##########################################
-@ ncrt0_rsk ( C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\ncrt0_rsk.r30 )
-@ FONT ( C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\FONT.r30 )
-@ GLCD ( C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\GLCD.r30 )
-@ hwsetup ( C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\hwsetup.r30 )
-@ ISR_DEFs ( C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\ISR_DEFs.r30 )
-@ keyscan_4x4 ( C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\keyscan_4x4.r30 )
-@ main ( C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\main.r30 )
-@ 7segment ( C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\7segment.r30 )
-@ extra_program ( C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\extra_program.r30 )
-@ led ( C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\led.r30 )
-@ motor ( C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\motor.r30 )
-@ motor_sound ( C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\motor_sound.r30 )
-@ print ( C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\print.r30 )
-@ programs ( C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\programs.r30 )
-@ timer ( C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\timer.r30 )
-@ uart ( C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\uart.r30 )
+@ ncrt0_rsk ( C:\Users\Miguel\Desktop\Nova pasta\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\ncrt0_rsk.r30 )
+@ FONT ( C:\Users\Miguel\Desktop\Nova pasta\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\FONT.r30 )
+@ GLCD ( C:\Users\Miguel\Desktop\Nova pasta\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\GLCD.r30 )
+@ hwsetup ( C:\Users\Miguel\Desktop\Nova pasta\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\hwsetup.r30 )
+@ ISR_DEFs ( C:\Users\Miguel\Desktop\Nova pasta\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\ISR_DEFs.r30 )
+@ keyscan_4x4 ( C:\Users\Miguel\Desktop\Nova pasta\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\keyscan_4x4.r30 )
+@ main ( C:\Users\Miguel\Desktop\Nova pasta\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\main.r30 )
+@ 7segment ( C:\Users\Miguel\Desktop\Nova pasta\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\7segment.r30 )
+@ extra_program ( C:\Users\Miguel\Desktop\Nova pasta\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\extra_program.r30 )
+@ led ( C:\Users\Miguel\Desktop\Nova pasta\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\led.r30 )
+@ motor ( C:\Users\Miguel\Desktop\Nova pasta\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\motor.r30 )
+@ motor_sound ( C:\Users\Miguel\Desktop\Nova pasta\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\motor_sound.r30 )
+@ print ( C:\Users\Miguel\Desktop\Nova pasta\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\print.r30 )
+@ programs ( C:\Users\Miguel\Desktop\Nova pasta\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\programs.r30 )
+@ timer ( C:\Users\Miguel\Desktop\Nova pasta\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\timer.r30 )
+@ uart ( C:\Users\Miguel\Desktop\Nova pasta\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\uart.r30 )
 @ _f4tof8 ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib )
 @ _f4toi4u ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib )
 @ _f8add ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib )
@@ -630,7 +630,7 @@ FILE=ncrt0_rsk
                                   00000400         0   none ,g         0
 
 SECTION=data_NE
-FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As1_Menu/NG2S901_As1_Menu/drivers/glcd/GLCD
+FILE=C:/Users/Miguel/Desktop/Nova pasta/NG2S901_As1_Menu/NG2S901_As1_Menu/drivers/glcd/GLCD
                                   00000400  00000411        12
   _Font_System3x6
                                   0000040c         6   data ,g         0
@@ -639,26 +639,26 @@ FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As1_Menu/NG2S901_As1_Me
   _Font_System7x8
                                   00000406         6   data ,g         0
 
-FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As1_Menu/NG2S901_As1_Menu/drivers/keypad/keyscan_4x4
+FILE=C:/Users/Miguel/Desktop/Nova pasta/NG2S901_As1_Menu/NG2S901_As1_Menu/drivers/keypad/keyscan_4x4
                                   00000412  00000423        12
   _keypad_matrix
                                   00000412        10   data ,g         0
   _hold_delay
                                   00000422         2   data ,g         0
 
-FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As1_Menu/NG2S901_As1_Menu/main
+FILE=C:/Users/Miguel/Desktop/Nova pasta/NG2S901_As1_Menu/NG2S901_As1_Menu/main
                                   00000424  00000427         4
   _menu_root
                                   00000424         4   data ,g         0
 
-FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As1_Menu/NG2S901_As1_Menu/drivers/7seg/7segment
+FILE=C:/Users/Miguel/Desktop/Nova pasta/NG2S901_As1_Menu/NG2S901_As1_Menu/drivers/7seg/7segment
                                   00000428  00000449        22
   _bcd_table
                                   00000428        14   data ,g         0
   _bcd_table_hex
                                   0000043c         e   data ,g         0
 
-FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As1_Menu/NG2S901_As1_Menu/drivers/led/led
+FILE=C:/Users/Miguel/Desktop/Nova pasta/NG2S901_As1_Menu/NG2S901_As1_Menu/drivers/led/led
                                   0000044a  00000457         e
   _shift
                                   00000450         2   data ,g         0
@@ -675,7 +675,7 @@ FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As1_Menu/NG2S901_As1_Me
   _countup_delay_max
                                   0000044a         2   data ,g         0
 
-FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As1_Menu/NG2S901_As1_Menu/programs
+FILE=C:/Users/Miguel/Desktop/Nova pasta/NG2S901_As1_Menu/NG2S901_As1_Menu/programs
                                   00000458  0000045b         4
   _ctr1
                                   00000458         2   data ,g         0
@@ -690,39 +690,39 @@ FILE=mdata
                                   0000045c         0   none ,g         0
 
 SECTION=bss_NE
-FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As1_Menu/NG2S901_As1_Menu/drivers/isr/ISR_DEFs
+FILE=C:/Users/Miguel/Desktop/Nova pasta/NG2S901_As1_Menu/NG2S901_As1_Menu/drivers/isr/ISR_DEFs
                                   0000046c  00000477         c
   _isr_callbacks
                                   0000046c         c   data ,g         0
 
-FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As1_Menu/NG2S901_As1_Menu/drivers/keypad/keyscan_4x4
+FILE=C:/Users/Miguel/Desktop/Nova pasta/NG2S901_As1_Menu/NG2S901_As1_Menu/drivers/keypad/keyscan_4x4
                                   00000478  00000487        10
   _keypad_buff_cpy
                                   00000478        10   data ,g         0
 
-FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As1_Menu/NG2S901_As1_Menu/main
+FILE=C:/Users/Miguel/Desktop/Nova pasta/NG2S901_As1_Menu/NG2S901_As1_Menu/main
                                   00000488  0000048b         4
   _current_menu
                                   00000488         4   data ,g         0
 
-FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As1_Menu/NG2S901_As1_Menu/drivers/motor/motor_sound
+FILE=C:/Users/Miguel/Desktop/Nova pasta/NG2S901_As1_Menu/NG2S901_As1_Menu/drivers/motor/motor_sound
                                   0000048c  0000048f         4
   _oldreg_dir
                                   0000048c         2   data ,g         0
   _oldreg
                                   0000048e         2   data ,g         0
 
-FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As1_Menu/NG2S901_As1_Menu/programs
+FILE=C:/Users/Miguel/Desktop/Nova pasta/NG2S901_As1_Menu/NG2S901_As1_Menu/programs
                                   00000490  00000497         8
   _stopwatch
                                   00000490         8   data ,g         0
 
-FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As1_Menu/NG2S901_As1_Menu/drivers/timer/timer
+FILE=C:/Users/Miguel/Desktop/Nova pasta/NG2S901_As1_Menu/NG2S901_As1_Menu/drivers/timer/timer
                                   00000498  000004b7        20
   _timer_cback_list
                                   00000498        20   data ,g         0
 
-FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As1_Menu/NG2S901_As1_Menu/drivers/uart/uart
+FILE=C:/Users/Miguel/Desktop/Nova pasta/NG2S901_As1_Menu/NG2S901_As1_Menu/drivers/uart/uart
                                   000004b8  000004bb         4
   _uart_cback_list
                                   000004b8         4   data ,g         0
@@ -740,7 +740,7 @@ FILE=mdata
                                   000004c4         0   none ,g         0
 
 SECTION=data_NO
-FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As1_Menu/NG2S901_As1_Menu/drivers/glcd/FONT
+FILE=C:/Users/Miguel/Desktop/Nova pasta/NG2S901_As1_Menu/NG2S901_As1_Menu/drivers/glcd/FONT
                                   000005d4  00000b22       54f
   _FontSystem3x6
                                   000005d4        c3   data ,g         0
@@ -749,17 +749,17 @@ FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As1_Menu/NG2S901_As1_Me
   _FontSystem7x8
                                   0000087c       2a7   data ,g         0
 
-FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As1_Menu/NG2S901_As1_Menu/drivers/isr/ISR_DEFs
+FILE=C:/Users/Miguel/Desktop/Nova pasta/NG2S901_As1_Menu/NG2S901_As1_Menu/drivers/isr/ISR_DEFs
                                   00000b23  00000b23         1
   _priority_counter
                                   00000b23         1   data ,g         0
 
-FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As1_Menu/NG2S901_As1_Menu/drivers/led/led
+FILE=C:/Users/Miguel/Desktop/Nova pasta/NG2S901_As1_Menu/NG2S901_As1_Menu/drivers/led/led
                                   00000b24  00000b24         1
   _shift_dir
                                   00000b24         1   data ,g         0
 
-FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As1_Menu/NG2S901_As1_Menu/programs
+FILE=C:/Users/Miguel/Desktop/Nova pasta/NG2S901_As1_Menu/NG2S901_As1_Menu/programs
                                   00000b25  00000b28         4
   _prog2_patt_type
                                   00000b25         1   data ,g         0
@@ -776,17 +776,17 @@ FILE=ncrt0_rsk
   _u8CursorX
                                   00000b29         1   data ,g         0
 
-FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As1_Menu/NG2S901_As1_Menu/drivers/glcd/GLCD
+FILE=C:/Users/Miguel/Desktop/Nova pasta/NG2S901_As1_Menu/NG2S901_As1_Menu/drivers/glcd/GLCD
                                   00000b29  00000b2a         2
   _u8CursorY
                                   00000b2a         1   data ,g         0
 
-FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As1_Menu/NG2S901_As1_Menu/drivers/keypad/keyscan_4x4
+FILE=C:/Users/Miguel/Desktop/Nova pasta/NG2S901_As1_Menu/NG2S901_As1_Menu/drivers/keypad/keyscan_4x4
                                   00000b2b  00000b3f        15
   _keypad
                                   00000b2b        15   data ,g         0
 
-FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As1_Menu/NG2S901_As1_Menu/extra_program
+FILE=C:/Users/Miguel/Desktop/Nova pasta/NG2S901_As1_Menu/NG2S901_As1_Menu/extra_program
                                   00000b40  00000b40         1
   _running
                                   00000b40         1   data ,g         0
@@ -798,7 +798,7 @@ FILE=cdata
                                   000f04aa         0   none ,g         0
 
 SECTION=program
-FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As1_Menu/NG2S901_As1_Menu/drivers/glcd/GLCD
+FILE=C:/Users/Miguel/Desktop/Nova pasta/NG2S901_As1_Menu/NG2S901_As1_Menu/drivers/glcd/GLCD
                                   000f0b6c  000f133c       7d1
   _LcdDelay
                                   000f0b6c        21   func ,g         0
@@ -835,12 +835,12 @@ FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As1_Menu/NG2S901_As1_Me
   _GLCD_getXY
                                   000f1308        35   func ,g         0
 
-FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As1_Menu/NG2S901_As1_Menu/drivers/init/hwsetup
+FILE=C:/Users/Miguel/Desktop/Nova pasta/NG2S901_As1_Menu/NG2S901_As1_Menu/drivers/init/hwsetup
                                   000f133e  000f1420        e3
   _Initialise
                                   000f133e        e3   func ,g         0
 
-FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As1_Menu/NG2S901_As1_Menu/drivers/isr/ISR_DEFs
+FILE=C:/Users/Miguel/Desktop/Nova pasta/NG2S901_As1_Menu/NG2S901_As1_Menu/drivers/isr/ISR_DEFs
                                   000f1422  000f1550       12f
   _uninstall_all_cback
                                   000f1422        1c   func ,g         0
@@ -859,7 +859,7 @@ FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As1_Menu/NG2S901_As1_Me
   _INT0
                                   000f1526        16   func ,g         0
 
-FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As1_Menu/NG2S901_As1_Menu/drivers/keypad/keyscan_4x4
+FILE=C:/Users/Miguel/Desktop/Nova pasta/NG2S901_As1_Menu/NG2S901_As1_Menu/drivers/keypad/keyscan_4x4
                                   000f1552  000f1740       1ef
   _keyscan_4x4_init
                                   000f1552        41   func ,g         0
@@ -888,7 +888,7 @@ FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As1_Menu/NG2S901_As1_Me
   _read_key
                                   000f1730        11   func ,g         0
 
-FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As1_Menu/NG2S901_As1_Menu/main
+FILE=C:/Users/Miguel/Desktop/Nova pasta/NG2S901_As1_Menu/NG2S901_As1_Menu/main
                                   000f1742  000f2120       9df
   _menu_option_create
                                   000f1742        6e   func ,g         0
@@ -905,31 +905,31 @@ FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As1_Menu/NG2S901_As1_Me
   _init_menu_tree
                                   000f1f56       1ab   func ,g         0
 
-FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As1_Menu/NG2S901_As1_Menu/drivers/7seg/7segment
+FILE=C:/Users/Miguel/Desktop/Nova pasta/NG2S901_As1_Menu/NG2S901_As1_Menu/drivers/7seg/7segment
                                   000f2122  000f21c5        a4
   _init_7seg
                                   000f2122        18   func ,g         0
   $bin_2_bcd
                                   000f213a        2d   func ,g         0
 
-FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As1_Menu/NG2S901_As1_Menu/extra_program
+FILE=C:/Users/Miguel/Desktop/Nova pasta/NG2S901_As1_Menu/NG2S901_As1_Menu/extra_program
                                   000f21c6  000f221d        58
   _extra_close_cback
                                   000f21c6         4   func ,g         0
   _extra
                                   000f21ca        54   func ,g         0
 
-FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As1_Menu/NG2S901_As1_Menu/drivers/led/led
+FILE=C:/Users/Miguel/Desktop/Nova pasta/NG2S901_As1_Menu/NG2S901_As1_Menu/drivers/led/led
                                   000f221e  000f2320       103
   $led_pattern_update
                                   000f221e       103   func ,g         0
 
-FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As1_Menu/NG2S901_As1_Menu/drivers/motor/motor
+FILE=C:/Users/Miguel/Desktop/Nova pasta/NG2S901_As1_Menu/NG2S901_As1_Menu/drivers/motor/motor
                                   000f2322  000f232a         9
   _stop_motor
                                   000f2322         9   func ,g         0
 
-FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As1_Menu/NG2S901_As1_Menu/drivers/motor/motor_sound
+FILE=C:/Users/Miguel/Desktop/Nova pasta/NG2S901_As1_Menu/NG2S901_As1_Menu/drivers/motor/motor_sound
                                   000f232c  000f2480       155
   $motor_tone_us
                                   000f232c        77   func ,g         0
@@ -938,7 +938,7 @@ FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As1_Menu/NG2S901_As1_Me
   _init_motor_sound
                                   000f241e        3a   func ,g         0
 
-FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As1_Menu/NG2S901_As1_Menu/print
+FILE=C:/Users/Miguel/Desktop/Nova pasta/NG2S901_As1_Menu/NG2S901_As1_Menu/print
                                   000f2482  000f2619       198
   _printf
                                   000f2482        5e   func ,g         0
@@ -947,7 +947,7 @@ FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As1_Menu/NG2S901_As1_Me
   _printf_at_rl
                                   000f2572        a8   func ,g         0
 
-FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As1_Menu/NG2S901_As1_Menu/programs
+FILE=C:/Users/Miguel/Desktop/Nova pasta/NG2S901_As1_Menu/NG2S901_As1_Menu/programs
                                   000f261a  000f3146       b2d
   _led_7seg
                                   000f261a       107   func ,g         0
@@ -982,7 +982,7 @@ FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As1_Menu/NG2S901_As1_Me
   _info
                                   000f3132        15   func ,g         0
 
-FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As1_Menu/NG2S901_As1_Menu/drivers/timer/timer
+FILE=C:/Users/Miguel/Desktop/Nova pasta/NG2S901_As1_Menu/NG2S901_As1_Menu/drivers/timer/timer
                                   000f3148  000f34d1       38a
   _Timer_A1
                                   000f3148        15   func ,g         0
@@ -1007,7 +1007,7 @@ FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As1_Menu/NG2S901_As1_Me
   _timer_install_cback
                                   000f34aa        13   func ,g         0
 
-FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As1_Menu/NG2S901_As1_Menu/drivers/uart/uart
+FILE=C:/Users/Miguel/Desktop/Nova pasta/NG2S901_As1_Menu/NG2S901_As1_Menu/drivers/uart/uart
                                   000f34d2  000f3678       1a7
   _delay
                                   000f34d2        19   func ,g         0

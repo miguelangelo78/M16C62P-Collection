@@ -1,0 +1,2283 @@
+	._LANG	'C','5.31.30.001','REV.F'
+
+;##    C Compiler		 OUTPUT
+;## ccom30 Version 5.31.30.001
+;## Copyright(C) 2001(2003,2004). Renesas Technology Corp.
+;## and Renesas Solutions Corp., All rights reserved.
+;## Compile Start Time Sun Jan 31 23:37:54 2016
+
+;## COMMAND_LINE: ccom30  C:\Users\Miguel\Desktop\Nova pasta\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\led.i -o C:\Users\Miguel\Desktop\Nova pasta\NG2S901_As1_Menu\NG2S901_As1_Menu\Debug\led.a30 -finfo -fFP
+
+
+;## Normal Optimize		OFF
+;## ROM size Optimize		OFF
+;## Speed Optimize		OFF
+;## Default ROM is		far
+;## Default RAM is		near
+
+	.GLB	__SB__
+	.SB	__SB__
+	.FB	0
+	._aopt	OFF
+
+	._inspect	'M', "C:/Users/Miguel/Desktop/Nova pasta/NG2S901_As1_Menu/NG2S901_As1_Menu/drivers/led/led.c", "C:/Users/Miguel/Desktop/Nova pasta/NG2S901_As1_Menu/NG2S901_As1_Menu/drivers/led/led"
+
+	._inspect	'M', "C:/Users/Miguel/Desktop/Nova pasta/NG2S901_As1_Menu/NG2S901_As1_Menu/drivers/led/led.h", "C:/Users/Miguel/Desktop/Nova pasta/NG2S901_As1_Menu/NG2S901_As1_Menu/drivers/led/led"
+	._inspect	'F', 'p', "led_pattern_update", "$led_pattern_update", 'G', 14, 0, 00h, 0
+	._inspect	'V', 'e', "countup_delay_max", 'G', 18, 2, 0, 0, 00h
+	._inspect	'V', 'e', "dim_delay", 'G', 20, 2, 0, 0, 00h
+	._inspect	'V', 'e', "dim_brightness", 'G', 21, 2, 0, 0, 00h
+_PM0_ADDR	.equ	0004H			 
+_PM1_ADDR	.equ	0005H			 
+_CM0_ADDR	.equ	0006H			 
+_CM1_ADDR	.equ	0007H			 
+_CSR_ADDR	.equ	0008H			 
+_AIER_ADDR	.equ	0009H			 
+_PRCR_ADDR	.equ	000AH			 
+_DBR_ADDR	.equ	000BH			 
+_CM2_ADDR	.equ	000CH			 
+_CM3_ADDR	.equ	000DH			 
+_WDTS_ADDR	.equ	000EH			 
+_WDC_ADDR	.equ	000FH			 
+_RMAD0_ADDR	.equ	0010H			 
+_RMAD1_ADDR	.equ	0014H			 
+_CSE_ADDR	.equ	001BH			 
+_PLC0_ADDR	.equ	001CH			 
+_PM2_ADDR	.equ	001EH			 
+_SAR0_ADDR	.equ	0020H			 
+_DAR0_ADDR	.equ	0024H			 
+_TCR0_ADDR	.equ	0028H			 
+_DM0CON_ADDR	.equ	002CH			 
+_SAR1_ADDR	.equ	0030H			 
+_DAR1_ADDR	.equ	0034H			 
+_TCR1_ADDR	.equ	0038H			 
+_DM1CON_ADDR	.equ	003CH			 
+_INT3IC_ADDR	.equ	0044H			 
+_TB5IC_ADDR	.equ	0045H			 
+_TB4IC_ADDR	.equ	0046H			 
+_TB3IC_ADDR	.equ	0047H			 
+_S4IC_ADDR	.equ	0048H			 
+_S3IC_ADDR	.equ	0049H			 
+_INT5IC_ADDR	.equ	0048H			 
+_INT4IC_ADDR	.equ	0049H			 
+_BCNIC_ADDR	.equ	004AH			 
+_DM0IC_ADDR	.equ	004BH			 
+_DM1IC_ADDR	.equ	004CH			 
+_KUPIC_ADDR	.equ	004DH			 
+_ADIC_ADDR	.equ	004EH			 
+_S2TIC_ADDR	.equ	004FH			 
+_S2RIC_ADDR	.equ	0050H			 
+_S0TIC_ADDR	.equ	0051H			 
+_S0RIC_ADDR	.equ	0052H			 
+_S1TIC_ADDR	.equ	0053H			 
+_S1RIC_ADDR	.equ	0054H			 
+_TA0IC_ADDR	.equ	0055H			 
+_TA1IC_ADDR	.equ	0056H			 
+_TA2IC_ADDR	.equ	0057H			 
+_TA3IC_ADDR	.equ	0058H			 
+_TA4IC_ADDR	.equ	0059H			 
+_TB0IC_ADDR	.equ	005AH			 
+_TB1IC_ADDR	.equ	005BH			 
+_TB2IC_ADDR	.equ	005CH			 
+_INT0IC_ADDR	.equ	005DH			 
+_INT1IC_ADDR	.equ	005EH			 
+_INT2IC_ADDR	.equ	005FH			 
+_FMR1_ADDR	.equ	01B5H			 
+_FMR0_ADDR	.equ	01B7H			 
+_RMAD2_ADDR	.equ	01B8H			 
+_AIER2_ADDR	.equ	01BBH			 
+_RMAD3_ADDR	.equ	01BCH			 
+_PCLKR_ADDR	.equ	025EH			 
+_TBSR_ADDR	.equ	0340H			 
+_TA11_ADDR	.equ	0342H			 
+_TA21_ADDR	.equ	0344H			 
+_TA41_ADDR	.equ	0346H			 
+_INVC0_ADDR	.equ	0348H			 
+_INVC1_ADDR	.equ	0349H			 
+_IDB0_ADDR	.equ	034AH			 
+_IDB1_ADDR	.equ	034BH			 
+_DTT_ADDR	.equ	034CH			 
+_ICTB2_ADDR	.equ	034DH			 
+_TB3_ADDR	.equ	0350H			 
+_TB4_ADDR	.equ	0352H			 
+_TB5_ADDR	.equ	0354H			 
+_TB3MR_ADDR	.equ	035BH			 
+_TB4MR_ADDR	.equ	035CH			 
+_TB5MR_ADDR	.equ	035DH			 
+_IFSR2A_ADDR	.equ	035EH			 
+_IFSR_ADDR	.equ	035FH			 
+_S3TRR_ADDR	.equ	0360H			 
+_S3C_ADDR	.equ	0362H			 
+_S3BRG_ADDR	.equ	0363H			 
+_S4TRR_ADDR	.equ	0364H			 
+_S4C_ADDR	.equ	0366H			 
+_S4BRG_ADDR	.equ	0367H			 
+_U0SMR4_ADDR	.equ	036CH			 
+_U0SMR3_ADDR	.equ	036DH			 
+_U0SMR2_ADDR	.equ	036EH			 
+_U0SMR_ADDR	.equ	036FH			 
+_U1SMR4_ADDR	.equ	0370H			 
+_U1SMR3_ADDR	.equ	0371H			 
+_U1SMR2_ADDR	.equ	0372H			 
+_U1SMR_ADDR	.equ	0373H			 
+_U2SMR4_ADDR	.equ	0374H			 
+_U2SMR3_ADDR	.equ	0375H			 
+_U2SMR2_ADDR	.equ	0376H			 
+_U2SMR_ADDR	.equ	0377H			 
+_U2MR_ADDR	.equ	0378H			 
+_U2BRG_ADDR	.equ	0379H			 
+_U2TB_ADDR	.equ	037AH			 
+_U2C0_ADDR	.equ	037CH			 
+_U2C1_ADDR	.equ	037DH			 
+_U2RB_ADDR	.equ	037EH			 
+_TABSR_ADDR	.equ	0380H			 
+_CPSRF_ADDR	.equ	0381H			 
+_ONSF_ADDR	.equ	0382H			 
+_TRGSR_ADDR	.equ	0383H			 
+_UDF_ADDR	.equ	0384H			 
+_TA0_ADDR	.equ	0386H			 
+_TA1_ADDR	.equ	0388H			 
+_TA2_ADDR	.equ	038AH			 
+_TA3_ADDR	.equ	038CH			 
+_TA4_ADDR	.equ	038EH			 
+_TB0_ADDR	.equ	0390H			 
+_TB1_ADDR	.equ	0392H			 
+_TB2_ADDR	.equ	0394H			 
+_TA0MR_ADDR	.equ	0396H			 
+_TA1MR_ADDR	.equ	0397H			 
+_TA2MR_ADDR	.equ	0398H			 
+_TA3MR_ADDR	.equ	0399H			 
+_TA4MR_ADDR	.equ	039AH			 
+_TB0MR_ADDR	.equ	039BH			 
+_TB1MR_ADDR	.equ	039CH			 
+_TB2MR_ADDR	.equ	039DH			 
+_TB2SC_ADDR	.equ	039EH			 
+_U0MR_ADDR	.equ	03A0H			 
+_U0BRG_ADDR	.equ	03A1H			 
+_U0TB_ADDR	.equ	03A2H			 
+_U0C0_ADDR	.equ	03A4H			 
+_U0C1_ADDR	.equ	03A5H			 
+_U0RB_ADDR	.equ	03A6H			 
+_U1MR_ADDR	.equ	03A8H			 
+_U1BRG_ADDR	.equ	03A9H			 
+_U1TB_ADDR	.equ	03AAH			 
+_U1C0_ADDR	.equ	03ACH			 
+_U1C1_ADDR	.equ	03ADH			 
+_U1RB_ADDR	.equ	03AEH			 
+_UCON_ADDR	.equ	03B0H			 
+_FIDR_ADDR	.equ	03B4H			 
+_DM0SL_ADDR	.equ	03B8H			 
+_DM1SL_ADDR	.equ	03BAH			 
+_CRCD_ADDR	.equ	03BCH			 
+_CRCIN_ADDR	.equ	03BEH			 
+_AD0_ADDR	.equ	03C0H			 
+_AD1_ADDR	.equ	03C2H			 
+_AD2_ADDR	.equ	03C4H			 
+_AD3_ADDR	.equ	03C6H			 
+_AD4_ADDR	.equ	03C8H			 
+_AD5_ADDR	.equ	03CAH			 
+_AD6_ADDR	.equ	03CCH			 
+_AD7_ADDR	.equ	03CEH			 
+_ADCON2_ADDR	.equ	03D4H			 
+_ADCON0_ADDR	.equ	03D6H			 
+_ADCON1_ADDR	.equ	03D7H			 
+_DA0_ADDR	.equ	03D8H			 
+_DA1_ADDR	.equ	03DAH			 
+_DACON_ADDR	.equ	03DCH			 
+_PC14_ADDR	.equ	03DEH			 
+_PUR3_ADDR	.equ	03DFH			 
+_P0_ADDR	.equ	03E0H			 
+_P1_ADDR	.equ	03E1H			 
+_P0D_ADDR	.equ	03E2H			 
+_P1D_ADDR	.equ	03E3H			 
+_P2_ADDR	.equ	03E4H			 
+_P3_ADDR	.equ	03E5H			 
+_P2D_ADDR	.equ	03E6H			 
+_P3D_ADDR	.equ	03E7H			 
+_P4_ADDR	.equ	03E8H			 
+_P5_ADDR	.equ	03E9H			 
+_P4D_ADDR	.equ	03EAH			 
+_P5D_ADDR	.equ	03EBH			 
+_P6_ADDR	.equ	03ECH			 
+_P7_ADDR	.equ	03EDH			 
+_P6D_ADDR	.equ	03EEH			 
+_P7D_ADDR	.equ	03EFH			 
+_P8_ADDR	.equ	03F0H			 
+_P9_ADDR	.equ	03F1H			 
+_P8D_ADDR	.equ	03F2H			 
+_P9D_ADDR	.equ	03F3H			 
+_P10_ADDR	.equ	03F4H			 
+_P11_ADDR	.equ	03F5H			 
+_P10D_ADDR	.equ	03F6H			 
+_P1D1_ADDR	.equ	03F7H			 
+_P12_ADDR	.equ	03F8H			 
+_P13_ADDR	.equ	03F9H			 
+_P1D2_ADDR	.equ	03FAH			 
+_P1D3_ADDR	.equ	03FBH			 
+_PUR0_ADDR	.equ	03FCH			 
+_PUR1_ADDR	.equ	03FDH			 
+_PUR2_ADDR	.equ	03FEH			 
+_PCR_ADDR	.equ	03FFH			 
+
+	._inspect	'M', "C:/Users/Miguel/Desktop/Nova pasta/NG2S901_As1_Menu/NG2S901_As1_Menu/drivers/led/../init/sfr62p.h", "C:/Users/Miguel/Desktop/Nova pasta/NG2S901_As1_Menu/NG2S901_As1_Menu/drivers/led/led"
+	._inspect	'V', 'd', "DA0_ADDR", "_DA0_ADDR", 'G', 416, 1, 1, 0, 00h
+	._inspect	'V', 'd', "DA1_ADDR", "_DA1_ADDR", 'G', 419, 1, 1, 0, 00h
+	._inspect	'V', 'd', "UDF_ADDR", "_UDF_ADDR", 'G', 425, 1, 1, 0, 00h
+	._inspect	'V', 'd', "TA11_ADDR", "_TA11_ADDR", 'G', 434, 2, 1, 0, 00h
+	._inspect	'V', 'd', "TA21_ADDR", "_TA21_ADDR", 'G', 437, 2, 1, 0, 00h
+	._inspect	'V', 'd', "TA41_ADDR", "_TA41_ADDR", 'G', 440, 2, 1, 0, 00h
+	._inspect	'V', 'd', "TB3_ADDR", "_TB3_ADDR", 'G', 443, 2, 1, 0, 00h
+	._inspect	'V', 'd', "TB4_ADDR", "_TB4_ADDR", 'G', 446, 2, 1, 0, 00h
+	._inspect	'V', 'd', "TB5_ADDR", "_TB5_ADDR", 'G', 449, 2, 1, 0, 00h
+	._inspect	'V', 'd', "TA0_ADDR", "_TA0_ADDR", 'G', 452, 2, 1, 0, 00h
+	._inspect	'V', 'd', "TA1_ADDR", "_TA1_ADDR", 'G', 455, 2, 1, 0, 00h
+	._inspect	'V', 'd', "TA2_ADDR", "_TA2_ADDR", 'G', 458, 2, 1, 0, 00h
+	._inspect	'V', 'd', "TA3_ADDR", "_TA3_ADDR", 'G', 461, 2, 1, 0, 00h
+	._inspect	'V', 'd', "TA4_ADDR", "_TA4_ADDR", 'G', 464, 2, 1, 0, 00h
+	._inspect	'V', 'd', "TB0_ADDR", "_TB0_ADDR", 'G', 467, 2, 1, 0, 00h
+	._inspect	'V', 'd', "TB1_ADDR", "_TB1_ADDR", 'G', 470, 2, 1, 0, 00h
+	._inspect	'V', 'd', "TB2_ADDR", "_TB2_ADDR", 'G', 473, 2, 1, 0, 00h
+	._inspect	'V', 'd', "PM0_ADDR", "_PM0_ADDR", 'G', 497, 1, 1, 0, 00h
+	._inspect	'V', 'd', "PM1_ADDR", "_PM1_ADDR", 'G', 512, 1, 1, 0, 00h
+	._inspect	'V', 'd', "CM0_ADDR", "_CM0_ADDR", 'G', 526, 1, 1, 0, 00h
+	._inspect	'V', 'd', "CM1_ADDR", "_CM1_ADDR", 'G', 541, 1, 1, 0, 00h
+	._inspect	'V', 'd', "CSR_ADDR", "_CSR_ADDR", 'G', 553, 1, 1, 0, 00h
+	._inspect	'V', 'd', "AIER_ADDR", "_AIER_ADDR", 'G', 568, 1, 1, 0, 00h
+	._inspect	'V', 'd', "PRCR_ADDR", "_PRCR_ADDR", 'G', 577, 1, 1, 0, 00h
+	._inspect	'V', 'd', "DBR_ADDR", "_DBR_ADDR", 'G', 587, 1, 1, 0, 00h
+	._inspect	'V', 'd', "CM2_ADDR", "_CM2_ADDR", 'G', 598, 1, 1, 0, 00h
+	._inspect	'V', 'd', "WDTS_ADDR", "_WDTS_ADDR", 'G', 610, 1, 1, 0, 00h
+	._inspect	'V', 'd', "WDC_ADDR", "_WDC_ADDR", 'G', 616, 1, 1, 0, 00h
+	._inspect	'V', 'd', "CSE_ADDR", "_CSE_ADDR", 'G', 624, 1, 1, 0, 00h
+	._inspect	'V', 'd', "PLC0_ADDR", "_PLC0_ADDR", 'G', 639, 1, 1, 0, 00h
+	._inspect	'V', 'd', "PM2_ADDR", "_PM2_ADDR", 'G', 651, 1, 1, 0, 00h
+	._inspect	'V', 'd', "DM0CON_ADDR", "_DM0CON_ADDR", 'G', 659, 1, 1, 0, 00h
+	._inspect	'V', 'd', "DM1CON_ADDR", "_DM1CON_ADDR", 'G', 672, 1, 1, 0, 00h
+	._inspect	'V', 'd', "INT3IC_ADDR", "_INT3IC_ADDR", 'G', 685, 1, 1, 0, 00h
+	._inspect	'V', 'd', "TB5IC_ADDR", "_TB5IC_ADDR", 'G', 697, 1, 1, 0, 00h
+	._inspect	'V', 'd', "TB4IC_ADDR", "_TB4IC_ADDR", 'G', 708, 1, 1, 0, 00h
+	._inspect	'V', 'd', "TB3IC_ADDR", "_TB3IC_ADDR", 'G', 719, 1, 1, 0, 00h
+	._inspect	'V', 'd', "S4IC_ADDR", "_S4IC_ADDR", 'G', 730, 1, 1, 0, 00h
+	._inspect	'V', 'd', "S3IC_ADDR", "_S3IC_ADDR", 'G', 742, 1, 1, 0, 00h
+	._inspect	'V', 'd', "INT5IC_ADDR", "_INT5IC_ADDR", 'G', 754, 1, 1, 0, 00h
+	._inspect	'V', 'd', "INT4IC_ADDR", "_INT4IC_ADDR", 'G', 766, 1, 1, 0, 00h
+	._inspect	'V', 'd', "BCNIC_ADDR", "_BCNIC_ADDR", 'G', 778, 1, 1, 0, 00h
+	._inspect	'V', 'd', "DM0IC_ADDR", "_DM0IC_ADDR", 'G', 789, 1, 1, 0, 00h
+	._inspect	'V', 'd', "DM1IC_ADDR", "_DM1IC_ADDR", 'G', 800, 1, 1, 0, 00h
+	._inspect	'V', 'd', "KUPIC_ADDR", "_KUPIC_ADDR", 'G', 811, 1, 1, 0, 00h
+	._inspect	'V', 'd', "ADIC_ADDR", "_ADIC_ADDR", 'G', 822, 1, 1, 0, 00h
+	._inspect	'V', 'd', "S2TIC_ADDR", "_S2TIC_ADDR", 'G', 833, 1, 1, 0, 00h
+	._inspect	'V', 'd', "S2RIC_ADDR", "_S2RIC_ADDR", 'G', 844, 1, 1, 0, 00h
+	._inspect	'V', 'd', "S0TIC_ADDR", "_S0TIC_ADDR", 'G', 855, 1, 1, 0, 00h
+	._inspect	'V', 'd', "S0RIC_ADDR", "_S0RIC_ADDR", 'G', 866, 1, 1, 0, 00h
+	._inspect	'V', 'd', "S1TIC_ADDR", "_S1TIC_ADDR", 'G', 877, 1, 1, 0, 00h
+	._inspect	'V', 'd', "S1RIC_ADDR", "_S1RIC_ADDR", 'G', 888, 1, 1, 0, 00h
+	._inspect	'V', 'd', "TA0IC_ADDR", "_TA0IC_ADDR", 'G', 899, 1, 1, 0, 00h
+	._inspect	'V', 'd', "TA1IC_ADDR", "_TA1IC_ADDR", 'G', 910, 1, 1, 0, 00h
+	._inspect	'V', 'd', "TA2IC_ADDR", "_TA2IC_ADDR", 'G', 921, 1, 1, 0, 00h
+	._inspect	'V', 'd', "TA3IC_ADDR", "_TA3IC_ADDR", 'G', 932, 1, 1, 0, 00h
+	._inspect	'V', 'd', "TA4IC_ADDR", "_TA4IC_ADDR", 'G', 943, 1, 1, 0, 00h
+	._inspect	'V', 'd', "TB0IC_ADDR", "_TB0IC_ADDR", 'G', 954, 1, 1, 0, 00h
+	._inspect	'V', 'd', "TB1IC_ADDR", "_TB1IC_ADDR", 'G', 965, 1, 1, 0, 00h
+	._inspect	'V', 'd', "TB2IC_ADDR", "_TB2IC_ADDR", 'G', 976, 1, 1, 0, 00h
+	._inspect	'V', 'd', "INT0IC_ADDR", "_INT0IC_ADDR", 'G', 987, 1, 1, 0, 00h
+	._inspect	'V', 'd', "INT1IC_ADDR", "_INT1IC_ADDR", 'G', 999, 1, 1, 0, 00h
+	._inspect	'V', 'd', "INT2IC_ADDR", "_INT2IC_ADDR", 'G', 1011, 1, 1, 0, 00h
+	._inspect	'V', 'd', "FMR1_ADDR", "_FMR1_ADDR", 'G', 1023, 1, 1, 0, 00h
+	._inspect	'V', 'd', "FMR0_ADDR", "_FMR0_ADDR", 'G', 1032, 1, 1, 0, 00h
+	._inspect	'V', 'd', "AIER2_ADDR", "_AIER2_ADDR", 'G', 1046, 1, 1, 0, 00h
+	._inspect	'V', 'd', "PCLKR_ADDR", "_PCLKR_ADDR", 'G', 1055, 1, 1, 0, 00h
+	._inspect	'V', 'd', "TBSR_ADDR", "_TBSR_ADDR", 'G', 1064, 1, 1, 0, 00h
+	._inspect	'V', 'd', "INVC0_ADDR", "_INVC0_ADDR", 'G', 1074, 1, 1, 0, 00h
+	._inspect	'V', 'd', "INVC1_ADDR", "_INVC1_ADDR", 'G', 1089, 1, 1, 0, 00h
+	._inspect	'V', 'd', "IDB0_ADDR", "_IDB0_ADDR", 'G', 1104, 1, 1, 0, 00h
+	._inspect	'V', 'd', "IDB1_ADDR", "_IDB1_ADDR", 'G', 1117, 1, 1, 0, 00h
+	._inspect	'V', 'd', "DTT_ADDR", "_DTT_ADDR", 'G', 1130, 1, 1, 0, 00h
+	._inspect	'V', 'd', "ICTB2_ADDR", "_ICTB2_ADDR", 'G', 1136, 1, 1, 0, 00h
+	._inspect	'V', 'd', "TB3MR_ADDR", "_TB3MR_ADDR", 'G', 1142, 1, 1, 0, 00h
+	._inspect	'V', 'd', "TB4MR_ADDR", "_TB4MR_ADDR", 'G', 1157, 1, 1, 0, 00h
+	._inspect	'V', 'd', "TB5MR_ADDR", "_TB5MR_ADDR", 'G', 1171, 1, 1, 0, 00h
+	._inspect	'V', 'd', "IFSR2A_ADDR", "_IFSR2A_ADDR", 'G', 1185, 1, 1, 0, 00h
+	._inspect	'V', 'd', "IFSR_ADDR", "_IFSR_ADDR", 'G', 1194, 1, 1, 0, 00h
+	._inspect	'V', 'd', "S3TRR_ADDR", "_S3TRR_ADDR", 'G', 1209, 1, 1, 0, 00h
+	._inspect	'V', 'd', "S3C_ADDR", "_S3C_ADDR", 'G', 1215, 1, 1, 0, 00h
+	._inspect	'V', 'd', "S3BRG_ADDR", "_S3BRG_ADDR", 'G', 1230, 1, 1, 0, 00h
+	._inspect	'V', 'd', "S4TRR_ADDR", "_S4TRR_ADDR", 'G', 1236, 1, 1, 0, 00h
+	._inspect	'V', 'd', "S4C_ADDR", "_S4C_ADDR", 'G', 1242, 1, 1, 0, 00h
+	._inspect	'V', 'd', "S4BRG_ADDR", "_S4BRG_ADDR", 'G', 1257, 1, 1, 0, 00h
+	._inspect	'V', 'd', "U0SMR4_ADDR", "_U0SMR4_ADDR", 'G', 1263, 1, 1, 0, 00h
+	._inspect	'V', 'd', "U0SMR3_ADDR", "_U0SMR3_ADDR", 'G', 1278, 1, 1, 0, 00h
+	._inspect	'V', 'd', "U0SMR2_ADDR", "_U0SMR2_ADDR", 'G', 1290, 1, 1, 0, 00h
+	._inspect	'V', 'd', "U0SMR_ADDR", "_U0SMR_ADDR", 'G', 1304, 1, 1, 0, 00h
+	._inspect	'V', 'd', "U1SMR4_ADDR", "_U1SMR4_ADDR", 'G', 1318, 1, 1, 0, 00h
+	._inspect	'V', 'd', "U1SMR3_ADDR", "_U1SMR3_ADDR", 'G', 1333, 1, 1, 0, 00h
+	._inspect	'V', 'd', "U1SMR2_ADDR", "_U1SMR2_ADDR", 'G', 1345, 1, 1, 0, 00h
+	._inspect	'V', 'd', "U1SMR_ADDR", "_U1SMR_ADDR", 'G', 1359, 1, 1, 0, 00h
+	._inspect	'V', 'd', "U2SMR4_ADDR", "_U2SMR4_ADDR", 'G', 1373, 1, 1, 0, 00h
+	._inspect	'V', 'd', "U2SMR3_ADDR", "_U2SMR3_ADDR", 'G', 1388, 1, 1, 0, 00h
+	._inspect	'V', 'd', "U2SMR2_ADDR", "_U2SMR2_ADDR", 'G', 1400, 1, 1, 0, 00h
+	._inspect	'V', 'd', "U2SMR_ADDR", "_U2SMR_ADDR", 'G', 1414, 1, 1, 0, 00h
+	._inspect	'V', 'd', "U2MR_ADDR", "_U2MR_ADDR", 'G', 1428, 1, 1, 0, 00h
+	._inspect	'V', 'd', "U2BRG_ADDR", "_U2BRG_ADDR", 'G', 1443, 1, 1, 0, 00h
+	._inspect	'V', 'd', "U2C0_ADDR", "_U2C0_ADDR", 'G', 1449, 1, 1, 0, 00h
+	._inspect	'V', 'd', "U2C1_ADDR", "_U2C1_ADDR", 'G', 1464, 1, 1, 0, 00h
+	._inspect	'V', 'd', "TABSR_ADDR", "_TABSR_ADDR", 'G', 1479, 1, 1, 0, 00h
+	._inspect	'V', 'd', "CPSRF_ADDR", "_CPSRF_ADDR", 'G', 1494, 1, 1, 0, 00h
+	._inspect	'V', 'd', "ONSF_ADDR", "_ONSF_ADDR", 'G', 1502, 1, 1, 0, 00h
+	._inspect	'V', 'd', "TRGSR_ADDR", "_TRGSR_ADDR", 'G', 1517, 1, 1, 0, 00h
+	._inspect	'V', 'd', "TA0MR_ADDR", "_TA0MR_ADDR", 'G', 1532, 1, 1, 0, 00h
+	._inspect	'V', 'd', "TA1MR_ADDR", "_TA1MR_ADDR", 'G', 1547, 1, 1, 0, 00h
+	._inspect	'V', 'd', "TA2MR_ADDR", "_TA2MR_ADDR", 'G', 1562, 1, 1, 0, 00h
+	._inspect	'V', 'd', "TA3MR_ADDR", "_TA3MR_ADDR", 'G', 1577, 1, 1, 0, 00h
+	._inspect	'V', 'd', "TA4MR_ADDR", "_TA4MR_ADDR", 'G', 1592, 1, 1, 0, 00h
+	._inspect	'V', 'd', "TB0MR_ADDR", "_TB0MR_ADDR", 'G', 1607, 1, 1, 0, 00h
+	._inspect	'V', 'd', "TB1MR_ADDR", "_TB1MR_ADDR", 'G', 1622, 1, 1, 0, 00h
+	._inspect	'V', 'd', "TB2MR_ADDR", "_TB2MR_ADDR", 'G', 1636, 1, 1, 0, 00h
+	._inspect	'V', 'd', "TB2SC_ADDR", "_TB2SC_ADDR", 'G', 1650, 1, 1, 0, 00h
+	._inspect	'V', 'd', "U0MR_ADDR", "_U0MR_ADDR", 'G', 1659, 1, 1, 0, 00h
+	._inspect	'V', 'd', "U0BRG_ADDR", "_U0BRG_ADDR", 'G', 1674, 1, 1, 0, 00h
+	._inspect	'V', 'd', "U0C0_ADDR", "_U0C0_ADDR", 'G', 1680, 1, 1, 0, 00h
+	._inspect	'V', 'd', "U0C1_ADDR", "_U0C1_ADDR", 'G', 1695, 1, 1, 0, 00h
+	._inspect	'V', 'd', "U1MR_ADDR", "_U1MR_ADDR", 'G', 1708, 1, 1, 0, 00h
+	._inspect	'V', 'd', "U1BRG_ADDR", "_U1BRG_ADDR", 'G', 1723, 1, 1, 0, 00h
+	._inspect	'V', 'd', "U1C0_ADDR", "_U1C0_ADDR", 'G', 1729, 1, 1, 0, 00h
+	._inspect	'V', 'd', "U1C1_ADDR", "_U1C1_ADDR", 'G', 1744, 1, 1, 0, 00h
+	._inspect	'V', 'd', "UCON_ADDR", "_UCON_ADDR", 'G', 1757, 1, 1, 0, 00h
+	._inspect	'V', 'd', "FIDR_ADDR", "_FIDR_ADDR", 'G', 1771, 1, 1, 0, 00h
+	._inspect	'V', 'd', "DM0SL_ADDR", "_DM0SL_ADDR", 'G', 1780, 1, 1, 0, 00h
+	._inspect	'V', 'd', "DM1SL_ADDR", "_DM1SL_ADDR", 'G', 1793, 1, 1, 0, 00h
+	._inspect	'V', 'd', "CRCIN_ADDR", "_CRCIN_ADDR", 'G', 1806, 1, 1, 0, 00h
+	._inspect	'V', 'd', "ADCON2_ADDR", "_ADCON2_ADDR", 'G', 1812, 1, 1, 0, 00h
+	._inspect	'V', 'd', "ADCON0_ADDR", "_ADCON0_ADDR", 'G', 1823, 1, 1, 0, 00h
+	._inspect	'V', 'd', "ADCON1_ADDR", "_ADCON1_ADDR", 'G', 1838, 1, 1, 0, 00h
+	._inspect	'V', 'd', "DACON_ADDR", "_DACON_ADDR", 'G', 1853, 1, 1, 0, 00h
+	._inspect	'V', 'd', "PC14_ADDR", "_PC14_ADDR", 'G', 1862, 1, 1, 0, 00h
+	._inspect	'V', 'd', "PUR3_ADDR", "_PUR3_ADDR", 'G', 1873, 1, 1, 0, 00h
+	._inspect	'V', 'd', "P0_ADDR", "_P0_ADDR", 'G', 1888, 1, 1, 0, 00h
+	._inspect	'V', 'd', "P1_ADDR", "_P1_ADDR", 'G', 1903, 1, 1, 0, 00h
+	._inspect	'V', 'd', "P0D_ADDR", "_P0D_ADDR", 'G', 1918, 1, 1, 0, 00h
+	._inspect	'V', 'd', "P1D_ADDR", "_P1D_ADDR", 'G', 1933, 1, 1, 0, 00h
+	._inspect	'V', 'd', "P2_ADDR", "_P2_ADDR", 'G', 1948, 1, 1, 0, 00h
+	._inspect	'V', 'd', "P3_ADDR", "_P3_ADDR", 'G', 1963, 1, 1, 0, 00h
+	._inspect	'V', 'd', "P2D_ADDR", "_P2D_ADDR", 'G', 1978, 1, 1, 0, 00h
+	._inspect	'V', 'd', "P3D_ADDR", "_P3D_ADDR", 'G', 1993, 1, 1, 0, 00h
+	._inspect	'V', 'd', "P4_ADDR", "_P4_ADDR", 'G', 2008, 1, 1, 0, 00h
+	._inspect	'V', 'd', "P5_ADDR", "_P5_ADDR", 'G', 2023, 1, 1, 0, 00h
+	._inspect	'V', 'd', "P4D_ADDR", "_P4D_ADDR", 'G', 2038, 1, 1, 0, 00h
+	._inspect	'V', 'd', "P5D_ADDR", "_P5D_ADDR", 'G', 2053, 1, 1, 0, 00h
+	._inspect	'V', 'd', "P6_ADDR", "_P6_ADDR", 'G', 2068, 1, 1, 0, 00h
+	._inspect	'V', 'd', "P7_ADDR", "_P7_ADDR", 'G', 2083, 1, 1, 0, 00h
+	._inspect	'V', 'd', "P6D_ADDR", "_P6D_ADDR", 'G', 2098, 1, 1, 0, 00h
+	._inspect	'V', 'd', "P7D_ADDR", "_P7D_ADDR", 'G', 2113, 1, 1, 0, 00h
+	._inspect	'V', 'd', "P8_ADDR", "_P8_ADDR", 'G', 2128, 1, 1, 0, 00h
+	._inspect	'V', 'd', "P9_ADDR", "_P9_ADDR", 'G', 2143, 1, 1, 0, 00h
+	._inspect	'V', 'd', "P8D_ADDR", "_P8D_ADDR", 'G', 2158, 1, 1, 0, 00h
+	._inspect	'V', 'd', "P9D_ADDR", "_P9D_ADDR", 'G', 2172, 1, 1, 0, 00h
+	._inspect	'V', 'd', "P10_ADDR", "_P10_ADDR", 'G', 2187, 1, 1, 0, 00h
+	._inspect	'V', 'd', "P11_ADDR", "_P11_ADDR", 'G', 2202, 1, 1, 0, 00h
+	._inspect	'V', 'd', "P10D_ADDR", "_P10D_ADDR", 'G', 2217, 1, 1, 0, 00h
+	._inspect	'V', 'd', "P1D1_ADDR", "_P1D1_ADDR", 'G', 2232, 1, 1, 0, 00h
+	._inspect	'V', 'd', "P12_ADDR", "_P12_ADDR", 'G', 2247, 1, 1, 0, 00h
+	._inspect	'V', 'd', "P13_ADDR", "_P13_ADDR", 'G', 2262, 1, 1, 0, 00h
+	._inspect	'V', 'd', "P1D2_ADDR", "_P1D2_ADDR", 'G', 2277, 1, 1, 0, 00h
+	._inspect	'V', 'd', "P1D3_ADDR", "_P1D3_ADDR", 'G', 2292, 1, 1, 0, 00h
+	._inspect	'V', 'd', "PUR0_ADDR", "_PUR0_ADDR", 'G', 2307, 1, 1, 0, 00h
+	._inspect	'V', 'd', "PUR1_ADDR", "_PUR1_ADDR", 'G', 2322, 1, 1, 0, 00h
+	._inspect	'V', 'd', "PUR2_ADDR", "_PUR2_ADDR", 'G', 2337, 1, 1, 0, 00h
+	._inspect	'V', 'd', "PCR_ADDR", "_PCR_ADDR", 'G', 2350, 1, 1, 0, 00h
+	._inspect	'V', 'd', "TCR0_ADDR", "_TCR0_ADDR", 'G', 2385, 2, 1, 0, 00h
+	._inspect	'V', 'd', "TCR1_ADDR", "_TCR1_ADDR", 'G', 2385, 2, 1, 0, 00h
+	._inspect	'V', 'd', "U0TB_ADDR", "_U0TB_ADDR", 'G', 2385, 2, 1, 0, 00h
+	._inspect	'V', 'd', "U1TB_ADDR", "_U1TB_ADDR", 'G', 2385, 2, 1, 0, 00h
+	._inspect	'V', 'd', "U2TB_ADDR", "_U2TB_ADDR", 'G', 2385, 2, 1, 0, 00h
+	._inspect	'V', 'd', "U0RB_ADDR", "_U0RB_ADDR", 'G', 2385, 2, 1, 0, 00h
+	._inspect	'V', 'd', "U1RB_ADDR", "_U1RB_ADDR", 'G', 2385, 2, 1, 0, 00h
+	._inspect	'V', 'd', "U2RB_ADDR", "_U2RB_ADDR", 'G', 2385, 2, 1, 0, 00h
+	._inspect	'V', 'd', "CRCD_ADDR", "_CRCD_ADDR", 'G', 2385, 2, 1, 0, 00h
+	._inspect	'V', 'd', "AD0_ADDR", "_AD0_ADDR", 'G', 2385, 2, 1, 0, 00h
+	._inspect	'V', 'd', "AD1_ADDR", "_AD1_ADDR", 'G', 2385, 2, 1, 0, 00h
+	._inspect	'V', 'd', "AD2_ADDR", "_AD2_ADDR", 'G', 2385, 2, 1, 0, 00h
+	._inspect	'V', 'd', "AD3_ADDR", "_AD3_ADDR", 'G', 2385, 2, 1, 0, 00h
+	._inspect	'V', 'd', "AD4_ADDR", "_AD4_ADDR", 'G', 2385, 2, 1, 0, 00h
+	._inspect	'V', 'd', "AD5_ADDR", "_AD5_ADDR", 'G', 2385, 2, 1, 0, 00h
+	._inspect	'V', 'd', "AD6_ADDR", "_AD6_ADDR", 'G', 2385, 2, 1, 0, 00h
+	._inspect	'V', 'd', "AD7_ADDR", "_AD7_ADDR", 'G', 2385, 2, 1, 0, 00h
+	._inspect	'V', 'd', "RMAD0_ADDR", "_RMAD0_ADDR", 'G', 2560, 4, 1, 0, 00h
+	._inspect	'V', 'd', "RMAD1_ADDR", "_RMAD1_ADDR", 'G', 2560, 4, 1, 0, 00h
+	._inspect	'V', 'd', "RMAD2_ADDR", "_RMAD2_ADDR", 'G', 2560, 4, 1, 0, 00h
+	._inspect	'V', 'd', "RMAD3_ADDR", "_RMAD3_ADDR", 'G', 2560, 4, 1, 0, 00h
+	._inspect	'V', 'd', "SAR0_ADDR", "_SAR0_ADDR", 'G', 2560, 4, 1, 0, 00h
+	._inspect	'V', 'd', "SAR1_ADDR", "_SAR1_ADDR", 'G', 2560, 4, 1, 0, 00h
+	._inspect	'V', 'd', "DAR0_ADDR", "_DAR0_ADDR", 'G', 2560, 4, 1, 0, 00h
+	._inspect	'V', 'd', "DAR1_ADDR", "_DAR1_ADDR", 'G', 2560, 4, 1, 0, 00h
+	._inspect	'F', 'p', "Initialise", "_Initialise", 'G', 2626, 0, 00h, 0
+
+	._inspect	'M', "C:/Users/Miguel/Desktop/Nova pasta/NG2S901_As1_Menu/NG2S901_As1_Menu/drivers/led/../keypad/keyscan_4x4.h", "C:/Users/Miguel/Desktop/Nova pasta/NG2S901_As1_Menu/NG2S901_As1_Menu/drivers/led/led"
+	._inspect	'F', 'p', "keyscan_4x4_init", "_keyscan_4x4_init", 'G', 4, 0, 00h, 0
+	._inspect	'F', 'p', "Timer_A0", "_Timer_A0", 'G', 7, 0, 020000h, 0
+	._inspect	'F', 'p', "getcommand", "_getcommand", 'G', 9, 0, 00h, 0
+	._inspect	'F', 'p', "keypad_4x4_read_buffer", "_keypad_4x4_read_buffer", 'G', 10, 0, 00h, 0
+	._inspect	'F', 'p', "keyscan_4x4_clear", "_keyscan_4x4_clear", 'G', 11, 0, 00h, 0
+	._inspect	'F', 'p', "keypad_4x4_wait", "_keypad_4x4_wait", 'G', 12, 0, 00h, 0
+	._inspect	'F', 'p', "keypad_4x4_wait_async", "_keypad_4x4_wait_async", 'G', 13, 0, 00h, 0
+	._inspect	'F', 'p', "read_key", "_read_key", 'G', 14, 0, 00h, 0
+	._inspect	'F', 'p', "keypad_4x4_iskeypress", "_keypad_4x4_iskeypress", 'G', 15, 0, 00h, 0
+	._inspect	'F', 'p', "KYB", "_KYB", 'G', 18, 0, 020000h, 0
+
+	._inspect	'M', "C:/Users/Miguel/Desktop/Nova pasta/NG2S901_As1_Menu/NG2S901_As1_Menu/drivers/led/led.c", "C:/Users/Miguel/Desktop/Nova pasta/NG2S901_As1_Menu/NG2S901_As1_Menu/drivers/led/led"
+	._inspect	'V', 'd', "shift", "_shift", 'G', 6, 2, 0, 0, 00h
+	._inspect	'V', 'd', "shift_dir", "_shift_dir", 'G', 7, 1, 0, 0, 00h
+	._inspect	'V', 'd', "shift_delay", "_shift_delay", 'G', 8, 2, 0, 0, 00h
+	._inspect	'V', 'd', "shift_delay_max", "_shift_delay_max", 'G', 9, 2, 0, 0, 00h
+	._inspect	'V', 'd', "dim_delay", "_dim_delay", 'G', 11, 2, 0, 0, 00h
+	._inspect	'V', 'd', "dim_brightness", "_dim_brightness", 'G', 12, 2, 0, 0, 00h
+	._inspect	'V', 'd', "countup_delay", "_countup_delay", 'G', 14, 2, 0, 0, 00h
+	._inspect	'V', 'd', "countup_delay_max", "_countup_delay_max", 'G', 15, 2, 0, 0, 00h
+
+;## #	FUNCTION led_pattern_update
+;## #	FRAME	AUTO	(patt_type)	size  1,	offset -1
+;## #  REGISTER ARG    (patt_type)   size   1,   REGISTER R1L
+;## #	ARG Size(0)	Auto Size(1)	Context Size(5)
+
+
+	.SECTION	program,CODE,align
+	._inspect	'U', 2, "program", "program", 0
+	._file	'C:/Users/Miguel/Desktop/Nova pasta/NG2S901_As1_Menu/NG2S901_As1_Menu/drivers/led/led.c'
+	._type	256,'v'
+	._type	257,'x',256,1
+	._type	257,'m','patt_type',0,3
+	._func	'led_pattern_update','G',1,257,$led_pattern_update,0
+	._inspect	'F', 's', "led_pattern_update", "$led_pattern_update", 'G', 6
+	.align
+	._block
+	._line	17
+	.glb	$led_pattern_update
+$led_pattern_update:
+	enter	#01H
+	._block
+	._var	'patt_type','R',3,3
+	mov.b	R1L,-1[FB]	;  patt_type  patt_type 
+	._eblock
+	._block
+	._var	'patt_type','A',3,-1
+	._line	18
+	mov.b	-1[FB],R0L	;  patt_type 
+	jeq	L3
+	cmp.b	#01H,R0L
+	jeq	L47
+	cmp.b	#02H,R0L
+	jeq	L87
+	jmp	L151
+	._block
+	._line	19
+L3:
+	._line	20
+	mov.w	_shift_delay,R0
+	add.w	#0001H,_shift_delay
+	cmp.w	_shift_delay_max,R0
+	jgeu	L5
+	exitd	
+L5:
+	._line	21
+	mov.w	#0000H,_shift_delay
+	._line	22
+	mov.b	_shift_dir,R0L
+	jeq	L29
+	._block
+	._line	23
+	mov.b	_shift,R1H
+	mov.w	#0001H,A0
+	shl.w	R1H,A0
+	mov.b	A0,_P5_ADDR
+	add.w	#0001H,_shift
+	._line	24
+	cmp.w	#0008H,_shift
+	jlt	L1
+	._line	25
+	cmp.b	#00H,_shift_dir
+	stzx	#01H,#00H,R0L
+	mov.b	R0L,_shift_dir
+	jmp	L159
+	._eblock
+	._line	26
+L29:
+	._block
+	._line	27
+	mov.b	_shift,R1H
+	mov.w	#0001H,A0
+	shl.w	R1H,A0
+	mov.b	A0,_P5_ADDR
+	add.w	#-1,_shift
+	._line	28
+	jpz	L149
+	._line	29
+	cmp.b	#00H,_shift_dir
+	stzx	#01H,#00H,R0L
+	mov.b	R0L,_shift_dir
+	jmp	L159
+	._eblock
+	._line	32
+L47:
+	._line	33
+	mov.w	#0032H,R0
+	sub.w	_dim_brightness,R0
+	cmp.w	R0,_dim_delay
+	jleu	L49
+	mov.w	_dim_brightness,R0
+	add.w	#0032H,R0
+	cmp.w	R0,_dim_delay
+	jgeu	L155
+	._line	34
+	mov.b	#0ffH,_P5_ADDR
+	jmp	L51
+	._line	35
+L155:
+L49:
+	._line	36
+	mov.b	#00H,_P5_ADDR
+L51:
+	._line	37
+	mov.w	_dim_delay,R0
+	add.w	#0001H,_dim_delay
+	cmp.w	#0064H,R0
+	jleu	L153
+	._line	38
+	mov.w	#0000H,_dim_delay
+	jmp	L159
+	._line	40
+L87:
+	._line	41
+	mov.w	_countup_delay,R0
+	add.w	#0001H,_countup_delay
+	cmp.w	_countup_delay_max,R0
+	jleu	L157
+	._block
+	._line	42
+	mov.w	#0000H,_countup_delay
+	._line	43
+	inc.b	_P5_ADDR
+	._eblock
+	._eblock
+	._line	46
+L159:
+L157:
+L153:
+L149:
+L1:
+L151:
+	._line	49
+	._inspect	'S', 'c', "getcommand", "_getcommand", 'G', 0, 49
+	jsr	_getcommand
+	cmp.b	#31H,R0L
+	jeq	L101
+	cmp.b	#32H,R0L
+	jeq	L113
+	jmp	L163
+	._block
+	._line	50
+L101:
+	._line	51
+	mov.w	_shift_delay_max,R0
+	add.w	#0064H,R0
+	mov.w	R0,_shift_delay_max
+	cmp.w	#4e20H,R0
+	jleu	L99
+	mov.w	#4e20H,_shift_delay_max
+	jmp	L165
+	._line	53
+L113:
+	._line	54
+	mov.w	_shift_delay_max,R0
+	sub.w	#0064H,R0
+	mov.w	R0,_shift_delay_max
+	cmp.w	#01f4H,R0
+	jgeu	L161
+	mov.w	#01f4H,_shift_delay_max
+	._eblock
+	._line	56
+L165:
+L161:
+L99:
+L163:
+	._eblock
+	._line	57
+	exitd	
+E1:
+	._eblock
+M1:
+	._efunc	M1
+	._inspect	'F', 'd', "led_pattern_update", "$led_pattern_update", 'G', 17, 0, 00h, 0
+	._inspect	'F', 't', "led_pattern_update", 'G', 257
+	._inspect	'V', 'r', "shift_delay", 'G', 20, 2, 0, 0, 00h
+	._inspect	'V', 'r', "shift_delay", 'G', 20, 2, 0, 0, 00h
+	._inspect	'V', 'r', "shift_delay_max", 'G', 20, 2, 0, 0, 00h
+	._inspect	'V', 'r', "shift_delay", 'G', 21, 2, 0, 0, 00h
+	._inspect	'V', 'r', "shift_dir", 'G', 22, 1, 0, 0, 00h
+	._inspect	'V', 'r', "shift", 'G', 23, 2, 0, 0, 00h
+	._inspect	'V', 'r', "P5_ADDR", 'G', 23, 1, 1, 0, 00h
+	._inspect	'V', 'r', "shift", 'G', 23, 2, 0, 0, 00h
+	._inspect	'V', 'r', "shift", 'G', 24, 2, 0, 0, 00h
+	._inspect	'V', 'r', "shift_dir", 'G', 25, 1, 0, 0, 00h
+	._inspect	'V', 'r', "shift_dir", 'G', 25, 1, 0, 0, 00h
+	._inspect	'V', 'r', "shift", 'G', 27, 2, 0, 0, 00h
+	._inspect	'V', 'r', "P5_ADDR", 'G', 27, 1, 1, 0, 00h
+	._inspect	'V', 'r', "shift", 'G', 27, 2, 0, 0, 00h
+	._inspect	'V', 'r', "shift", 'G', 28, 2, 0, 0, 00h
+	._inspect	'V', 'r', "shift_dir", 'G', 29, 1, 0, 0, 00h
+	._inspect	'V', 'r', "shift_dir", 'G', 29, 1, 0, 0, 00h
+	._inspect	'V', 'r', "dim_brightness", 'G', 33, 2, 0, 0, 00h
+	._inspect	'V', 'r', "dim_delay", 'G', 33, 2, 0, 0, 00h
+	._inspect	'V', 'r', "dim_brightness", 'G', 33, 2, 0, 0, 00h
+	._inspect	'V', 'r', "dim_delay", 'G', 33, 2, 0, 0, 00h
+	._inspect	'V', 'r', "P5_ADDR", 'G', 34, 1, 1, 0, 00h
+	._inspect	'V', 'r', "P5_ADDR", 'G', 36, 1, 1, 0, 00h
+	._inspect	'V', 'r', "dim_delay", 'G', 37, 2, 0, 0, 00h
+	._inspect	'V', 'r', "dim_delay", 'G', 37, 2, 0, 0, 00h
+	._inspect	'V', 'r', "dim_delay", 'G', 38, 2, 0, 0, 00h
+	._inspect	'V', 'r', "countup_delay", 'G', 41, 2, 0, 0, 00h
+	._inspect	'V', 'r', "countup_delay", 'G', 41, 2, 0, 0, 00h
+	._inspect	'V', 'r', "countup_delay_max", 'G', 41, 2, 0, 0, 00h
+	._inspect	'V', 'r', "countup_delay", 'G', 42, 2, 0, 0, 00h
+	._inspect	'V', 'r', "P5_ADDR", 'G', 43, 1, 1, 0, 00h
+	._inspect	'F', 'r', "getcommand", "_getcommand", 'G', 49, 0, 00h, 0
+	._inspect	'V', 'r', "shift_delay_max", 'G', 51, 2, 0, 0, 00h
+	._inspect	'V', 'r', "shift_delay_max", 'G', 51, 2, 0, 0, 00h
+	._inspect	'V', 'r', "shift_delay_max", 'G', 51, 2, 0, 0, 00h
+	._inspect	'V', 'r', "shift_delay_max", 'G', 54, 2, 0, 0, 00h
+	._inspect	'V', 'r', "shift_delay_max", 'G', 54, 2, 0, 0, 00h
+	._inspect	'V', 'r', "shift_delay_max", 'G', 54, 2, 0, 0, 00h
+	._inspect	'F', 'e', "led_pattern_update", "$led_pattern_update", 'G', 0, 0
+
+	.glb	_Initialise
+	.glb	_keyscan_4x4_init
+	.glb	_Timer_A0
+	.glb	_getcommand
+	.glb	_keypad_4x4_read_buffer
+	.glb	_keyscan_4x4_clear
+	.glb	_keypad_4x4_wait
+	.glb	_keypad_4x4_wait_async
+	.glb	_read_key
+	.glb	_keypad_4x4_iskeypress
+	.glb	_KYB
+
+	.SECTION	data_NE,DATA,align
+	._inspect	'U', 1, "data_NE", "data_NE", 0
+	.glb	_countup_delay_max
+_countup_delay_max:
+	.blkb	2
+	.glb	_dim_delay
+_dim_delay:
+	.blkb	2
+	.glb	_dim_brightness
+_dim_brightness:
+	.blkb	2
+	.glb	_shift
+_shift:
+	.blkb	2
+	.glb	_shift_delay
+_shift_delay:
+	.blkb	2
+	.glb	_shift_delay_max
+_shift_delay_max:
+	.blkb	2
+	.glb	_countup_delay
+_countup_delay:
+	.blkb	2
+
+	.SECTION	data_NO,DATA
+	._inspect	'U', 1, "data_NO", "data_NO", 0
+	.glb	_shift_dir
+_shift_dir:
+	.blkb	1
+
+	.SECTION	data_NEI,ROMDATA
+	._inspect	'U', 1, "data_NEI", "data_NEI", 0
+;## # init data of countup_delay_max.
+	.word	02bcH
+;## # init data of dim_delay.
+	.word	0000H
+;## # init data of dim_brightness.
+	.word	0019H
+;## # init data of shift.
+	.word	0000H
+;## # init data of shift_delay.
+	.word	0000H
+;## # init data of shift_delay_max.
+	.word	02bcH
+;## # init data of countup_delay.
+	.word	0000H
+
+	.SECTION	data_NOI,ROMDATA
+	._inspect	'U', 1, "data_NOI", "data_NOI", 0
+;## # init data of shift_dir.
+	.byte	01H
+;#################################
+;###  STATIC DATA INFORMATION  ###
+;#################################
+	._var	'countup_delay_max','G',18,_countup_delay_max
+	._var	'dim_delay','G',18,_dim_delay
+	._var	'dim_brightness','G',18,_dim_brightness
+	._var	'DA0_ADDR','S',3,_DA0_ADDR
+	._var	'DA1_ADDR','S',3,_DA1_ADDR
+	._var	'UDF_ADDR','S',3,_UDF_ADDR
+	._var	'TA11_ADDR','S',5,_TA11_ADDR
+	._var	'TA21_ADDR','S',5,_TA21_ADDR
+	._var	'TA41_ADDR','S',5,_TA41_ADDR
+	._var	'TB3_ADDR','S',5,_TB3_ADDR
+	._var	'TB4_ADDR','S',5,_TB4_ADDR
+	._var	'TB5_ADDR','S',5,_TB5_ADDR
+	._var	'TA0_ADDR','S',5,_TA0_ADDR
+	._var	'TA1_ADDR','S',5,_TA1_ADDR
+	._var	'TA2_ADDR','S',5,_TA2_ADDR
+	._var	'TA3_ADDR','S',5,_TA3_ADDR
+	._var	'TA4_ADDR','S',5,_TA4_ADDR
+	._var	'TB0_ADDR','S',5,_TB0_ADDR
+	._var	'TB1_ADDR','S',5,_TB1_ADDR
+	._var	'TB2_ADDR','S',5,_TB2_ADDR
+	._type	260,'g','B0',0,1,3
+	._type	261,'g','B1',0,1,3
+	._type	262,'g','B2',0,1,3
+	._type	263,'g','B3',0,1,3
+	._type	264,'g','B4',0,1,3
+	._type	265,'g','B5',0,1,3
+	._type	266,'g','B6',0,1,3
+	._type	267,'g','B7',0,1,3
+	._type	259,'S','BIT_DEF',1
+	._type	259,'m','B0',260,0
+	._type	259,'m','B1',261,1
+	._type	259,'m','B2',262,2
+	._type	259,'m','B3',263,3
+	._type	259,'m','B4',264,4
+	._type	259,'m','B5',265,5
+	._type	259,'m','B6',266,6
+	._type	259,'m','B7',267,7
+	._type	258,'U','BYTE_DEF',1
+	._type	258,'m','BIT',259,0
+	._type	258,'m','BYTE',3,0
+	._var	'PM0_ADDR','S',258,_PM0_ADDR
+	._var	'PM1_ADDR','S',258,_PM1_ADDR
+	._var	'CM0_ADDR','S',258,_CM0_ADDR
+	._var	'CM1_ADDR','S',258,_CM1_ADDR
+	._var	'CSR_ADDR','S',258,_CSR_ADDR
+	._var	'AIER_ADDR','S',258,_AIER_ADDR
+	._var	'PRCR_ADDR','S',258,_PRCR_ADDR
+	._var	'DBR_ADDR','S',258,_DBR_ADDR
+	._var	'CM2_ADDR','S',258,_CM2_ADDR
+	._var	'WDTS_ADDR','S',258,_WDTS_ADDR
+	._var	'WDC_ADDR','S',258,_WDC_ADDR
+	._var	'CSE_ADDR','S',258,_CSE_ADDR
+	._var	'PLC0_ADDR','S',258,_PLC0_ADDR
+	._var	'PM2_ADDR','S',258,_PM2_ADDR
+	._var	'DM0CON_ADDR','S',258,_DM0CON_ADDR
+	._var	'DM1CON_ADDR','S',258,_DM1CON_ADDR
+	._var	'INT3IC_ADDR','S',258,_INT3IC_ADDR
+	._var	'TB5IC_ADDR','S',258,_TB5IC_ADDR
+	._var	'TB4IC_ADDR','S',258,_TB4IC_ADDR
+	._var	'TB3IC_ADDR','S',258,_TB3IC_ADDR
+	._var	'S4IC_ADDR','S',258,_S4IC_ADDR
+	._var	'S3IC_ADDR','S',258,_S3IC_ADDR
+	._var	'INT5IC_ADDR','S',258,_INT5IC_ADDR
+	._var	'INT4IC_ADDR','S',258,_INT4IC_ADDR
+	._var	'BCNIC_ADDR','S',258,_BCNIC_ADDR
+	._var	'DM0IC_ADDR','S',258,_DM0IC_ADDR
+	._var	'DM1IC_ADDR','S',258,_DM1IC_ADDR
+	._var	'KUPIC_ADDR','S',258,_KUPIC_ADDR
+	._var	'ADIC_ADDR','S',258,_ADIC_ADDR
+	._var	'S2TIC_ADDR','S',258,_S2TIC_ADDR
+	._var	'S2RIC_ADDR','S',258,_S2RIC_ADDR
+	._var	'S0TIC_ADDR','S',258,_S0TIC_ADDR
+	._var	'S0RIC_ADDR','S',258,_S0RIC_ADDR
+	._var	'S1TIC_ADDR','S',258,_S1TIC_ADDR
+	._var	'S1RIC_ADDR','S',258,_S1RIC_ADDR
+	._var	'TA0IC_ADDR','S',258,_TA0IC_ADDR
+	._var	'TA1IC_ADDR','S',258,_TA1IC_ADDR
+	._var	'TA2IC_ADDR','S',258,_TA2IC_ADDR
+	._var	'TA3IC_ADDR','S',258,_TA3IC_ADDR
+	._var	'TA4IC_ADDR','S',258,_TA4IC_ADDR
+	._var	'TB0IC_ADDR','S',258,_TB0IC_ADDR
+	._var	'TB1IC_ADDR','S',258,_TB1IC_ADDR
+	._var	'TB2IC_ADDR','S',258,_TB2IC_ADDR
+	._var	'INT0IC_ADDR','S',258,_INT0IC_ADDR
+	._var	'INT1IC_ADDR','S',258,_INT1IC_ADDR
+	._var	'INT2IC_ADDR','S',258,_INT2IC_ADDR
+	._var	'FMR1_ADDR','S',258,_FMR1_ADDR
+	._var	'FMR0_ADDR','S',258,_FMR0_ADDR
+	._var	'AIER2_ADDR','S',258,_AIER2_ADDR
+	._var	'PCLKR_ADDR','S',258,_PCLKR_ADDR
+	._var	'TBSR_ADDR','S',258,_TBSR_ADDR
+	._var	'INVC0_ADDR','S',258,_INVC0_ADDR
+	._var	'INVC1_ADDR','S',258,_INVC1_ADDR
+	._var	'IDB0_ADDR','S',258,_IDB0_ADDR
+	._var	'IDB1_ADDR','S',258,_IDB1_ADDR
+	._var	'DTT_ADDR','S',258,_DTT_ADDR
+	._var	'ICTB2_ADDR','S',258,_ICTB2_ADDR
+	._var	'TB3MR_ADDR','S',258,_TB3MR_ADDR
+	._var	'TB4MR_ADDR','S',258,_TB4MR_ADDR
+	._var	'TB5MR_ADDR','S',258,_TB5MR_ADDR
+	._var	'IFSR2A_ADDR','S',258,_IFSR2A_ADDR
+	._var	'IFSR_ADDR','S',258,_IFSR_ADDR
+	._var	'S3TRR_ADDR','S',258,_S3TRR_ADDR
+	._var	'S3C_ADDR','S',258,_S3C_ADDR
+	._var	'S3BRG_ADDR','S',258,_S3BRG_ADDR
+	._var	'S4TRR_ADDR','S',258,_S4TRR_ADDR
+	._var	'S4C_ADDR','S',258,_S4C_ADDR
+	._var	'S4BRG_ADDR','S',258,_S4BRG_ADDR
+	._var	'U0SMR4_ADDR','S',258,_U0SMR4_ADDR
+	._var	'U0SMR3_ADDR','S',258,_U0SMR3_ADDR
+	._var	'U0SMR2_ADDR','S',258,_U0SMR2_ADDR
+	._var	'U0SMR_ADDR','S',258,_U0SMR_ADDR
+	._var	'U1SMR4_ADDR','S',258,_U1SMR4_ADDR
+	._var	'U1SMR3_ADDR','S',258,_U1SMR3_ADDR
+	._var	'U1SMR2_ADDR','S',258,_U1SMR2_ADDR
+	._var	'U1SMR_ADDR','S',258,_U1SMR_ADDR
+	._var	'U2SMR4_ADDR','S',258,_U2SMR4_ADDR
+	._var	'U2SMR3_ADDR','S',258,_U2SMR3_ADDR
+	._var	'U2SMR2_ADDR','S',258,_U2SMR2_ADDR
+	._var	'U2SMR_ADDR','S',258,_U2SMR_ADDR
+	._var	'U2MR_ADDR','S',258,_U2MR_ADDR
+	._var	'U2BRG_ADDR','S',258,_U2BRG_ADDR
+	._var	'U2C0_ADDR','S',258,_U2C0_ADDR
+	._var	'U2C1_ADDR','S',258,_U2C1_ADDR
+	._var	'TABSR_ADDR','S',258,_TABSR_ADDR
+	._var	'CPSRF_ADDR','S',258,_CPSRF_ADDR
+	._var	'ONSF_ADDR','S',258,_ONSF_ADDR
+	._var	'TRGSR_ADDR','S',258,_TRGSR_ADDR
+	._var	'TA0MR_ADDR','S',258,_TA0MR_ADDR
+	._var	'TA1MR_ADDR','S',258,_TA1MR_ADDR
+	._var	'TA2MR_ADDR','S',258,_TA2MR_ADDR
+	._var	'TA3MR_ADDR','S',258,_TA3MR_ADDR
+	._var	'TA4MR_ADDR','S',258,_TA4MR_ADDR
+	._var	'TB0MR_ADDR','S',258,_TB0MR_ADDR
+	._var	'TB1MR_ADDR','S',258,_TB1MR_ADDR
+	._var	'TB2MR_ADDR','S',258,_TB2MR_ADDR
+	._var	'TB2SC_ADDR','S',258,_TB2SC_ADDR
+	._var	'U0MR_ADDR','S',258,_U0MR_ADDR
+	._var	'U0BRG_ADDR','S',258,_U0BRG_ADDR
+	._var	'U0C0_ADDR','S',258,_U0C0_ADDR
+	._var	'U0C1_ADDR','S',258,_U0C1_ADDR
+	._var	'U1MR_ADDR','S',258,_U1MR_ADDR
+	._var	'U1BRG_ADDR','S',258,_U1BRG_ADDR
+	._var	'U1C0_ADDR','S',258,_U1C0_ADDR
+	._var	'U1C1_ADDR','S',258,_U1C1_ADDR
+	._var	'UCON_ADDR','S',258,_UCON_ADDR
+	._var	'FIDR_ADDR','S',258,_FIDR_ADDR
+	._var	'DM0SL_ADDR','S',258,_DM0SL_ADDR
+	._var	'DM1SL_ADDR','S',258,_DM1SL_ADDR
+	._var	'CRCIN_ADDR','S',258,_CRCIN_ADDR
+	._var	'ADCON2_ADDR','S',258,_ADCON2_ADDR
+	._var	'ADCON0_ADDR','S',258,_ADCON0_ADDR
+	._var	'ADCON1_ADDR','S',258,_ADCON1_ADDR
+	._var	'DACON_ADDR','S',258,_DACON_ADDR
+	._var	'PC14_ADDR','S',258,_PC14_ADDR
+	._var	'PUR3_ADDR','S',258,_PUR3_ADDR
+	._var	'P0_ADDR','S',258,_P0_ADDR
+	._var	'P1_ADDR','S',258,_P1_ADDR
+	._var	'P0D_ADDR','S',258,_P0D_ADDR
+	._var	'P1D_ADDR','S',258,_P1D_ADDR
+	._var	'P2_ADDR','S',258,_P2_ADDR
+	._var	'P3_ADDR','S',258,_P3_ADDR
+	._var	'P2D_ADDR','S',258,_P2D_ADDR
+	._var	'P3D_ADDR','S',258,_P3D_ADDR
+	._var	'P4_ADDR','S',258,_P4_ADDR
+	._var	'P5_ADDR','S',258,_P5_ADDR
+	._var	'P4D_ADDR','S',258,_P4D_ADDR
+	._var	'P5D_ADDR','S',258,_P5D_ADDR
+	._var	'P6_ADDR','S',258,_P6_ADDR
+	._var	'P7_ADDR','S',258,_P7_ADDR
+	._var	'P6D_ADDR','S',258,_P6D_ADDR
+	._var	'P7D_ADDR','S',258,_P7D_ADDR
+	._var	'P8_ADDR','S',258,_P8_ADDR
+	._var	'P9_ADDR','S',258,_P9_ADDR
+	._var	'P8D_ADDR','S',258,_P8D_ADDR
+	._var	'P9D_ADDR','S',258,_P9D_ADDR
+	._var	'P10_ADDR','S',258,_P10_ADDR
+	._var	'P11_ADDR','S',258,_P11_ADDR
+	._var	'P10D_ADDR','S',258,_P10D_ADDR
+	._var	'P1D1_ADDR','S',258,_P1D1_ADDR
+	._var	'P12_ADDR','S',258,_P12_ADDR
+	._var	'P13_ADDR','S',258,_P13_ADDR
+	._var	'P1D2_ADDR','S',258,_P1D2_ADDR
+	._var	'P1D3_ADDR','S',258,_P1D3_ADDR
+	._var	'PUR0_ADDR','S',258,_PUR0_ADDR
+	._var	'PUR1_ADDR','S',258,_PUR1_ADDR
+	._var	'PUR2_ADDR','S',258,_PUR2_ADDR
+	._var	'PCR_ADDR','S',258,_PCR_ADDR
+	._type	270,'g','B0',0,1,3
+	._type	271,'g','B1',0,1,3
+	._type	272,'g','B2',0,1,3
+	._type	273,'g','B3',0,1,3
+	._type	274,'g','B4',0,1,3
+	._type	275,'g','B5',0,1,3
+	._type	276,'g','B6',0,1,3
+	._type	277,'g','B7',0,1,3
+	._type	278,'g','B8',0,1,3
+	._type	279,'g','B9',0,1,3
+	._type	280,'g','B10',0,1,3
+	._type	281,'g','B11',0,1,3
+	._type	282,'g','B12',0,1,3
+	._type	283,'g','B13',0,1,3
+	._type	284,'g','B14',0,1,3
+	._type	285,'g','B15',0,1,3
+	._type	269,'S','',2
+	._type	269,'m','B0',270,0
+	._type	269,'m','B1',271,1
+	._type	269,'m','B2',272,2
+	._type	269,'m','B3',273,3
+	._type	269,'m','B4',274,4
+	._type	269,'m','B5',275,5
+	._type	269,'m','B6',276,6
+	._type	269,'m','B7',277,7
+	._type	269,'m','B8',278,8
+	._type	269,'m','B9',279,9
+	._type	269,'m','B10',280,10
+	._type	269,'m','B11',281,11
+	._type	269,'m','B12',282,12
+	._type	269,'m','B13',283,13
+	._type	269,'m','B14',284,14
+	._type	269,'m','B15',285,15
+	._type	286,'S','',2
+	._type	286,'m','LOW',3,0
+	._type	286,'m','HIGH',3,1
+	._type	268,'U','',2
+	._type	268,'m','BIT',269,0
+	._type	268,'m','BYTE',286,0
+	._type	268,'m','WORD',5,0
+	._var	'TCR0_ADDR','S',268,_TCR0_ADDR
+	._type	289,'g','B0',0,1,3
+	._type	290,'g','B1',0,1,3
+	._type	291,'g','B2',0,1,3
+	._type	292,'g','B3',0,1,3
+	._type	293,'g','B4',0,1,3
+	._type	294,'g','B5',0,1,3
+	._type	295,'g','B6',0,1,3
+	._type	296,'g','B7',0,1,3
+	._type	297,'g','B8',0,1,3
+	._type	298,'g','B9',0,1,3
+	._type	299,'g','B10',0,1,3
+	._type	300,'g','B11',0,1,3
+	._type	301,'g','B12',0,1,3
+	._type	302,'g','B13',0,1,3
+	._type	303,'g','B14',0,1,3
+	._type	304,'g','B15',0,1,3
+	._type	288,'S','',2
+	._type	288,'m','B0',289,0
+	._type	288,'m','B1',290,1
+	._type	288,'m','B2',291,2
+	._type	288,'m','B3',292,3
+	._type	288,'m','B4',293,4
+	._type	288,'m','B5',294,5
+	._type	288,'m','B6',295,6
+	._type	288,'m','B7',296,7
+	._type	288,'m','B8',297,8
+	._type	288,'m','B9',298,9
+	._type	288,'m','B10',299,10
+	._type	288,'m','B11',300,11
+	._type	288,'m','B12',301,12
+	._type	288,'m','B13',302,13
+	._type	288,'m','B14',303,14
+	._type	288,'m','B15',304,15
+	._type	305,'S','',2
+	._type	305,'m','LOW',3,0
+	._type	305,'m','HIGH',3,1
+	._type	287,'U','',2
+	._type	287,'m','BIT',288,0
+	._type	287,'m','BYTE',305,0
+	._type	287,'m','WORD',5,0
+	._var	'TCR1_ADDR','S',287,_TCR1_ADDR
+	._type	308,'g','B0',0,1,3
+	._type	309,'g','B1',0,1,3
+	._type	310,'g','B2',0,1,3
+	._type	311,'g','B3',0,1,3
+	._type	312,'g','B4',0,1,3
+	._type	313,'g','B5',0,1,3
+	._type	314,'g','B6',0,1,3
+	._type	315,'g','B7',0,1,3
+	._type	316,'g','B8',0,1,3
+	._type	317,'g','B9',0,1,3
+	._type	318,'g','B10',0,1,3
+	._type	319,'g','B11',0,1,3
+	._type	320,'g','B12',0,1,3
+	._type	321,'g','B13',0,1,3
+	._type	322,'g','B14',0,1,3
+	._type	323,'g','B15',0,1,3
+	._type	307,'S','',2
+	._type	307,'m','B0',308,0
+	._type	307,'m','B1',309,1
+	._type	307,'m','B2',310,2
+	._type	307,'m','B3',311,3
+	._type	307,'m','B4',312,4
+	._type	307,'m','B5',313,5
+	._type	307,'m','B6',314,6
+	._type	307,'m','B7',315,7
+	._type	307,'m','B8',316,8
+	._type	307,'m','B9',317,9
+	._type	307,'m','B10',318,10
+	._type	307,'m','B11',319,11
+	._type	307,'m','B12',320,12
+	._type	307,'m','B13',321,13
+	._type	307,'m','B14',322,14
+	._type	307,'m','B15',323,15
+	._type	324,'S','',2
+	._type	324,'m','LOW',3,0
+	._type	324,'m','HIGH',3,1
+	._type	306,'U','',2
+	._type	306,'m','BIT',307,0
+	._type	306,'m','BYTE',324,0
+	._type	306,'m','WORD',5,0
+	._var	'U0TB_ADDR','S',306,_U0TB_ADDR
+	._type	327,'g','B0',0,1,3
+	._type	328,'g','B1',0,1,3
+	._type	329,'g','B2',0,1,3
+	._type	330,'g','B3',0,1,3
+	._type	331,'g','B4',0,1,3
+	._type	332,'g','B5',0,1,3
+	._type	333,'g','B6',0,1,3
+	._type	334,'g','B7',0,1,3
+	._type	335,'g','B8',0,1,3
+	._type	336,'g','B9',0,1,3
+	._type	337,'g','B10',0,1,3
+	._type	338,'g','B11',0,1,3
+	._type	339,'g','B12',0,1,3
+	._type	340,'g','B13',0,1,3
+	._type	341,'g','B14',0,1,3
+	._type	342,'g','B15',0,1,3
+	._type	326,'S','',2
+	._type	326,'m','B0',327,0
+	._type	326,'m','B1',328,1
+	._type	326,'m','B2',329,2
+	._type	326,'m','B3',330,3
+	._type	326,'m','B4',331,4
+	._type	326,'m','B5',332,5
+	._type	326,'m','B6',333,6
+	._type	326,'m','B7',334,7
+	._type	326,'m','B8',335,8
+	._type	326,'m','B9',336,9
+	._type	326,'m','B10',337,10
+	._type	326,'m','B11',338,11
+	._type	326,'m','B12',339,12
+	._type	326,'m','B13',340,13
+	._type	326,'m','B14',341,14
+	._type	326,'m','B15',342,15
+	._type	343,'S','',2
+	._type	343,'m','LOW',3,0
+	._type	343,'m','HIGH',3,1
+	._type	325,'U','',2
+	._type	325,'m','BIT',326,0
+	._type	325,'m','BYTE',343,0
+	._type	325,'m','WORD',5,0
+	._var	'U1TB_ADDR','S',325,_U1TB_ADDR
+	._type	346,'g','B0',0,1,3
+	._type	347,'g','B1',0,1,3
+	._type	348,'g','B2',0,1,3
+	._type	349,'g','B3',0,1,3
+	._type	350,'g','B4',0,1,3
+	._type	351,'g','B5',0,1,3
+	._type	352,'g','B6',0,1,3
+	._type	353,'g','B7',0,1,3
+	._type	354,'g','B8',0,1,3
+	._type	355,'g','B9',0,1,3
+	._type	356,'g','B10',0,1,3
+	._type	357,'g','B11',0,1,3
+	._type	358,'g','B12',0,1,3
+	._type	359,'g','B13',0,1,3
+	._type	360,'g','B14',0,1,3
+	._type	361,'g','B15',0,1,3
+	._type	345,'S','',2
+	._type	345,'m','B0',346,0
+	._type	345,'m','B1',347,1
+	._type	345,'m','B2',348,2
+	._type	345,'m','B3',349,3
+	._type	345,'m','B4',350,4
+	._type	345,'m','B5',351,5
+	._type	345,'m','B6',352,6
+	._type	345,'m','B7',353,7
+	._type	345,'m','B8',354,8
+	._type	345,'m','B9',355,9
+	._type	345,'m','B10',356,10
+	._type	345,'m','B11',357,11
+	._type	345,'m','B12',358,12
+	._type	345,'m','B13',359,13
+	._type	345,'m','B14',360,14
+	._type	345,'m','B15',361,15
+	._type	362,'S','',2
+	._type	362,'m','LOW',3,0
+	._type	362,'m','HIGH',3,1
+	._type	344,'U','',2
+	._type	344,'m','BIT',345,0
+	._type	344,'m','BYTE',362,0
+	._type	344,'m','WORD',5,0
+	._var	'U2TB_ADDR','S',344,_U2TB_ADDR
+	._type	365,'g','B0',0,1,3
+	._type	366,'g','B1',0,1,3
+	._type	367,'g','B2',0,1,3
+	._type	368,'g','B3',0,1,3
+	._type	369,'g','B4',0,1,3
+	._type	370,'g','B5',0,1,3
+	._type	371,'g','B6',0,1,3
+	._type	372,'g','B7',0,1,3
+	._type	373,'g','B8',0,1,3
+	._type	374,'g','B9',0,1,3
+	._type	375,'g','B10',0,1,3
+	._type	376,'g','B11',0,1,3
+	._type	377,'g','B12',0,1,3
+	._type	378,'g','B13',0,1,3
+	._type	379,'g','B14',0,1,3
+	._type	380,'g','B15',0,1,3
+	._type	364,'S','',2
+	._type	364,'m','B0',365,0
+	._type	364,'m','B1',366,1
+	._type	364,'m','B2',367,2
+	._type	364,'m','B3',368,3
+	._type	364,'m','B4',369,4
+	._type	364,'m','B5',370,5
+	._type	364,'m','B6',371,6
+	._type	364,'m','B7',372,7
+	._type	364,'m','B8',373,8
+	._type	364,'m','B9',374,9
+	._type	364,'m','B10',375,10
+	._type	364,'m','B11',376,11
+	._type	364,'m','B12',377,12
+	._type	364,'m','B13',378,13
+	._type	364,'m','B14',379,14
+	._type	364,'m','B15',380,15
+	._type	381,'S','',2
+	._type	381,'m','LOW',3,0
+	._type	381,'m','HIGH',3,1
+	._type	363,'U','',2
+	._type	363,'m','BIT',364,0
+	._type	363,'m','BYTE',381,0
+	._type	363,'m','WORD',5,0
+	._var	'U0RB_ADDR','S',363,_U0RB_ADDR
+	._type	384,'g','B0',0,1,3
+	._type	385,'g','B1',0,1,3
+	._type	386,'g','B2',0,1,3
+	._type	387,'g','B3',0,1,3
+	._type	388,'g','B4',0,1,3
+	._type	389,'g','B5',0,1,3
+	._type	390,'g','B6',0,1,3
+	._type	391,'g','B7',0,1,3
+	._type	392,'g','B8',0,1,3
+	._type	393,'g','B9',0,1,3
+	._type	394,'g','B10',0,1,3
+	._type	395,'g','B11',0,1,3
+	._type	396,'g','B12',0,1,3
+	._type	397,'g','B13',0,1,3
+	._type	398,'g','B14',0,1,3
+	._type	399,'g','B15',0,1,3
+	._type	383,'S','',2
+	._type	383,'m','B0',384,0
+	._type	383,'m','B1',385,1
+	._type	383,'m','B2',386,2
+	._type	383,'m','B3',387,3
+	._type	383,'m','B4',388,4
+	._type	383,'m','B5',389,5
+	._type	383,'m','B6',390,6
+	._type	383,'m','B7',391,7
+	._type	383,'m','B8',392,8
+	._type	383,'m','B9',393,9
+	._type	383,'m','B10',394,10
+	._type	383,'m','B11',395,11
+	._type	383,'m','B12',396,12
+	._type	383,'m','B13',397,13
+	._type	383,'m','B14',398,14
+	._type	383,'m','B15',399,15
+	._type	400,'S','',2
+	._type	400,'m','LOW',3,0
+	._type	400,'m','HIGH',3,1
+	._type	382,'U','',2
+	._type	382,'m','BIT',383,0
+	._type	382,'m','BYTE',400,0
+	._type	382,'m','WORD',5,0
+	._var	'U1RB_ADDR','S',382,_U1RB_ADDR
+	._type	403,'g','B0',0,1,3
+	._type	404,'g','B1',0,1,3
+	._type	405,'g','B2',0,1,3
+	._type	406,'g','B3',0,1,3
+	._type	407,'g','B4',0,1,3
+	._type	408,'g','B5',0,1,3
+	._type	409,'g','B6',0,1,3
+	._type	410,'g','B7',0,1,3
+	._type	411,'g','B8',0,1,3
+	._type	412,'g','B9',0,1,3
+	._type	413,'g','B10',0,1,3
+	._type	414,'g','B11',0,1,3
+	._type	415,'g','B12',0,1,3
+	._type	416,'g','B13',0,1,3
+	._type	417,'g','B14',0,1,3
+	._type	418,'g','B15',0,1,3
+	._type	402,'S','',2
+	._type	402,'m','B0',403,0
+	._type	402,'m','B1',404,1
+	._type	402,'m','B2',405,2
+	._type	402,'m','B3',406,3
+	._type	402,'m','B4',407,4
+	._type	402,'m','B5',408,5
+	._type	402,'m','B6',409,6
+	._type	402,'m','B7',410,7
+	._type	402,'m','B8',411,8
+	._type	402,'m','B9',412,9
+	._type	402,'m','B10',413,10
+	._type	402,'m','B11',414,11
+	._type	402,'m','B12',415,12
+	._type	402,'m','B13',416,13
+	._type	402,'m','B14',417,14
+	._type	402,'m','B15',418,15
+	._type	419,'S','',2
+	._type	419,'m','LOW',3,0
+	._type	419,'m','HIGH',3,1
+	._type	401,'U','',2
+	._type	401,'m','BIT',402,0
+	._type	401,'m','BYTE',419,0
+	._type	401,'m','WORD',5,0
+	._var	'U2RB_ADDR','S',401,_U2RB_ADDR
+	._type	422,'g','B0',0,1,3
+	._type	423,'g','B1',0,1,3
+	._type	424,'g','B2',0,1,3
+	._type	425,'g','B3',0,1,3
+	._type	426,'g','B4',0,1,3
+	._type	427,'g','B5',0,1,3
+	._type	428,'g','B6',0,1,3
+	._type	429,'g','B7',0,1,3
+	._type	430,'g','B8',0,1,3
+	._type	431,'g','B9',0,1,3
+	._type	432,'g','B10',0,1,3
+	._type	433,'g','B11',0,1,3
+	._type	434,'g','B12',0,1,3
+	._type	435,'g','B13',0,1,3
+	._type	436,'g','B14',0,1,3
+	._type	437,'g','B15',0,1,3
+	._type	421,'S','',2
+	._type	421,'m','B0',422,0
+	._type	421,'m','B1',423,1
+	._type	421,'m','B2',424,2
+	._type	421,'m','B3',425,3
+	._type	421,'m','B4',426,4
+	._type	421,'m','B5',427,5
+	._type	421,'m','B6',428,6
+	._type	421,'m','B7',429,7
+	._type	421,'m','B8',430,8
+	._type	421,'m','B9',431,9
+	._type	421,'m','B10',432,10
+	._type	421,'m','B11',433,11
+	._type	421,'m','B12',434,12
+	._type	421,'m','B13',435,13
+	._type	421,'m','B14',436,14
+	._type	421,'m','B15',437,15
+	._type	438,'S','',2
+	._type	438,'m','LOW',3,0
+	._type	438,'m','HIGH',3,1
+	._type	420,'U','',2
+	._type	420,'m','BIT',421,0
+	._type	420,'m','BYTE',438,0
+	._type	420,'m','WORD',5,0
+	._var	'CRCD_ADDR','S',420,_CRCD_ADDR
+	._type	441,'g','B0',0,1,3
+	._type	442,'g','B1',0,1,3
+	._type	443,'g','B2',0,1,3
+	._type	444,'g','B3',0,1,3
+	._type	445,'g','B4',0,1,3
+	._type	446,'g','B5',0,1,3
+	._type	447,'g','B6',0,1,3
+	._type	448,'g','B7',0,1,3
+	._type	449,'g','B8',0,1,3
+	._type	450,'g','B9',0,1,3
+	._type	451,'g','B10',0,1,3
+	._type	452,'g','B11',0,1,3
+	._type	453,'g','B12',0,1,3
+	._type	454,'g','B13',0,1,3
+	._type	455,'g','B14',0,1,3
+	._type	456,'g','B15',0,1,3
+	._type	440,'S','',2
+	._type	440,'m','B0',441,0
+	._type	440,'m','B1',442,1
+	._type	440,'m','B2',443,2
+	._type	440,'m','B3',444,3
+	._type	440,'m','B4',445,4
+	._type	440,'m','B5',446,5
+	._type	440,'m','B6',447,6
+	._type	440,'m','B7',448,7
+	._type	440,'m','B8',449,8
+	._type	440,'m','B9',450,9
+	._type	440,'m','B10',451,10
+	._type	440,'m','B11',452,11
+	._type	440,'m','B12',453,12
+	._type	440,'m','B13',454,13
+	._type	440,'m','B14',455,14
+	._type	440,'m','B15',456,15
+	._type	457,'S','',2
+	._type	457,'m','LOW',3,0
+	._type	457,'m','HIGH',3,1
+	._type	439,'U','',2
+	._type	439,'m','BIT',440,0
+	._type	439,'m','BYTE',457,0
+	._type	439,'m','WORD',5,0
+	._var	'AD0_ADDR','S',439,_AD0_ADDR
+	._type	460,'g','B0',0,1,3
+	._type	461,'g','B1',0,1,3
+	._type	462,'g','B2',0,1,3
+	._type	463,'g','B3',0,1,3
+	._type	464,'g','B4',0,1,3
+	._type	465,'g','B5',0,1,3
+	._type	466,'g','B6',0,1,3
+	._type	467,'g','B7',0,1,3
+	._type	468,'g','B8',0,1,3
+	._type	469,'g','B9',0,1,3
+	._type	470,'g','B10',0,1,3
+	._type	471,'g','B11',0,1,3
+	._type	472,'g','B12',0,1,3
+	._type	473,'g','B13',0,1,3
+	._type	474,'g','B14',0,1,3
+	._type	475,'g','B15',0,1,3
+	._type	459,'S','',2
+	._type	459,'m','B0',460,0
+	._type	459,'m','B1',461,1
+	._type	459,'m','B2',462,2
+	._type	459,'m','B3',463,3
+	._type	459,'m','B4',464,4
+	._type	459,'m','B5',465,5
+	._type	459,'m','B6',466,6
+	._type	459,'m','B7',467,7
+	._type	459,'m','B8',468,8
+	._type	459,'m','B9',469,9
+	._type	459,'m','B10',470,10
+	._type	459,'m','B11',471,11
+	._type	459,'m','B12',472,12
+	._type	459,'m','B13',473,13
+	._type	459,'m','B14',474,14
+	._type	459,'m','B15',475,15
+	._type	476,'S','',2
+	._type	476,'m','LOW',3,0
+	._type	476,'m','HIGH',3,1
+	._type	458,'U','',2
+	._type	458,'m','BIT',459,0
+	._type	458,'m','BYTE',476,0
+	._type	458,'m','WORD',5,0
+	._var	'AD1_ADDR','S',458,_AD1_ADDR
+	._type	479,'g','B0',0,1,3
+	._type	480,'g','B1',0,1,3
+	._type	481,'g','B2',0,1,3
+	._type	482,'g','B3',0,1,3
+	._type	483,'g','B4',0,1,3
+	._type	484,'g','B5',0,1,3
+	._type	485,'g','B6',0,1,3
+	._type	486,'g','B7',0,1,3
+	._type	487,'g','B8',0,1,3
+	._type	488,'g','B9',0,1,3
+	._type	489,'g','B10',0,1,3
+	._type	490,'g','B11',0,1,3
+	._type	491,'g','B12',0,1,3
+	._type	492,'g','B13',0,1,3
+	._type	493,'g','B14',0,1,3
+	._type	494,'g','B15',0,1,3
+	._type	478,'S','',2
+	._type	478,'m','B0',479,0
+	._type	478,'m','B1',480,1
+	._type	478,'m','B2',481,2
+	._type	478,'m','B3',482,3
+	._type	478,'m','B4',483,4
+	._type	478,'m','B5',484,5
+	._type	478,'m','B6',485,6
+	._type	478,'m','B7',486,7
+	._type	478,'m','B8',487,8
+	._type	478,'m','B9',488,9
+	._type	478,'m','B10',489,10
+	._type	478,'m','B11',490,11
+	._type	478,'m','B12',491,12
+	._type	478,'m','B13',492,13
+	._type	478,'m','B14',493,14
+	._type	478,'m','B15',494,15
+	._type	495,'S','',2
+	._type	495,'m','LOW',3,0
+	._type	495,'m','HIGH',3,1
+	._type	477,'U','',2
+	._type	477,'m','BIT',478,0
+	._type	477,'m','BYTE',495,0
+	._type	477,'m','WORD',5,0
+	._var	'AD2_ADDR','S',477,_AD2_ADDR
+	._type	498,'g','B0',0,1,3
+	._type	499,'g','B1',0,1,3
+	._type	500,'g','B2',0,1,3
+	._type	501,'g','B3',0,1,3
+	._type	502,'g','B4',0,1,3
+	._type	503,'g','B5',0,1,3
+	._type	504,'g','B6',0,1,3
+	._type	505,'g','B7',0,1,3
+	._type	506,'g','B8',0,1,3
+	._type	507,'g','B9',0,1,3
+	._type	508,'g','B10',0,1,3
+	._type	509,'g','B11',0,1,3
+	._type	510,'g','B12',0,1,3
+	._type	511,'g','B13',0,1,3
+	._type	512,'g','B14',0,1,3
+	._type	513,'g','B15',0,1,3
+	._type	497,'S','',2
+	._type	497,'m','B0',498,0
+	._type	497,'m','B1',499,1
+	._type	497,'m','B2',500,2
+	._type	497,'m','B3',501,3
+	._type	497,'m','B4',502,4
+	._type	497,'m','B5',503,5
+	._type	497,'m','B6',504,6
+	._type	497,'m','B7',505,7
+	._type	497,'m','B8',506,8
+	._type	497,'m','B9',507,9
+	._type	497,'m','B10',508,10
+	._type	497,'m','B11',509,11
+	._type	497,'m','B12',510,12
+	._type	497,'m','B13',511,13
+	._type	497,'m','B14',512,14
+	._type	497,'m','B15',513,15
+	._type	514,'S','',2
+	._type	514,'m','LOW',3,0
+	._type	514,'m','HIGH',3,1
+	._type	496,'U','',2
+	._type	496,'m','BIT',497,0
+	._type	496,'m','BYTE',514,0
+	._type	496,'m','WORD',5,0
+	._var	'AD3_ADDR','S',496,_AD3_ADDR
+	._type	517,'g','B0',0,1,3
+	._type	518,'g','B1',0,1,3
+	._type	519,'g','B2',0,1,3
+	._type	520,'g','B3',0,1,3
+	._type	521,'g','B4',0,1,3
+	._type	522,'g','B5',0,1,3
+	._type	523,'g','B6',0,1,3
+	._type	524,'g','B7',0,1,3
+	._type	525,'g','B8',0,1,3
+	._type	526,'g','B9',0,1,3
+	._type	527,'g','B10',0,1,3
+	._type	528,'g','B11',0,1,3
+	._type	529,'g','B12',0,1,3
+	._type	530,'g','B13',0,1,3
+	._type	531,'g','B14',0,1,3
+	._type	532,'g','B15',0,1,3
+	._type	516,'S','',2
+	._type	516,'m','B0',517,0
+	._type	516,'m','B1',518,1
+	._type	516,'m','B2',519,2
+	._type	516,'m','B3',520,3
+	._type	516,'m','B4',521,4
+	._type	516,'m','B5',522,5
+	._type	516,'m','B6',523,6
+	._type	516,'m','B7',524,7
+	._type	516,'m','B8',525,8
+	._type	516,'m','B9',526,9
+	._type	516,'m','B10',527,10
+	._type	516,'m','B11',528,11
+	._type	516,'m','B12',529,12
+	._type	516,'m','B13',530,13
+	._type	516,'m','B14',531,14
+	._type	516,'m','B15',532,15
+	._type	533,'S','',2
+	._type	533,'m','LOW',3,0
+	._type	533,'m','HIGH',3,1
+	._type	515,'U','',2
+	._type	515,'m','BIT',516,0
+	._type	515,'m','BYTE',533,0
+	._type	515,'m','WORD',5,0
+	._var	'AD4_ADDR','S',515,_AD4_ADDR
+	._type	536,'g','B0',0,1,3
+	._type	537,'g','B1',0,1,3
+	._type	538,'g','B2',0,1,3
+	._type	539,'g','B3',0,1,3
+	._type	540,'g','B4',0,1,3
+	._type	541,'g','B5',0,1,3
+	._type	542,'g','B6',0,1,3
+	._type	543,'g','B7',0,1,3
+	._type	544,'g','B8',0,1,3
+	._type	545,'g','B9',0,1,3
+	._type	546,'g','B10',0,1,3
+	._type	547,'g','B11',0,1,3
+	._type	548,'g','B12',0,1,3
+	._type	549,'g','B13',0,1,3
+	._type	550,'g','B14',0,1,3
+	._type	551,'g','B15',0,1,3
+	._type	535,'S','',2
+	._type	535,'m','B0',536,0
+	._type	535,'m','B1',537,1
+	._type	535,'m','B2',538,2
+	._type	535,'m','B3',539,3
+	._type	535,'m','B4',540,4
+	._type	535,'m','B5',541,5
+	._type	535,'m','B6',542,6
+	._type	535,'m','B7',543,7
+	._type	535,'m','B8',544,8
+	._type	535,'m','B9',545,9
+	._type	535,'m','B10',546,10
+	._type	535,'m','B11',547,11
+	._type	535,'m','B12',548,12
+	._type	535,'m','B13',549,13
+	._type	535,'m','B14',550,14
+	._type	535,'m','B15',551,15
+	._type	552,'S','',2
+	._type	552,'m','LOW',3,0
+	._type	552,'m','HIGH',3,1
+	._type	534,'U','',2
+	._type	534,'m','BIT',535,0
+	._type	534,'m','BYTE',552,0
+	._type	534,'m','WORD',5,0
+	._var	'AD5_ADDR','S',534,_AD5_ADDR
+	._type	555,'g','B0',0,1,3
+	._type	556,'g','B1',0,1,3
+	._type	557,'g','B2',0,1,3
+	._type	558,'g','B3',0,1,3
+	._type	559,'g','B4',0,1,3
+	._type	560,'g','B5',0,1,3
+	._type	561,'g','B6',0,1,3
+	._type	562,'g','B7',0,1,3
+	._type	563,'g','B8',0,1,3
+	._type	564,'g','B9',0,1,3
+	._type	565,'g','B10',0,1,3
+	._type	566,'g','B11',0,1,3
+	._type	567,'g','B12',0,1,3
+	._type	568,'g','B13',0,1,3
+	._type	569,'g','B14',0,1,3
+	._type	570,'g','B15',0,1,3
+	._type	554,'S','',2
+	._type	554,'m','B0',555,0
+	._type	554,'m','B1',556,1
+	._type	554,'m','B2',557,2
+	._type	554,'m','B3',558,3
+	._type	554,'m','B4',559,4
+	._type	554,'m','B5',560,5
+	._type	554,'m','B6',561,6
+	._type	554,'m','B7',562,7
+	._type	554,'m','B8',563,8
+	._type	554,'m','B9',564,9
+	._type	554,'m','B10',565,10
+	._type	554,'m','B11',566,11
+	._type	554,'m','B12',567,12
+	._type	554,'m','B13',568,13
+	._type	554,'m','B14',569,14
+	._type	554,'m','B15',570,15
+	._type	571,'S','',2
+	._type	571,'m','LOW',3,0
+	._type	571,'m','HIGH',3,1
+	._type	553,'U','',2
+	._type	553,'m','BIT',554,0
+	._type	553,'m','BYTE',571,0
+	._type	553,'m','WORD',5,0
+	._var	'AD6_ADDR','S',553,_AD6_ADDR
+	._type	574,'g','B0',0,1,3
+	._type	575,'g','B1',0,1,3
+	._type	576,'g','B2',0,1,3
+	._type	577,'g','B3',0,1,3
+	._type	578,'g','B4',0,1,3
+	._type	579,'g','B5',0,1,3
+	._type	580,'g','B6',0,1,3
+	._type	581,'g','B7',0,1,3
+	._type	582,'g','B8',0,1,3
+	._type	583,'g','B9',0,1,3
+	._type	584,'g','B10',0,1,3
+	._type	585,'g','B11',0,1,3
+	._type	586,'g','B12',0,1,3
+	._type	587,'g','B13',0,1,3
+	._type	588,'g','B14',0,1,3
+	._type	589,'g','B15',0,1,3
+	._type	573,'S','',2
+	._type	573,'m','B0',574,0
+	._type	573,'m','B1',575,1
+	._type	573,'m','B2',576,2
+	._type	573,'m','B3',577,3
+	._type	573,'m','B4',578,4
+	._type	573,'m','B5',579,5
+	._type	573,'m','B6',580,6
+	._type	573,'m','B7',581,7
+	._type	573,'m','B8',582,8
+	._type	573,'m','B9',583,9
+	._type	573,'m','B10',584,10
+	._type	573,'m','B11',585,11
+	._type	573,'m','B12',586,12
+	._type	573,'m','B13',587,13
+	._type	573,'m','B14',588,14
+	._type	573,'m','B15',589,15
+	._type	590,'S','',2
+	._type	590,'m','LOW',3,0
+	._type	590,'m','HIGH',3,1
+	._type	572,'U','',2
+	._type	572,'m','BIT',573,0
+	._type	572,'m','BYTE',590,0
+	._type	572,'m','WORD',5,0
+	._var	'AD7_ADDR','S',572,_AD7_ADDR
+	._type	593,'g','B0',0,1,3
+	._type	594,'g','B1',0,1,3
+	._type	595,'g','B2',0,1,3
+	._type	596,'g','B3',0,1,3
+	._type	597,'g','B4',0,1,3
+	._type	598,'g','B5',0,1,3
+	._type	599,'g','B6',0,1,3
+	._type	600,'g','B7',0,1,3
+	._type	601,'g','B8',0,1,3
+	._type	602,'g','B9',0,1,3
+	._type	603,'g','B10',0,1,3
+	._type	604,'g','B11',0,1,3
+	._type	605,'g','B12',0,1,3
+	._type	606,'g','B13',0,1,3
+	._type	607,'g','B14',0,1,3
+	._type	608,'g','B15',0,1,3
+	._type	609,'g','B16',0,1,3
+	._type	610,'g','B17',0,1,3
+	._type	611,'g','B18',0,1,3
+	._type	612,'g','B19',0,1,3
+	._type	592,'S','',3
+	._type	592,'m','B0',593,0
+	._type	592,'m','B1',594,1
+	._type	592,'m','B2',595,2
+	._type	592,'m','B3',596,3
+	._type	592,'m','B4',597,4
+	._type	592,'m','B5',598,5
+	._type	592,'m','B6',599,6
+	._type	592,'m','B7',600,7
+	._type	592,'m','B8',601,8
+	._type	592,'m','B9',602,9
+	._type	592,'m','B10',603,10
+	._type	592,'m','B11',604,11
+	._type	592,'m','B12',605,12
+	._type	592,'m','B13',606,13
+	._type	592,'m','B14',607,14
+	._type	592,'m','B15',608,15
+	._type	592,'m','B16',609,16
+	._type	592,'m','B17',610,17
+	._type	592,'m','B18',611,18
+	._type	592,'m','B19',612,19
+	._type	613,'S','',4
+	._type	613,'m','LOW',3,0
+	._type	613,'m','MID',3,1
+	._type	613,'m','HIGH',3,2
+	._type	613,'m','NC',3,3
+	._type	591,'U','',4
+	._type	591,'m','BIT',592,0
+	._type	591,'m','BYTE',613,0
+	._type	591,'m','DWORD',7,0
+	._var	'RMAD0_ADDR','S',591,_RMAD0_ADDR
+	._type	616,'g','B0',0,1,3
+	._type	617,'g','B1',0,1,3
+	._type	618,'g','B2',0,1,3
+	._type	619,'g','B3',0,1,3
+	._type	620,'g','B4',0,1,3
+	._type	621,'g','B5',0,1,3
+	._type	622,'g','B6',0,1,3
+	._type	623,'g','B7',0,1,3
+	._type	624,'g','B8',0,1,3
+	._type	625,'g','B9',0,1,3
+	._type	626,'g','B10',0,1,3
+	._type	627,'g','B11',0,1,3
+	._type	628,'g','B12',0,1,3
+	._type	629,'g','B13',0,1,3
+	._type	630,'g','B14',0,1,3
+	._type	631,'g','B15',0,1,3
+	._type	632,'g','B16',0,1,3
+	._type	633,'g','B17',0,1,3
+	._type	634,'g','B18',0,1,3
+	._type	635,'g','B19',0,1,3
+	._type	615,'S','',3
+	._type	615,'m','B0',616,0
+	._type	615,'m','B1',617,1
+	._type	615,'m','B2',618,2
+	._type	615,'m','B3',619,3
+	._type	615,'m','B4',620,4
+	._type	615,'m','B5',621,5
+	._type	615,'m','B6',622,6
+	._type	615,'m','B7',623,7
+	._type	615,'m','B8',624,8
+	._type	615,'m','B9',625,9
+	._type	615,'m','B10',626,10
+	._type	615,'m','B11',627,11
+	._type	615,'m','B12',628,12
+	._type	615,'m','B13',629,13
+	._type	615,'m','B14',630,14
+	._type	615,'m','B15',631,15
+	._type	615,'m','B16',632,16
+	._type	615,'m','B17',633,17
+	._type	615,'m','B18',634,18
+	._type	615,'m','B19',635,19
+	._type	636,'S','',4
+	._type	636,'m','LOW',3,0
+	._type	636,'m','MID',3,1
+	._type	636,'m','HIGH',3,2
+	._type	636,'m','NC',3,3
+	._type	614,'U','',4
+	._type	614,'m','BIT',615,0
+	._type	614,'m','BYTE',636,0
+	._type	614,'m','DWORD',7,0
+	._var	'RMAD1_ADDR','S',614,_RMAD1_ADDR
+	._type	639,'g','B0',0,1,3
+	._type	640,'g','B1',0,1,3
+	._type	641,'g','B2',0,1,3
+	._type	642,'g','B3',0,1,3
+	._type	643,'g','B4',0,1,3
+	._type	644,'g','B5',0,1,3
+	._type	645,'g','B6',0,1,3
+	._type	646,'g','B7',0,1,3
+	._type	647,'g','B8',0,1,3
+	._type	648,'g','B9',0,1,3
+	._type	649,'g','B10',0,1,3
+	._type	650,'g','B11',0,1,3
+	._type	651,'g','B12',0,1,3
+	._type	652,'g','B13',0,1,3
+	._type	653,'g','B14',0,1,3
+	._type	654,'g','B15',0,1,3
+	._type	655,'g','B16',0,1,3
+	._type	656,'g','B17',0,1,3
+	._type	657,'g','B18',0,1,3
+	._type	658,'g','B19',0,1,3
+	._type	638,'S','',3
+	._type	638,'m','B0',639,0
+	._type	638,'m','B1',640,1
+	._type	638,'m','B2',641,2
+	._type	638,'m','B3',642,3
+	._type	638,'m','B4',643,4
+	._type	638,'m','B5',644,5
+	._type	638,'m','B6',645,6
+	._type	638,'m','B7',646,7
+	._type	638,'m','B8',647,8
+	._type	638,'m','B9',648,9
+	._type	638,'m','B10',649,10
+	._type	638,'m','B11',650,11
+	._type	638,'m','B12',651,12
+	._type	638,'m','B13',652,13
+	._type	638,'m','B14',653,14
+	._type	638,'m','B15',654,15
+	._type	638,'m','B16',655,16
+	._type	638,'m','B17',656,17
+	._type	638,'m','B18',657,18
+	._type	638,'m','B19',658,19
+	._type	659,'S','',4
+	._type	659,'m','LOW',3,0
+	._type	659,'m','MID',3,1
+	._type	659,'m','HIGH',3,2
+	._type	659,'m','NC',3,3
+	._type	637,'U','',4
+	._type	637,'m','BIT',638,0
+	._type	637,'m','BYTE',659,0
+	._type	637,'m','DWORD',7,0
+	._var	'RMAD2_ADDR','S',637,_RMAD2_ADDR
+	._type	662,'g','B0',0,1,3
+	._type	663,'g','B1',0,1,3
+	._type	664,'g','B2',0,1,3
+	._type	665,'g','B3',0,1,3
+	._type	666,'g','B4',0,1,3
+	._type	667,'g','B5',0,1,3
+	._type	668,'g','B6',0,1,3
+	._type	669,'g','B7',0,1,3
+	._type	670,'g','B8',0,1,3
+	._type	671,'g','B9',0,1,3
+	._type	672,'g','B10',0,1,3
+	._type	673,'g','B11',0,1,3
+	._type	674,'g','B12',0,1,3
+	._type	675,'g','B13',0,1,3
+	._type	676,'g','B14',0,1,3
+	._type	677,'g','B15',0,1,3
+	._type	678,'g','B16',0,1,3
+	._type	679,'g','B17',0,1,3
+	._type	680,'g','B18',0,1,3
+	._type	681,'g','B19',0,1,3
+	._type	661,'S','',3
+	._type	661,'m','B0',662,0
+	._type	661,'m','B1',663,1
+	._type	661,'m','B2',664,2
+	._type	661,'m','B3',665,3
+	._type	661,'m','B4',666,4
+	._type	661,'m','B5',667,5
+	._type	661,'m','B6',668,6
+	._type	661,'m','B7',669,7
+	._type	661,'m','B8',670,8
+	._type	661,'m','B9',671,9
+	._type	661,'m','B10',672,10
+	._type	661,'m','B11',673,11
+	._type	661,'m','B12',674,12
+	._type	661,'m','B13',675,13
+	._type	661,'m','B14',676,14
+	._type	661,'m','B15',677,15
+	._type	661,'m','B16',678,16
+	._type	661,'m','B17',679,17
+	._type	661,'m','B18',680,18
+	._type	661,'m','B19',681,19
+	._type	682,'S','',4
+	._type	682,'m','LOW',3,0
+	._type	682,'m','MID',3,1
+	._type	682,'m','HIGH',3,2
+	._type	682,'m','NC',3,3
+	._type	660,'U','',4
+	._type	660,'m','BIT',661,0
+	._type	660,'m','BYTE',682,0
+	._type	660,'m','DWORD',7,0
+	._var	'RMAD3_ADDR','S',660,_RMAD3_ADDR
+	._type	685,'g','B0',0,1,3
+	._type	686,'g','B1',0,1,3
+	._type	687,'g','B2',0,1,3
+	._type	688,'g','B3',0,1,3
+	._type	689,'g','B4',0,1,3
+	._type	690,'g','B5',0,1,3
+	._type	691,'g','B6',0,1,3
+	._type	692,'g','B7',0,1,3
+	._type	693,'g','B8',0,1,3
+	._type	694,'g','B9',0,1,3
+	._type	695,'g','B10',0,1,3
+	._type	696,'g','B11',0,1,3
+	._type	697,'g','B12',0,1,3
+	._type	698,'g','B13',0,1,3
+	._type	699,'g','B14',0,1,3
+	._type	700,'g','B15',0,1,3
+	._type	701,'g','B16',0,1,3
+	._type	702,'g','B17',0,1,3
+	._type	703,'g','B18',0,1,3
+	._type	704,'g','B19',0,1,3
+	._type	684,'S','',3
+	._type	684,'m','B0',685,0
+	._type	684,'m','B1',686,1
+	._type	684,'m','B2',687,2
+	._type	684,'m','B3',688,3
+	._type	684,'m','B4',689,4
+	._type	684,'m','B5',690,5
+	._type	684,'m','B6',691,6
+	._type	684,'m','B7',692,7
+	._type	684,'m','B8',693,8
+	._type	684,'m','B9',694,9
+	._type	684,'m','B10',695,10
+	._type	684,'m','B11',696,11
+	._type	684,'m','B12',697,12
+	._type	684,'m','B13',698,13
+	._type	684,'m','B14',699,14
+	._type	684,'m','B15',700,15
+	._type	684,'m','B16',701,16
+	._type	684,'m','B17',702,17
+	._type	684,'m','B18',703,18
+	._type	684,'m','B19',704,19
+	._type	705,'S','',4
+	._type	705,'m','LOW',3,0
+	._type	705,'m','MID',3,1
+	._type	705,'m','HIGH',3,2
+	._type	705,'m','NC',3,3
+	._type	683,'U','',4
+	._type	683,'m','BIT',684,0
+	._type	683,'m','BYTE',705,0
+	._type	683,'m','DWORD',7,0
+	._var	'SAR0_ADDR','S',683,_SAR0_ADDR
+	._type	708,'g','B0',0,1,3
+	._type	709,'g','B1',0,1,3
+	._type	710,'g','B2',0,1,3
+	._type	711,'g','B3',0,1,3
+	._type	712,'g','B4',0,1,3
+	._type	713,'g','B5',0,1,3
+	._type	714,'g','B6',0,1,3
+	._type	715,'g','B7',0,1,3
+	._type	716,'g','B8',0,1,3
+	._type	717,'g','B9',0,1,3
+	._type	718,'g','B10',0,1,3
+	._type	719,'g','B11',0,1,3
+	._type	720,'g','B12',0,1,3
+	._type	721,'g','B13',0,1,3
+	._type	722,'g','B14',0,1,3
+	._type	723,'g','B15',0,1,3
+	._type	724,'g','B16',0,1,3
+	._type	725,'g','B17',0,1,3
+	._type	726,'g','B18',0,1,3
+	._type	727,'g','B19',0,1,3
+	._type	707,'S','',3
+	._type	707,'m','B0',708,0
+	._type	707,'m','B1',709,1
+	._type	707,'m','B2',710,2
+	._type	707,'m','B3',711,3
+	._type	707,'m','B4',712,4
+	._type	707,'m','B5',713,5
+	._type	707,'m','B6',714,6
+	._type	707,'m','B7',715,7
+	._type	707,'m','B8',716,8
+	._type	707,'m','B9',717,9
+	._type	707,'m','B10',718,10
+	._type	707,'m','B11',719,11
+	._type	707,'m','B12',720,12
+	._type	707,'m','B13',721,13
+	._type	707,'m','B14',722,14
+	._type	707,'m','B15',723,15
+	._type	707,'m','B16',724,16
+	._type	707,'m','B17',725,17
+	._type	707,'m','B18',726,18
+	._type	707,'m','B19',727,19
+	._type	728,'S','',4
+	._type	728,'m','LOW',3,0
+	._type	728,'m','MID',3,1
+	._type	728,'m','HIGH',3,2
+	._type	728,'m','NC',3,3
+	._type	706,'U','',4
+	._type	706,'m','BIT',707,0
+	._type	706,'m','BYTE',728,0
+	._type	706,'m','DWORD',7,0
+	._var	'SAR1_ADDR','S',706,_SAR1_ADDR
+	._type	731,'g','B0',0,1,3
+	._type	732,'g','B1',0,1,3
+	._type	733,'g','B2',0,1,3
+	._type	734,'g','B3',0,1,3
+	._type	735,'g','B4',0,1,3
+	._type	736,'g','B5',0,1,3
+	._type	737,'g','B6',0,1,3
+	._type	738,'g','B7',0,1,3
+	._type	739,'g','B8',0,1,3
+	._type	740,'g','B9',0,1,3
+	._type	741,'g','B10',0,1,3
+	._type	742,'g','B11',0,1,3
+	._type	743,'g','B12',0,1,3
+	._type	744,'g','B13',0,1,3
+	._type	745,'g','B14',0,1,3
+	._type	746,'g','B15',0,1,3
+	._type	747,'g','B16',0,1,3
+	._type	748,'g','B17',0,1,3
+	._type	749,'g','B18',0,1,3
+	._type	750,'g','B19',0,1,3
+	._type	730,'S','',3
+	._type	730,'m','B0',731,0
+	._type	730,'m','B1',732,1
+	._type	730,'m','B2',733,2
+	._type	730,'m','B3',734,3
+	._type	730,'m','B4',735,4
+	._type	730,'m','B5',736,5
+	._type	730,'m','B6',737,6
+	._type	730,'m','B7',738,7
+	._type	730,'m','B8',739,8
+	._type	730,'m','B9',740,9
+	._type	730,'m','B10',741,10
+	._type	730,'m','B11',742,11
+	._type	730,'m','B12',743,12
+	._type	730,'m','B13',744,13
+	._type	730,'m','B14',745,14
+	._type	730,'m','B15',746,15
+	._type	730,'m','B16',747,16
+	._type	730,'m','B17',748,17
+	._type	730,'m','B18',749,18
+	._type	730,'m','B19',750,19
+	._type	751,'S','',4
+	._type	751,'m','LOW',3,0
+	._type	751,'m','MID',3,1
+	._type	751,'m','HIGH',3,2
+	._type	751,'m','NC',3,3
+	._type	729,'U','',4
+	._type	729,'m','BIT',730,0
+	._type	729,'m','BYTE',751,0
+	._type	729,'m','DWORD',7,0
+	._var	'DAR0_ADDR','S',729,_DAR0_ADDR
+	._type	754,'g','B0',0,1,3
+	._type	755,'g','B1',0,1,3
+	._type	756,'g','B2',0,1,3
+	._type	757,'g','B3',0,1,3
+	._type	758,'g','B4',0,1,3
+	._type	759,'g','B5',0,1,3
+	._type	760,'g','B6',0,1,3
+	._type	761,'g','B7',0,1,3
+	._type	762,'g','B8',0,1,3
+	._type	763,'g','B9',0,1,3
+	._type	764,'g','B10',0,1,3
+	._type	765,'g','B11',0,1,3
+	._type	766,'g','B12',0,1,3
+	._type	767,'g','B13',0,1,3
+	._type	768,'g','B14',0,1,3
+	._type	769,'g','B15',0,1,3
+	._type	770,'g','B16',0,1,3
+	._type	771,'g','B17',0,1,3
+	._type	772,'g','B18',0,1,3
+	._type	773,'g','B19',0,1,3
+	._type	753,'S','',3
+	._type	753,'m','B0',754,0
+	._type	753,'m','B1',755,1
+	._type	753,'m','B2',756,2
+	._type	753,'m','B3',757,3
+	._type	753,'m','B4',758,4
+	._type	753,'m','B5',759,5
+	._type	753,'m','B6',760,6
+	._type	753,'m','B7',761,7
+	._type	753,'m','B8',762,8
+	._type	753,'m','B9',763,9
+	._type	753,'m','B10',764,10
+	._type	753,'m','B11',765,11
+	._type	753,'m','B12',766,12
+	._type	753,'m','B13',767,13
+	._type	753,'m','B14',768,14
+	._type	753,'m','B15',769,15
+	._type	753,'m','B16',770,16
+	._type	753,'m','B17',771,17
+	._type	753,'m','B18',772,18
+	._type	753,'m','B19',773,19
+	._type	774,'S','',4
+	._type	774,'m','LOW',3,0
+	._type	774,'m','MID',3,1
+	._type	774,'m','HIGH',3,2
+	._type	774,'m','NC',3,3
+	._type	752,'U','',4
+	._type	752,'m','BIT',753,0
+	._type	752,'m','BYTE',774,0
+	._type	752,'m','DWORD',7,0
+	._var	'DAR1_ADDR','S',752,_DAR1_ADDR
+	._type	775,'v'
+	._type	776,'v'
+	._type	777,'x',775,1
+	._type	777,'m','',0,776
+	._var	'Initialise','F',777
+	._type	778,'v'
+	._type	779,'v'
+	._type	780,'x',778,1
+	._type	780,'m','',0,779
+	._var	'keyscan_4x4_init','F',780
+	._type	781,'v'
+	._type	782,'v'
+	._type	783,'x',781,1
+	._type	783,'m','',0,782
+	._var	'Timer_A0','F',783
+	._type	784,'v'
+	._type	785,'x',3,1
+	._type	785,'m','',0,784
+	._var	'getcommand','F',785
+	._type	786,'P',3
+	._type	787,'v'
+	._type	788,'x',786,1
+	._type	788,'m','',0,787
+	._var	'keypad_4x4_read_buffer','F',788
+	._type	789,'v'
+	._type	790,'v'
+	._type	791,'x',789,1
+	._type	791,'m','',0,790
+	._var	'keyscan_4x4_clear','F',791
+	._type	792,'v'
+	._type	793,'v'
+	._type	794,'x',792,1
+	._type	794,'m','',0,793
+	._var	'keypad_4x4_wait','F',794
+	._type	795,'v'
+	._type	796,'x',3,1
+	._type	796,'m','',0,795
+	._var	'keypad_4x4_wait_async','F',796
+	._type	797,'v'
+	._type	798,'x',3,1
+	._type	798,'m','',0,797
+	._var	'read_key','F',798
+	._type	799,'v'
+	._type	800,'x',3,1
+	._type	800,'m','',0,799
+	._var	'keypad_4x4_iskeypress','F',800
+	._type	801,'v'
+	._type	802,'v'
+	._type	803,'x',801,1
+	._type	803,'m','',0,802
+	._var	'KYB','F',803
+	._var	'shift','G',16,_shift
+	._var	'shift_dir','G',3,_shift_dir
+	._var	'shift_delay','G',18,_shift_delay
+	._var	'shift_delay_max','G',18,_shift_delay_max
+	._var	'countup_delay','G',18,_countup_delay
+;#################################
+;#################################
+;#################################
+	._inspect	'V', 't', "countup_delay_max", 'G', 18
+	._inspect	'V', 't', "dim_delay", 'G', 18
+	._inspect	'V', 't', "dim_brightness", 'G', 18
+	._inspect	'V', 't', "DA0_ADDR", 'G', 3
+	._inspect	'V', 't', "DA1_ADDR", 'G', 3
+	._inspect	'V', 't', "UDF_ADDR", 'G', 3
+	._inspect	'V', 't', "TA11_ADDR", 'G', 5
+	._inspect	'V', 't', "TA21_ADDR", 'G', 5
+	._inspect	'V', 't', "TA41_ADDR", 'G', 5
+	._inspect	'V', 't', "TB3_ADDR", 'G', 5
+	._inspect	'V', 't', "TB4_ADDR", 'G', 5
+	._inspect	'V', 't', "TB5_ADDR", 'G', 5
+	._inspect	'V', 't', "TA0_ADDR", 'G', 5
+	._inspect	'V', 't', "TA1_ADDR", 'G', 5
+	._inspect	'V', 't', "TA2_ADDR", 'G', 5
+	._inspect	'V', 't', "TA3_ADDR", 'G', 5
+	._inspect	'V', 't', "TA4_ADDR", 'G', 5
+	._inspect	'V', 't', "TB0_ADDR", 'G', 5
+	._inspect	'V', 't', "TB1_ADDR", 'G', 5
+	._inspect	'V', 't', "TB2_ADDR", 'G', 5
+	._inspect	'V', 't', "PM0_ADDR", 'G', 258
+	._inspect	'V', 't', "PM1_ADDR", 'G', 258
+	._inspect	'V', 't', "CM0_ADDR", 'G', 258
+	._inspect	'V', 't', "CM1_ADDR", 'G', 258
+	._inspect	'V', 't', "CSR_ADDR", 'G', 258
+	._inspect	'V', 't', "AIER_ADDR", 'G', 258
+	._inspect	'V', 't', "PRCR_ADDR", 'G', 258
+	._inspect	'V', 't', "DBR_ADDR", 'G', 258
+	._inspect	'V', 't', "CM2_ADDR", 'G', 258
+	._inspect	'V', 't', "WDTS_ADDR", 'G', 258
+	._inspect	'V', 't', "WDC_ADDR", 'G', 258
+	._inspect	'V', 't', "CSE_ADDR", 'G', 258
+	._inspect	'V', 't', "PLC0_ADDR", 'G', 258
+	._inspect	'V', 't', "PM2_ADDR", 'G', 258
+	._inspect	'V', 't', "DM0CON_ADDR", 'G', 258
+	._inspect	'V', 't', "DM1CON_ADDR", 'G', 258
+	._inspect	'V', 't', "INT3IC_ADDR", 'G', 258
+	._inspect	'V', 't', "TB5IC_ADDR", 'G', 258
+	._inspect	'V', 't', "TB4IC_ADDR", 'G', 258
+	._inspect	'V', 't', "TB3IC_ADDR", 'G', 258
+	._inspect	'V', 't', "S4IC_ADDR", 'G', 258
+	._inspect	'V', 't', "S3IC_ADDR", 'G', 258
+	._inspect	'V', 't', "INT5IC_ADDR", 'G', 258
+	._inspect	'V', 't', "INT4IC_ADDR", 'G', 258
+	._inspect	'V', 't', "BCNIC_ADDR", 'G', 258
+	._inspect	'V', 't', "DM0IC_ADDR", 'G', 258
+	._inspect	'V', 't', "DM1IC_ADDR", 'G', 258
+	._inspect	'V', 't', "KUPIC_ADDR", 'G', 258
+	._inspect	'V', 't', "ADIC_ADDR", 'G', 258
+	._inspect	'V', 't', "S2TIC_ADDR", 'G', 258
+	._inspect	'V', 't', "S2RIC_ADDR", 'G', 258
+	._inspect	'V', 't', "S0TIC_ADDR", 'G', 258
+	._inspect	'V', 't', "S0RIC_ADDR", 'G', 258
+	._inspect	'V', 't', "S1TIC_ADDR", 'G', 258
+	._inspect	'V', 't', "S1RIC_ADDR", 'G', 258
+	._inspect	'V', 't', "TA0IC_ADDR", 'G', 258
+	._inspect	'V', 't', "TA1IC_ADDR", 'G', 258
+	._inspect	'V', 't', "TA2IC_ADDR", 'G', 258
+	._inspect	'V', 't', "TA3IC_ADDR", 'G', 258
+	._inspect	'V', 't', "TA4IC_ADDR", 'G', 258
+	._inspect	'V', 't', "TB0IC_ADDR", 'G', 258
+	._inspect	'V', 't', "TB1IC_ADDR", 'G', 258
+	._inspect	'V', 't', "TB2IC_ADDR", 'G', 258
+	._inspect	'V', 't', "INT0IC_ADDR", 'G', 258
+	._inspect	'V', 't', "INT1IC_ADDR", 'G', 258
+	._inspect	'V', 't', "INT2IC_ADDR", 'G', 258
+	._inspect	'V', 't', "FMR1_ADDR", 'G', 258
+	._inspect	'V', 't', "FMR0_ADDR", 'G', 258
+	._inspect	'V', 't', "AIER2_ADDR", 'G', 258
+	._inspect	'V', 't', "PCLKR_ADDR", 'G', 258
+	._inspect	'V', 't', "TBSR_ADDR", 'G', 258
+	._inspect	'V', 't', "INVC0_ADDR", 'G', 258
+	._inspect	'V', 't', "INVC1_ADDR", 'G', 258
+	._inspect	'V', 't', "IDB0_ADDR", 'G', 258
+	._inspect	'V', 't', "IDB1_ADDR", 'G', 258
+	._inspect	'V', 't', "DTT_ADDR", 'G', 258
+	._inspect	'V', 't', "ICTB2_ADDR", 'G', 258
+	._inspect	'V', 't', "TB3MR_ADDR", 'G', 258
+	._inspect	'V', 't', "TB4MR_ADDR", 'G', 258
+	._inspect	'V', 't', "TB5MR_ADDR", 'G', 258
+	._inspect	'V', 't', "IFSR2A_ADDR", 'G', 258
+	._inspect	'V', 't', "IFSR_ADDR", 'G', 258
+	._inspect	'V', 't', "S3TRR_ADDR", 'G', 258
+	._inspect	'V', 't', "S3C_ADDR", 'G', 258
+	._inspect	'V', 't', "S3BRG_ADDR", 'G', 258
+	._inspect	'V', 't', "S4TRR_ADDR", 'G', 258
+	._inspect	'V', 't', "S4C_ADDR", 'G', 258
+	._inspect	'V', 't', "S4BRG_ADDR", 'G', 258
+	._inspect	'V', 't', "U0SMR4_ADDR", 'G', 258
+	._inspect	'V', 't', "U0SMR3_ADDR", 'G', 258
+	._inspect	'V', 't', "U0SMR2_ADDR", 'G', 258
+	._inspect	'V', 't', "U0SMR_ADDR", 'G', 258
+	._inspect	'V', 't', "U1SMR4_ADDR", 'G', 258
+	._inspect	'V', 't', "U1SMR3_ADDR", 'G', 258
+	._inspect	'V', 't', "U1SMR2_ADDR", 'G', 258
+	._inspect	'V', 't', "U1SMR_ADDR", 'G', 258
+	._inspect	'V', 't', "U2SMR4_ADDR", 'G', 258
+	._inspect	'V', 't', "U2SMR3_ADDR", 'G', 258
+	._inspect	'V', 't', "U2SMR2_ADDR", 'G', 258
+	._inspect	'V', 't', "U2SMR_ADDR", 'G', 258
+	._inspect	'V', 't', "U2MR_ADDR", 'G', 258
+	._inspect	'V', 't', "U2BRG_ADDR", 'G', 258
+	._inspect	'V', 't', "U2C0_ADDR", 'G', 258
+	._inspect	'V', 't', "U2C1_ADDR", 'G', 258
+	._inspect	'V', 't', "TABSR_ADDR", 'G', 258
+	._inspect	'V', 't', "CPSRF_ADDR", 'G', 258
+	._inspect	'V', 't', "ONSF_ADDR", 'G', 258
+	._inspect	'V', 't', "TRGSR_ADDR", 'G', 258
+	._inspect	'V', 't', "TA0MR_ADDR", 'G', 258
+	._inspect	'V', 't', "TA1MR_ADDR", 'G', 258
+	._inspect	'V', 't', "TA2MR_ADDR", 'G', 258
+	._inspect	'V', 't', "TA3MR_ADDR", 'G', 258
+	._inspect	'V', 't', "TA4MR_ADDR", 'G', 258
+	._inspect	'V', 't', "TB0MR_ADDR", 'G', 258
+	._inspect	'V', 't', "TB1MR_ADDR", 'G', 258
+	._inspect	'V', 't', "TB2MR_ADDR", 'G', 258
+	._inspect	'V', 't', "TB2SC_ADDR", 'G', 258
+	._inspect	'V', 't', "U0MR_ADDR", 'G', 258
+	._inspect	'V', 't', "U0BRG_ADDR", 'G', 258
+	._inspect	'V', 't', "U0C0_ADDR", 'G', 258
+	._inspect	'V', 't', "U0C1_ADDR", 'G', 258
+	._inspect	'V', 't', "U1MR_ADDR", 'G', 258
+	._inspect	'V', 't', "U1BRG_ADDR", 'G', 258
+	._inspect	'V', 't', "U1C0_ADDR", 'G', 258
+	._inspect	'V', 't', "U1C1_ADDR", 'G', 258
+	._inspect	'V', 't', "UCON_ADDR", 'G', 258
+	._inspect	'V', 't', "FIDR_ADDR", 'G', 258
+	._inspect	'V', 't', "DM0SL_ADDR", 'G', 258
+	._inspect	'V', 't', "DM1SL_ADDR", 'G', 258
+	._inspect	'V', 't', "CRCIN_ADDR", 'G', 258
+	._inspect	'V', 't', "ADCON2_ADDR", 'G', 258
+	._inspect	'V', 't', "ADCON0_ADDR", 'G', 258
+	._inspect	'V', 't', "ADCON1_ADDR", 'G', 258
+	._inspect	'V', 't', "DACON_ADDR", 'G', 258
+	._inspect	'V', 't', "PC14_ADDR", 'G', 258
+	._inspect	'V', 't', "PUR3_ADDR", 'G', 258
+	._inspect	'V', 't', "P0_ADDR", 'G', 258
+	._inspect	'V', 't', "P1_ADDR", 'G', 258
+	._inspect	'V', 't', "P0D_ADDR", 'G', 258
+	._inspect	'V', 't', "P1D_ADDR", 'G', 258
+	._inspect	'V', 't', "P2_ADDR", 'G', 258
+	._inspect	'V', 't', "P3_ADDR", 'G', 258
+	._inspect	'V', 't', "P2D_ADDR", 'G', 258
+	._inspect	'V', 't', "P3D_ADDR", 'G', 258
+	._inspect	'V', 't', "P4_ADDR", 'G', 258
+	._inspect	'V', 't', "P5_ADDR", 'G', 258
+	._inspect	'V', 't', "P4D_ADDR", 'G', 258
+	._inspect	'V', 't', "P5D_ADDR", 'G', 258
+	._inspect	'V', 't', "P6_ADDR", 'G', 258
+	._inspect	'V', 't', "P7_ADDR", 'G', 258
+	._inspect	'V', 't', "P6D_ADDR", 'G', 258
+	._inspect	'V', 't', "P7D_ADDR", 'G', 258
+	._inspect	'V', 't', "P8_ADDR", 'G', 258
+	._inspect	'V', 't', "P9_ADDR", 'G', 258
+	._inspect	'V', 't', "P8D_ADDR", 'G', 258
+	._inspect	'V', 't', "P9D_ADDR", 'G', 258
+	._inspect	'V', 't', "P10_ADDR", 'G', 258
+	._inspect	'V', 't', "P11_ADDR", 'G', 258
+	._inspect	'V', 't', "P10D_ADDR", 'G', 258
+	._inspect	'V', 't', "P1D1_ADDR", 'G', 258
+	._inspect	'V', 't', "P12_ADDR", 'G', 258
+	._inspect	'V', 't', "P13_ADDR", 'G', 258
+	._inspect	'V', 't', "P1D2_ADDR", 'G', 258
+	._inspect	'V', 't', "P1D3_ADDR", 'G', 258
+	._inspect	'V', 't', "PUR0_ADDR", 'G', 258
+	._inspect	'V', 't', "PUR1_ADDR", 'G', 258
+	._inspect	'V', 't', "PUR2_ADDR", 'G', 258
+	._inspect	'V', 't', "PCR_ADDR", 'G', 258
+	._inspect	'V', 't', "TCR0_ADDR", 'G', 268
+	._inspect	'V', 't', "TCR1_ADDR", 'G', 287
+	._inspect	'V', 't', "U0TB_ADDR", 'G', 306
+	._inspect	'V', 't', "U1TB_ADDR", 'G', 325
+	._inspect	'V', 't', "U2TB_ADDR", 'G', 344
+	._inspect	'V', 't', "U0RB_ADDR", 'G', 363
+	._inspect	'V', 't', "U1RB_ADDR", 'G', 382
+	._inspect	'V', 't', "U2RB_ADDR", 'G', 401
+	._inspect	'V', 't', "CRCD_ADDR", 'G', 420
+	._inspect	'V', 't', "AD0_ADDR", 'G', 439
+	._inspect	'V', 't', "AD1_ADDR", 'G', 458
+	._inspect	'V', 't', "AD2_ADDR", 'G', 477
+	._inspect	'V', 't', "AD3_ADDR", 'G', 496
+	._inspect	'V', 't', "AD4_ADDR", 'G', 515
+	._inspect	'V', 't', "AD5_ADDR", 'G', 534
+	._inspect	'V', 't', "AD6_ADDR", 'G', 553
+	._inspect	'V', 't', "AD7_ADDR", 'G', 572
+	._inspect	'V', 't', "RMAD0_ADDR", 'G', 591
+	._inspect	'V', 't', "RMAD1_ADDR", 'G', 614
+	._inspect	'V', 't', "RMAD2_ADDR", 'G', 637
+	._inspect	'V', 't', "RMAD3_ADDR", 'G', 660
+	._inspect	'V', 't', "SAR0_ADDR", 'G', 683
+	._inspect	'V', 't', "SAR1_ADDR", 'G', 706
+	._inspect	'V', 't', "DAR0_ADDR", 'G', 729
+	._inspect	'V', 't', "DAR1_ADDR", 'G', 752
+	._inspect	'F', 't', "Initialise", 'G', 777
+	._inspect	'F', 't', "keyscan_4x4_init", 'G', 780
+	._inspect	'F', 't', "Timer_A0", 'G', 783
+	._inspect	'F', 't', "getcommand", 'G', 785
+	._inspect	'F', 't', "keypad_4x4_read_buffer", 'G', 788
+	._inspect	'F', 't', "keyscan_4x4_clear", 'G', 791
+	._inspect	'F', 't', "keypad_4x4_wait", 'G', 794
+	._inspect	'F', 't', "keypad_4x4_wait_async", 'G', 796
+	._inspect	'F', 't', "read_key", 'G', 798
+	._inspect	'F', 't', "keypad_4x4_iskeypress", 'G', 800
+	._inspect	'F', 't', "KYB", 'G', 803
+	._inspect	'V', 't', "shift", 'G', 16
+	._inspect	'V', 't', "shift_dir", 'G', 3
+	._inspect	'V', 't', "shift_delay", 'G', 18
+	._inspect	'V', 't', "shift_delay_max", 'G', 18
+	._inspect	'V', 't', "countup_delay", 'G', 18
+
+	.END
+
+;## Compile End Time Sun Jan 31 23:37:54 2016
+
+

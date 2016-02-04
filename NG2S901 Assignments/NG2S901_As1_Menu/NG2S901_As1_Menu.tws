@@ -8,27 +8,11 @@
 "ECXLABEL_LAST_FINDS_DATA" "" 
 [BREAKPOINTS]
 [OPEN_WORKSPACE_FILES]
-"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\drivers\init\hwsetup.c" 
-"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\drivers\init\ncrt0_rsk.a30" 
-"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\drivers\init\sect30.inc" 
-"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\drivers\init\sfr62p.h" 
-"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\drivers\keypad\keyscan_4x4.c" 
-"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\drivers\uart\uart.c" 
-"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\drivers\uart\uart.h" 
-"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\extra_program.c" 
-"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\globals.h" 
-"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\main.c" 
+"C:\Users\Miguel\Desktop\Nova pasta\NG2S901_As1_Menu\NG2S901_As1_Menu\drivers\init\ncrt0_rsk.a30" 
+"C:\Users\Miguel\Desktop\Nova pasta\NG2S901_As1_Menu\NG2S901_As1_Menu\main.c" 
 [WORKSPACE_FILE_STATES]
-"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\drivers\init\hwsetup.c" 176 112 961 259 0 9 
-"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\drivers\init\ncrt0_rsk.a30" 0 0 961 259 0 3 
-"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\drivers\init\sect30.inc" 88 56 961 259 0 7 
-"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\drivers\init\sfr62p.h" 0 0 961 259 0 1 
-"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\drivers\keypad\keyscan_4x4.c" -4 -29 1145 404 1 8 
-"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\drivers\uart\uart.c" 0 0 1145 404 0 5 
-"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\drivers\uart\uart.h" 176 112 961 259 0 4 
-"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\extra_program.c" 44 28 961 259 0 6 
-"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\globals.h" 132 84 961 259 0 2 
-"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As1_Menu\NG2S901_As1_Menu\main.c" 0 0 1145 404 0 0 
+"C:\Users\Miguel\Desktop\Nova pasta\NG2S901_As1_Menu\NG2S901_As1_Menu\drivers\init\ncrt0_rsk.a30" 0 0 957 255 0 0 
+"C:\Users\Miguel\Desktop\Nova pasta\NG2S901_As1_Menu\NG2S901_As1_Menu\main.c" -4 -29 1145 404 1 1 
 [LOADED_PROJECTS]
 "NG2S901_As1_Menu" 
 [END]
