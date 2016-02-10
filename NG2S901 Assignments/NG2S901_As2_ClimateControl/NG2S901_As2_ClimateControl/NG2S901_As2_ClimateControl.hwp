@@ -1,0 +1,326 @@
+[HIMDBVersion]
+2.0
+[DATABASE_VERSION]
+"2.8" 
+[PROJECT_DETAILS]
+"NG2S901_As2_ClimateControl" "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl" "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl.hwp" "M16C" "Renesas M16C Standard" "Empty Application" "M16C/60" "Other" 
+[INFORMATION]
+"No project information available" 
+[TOOL_CHAIN]
+"Renesas M16C Standard Toolchain" "5.43.00" 
+[CONFIGURATIONS]
+"Debug" "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\Debug" 
+"Debug_M16C_E8a_SYSTEM" "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\Debug_M16C_E8a_SYSTEM" 
+"Release" "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\Release" 
+[BUILD_PHASES]
+"Renesas M16C Assembler" 1 
+"Renesas M16C C Compiler" 1 
+"Renesas M16C Configurator" 1 
+"Renesas M16C Librarian" 1 
+"Renesas M16C Linker" 1 
+"Renesas M16C Stype Converter" 1 
+[TOOL_ENVIRONMENT]
+[EXTENSIONS]
+"Absolute file" "X30" 
+"Absolute list file" "ALS" 
+"Assembler error tag file" "ATG" 
+"Assembly include file" "INC" 
+"Assembly list file" "LST" 
+"Assembly source file" "A30" 
+"Branch Information file" "JIN" 
+"C header file" "H" 
+"C source file" "C" 
+"Configuration file" "CFG" 
+"Cross reference file" "XRF" 
+"Hex file" "HEX" 
+"ID file" "ID" 
+"Library file" "LIB" 
+"Library list file" "LLS" 
+"Linkage error tag file" "LTG" 
+"Linkage map file" "MAP" 
+"Preprocessed C source file" "I" 
+"Relocatable file" "R30" 
+"S-Record file" "MOT" 
+"Sni file" "SNI" 
+"Systemcall file" "MRC" 
+[FILE_GROUPS]
+"Absolute file" "BIN" "NONE" "" 
+"Absolute list file" "TEXT" "EDITOR" "" 
+"Assembler error tag file" "TEXT" "EDITOR" "" 
+"Assembly include file" "TEXT" "EDITOR" "" 
+"Assembly list file" "TEXT" "EDITOR" "" 
+"Assembly source file" "TEXT" "EDITOR" "" 
+"Branch Information file" "TEXT" "EDITOR" "" 
+"C header file" "TEXT" "EDITOR" "" 
+"C source file" "TEXT" "EDITOR" "" 
+"Configuration file" "TEXT" "EDITOR" "" 
+"Cross reference file" "TEXT" "EDITOR" "" 
+"Hex file" "TEXT" "EDITOR" "" 
+"ID file" "TEXT" "EDITOR" "" 
+"Library file" "BIN" "NONE" "" 
+"Library list file" "TEXT" "EDITOR" "" 
+"Linkage error tag file" "TEXT" "EDITOR" "" 
+"Linkage map file" "TEXT" "EDITOR" "" 
+"Preprocessed C source file" "TEXT" "EDITOR" "" 
+"Relocatable file" "BIN" "NONE" "" 
+"S-Record file" "TEXT" "EDITOR" "" 
+"Sni file" "TEXT" "EDITOR" "" 
+"Systemcall file" "TEXT" "EDITOR" "" 
+[ASSOCIATED_APPLICATIONS]
+[TOOLCHAIN_PHASE]
+"Renesas M16C Assembler" 
+"Renesas M16C C Compiler" 
+"Renesas M16C Configurator" 
+"Renesas M16C Librarian" 
+"Renesas M16C Linker" 
+"Renesas M16C Stype Converter" 
+[UTILITY_PHASE]
+[CUSTOM_PHASES]
+[CUSTOM_PHASE_INPUT_GROUP]
+[CUSTOM_PHASE_OUTPUT_SYNTAX]
+[BUILD_ORDER]
+"Renesas M16C C Compiler" 1 
+"Renesas M16C Assembler" 1 
+"Renesas M16C Linker" 1 
+"Renesas M16C Stype Converter" 1 
+"Renesas M16C Librarian" 0 
+"Renesas M16C Configurator" 0 
+[BUILD_PHASE_DETAILS]
+"Renesas M16C Assembler" "Assembly source file" 1 
+"Renesas M16C C Compiler" "C source file" 1 
+"Renesas M16C Configurator" "Configuration file" 0 
+"Renesas M16C Librarian" "Relocatable file" 0 
+"Renesas M16C Linker" "Relocatable file" 0 
+"Renesas M16C Stype Converter" "Absolute file" 0 
+[BUILD_FILE_ORDER_Assembly source file]
+"Renesas M16C Assembler" 1 
+[BUILD_FILE_ORDER_C source file]
+"Renesas M16C C Compiler" 1 
+[SCRAP]
+"Project Generator Setup File" "" 
+[MAPPINGS]
+"Absolute file" "Renesas M16C Stype Converter" "Renesas M16C Linker" 
+"Assembly source file" "Renesas M16C Assembler" "Renesas M16C C Compiler" 
+"Relocatable file" "Renesas M16C Librarian" "Renesas M16C Assembler" 
+"Relocatable file" "Renesas M16C Librarian" "Renesas M16C C Compiler" 
+"Relocatable file" "Renesas M16C Linker" "Renesas M16C Assembler" 
+"Relocatable file" "Renesas M16C Linker" "Renesas M16C C Compiler" 
+[PROJECT_FILES]
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\glcd\FONT.C" "User" "C source file" 2 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\glcd\GLCD.C" "User" "C source file" 2 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\glcd\font.h" "User" "C header file" 2 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\glcd\glcd.h" "User" "C header file" 2 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\init\hwsetup.c" "User" "C source file" 2 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\init\ncrt0_rsk.a30" "User" "Assembly source file" 2 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\init\sect30.inc" "User" "Assembly include file" 2 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\init\sfr62p.h" "User" "C header file" 2 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\isr\ISR_DEFs.c" "User" "C source file" 2 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\isr\ISR_DEFs.h" "User" "C header file" 2 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\keypad\keyscan.h" "User" "C header file" 2 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\keypad\keyscan_4x4.c" "User" "C source file" 2 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\keypad\keyscan_4x4.h" "User" "C header file" 2 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\motor\motor.c" "User" "C source file" 2 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\motor\motor.h" "User" "C header file" 2 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\motor\motor_sound.c" "User" "C source file" 2 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\timer\timer.c" "User" "C source file" 2 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\timer\timer.h" "User" "C header file" 2 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\uart\uart.c" "User" "C source file" 2 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\uart\uart.h" "User" "C header file" 2 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\globals.h" "User" "C header file" 2 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\main.c" "User" "C source file" 2 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\print.c" "User" "C source file" 2 
+[FOLDER]
+"Assembly include file" "Assembly include file" 
+"Assembly source file" "Assembly source file" 
+"C header file" "C header file" 
+"C source file" "C source file" 
+[GENERAL_DATA_PROJECT]
+"FDT_AutoConnect" "0" 
+"FDT_BaseDevice" "" 
+"FDT_BaudRate" "" 
+"FDT_BlockLockConnect" "1" 
+"FDT_BlockLockDisconnect" "1" 
+"FDT_BootMode" "FALSE" 
+"FDT_CKM" "0" 
+"FDT_CKP" "0" 
+"FDT_ClockMode" "0" 
+"FDT_ClockSync" "00000000" 
+"FDT_Comments" "" 
+"FDT_ConnectionResetSuppression" "FFFFFFFF" 
+"FDT_Device" "" 
+"FDT_DoReadbackVerification" "" 
+"FDT_DoSecurityProtection" "" 
+"FDT_DoSecurityProtectionLevel" "" 
+"FDT_Frequency" "0.0000" 
+"FDT_Interface" "" 
+"FDT_InternalClock" "FALSE" 
+"FDT_KernelPath" "" 
+"FDT_KernelResident" "FALSE" 
+"FDT_McuId" "0" 
+"FDT_MessageLevel" "0" 
+"FDT_PinOutputs" "00000000" 
+"FDT_PinSettings" "00000000" 
+"FDT_Port" "" 
+"FDT_Protection" "0" 
+"FDT_Protocol" "" 
+"FDT_ReinterrogateGenericDevice" "" 
+"FDT_ResetOnDisconnect" "" 
+"FDT_ResetPinOutputs" "00000000" 
+"FDT_ResetPinSettings" "00000000" 
+"FDT_SerNumConfigString" "" 
+"FDT_SerNumDllFunction" "" 
+"FDT_SerNumDllLocation" "" 
+"FDT_SerNumEnabled" "FALSE" 
+"FDT_SerNumMemArea" "" 
+"FDT_UPMPinSettings" "00000000" 
+"FDT_UseDefaultBaudRate" "FALSE" 
+"FDT_UseInternalKernel" "TRUE" 
+"FDT_UserPinOutputs" "00000000" 
+"FDT_UserPinSettings" "00000000" 
+"USE_CUSTOM_LINKAGE_ORDER" "1" 
+[ON_DEMAND_COMPONENTS_LOADED]
+[SYNC_SESSION_NAMES]
+[SESSIONS]
+"DefaultSession" "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\DefaultSession.hsf" 0 
+"SessionM16C_E8a_SYSTEM" "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\SessionM16C_E8a_SYSTEM.hsf" 0 
+[GENERAL_DATA_SESSION_DefaultSession]
+[GENERAL_DATA_SESSION_SessionM16C_E8a_SYSTEM]
+[OPTIONS_Debug_Renesas M16C Assembler]
+"Assembly source file" "0721b56bf8361d10" 2 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\init\ncrt0_rsk.a30" "0e0d659009361d10" 2 
+[OPTIONS_Debug_Renesas M16C C Compiler]
+"C source file" "05fa855e09361d10" 1 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\glcd\FONT.C" "05fa855e09361d10" 1 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\glcd\GLCD.C" "05fa855e09361d10" 1 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\init\hwsetup.c" "05fa855e09361d10" 1 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\isr\ISR_DEFs.c" "05fa855e09361d10" 1 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\keypad\keyscan_4x4.c" "05fa855e09361d10" 1 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\motor\motor.c" "05fa855e09361d10" 1 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\motor\motor_sound.c" "05fa855e09361d10" 1 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\timer\timer.c" "05fa855e09361d10" 1 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\uart\uart.c" "05fa855e09361d10" 1 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\main.c" "05fa855e09361d10" 1 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\print.c" "05fa855e09361d10" 1 
+[OPTIONS_Debug_Renesas M16C Configurator]
+"Single Shot" "04bc60d109361d10" 6 
+[OPTIONS_Debug_Renesas M16C Librarian]
+"Single Shot" "04bc60d109361d10" 5 
+[OPTIONS_Debug_Renesas M16C Linker]
+"Single Shot" "0f4c76c019361d10" 3 
+[OPTIONS_Debug_Renesas M16C Stype Converter]
+"Single Shot" "017c80d109361d10" 4 
+[OPTIONS_Debug]
+"" 0 
+"[V|VERSION|1] [B|COMMAND|1] [S|SPEC|UITRON3] " 6 
+"[V|VERSION|1] [B|DATALENGTH|1] [S|OUTPUT|^"$(CONFIGDIR)\$(PROJECTNAME).mot^"] " 4 
+"[V|VERSION|1] [B|STARTUPLINK|1] [B|DEBUG|1] [B|MAP-S|1] [S|OUTPUT|^"$(CONFIGDIR)\$(PROJECTNAME).x30^"] [S|INPUTLIBRARY|^"L=nc30lib^"] " 3 
+"[V|VERSION|1] [S|LIST|LM] [B|INSPECTOR|1] [S|OUTPUTPATH|^"$(CONFIGDIR)\$(FILELEAF).r30^"] " 2 
+"[V|VERSION|1] [S|MODE|CREATE|] [S|OUTPUT|^"$(CONFIGDIR)\$(PROJECTNAME).lib^"] " 5 
+"[V|VERSION|1] [S|OUTPUT|OBJECTCODE] [B|INSPECTOR|1] [S|OUTPUTPATH|^"$(CONFIGDIR)\$(FILELEAF).r30^"] [B|FFAR_POINTER|1] [B|SILENT|1]
+" 1 
+[EXCLUDED_FILES_Debug]
+[LINKAGE_ORDER_Debug]
+"c:\users\miguel\documents\renesas_workspace\ng2s901_as2_climatecontrol\ng2s901_as2_climatecontrol\debug\ncrt0_rsk.r30" 
+"c:\users\miguel\documents\renesas_workspace\ng2s901_as2_climatecontrol\ng2s901_as2_climatecontrol\debug\font.r30" 
+"c:\users\miguel\documents\renesas_workspace\ng2s901_as2_climatecontrol\ng2s901_as2_climatecontrol\debug\glcd.r30" 
+"c:\users\miguel\documents\renesas_workspace\ng2s901_as2_climatecontrol\ng2s901_as2_climatecontrol\debug\hwsetup.r30" 
+"c:\users\miguel\documents\renesas_workspace\ng2s901_as2_climatecontrol\ng2s901_as2_climatecontrol\debug\isr_defs.r30" 
+"c:\users\miguel\documents\renesas_workspace\ng2s901_as2_climatecontrol\ng2s901_as2_climatecontrol\debug\keyscan_4x4.r30" 
+"c:\users\miguel\documents\renesas_workspace\ng2s901_as2_climatecontrol\ng2s901_as2_climatecontrol\debug\main.r30" 
+"c:\users\miguel\documents\renesas_workspace\ng2s901_as2_climatecontrol\ng2s901_as2_climatecontrol\debug\motor.r30" 
+"c:\users\miguel\documents\renesas_workspace\ng2s901_as2_climatecontrol\ng2s901_as2_climatecontrol\debug\motor_sound.r30" 
+"c:\users\miguel\documents\renesas_workspace\ng2s901_as2_climatecontrol\ng2s901_as2_climatecontrol\debug\print.r30" 
+"c:\users\miguel\documents\renesas_workspace\ng2s901_as2_climatecontrol\ng2s901_as2_climatecontrol\debug\timer.r30" 
+"c:\users\miguel\documents\renesas_workspace\ng2s901_as2_climatecontrol\ng2s901_as2_climatecontrol\debug\uart.r30" 
+[GENERAL_DATA_CONFIGURATION_Debug]
+[OPTIONS_Debug_M16C_E8a_SYSTEM_Renesas M16C Assembler]
+"Assembly source file" "0721b56bf8361d10" 2 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\init\ncrt0_rsk.a30" "0e0d659009361d10" 2 
+[OPTIONS_Debug_M16C_E8a_SYSTEM_Renesas M16C C Compiler]
+"C source file" "0721b56bf8361d10" 1 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\glcd\FONT.C" "0cc1205009361d10" 1 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\glcd\GLCD.C" "0cc1205009361d10" 1 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\init\hwsetup.c" "0e0d659009361d10" 1 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\isr\ISR_DEFs.c" "03040dc009361d10" 1 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\keypad\keyscan_4x4.c" "03babb0109361d10" 1 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\motor\motor.c" "0b3f5c5109361d10" 1 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\motor\motor_sound.c" "0b3f5c5109361d10" 1 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\timer\timer.c" "0018a39109361d10" 1 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\uart\uart.c" "04bc60d109361d10" 1 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\main.c" "07474fbff8361d10" 1 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\print.c" "07474fbff8361d10" 1 
+[OPTIONS_Debug_M16C_E8a_SYSTEM_Renesas M16C Configurator]
+"Single Shot" "04bc60d109361d10" 6 
+[OPTIONS_Debug_M16C_E8a_SYSTEM_Renesas M16C Librarian]
+"Single Shot" "04bc60d109361d10" 5 
+[OPTIONS_Debug_M16C_E8a_SYSTEM_Renesas M16C Linker]
+"Single Shot" "017c80d109361d10" 3 
+[OPTIONS_Debug_M16C_E8a_SYSTEM_Renesas M16C Stype Converter]
+"Single Shot" "017c80d109361d10" 4 
+[OPTIONS_Debug_M16C_E8a_SYSTEM]
+"" 0 
+"[V|VERSION|1] [B|COMMAND|1] [S|SPEC|UITRON3] " 6 
+"[V|VERSION|1] [B|DATALENGTH|1] [S|OUTPUT|^"$(CONFIGDIR)\$(PROJECTNAME).mot^"] " 4 
+"[V|VERSION|1] [B|STARTUPLINK|1] [B|DEBUG|1] [B|MAP-S|1] [S|OUTPUT|^"$(CONFIGDIR)\$(PROJECTNAME).x30^"] [S|INPUTLIBRARY|^"L=nc30lib^"] " 3 
+"[V|VERSION|1] [S|LIST|LM] [B|INSPECTOR|1] [S|OUTPUTPATH|^"$(CONFIGDIR)\$(FILELEAF).r30^"] " 2 
+"[V|VERSION|1] [S|MODE|CREATE|] [S|OUTPUT|^"$(CONFIGDIR)\$(PROJECTNAME).lib^"] " 5 
+"[V|VERSION|1] [S|OUTPUT|OBJECTCODE] [S|OUTPUTPATH|^"$(CONFIGDIR)\$(FILELEAF).r30^"] [B|INSPECTOR|1] " 1 
+[EXCLUDED_FILES_Debug_M16C_E8a_SYSTEM]
+[LINKAGE_ORDER_Debug_M16C_E8a_SYSTEM]
+[GENERAL_DATA_CONFIGURATION_Debug_M16C_E8a_SYSTEM]
+[OPTIONS_Release_Renesas M16C Assembler]
+"Assembly source file" "0721b56bf8361d10" 2 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\init\ncrt0_rsk.a30" "0e0d659009361d10" 2 
+[OPTIONS_Release_Renesas M16C C Compiler]
+"C source file" "0721b56bf8361d10" 1 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\glcd\FONT.C" "0cc1205009361d10" 1 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\glcd\GLCD.C" "0cc1205009361d10" 1 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\init\hwsetup.c" "0e0d659009361d10" 1 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\isr\ISR_DEFs.c" "03040dc009361d10" 1 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\keypad\keyscan_4x4.c" "03babb0109361d10" 1 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\motor\motor.c" "0b3f5c5109361d10" 1 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\motor\motor_sound.c" "0b3f5c5109361d10" 1 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\timer\timer.c" "0018a39109361d10" 1 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\uart\uart.c" "04bc60d109361d10" 1 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\main.c" "07474fbff8361d10" 1 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\print.c" "07474fbff8361d10" 1 
+[OPTIONS_Release_Renesas M16C Configurator]
+"Single Shot" "04bc60d109361d10" 6 
+[OPTIONS_Release_Renesas M16C Librarian]
+"Single Shot" "04bc60d109361d10" 5 
+[OPTIONS_Release_Renesas M16C Linker]
+"Single Shot" "017c80d109361d10" 3 
+[OPTIONS_Release_Renesas M16C Stype Converter]
+"Single Shot" "017c80d109361d10" 4 
+[OPTIONS_Release]
+"" 0 
+"[V|VERSION|1] [B|COMMAND|1] [S|SPEC|UITRON3] " 6 
+"[V|VERSION|1] [B|DATALENGTH|1] [S|OUTPUT|^"$(CONFIGDIR)\$(PROJECTNAME).mot^"] " 4 
+"[V|VERSION|1] [B|STARTUPLINK|1] [B|DEBUG|1] [B|MAP-S|1] [S|OUTPUT|^"$(CONFIGDIR)\$(PROJECTNAME).x30^"] [S|INPUTLIBRARY|^"L=nc30lib^"] " 3 
+"[V|VERSION|1] [S|LIST|LM] [B|INSPECTOR|1] [S|OUTPUTPATH|^"$(CONFIGDIR)\$(FILELEAF).r30^"] " 2 
+"[V|VERSION|1] [S|MODE|CREATE|] [S|OUTPUT|^"$(CONFIGDIR)\$(PROJECTNAME).lib^"] " 5 
+"[V|VERSION|1] [S|OUTPUT|OBJECTCODE] [S|OUTPUTPATH|^"$(CONFIGDIR)\$(FILELEAF).r30^"] [B|INSPECTOR|1] " 1 
+[EXCLUDED_FILES_Release]
+[LINKAGE_ORDER_Release]
+[GENERAL_DATA_CONFIGURATION_Release]
+[GENERAL_DATA_CONFIGURATION_SESSION_Debug_DefaultSession]
+[SESSION_DATA_CONFIGURATION_SESSION_Debug_DefaultSession]
+"MEMORY_MAPPING_OPTIONS" "" 
+[GENERAL_DATA_CONFIGURATION_SESSION_Debug_SessionM16C_E8a_SYSTEM]
+[SESSION_DATA_CONFIGURATION_SESSION_Debug_SessionM16C_E8a_SYSTEM]
+"MEMORY_MAPPING_OPTIONS" "[V|VERSION|1] [S|CPUTYPE|^"- (M16C/60)^"]" 
+[GENERAL_DATA_CONFIGURATION_SESSION_Debug_M16C_E8a_SYSTEM_DefaultSession]
+[SESSION_DATA_CONFIGURATION_SESSION_Debug_M16C_E8a_SYSTEM_DefaultSession]
+"MEMORY_MAPPING_OPTIONS" "" 
+[GENERAL_DATA_CONFIGURATION_SESSION_Debug_M16C_E8a_SYSTEM_SessionM16C_E8a_SYSTEM]
+[SESSION_DATA_CONFIGURATION_SESSION_Debug_M16C_E8a_SYSTEM_SessionM16C_E8a_SYSTEM]
+"MEMORY_MAPPING_OPTIONS" "[V|VERSION|1] [S|CPUTYPE|^"- (M16C/60)^"]" 
+[GENERAL_DATA_CONFIGURATION_SESSION_Release_DefaultSession]
+[SESSION_DATA_CONFIGURATION_SESSION_Release_DefaultSession]
+"MEMORY_MAPPING_OPTIONS" "" 
+[GENERAL_DATA_CONFIGURATION_SESSION_Release_SessionM16C_E8a_SYSTEM]
+[SESSION_DATA_CONFIGURATION_SESSION_Release_SessionM16C_E8a_SYSTEM]
+"MEMORY_MAPPING_OPTIONS" "[V|VERSION|1] [S|CPUTYPE|^"- (M16C/60)^"]" 
+[EXT_DEBUGGER_INFO]
+0 "" "" "" "" 
+[END]
