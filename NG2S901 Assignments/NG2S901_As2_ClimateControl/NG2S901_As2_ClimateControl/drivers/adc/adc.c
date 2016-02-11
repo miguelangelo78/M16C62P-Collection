@@ -6,7 +6,7 @@ void adc_init_easy(adc_cback_t adc_callback, char channel) {
 	adc_cback = adc_callback;
 	
 	/* Configure ADCON0: */
-	ADCON0 = (channel & 0x03);
+	ADCON0 = (channel & 0x07);
 	
 	/* Configure everything else with default settings: */
 	ADCON1 = 0x28;
