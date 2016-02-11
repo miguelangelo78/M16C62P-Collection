@@ -5,10 +5,6 @@
 
 typedef void (*adc_cback_t)(void);
 
-enum ADC_CHANNELS {
-	ADC0 = 1, ADC1 = 2, ADC2 = 4	
-};
-
 enum ADC_MODE {
 	ADC_MODE_ONESHOT,
 	ADC_MODE_REPEAT,
@@ -26,7 +22,6 @@ enum ADC_PORTSEL {
 void adc_init_easy(adc_cback_t adc_callback, char channels);
 void adc_init(adc_cback_t adc_callback, char channels, char adc_mode, char tenbits_size, char sampleandhold, int portsel);
 void adc_deinit(char channels);
-void adc_deinit_all(void);
 unsigned int adc_read(char channel);
 
 #endif

@@ -15,12 +15,12 @@ void thermistor_adc_callback(void) {
 }
 
 void thermistor_init(void) {
-	adc_init(thermistor_adc_callback, ADC1 | ADC2, ADC_MODE_ONESHOT, 0, 1, ADC_DEFAULT);
+	adc_init(thermistor_adc_callback, 6, ADC_MODE_ONESHOT, 0, 1, ADC_DEFAULT);
 	timer_init(thermistor_timer_callback, TIMERA1, 4, TIMER_MODE_NORMAL, TIMER_CLK_F32, TIMER_PRI_1);
 }
 
 void thermistor_deinit(void) {
-	adc_deinit_all();
+	adc_deinit();
 	timer_deinit(TIMERA1);
 }
 
