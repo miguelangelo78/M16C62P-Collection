@@ -58,7 +58,7 @@ void timer_init(
 	
 	/* Set timer configuration: */
 	uint8_t timer_config = (timer_clk_src << 6) | (timer_trigger_edge << 3) | timer_mode;
-	if(timer_mode == TIMER_MODE_PWM) 
+	if(timer_mode == TIMER_MODE_PWM) /* Set PWM to 16 bit width by default */
 		timer_config |=  0b100;
 	if(timer_clk_src == TIMER_CLK_F8)
 		cpu_div = 8;

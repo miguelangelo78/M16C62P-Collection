@@ -46,8 +46,7 @@ void adc_init(adc_cback_t adc_callback, char channel, char adc_mode, char tenbit
 	ADST = 0x01;
 }
 
-void adc_deinit(char channels) {
-	char i;
+void adc_deinit(void) {
 	/* Stop channel and mode: */
 	ADCON0 = 0x0;
 	/* Stop everything else related to ADCs: */
@@ -59,11 +58,11 @@ void adc_deinit(char channels) {
 }
 
 unsigned int adc_read(char channel) {
-	char * adc_register;
+	int * adc_register;
 	if(channel >= 8 || channel < 0) return 0; /* Invalid register index */
 
 	/* Grab value from AD0, or AD1,..., AD7, by using a pointer: */	
-	adc_register = (char*)((&AD0_ADDR) + channel);
+	adc_register = (int*)((&AD0_ADDR) + channel);
 	return *adc_register;
 }
 

@@ -35,6 +35,6 @@ inline long map(long x, long in_min, long in_max, long out_min, long out_max) {
 #define bit_get(p,m) ((p) & (1<<m))
 
 /* M16C's CPU speed: */
-#define	f1_CLK_SPEED 24000000
+#define	f1_CLK_SPEED 16000000
 
 #endif

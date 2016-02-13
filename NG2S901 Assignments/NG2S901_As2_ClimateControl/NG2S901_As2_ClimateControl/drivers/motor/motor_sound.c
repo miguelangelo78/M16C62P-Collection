@@ -12,7 +12,7 @@
 void motor_tone_us(int pitch, int duration_us) {
 	int i;
 	/* Check for invalid tones */
-	if(pitch > MAX_MOTOR_PITCH || pitch < MIN_MOTOR_PITCH) return;
+	if(pitch > MOTOR_MAX_PITCH || pitch < MIN_MOTOR_PITCH) return;
 
 	for(; duration_us; duration_us--) {
 		/* Restart timer */
@@ -38,7 +38,7 @@ void motor_tone_us(int pitch, int duration_us) {
 void motor_tone(int pitch, int duration_ms) {
 	int i;
 	/* Check for invalid tones */
-	if(pitch > MAX_MOTOR_PITCH || pitch < MIN_MOTOR_PITCH) return;
+	if(pitch > MOTOR_MAX_PITCH || pitch < MIN_MOTOR_PITCH) return;
 
 	for(; duration_ms; duration_ms--) {
 		/* Restart timer */
