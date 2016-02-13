@@ -7,6 +7,7 @@
 #include <stdarg.h>
 /* Include all drivers: */
 #include "drivers/init/sfr62p.h"
+#include "drivers/7seg/7segment.h"
 #include "drivers/adc/adc.h"
 #include "drivers/glcd/glcd.h"
 #include "drivers/glcd/font.h"

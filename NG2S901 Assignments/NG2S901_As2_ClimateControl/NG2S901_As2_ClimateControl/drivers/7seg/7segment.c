@@ -1,4 +1,4 @@
-#include "../init/sfr62p.h" 
+#include "../../globals.h"
 
 /* 7 Segment display pins: */
 #define SEGDISP_RIGHT_PWRDIR P4D_2
@@ -42,7 +42,7 @@ int bcd_table[10] = {
 	1 | 2 | 4 | 8 | 32 | 64 /* 9 */
 };
 
-/* Compiler says 'too many initializer values' -.-' really? */
+/* Compiler says 'too many initializer values' */
 int bcd_table_hex[7] = {
 	1 | 2 | 4 | 16 | 32 | 64, /* A */
 	4 | 8 | 16 | 32 | 64, /* B */
@@ -53,19 +53,31 @@ int bcd_table_hex[7] = {
 	1 | 2 | 4 | 8 | 16 | 32 | 128 /* 0. (aka invalid number) */
 };
 
-unsigned char bin_2_bcd(unsigned char n) {
-	if(n > 15) 
-		return bcd_table_hex[6];
-	if(n > 9) 
-		return bcd_table_hex[n - 10];
-	else 
-		return bcd_table[n];
+unsigned int bin_2_bcd(unsigned char n, unsigned char radix)    
+{ 
+	unsigned int bcd_result = 0;
+	while (n > 0) {
+	   bcd_result <<= 4;
+	   bcd_result |= n % radix;
+	   n /= radix;
+	}
+	return bcd_result;
 }
 
-void seg_update(unsigned char n) {
+unsigned char bcd_to_7seg(unsigned int bcd_digit, unsigned char radix) {
+	if(bcd_digit > radix - 1)  return bcd_table_hex[6];
+	if(bcd_digit > 9) 
+		return bcd_table_hex[bcd_digit - 10];
+	else 
+		return bcd_table[bcd_digit];
+}
+
+void seg_update(unsigned char n, unsigned char radix) {
 	int i;
+	unsigned char toBCD = bin_2_bcd(n, radix);
+	
 	/* Upper byte */
-	SEG_LEFT(bin_2_bcd((n & 0xF0) >> 4));
+	SEG_LEFT(bcd_to_7seg(toBCD & 0xF, radix));
 	/* Lower byte */
-	SEG_RIGHT(bin_2_bcd(n & 0xF));
+	SEG_RIGHT(bcd_to_7seg((toBCD & 0xF0) >> 4, radix));
 }

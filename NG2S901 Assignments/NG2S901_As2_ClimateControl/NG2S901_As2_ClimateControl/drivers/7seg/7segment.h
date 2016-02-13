@@ -2,6 +2,6 @@
 #define SEVENSEG_H_
 
 void init_7seg();
-void seg_update(unsigned char n);
+void seg_update(unsigned char n, unsigned char radix);
 
 #endif

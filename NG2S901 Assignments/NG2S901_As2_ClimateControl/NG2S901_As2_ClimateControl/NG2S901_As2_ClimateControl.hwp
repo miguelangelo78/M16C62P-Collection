@@ -106,6 +106,8 @@
 "Relocatable file" "Renesas M16C Linker" "Renesas M16C Assembler" 
 "Relocatable file" "Renesas M16C Linker" "Renesas M16C C Compiler" 
 [PROJECT_FILES]
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\7seg\7segment.c" "User" "C source file" 2 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\7seg\7segment.h" "User" "C header file" 2 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\adc\adc.c" "User" "C source file" 2 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\adc\adc.h" "User" "C header file" 2 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\glcd\FONT.C" "User" "C source file" 2 
@@ -192,6 +194,7 @@
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\init\ncrt0_rsk.a30" "0e0d659009361d10" 2 
 [OPTIONS_Debug_Renesas M16C C Compiler]
 "C source file" "05fa855e09361d10" 1 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\7seg\7segment.c" "0951d1a0a9661d10" 1 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\adc\adc.c" "0e19ad0cd9361d10" 1 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\glcd\FONT.C" "05fa855e09361d10" 1 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\glcd\GLCD.C" "05fa855e09361d10" 1 
@@ -205,13 +208,13 @@
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\main.c" "05fa855e09361d10" 1 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\print.c" "05fa855e09361d10" 1 
 [OPTIONS_Debug_Renesas M16C Configurator]
-"Single Shot" "032e891dba361d10" 6 
+"Single Shot" "0951d1a0a9661d10" 6 
 [OPTIONS_Debug_Renesas M16C Librarian]
-"Single Shot" "032e891dba361d10" 5 
+"Single Shot" "0951d1a0a9661d10" 5 
 [OPTIONS_Debug_Renesas M16C Linker]
-"Single Shot" "0150b91dba361d10" 3 
+"Single Shot" "0968f1a0a9661d10" 3 
 [OPTIONS_Debug_Renesas M16C Stype Converter]
-"Single Shot" "0150b91dba361d10" 4 
+"Single Shot" "0968f1a0a9661d10" 4 
 [OPTIONS_Debug]
 "" 0 
 "[V|VERSION|1] [B|COMMAND|1] [S|SPEC|UITRON3] " 6 
@@ -241,6 +244,7 @@
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\init\ncrt0_rsk.a30" "0e0d659009361d10" 2 
 [OPTIONS_Debug_M16C_E8a_SYSTEM_Renesas M16C C Compiler]
 "C source file" "0721b56bf8361d10" 1 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\7seg\7segment.c" "0951d1a0a9661d10" 1 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\adc\adc.c" "0e19ad0cd9361d10" 1 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\glcd\FONT.C" "0cc1205009361d10" 1 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\glcd\GLCD.C" "0cc1205009361d10" 1 
@@ -254,13 +258,13 @@
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\main.c" "07474fbff8361d10" 1 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\print.c" "07474fbff8361d10" 1 
 [OPTIONS_Debug_M16C_E8a_SYSTEM_Renesas M16C Configurator]
-"Single Shot" "032e891dba361d10" 6 
+"Single Shot" "0951d1a0a9661d10" 6 
 [OPTIONS_Debug_M16C_E8a_SYSTEM_Renesas M16C Librarian]
-"Single Shot" "032e891dba361d10" 5 
+"Single Shot" "0951d1a0a9661d10" 5 
 [OPTIONS_Debug_M16C_E8a_SYSTEM_Renesas M16C Linker]
-"Single Shot" "0150b91dba361d10" 3 
+"Single Shot" "0968f1a0a9661d10" 3 
 [OPTIONS_Debug_M16C_E8a_SYSTEM_Renesas M16C Stype Converter]
-"Single Shot" "0150b91dba361d10" 4 
+"Single Shot" "0968f1a0a9661d10" 4 
 [OPTIONS_Debug_M16C_E8a_SYSTEM]
 "" 0 
 "[V|VERSION|1] [B|COMMAND|1] [S|SPEC|UITRON3] " 6 
@@ -277,6 +281,7 @@
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\init\ncrt0_rsk.a30" "0e0d659009361d10" 2 
 [OPTIONS_Release_Renesas M16C C Compiler]
 "C source file" "0721b56bf8361d10" 1 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\7seg\7segment.c" "0951d1a0a9661d10" 1 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\adc\adc.c" "0e19ad0cd9361d10" 1 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\glcd\FONT.C" "0cc1205009361d10" 1 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\glcd\GLCD.C" "0cc1205009361d10" 1 
@@ -290,13 +295,13 @@
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\main.c" "07474fbff8361d10" 1 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\print.c" "07474fbff8361d10" 1 
 [OPTIONS_Release_Renesas M16C Configurator]
-"Single Shot" "032e891dba361d10" 6 
+"Single Shot" "0951d1a0a9661d10" 6 
 [OPTIONS_Release_Renesas M16C Librarian]
-"Single Shot" "032e891dba361d10" 5 
+"Single Shot" "0951d1a0a9661d10" 5 
 [OPTIONS_Release_Renesas M16C Linker]
-"Single Shot" "0150b91dba361d10" 3 
+"Single Shot" "0968f1a0a9661d10" 3 
 [OPTIONS_Release_Renesas M16C Stype Converter]
-"Single Shot" "0150b91dba361d10" 4 
+"Single Shot" "0968f1a0a9661d10" 4 
 [OPTIONS_Release]
 "" 0 
 "[V|VERSION|1] [B|COMMAND|1] [S|SPEC|UITRON3] " 6 
