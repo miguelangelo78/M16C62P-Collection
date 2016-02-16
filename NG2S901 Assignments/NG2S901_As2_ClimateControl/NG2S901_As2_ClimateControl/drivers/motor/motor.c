@@ -33,7 +33,8 @@ void encoder_trigger(void) {
 	/* Encoder has been triggered atleast once, let the motor block it again and trigger only when it unblocks once again: */
 	if(encoder_oneshot) return;
 	/* Update RPM value: */
-	motor_rpm = MS_TO_RPM(ms_elapsed);
+	if(ms_elapsed > 0)
+		motor_rpm = MS_TO_RPM(ms_elapsed);
 	ms_elapsed = 0;
 	encoder_oneshot = 1;
 }
@@ -46,8 +47,8 @@ void motor_cback(void) {
 	/* Read encoder and update RPM's variable: */
 	if(ms_elapsed++>30){  ms_elapsed = 0; motor_rpm = 0; } /* Took too much time to spin. It'll be considered 0 RPM */
 	/* Call encoder_trigger only when the motor stops blocking the encoder */
-	if(!encoder_read()) encoder_trigger();
-	else encoder_oneshot = 0; /* Let the encoder trigger again */
+	if(!encoder_read()) { encoder_trigger();  P4_0 = P4_1 = 0; }
+	else { encoder_oneshot = 0; P4_0 = P4_1 = 1; } /* Let the encoder trigger again */
 	
 	/* If the desired RPM is 0 then just stop the motor: */
 	if(!motor_adjust_to_rpm) { motor_update_pwm(0); return; }
@@ -59,10 +60,10 @@ void motor_cback(void) {
 }
 
 void encoder_init(void) {
-	unsigned int i=0,j =0;
+	unsigned int i = 0,j = 0;
 	/* Encoder pin is P7_5 and is an input. When the encoder is blocked the pin P7_5 outputs 1, otherwise it's 0. */
 	P7D_5 = 0;
-	
+	P4D_0 = P4D_1 = 1;
 	/* Prevent the program from starting with the encoder unblocked: */
 	while(1)
 		if(!encoder_read()) { /* Read encoder */
@@ -92,6 +93,7 @@ void init_motor(void) {
 }
 
 void deinit_motor(void) {
+	P4_0 = P4_1 = 1;
 	motor_stop();
 	deinit_motor_sound();
 	timer_deinit(TIMERA2);

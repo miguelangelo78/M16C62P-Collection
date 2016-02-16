@@ -16,6 +16,7 @@
 #include "drivers/timer/timer.h"
 #include "drivers/thermistor/thermistor.h"
 #include "drivers/uart/uart.h"
+#include "bluetooth_control.h"
 
 /* We're using a default font from now on: */
 #define puts(str) GLCD_WriteString(str, Font_System5x8)
@@ -34,8 +35,5 @@ inline long map(long x, long in_min, long in_max, long out_min, long out_max) {
 #define bit_clear(p,m) ((p) &= ~(1<<m))
 #define bit_write(c,p,m) (c ? bit_set(p, m) : bit_clear(p,m))
 #define bit_get(p,m) ((p) & (1<<m))
-
-/* M16C's CPU speed: */
-#define	f1_CLK_SPEED 16000000
 
 #endif

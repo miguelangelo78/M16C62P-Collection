@@ -15,7 +15,8 @@
 /********************************************************
 *	declare SFR addresses								*
 ********************************************************/
-
+  /* M16C's max CPU speed: */
+  #define f1_CLK_SPEED 24000000
 
   #define disable_interrupt()         asm("FCLR I")
   #define enable_interrupt()          asm("FSET I")

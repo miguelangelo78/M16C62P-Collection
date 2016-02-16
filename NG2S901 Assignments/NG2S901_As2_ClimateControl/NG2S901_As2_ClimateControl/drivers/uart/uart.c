@@ -24,8 +24,8 @@ void uart_init(void) {
    	PLC0  = 0x12;     /*Set multiplying factor select bits to give 24MHz clock  */
    	PM2  &= 0xFE;     /*Set PM20 bit to "0" (2-wait states)                     */
    	PLC0 |= 0x80;     /*Set Operation enable bit of the PLL                     */
-   	asm("nop"); 		/*Wait until the PLL clock becomes stable (tsu(PLL))      */
-   	CM1 = 0x22;     /*Set the PLL clock as the CPU clock source               */
+   	asm("nop"); 	  /*Wait until the PLL clock becomes stable (tsu(PLL))      */
+   	CM1 = 0x22;       /*Set the PLL clock as the CPU clock source               */
    	PRCR  = 0x00;     /*Protect on                  */                         
 	
 	/* UART0 transmit/receive mode register */
@@ -86,8 +86,8 @@ void uart_init(void) {
 	/* disable irqs before setting irq registers */
     disable_interrupt();			
 	/* Enable UART0 receive/transmit interrupt, priority level 4 */		
-	//S0RIC = 0x04; /* Disabling ISR calls for now */
-	//S0TIC = 0x05; /* Disabling ISR calls for now */
+	S0RIC = 0x05;
+	//S0TIC = 0x05; /* Disable Transmit callback for now */
 	/* Enable all interrupts */			
 	enable_interrupt();			
 
@@ -173,7 +173,8 @@ void uart_uninstall_cback(void) {
 	uart_cback_list[0] = 0;
 }
 
-void U0rec_ISR(void) {
+#pragma interrupt U0rec_ISR
+void U0rec_ISR(void) {	
 	/* make sure receive is complete */
 	while(RI_U0C1 == 0);
 	

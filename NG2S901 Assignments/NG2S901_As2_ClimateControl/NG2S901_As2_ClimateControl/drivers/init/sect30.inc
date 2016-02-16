@@ -199,12 +199,12 @@ switch_table_top:
 	.lword	dummy_int		; DMA1(for user)(vector 12)
 	.lword	dummy_int		; Key input interrupt(for user)(vect 13)
 .glb _ADC_Interrupt
-	.lword	_ADC_Interrupt		; A-D(for user)(vector 14)
-	.lword	dummy_int		; uart2 transmit(for user)(vector 15)=
+	.lword	_ADC_Interrupt	; A-D(for user)(vector 14)
+	.lword	dummy_int		; uart2 transmit(for user)(vector 15)
 	.lword	dummy_int		; uart2 receive(for user)(vector 16)
 	.lword	dummy_int		; uart0 transmit(for user)(vector 17)
-.glb	_U0rec_ISR
-	.lword	_U0rec_ISR		; uart0 trance (for user) (vector 17)
+.glb _U0rec_ISR
+	.lword	_U0rec_ISR		; uart0 receive (for user) (vector 18)
 	.lword	dummy_int		; uart1 transmit(for user)(vector 19)
 	.lword	dummy_int		; uart1 receive(for user)(vector 20)
 .glb	_Timer_A0
@@ -217,9 +217,12 @@ switch_table_top:
 	.lword	_Timer_A3		; timer A3(for user)(vector 24)
 .glb _Timer_A4
 	.lword	_Timer_A4		; timer A4(for user)(vector 25)
-	.lword	dummy_int		; timer B0(for user)(vector 26)
-	.lword	dummy_int		; timer B1(for user)(vector 27)
-	.lword	dummy_int		; timer B2(for user)(vector 28)
+.glb _Timer_B0
+	.lword	_Timer_B0		; timer B0(for user)(vector 26)
+.glb _Timer_B1
+	.lword	_Timer_B1		; timer B1(for user)(vector 27)
+.glb _Timer_B2
+	.lword	_Timer_B2		; timer B2(for user)(vector 28)
 .glb _INT0
 	.lword	dummy_int		; int0 (for user)(vector 29)
 .glb _INT1
