@@ -72,11 +72,17 @@ void update_new_clock(void) {
 
 void init_rtc(void) {
 	i2c_init();
-	start();
+	rtc_start();
 }
 
 void deinit_rtc(void) {
 	i2c_deinit();	
+}
+
+void rtc_reset(void) {
+	char i;
+	for(i=TSECS;i<TSQW;i++)
+		rtc_write(i, 0);
 }
 
 /* GETTERS: */
@@ -187,16 +193,16 @@ void rtc_set_year(uint16_t year) {
 
 /* CONTROL CLOCK: */
 
-void stop() {
+void rtc_stop() {
 	time.sec |= 0x80;
 	rtc_write(TSECS, time.sec);
 }
 
-char is_stopped(void) {
+char is_rtc_stopped(void) {
 	return (time.sec & 0x80 == 0x80);	
 }
 
-void start() {
+void rtc_start() {
 	char reg0;
 	time.sec &= ~0x80;
 	

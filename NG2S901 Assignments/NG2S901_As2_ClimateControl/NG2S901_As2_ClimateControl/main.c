@@ -39,7 +39,7 @@ void climate_control(void) {
 		for(i = 0; i < UPDATE_RATE; i++) 
 			seg_update(current_temp, 10);
 		
-		printf_at("Time:\n%d seconds",0,4, rtc_get_seconds());	
+		printf_at("%s ",0 , 4, rtc_read_time_formatted());	
 	}
 }
 
@@ -48,7 +48,11 @@ void main(void)
 	Initialise();
 	bluetooth_control_init();
 	GLCD_Initialise();
-	init_rtc();	
+	init_rtc();
+	rtc_set_monthday(3);
+	rtc_set_weekday(5);
+	rtc_set_year(2016);
+	
 	keyscan_4x4_init();
 	init_7seg();
 	init_motor();
