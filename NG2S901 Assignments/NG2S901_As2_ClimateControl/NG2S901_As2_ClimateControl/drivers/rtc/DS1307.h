@@ -1,7 +1,7 @@
 #ifndef DS1307_H_
 #define DS1307_H_
 
-/* RTC Datasheet: http://datasheets.maximintegrated.com/en/ds/DS1307.pdf */
+/* RTC (DS1307) Datasheet: http://datasheets.maximintegrated.com/en/ds/DS1307.pdf */
 
 typedef struct {
 	uint8_t sec;

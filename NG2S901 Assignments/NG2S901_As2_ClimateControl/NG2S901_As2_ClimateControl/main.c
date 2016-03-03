@@ -36,8 +36,10 @@ void climate_control(void) {
 		
 		/* Display data: */
 		printf_at("Temp: %d'C \nDesired: %d'C\n%d RPM      ", 0,0, current_temp, desired_temp, read_rpm());
-		for(i = 0; i < UPDATE_RATE; i++)
+		for(i = 0; i < UPDATE_RATE; i++) 
 			seg_update(current_temp, 10);
+		
+		printf_at("Time:\n%d seconds",0,4, rtc_get_seconds());	
 	}
 }
 
@@ -46,10 +48,7 @@ void main(void)
 	Initialise();
 	bluetooth_control_init();
 	GLCD_Initialise();
-	
-	init_rtc();
-	for(;;) printf_at("%s",0,0, rtc_read_time_formatted(0));
-	
+	init_rtc();	
 	keyscan_4x4_init();
 	init_7seg();
 	init_motor();

@@ -10,7 +10,7 @@ char i2c_is_inititialized = 0;
 
 inline void i2c_delay(void) {
 	unsigned int delay;
-	for(delay = 0; delay < 10000; delay++);
+	for(delay = 0; delay < 5000; delay++);
 }
 
 void i2c_init(void) {
@@ -163,6 +163,7 @@ unsigned char * i2c_read_buff(unsigned char address, unsigned char bufflen) {
 			i2c_set_ack(ACK); /* ACK from Master */
 		else  {
 			i2c_set_ack(NACK); /* NACK from Master */
+			i2c_transmit(0xFF);
 			break;
 		}
 	}

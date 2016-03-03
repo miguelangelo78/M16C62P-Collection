@@ -32,14 +32,14 @@ rtc_t * rtc_bcd_to_dec(rtc_t * bcd_rtc) {
 	return &time_bcd_copy;
 }
 
-inline void rtc_write(unsigned char reg, unsigned char val) {
-	char data[2];
+void rtc_write(unsigned char reg, unsigned char val) {
+	unsigned char data[2];
 	data[0]=reg;
 	data[1]=val;
 	i2c_send_str(RTC_I2C_ADDRESS, data, 2);
 }
 
-inline void rtc_selreg(unsigned char reg) {
+void rtc_selreg(unsigned char reg) {
 	i2c_send(RTC_I2C_ADDRESS, reg);
 }
 
@@ -72,7 +72,7 @@ void update_new_clock(void) {
 
 void init_rtc(void) {
 	i2c_init();
-	update_clock();
+	start();
 }
 
 void deinit_rtc(void) {
@@ -197,8 +197,12 @@ char is_stopped(void) {
 }
 
 void start() {
+	char reg0;
 	time.sec &= ~0x80;
-	rtc_write(TSECS, time.sec);	
+	
+	rtc_selreg(TSECS);
+	reg0 = i2c_read(RTC_I2C_ADDRESS);
+	rtc_write(TSECS,reg0 & 0x7F);
 }
 
 /* PRETTY OUTPUT: */
