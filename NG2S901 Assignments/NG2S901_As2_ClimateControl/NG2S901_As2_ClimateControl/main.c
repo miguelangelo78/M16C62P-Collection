@@ -46,11 +46,16 @@ void main(void)
 	Initialise();
 	bluetooth_control_init();
 	GLCD_Initialise();
+	
+	init_rtc();
+	for(;;) printf_at("%s",0,0, rtc_read_time_formatted(0));
+	
 	keyscan_4x4_init();
 	init_7seg();
 	init_motor();
 	thermistor_init();
 	/* Set initial desired_temperature to the current temperature: */
 	desired_temp = current_temp = thermistor_read();
+	
 	climate_control();
 }

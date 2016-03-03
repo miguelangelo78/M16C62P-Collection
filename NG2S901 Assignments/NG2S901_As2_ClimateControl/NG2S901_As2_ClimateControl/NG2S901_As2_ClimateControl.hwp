@@ -116,6 +116,8 @@
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\glcd\GLCD.C" "User" "C source file" 2 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\glcd\font.h" "User" "C header file" 2 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\glcd\glcd.h" "User" "C header file" 2 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\i2c\i2c.c" "User" "C source file" 2 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\i2c\i2c.h" "User" "C header file" 2 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\init\hwsetup.c" "User" "C source file" 2 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\init\ncrt0_rsk.a30" "User" "Assembly source file" 2 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\init\sect30.inc" "User" "Assembly include file" 2 
@@ -126,6 +128,8 @@
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\motor\motor.c" "User" "C source file" 2 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\motor\motor.h" "User" "C header file" 2 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\motor\motor_sound.c" "User" "C source file" 2 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\rtc\DS1307.c" "User" "C source file" 2 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\rtc\DS1307.h" "User" "C header file" 2 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\thermistor\thermistor.c" "User" "C source file" 2 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\thermistor\thermistor.h" "User" "C header file" 2 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\timer\timer.c" "User" "C source file" 2 
@@ -201,23 +205,25 @@
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\adc\adc.c" "0e19ad0cd9361d10" 1 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\glcd\FONT.C" "05fa855e09361d10" 1 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\glcd\GLCD.C" "05fa855e09361d10" 1 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\i2c\i2c.c" "0bb7c058cd471d10" 1 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\init\hwsetup.c" "05fa855e09361d10" 1 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\keypad\keyscan_4x4.c" "05fa855e09361d10" 1 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\motor\motor.c" "05fa855e09361d10" 1 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\motor\motor_sound.c" "05fa855e09361d10" 1 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\rtc\DS1307.c" "011bfc7d4f471d10" 1 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\thermistor\thermistor.c" "032e891dba361d10" 1 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\timer\timer.c" "05fa855e09361d10" 1 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\uart\uart.c" "05fa855e09361d10" 1 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\main.c" "05fa855e09361d10" 1 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\print.c" "05fa855e09361d10" 1 
 [OPTIONS_Debug_Renesas M16C Configurator]
-"Single Shot" "02eddad89b661d10" 6 
+"Single Shot" "011bfc7d4f471d10" 6 
 [OPTIONS_Debug_Renesas M16C Librarian]
-"Single Shot" "02eddad89b661d10" 5 
+"Single Shot" "011bfc7d4f471d10" 5 
 [OPTIONS_Debug_Renesas M16C Linker]
-"Single Shot" "054c0bd89b661d10" 3 
+"Single Shot" "0b731d7d4f471d10" 3 
 [OPTIONS_Debug_Renesas M16C Stype Converter]
-"Single Shot" "054c0bd89b661d10" 4 
+"Single Shot" "0b731d7d4f471d10" 4 
 [OPTIONS_Debug]
 "" 0 
 "[V|VERSION|1] [B|COMMAND|1] [S|SPEC|UITRON3] " 6 
@@ -254,23 +260,25 @@
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\adc\adc.c" "0e19ad0cd9361d10" 1 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\glcd\FONT.C" "0cc1205009361d10" 1 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\glcd\GLCD.C" "0cc1205009361d10" 1 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\i2c\i2c.c" "0bb7c058cd471d10" 1 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\init\hwsetup.c" "0e0d659009361d10" 1 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\keypad\keyscan_4x4.c" "03babb0109361d10" 1 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\motor\motor.c" "0b3f5c5109361d10" 1 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\motor\motor_sound.c" "0b3f5c5109361d10" 1 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\rtc\DS1307.c" "011bfc7d4f471d10" 1 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\thermistor\thermistor.c" "032e891dba361d10" 1 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\timer\timer.c" "0018a39109361d10" 1 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\uart\uart.c" "04bc60d109361d10" 1 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\main.c" "07474fbff8361d10" 1 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\print.c" "07474fbff8361d10" 1 
 [OPTIONS_Debug_M16C_E8a_SYSTEM_Renesas M16C Configurator]
-"Single Shot" "02eddad89b661d10" 6 
+"Single Shot" "011bfc7d4f471d10" 6 
 [OPTIONS_Debug_M16C_E8a_SYSTEM_Renesas M16C Librarian]
-"Single Shot" "02eddad89b661d10" 5 
+"Single Shot" "011bfc7d4f471d10" 5 
 [OPTIONS_Debug_M16C_E8a_SYSTEM_Renesas M16C Linker]
-"Single Shot" "054c0bd89b661d10" 3 
+"Single Shot" "0b731d7d4f471d10" 3 
 [OPTIONS_Debug_M16C_E8a_SYSTEM_Renesas M16C Stype Converter]
-"Single Shot" "054c0bd89b661d10" 4 
+"Single Shot" "0b731d7d4f471d10" 4 
 [OPTIONS_Debug_M16C_E8a_SYSTEM]
 "" 0 
 "[V|VERSION|1] [B|COMMAND|1] [S|SPEC|UITRON3] " 6 
@@ -292,23 +300,25 @@
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\adc\adc.c" "0e19ad0cd9361d10" 1 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\glcd\FONT.C" "0cc1205009361d10" 1 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\glcd\GLCD.C" "0cc1205009361d10" 1 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\i2c\i2c.c" "0bb7c058cd471d10" 1 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\init\hwsetup.c" "0e0d659009361d10" 1 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\keypad\keyscan_4x4.c" "03babb0109361d10" 1 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\motor\motor.c" "0b3f5c5109361d10" 1 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\motor\motor_sound.c" "0b3f5c5109361d10" 1 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\rtc\DS1307.c" "011bfc7d4f471d10" 1 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\thermistor\thermistor.c" "032e891dba361d10" 1 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\timer\timer.c" "0018a39109361d10" 1 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\uart\uart.c" "04bc60d109361d10" 1 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\main.c" "07474fbff8361d10" 1 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\print.c" "07474fbff8361d10" 1 
 [OPTIONS_Release_Renesas M16C Configurator]
-"Single Shot" "02eddad89b661d10" 6 
+"Single Shot" "011bfc7d4f471d10" 6 
 [OPTIONS_Release_Renesas M16C Librarian]
-"Single Shot" "02eddad89b661d10" 5 
+"Single Shot" "011bfc7d4f471d10" 5 
 [OPTIONS_Release_Renesas M16C Linker]
-"Single Shot" "054c0bd89b661d10" 3 
+"Single Shot" "0b731d7d4f471d10" 3 
 [OPTIONS_Release_Renesas M16C Stype Converter]
-"Single Shot" "054c0bd89b661d10" 4 
+"Single Shot" "0b731d7d4f471d10" 4 
 [OPTIONS_Release]
 "" 0 
 "[V|VERSION|1] [B|COMMAND|1] [S|SPEC|UITRON3] " 6 

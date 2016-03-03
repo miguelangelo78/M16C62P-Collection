@@ -8,34 +8,14 @@ const unsigned char temp_lookup[] =
  34,34,34,34,34,34,35,35,35,35,35,36,36,36,36,36,37,37,37,37,37,38,38,38,
  38,38,38,39,39,39,39,39,39,40};
 
-thermistor_t temp = 0;
-unsigned int old_adc = 0;
-
-void thermistor_update(unsigned int adc_value) {
-	if(adc_value==old_adc) return;
-	
-	old_adc = adc_value;
-	temp = temp_lookup[994 - adc_value];
-}
-
-void thermistor_timer_callback(void) {
-	ADC_RESTART();	
-}
-
-void thermistor_adc_callback(void) {
-	thermistor_update(adc_read(6));
-}
-
 void thermistor_init(void) {
-	adc_init(thermistor_adc_callback, 6, ADC_MODE_ONESHOT, 1, 1, ADC_DEFAULT);
-	timer_init(thermistor_timer_callback, TIMERA1, 100, TIMER_MODE_NORMAL, 0, TIMER_CLK_F32, TIMER_PRI_3);
+	adc_init(0, 6, ADC_MODE_REPEAT, 1, 1, ADC_DEFAULT);
 }
 
 void thermistor_deinit(void) {
 	adc_deinit();
-	timer_deinit(TIMERA1);
 }
 
 thermistor_t thermistor_read(void) {
-	return temp;
+	return temp_lookup[994 - adc_read(6)];
 }

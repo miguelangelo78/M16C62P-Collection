@@ -16,6 +16,8 @@
 #include "drivers/timer/timer.h"
 #include "drivers/thermistor/thermistor.h"
 #include "drivers/uart/uart.h"
+#include "drivers/i2c/i2c.h"
+#include "drivers/rtc/DS1307.h"
 #include "bluetooth_control.h"
 
 /* We're using a default font from now on: */
