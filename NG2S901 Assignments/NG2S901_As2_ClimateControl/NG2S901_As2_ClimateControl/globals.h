@@ -18,6 +18,8 @@
 #include "drivers/uart/uart.h"
 #include "drivers/i2c/i2c.h"
 #include "drivers/rtc/DS1307.h"
+#include "drivers/eeprom/M24C04.h"
+#include "drivers/thermistor/DS1621.h"
 #include "bluetooth_control.h"
 
 /* We're using a default font from now on: */

@@ -87,7 +87,7 @@ void init_rtc(void) {
 }
 
 void deinit_rtc(void) {
-	i2c_deinit();	
+	/* Might not need to uninitialize stuff for the RTC */	
 }
 
 /* GETTERS: */

@@ -8,14 +8,29 @@ const unsigned char temp_lookup[] =
  34,34,34,34,34,34,35,35,35,35,35,36,36,36,36,36,37,37,37,37,37,38,38,38,
  38,38,38,39,39,39,39,39,39,40};
 
+char current_thermistor = THERMISTOR_ANALOGUE;
+
 void thermistor_init(void) {
 	adc_init(0, 6, ADC_MODE_REPEAT, 1, 1, ADC_DEFAULT);
+	i2c_thermistor_init();
 }
 
 void thermistor_deinit(void) {
 	adc_deinit();
+	i2c_thermistor_deinit();
+}
+
+void thermistor_toggle(char thermistor_type) {
+	current_thermistor = thermistor_type & 0x1;
+	if(current_thermistor == THERMISTOR_DIGITAL) /* If we're using the digital thermistor, turn off ADC */
+		adc_deinit();
+	else /* Otherwise turn it back on */
+		adc_init(0, 6, ADC_MODE_REPEAT, 1, 1, ADC_DEFAULT);
 }
 
 thermistor_t thermistor_read(void) {
-	return temp_lookup[994 - adc_read(6)];
+	if(current_thermistor == THERMISTOR_ANALOGUE)
+		return temp_lookup[994 - adc_read(6)];
+	else
+		i2c_thermistor_read_temp();
 }

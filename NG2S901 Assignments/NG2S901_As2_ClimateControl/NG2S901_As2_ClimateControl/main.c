@@ -36,7 +36,8 @@ void climate_control(void) {
 		
 		/* Display data: */
 		printf_at("Temp: %d'C \nDesired: %d'C\n%d RPM      ", 0,0, current_temp, desired_temp, read_rpm());
-		printf_at("%s ",0 , 4, rtc_read_time_formatted());	
+		printf_at("%s ",0 , 4, rtc_read_time_formatted());
+		printf_at("Val: %d",0,7,eeprom_read(0));
 		for(i = 0; i < UPDATE_RATE; i++) 
 			seg_update(current_temp, 10);
 	}
@@ -55,16 +56,19 @@ void update_clock_to_today(void) {
 
 void main(void)
 {
+	unsigned int c;
 	Initialise();
 	bluetooth_control_init();
 	GLCD_Initialise();
 	init_rtc();
+	eeprom_init();
 	keyscan_4x4_init();
 	init_7seg();
 	init_motor();
 	thermistor_init();
+	thermistor_toggle(THERMISTOR_DIGITAL);
 	/* Set initial desired_temperature to the current temperature: */
-	desired_temp = current_temp = thermistor_read();
+	desired_temp = current_temp = thermistor_read();		
 	climate_control();
 	while(1);
 }

@@ -171,3 +171,60 @@ unsigned char * i2c_read_buff(unsigned char address, unsigned char bufflen) {
 	i2c_read_buffer[bufflen] = -1; /* 255 as unsigned */
 	return i2c_read_buffer;
 }
+
+unsigned char i2c_send_and_read(unsigned char address, unsigned char send_data) {
+	unsigned char reg;
+	/* Send byte first: */
+	i2c_set_ack(NACK);
+	i2c_start();
+	i2c_transmit(address << 1); /* As a write */
+	i2c_transmit(send_data);
+	
+	/* Then restart and read byte: */	
+	i2c_enable_rx();
+	i2c_restart();
+	i2c_transmit(address << 1 | 1); /* As a read */
+	i2c_transmit(0xFF);
+	i2c_stop();
+	reg = U2RBL;
+	i2c_set_ack(NACK); /* Master NACK (since we only read 1 byte, no ACKs were sent) */
+	return reg;
+}
+
+unsigned char * i2c_send_and_read_str(unsigned char address, unsigned char send_data, unsigned char bufflen) {
+	unsigned char i;
+	/* Send byte first: */
+	i2c_set_ack(NACK);
+	i2c_start();
+	i2c_transmit(address << 1); /* As a write */
+	i2c_transmit(send_data);
+	
+	/* Then restart and read byte: */	
+	i2c_enable_rx();
+	i2c_restart();
+	i2c_transmit(address << 1 | 1); /* As a read */
+	i2c_set_ack(ACK);
+	for(i = 0;i < bufflen; i++) {
+		i2c_transmit(0xFF);
+		i2c_read_buffer[i] = U2RBL;
+		if(i < bufflen-1)
+			i2c_set_ack(ACK); /* ACK from Master */
+		else  {
+			i2c_set_ack(NACK); /* NACK from Master */
+			i2c_transmit(0xFF);
+			break;
+		}
+	}
+	i2c_stop();
+	i2c_read_buffer[bufflen] = -1; /* 255 as unsigned */
+	return i2c_read_buffer;
+}
+
+unsigned char i2c_ping_slave(unsigned char address) {
+	unsigned char success;
+	i2c_set_ack(NACK);
+	i2c_start();
+	success = i2c_transmit(address << 1);
+	i2c_stop();
+	return success == 0; /* If success == 0, then the slave ACK'd back */
+}
