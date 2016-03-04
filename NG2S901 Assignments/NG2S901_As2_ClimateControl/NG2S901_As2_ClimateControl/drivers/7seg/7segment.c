@@ -17,7 +17,7 @@
 #define SEG_RIGHT(dat) SEG_LEFT_TURNOFF(); SEG_RIGHT_TURNON(); P5 = dat; SEG_DELAY();	
 
 /* Allows data to be shown on both 7 segment displays */
-#define SEG_DELAY() for(i=0;i<300;i++);
+#define SEG_DELAY() for(i=0;i<100;i++);
 
 void init_7seg() {
 	/* 7 Segment input pins: */

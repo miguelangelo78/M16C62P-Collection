@@ -3,6 +3,15 @@
 
 #define RTC_I2C_ADDRESS 0x68
 
+char * weekdays[] = {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday"};
+
+/* Year takes a special treatment. We can only store up to year 100 on RAM. Therefore, we need to convert,
+for example year 2016 to a value between 0 - 100 and backwards from 0 - 100 to 2016 */
+#define YEAR_RANGE 100
+#define CURRENT_YEAR 2016
+#define YEAR_TO_RTCYEAR(year) (map(year, CURRENT_YEAR-YEAR_RANGE/2, CURRENT_YEAR+YEAR_RANGE/2, 0, YEAR_RANGE))
+#define RTCYEAR_TO_YEAR(rtcyear) (map(rtcyear, 0, YEAR_RANGE, CURRENT_YEAR-YEAR_RANGE/2, CURRENT_YEAR+YEAR_RANGE/2))
+
 static rtc_t time;
 static rtc_t time_bcd_copy;
 
@@ -28,7 +37,7 @@ rtc_t * rtc_bcd_to_dec(rtc_t * bcd_rtc) {
 	time_bcd_copy.weekday = bcd2dec(bcd_rtc->weekday);
 	time_bcd_copy.monthday = bcd2dec(bcd_rtc->monthday);
 	time_bcd_copy.month = bcd2dec(bcd_rtc->month);
-	time_bcd_copy.year = bcd2dec(bcd_rtc->year);
+	time_bcd_copy.year = RTCYEAR_TO_YEAR(bcd2dec(bcd_rtc->year));
 	return &time_bcd_copy;
 }
 
@@ -72,17 +81,13 @@ void update_new_clock(void) {
 
 void init_rtc(void) {
 	i2c_init();
-	rtc_start();
+	if(rtc_is_stopped())
+		rtc_start();
+	update_clock();
 }
 
 void deinit_rtc(void) {
 	i2c_deinit();	
-}
-
-void rtc_reset(void) {
-	char i;
-	for(i=TSECS;i<TSQW;i++)
-		rtc_write(i, 0);
 }
 
 /* GETTERS: */
@@ -124,7 +129,7 @@ uint8_t rtc_get_month(void) {
 
 uint16_t rtc_get_year(void) {
 	update_clock();
-	return (uint16_t)(bcd2dec(time.year) * 2066) / 99;	
+	return RTCYEAR_TO_YEAR(bcd2dec(time.year));
 }
 
 /* SETTERS: */
@@ -142,7 +147,7 @@ void rtc_set_clock(rtc_t * new_time) {
 	if(new_time->month > 0 && new_time->weekday < 13)
 		time.month = dec2bcd(new_time->month);
 	if(new_time->year > 0 && new_time->year < 100)
-		time.year = dec2bcd((uint8_t)(new_time->year * 99) / 2066);
+		time.year = dec2bcd(YEAR_TO_RTCYEAR(new_time->year));
 	
 	update_new_clock();
 }
@@ -160,8 +165,9 @@ void rtc_set_minutes(uint8_t mins) {
 }
 
 void rtc_set_hours(uint8_t hours) {
-	if(hours <= 24 && hours >= 0)
+	if(hours >= 0 && hours <= 24)
 		time.hour = dec2bcd(hours) | time.hour & 0x40;
+	update_new_clock();	
 }
 
 void rtc_set_weekday(uint8_t weekday) {
@@ -185,7 +191,7 @@ void rtc_set_month(uint8_t month) {
 void rtc_set_year(uint16_t year) {
 	/* MAX YEAR: 2016 + 50 = 2066
 	   MIN YEAR: 2016 - 50 = 1966 */
-	year = (uint16_t)(year * 99) / 2066;
+	year = YEAR_TO_RTCYEAR(year);
 	if(year > 0 && year < 100)
 		time.year = dec2bcd(year);
 	update_new_clock();
@@ -198,8 +204,11 @@ void rtc_stop() {
 	rtc_write(TSECS, time.sec);
 }
 
-char is_rtc_stopped(void) {
-	return (time.sec & 0x80 == 0x80);	
+char rtc_is_stopped(void) {
+	char reg0;
+	rtc_selreg(TSECS);
+	reg0 = i2c_read(RTC_I2C_ADDRESS);
+	return reg0 & 0x80;	
 }
 
 void rtc_start() {
@@ -209,6 +218,22 @@ void rtc_start() {
 	rtc_selreg(TSECS);
 	reg0 = i2c_read(RTC_I2C_ADDRESS);
 	rtc_write(TSECS,reg0 & 0x7F);
+}
+
+void rtc_reset(void) {
+	char i;
+	for(i = TSECS;i < TSQW; i++)
+		rtc_write(i, 0);
+}
+
+uint8_t old_tick = 0;
+
+uint8_t rtc_has_ticked(void) {
+	if(old_tick != time.sec) {
+		old_tick = time.sec;
+		return 1;
+	}
+	return 0;
 }
 
 /* PRETTY OUTPUT: */
@@ -225,8 +250,8 @@ char * rtc_read_time_formatted(uint8_t get_days) {
 	
 	if(get_days)
 		sprintf(time_formatted_buffer, 
-				"%.2d:%.2d:%.2d\n%.2d/%.2d/%.4d Week %.2d", 
-				tptr->hour, tptr->min, tptr->sec, tptr->monthday, tptr->month, tptr->year, tptr->weekday);
+				"%.2d:%.2d:%.2d\n%.2d/%.2d/%.4d %s", 
+				tptr->hour, tptr->min, tptr->sec, tptr->monthday, tptr->month, tptr->year, weekdays[tptr->weekday - 1]);
 	else
 		sprintf(time_formatted_buffer, 
 				"%.2d:%.2d:%.2d", 

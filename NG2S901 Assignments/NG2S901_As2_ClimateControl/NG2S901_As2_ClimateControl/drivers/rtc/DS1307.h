@@ -16,7 +16,6 @@ typedef struct {
 
 void init_rtc(void);
 void deinit_rtc(void);
-void rtc_reset(void);
 
 rtc_t * read_clock(void);
 
@@ -41,6 +40,8 @@ void rtc_set_year(uint16_t);
 void rtc_stop();
 char rtc_is_stopped(void);
 void rtc_start();
+void rtc_reset(void);
+uint8_t rtc_has_ticked(void);
 
 char * rtc_read_time_formatted(uint8_t get_days);
 

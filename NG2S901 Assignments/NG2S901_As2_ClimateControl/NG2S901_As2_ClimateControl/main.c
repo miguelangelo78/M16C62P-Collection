@@ -1,7 +1,7 @@
 #include "globals.h"
 
 #define TEMP_ERROR 2
-#define UPDATE_RATE 1000
+#define UPDATE_RATE 3000
 
 char managing_climate;
 
@@ -28,19 +28,29 @@ void climate_control(void) {
 		/* Read temperature and adjust motor in function of temperature: */
 		current_temp = get_temperature();
 		if(current_temp < desired_temp - TEMP_ERROR) /* Speed left, heat it up */
-			motor_spin(map(current_temp, THERMISTOR_MAX_TEMP, THERMISTOR_MIN_TEMP, MOTOR_MIN_RPM, 9000), MOTOR_LEFT);
+			motor_spin(map(current_temp, THERMISTOR_MAX_TEMP, THERMISTOR_MIN_TEMP, MOTOR_MIN_RPM, 10000), MOTOR_LEFT);
 		else if(current_temp > desired_temp + TEMP_ERROR) /* Speed right, cool it down */
-			motor_spin(map(current_temp, THERMISTOR_MIN_TEMP, THERMISTOR_MAX_TEMP, MOTOR_MIN_RPM, 9000), MOTOR_RIGHT);
+			motor_spin(map(current_temp, THERMISTOR_MIN_TEMP, THERMISTOR_MAX_TEMP, MOTOR_MIN_RPM, 10000), MOTOR_RIGHT);
 		else /* Temperature match */
 			motor_stop();
 		
 		/* Display data: */
 		printf_at("Temp: %d'C \nDesired: %d'C\n%d RPM      ", 0,0, current_temp, desired_temp, read_rpm());
+		printf_at("%s ",0 , 4, rtc_read_time_formatted());	
 		for(i = 0; i < UPDATE_RATE; i++) 
 			seg_update(current_temp, 10);
-		
-		printf_at("%s ",0 , 4, rtc_read_time_formatted());	
 	}
+}
+
+/* FOR TESTING ONLY: */
+void update_clock_to_today(void) {
+	rtc_set_hours(23);
+	rtc_set_minutes(53);
+	rtc_set_seconds(0);
+	rtc_set_year(2016);
+	rtc_set_month(3);
+	rtc_set_weekday(5);
+	rtc_set_monthday(3);	
 }
 
 void main(void)
@@ -49,16 +59,12 @@ void main(void)
 	bluetooth_control_init();
 	GLCD_Initialise();
 	init_rtc();
-	rtc_set_monthday(3);
-	rtc_set_weekday(5);
-	rtc_set_year(2016);
-	
 	keyscan_4x4_init();
 	init_7seg();
 	init_motor();
 	thermistor_init();
 	/* Set initial desired_temperature to the current temperature: */
 	desired_temp = current_temp = thermistor_read();
-	
 	climate_control();
+	while(1);
 }
