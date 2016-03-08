@@ -14,6 +14,10 @@ typedef struct {
 	uint8_t sqw;
 } rtc_t;
 
+enum RTC_TIME_MODE {
+	RTC_AM, RTC_PM	
+};
+
 void init_rtc(void);
 void deinit_rtc(void);
 
@@ -26,6 +30,7 @@ uint8_t rtc_get_weekday(void);
 uint8_t rtc_get_monthday(void);
 uint8_t rtc_get_month(void);
 uint16_t rtc_get_year(void);
+void rtc_switch_mode(char time_mode);
 
 void rtc_set_clock(rtc_t * new_time);
 

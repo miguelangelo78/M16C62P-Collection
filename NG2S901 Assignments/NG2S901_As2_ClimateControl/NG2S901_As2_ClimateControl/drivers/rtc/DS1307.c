@@ -90,6 +90,61 @@ void deinit_rtc(void) {
 	/* Might not need to uninitialize stuff for the RTC */	
 }
 
+/* Time mode functions (AM/PM):  */
+char rtc_is12H(void) {
+	return (time.hour & 0x40) == 0x40;
+}
+
+char rtc_isPM(void) {
+	if(rtc_is12H())
+		return (time.hour & 0x20) == 0x20;
+	else
+		return rtc_get_hours() > 11;
+}
+
+void rtc_set24H(void) {
+	time.hour = time.hour & ~0x40;
+}
+
+void rtc_setAM(void) {
+	time.hour = time.hour & ~0x20 | 0x40;
+}
+
+void rtc_setPM(void) {
+	time.hour = time.hour | 0x60;
+}
+
+void rtc_switch_mode(char time_mode) {
+	int hour;
+	switch(time_mode) {
+	case RTC_AM:
+		if(rtc_is12H()) return;
+		
+		if((hour = rtc_get_hours()) < 12) { 
+			rtc_setAM();
+		} else {
+			hour -= 12;
+			rtc_setPM();	
+		}
+		
+		if(!hour) hour = 12;
+		rtc_set_hours(hour);
+		break;
+	case RTC_PM: 
+		if(!rtc_is12H()) return;
+		
+		if((hour = rtc_get_hours()) == 12)
+			hour = 0;
+			
+		if(rtc_isPM()) hour += 12;
+		
+		rtc_set24H();
+		rtc_set_hours(hour);
+		break;	
+	}
+}
+
+
 /* GETTERS: */
 
 rtc_t * read_clock(void) {
@@ -109,7 +164,10 @@ uint8_t rtc_get_minutes(void) {
 
 uint8_t rtc_get_hours(void) {
 	update_clock();
-	return bcd2dec(time.hour & 0x3F);	
+	if(rtc_is12H())
+		return bcd2dec(time.hour & 0x1F);
+	else
+		return bcd2dec(time.hour & 0x3F);	
 }
 
 uint8_t rtc_get_weekday(void) {
@@ -138,7 +196,9 @@ void rtc_set_clock(rtc_t * new_time) {
 		time.sec = dec2bcd(new_time->sec) | time.sec & 0x80;
 	if(new_time->min < 60 && new_time->min >= 0)
 		time.min = dec2bcd(new_time->min);
-	if(new_time->hour <= 24 && new_time->hour >= 0)
+	if(rtc_is12H())
+		time.hour = dec2bcd(new_time->hour) | time.hour & 0x60;
+	else
 		time.hour = dec2bcd(new_time->hour) | time.hour & 0x40;
 	if(new_time->weekday > 0 && new_time->weekday < 8)
 		time.weekday = dec2bcd(new_time->weekday);
@@ -165,8 +225,12 @@ void rtc_set_minutes(uint8_t mins) {
 }
 
 void rtc_set_hours(uint8_t hours) {
-	if(hours >= 0 && hours <= 24)
-		time.hour = dec2bcd(hours) | time.hour & 0x40;
+	if(rtc_is12H())
+		if(hours >= 1 && hours<= 12)
+			time.hour = dec2bcd(hours) | time.hour & 0x60;
+	else
+		if(hours >= 0 && hours <= 24)
+			time.hour = dec2bcd(hours) | time.hour & 0x40;	
 	update_new_clock();	
 }
 

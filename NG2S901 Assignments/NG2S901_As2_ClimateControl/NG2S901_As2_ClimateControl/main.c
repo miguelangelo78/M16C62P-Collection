@@ -333,17 +333,6 @@ extern void bluetooth_control_init(void);
 extern void bluetooth_control_stop(void);
 extern void bluetooth_show_rpm(void);
 
-/* FOR TESTING ONLY: */
-void update_clock_to_today(void) {
-	rtc_set_hours(01);
-	rtc_set_minutes(01);
-	rtc_set_seconds(0);
-	rtc_set_year(2016);
-	rtc_set_month(3);
-	rtc_set_weekday(2);
-	rtc_set_monthday(3);	
-}
-
 void main(void)
 {
 	Initialise();
@@ -356,6 +345,10 @@ void main(void)
 	init_motor();
 	thermistor_init();	
 	load_pincode();
+	
+#if 0 /* Set this 0 to 1 to restore the default pin back, in case you forgot the pin code */
+	set_new_pincode("1234");
+#endif
 	
 	/* Load desired_temp from EEPROM: */
 	desired_temp = eeprom_read(0);
