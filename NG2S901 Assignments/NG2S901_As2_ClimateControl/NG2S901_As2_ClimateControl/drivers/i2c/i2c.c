@@ -6,9 +6,24 @@
 #define ACK (0)
 #define NACK (!ACK)
 
+char i2c_busy = 0;
 char i2c_is_inititialized = 0;
 
-inline void i2c_delay(void) {
+schedule_t sched = 0, sched_copy = 0;
+
+void i2c_set_schedule(schedule_t func_ptr) {
+	sched = func_ptr;
+}
+
+char i2c_is_scheduled(void) {
+	return sched != 0 || sched_copy != 0;	
+}
+
+char i2c_is_busy(void) {
+	return i2c_busy;	
+}
+
+void i2c_delay(void) {
 	unsigned int delay;
 	for(delay = 0; delay < 5000; delay++);
 }
@@ -38,6 +53,7 @@ void i2c_deinit(void) {
 }
 
 void i2c_start(void) {
+	i2c_busy = 1;
 	i2c_delay();
 	STAREQ_U2SMR4 = 1;
 	i2c_delay();
@@ -47,6 +63,7 @@ void i2c_start(void) {
 }
 
 void i2c_restart(void) {
+	i2c_busy = 1;
 	i2c_delay();
 	RSTAREQ_U2SMR4 = 1,
 	i2c_delay();
@@ -62,6 +79,15 @@ void i2c_stop(void) {
 	STSPSEL_U2SMR4 = 1;
 	i2c_delay();
 	STSPSEL_U2SMR4 = 0;
+	i2c_busy = 0;
+	
+	/* Execute scheduled tasks, due to i2c being busy at the some previous time: */
+	if(sched) {
+		sched_copy = sched;
+		sched = 0; /* Clear schedule first */
+		sched_copy(); /* Run the copy instead */
+		sched_copy = 0; /* Clear copy as well */
+	}
 }
 
 void i2c_flush_tx(void) {
@@ -129,7 +155,7 @@ void i2c_send_str(unsigned char address, unsigned char * data, unsigned char dat
 	i2c_start();
 	i2c_transmit(address << 1);
 	for(i = 0; i < datalen; i++)
-		i2c_transmit(data[i]);	
+		i2c_transmit(data[i]);
 	i2c_stop();
 }
 

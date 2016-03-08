@@ -111,9 +111,14 @@ void motor_spin(unsigned int rpm, char direction) {
 	the desired one, oscillate around that value, due to motor's inertia */
 	spinning_direction = direction & 0x3; /* Mask to collect only the first 2 bits */
 	if(rpm > 0 && rpm < MOTOR_MIN_RPM) rpm = MOTOR_MIN_RPM;
+	if(rpm >= MOTOR_MAX_RPM) rpm = 10000;
 	motor_adjust_to_rpm = rpm;
 }
 
 unsigned int motor_read_rpm(void) {
 	return motor_rpm;
+}
+
+char motor_get_direction(void) {
+	return spinning_direction;	
 }

@@ -20,7 +20,6 @@
 #include "drivers/rtc/DS1307.h"
 #include "drivers/eeprom/M24C04.h"
 #include "drivers/thermistor/DS1621.h"
-#include "bluetooth_control.h"
 
 /* We're using a default font from now on: */
 #define puts(str) GLCD_WriteString(str, Font_System5x8)

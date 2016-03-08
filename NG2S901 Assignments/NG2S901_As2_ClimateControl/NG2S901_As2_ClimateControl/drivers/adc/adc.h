@@ -20,7 +20,7 @@ enum ADC_PORTSEL {
 #define ADC_RESTART() ADST = 1
 
 void adc_init_easy(adc_cback_t adc_callback, char channels);
-void adc_init(adc_cback_t adc_callback, char channels, char adc_mode, char tenbits_size, char sampleandhold, int portsel);
+void adc_init(adc_cback_t adc_callback, char channel, char adc_mode, char tenbits_size, char sampleandhold, int portsel);
 void adc_deinit(void);
 unsigned int adc_read(char channel);
 

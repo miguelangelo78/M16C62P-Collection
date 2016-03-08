@@ -3,7 +3,7 @@
 
 #define RTC_I2C_ADDRESS 0x68
 
-char * weekdays[] = {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday"};
+char * weekdays[] = {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"};
 
 /* Year takes a special treatment. We can only store up to year 100 on RAM. Therefore, we need to convert,
 for example year 2016 to a value between 0 - 100 and backwards from 0 - 100 to 2016 */

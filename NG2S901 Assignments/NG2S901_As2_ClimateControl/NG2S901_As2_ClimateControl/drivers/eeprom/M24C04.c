@@ -34,6 +34,24 @@ void eeprom_write(uint8_t address, uint8_t value) {
 	eeprom_disable_write(); /* Lock write bit */
 }
 
+void eeprom_write_buff(uint8_t start_address, uint8_t length, uint8_t * buffptr) {
+	uint8_t i;
+	for(i = 0;i < length; i++)
+		eeprom_write(start_address+i, buffptr[i]);
+}
+
 uint8_t eeprom_read(uint8_t address) {
 	return i2c_send_and_read(EEPROM_RTC_ADDRESS, address);
+}
+
+uint8_t * eeprom_read_buff(uint8_t start_address, uint8_t length) {
+	uint8_t eeprom_buff[32]; /* Max size of 32 bytes */
+	uint8_t i;
+	/* Clear buffer first: */
+	for(i=0;i<32;i++) eeprom_buff[i] = 0;
+	/* Read from EEPROM: */
+	for(i = 0; i < length && i < 32; i++)
+		eeprom_buff[i] = eeprom_read(start_address+i);
+	/* Return pointer: */
+	return eeprom_buff;
 }

@@ -14,5 +14,6 @@ void thermistor_init(void);
 void thermistor_deinit(void);
 thermistor_t thermistor_read(void);
 void thermistor_toggle(char thermistor_type);
+char thermistor_type(void);
 
 #endif

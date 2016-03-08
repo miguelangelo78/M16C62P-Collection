@@ -136,15 +136,21 @@ void uart_deinit(void) {
 	enable_interrupt();
 }
 
-void uart_write(char c) {
+void uart_write(unsigned char c) {
 	while(TI_U0C1 == 0);
-	U0TB = c;
+	U0TBL = c;
 }
 
 void uart_writestr(char * str) {
 	char i;
 	for (i=0; str[i]; i++)
 		uart_write(str[i]);
+}
+
+void uart_writebuff(unsigned char * buff, int bufflength) {
+	unsigned char i;
+	for (i=0; i<bufflength; i++)
+		uart_write(buff[i]);	
 }
 
 char uart_read(void) {

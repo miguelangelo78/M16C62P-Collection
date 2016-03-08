@@ -8,9 +8,10 @@ const unsigned char temp_lookup[] =
  34,34,34,34,34,34,35,35,35,35,35,36,36,36,36,36,37,37,37,37,37,38,38,38,
  38,38,38,39,39,39,39,39,39,40};
 
-char current_thermistor = THERMISTOR_ANALOGUE;
+char current_thermistor;
 
 void thermistor_init(void) {
+	current_thermistor = eeprom_read(1);
 	adc_init(0, 6, ADC_MODE_REPEAT, 1, 1, ADC_DEFAULT);
 	i2c_thermistor_init();
 }
@@ -22,6 +23,7 @@ void thermistor_deinit(void) {
 
 void thermistor_toggle(char thermistor_type) {
 	current_thermistor = thermistor_type & 0x1;
+	eeprom_write(1, current_thermistor);
 	if(current_thermistor == THERMISTOR_DIGITAL) /* If we're using the digital thermistor, turn off ADC */
 		adc_deinit();
 	else /* Otherwise turn it back on */
@@ -33,4 +35,9 @@ thermistor_t thermistor_read(void) {
 		return temp_lookup[994 - adc_read(6)];
 	else
 		i2c_thermistor_read_temp();
+}
+
+/* Are we using analogue or digital thermistor: */
+char thermistor_type(void) {
+	return current_thermistor;	
 }

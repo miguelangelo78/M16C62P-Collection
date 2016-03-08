@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="app.miguel.climatecontrol.MainActivity"
+    android:background="#7bbbb4"
+    tools:showIn="@layout/activity_main">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/frameLayout"
+        android:layout_below="@+id/textView">
+
+        <Button
+            android:layout_width="253dp"
+            android:layout_height="108dp"
+            android:text="Connect to the Board"
+            android:id="@+id/button"
+            android:background="#327e9e"
+            android:textColor="#ffffff"
+            android:shadowColor="#06070e"
+            android:textStyle="normal"
+            android:layout_column="21"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Climate Control"
+        android:id="@+id/textView"
+        android:textColor="#ffffff"
+        android:shadowColor="#120909"
+        android:textSize="@android:dimen/notification_large_icon_width"
+        android:textAlignment="center"
+        android:layout_marginTop="49dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/frameLayout" />
+</RelativeLayout>

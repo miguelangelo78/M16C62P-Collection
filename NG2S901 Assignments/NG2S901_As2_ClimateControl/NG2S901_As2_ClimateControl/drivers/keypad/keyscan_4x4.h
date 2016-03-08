@@ -12,6 +12,7 @@ void keyscan_4x4_clear(void);
 void keypad_4x4_wait(void);
 char keypad_4x4_wait_async(void);
 char read_key(void);
+char * read_string(char stringLength);
 char keypad_4x4_iskeypress(void);
 
 #pragma interrupt KYB

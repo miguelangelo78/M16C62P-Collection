@@ -107,11 +107,12 @@
 "Relocatable file" "Renesas M16C Linker" "Renesas M16C C Compiler" 
 [PROJECT_FILES]
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\bluetooth_control.c" "User" "C source file" 2 
-"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\bluetooth_control.h" "User" "C header file" 2 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\7seg\7segment.c" "User" "C source file" 2 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\7seg\7segment.h" "User" "C header file" 2 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\adc\adc.c" "User" "C source file" 2 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\adc\adc.h" "User" "C header file" 2 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\eeprom\M24C04.c" "User" "C source file" 2 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\eeprom\M24C04.h" "User" "C header file" 2 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\glcd\FONT.C" "User" "C source file" 2 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\glcd\GLCD.C" "User" "C source file" 2 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\glcd\font.h" "User" "C header file" 2 
@@ -130,6 +131,8 @@
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\motor\motor_sound.c" "User" "C source file" 2 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\rtc\DS1307.c" "User" "C source file" 2 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\rtc\DS1307.h" "User" "C header file" 2 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\thermistor\DS1621.c" "User" "C source file" 2 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\thermistor\DS1621.h" "User" "C header file" 2 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\thermistor\thermistor.c" "User" "C source file" 2 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\thermistor\thermistor.h" "User" "C header file" 2 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\timer\timer.c" "User" "C source file" 2 
@@ -146,47 +149,47 @@
 "C source file" "C source file" 
 [GENERAL_DATA_PROJECT]
 "FDT_AutoConnect" "0" 
-"FDT_BaseDevice" "" 
-"FDT_BaudRate" "" 
+"FDT_BaseDevice" "M30626FJP" 
+"FDT_BaudRate" "Clock Sync" 
 "FDT_BlockLockConnect" "1" 
 "FDT_BlockLockDisconnect" "1" 
-"FDT_BootMode" "FALSE" 
+"FDT_BootMode" "TRUE" 
 "FDT_CKM" "0" 
 "FDT_CKP" "0" 
-"FDT_ClockMode" "0" 
-"FDT_ClockSync" "00000000" 
+"FDT_ClockMode" "-1" 
+"FDT_ClockSync" "00000001" 
 "FDT_Comments" "" 
 "FDT_ConnectionResetSuppression" "FFFFFFFF" 
-"FDT_Device" "" 
+"FDT_Device" "M30626FJP" 
 "FDT_DoReadbackVerification" "" 
 "FDT_DoSecurityProtection" "" 
-"FDT_DoSecurityProtectionLevel" "" 
+"FDT_DoSecurityProtectionLevel" "00" 
 "FDT_Frequency" "0.0000" 
-"FDT_Interface" "" 
+"FDT_Interface" "Direct Connection" 
 "FDT_InternalClock" "FALSE" 
-"FDT_KernelPath" "" 
+"FDT_KernelPath" "C:\Program Files (x86)\Renesas\FDT4.00\kernels\ProtD\M30626FJP\Renesas\1_0_00\" 
 "FDT_KernelResident" "FALSE" 
-"FDT_McuId" "0" 
-"FDT_MessageLevel" "0" 
-"FDT_PinOutputs" "00000000" 
-"FDT_PinSettings" "00000000" 
-"FDT_Port" "" 
+"FDT_McuId" "4" 
+"FDT_MessageLevel" "1" 
+"FDT_PinOutputs" "FFFFFFFF" 
+"FDT_PinSettings" "FFFFFFFF" 
+"FDT_Port" "E8a" 
 "FDT_Protection" "0" 
-"FDT_Protocol" "" 
+"FDT_Protocol" "D" 
 "FDT_ReinterrogateGenericDevice" "" 
 "FDT_ResetOnDisconnect" "" 
-"FDT_ResetPinOutputs" "00000000" 
-"FDT_ResetPinSettings" "00000000" 
+"FDT_ResetPinOutputs" "FFFFFFFF" 
+"FDT_ResetPinSettings" "FFFFFFFF" 
 "FDT_SerNumConfigString" "" 
 "FDT_SerNumDllFunction" "" 
 "FDT_SerNumDllLocation" "" 
 "FDT_SerNumEnabled" "FALSE" 
 "FDT_SerNumMemArea" "" 
-"FDT_UPMPinSettings" "00000000" 
-"FDT_UseDefaultBaudRate" "FALSE" 
+"FDT_UPMPinSettings" "FFFFFFFF" 
+"FDT_UseDefaultBaudRate" "TRUE" 
 "FDT_UseInternalKernel" "TRUE" 
-"FDT_UserPinOutputs" "00000000" 
-"FDT_UserPinSettings" "00000000" 
+"FDT_UserPinOutputs" "FFFFFFFF" 
+"FDT_UserPinSettings" "FFFFFFFF" 
 "USE_CUSTOM_LINKAGE_ORDER" "1" 
 [ON_DEMAND_COMPONENTS_LOADED]
 [SYNC_SESSION_NAMES]
@@ -203,6 +206,7 @@
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\bluetooth_control.c" "02eddad89b661d10" 1 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\7seg\7segment.c" "0951d1a0a9661d10" 1 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\adc\adc.c" "0e19ad0cd9361d10" 1 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\eeprom\M24C04.c" "0ed8962dda571d10" 1 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\glcd\FONT.C" "05fa855e09361d10" 1 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\glcd\GLCD.C" "05fa855e09361d10" 1 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\i2c\i2c.c" "0bb7c058cd471d10" 1 
@@ -211,19 +215,20 @@
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\motor\motor.c" "05fa855e09361d10" 1 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\motor\motor_sound.c" "05fa855e09361d10" 1 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\rtc\DS1307.c" "011bfc7d4f471d10" 1 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\thermistor\DS1621.c" "02b891655b571d10" 1 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\thermistor\thermistor.c" "032e891dba361d10" 1 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\timer\timer.c" "05fa855e09361d10" 1 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\uart\uart.c" "05fa855e09361d10" 1 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\main.c" "05fa855e09361d10" 1 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\print.c" "05fa855e09361d10" 1 
 [OPTIONS_Debug_Renesas M16C Configurator]
-"Single Shot" "011bfc7d4f471d10" 6 
+"Single Shot" "02b891655b571d10" 6 
 [OPTIONS_Debug_Renesas M16C Librarian]
-"Single Shot" "011bfc7d4f471d10" 5 
+"Single Shot" "02b891655b571d10" 5 
 [OPTIONS_Debug_Renesas M16C Linker]
-"Single Shot" "0b731d7d4f471d10" 3 
+"Single Shot" "0517c1655b571d10" 3 
 [OPTIONS_Debug_Renesas M16C Stype Converter]
-"Single Shot" "0b731d7d4f471d10" 4 
+"Single Shot" "0517c1655b571d10" 4 
 [OPTIONS_Debug]
 "" 0 
 "[V|VERSION|1] [B|COMMAND|1] [S|SPEC|UITRON3] " 6 
@@ -258,6 +263,7 @@
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\bluetooth_control.c" "02eddad89b661d10" 1 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\7seg\7segment.c" "0951d1a0a9661d10" 1 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\adc\adc.c" "0e19ad0cd9361d10" 1 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\eeprom\M24C04.c" "0ed8962dda571d10" 1 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\glcd\FONT.C" "0cc1205009361d10" 1 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\glcd\GLCD.C" "0cc1205009361d10" 1 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\i2c\i2c.c" "0bb7c058cd471d10" 1 
@@ -266,19 +272,20 @@
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\motor\motor.c" "0b3f5c5109361d10" 1 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\motor\motor_sound.c" "0b3f5c5109361d10" 1 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\rtc\DS1307.c" "011bfc7d4f471d10" 1 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\thermistor\DS1621.c" "02b891655b571d10" 1 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\thermistor\thermistor.c" "032e891dba361d10" 1 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\timer\timer.c" "0018a39109361d10" 1 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\uart\uart.c" "04bc60d109361d10" 1 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\main.c" "07474fbff8361d10" 1 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\print.c" "07474fbff8361d10" 1 
 [OPTIONS_Debug_M16C_E8a_SYSTEM_Renesas M16C Configurator]
-"Single Shot" "011bfc7d4f471d10" 6 
+"Single Shot" "02b891655b571d10" 6 
 [OPTIONS_Debug_M16C_E8a_SYSTEM_Renesas M16C Librarian]
-"Single Shot" "011bfc7d4f471d10" 5 
+"Single Shot" "02b891655b571d10" 5 
 [OPTIONS_Debug_M16C_E8a_SYSTEM_Renesas M16C Linker]
-"Single Shot" "0b731d7d4f471d10" 3 
+"Single Shot" "0517c1655b571d10" 3 
 [OPTIONS_Debug_M16C_E8a_SYSTEM_Renesas M16C Stype Converter]
-"Single Shot" "0b731d7d4f471d10" 4 
+"Single Shot" "0517c1655b571d10" 4 
 [OPTIONS_Debug_M16C_E8a_SYSTEM]
 "" 0 
 "[V|VERSION|1] [B|COMMAND|1] [S|SPEC|UITRON3] " 6 
@@ -298,6 +305,7 @@
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\bluetooth_control.c" "02eddad89b661d10" 1 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\7seg\7segment.c" "0951d1a0a9661d10" 1 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\adc\adc.c" "0e19ad0cd9361d10" 1 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\eeprom\M24C04.c" "0ed8962dda571d10" 1 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\glcd\FONT.C" "0cc1205009361d10" 1 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\glcd\GLCD.C" "0cc1205009361d10" 1 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\i2c\i2c.c" "0bb7c058cd471d10" 1 
@@ -306,19 +314,20 @@
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\motor\motor.c" "0b3f5c5109361d10" 1 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\motor\motor_sound.c" "0b3f5c5109361d10" 1 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\rtc\DS1307.c" "011bfc7d4f471d10" 1 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\thermistor\DS1621.c" "02b891655b571d10" 1 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\thermistor\thermistor.c" "032e891dba361d10" 1 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\timer\timer.c" "0018a39109361d10" 1 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\uart\uart.c" "04bc60d109361d10" 1 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\main.c" "07474fbff8361d10" 1 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\print.c" "07474fbff8361d10" 1 
 [OPTIONS_Release_Renesas M16C Configurator]
-"Single Shot" "011bfc7d4f471d10" 6 
+"Single Shot" "02b891655b571d10" 6 
 [OPTIONS_Release_Renesas M16C Librarian]
-"Single Shot" "011bfc7d4f471d10" 5 
+"Single Shot" "02b891655b571d10" 5 
 [OPTIONS_Release_Renesas M16C Linker]
-"Single Shot" "0b731d7d4f471d10" 3 
+"Single Shot" "0517c1655b571d10" 3 
 [OPTIONS_Release_Renesas M16C Stype Converter]
-"Single Shot" "0b731d7d4f471d10" 4 
+"Single Shot" "0517c1655b571d10" 4 
 [OPTIONS_Release]
 "" 0 
 "[V|VERSION|1] [B|COMMAND|1] [S|SPEC|UITRON3] " 6 

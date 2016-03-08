@@ -5,7 +5,7 @@
 #define KEYPAD_HEIGHT 4
 #define KEYPAD_BUFFER_SIZE KEYPAD_WIDTH * KEYPAD_HEIGHT
 #define KEYPAD_DEBOUNCE_DELAY 40000000
-#define KEYPAD_HOLD_KEY_TIMEOUT 4 /* How long the keys stay in the buffer */
+#define KEYPAD_HOLD_KEY_TIMEOUT 10 /* How long the keys stay in the buffer */
 
 char keypad_matrix[KEYPAD_HEIGHT][KEYPAD_WIDTH]
  	= { {'1', '2', '3', 'A'}, 
@@ -96,15 +96,17 @@ void keypad_4x4_scan(void)
 }
 
 #pragma interrupt Timer_A0
+char ctr=0; /* This counter improves the debouncing */
 void Timer_A0(void)
 {
 	KUPIC_3 = 0; /* clear request flag */
-	if(keypad.debouncing) { /* if debouncing then just wait a bit */
+	if(keypad.debouncing || ctr++<2) { /* if debouncing then just wait a bit */
 		keypad.debouncing = 0;
 		TA0 = KEYPAD_DEBOUNCE_DELAY;
 		ONSF_0 = 1;
 		return;
 	}
+	ctr = 0;
 	keypad_4x4_scan(); /* Scan multiple keys */
 }
 
@@ -163,4 +165,13 @@ char read_key(void)
 	keypad_4x4_wait();
 	while(!(key = getcommand()));
 	return key;
+}
+
+char keypad_string_buffer[16];
+char * read_string(char stringLength) {
+	char i;
+	memset(keypad_string_buffer, 0, 16);
+	for(i = 0;i < stringLength && i < 16;i++)
+		keypad_string_buffer[i] = read_key();
+	return keypad_string_buffer;
 }
