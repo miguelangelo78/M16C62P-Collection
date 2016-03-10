@@ -99,11 +99,6 @@ void bluetooth_control_init(void) {
 	timer_init(bluetooth_control_worker, TIMERB0, 10, TIMER_MODE_NORMAL, 0, TIMER_CLK_F8, TIMER_PRI_3);
 }
 
-void bluetooth_control_stop(void) {
-	uart_deinit();
-	timer_deinit(TIMERB0);
-}
-
 void bluetooth_show_rpm(void) {
 	char str[32];
 	char motor_direction;

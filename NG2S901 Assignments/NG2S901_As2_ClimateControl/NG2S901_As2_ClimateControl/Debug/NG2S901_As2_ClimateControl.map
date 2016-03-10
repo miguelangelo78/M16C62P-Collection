@@ -5,61 +5,67 @@ c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\bin\ln30.exe @C:
 
 # LINK FILE INFORMATION
 ncrt0_rsk (C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\Debug\ncrt0_rsk.r30)
-	Mar  8 16:43:26 2016
+	Mar  9 19:53:33 2016
 
 uart (C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\Debug\uart.r30)
-	Mar  8 16:43:23 2016
+	Mar  9 19:53:30 2016
 
 7segment (C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\Debug\7segment.r30)
-	Mar  8 16:43:11 2016
+	Mar  9 19:53:26 2016
 
 adc (C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\Debug\adc.r30)
-	Mar  8 16:43:14 2016
+	Mar  9 19:53:27 2016
 
 FONT (C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\Debug\FONT.r30)
-	Mar  8 16:43:15 2016
+	Mar  9 18:13:31 2016
 
 GLCD (C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\Debug\GLCD.r30)
-	Mar  8 16:43:16 2016
+	Mar  9 18:13:32 2016
 
 hwsetup (C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\Debug\hwsetup.r30)
-	Mar  8 16:43:17 2016
+	Mar  9 18:13:33 2016
 
 keyscan_4x4 (C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\Debug\keyscan_4x4.r30)
-	Mar  8 16:43:18 2016
+	Mar  9 18:50:29 2016
 
 main (C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\Debug\main.r30)
-	Mar  8 16:44:32 2016
+	Mar  9 23:27:20 2016
 
 motor (C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\Debug\motor.r30)
-	Mar  8 16:43:19 2016
+	Mar  9 19:53:28 2016
 
 motor_sound (C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\Debug\motor_sound.r30)
-	Mar  8 16:43:19 2016
+	Mar  9 18:57:31 2016
 
 print (C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\Debug\print.r30)
-	Mar  8 16:43:25 2016
+	Mar  9 19:53:31 2016
 
 thermistor (C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\Debug\thermistor.r30)
-	Mar  8 16:43:22 2016
+	Mar  9 19:53:30 2016
 
 timer (C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\Debug\timer.r30)
-	Mar  8 16:43:22 2016
+	Mar  9 18:13:37 2016
 
 bluetooth_control (C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\Debug\bluetooth_control.r30)
-	Mar  8 16:43:10 2016
+	Mar  9 19:53:26 2016
 
 DS1307 (C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\Debug\DS1307.r30)
-	Mar  8 16:43:20 2016
+	Mar  9 19:53:29 2016
 
 DS1621 (C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\Debug\DS1621.r30)
-	Mar  8 16:43:21 2016
+	Mar  9 19:53:29 2016
+
+extra (C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\Debug\extra.r30)
+	Mar  9 23:32:50 2016
 
 i2c (C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\Debug\i2c.r30)
-	Mar  8 16:43:17 2016
+	Mar  9 19:53:28 2016
+
+ISR_DEFs (C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\Debug\ISR_DEFs.r30)
+	Mar  9 19:53:32 2016
 
 M24C04 (C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\Debug\M24C04.r30)
-	Mar  8 16:43:15 2016
+	Mar  9 19:53:27 2016
 
 _f4tof8 (c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib)
 	Feb 15 20:19:32 2007
@@ -195,40 +201,45 @@ data_NE                          REL DATA    000400 000000 2     ncrt0_rsk
                                  REL DATA    000448 000006 2     motor
                                  REL DATA    00044E 000004 2     bluetooth_control
                                  REL DATA    000452 00001C 2     DS1307
-                                 REL DATA    00046E 000008 2     i2c
-                                 REL DATA    000476 000010 2     mdata
-bss_NE                           REL DATA    000486 000000 2     ncrt0_rsk
-                                 REL DATA    000486 000004 2     uart
-                                 REL DATA    00048A 000004 2     adc
-                                 REL DATA    00048E 000020 2     keyscan_4x4
-                                 REL DATA    0004AE 000004 2     main
-                                 REL DATA    0004B2 000004 2     motor_sound
-                                 REL DATA    0004B6 000020 2     timer
-                                 REL DATA    0004D6 000020 2     bluetooth_control
-                                 REL DATA    0004F6 000020 2     i2c
-                                 REL DATA    000516 000004 2     _mbase
-                                 REL DATA    00051A 000008 2     mdata
-                                 REL DATA    000522 000004 2     sprintf
-                                 REL DATA    000526 000004 2     vsprintf
-                                 REL DATA    00052A 000108 2     print
-data_NO                          REL DATA    000632 000000       ncrt0_rsk
-                                 REL DATA    000632 00054F       FONT
-                                 REL DATA    000B81 000001       keyscan_4x4
-                                 REL DATA    000B82 000001       main
-                                 REL DATA    000B83 000002       motor
-                                 REL DATA    000B85 000001       DS1307
-                                 REL DATA    000B86 000002       i2c
-bss_NO                           REL DATA    000B88 000000       ncrt0_rsk
-                                 REL DATA    000B88 000002       GLCD
-                                 REL DATA    000B8A 000015       keyscan_4x4
-                                 REL DATA    000B9F 00000A       main
-                                 REL DATA    000BA9 000001       thermistor
-                                 REL DATA    000BAA 000012       DS1307
-                                 REL DATA    000BBC 00026A       print
-stack                            REL DATA    000E26 000600       ncrt0_rsk
-heap                             REL DATA    001426 000300       ncrt0_rsk
-rom_NE                           REL ROMDATA 001726 000000 2     ncrt0_rsk
-rom_NO                           REL ROMDATA 001726 000000       ncrt0_rsk
+                                 REL DATA    00046E 000002 2     extra
+                                 REL DATA    000470 000008 2     i2c
+                                 REL DATA    000478 000010 2     mdata
+bss_NE                           REL DATA    000488 000000 2     ncrt0_rsk
+                                 REL DATA    000488 000004 2     uart
+                                 REL DATA    00048C 000004 2     adc
+                                 REL DATA    000490 000020 2     keyscan_4x4
+                                 REL DATA    0004B0 000004 2     main
+                                 REL DATA    0004B4 000004 2     motor_sound
+                                 REL DATA    0004B8 000020 2     timer
+                                 REL DATA    0004D8 000020 2     bluetooth_control
+                                 REL DATA    0004F8 000090 2     extra
+                                 REL DATA    000588 000020 2     i2c
+                                 REL DATA    0005A8 00000C 2     ISR_DEFs
+                                 REL DATA    0005B4 000004 2     _mbase
+                                 REL DATA    0005B8 000008 2     mdata
+                                 REL DATA    0005C0 000004 2     sprintf
+                                 REL DATA    0005C4 000004 2     vsprintf
+                                 REL DATA    0005C8 000108 2     print
+data_NO                          REL DATA    0006D0 000000       ncrt0_rsk
+                                 REL DATA    0006D0 00054F       FONT
+                                 REL DATA    000C1F 000001       keyscan_4x4
+                                 REL DATA    000C20 000001       main
+                                 REL DATA    000C21 000002       motor
+                                 REL DATA    000C23 000001       DS1307
+                                 REL DATA    000C24 000001       extra
+                                 REL DATA    000C25 000002       i2c
+                                 REL DATA    000C27 000001       ISR_DEFs
+bss_NO                           REL DATA    000C28 000000       ncrt0_rsk
+                                 REL DATA    000C28 000002       GLCD
+                                 REL DATA    000C2A 000015       keyscan_4x4
+                                 REL DATA    000C3F 00000A       main
+                                 REL DATA    000C49 000001       thermistor
+                                 REL DATA    000C4A 000012       DS1307
+                                 REL DATA    000C5C 00026A       print
+stack                            REL DATA    000EC6 000600       ncrt0_rsk
+heap                             REL DATA    0014C6 000300       ncrt0_rsk
+rom_NE                           REL ROMDATA 0017C6 000000 2     ncrt0_rsk
+rom_NO                           REL ROMDATA 0017C6 000000       ncrt0_rsk
 data_FE                          ABS DATA    010000 000000       ncrt0_rsk
 bss_FE                           REL DATA    010000 000000 2     ncrt0_rsk
 data_FO                          REL DATA    010000 000000       ncrt0_rsk
@@ -236,200 +247,213 @@ bss_FO                           REL DATA    010000 000000       ncrt0_rsk
 rom_FE                           ABS ROMDATA 0F0000 000000       ncrt0_rsk
                                  REL ROMDATA 0F0000 000088 2     thermistor
 rom_FO                           REL ROMDATA 0F0088 000000       ncrt0_rsk
-                                 REL ROMDATA 0F0088 00047C       main
-                                 REL ROMDATA 0F0504 00003E       bluetooth_control
-                                 REL ROMDATA 0F0542 000069       DS1307
-                                 REL ROMDATA 0F05AB 00000A       print
-                                 REL ROMDATA 0F05B5 000101       cdata
-data_SEI                         REL ROMDATA 0F06B6 000000       ncrt0_rsk
-data_SOI                         REL ROMDATA 0F06B6 000000       ncrt0_rsk
-data_NEI                         REL ROMDATA 0F06B6 000000       ncrt0_rsk
-                                 REL ROMDATA 0F06B6 000022       7segment
-                                 REL ROMDATA 0F06D8 000012       GLCD
-                                 REL ROMDATA 0F06EA 000012       keyscan_4x4
-                                 REL ROMDATA 0F06FC 000002       main
-                                 REL ROMDATA 0F06FE 000006       motor
-                                 REL ROMDATA 0F0704 000004       bluetooth_control
-                                 REL ROMDATA 0F0708 00001C       DS1307
-                                 REL ROMDATA 0F0724 000008       i2c
-                                 REL ROMDATA 0F072C 000010       mdata
-data_NOI                         REL ROMDATA 0F073C 000000       ncrt0_rsk
-                                 REL ROMDATA 0F073C 00054F       FONT
-                                 REL ROMDATA 0F0C8B 000001       keyscan_4x4
-                                 REL ROMDATA 0F0C8C 000001       main
-                                 REL ROMDATA 0F0C8D 000002       motor
-                                 REL ROMDATA 0F0C8F 000001       DS1307
-                                 REL ROMDATA 0F0C90 000002       i2c
-data_FEI                         REL ROMDATA 0F0C92 000000       ncrt0_rsk
-data_FOI                         REL ROMDATA 0F0C92 000000       ncrt0_rsk
-switch_table                     REL ROMDATA 0F0C92 000000       ncrt0_rsk
-program                          REL CODE    0F0C92 000000       ncrt0_rsk
-                                 REL CODE    0F0C92 0001D3 2     uart
-                                 REL CODE    0F0E66 0000F1 2     7segment
-                                 REL CODE    0F0F58 000101 2     adc
-                                 REL CODE    0F105A 0007D1 2     GLCD
-                                 REL CODE    0F182C 0000E3 2     hwsetup
-                                 REL CODE    0F1910 000241 2     keyscan_4x4
-                                 REL CODE    0F1B52 000B83 2     main
-                                 REL CODE    0F26D6 0002BA 2     motor
-                                 REL CODE    0F2990 000155 2     motor_sound
-                                 REL CODE    0F2AE6 000198 2     print
-                                 REL CODE    0F2C7E 0000B0 2     thermistor
-                                 REL CODE    0F2D2E 00038A 2     timer
-                                 REL CODE    0F30B8 0002E9 2     bluetooth_control
-                                 REL CODE    0F33A2 000909 2     DS1307
-                                 REL CODE    0F3CAC 000133 2     DS1621
-                                 REL CODE    0F3DE0 0003B0 2     i2c
-                                 REL CODE    0F4190 0000CC 2     M24C04
-                                 REL CODE    0F425C 000086 2     _f4tof8
-                                 REL CODE    0F42E2 000025 2     _f4toi4u
-                                 REL CODE    0F4308 00091B 2     _f8add
-                                 REL CODE    0F4C24 000054 2     _f8ltor
-                                 REL CODE    0F4C78 0002C7 2     _f8mul
-                                 REL CODE    0F4F40 000025 2     _f8toi4u
-                                 REL CODE    0F4F66 000111 2     _ftol
-                                 REL CODE    0F5078 000083 2     _i4div
-                                 REL CODE    0F50FC 00004D 2     _i4divu
-                                 REL CODE    0F514A 00004B 2     _i4modu
-                                 REL CODE    0F5196 00001C 2     _i4mulu
-                                 REL CODE    0F51B2 000022 2     _i4tof8
-                                 REL CODE    0F51D4 000022 2     _i4utof4
-                                 REL CODE    0F51F6 0000D4 2     _ltof
-                                 REL CODE    0F52CA 000035 2     bcopy
-                                 REL CODE    0F5300 000028 2     bzero
-                                 REL CODE    0F5328 00004F 2     memcpy
-                                 REL CODE    0F5378 000041 2     memset
-                                 REL CODE    0F53BA 0000D3 2     sprintf
-                                 REL CODE    0F548E 000035 2     strchr
-                                 REL CODE    0F54C4 000035 2     strcmp
-                                 REL CODE    0F54FA 00003C 2     _strcpy
-                                 REL CODE    0F5536 00002B 2     strlen
-                                 REL CODE    0F5562 0000B7 2     vsprintf
-                                 REL CODE    0F561A 0000B0 2     _f4muls
-                                 REL CODE    0F56CA 000032 2     _f4rets
-                                 REL CODE    0F56FC 000046 2     _f4ltor
-                                 REL CODE    0F5742 00003E 2     _f4rtol
-                                 REL CODE    0F5780 000041 2     _f8rtol
-                                 REL CODE    0F57C2 001979 2     print
-                                 REL CODE    0F713C 00007C 2     _f8eq
-                                 REL CODE    0F71B8 0000A7 2     _f8ge
-                                 REL CODE    0F7260 0000A7 2     _f8lt
-                                 REL CODE    0F7308 00007C 2     _f8ne
-                                 REL CODE    0F7384 0000F8 2     _i8divu
-                                 REL CODE    0F747C 0000CF 2     _i8modu
-interrupt                        REL CODE    0F754B 000000       ncrt0_rsk
-                                 REL CODE    0F754B 000113       ncrt0_rsk
-program_S                        REL CODE    0F765E 000000       ncrt0_rsk
+                                 REL ROMDATA 0F0088 000498       main
+                                 REL ROMDATA 0F0520 00003E       bluetooth_control
+                                 REL ROMDATA 0F055E 000069       DS1307
+                                 REL ROMDATA 0F05C7 00000A       print
+                                 REL ROMDATA 0F05D1 000101       cdata
+data_SEI                         REL ROMDATA 0F06D2 000000       ncrt0_rsk
+data_SOI                         REL ROMDATA 0F06D2 000000       ncrt0_rsk
+data_NEI                         REL ROMDATA 0F06D2 000000       ncrt0_rsk
+                                 REL ROMDATA 0F06D2 000022       7segment
+                                 REL ROMDATA 0F06F4 000012       GLCD
+                                 REL ROMDATA 0F0706 000012       keyscan_4x4
+                                 REL ROMDATA 0F0718 000002       main
+                                 REL ROMDATA 0F071A 000006       motor
+                                 REL ROMDATA 0F0720 000004       bluetooth_control
+                                 REL ROMDATA 0F0724 00001C       DS1307
+                                 REL ROMDATA 0F0740 000002       extra
+                                 REL ROMDATA 0F0742 000008       i2c
+                                 REL ROMDATA 0F074A 000010       mdata
+data_NOI                         REL ROMDATA 0F075A 000000       ncrt0_rsk
+                                 REL ROMDATA 0F075A 00054F       FONT
+                                 REL ROMDATA 0F0CA9 000001       keyscan_4x4
+                                 REL ROMDATA 0F0CAA 000001       main
+                                 REL ROMDATA 0F0CAB 000002       motor
+                                 REL ROMDATA 0F0CAD 000001       DS1307
+                                 REL ROMDATA 0F0CAE 000001       extra
+                                 REL ROMDATA 0F0CAF 000002       i2c
+                                 REL ROMDATA 0F0CB1 000001       ISR_DEFs
+data_FEI                         REL ROMDATA 0F0CB2 000000       ncrt0_rsk
+data_FOI                         REL ROMDATA 0F0CB2 000000       ncrt0_rsk
+switch_table                     REL ROMDATA 0F0CB2 000000       ncrt0_rsk
+program                          REL CODE    0F0CB2 000000       ncrt0_rsk
+                                 REL CODE    0F0CB2 0001D3 2     uart
+                                 REL CODE    0F0E86 0000FE 2     7segment
+                                 REL CODE    0F0F84 000101 2     adc
+                                 REL CODE    0F1086 0007D1 2     GLCD
+                                 REL CODE    0F1858 0000E3 2     hwsetup
+                                 REL CODE    0F193C 000241 2     keyscan_4x4
+                                 REL CODE    0F1B7E 000BD9 2     main
+                                 REL CODE    0F2758 0002BA 2     motor
+                                 REL CODE    0F2A12 000155 2     motor_sound
+                                 REL CODE    0F2B68 000198 2     print
+                                 REL CODE    0F2D00 0000B0 2     thermistor
+                                 REL CODE    0F2DB0 00038A 2     timer
+                                 REL CODE    0F313A 0002DD 2     bluetooth_control
+                                 REL CODE    0F3418 00092B 2     DS1307
+                                 REL CODE    0F3D44 000133 2     DS1621
+                                 REL CODE    0F3E78 00017C 2     extra
+                                 REL CODE    0F3FF4 0003B0 2     i2c
+                                 REL CODE    0F43A4 000113 2     ISR_DEFs
+                                 REL CODE    0F44B8 0000CC 2     M24C04
+                                 REL CODE    0F4584 000086 2     _f4tof8
+                                 REL CODE    0F460A 000025 2     _f4toi4u
+                                 REL CODE    0F4630 00091B 2     _f8add
+                                 REL CODE    0F4F4C 000054 2     _f8ltor
+                                 REL CODE    0F4FA0 0002C7 2     _f8mul
+                                 REL CODE    0F5268 000025 2     _f8toi4u
+                                 REL CODE    0F528E 000111 2     _ftol
+                                 REL CODE    0F53A0 000083 2     _i4div
+                                 REL CODE    0F5424 00004D 2     _i4divu
+                                 REL CODE    0F5472 00004B 2     _i4modu
+                                 REL CODE    0F54BE 00001C 2     _i4mulu
+                                 REL CODE    0F54DA 000022 2     _i4tof8
+                                 REL CODE    0F54FC 000022 2     _i4utof4
+                                 REL CODE    0F551E 0000D4 2     _ltof
+                                 REL CODE    0F55F2 000035 2     bcopy
+                                 REL CODE    0F5628 000028 2     bzero
+                                 REL CODE    0F5650 00004F 2     memcpy
+                                 REL CODE    0F56A0 000041 2     memset
+                                 REL CODE    0F56E2 0000D3 2     sprintf
+                                 REL CODE    0F57B6 000035 2     strchr
+                                 REL CODE    0F57EC 000035 2     strcmp
+                                 REL CODE    0F5822 00003C 2     _strcpy
+                                 REL CODE    0F585E 00002B 2     strlen
+                                 REL CODE    0F588A 0000B7 2     vsprintf
+                                 REL CODE    0F5942 0000B0 2     _f4muls
+                                 REL CODE    0F59F2 000032 2     _f4rets
+                                 REL CODE    0F5A24 000046 2     _f4ltor
+                                 REL CODE    0F5A6A 00003E 2     _f4rtol
+                                 REL CODE    0F5AA8 000041 2     _f8rtol
+                                 REL CODE    0F5AEA 001979 2     print
+                                 REL CODE    0F7464 00007C 2     _f8eq
+                                 REL CODE    0F74E0 0000A7 2     _f8ge
+                                 REL CODE    0F7588 0000A7 2     _f8lt
+                                 REL CODE    0F7630 00007C 2     _f8ne
+                                 REL CODE    0F76AC 0000F8 2     _i8divu
+                                 REL CODE    0F77A4 0000CF 2     _i8modu
+interrupt                        REL CODE    0F7873 000000       ncrt0_rsk
+                                 REL CODE    0F7873 000113       ncrt0_rsk
+program_S                        REL CODE    0F7986 000000       ncrt0_rsk
 vector                           ABS ROMDATA 0FFD00 000100       ncrt0_rsk
 svector                          ABS ROMDATA 0FFE00 000000       ncrt0_rsk
 fvector                          ABS ROMDATA 0FFFFC 000004       ncrt0_rsk
 # Total -------------------------------------------------------------------
-                                     DATA           001326(0004902) Byte(s)
-                                     ROMDATA        000D96(0003478) Byte(s)
-                                     CODE           0069CC(0027084) Byte(s)
+                                     DATA           0013C6(0005062) Byte(s)
+                                     ROMDATA        000DB6(0003510) Byte(s)
+                                     CODE           006CD4(0027860) Byte(s)
 
 ##########################################
 # (3) GLOBAL LABEL INFORMATION           #
 ##########################################
-$GLCD_Circle       0f16e4  $GLCD_GoTo         0f15b0  $GLCD_Rectangle    0f1676
-$GLCD_WriteChar    0f13bc  $LcdDataWrite      0f1144  $LcdInstructionW   0f1172
-$LcdSelectSide     0f1104  $LcdSetDot         0f12e0  $_f4ltor           0f56fc
-$_f4rtol           0f5742  $_f8geti           0f6e10  $_f8ltor           0f4c24
-$_f8rtol           0f5780  $_ftol             0f4f66  $_inmod            0f7020
-$_ltof             0f51f6  $adc_read          0f1018  $bcd2dec           0f33ce
-$bcd_to_7seg       0f0eaa  $bin_2_bcd         0f0e7e  $btooth_exec_cmd   0f30b8
-$dec2bcd           0f33a2  $eeprom_read       0f4200  $eeprom_read_buf   0f4214
-$eeprom_write      0f41aa  $eeprom_write_bu   0f41d4  $exit              0f765b
-$henkan1           0f6c6c  $henkan2           0f6cae  $i2c_ping_slave    0f4168
-$i2c_read          0f3fc2  $i2c_read_buff     0f4002  $i2c_send          0f3f60
-$i2c_send_and_re   0f408c  $i2c_send_and_re   0f40dc  $i2c_send_str      0f3f86
-$i2c_set_ack       0f3f38  $i2c_thermistor_   0f3d1c  $i2c_thermistor_   0f3d30
-$i2c_thermistor_   0f3cac  $i2c_thermistor_   0f3cc0  $i2c_thermistor_   0f3ce4
-$i2c_thermistor_   0f3dba  $i2c_thermistor_   0f3d66  $i2c_transmit      0f3f46
-$memset            0f5378  $motor_spin        0f2952  $motor_tone        0f2a08
-$motor_tone_us     0f2990  $motor_update_pw   0f26d6  $motor_update_rp   0f2726
-$read_string       0f1b0e  $rtc_read_time_f   0f3ba4  $rtc_selreg        0f3510
-$rtc_set_hours     0f39e0  $rtc_set_minutes   0f39c6  $rtc_set_month     0f3a6e
-$rtc_set_monthda   0f3a50  $rtc_set_seconds   0f399e  $rtc_set_weekday   0f3a32
-$rtc_set_year      0f3a8c  $rtc_switch_mode   0f367a  $rtc_write         0f34ec
-$seg_update        0f0ee0  $set_temperature   0f1b5e  $set_temperature   0f1b78
-$strchr            0f548e  $thermistor_togg   0f2cb6  $timer_deinit      0f2fce
-$timer_uninstall   0f30a4  $uart_receive      0f31fe  $uart_receive_st   0f3168
-$uart_write        0f0d78  $uart_writebuff    0f0db4  $validate_authen   0f1c8e
-_ADC_Interrupt     0f1044  _FontSystem3x6     000632  _FontSystem5x8     0006f5
-_FontSystem7x8     0008da  _Font_System3x6    00042e  _Font_System5x8    000422
-_Font_System7x8    000428  _GLCD_ClearScree   0f11fe  _GLCD_DisplayPic   0f1252
-_GLCD_DisplayVal   0f15f2  _GLCD_Initialise   0f107c  _GLCD_WriteStrin   0f1582
-_GLCD_getXY        0f17f6  _Initialise        0f182c  _KYB               0f1a68
-_LcdDataRead       0f11a0  _LcdDelay          0f105a  _LcdWaitBusy       0f11d2
-_Timer_A0          0f1a3a  _Timer_A1          0f2d2e  _Timer_A2          0f2d44
-_Timer_A3          0f2d5a  _Timer_A4          0f2d70  _Timer_B0          0f2d86
-_Timer_B1          0f2d9c  _Timer_B2          0f2db2  _U0rec_ISR         0f0e44
-__ctype            0f05b5  __f4mul            0f563e  __f4retInf         0f56d4
-__f4retNaN         0f56ca  __f4retNum         0f56e4  __f4retZero        0f56d0
-__f4tof8           0f425c  __f4toi4U          0f42e2  __f8add            0f4308
-__f8eq             0f713c  __f8ge             0f71b8  __f8lt             0f7260
-__f8mul            0f4c78  __f8ne             0f7308  __f8prn            0f6716
-__f8toi4U          0f4f40  __i4Utof4          0f51d4  __i4div            0f5078
-__i4divU           0f50fc  __i4modU           0f514a  __i4mulU           0f5196
-__i4tof8           0f51b2  __i8divU           0f7384  __i8modU           0f747c
-__mbase            000516  __memt             00047e  __mnext            00051a
-__msize            00051e  __pool             000476  __pri              0f6d02
-__print            0f57c2  _adc_cback         00048a  _adc_deinit        0f1006
-_adc_init          0f0f90  _adc_init_easy     0f0f58  _authenticate      0f1c68
-_bcd_table         000400  _bcd_table_hex     000414  _bcopy             0f52ca
-_bluetooth_contr   0f32aa  _bluetooth_contr   0f32e4  _bluetooth_contr   0f324e
-_bluetooth_show_   0f32f0  _btooth_preload    000450  _bzero             0f5300
-_change_pincode_   0f212a  _change_temperat   0f1d32  _change_thermist   0f2210
-_climate_control   0f2300  _ctr               000b81  _current_temp      0004ae
-_current_thermis   000ba9  _deinit_motor      0f2920  _deinit_motor_so   0f2abc
-_deinit_rtc        0f361c  _delay             0f0c92  _desired_temp      0004b0
-_eeprom_deinit     0f41a6  _eeprom_disable_   0f4196  _eeprom_enable_w   0f4190
-_eeprom_init       0f419c  _encoder_init      0f283a  _encoder_oneshot   000b84
-_encoder_trigger   0f27aa  _exit              0f765b  _get_desired_tem   0f1b58
-_get_temperature   0f1b52  _getcommand        0f1ad8  _hold_delay        000444
-_i                 00044e  _i2c_busy          000b86  _i2c_deinit        0f3e5e
-_i2c_delay         0f3e14  _i2c_disable_rx    0f3f00  _i2c_disable_tx    0f3f1a
-_i2c_enable_rx     0f3ef8  _i2c_enable_tx     0f3f06  _i2c_flush_tx      0f3ee6
-_i2c_init          0f3e28  _i2c_is_busy       0f3e10  _i2c_is_inititia   000b87
-_i2c_is_nack       0f3f2e  _i2c_is_schedule   0f3df0  _i2c_read_buffer   0004f6
-_i2c_restart       0f3e86  _i2c_set_schedul   0f3de0  _i2c_start         0f3e6c
-_i2c_stop          0f3ea0  _i2c_thermistor_   0f3dac  _i2c_thermistor_   0f3d9e
-_i2c_thermistor_   0f3db0  _i2c_thermistor_   0f3dd8  _i2c_thermistor_   0f3d96
-_i2c_wait_n_ack    0f3f20  _init_7seg         0f0e66  _init_motor        0f289e
-_init_motor_soun   0f2a82  _init_rtc          0f360a  _intro             0f25e6
-_keypad            000b8a  _keypad_4x4_flus   0f1952  _keypad_4x4_iske   0f1ae2
-_keypad_4x4_read   0f1a8c  _keypad_4x4_scan   0f19a0  _keypad_4x4_wait   0f1ae6
-_keypad_4x4_wait   0f1af8  _keypad_buff_cpy   00048e  _keypad_delay      0f1970
-_keypad_matrix     000434  _keypad_string_b   00049e  _keyscan_4x4_cle   0f1986
-_keyscan_4x4_ini   0f1910  _load_pincode      0f1bc0  _main              0f267a
-_managing_climat   000b82  _memcpy            0f5328  _motor_adjust_to   00044a
-_motor_cback       0f27d8  _motor_get_direc   0f298c  _motor_read_rpm    0f2986
-_motor_rpm         000448  _motor_stop        0f2942  _ms_elapsed        00044c
-_old_tick          000b85  _oldreg            0004b4  _oldreg_dir        0004b2
-_pinBuffer         000ba4  _pincode           000b9f  _potVal            000446
-_pot_cback         0f1d22  _printf            0f2ae6  _printf_at         0f2b44
-_printf_at_rl      0f2bd6  _read_clock        0f36ec  _read_key          0f1afc
-_read_pin          0f1bf4  _request_pincode   0f256a  _rtc_bcd_to_dec    0f33f2
-_rtc_get_hours     0f371a  _rtc_get_minutes   0f370e  _rtc_get_month     0f3756
-_rtc_get_monthda   0f374a  _rtc_get_seconds   0f36fe  _rtc_get_weekday   0f373e
-_rtc_get_year      0f3762  _rtc_has_ticked    0f3b90  _rtc_is12H         0f361e
-_rtc_isPM          0f362e  _rtc_is_stopped    0f3b2a  _rtc_reset         0f3b74
-_rtc_set24H        0f3654  _rtc_setAM         0f3660  _rtc_setPM         0f366e
-_rtc_set_clock     0f37d0  _rtc_start         0f3b46  _rtc_stop          0f3b14
-_rx_buff           0004e6  _sched             00046e  _sched_copy        000472
-_set_new_pincode   0f1b8c  _set_time_menu     0f1e9a  _settings_menu     0f2266
-_spinning_direct   000b83  _sprintf           0f53ba  _strcmp            0f54c4
-_strcpy            0f54fa  _strlen            0f5536  _temp_lookup       0f0000
-_thermistor_dein   0f2cac  _thermistor_init   0f2c7e  _thermistor_read   0f2d00
-_thermistor_type   0f2d2a  _timer_cback_lis   0004b6  _timer_deinit_al   0f307a
-_timer_init        0f2dc8  _timer_install_c   0f3090  _u8CursorX         000b88
-_u8CursorY         000b89  _uart_cback_list   000486  _uart_cmd_schedu   0f3136
-_uart_cmd_schedu   0004d6  _uart_deinit       0f0d18  _uart_init         0f0cac
-_uart_install_cb   0f0e2a  _uart_read         0f0dda  _uart_read_async   0f0e00
-_uart_uninstall_   0f0e3a  _uart_writestr     0f0d8c  _update_clock      0f3524
-_update_new_cloc   0f35b0  _vsprintf          0f5562  _weekdays          000452
-dummy_int          0f765d  start              0f754b  
+$GLCD_Circle       0f1710  $GLCD_GoTo         0f15dc  $GLCD_Rectangle    0f16a2
+$GLCD_WriteChar    0f13e8  $LcdDataWrite      0f1170  $LcdInstructionW   0f119e
+$LcdSelectSide     0f1130  $LcdSetDot         0f130c  $_f4ltor           0f5a24
+$_f4rtol           0f5a6a  $_f8geti           0f7138  $_f8ltor           0f4f4c
+$_f8rtol           0f5aa8  $_ftol             0f528e  $_inmod            0f7348
+$_ltof             0f551e  $adc_read          0f1044  $bcd2dec           0f3444
+$bcd_to_7seg       0f0eca  $bin_2_bcd         0f0e9e  $btooth_exec_cmd   0f313a
+$check_i2c         0f2696  $dec2bcd           0f3418  $eeprom_read       0f4528
+$eeprom_read_buf   0f453c  $eeprom_write      0f44d2  $eeprom_write_bu   0f44fc
+$exit              0f7983  $henkan1           0f6f94  $henkan2           0f6fd6
+$i2c_ping_slave    0f437c  $i2c_read          0f41d6  $i2c_read_buff     0f4216
+$i2c_send          0f4174  $i2c_send_and_re   0f42a0  $i2c_send_and_re   0f42f0
+$i2c_send_str      0f419a  $i2c_set_ack       0f414c  $i2c_thermistor_   0f3db4
+$i2c_thermistor_   0f3dc8  $i2c_thermistor_   0f3d44  $i2c_thermistor_   0f3d58
+$i2c_thermistor_   0f3d7c  $i2c_thermistor_   0f3e52  $i2c_thermistor_   0f3dfe
+$i2c_transmit      0f415a  $memset            0f56a0  $motor_spin        0f29d4
+$motor_tone        0f2a8a  $motor_tone_us     0f2a12  $motor_update_pw   0f2758
+$motor_update_rp   0f27a8  $read_string       0f1b3a  $rtc_read_time_f   0f3c3c
+$rtc_selreg        0f35a8  $rtc_set_hours     0f3a78  $rtc_set_minutes   0f3a5e
+$rtc_set_month     0f3b06  $rtc_set_monthda   0f3ae8  $rtc_set_seconds   0f3a36
+$rtc_set_weekday   0f3aca  $rtc_set_year      0f3b24  $rtc_switch_mode   0f3712
+$rtc_write         0f3584  $seg_update        0f0f00  $set_isr_priorit   0f43c4
+$set_temperature   0f1b8a  $set_temperature   0f1ba4  $strchr            0f57b6
+$thermistor_togg   0f2d38  $timer_deinit      0f3050  $timer_uninstall   0f3126
+$uart_receive      0f3280  $uart_receive_st   0f31ea  $uart_write        0f0d98
+$uart_writebuff    0f0dd4  $uninstall_cback   0f4450  $validate_authen   0f1cac
+_ADC_Interrupt     0f1070  _FontSystem3x6     0006d0  _FontSystem5x8     000793
+_FontSystem7x8     000978  _Font_System3x6    00042e  _Font_System5x8    000422
+_Font_System7x8    000428  _GLCD_ClearScree   0f122a  _GLCD_DisplayPic   0f127e
+_GLCD_DisplayVal   0f161e  _GLCD_Initialise   0f10a8  _GLCD_WriteStrin   0f15ae
+_GLCD_getXY        0f1822  _INT0              0f4476  _INT1              0f448c
+_INT2              0f44a2  _Initialise        0f1858  _KYB               0f1a94
+_LcdDataRead       0f11cc  _LcdDelay          0f1086  _LcdWaitBusy       0f11fe
+_Timer_A0          0f1a66  _Timer_A1          0f2db0  _Timer_A2          0f2dc6
+_Timer_A3          0f2ddc  _Timer_A4          0f2df2  _Timer_B0          0f2e08
+_Timer_B1          0f2e1e  _Timer_B2          0f2e34  _U0rec_ISR         0f0e64
+__ctype            0f05d1  __f4mul            0f5966  __f4retInf         0f59fc
+__f4retNaN         0f59f2  __f4retNum         0f5a0c  __f4retZero        0f59f8
+__f4tof8           0f4584  __f4toi4U          0f460a  __f8add            0f4630
+__f8eq             0f7464  __f8ge             0f74e0  __f8lt             0f7588
+__f8mul            0f4fa0  __f8ne             0f7630  __f8prn            0f6a3e
+__f8toi4U          0f5268  __i4Utof4          0f54fc  __i4div            0f53a0
+__i4divU           0f5424  __i4modU           0f5472  __i4mulU           0f54be
+__i4tof8           0f54da  __i8divU           0f76ac  __i8modU           0f77a4
+__mbase            0005b4  __memt             000480  __mnext            0005b8
+__msize            0005bc  __pool             000478  __pri              0f702a
+__print            0f5aea  _adc_cback         00048c  _adc_deinit        0f1032
+_adc_init          0f0fbc  _adc_init_easy     0f0f84  _authenticate      0f1c86
+_ball              000500  _bcd_table         000400  _bcd_table_hex     000414
+_bcopy             0f55f2  _blocks            000508  _bluetooth_contr   0f332c
+_bluetooth_contr   0f32d0  _bluetooth_show_   0f3366  _btooth_preload    000450
+_bzero             0f5628  _change_pincode_   0f2148  _change_temperat   0f1d50
+_change_thermist   0f222e  _climate_control   0f231e  _ctr               000c1f
+_current_temp      0004b0  _current_thermis   000c49  _deinit_motor      0f29a2
+_deinit_motor_so   0f2b3e  _deinit_rtc        0f36b4  _delay             0f0cb2
+_desired_temp      0004b2  _eeprom_deinit     0f44ce  _eeprom_disable_   0f44be
+_eeprom_enable_w   0f44b8  _eeprom_init       0f44c4  _enable_extra      000c24
+_encoder_init      0f28bc  _encoder_oneshot   000c22  _encoder_trigger   0f282c
+_exit              0f7983  _extra_cback       0f3fe8  _extra_deinit      0f3f8a
+_extra_init        0f3f98  _get_desired_tem   0f1b84  _get_temperature   0f1b7e
+_getcommand        0f1b04  _handle_input      0f3e86  _hold_delay        000444
+_i                 00044e  _i2c_busy          000c25  _i2c_deinit        0f4072
+_i2c_delay         0f4028  _i2c_disable_rx    0f4114  _i2c_disable_tx    0f412e
+_i2c_enable_rx     0f410c  _i2c_enable_tx     0f411a  _i2c_flush_tx      0f40fa
+_i2c_init          0f403c  _i2c_is_busy       0f4024  _i2c_is_inititia   000c26
+_i2c_is_nack       0f4142  _i2c_is_schedule   0f4004  _i2c_read_buffer   000588
+_i2c_restart       0f409a  _i2c_set_schedul   0f3ff4  _i2c_start         0f4080
+_i2c_stop          0f40b4  _i2c_thermistor_   0f3e44  _i2c_thermistor_   0f3e36
+_i2c_thermistor_   0f3e48  _i2c_thermistor_   0f3e70  _i2c_thermistor_   0f3e2e
+_i2c_wait_n_ack    0f4134  _init_7seg         0f0e86  _init_entities     0f3e92
+_init_isr          0f43c0  _init_motor        0f2920  _init_motor_soun   0f2b04
+_init_rtc          0f36a2  _install_cback     0f442a  _intro             0f25ec
+_isr_callbacks     0005a8  _keypad            000c2a  _keypad_4x4_flus   0f197e
+_keypad_4x4_iske   0f1b0e  _keypad_4x4_read   0f1ab8  _keypad_4x4_scan   0f19cc
+_keypad_4x4_wait   0f1b12  _keypad_4x4_wait   0f1b24  _keypad_buff_cpy   000490
+_keypad_delay      0f199c  _keypad_matrix     000434  _keypad_string_b   0004a0
+_keyscan_4x4_cle   0f19b2  _keyscan_4x4_ini   0f193c  _load_pincode      0f1bec
+_main              0f26e2  _main_loop         0f3f66  _managing_climat   000c20
+_memcpy            0f5650  _motor_adjust_to   00044a  _motor_cback       0f285a
+_motor_get_direc   0f2a0e  _motor_read_rpm    0f2a08  _motor_rpm         000448
+_motor_stop        0f29c4  _ms_elapsed        00044c  _old_tick          000c23
+_oldreg            0004b6  _oldreg_dir        0004b4  _pinBuffer         000c44
+_pincode           000c3f  _player            0004f8  _potVal            000446
+_potValue          00046e  _pot_cback         0f1d40  _potentiometer_c   0f3f7a
+_printf            0f2b68  _printf_at         0f2bc6  _printf_at_rl      0f2c58
+_priority_counte   000c27  _read_clock        0f3784  _read_key          0f1b28
+_read_pin          0f1c20  _render            0f3e78  _request_pincode   0f2570
+_rtc_bcd_to_dec    0f3468  _rtc_get_hours     0f37b2  _rtc_get_minutes   0f37a6
+_rtc_get_month     0f37ee  _rtc_get_monthda   0f37e2  _rtc_get_seconds   0f3796
+_rtc_get_weekday   0f37d6  _rtc_get_year      0f37fa  _rtc_has_ticked    0f3c28
+_rtc_is12H         0f36b6  _rtc_isPM          0f36c6  _rtc_is_stopped    0f3bc2
+_rtc_reset         0f3c0c  _rtc_set24H        0f36ec  _rtc_setAM         0f36f8
+_rtc_setPM         0f3706  _rtc_set_clock     0f3868  _rtc_start         0f3bde
+_rtc_stop          0f3bac  _rx_buff           0004e8  _sched             000470
+_sched_copy        000474  _seg_turnoff       0f0f78  _set_new_pincode   0f1bb8
+_set_time_menu     0f1eb8  _settings_menu     0f2284  _spinning_direct   000c21
+_sprintf           0f56e2  _strcmp            0f57ec  _strcpy            0f5822
+_strlen            0f585e  _temp_lookup       0f0000  _thermistor_dein   0f2d2e
+_thermistor_init   0f2d00  _thermistor_read   0f2d82  _thermistor_type   0f2dac
+_timer_cback_lis   0004b8  _timer_deinit_al   0f30fc  _timer_init        0f2e4a
+_timer_install_c   0f3112  _u8CursorX         000c28  _u8CursorY         000c29
+_uart_cback_list   000488  _uart_cmd_schedu   0f31b8  _uart_cmd_schedu   0004d8
+_uart_deinit       0f0d38  _uart_init         0f0ccc  _uart_install_cb   0f0e4a
+_uart_read         0f0dfa  _uart_read_async   0f0e20  _uart_uninstall_   0f0e5a
+_uart_writestr     0f0dac  _uninstall_all_c   0f43a4  _update            0f3e84
+_update_clock      0f35bc  _update_new_cloc   0f3648  _vsprintf          0f588a
+_weekdays          000452  dummy_int          0f7985  start              0f7873
 
 ##########################################
 # (4) GLOBAL EQU SYMBOL INFORMATION      #
@@ -460,7 +484,9 @@ __SB__           00000400
 @ bluetooth_control ( C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\Debug\bluetooth_control.r30 )
 @ DS1307 ( C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\Debug\DS1307.r30 )
 @ DS1621 ( C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\Debug\DS1621.r30 )
+@ extra ( C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\Debug\extra.r30 )
 @ i2c ( C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\Debug\i2c.r30 )
+@ ISR_DEFs ( C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\Debug\ISR_DEFs.r30 )
 @ M24C04 ( C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\Debug\M24C04.r30 )
 @ _f4tof8 ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib )
 @ _f4toi4u ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib )
@@ -522,7 +548,9 @@ __SB__           00000400
 @ bluetooth_control ( C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\Debug\bluetooth_control.r30 )
 @ DS1307 ( C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\Debug\DS1307.r30 )
 @ DS1621 ( C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\Debug\DS1621.r30 )
+@ extra ( C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\Debug\extra.r30 )
 @ i2c ( C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\Debug\i2c.r30 )
+@ ISR_DEFs ( C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\Debug\ISR_DEFs.r30 )
 @ M24C04 ( C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\Debug\M24C04.r30 )
 @ _f4tof8 ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib )
 @ _f4toi4u ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib )
@@ -584,7 +612,9 @@ __SB__           00000400
 @ bluetooth_control ( C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\Debug\bluetooth_control.r30 )
 @ DS1307 ( C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\Debug\DS1307.r30 )
 @ DS1621 ( C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\Debug\DS1621.r30 )
+@ extra ( C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\Debug\extra.r30 )
 @ i2c ( C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\Debug\i2c.r30 )
+@ ISR_DEFs ( C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\Debug\ISR_DEFs.r30 )
 @ M24C04 ( C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\Debug\M24C04.r30 )
 @ _f4tof8 ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib )
 @ _f4toi4u ( c:\program files (x86)\renesas\hew\tools\renesas\nc30wa\v543r00\lib30\nc30lib.lib )
@@ -639,21 +669,21 @@ data_SO
 bss_SO
                                   00000400  00000400         0   1
 data_NE
-                                  00000400  00000485        86   2
+                                  00000400  00000487        88   2
 bss_NE
-                                  00000486  00000631       1ac   2
+                                  00000488  000006cf       248   2
 data_NO
-                                  00000632  00000b87       556   1
+                                  000006d0  00000c27       558   1
 bss_NO
-                                  00000b88  00000e25       29e   1
+                                  00000c28  00000ec5       29e   1
 stack
-                                  00000e26  00001425       600   1
+                                  00000ec6  000014c5       600   1
 heap
-                                  00001426  00001725       300   1
+                                  000014c6  000017c5       300   1
 rom_NE
-                                  00001726  00001726         0   2
+                                  000017c6  000017c6         0   2
 rom_NO
-                                  00001726  00001726         0   1
+                                  000017c6  000017c6         0   1
 data_FE
                                   00010000  00010000         0   1
 bss_FE
@@ -665,27 +695,27 @@ bss_FO
 rom_FE
                                   000f0000  000f0087        88   1
 rom_FO
-                                  000f0088  000f06b5       62e   1
+                                  000f0088  000f06d1       64a   1
 data_SEI
-                                  000f06b6  000f06b6         0   1
+                                  000f06d2  000f06d2         0   1
 data_SOI
-                                  000f06b6  000f06b6         0   1
+                                  000f06d2  000f06d2         0   1
 data_NEI
-                                  000f06b6  000f073b        86   1
+                                  000f06d2  000f0759        88   1
 data_NOI
-                                  000f073c  000f0c91       556   1
+                                  000f075a  000f0cb1       558   1
 data_FEI
-                                  000f0c92  000f0c92         0   1
+                                  000f0cb2  000f0cb2         0   1
 data_FOI
-                                  000f0c92  000f0c92         0   1
+                                  000f0cb2  000f0cb2         0   1
 switch_table
-                                  000f0c92  000f0c92         0   1
+                                  000f0cb2  000f0cb2         0   1
 program
-                                  000f0c92  000f754a      68b9   1
+                                  000f0cb2  000f7872      6bc1   1
 interrupt
-                                  000f754b  000f765d       113   1
+                                  000f7873  000f7985       113   1
 program_S
-                                  000f765e  000f765e         0   1
+                                  000f7986  000f7986         0   1
 vector
                                   000ffd00  000ffdff       100   1
 svector
@@ -755,147 +785,176 @@ FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As2_ClimateControl/NG2S
   _weekdays
                                   00000452        1c   data ,g         0
 
+FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As2_ClimateControl/NG2S901_As2_ClimateControl/extra
+                                  0000046e  0000046f         2
+  _potValue
+                                  0000046e         2   data ,g         0
+
 FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As2_ClimateControl/NG2S901_As2_ClimateControl/drivers/i2c/i2c
-                                  0000046e  00000475         8
+                                  00000470  00000477         8
   _sched
-                                  0000046e         4   data ,g         0
+                                  00000470         4   data ,g         0
   _sched_copy
-                                  00000472         4   data ,g         0
+                                  00000474         4   data ,g         0
 
 FILE=mdata
-                                  00000476  00000485        10
+                                  00000478  00000487        10
   __memt
-                                  0000047e         0   none ,g         0
+                                  00000480         0   none ,g         0
   __pool
-                                  00000476         0   none ,g         0
+                                  00000478         0   none ,g         0
 
 SECTION=bss_NE
 FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As2_ClimateControl/NG2S901_As2_ClimateControl/drivers/uart/uart
-                                  00000486  00000489         4
+                                  00000488  0000048b         4
   _uart_cback_list
-                                  00000486         4   data ,g         0
+                                  00000488         4   data ,g         0
 
 FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As2_ClimateControl/NG2S901_As2_ClimateControl/drivers/adc/adc
-                                  0000048a  0000048d         4
+                                  0000048c  0000048f         4
   _adc_cback
-                                  0000048a         4   data ,g         0
+                                  0000048c         4   data ,g         0
 
 FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As2_ClimateControl/NG2S901_As2_ClimateControl/drivers/keypad/keyscan_4x4
-                                  0000048e  000004ad        20
+                                  00000490  000004af        20
   _keypad_buff_cpy
-                                  0000048e        10   data ,g         0
+                                  00000490        10   data ,g         0
   _keypad_string_buffer
-                                  0000049e        10   data ,g         0
+                                  000004a0        10   data ,g         0
 
 FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As2_ClimateControl/NG2S901_As2_ClimateControl/main
-                                  000004ae  000004b1         4
+                                  000004b0  000004b3         4
   _current_temp
-                                  000004ae         2   data ,g         0
-  _desired_temp
                                   000004b0         2   data ,g         0
+  _desired_temp
+                                  000004b2         2   data ,g         0
 
 FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As2_ClimateControl/NG2S901_As2_ClimateControl/drivers/motor/motor_sound
-                                  000004b2  000004b5         4
+                                  000004b4  000004b7         4
   _oldreg_dir
-                                  000004b2         2   data ,g         0
-  _oldreg
                                   000004b4         2   data ,g         0
+  _oldreg
+                                  000004b6         2   data ,g         0
 
 FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As2_ClimateControl/NG2S901_As2_ClimateControl/drivers/timer/timer
-                                  000004b6  000004d5        20
+                                  000004b8  000004d7        20
   _timer_cback_list
-                                  000004b6        20   data ,g         0
+                                  000004b8        20   data ,g         0
 
 FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As2_ClimateControl/NG2S901_As2_ClimateControl/bluetooth_control
-                                  000004d6  000004f5        20
+                                  000004d8  000004f7        20
   _uart_cmd_schedule_data
-                                  000004d6        10   data ,g         0
+                                  000004d8        10   data ,g         0
   _rx_buff
-                                  000004e6        10   data ,g         0
+                                  000004e8        10   data ,g         0
+
+FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As2_ClimateControl/NG2S901_As2_ClimateControl/extra
+                                  000004f8  00000587        90
+  _player
+                                  000004f8         8   data ,g         0
+  _ball
+                                  00000500         8   data ,g         0
+  _blocks
+                                  00000508        80   data ,g         0
 
 FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As2_ClimateControl/NG2S901_As2_ClimateControl/drivers/i2c/i2c
-                                  000004f6  00000515        20
+                                  00000588  000005a7        20
   _i2c_read_buffer
-                                  000004f6        20   data ,g         0
+                                  00000588        20   data ,g         0
+
+FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As2_ClimateControl/NG2S901_As2_ClimateControl/drivers/isr/ISR_DEFs
+                                  000005a8  000005b3         c
+  _isr_callbacks
+                                  000005a8         c   data ,g         0
 
 FILE=_mbase
-                                  00000516  00000519         4
+                                  000005b4  000005b7         4
   __mbase
-                                  00000516         0   none ,g         0
+                                  000005b4         0   none ,g         0
 
 FILE=mdata
-                                  0000051a  00000521         8
+                                  000005b8  000005bf         8
   __mnext
-                                  0000051a         0   none ,g         0
+                                  000005b8         0   none ,g         0
   __msize
-                                  0000051e         0   none ,g         0
+                                  000005bc         0   none ,g         0
 
 SECTION=data_NO
 FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As2_ClimateControl/NG2S901_As2_ClimateControl/drivers/glcd/FONT
-                                  00000632  00000b80       54f
+                                  000006d0  00000c1e       54f
   _FontSystem3x6
-                                  00000632        c3   data ,g         0
+                                  000006d0        c3   data ,g         0
   _FontSystem5x8
-                                  000006f5       1e5   data ,g         0
+                                  00000793       1e5   data ,g         0
   _FontSystem7x8
-                                  000008da       2a7   data ,g         0
+                                  00000978       2a7   data ,g         0
 
 FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As2_ClimateControl/NG2S901_As2_ClimateControl/drivers/keypad/keyscan_4x4
-                                  00000b81  00000b81         1
+                                  00000c1f  00000c1f         1
   _ctr
-                                  00000b81         1   data ,g         0
+                                  00000c1f         1   data ,g         0
 
 FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As2_ClimateControl/NG2S901_As2_ClimateControl/main
-                                  00000b82  00000b82         1
+                                  00000c20  00000c20         1
   _managing_climate
-                                  00000b82         1   data ,g         0
+                                  00000c20         1   data ,g         0
 
 FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As2_ClimateControl/NG2S901_As2_ClimateControl/drivers/motor/motor
-                                  00000b83  00000b84         2
+                                  00000c21  00000c22         2
   _spinning_direction
-                                  00000b83         1   data ,g         0
+                                  00000c21         1   data ,g         0
   _encoder_oneshot
-                                  00000b84         1   data ,g         0
+                                  00000c22         1   data ,g         0
 
 FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As2_ClimateControl/NG2S901_As2_ClimateControl/drivers/rtc/DS1307
-                                  00000b85  00000b85         1
+                                  00000c23  00000c23         1
   _old_tick
-                                  00000b85         1   data ,g         0
+                                  00000c23         1   data ,g         0
+
+FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As2_ClimateControl/NG2S901_As2_ClimateControl/extra
+                                  00000c24  00000c24         1
+  _enable_extra
+                                  00000c24         1   data ,g         0
 
 FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As2_ClimateControl/NG2S901_As2_ClimateControl/drivers/i2c/i2c
-                                  00000b86  00000b87         2
+                                  00000c25  00000c26         2
   _i2c_busy
-                                  00000b86         1   data ,g         0
+                                  00000c25         1   data ,g         0
   _i2c_is_inititialized
-                                  00000b87         1   data ,g         0
+                                  00000c26         1   data ,g         0
+
+FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As2_ClimateControl/NG2S901_As2_ClimateControl/drivers/isr/ISR_DEFs
+                                  00000c27  00000c27         1
+  _priority_counter
+                                  00000c27         1   data ,g         0
 
 SECTION=bss_NO
 FILE=ncrt0_rsk
-                                  00000b88  00000b88         0
+                                  00000c28  00000c28         0
   _u8CursorX
-                                  00000b88         1   data ,g         0
+                                  00000c28         1   data ,g         0
 
 FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As2_ClimateControl/NG2S901_As2_ClimateControl/drivers/glcd/GLCD
-                                  00000b88  00000b89         2
+                                  00000c28  00000c29         2
   _u8CursorY
-                                  00000b89         1   data ,g         0
+                                  00000c29         1   data ,g         0
 
 FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As2_ClimateControl/NG2S901_As2_ClimateControl/drivers/keypad/keyscan_4x4
-                                  00000b8a  00000b9e        15
+                                  00000c2a  00000c3e        15
   _keypad
-                                  00000b8a        15   data ,g         0
+                                  00000c2a        15   data ,g         0
 
 FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As2_ClimateControl/NG2S901_As2_ClimateControl/main
-                                  00000b9f  00000ba8         a
+                                  00000c3f  00000c48         a
   _pincode
-                                  00000b9f         5   data ,g         0
+                                  00000c3f         5   data ,g         0
   _pinBuffer
-                                  00000ba4         5   data ,g         0
+                                  00000c44         5   data ,g         0
 
 FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As2_ClimateControl/NG2S901_As2_ClimateControl/drivers/thermistor/thermistor
-                                  00000ba9  00000ba9         1
+                                  00000c49  00000c49         1
   _current_thermistor
-                                  00000ba9         1   data ,g         0
+                                  00000c49         1   data ,g         0
 
 SECTION=rom_FE
 FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As2_ClimateControl/NG2S901_As2_ClimateControl/drivers/thermistor/thermistor
@@ -905,641 +964,677 @@ FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As2_ClimateControl/NG2S
 
 SECTION=rom_FO
 FILE=cdata
-                                  000f05b5  000f06b5       101
+                                  000f05d1  000f06d1       101
   __ctype
-                                  000f05b5         0   none ,g         0
+                                  000f05d1         0   none ,g         0
 
 SECTION=program
 FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As2_ClimateControl/NG2S901_As2_ClimateControl/drivers/uart/uart
-                                  000f0c92  000f0e64       1d3
+                                  000f0cb2  000f0e84       1d3
   _delay
-                                  000f0c92        19   func ,g         0
+                                  000f0cb2        19   func ,g         0
   _uart_init
-                                  000f0cac        6c   func ,g         0
+                                  000f0ccc        6c   func ,g         0
   _uart_deinit
-                                  000f0d18        61   func ,g         0
+                                  000f0d38        61   func ,g         0
   $uart_write
-                                  000f0d78        13   func ,g         0
+                                  000f0d98        13   func ,g         0
   _uart_writestr
-                                  000f0d8c        29   func ,g         0
+                                  000f0dac        29   func ,g         0
   $uart_writebuff
-                                  000f0db4        26   func ,g         0
+                                  000f0dd4        26   func ,g         0
   _uart_read
-                                  000f0dda        25   func ,g         0
+                                  000f0dfa        25   func ,g         0
   _uart_read_async
-                                  000f0e00        2b   func ,g         0
+                                  000f0e20        2b   func ,g         0
   _uart_install_cback
-                                  000f0e2a         f   func ,g         0
+                                  000f0e4a         f   func ,g         0
   _uart_uninstall_cback
-                                  000f0e3a         a   func ,g         0
+                                  000f0e5a         a   func ,g         0
 
 FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As2_ClimateControl/NG2S901_As2_ClimateControl/drivers/7seg/7segment
-                                  000f0e66  000f0f56        f1
+                                  000f0e86  000f0f83        fe
   _init_7seg
-                                  000f0e66        18   func ,g         0
+                                  000f0e86        18   func ,g         0
   $bin_2_bcd
-                                  000f0e7e        2b   func ,g         0
+                                  000f0e9e        2b   func ,g         0
   $bcd_to_7seg
-                                  000f0eaa        37   func ,g         0
+                                  000f0eca        37   func ,g         0
   $seg_update
-                                  000f0ee0        77   func ,g         0
+                                  000f0f00        77   func ,g         0
 
 FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As2_ClimateControl/NG2S901_As2_ClimateControl/drivers/adc/adc
-                                  000f0f58  000f1058       101
+                                  000f0f84  000f1084       101
   _adc_init_easy
-                                  000f0f58        37   func ,g         0
+                                  000f0f84        37   func ,g         0
   _adc_init
-                                  000f0f90        77   func ,g         0
+                                  000f0fbc        77   func ,g         0
   _adc_deinit
-                                  000f1006        11   func ,g         0
+                                  000f1032        11   func ,g         0
   $adc_read
-                                  000f1018        2d   func ,g         0
+                                  000f1044        2d   func ,g         0
   _ADC_Interrupt
-                                  000f1044        15   func ,g         0
+                                  000f1070        15   func ,g         0
 
 FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As2_ClimateControl/NG2S901_As2_ClimateControl/drivers/glcd/GLCD
-                                  000f105a  000f182a       7d1
+                                  000f1086  000f1856       7d1
   _LcdDelay
-                                  000f105a        21   func ,g         0
+                                  000f1086        21   func ,g         0
   _GLCD_Initialise
-                                  000f107c        88   func ,g         0
+                                  000f10a8        88   func ,g         0
   $LcdSelectSide
-                                  000f1104        41   func ,g         0
+                                  000f1130        41   func ,g         0
   $LcdDataWrite
-                                  000f1144        2d   func ,g         0
+                                  000f1170        2d   func ,g         0
   $LcdInstructionWrite
-                                  000f1172        2e   func ,g         0
+                                  000f119e        2e   func ,g         0
   _LcdDataRead
-                                  000f11a0        33   func ,g         0
+                                  000f11cc        33   func ,g         0
   _LcdWaitBusy
-                                  000f11d2        2c   func ,g         0
+                                  000f11fe        2c   func ,g         0
   _GLCD_ClearScreen
-                                  000f11fe        53   func ,g         0
+                                  000f122a        53   func ,g         0
   _GLCD_DisplayPicture
-                                  000f1252        8f   func ,g         0
+                                  000f127e        8f   func ,g         0
   $LcdSetDot
-                                  000f12e0        db   func ,g         0
+                                  000f130c        db   func ,g         0
   $GLCD_WriteChar
-                                  000f13bc       1c6   func ,g         0
+                                  000f13e8       1c6   func ,g         0
   _GLCD_WriteString
-                                  000f1582        2e   func ,g         0
+                                  000f15ae        2e   func ,g         0
   $GLCD_GoTo
-                                  000f15b0        43   func ,g         0
+                                  000f15dc        43   func ,g         0
   _GLCD_DisplayValue
-                                  000f15f2        84   func ,g         0
+                                  000f161e        84   func ,g         0
   $GLCD_Rectangle
-                                  000f1676        6e   func ,g         0
+                                  000f16a2        6e   func ,g         0
   $GLCD_Circle
-                                  000f16e4       112   func ,g         0
+                                  000f1710       112   func ,g         0
   _GLCD_getXY
-                                  000f17f6        35   func ,g         0
+                                  000f1822        35   func ,g         0
 
 FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As2_ClimateControl/NG2S901_As2_ClimateControl/drivers/init/hwsetup
-                                  000f182c  000f190e        e3
+                                  000f1858  000f193a        e3
   _Initialise
-                                  000f182c        e3   func ,g         0
+                                  000f1858        e3   func ,g         0
 
 FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As2_ClimateControl/NG2S901_As2_ClimateControl/drivers/keypad/keyscan_4x4
-                                  000f1910  000f1b50       241
+                                  000f193c  000f1b7c       241
   _keyscan_4x4_init
-                                  000f1910        41   func ,g         0
+                                  000f193c        41   func ,g         0
   _keypad_4x4_flush
-                                  000f1952        1f   func ,g         0
+                                  000f197e        1f   func ,g         0
   _keypad_delay
-                                  000f1970        15   func ,g         0
+                                  000f199c        15   func ,g         0
   _keyscan_4x4_clear
-                                  000f1986        1b   func ,g         0
+                                  000f19b2        1b   func ,g         0
   _keypad_4x4_scan
-                                  000f19a0        99   func ,g         0
+                                  000f19cc        99   func ,g         0
   _Timer_A0
-                                  000f1a3a        2f   func ,g         0
+                                  000f1a66        2f   func ,g         0
   _KYB
-                                  000f1a68        23   func ,g         0
+                                  000f1a94        23   func ,g         0
   _keypad_4x4_read_buffer
-                                  000f1a8c        4d   func ,g         0
+                                  000f1ab8        4d   func ,g         0
   _getcommand
-                                  000f1ad8         a   func ,g         0
+                                  000f1b04         a   func ,g         0
   _keypad_4x4_iskeypress
-                                  000f1ae2         4   func ,g         0
+                                  000f1b0e         4   func ,g         0
   _keypad_4x4_wait
-                                  000f1ae6        11   func ,g         0
+                                  000f1b12        11   func ,g         0
   _keypad_4x4_wait_async
-                                  000f1af8         5   func ,g         0
+                                  000f1b24         5   func ,g         0
   _read_key
-                                  000f1afc        11   func ,g         0
+                                  000f1b28        11   func ,g         0
 
 FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As2_ClimateControl/NG2S901_As2_ClimateControl/main
-                                  000f1b52  000f26d4       b83
+                                  000f1b7e  000f2756       bd9
   _get_temperature
-                                  000f1b52         5   func ,g         0
+                                  000f1b7e         5   func ,g         0
   _get_desired_temperature
-                                  000f1b58         6   func ,g         0
+                                  000f1b84         6   func ,g         0
   $set_temperature
-                                  000f1b5e        1a   func ,g         0
+                                  000f1b8a        1a   func ,g         0
   $set_temperature_method
-                                  000f1b78        15   func ,g         0
+                                  000f1ba4        15   func ,g         0
   _set_new_pincode
-                                  000f1b8c        33   func ,g         0
+                                  000f1bb8        33   func ,g         0
   _load_pincode
-                                  000f1bc0        34   func ,g         0
+                                  000f1bec        34   func ,g         0
   _read_pin
-                                  000f1bf4        75   func ,g         0
+                                  000f1c20        67   func ,g         0
   _authenticate
-                                  000f1c68        26   func ,g         0
+                                  000f1c86        26   func ,g         0
   $validate_authentication
-                                  000f1c8e        94   func ,g         0
+                                  000f1cac        94   func ,g         0
   _pot_cback
-                                  000f1d22         f   func ,g         0
+                                  000f1d40         f   func ,g         0
   _change_temperature_menu
-                                  000f1d32       168   func ,g         0
+                                  000f1d50       168   func ,g         0
   _set_time_menu
-                                  000f1e9a       291   func ,g         0
+                                  000f1eb8       291   func ,g         0
   _change_pincode_menu
-                                  000f212a        e5   func ,g         0
+                                  000f2148        e5   func ,g         0
   _change_thermistor_type_menu
-                                  000f2210        57   func ,g         0
+                                  000f222e        57   func ,g         0
   _settings_menu
-                                  000f2266        9a   func ,g         0
+                                  000f2284        9a   func ,g         0
   _climate_control
-                                  000f2300       269   func ,g         0
+                                  000f231e       252   func ,g         0
   _request_pincode_menu
-                                  000f256a        7c   func ,g         0
+                                  000f2570        7b   func ,g         0
   _intro
-                                  000f25e6        95   func ,g         0
-  _main
-                                  000f267a        5b   func ,g         0
+                                  000f25ec        ab   func ,g         0
+  $check_i2c
+                                  000f2696        4b   func ,g         0
 
 FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As2_ClimateControl/NG2S901_As2_ClimateControl/drivers/motor/motor
-                                  000f26d6  000f298f       2ba
+                                  000f2758  000f2a11       2ba
   $motor_update_pwm
-                                  000f26d6        4f   func ,g         0
+                                  000f2758        4f   func ,g         0
   $motor_update_rpm
-                                  000f2726        85   func ,g         0
+                                  000f27a8        85   func ,g         0
   _encoder_trigger
-                                  000f27aa        2d   func ,g         0
+                                  000f282c        2d   func ,g         0
   _motor_cback
-                                  000f27d8        62   func ,g         0
+                                  000f285a        62   func ,g         0
   _encoder_init
-                                  000f283a        65   func ,g         0
+                                  000f28bc        65   func ,g         0
   _init_motor
-                                  000f289e        82   func ,g         0
+                                  000f2920        82   func ,g         0
   _deinit_motor
-                                  000f2920        22   func ,g         0
+                                  000f29a2        22   func ,g         0
   _motor_stop
-                                  000f2942         f   func ,g         0
+                                  000f29c4         f   func ,g         0
   $motor_spin
-                                  000f2952        35   func ,g         0
+                                  000f29d4        35   func ,g         0
   _motor_read_rpm
-                                  000f2986         5   func ,g         0
+                                  000f2a08         5   func ,g         0
 
 FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As2_ClimateControl/NG2S901_As2_ClimateControl/drivers/motor/motor_sound
-                                  000f2990  000f2ae4       155
+                                  000f2a12  000f2b66       155
   $motor_tone_us
-                                  000f2990        77   func ,g         0
+                                  000f2a12        77   func ,g         0
   $motor_tone
-                                  000f2a08        7a   func ,g         0
+                                  000f2a8a        7a   func ,g         0
   _init_motor_sound
-                                  000f2a82        3a   func ,g         0
+                                  000f2b04        3a   func ,g         0
 
 FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As2_ClimateControl/NG2S901_As2_ClimateControl/print
-                                  000f2ae6  000f2c7d       198
+                                  000f2b68  000f2cff       198
   _printf
-                                  000f2ae6        5e   func ,g         0
+                                  000f2b68        5e   func ,g         0
   _printf_at
-                                  000f2b44        92   func ,g         0
+                                  000f2bc6        92   func ,g         0
   _printf_at_rl
-                                  000f2bd6        a8   func ,g         0
+                                  000f2c58        a8   func ,g         0
 
 FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As2_ClimateControl/NG2S901_As2_ClimateControl/drivers/thermistor/thermistor
-                                  000f2c7e  000f2d2d        b0
+                                  000f2d00  000f2daf        b0
   _thermistor_init
-                                  000f2c7e        2d   func ,g         0
+                                  000f2d00        2d   func ,g         0
   _thermistor_deinit
-                                  000f2cac         a   func ,g         0
+                                  000f2d2e         a   func ,g         0
   $thermistor_toggle
-                                  000f2cb6        4a   func ,g         0
+                                  000f2d38        4a   func ,g         0
   _thermistor_read
-                                  000f2d00        2b   func ,g         0
+                                  000f2d82        2b   func ,g         0
   _thermistor_type
-                                  000f2d2a         4   func ,g         0
+                                  000f2dac         4   func ,g         0
 
 FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As2_ClimateControl/NG2S901_As2_ClimateControl/drivers/timer/timer
-                                  000f2d2e  000f30b7       38a
+                                  000f2db0  000f3139       38a
   _Timer_A1
-                                  000f2d2e        15   func ,g         0
+                                  000f2db0        15   func ,g         0
   _Timer_A2
-                                  000f2d44        16   func ,g         0
+                                  000f2dc6        16   func ,g         0
   _Timer_A3
-                                  000f2d5a        16   func ,g         0
+                                  000f2ddc        16   func ,g         0
   _Timer_A4
-                                  000f2d70        16   func ,g         0
+                                  000f2df2        16   func ,g         0
   _Timer_B0
-                                  000f2d86        16   func ,g         0
+                                  000f2e08        16   func ,g         0
   _Timer_B1
-                                  000f2d9c        16   func ,g         0
+                                  000f2e1e        16   func ,g         0
   _Timer_B2
-                                  000f2db2        16   func ,g         0
+                                  000f2e34        16   func ,g         0
   _timer_init
-                                  000f2dc8       207   func ,g         0
+                                  000f2e4a       207   func ,g         0
   $timer_deinit
-                                  000f2fce        ab   func ,g         0
+                                  000f3050        ab   func ,g         0
   _timer_deinit_all
-                                  000f307a        17   func ,g         0
+                                  000f30fc        17   func ,g         0
   _timer_install_cback
-                                  000f3090        13   func ,g         0
+                                  000f3112        13   func ,g         0
 
 FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As2_ClimateControl/NG2S901_As2_ClimateControl/bluetooth_control
-                                  000f30b8  000f33a0       2e9
+                                  000f313a  000f3416       2dd
   $btooth_exec_cmd
-                                  000f30b8        7e   func ,g         0
+                                  000f313a        7e   func ,g         0
   _uart_cmd_schedule_cback
-                                  000f3136        32   func ,g         0
+                                  000f31b8        32   func ,g         0
   $uart_receive_str
-                                  000f3168        96   func ,g         0
+                                  000f31ea        96   func ,g         0
   $uart_receive
-                                  000f31fe        50   func ,g         0
+                                  000f3280        50   func ,g         0
   _bluetooth_control_worker
-                                  000f324e        5c   func ,g         0
+                                  000f32d0        5c   func ,g         0
   _bluetooth_control_init
-                                  000f32aa        39   func ,g         0
-  _bluetooth_control_stop
-                                  000f32e4         c   func ,g         0
+                                  000f332c        39   func ,g         0
 
 FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As2_ClimateControl/NG2S901_As2_ClimateControl/drivers/rtc/DS1307
-                                  000f33a2  000f3caa       909
+                                  000f3418  000f3d42       92b
   $dec2bcd
-                                  000f33a2        2b   func ,g         0
+                                  000f3418        2b   func ,g         0
   $bcd2dec
-                                  000f33ce        25   func ,g         0
+                                  000f3444        25   func ,g         0
   _rtc_bcd_to_dec
-                                  000f33f2        f9   func ,g         0
+                                  000f3468       11b   func ,g         0
   $rtc_write
-                                  000f34ec        24   func ,g         0
+                                  000f3584        24   func ,g         0
   $rtc_selreg
-                                  000f3510        15   func ,g         0
+                                  000f35a8        15   func ,g         0
   _update_clock
-                                  000f3524        8c   func ,g         0
+                                  000f35bc        8c   func ,g         0
   _update_new_clock
-                                  000f35b0        59   func ,g         0
+                                  000f3648        59   func ,g         0
   _init_rtc
-                                  000f360a        12   func ,g         0
+                                  000f36a2        12   func ,g         0
   _deinit_rtc
-                                  000f361c         2   func ,g         0
+                                  000f36b4         2   func ,g         0
   _rtc_is12H
-                                  000f361e        11   func ,g         0
+                                  000f36b6        11   func ,g         0
   _rtc_isPM
-                                  000f362e        25   func ,g         0
+                                  000f36c6        25   func ,g         0
   _rtc_set24H
-                                  000f3654         c   func ,g         0
+                                  000f36ec         c   func ,g         0
   _rtc_setAM
-                                  000f3660         f   func ,g         0
+                                  000f36f8         f   func ,g         0
   _rtc_setPM
-                                  000f366e         b   func ,g         0
+                                  000f3706         b   func ,g         0
   $rtc_switch_mode
-                                  000f367a        73   func ,g         0
+                                  000f3712        73   func ,g         0
   _read_clock
-                                  000f36ec        11   func ,g         0
+                                  000f3784        11   func ,g         0
   _rtc_get_seconds
-                                  000f36fe        11   func ,g         0
+                                  000f3796        11   func ,g         0
   _rtc_get_minutes
-                                  000f370e         b   func ,g         0
+                                  000f37a6         b   func ,g         0
   _rtc_get_hours
-                                  000f371a        24   func ,g         0
+                                  000f37b2        24   func ,g         0
   _rtc_get_weekday
-                                  000f373e         c   func ,g         0
+                                  000f37d6         c   func ,g         0
   _rtc_get_monthday
-                                  000f374a         c   func ,g         0
+                                  000f37e2         c   func ,g         0
   _rtc_get_month
-                                  000f3756         c   func ,g         0
+                                  000f37ee         c   func ,g         0
   _rtc_get_year
-                                  000f3762        6f   func ,g         0
+                                  000f37fa        6f   func ,g         0
   _rtc_set_clock
-                                  000f37d0       1cd   func ,g         0
+                                  000f3868       1cd   func ,g         0
   $rtc_set_seconds
-                                  000f399e        29   func ,g         0
+                                  000f3a36        29   func ,g         0
   $rtc_set_minutes
-                                  000f39c6        19   func ,g         0
+                                  000f3a5e        19   func ,g         0
   $rtc_set_hours
-                                  000f39e0        53   func ,g         0
+                                  000f3a78        53   func ,g         0
   $rtc_set_weekday
-                                  000f3a32        1e   func ,g         0
+                                  000f3aca        1e   func ,g         0
   $rtc_set_monthday
-                                  000f3a50        1e   func ,g         0
+                                  000f3ae8        1e   func ,g         0
   $rtc_set_month
-                                  000f3a6e        1e   func ,g         0
+                                  000f3b06        1e   func ,g         0
   $rtc_set_year
-                                  000f3a8c        87   func ,g         0
+                                  000f3b24        87   func ,g         0
   _rtc_stop
-                                  000f3b14        17   func ,g         0
+                                  000f3bac        17   func ,g         0
   _rtc_is_stopped
-                                  000f3b2a        1b   func ,g         0
+                                  000f3bc2        1b   func ,g         0
   _rtc_start
-                                  000f3b46        2e   func ,g         0
+                                  000f3bde        2e   func ,g         0
   _rtc_reset
-                                  000f3b74        1c   func ,g         0
+                                  000f3c0c        1c   func ,g         0
   _rtc_has_ticked
-                                  000f3b90        14   func ,g         0
+                                  000f3c28        14   func ,g         0
 
 FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As2_ClimateControl/NG2S901_As2_ClimateControl/drivers/thermistor/DS1621
-                                  000f3cac  000f3dde       133
+                                  000f3d44  000f3e76       133
   $i2c_thermistor_send_cmd
-                                  000f3cac        14   func ,g         0
+                                  000f3d44        14   func ,g         0
   $i2c_thermistor_send_cmd_byte
-                                  000f3cc0        23   func ,g         0
+                                  000f3d58        23   func ,g         0
   $i2c_thermistor_send_cmd_word
-                                  000f3ce4        39   func ,g         0
+                                  000f3d7c        39   func ,g         0
   $i2c_thermistor_read
-                                  000f3d1c        14   func ,g         0
+                                  000f3db4        14   func ,g         0
   $i2c_thermistor_read_word
-                                  000f3d30        35   func ,g         0
+                                  000f3dc8        35   func ,g         0
   $i2c_thermistor_start
-                                  000f3d66        31   func ,g         0
+                                  000f3dfe        31   func ,g         0
   _i2c_thermistor_stop
-                                  000f3d96         7   func ,g         0
+                                  000f3e2e         7   func ,g         0
   _i2c_thermistor_init
-                                  000f3d9e         f   func ,g         0
+                                  000f3e36         f   func ,g         0
   _i2c_thermistor_deinit
-                                  000f3dac         4   func ,g         0
+                                  000f3e44         4   func ,g         0
   _i2c_thermistor_is_alarm
-                                  000f3db0         a   func ,g         0
+                                  000f3e48         a   func ,g         0
   $i2c_thermistor_set_usertemp
-                                  000f3dba        1d   func ,g         0
+                                  000f3e52        1d   func ,g         0
+
+FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As2_ClimateControl/NG2S901_As2_ClimateControl/extra
+                                  000f3e78  000f3ff3       17c
+  _render
+                                  000f3e78         c   func ,g         0
+  _update
+                                  000f3e84         1   func ,g         0
+  _handle_input
+                                  000f3e86         c   func ,g         0
+  _init_entities
+                                  000f3e92        d4   func ,g         0
+  _main_loop
+                                  000f3f66        15   func ,g         0
+  _potentiometer_cback
+                                  000f3f7a         f   func ,g         0
+  _extra_deinit
+                                  000f3f8a         e   func ,g         0
+  _extra_init
+                                  000f3f98        51   func ,g         0
+  _extra_cback
+                                  000f3fe8         c   func ,g         0
 
 FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As2_ClimateControl/NG2S901_As2_ClimateControl/drivers/i2c/i2c
-                                  000f3de0  000f418f       3b0
+                                  000f3ff4  000f43a3       3b0
   _i2c_set_schedule
-                                  000f3de0         f   func ,g         0
+                                  000f3ff4         f   func ,g         0
   _i2c_is_scheduled
-                                  000f3df0        21   func ,g         0
+                                  000f4004        21   func ,g         0
   _i2c_is_busy
-                                  000f3e10         4   func ,g         0
+                                  000f4024         4   func ,g         0
   _i2c_delay
-                                  000f3e14        14   func ,g         0
+                                  000f4028        14   func ,g         0
   _i2c_init
-                                  000f3e28        36   func ,g         0
+                                  000f403c        36   func ,g         0
   _i2c_deinit
-                                  000f3e5e         d   func ,g         0
+                                  000f4072         d   func ,g         0
   _i2c_start
-                                  000f3e6c        1b   func ,g         0
+                                  000f4080        1b   func ,g         0
   _i2c_restart
-                                  000f3e86        1a   func ,g         0
+                                  000f409a        1a   func ,g         0
   _i2c_stop
-                                  000f3ea0        45   func ,g         0
+                                  000f40b4        45   func ,g         0
   _i2c_flush_tx
-                                  000f3ee6        12   func ,g         0
+                                  000f40fa        12   func ,g         0
   _i2c_enable_rx
-                                  000f3ef8         9   func ,g         0
+                                  000f410c         9   func ,g         0
   _i2c_disable_rx
-                                  000f3f00         5   func ,g         0
+                                  000f4114         5   func ,g         0
   _i2c_enable_tx
-                                  000f3f06        14   func ,g         0
+                                  000f411a        14   func ,g         0
   _i2c_disable_tx
-                                  000f3f1a         6   func ,g         0
+                                  000f412e         6   func ,g         0
   _i2c_wait_n_ack
-                                  000f3f20         e   func ,g         0
+                                  000f4134         e   func ,g         0
   _i2c_is_nack
-                                  000f3f2e         b   func ,g         0
+                                  000f4142         b   func ,g         0
   $i2c_set_ack
-                                  000f3f38         e   func ,g         0
+                                  000f414c         e   func ,g         0
   $i2c_transmit
-                                  000f3f46        19   func ,g         0
+                                  000f415a        19   func ,g         0
   $i2c_send
-                                  000f3f60        27   func ,g         0
+                                  000f4174        27   func ,g         0
   $i2c_send_str
-                                  000f3f86        3b   func ,g         0
+                                  000f419a        3b   func ,g         0
   $i2c_read
-                                  000f3fc2        40   func ,g         0
+                                  000f41d6        40   func ,g         0
   $i2c_read_buff
-                                  000f4002        8b   func ,g         0
+                                  000f4216        8b   func ,g         0
   $i2c_send_and_read
-                                  000f408c        50   func ,g         0
+                                  000f42a0        50   func ,g         0
   $i2c_send_and_read_str
-                                  000f40dc        8c   func ,g         0
+                                  000f42f0        8c   func ,g         0
   $i2c_ping_slave
-                                  000f4168        28   func ,g         0
+                                  000f437c        28   func ,g         0
+
+FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As2_ClimateControl/NG2S901_As2_ClimateControl/drivers/isr/ISR_DEFs
+                                  000f43a4  000f44b6       113
+  _uninstall_all_cback
+                                  000f43a4        1c   func ,g         0
+  _init_isr
+                                  000f43c0         4   func ,g         0
+  $set_isr_priority
+                                  000f43c4        66   func ,g         0
+  _install_cback
+                                  000f442a        25   func ,g         0
+  $uninstall_cback
+                                  000f4450        27   func ,g         0
+  _INT0
+                                  000f4476        15   func ,g         0
+  _INT1
+                                  000f448c        16   func ,g         0
 
 FILE=C:/Users/Miguel/Documents/Renesas_Workspace/NG2S901_As2_ClimateControl/NG2S901_As2_ClimateControl/drivers/eeprom/M24C04
-                                  000f4190  000f425b        cc
+                                  000f44b8  000f4583        cc
   _eeprom_enable_write
-                                  000f4190         5   func ,g         0
+                                  000f44b8         5   func ,g         0
   _eeprom_disable_write
-                                  000f4196         6   func ,g         0
+                                  000f44be         6   func ,g         0
   _eeprom_init
-                                  000f419c         a   func ,g         0
+                                  000f44c4         a   func ,g         0
   _eeprom_deinit
-                                  000f41a6         5   func ,g         0
+                                  000f44ce         5   func ,g         0
   $eeprom_write
-                                  000f41aa        29   func ,g         0
+                                  000f44d2        29   func ,g         0
   $eeprom_write_buff
-                                  000f41d4        2d   func ,g         0
+                                  000f44fc        2d   func ,g         0
   $eeprom_read
-                                  000f4200        14   func ,g         0
+                                  000f4528        14   func ,g         0
   $eeprom_read_buff
-                                  000f4214        48   func ,g         0
+                                  000f453c        48   func ,g         0
 
 FILE=_f4tof8
-                                  000f425c  000f42e1        86
+                                  000f4584  000f4609        86
   __f4tof8
-                                  000f425c        86   func ,g         0
+                                  000f4584        86   func ,g         0
 
 FILE=_f4toi4u
-                                  000f42e2  000f4306        25
+                                  000f460a  000f462e        25
   __f4toi4U
-                                  000f42e2        25   func ,g         0
+                                  000f460a        25   func ,g         0
 
 FILE=_f8add
-                                  000f4308  000f4c22       91b
+                                  000f4630  000f4f4a       91b
   __f8add
-                                  000f4308       6dd   func ,g         0
+                                  000f4630       6dd   func ,g         0
 
 FILE=_f8ltor
-                                  000f4c24  000f4c77        54
+                                  000f4f4c  000f4f9f        54
   $_f8ltor
-                                  000f4c24        54   func ,g         0
+                                  000f4f4c        54   func ,g         0
 
 FILE=_f8mul
-                                  000f4c78  000f4f3e       2c7
+                                  000f4fa0  000f5266       2c7
   __f8mul
-                                  000f4c78       2c7   func ,g         0
+                                  000f4fa0       2c7   func ,g         0
 
 FILE=_f8toi4u
-                                  000f4f40  000f4f64        25
+                                  000f5268  000f528c        25
   __f8toi4U
-                                  000f4f40        25   func ,g         0
+                                  000f5268        25   func ,g         0
 
 FILE=_ftol
-                                  000f4f66  000f5076       111
+                                  000f528e  000f539e       111
   $_ftol
-                                  000f4f66       111   func ,g         0
+                                  000f528e       111   func ,g         0
 
 FILE=_i4div
-                                  000f5078  000f50fa        83
+                                  000f53a0  000f5422        83
   __i4div
-                                  000f5078        83   func ,g         0
+                                  000f53a0        83   func ,g         0
 
 FILE=_i4divu
-                                  000f50fc  000f5148        4d
+                                  000f5424  000f5470        4d
   __i4divU
-                                  000f50fc        4d   func ,g         0
+                                  000f5424        4d   func ,g         0
 
 FILE=_i4modu
-                                  000f514a  000f5194        4b
+                                  000f5472  000f54bc        4b
   __i4modU
-                                  000f514a        4b   func ,g         0
+                                  000f5472        4b   func ,g         0
 
 FILE=_i4mulu
-                                  000f5196  000f51b1        1c
+                                  000f54be  000f54d9        1c
   __i4mulU
-                                  000f5196        1c   func ,g         0
+                                  000f54be        1c   func ,g         0
 
 FILE=_i4tof8
-                                  000f51b2  000f51d3        22
+                                  000f54da  000f54fb        22
   __i4tof8
-                                  000f51b2        22   func ,g         0
+                                  000f54da        22   func ,g         0
 
 FILE=_i4utof4
-                                  000f51d4  000f51f5        22
+                                  000f54fc  000f551d        22
   __i4Utof4
-                                  000f51d4        22   func ,g         0
+                                  000f54fc        22   func ,g         0
 
 FILE=_ltof
-                                  000f51f6  000f52c9        d4
+                                  000f551e  000f55f1        d4
   $_ltof
-                                  000f51f6        d4   func ,g         0
+                                  000f551e        d4   func ,g         0
 
 FILE=bcopy
-                                  000f52ca  000f52fe        35
+                                  000f55f2  000f5626        35
   _bcopy
-                                  000f52ca        35   func ,g         0
+                                  000f55f2        35   func ,g         0
 
 FILE=bzero
-                                  000f5300  000f5327        28
+                                  000f5628  000f564f        28
   _bzero
-                                  000f5300        28   func ,g         0
+                                  000f5628        28   func ,g         0
 
 FILE=memcpy
-                                  000f5328  000f5376        4f
+                                  000f5650  000f569e        4f
   _memcpy
-                                  000f5328        4f   func ,g         0
+                                  000f5650        4f   func ,g         0
 
 FILE=memset
-                                  000f5378  000f53b8        41
+                                  000f56a0  000f56e0        41
   $memset
-                                  000f5378        41   func ,g         0
+                                  000f56a0        41   func ,g         0
 
 FILE=sprintf
-                                  000f53ba  000f548c        d3
+                                  000f56e2  000f57b4        d3
   _sprintf
-                                  000f53ba        bc   func ,g         0
+                                  000f56e2        bc   func ,g         0
 
 FILE=strchr
-                                  000f548e  000f54c2        35
+                                  000f57b6  000f57ea        35
   $strchr
-                                  000f548e        35   func ,g         0
+                                  000f57b6        35   func ,g         0
 
 FILE=strcmp
-                                  000f54c4  000f54f8        35
+                                  000f57ec  000f5820        35
   _strcmp
-                                  000f54c4        35   func ,g         0
+                                  000f57ec        35   func ,g         0
 
 FILE=_strcpy
-                                  000f54fa  000f5535        3c
+                                  000f5822  000f585d        3c
   _strcpy
-                                  000f54fa         0   func ,g         0
+                                  000f5822         0   func ,g         0
 
 FILE=strlen
-                                  000f5536  000f5560        2b
+                                  000f585e  000f5888        2b
   _strlen
-                                  000f5536        2b   func ,g         0
+                                  000f585e        2b   func ,g         0
 
 FILE=vsprintf
-                                  000f5562  000f5618        b7
+                                  000f588a  000f5940        b7
   _vsprintf
-                                  000f5562        9f   func ,g         0
+                                  000f588a        9f   func ,g         0
 
 FILE=_f4muls
-                                  000f561a  000f56c9        b0
+                                  000f5942  000f59f1        b0
   __f4mul
-                                  000f563e         0   func ,g         0
+                                  000f5966         0   func ,g         0
 
 FILE=_f4rets
-                                  000f56ca  000f56fb        32
+                                  000f59f2  000f5a23        32
   __f4retInf
-                                  000f56d4         0   none ,g         0
+                                  000f59fc         0   none ,g         0
   __f4retNaN
-                                  000f56ca         0   none ,g         0
+                                  000f59f2         0   none ,g         0
   __f4retNum
-                                  000f56e4         0   none ,g         0
+                                  000f5a0c         0   none ,g         0
   __f4retZero
-                                  000f56d0         0   none ,g         0
+                                  000f59f8         0   none ,g         0
 
 FILE=_f4ltor
-                                  000f56fc  000f5741        46
+                                  000f5a24  000f5a69        46
   $_f4ltor
-                                  000f56fc        46   func ,g         0
+                                  000f5a24        46   func ,g         0
 
 FILE=_f4rtol
-                                  000f5742  000f577f        3e
+                                  000f5a6a  000f5aa7        3e
   $_f4rtol
-                                  000f5742        3e   func ,g         0
+                                  000f5a6a        3e   func ,g         0
 
 FILE=_f8rtol
-                                  000f5780  000f57c0        41
+                                  000f5aa8  000f5ae8        41
   $_f8rtol
-                                  000f5780        41   func ,g         0
+                                  000f5aa8        41   func ,g         0
 
 FILE=print
-                                  000f57c2  000f713a      1979
+                                  000f5aea  000f7462      1979
   __print
-                                  000f57c2       f53   func ,g         0
+                                  000f5aea       f53   func ,g         0
   __f8prn
-                                  000f6716       556   func ,g         0
+                                  000f6a3e       556   func ,g         0
   $henkan1
-                                  000f6c6c        42   func ,g         0
+                                  000f6f94        42   func ,g         0
   $henkan2
-                                  000f6cae        55   func ,g         0
+                                  000f6fd6        55   func ,g         0
   __pri
-                                  000f6d02       10e   func ,g         0
+                                  000f702a       10e   func ,g         0
   $_f8geti
-                                  000f6e10       20f   func ,g         0
+                                  000f7138       20f   func ,g         0
 
 FILE=_f8eq
-                                  000f713c  000f71b7        7c
+                                  000f7464  000f74df        7c
   __f8eq
-                                  000f713c        7c   func ,g         0
+                                  000f7464        7c   func ,g         0
 
 FILE=_f8ge
-                                  000f71b8  000f725e        a7
+                                  000f74e0  000f7586        a7
   __f8ge
-                                  000f71b8        a7   func ,g         0
+                                  000f74e0        a7   func ,g         0
 
 FILE=_f8lt
-                                  000f7260  000f7306        a7
+                                  000f7588  000f762e        a7
   __f8lt
-                                  000f7260        a7   func ,g         0
+                                  000f7588        a7   func ,g         0
 
 FILE=_f8ne
-                                  000f7308  000f7383        7c
+                                  000f7630  000f76ab        7c
   __f8ne
-                                  000f7308        7c   func ,g         0
+                                  000f7630        7c   func ,g         0
 
 FILE=_i8divu
-                                  000f7384  000f747b        f8
+                                  000f76ac  000f77a3        f8
   __i8divU
-                                  000f7384        f8   func ,g         0
+                                  000f76ac        f8   func ,g         0
 
 FILE=_i8modu
-                                  000f747c  000f754a        cf
+                                  000f77a4  000f7872        cf
   __i8modU
-                                  000f747c        cf   func ,g         0
+                                  000f77a4        cf   func ,g         0
 
 SECTION=interrupt
 FILE=ncrt0_rsk
-                                  000f754b  000f765d       113
+                                  000f7873  000f7985       113
   $exit
-                                  000f765b         0   none ,g         0
+                                  000f7983         0   none ,g         0
   _exit
-                                  000f765b         0   none ,g         0
+                                  000f7983         0   none ,g         0
   dummy_int
-                                  000f765d         0   none ,g         0
+                                  000f7985         0   none ,g         0
 

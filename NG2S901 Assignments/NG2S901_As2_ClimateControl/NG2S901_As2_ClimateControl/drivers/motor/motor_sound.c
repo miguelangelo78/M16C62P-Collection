@@ -39,7 +39,7 @@ void motor_tone(int pitch, int duration_ms) {
 	int i;
 	/* Check for invalid tones */
 	if(pitch > MOTOR_MAX_PITCH || pitch < MIN_MOTOR_PITCH) return;
-
+	
 	for(; duration_ms; duration_ms--) {
 		/* Restart timer */
 		TA1IC = 0;
@@ -58,7 +58,7 @@ void motor_tone(int pitch, int duration_ms) {
 		TABSR_1 = 1;
 	}
 	
-	MOTOR_STOP();	
+	MOTOR_STOP();
 }
 
 char oldreg_dir[2], oldreg[2];

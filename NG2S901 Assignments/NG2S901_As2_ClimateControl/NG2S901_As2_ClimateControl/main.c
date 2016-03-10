@@ -4,6 +4,8 @@
 #define UPDATE_RATE 500
 #define PINCODE_LENGTH 5
 
+void check_i2c(char i2c_crashed); /* Function prototype */
+
 char managing_climate = 1;
 char pincode[PINCODE_LENGTH]; /* The pincode must be loaded from EEPROM */
 
@@ -53,12 +55,10 @@ char pinBuffer[PINCODE_LENGTH];
 
 char * read_pin(char * request_message) {
 	char i;
-	char * pincode_ptr = pincode;
 	GLCD_ClearScreen();
 	GLCD_GoTo(0,3);
 	GLCD_WriteString(request_message, Font_System7x8);
 
-	keypad_4x4_wait();
 	for(i = 0; i < PINCODE_LENGTH - 1;i++) {
 		pinBuffer[i] = read_key();
 		printf("*");
@@ -110,7 +110,7 @@ void change_temperature_menu(void) {
 
 	while(!getcommand()) {
 		/* Reduce slider flickering using this reload value: */
-		if(sliderPreload++<3000) continue;
+		if(sliderPreload++ < 3000) continue;
 		sliderPreload = 0;
 			
 		new_temp = map(potVal, 0, 1023, 0, 40); /* Map ADC from 0 > 1024 to 0 > 40ºC */
@@ -252,15 +252,10 @@ REDRAW_MENU: /* Useful for switches */
 	while(managing_climate) {
 		/* Read temperature and adjust motor in function of temperature: */
 		current_temp = thermistor_read();
-		if(current_temp == 255) { /* I2C went crazy... */
-			GLCD_ClearScreen();
-			GLCD_GoTo(0,0);
-			printf("ERROR:\nI2C Stopped working");
-			disable_interrupt();
-			for(;;);
-		}
+		if(current_temp == 255)
+			check_i2c(1); /* I2C tends to stop working unexpectedly... Maybe due to interrupts */
 		
-		/* Manage motor's speed: */		
+		/* Manage motor's speed: */
 		if(current_temp < desired_temp - TEMP_ERROR) /* Speed left, heat it up */
 			motor_spin(map(current_temp, THERMISTOR_MAX_TEMP, THERMISTOR_MIN_TEMP, MOTOR_MIN_RPM, 10000), MOTOR_LEFT);
 		else if(current_temp > desired_temp + TEMP_ERROR) /* Speed right, cool it down */
@@ -274,19 +269,20 @@ REDRAW_MENU: /* Useful for switches */
 		printf_at("%d    ", 45, 4, motor_read_rpm());
 		rtc = read_clock(); /* Read RTC */
 		/* Show time: */
-		printf_at_rl("|%.2d:%.2d:%.2d|", GLCD_WIDTH-1, GLCD_HEIGHT - 1, rtc->hour, rtc->min, rtc->sec);
+		printf_at_rl(" |%.2d:%.2d:%.2d|", GLCD_WIDTH-1, GLCD_HEIGHT - 1, rtc->hour, rtc->min, rtc->sec);
 		for(i = 0; i < UPDATE_RATE; i++) 
 			seg_update(current_temp, 10);
 			
 		if((key = getcommand())) {
 			switch(key) {
-			case '1': motor_stop(); settings_menu(); goto REDRAW_MENU;
-			case '2': motor_stop(); managing_climate = 0; return 1;
+			case '1': motor_stop(); seg_turnoff(); settings_menu(); goto REDRAW_MENU;
+			case '2': motor_stop(); seg_turnoff(); managing_climate = 0; return 1;
 			default: break; /* Do nothing */	
 			}	
 		}
 	}
 	motor_stop();
+	seg_turnoff();
 	
 	return 0;
 }
@@ -316,7 +312,11 @@ char request_pincode_menu(void) {
 	}
 }
 
+extern void extra_cback(void);
+extern char enable_extra;
+
 void intro(void) {
+	REDRAW_INTRO:
 	GLCD_ClearScreen();
 	GLCD_GoTo(0,0);
 	GLCD_Rectangle(0, 0, GLCD_WIDTH+5, 5);
@@ -324,27 +324,47 @@ void intro(void) {
 	printf("  Smart Home Console");
 	printf_at("Press any key!", GLCD_WIDTH/2-40, GLCD_HEIGHT-1);
 	GLCD_Rectangle(0, 48, GLCD_WIDTH+5, 48);
-	read_key();
+	
+	/* Easter Egg: */
+	enable_extra = 0;
+	keypad_4x4_wait();
+	while(!getcommand()) if(enable_extra) { extra_init(); goto REDRAW_INTRO; }
+	
 	GLCD_ClearScreen();
 	GLCD_GoTo(0,0);
 }
 
+void check_i2c(char i2c_crashed) {
+	/* Check if I2C is working by pinging a device: */
+	if(!i2c_ping_slave(0x49) || i2c_crashed) { /* Ping Digital Thermistor */
+		/* If it returns 0 then it's not working... */
+		GLCD_GoTo(0,0);
+		GLCD_ClearScreen();
+		GLCD_WriteString("ERROR:\nI2C is not\nworking!\n\nPlease restart\nthe system", Font_System7x8);
+		disable_interrupt();
+		for(;;);
+	}
+}
+
 extern void bluetooth_control_init(void);
-extern void bluetooth_control_stop(void);
 extern void bluetooth_show_rpm(void);
 
 void main(void)
 {
 	Initialise();
 	bluetooth_control_init();
+	install_cback(extra_cback, INT0_T);
 	GLCD_Initialise();
+	i2c_init();
+	/* Before initializing RTC, check if I2C is working: */
+	check_i2c(0);
 	init_rtc();
+	thermistor_init();
 	eeprom_init();
 	keyscan_4x4_init();
 	init_7seg();
 	init_motor();
-	thermistor_init();	
-	load_pincode();
+	load_pincode(); /* Load pincode from EEPROM */
 	
 #if 0 /* Set this 0 to 1 to restore the default pin back, in case you forgot the pin code */
 	set_new_pincode("1234");

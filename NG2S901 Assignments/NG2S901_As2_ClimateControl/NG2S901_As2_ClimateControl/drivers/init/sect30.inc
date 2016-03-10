@@ -197,7 +197,8 @@ switch_table_top:
 	.lword	dummy_int		; Bus collision detection(for user)(v10)
 	.lword	dummy_int		; DMA0(for user)(vector 11)
 	.lword	dummy_int		; DMA1(for user)(vector 12)
-	.lword	dummy_int		; Key input interrupt(for user)(vect 13)
+.glb _KYB
+	.lword	_KYB			; Key input interrupt(for user)(vect 13)
 .glb _ADC_Interrupt
 	.lword	_ADC_Interrupt	; A-D(for user)(vector 14)
 	.lword	dummy_int		; uart2 transmit(for user)(vector 15)
@@ -224,10 +225,11 @@ switch_table_top:
 .glb _Timer_B2
 	.lword	_Timer_B2		; timer B2(for user)(vector 28)
 .glb _INT0
-	.lword	dummy_int		; int0 (for user)(vector 29)
+	.lword	_INT0		; int0 (for user)(vector 29)
 .glb _INT1
-	.lword	dummy_int		; int1 (for user)(vector 30)
-	.lword	dummy_int		; int2 (for user)(vector 31)
+	.lword	_INT1		; int1 (for user)(vector 30)
+.glb _INT2
+	.lword	_INT2		; int2 (for user)(vector 31)
 .endif
 	.lword	dummy_int		; vector 32 (for user or MR30)
 	.lword	dummy_int		; vector 33 (for user or MR30)

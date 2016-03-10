@@ -7,25 +7,17 @@
 [GENERAL_DATA]
 [BREAKPOINTS]
 [OPEN_WORKSPACE_FILES]
-"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\7seg\7segment.c" 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\glcd\GLCD.C" 
-"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\i2c\i2c.c" 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\init\ncrt0_rsk.a30" 
-"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\init\sect30.inc" 
-"C:\users\miguel\documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\init\sfr62p.h" 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\keypad\keyscan_4x4.c" 
-"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\rtc\DS1307.c" 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\extra.c" 
 "C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\main.c" 
 [WORKSPACE_FILE_STATES]
-"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\7seg\7segment.c" -4 -29 1056 400 1 8 
-"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\glcd\GLCD.C" 0 0 1056 400 0 4 
-"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\i2c\i2c.c" 132 84 872 255 0 7 
-"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\init\ncrt0_rsk.a30" 132 84 872 257 0 2 
-"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\init\sect30.inc" 44 28 872 257 0 3 
-"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\keypad\keyscan_4x4.c" 0 0 872 255 0 5 
-"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\rtc\DS1307.c" 88 56 872 255 0 6 
-"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\main.c" 0 0 1056 402 0 0 
-"C:\users\miguel\documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\init\sfr62p.h" 0 0 951 249 0 1 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\glcd\GLCD.C" 132 84 872 255 0 3 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\init\ncrt0_rsk.a30" 0 0 1056 400 0 1 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\drivers\keypad\keyscan_4x4.c" 0 0 872 255 0 4 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\extra.c" 88 56 872 255 0 2 
+"C:\Users\Miguel\Documents\Renesas_Workspace\NG2S901_As2_ClimateControl\NG2S901_As2_ClimateControl\main.c" -4 -29 1056 400 1 0 
 [LOADED_PROJECTS]
 "NG2S901_As2_ClimateControl" 
 [END]

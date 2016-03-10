@@ -20,6 +20,8 @@ enum RTC_TABLE {
 	TSECS, TMINS, THOURS, TWDAY, TMDAY, TMONTH, TYEAR, TSQW	
 };
 
+char rtc_is12H(void); /* Function prototype */
+
 uint8_t dec2bcd(uint8_t byte) { 
 	if(byte == 0) return 0;
 	return (((byte / 10) << 4) + (byte % 10));
@@ -33,7 +35,10 @@ uint8_t bcd2dec(uint8_t byte) {
 rtc_t * rtc_bcd_to_dec(rtc_t * bcd_rtc) {
 	time_bcd_copy.sec = bcd2dec(bcd_rtc->sec & 0x7F);
 	time_bcd_copy.min = bcd2dec(bcd_rtc->min);
-	time_bcd_copy.hour = bcd2dec(bcd_rtc->hour & 0x3F);
+	if(rtc_is12H())
+		time_bcd_copy.hour = bcd2dec(bcd_rtc->hour & 0x1F);
+	else
+		time_bcd_copy.hour = bcd2dec(bcd_rtc->hour & 0x1F);
 	time_bcd_copy.weekday = bcd2dec(bcd_rtc->weekday);
 	time_bcd_copy.monthday = bcd2dec(bcd_rtc->monthday);
 	time_bcd_copy.month = bcd2dec(bcd_rtc->month);

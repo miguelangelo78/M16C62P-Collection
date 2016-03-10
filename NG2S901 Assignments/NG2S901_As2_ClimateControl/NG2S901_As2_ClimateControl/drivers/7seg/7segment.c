@@ -81,3 +81,9 @@ void seg_update(unsigned char n, unsigned char radix) {
 	/* Lower byte */
 	SEG_RIGHT(bcd_to_7seg((toBCD & 0xF0) >> 4, radix));
 }
+
+void seg_turnoff(void) {
+	P5 = 0;
+	SEG_RIGHT_TURNOFF();
+	SEG_LEFT_TURNOFF();
+}

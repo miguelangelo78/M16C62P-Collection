@@ -2,7 +2,7 @@
 #define ISR_DEFS_H_
 
 enum INTERRUPT_VECTOR {
-	INT0_T, INT1_T, ADC0_T, ADC1_T, ADC2_T, INTMAX
+	INT0_T, INT1_T, INT2_T, INTMAX
 };
 
 #define ADC_CHANNEL_COUNT 3
@@ -37,12 +37,6 @@ typedef char (*isr_cback_t)(void);
 void U0rec_ISR(void);
 
 void init_isr(void);
-void init_adc(char channel); /* Initializes ADC with more options */
-void init_adc_basic(char channel); /* Initializes ADC with less options. It might be useful for fast configuration */
-void deinit_adc(char channel);
-void adc_start(void); /* Triggers ADC conversion */
-void adc_stop(void);
-void deinit_all_adc(void);
 void install_cback(isr_cback_t callback, char cback_index);
 void uninstall_cback(char cback_index);
 void uninstall_all_cback(void);
